@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class InteractivityExtension
    ">
-    <meta name="generator" content="docfx 2.31.0.0">
+    <meta name="generator" content="docfx 2.39.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -102,7 +102,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ReactionCollectionContext&gt; CollectReactionsAsync(DiscordMessage message, TimeSpan? timeoutoverride = default (TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;ReactionCollectionContext&gt; CollectReactionsAsync(DiscordMessage message, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,7 +149,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ReactionCollectionContext&gt; CreatePollAsync(DiscordMessage message, IEnumerable&lt;DiscordEmoji&gt; emojis, TimeSpan? timeoutoverride = default (TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;ReactionCollectionContext&gt; CreatePollAsync(DiscordMessage message, IEnumerable&lt;DiscordEmoji&gt; emojis, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -196,12 +196,12 @@
   
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_DoPagination_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.DoPagination*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_DoPagination_DiscordEmoji_DiscordMessage_DSharpPlus_Interactivity_PaginatedMessage_CancellationTokenSource_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.DoPagination(DiscordEmoji,DiscordMessage,DSharpPlus.Interactivity.PaginatedMessage,CancellationTokenSource)">DoPagination(DiscordEmoji, DiscordMessage, PaginatedMessage, CancellationTokenSource)</h4>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_DoPagination_DiscordEmoji_DiscordMessage_DSharpPlus_Interactivity_PaginatedMessage_CancellationTokenSource_DSharpPlus_Interactivity_PaginationEmojis_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.DoPagination(DiscordEmoji,DiscordMessage,DSharpPlus.Interactivity.PaginatedMessage,CancellationTokenSource,DSharpPlus.Interactivity.PaginationEmojis)">DoPagination(DiscordEmoji, DiscordMessage, PaginatedMessage, CancellationTokenSource, PaginationEmojis)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task DoPagination(DiscordEmoji emoji, DiscordMessage message, PaginatedMessage paginatedmessage, CancellationTokenSource canceltoken)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task DoPagination(DiscordEmoji emoji, DiscordMessage message, PaginatedMessage paginatedmessage, CancellationTokenSource canceltoken, PaginationEmojis emojis)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -231,6 +231,11 @@
       <tr>
         <td><span class="xref">CancellationTokenSource</span></td>
         <td><span class="parametername">canceltoken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Interactivity.PaginationEmojis.html">PaginationEmojis</a></td>
+        <td><span class="parametername">emojis</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -337,12 +342,12 @@
   
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePaginationReactions_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePaginationReactions*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePaginationReactions_DiscordMessage_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePaginationReactions(DiscordMessage)">GeneratePaginationReactions(DiscordMessage)</h4>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePaginationReactions_DiscordMessage_DSharpPlus_Interactivity_PaginationEmojis_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePaginationReactions(DiscordMessage,DSharpPlus.Interactivity.PaginationEmojis)">GeneratePaginationReactions(DiscordMessage, PaginationEmojis)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task GeneratePaginationReactions(DiscordMessage message)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task GeneratePaginationReactions(DiscordMessage message, PaginationEmojis emojis)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -357,6 +362,11 @@
       <tr>
         <td><span class="xref">DiscordMessage</span></td>
         <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Interactivity.PaginationEmojis.html">PaginationEmojis</a></td>
+        <td><span class="parametername">emojis</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -379,12 +389,12 @@
   
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_SendPaginatedMessage_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessage*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_SendPaginatedMessage_DiscordChannel_DiscordUser_System_Collections_Generic_IEnumerable_DSharpPlus_Interactivity_Page__System_Nullable_System_TimeSpan__System_Nullable_DSharpPlus_Interactivity_TimeoutBehaviour__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessage(DiscordChannel,DiscordUser,System.Collections.Generic.IEnumerable{DSharpPlus.Interactivity.Page},System.Nullable{System.TimeSpan},System.Nullable{DSharpPlus.Interactivity.TimeoutBehaviour})">SendPaginatedMessage(DiscordChannel, DiscordUser, IEnumerable&lt;Page&gt;, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeoutBehaviour&gt;)</h4>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_SendPaginatedMessage_DiscordChannel_DiscordUser_System_Collections_Generic_IEnumerable_DSharpPlus_Interactivity_Page__System_Nullable_System_TimeSpan__System_Nullable_DSharpPlus_Interactivity_TimeoutBehaviour__DSharpPlus_Interactivity_PaginationEmojis_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessage(DiscordChannel,DiscordUser,System.Collections.Generic.IEnumerable{DSharpPlus.Interactivity.Page},System.Nullable{System.TimeSpan},System.Nullable{DSharpPlus.Interactivity.TimeoutBehaviour},DSharpPlus.Interactivity.PaginationEmojis)">SendPaginatedMessage(DiscordChannel, DiscordUser, IEnumerable&lt;Page&gt;, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeoutBehaviour&gt;, PaginationEmojis)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task SendPaginatedMessage(DiscordChannel channel, DiscordUser user, IEnumerable&lt;Page&gt; message_pages, TimeSpan? timeoutoverride = default (TimeSpan? ), TimeoutBehaviour? timeoutbehaviouroverride = default (TimeoutBehaviour? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task SendPaginatedMessage(DiscordChannel channel, DiscordUser user, IEnumerable&lt;Page&gt; message_pages, TimeSpan? timeoutoverride = default(TimeSpan? ), TimeoutBehaviour? timeoutbehaviouroverride = default(TimeoutBehaviour? ), PaginationEmojis emojis = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -419,6 +429,11 @@
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.TimeoutBehaviour.html">TimeoutBehaviour</a>&gt;</td>
         <td><span class="parametername">timeoutbehaviouroverride</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Interactivity.PaginationEmojis.html">PaginationEmojis</a></td>
+        <td><span class="parametername">emojis</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -475,7 +490,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;MessageContext&gt; WaitForMessageAsync(Func&lt;DiscordMessage, bool&gt; predicate, TimeSpan? timeoutoverride = default (TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;MessageContext&gt; WaitForMessageAsync(Func&lt;DiscordMessage, bool&gt; predicate, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -522,7 +537,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ReactionContext&gt; WaitForMessageReactionAsync(DiscordMessage message, DiscordUser user = null, TimeSpan? timeoutoverride = default (TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;ReactionContext&gt; WaitForMessageReactionAsync(DiscordMessage message, DiscordUser user = null, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -574,7 +589,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ReactionContext&gt; WaitForMessageReactionAsync(Func&lt;DiscordEmoji, bool&gt; predicate, DiscordMessage message, DiscordUser user = null, TimeSpan? timeoutoverride = default (TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;ReactionContext&gt; WaitForMessageReactionAsync(Func&lt;DiscordEmoji, bool&gt; predicate, DiscordMessage message, DiscordUser user = null, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -631,7 +646,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ReactionContext&gt; WaitForReactionAsync(Func&lt;DiscordEmoji, bool&gt; predicate, DiscordUser user, TimeSpan? timeoutoverride = default (TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;ReactionContext&gt; WaitForReactionAsync(Func&lt;DiscordEmoji, bool&gt; predicate, DiscordUser user, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -683,7 +698,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ReactionContext&gt; WaitForReactionAsync(Func&lt;DiscordEmoji, bool&gt; predicate, TimeSpan? timeoutoverride = default (TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;ReactionContext&gt; WaitForReactionAsync(Func&lt;DiscordEmoji, bool&gt; predicate, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -730,7 +745,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;TypingContext&gt; WaitForTypingChannelAsync(DiscordUser user, TimeSpan? timeoutoverride = default (TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TypingContext&gt; WaitForTypingChannelAsync(DiscordUser user, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -777,7 +792,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;TypingContext&gt; WaitForTypingUserAsync(DiscordChannel channel, TimeSpan? timeoutoverride = default (TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TypingContext&gt; WaitForTypingUserAsync(DiscordChannel channel, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

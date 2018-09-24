@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordMessage
    ">
-    <meta name="generator" content="docfx 2.31.0.0">
+    <meta name="generator" content="docfx 2.39.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -232,12 +232,12 @@
   
   <a id="DSharpPlus_Entities_DiscordMessage_EditedTimestamp_" data-uid="DSharpPlus.Entities.DiscordMessage.EditedTimestamp*"></a>
   <h4 id="DSharpPlus_Entities_DiscordMessage_EditedTimestamp" data-uid="DSharpPlus.Entities.DiscordMessage.EditedTimestamp">EditedTimestamp</h4>
-  <div class="markdown level1 summary"><p>Gets the message&apos;s edit timestamp.</p>
+  <div class="markdown level1 summary"><p>Gets the message&apos;s edit timestamp. Will be null if the message was not edited.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTimeOffset EditedTimestamp { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public DateTimeOffset? EditedTimestamp { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -249,7 +249,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -328,6 +328,32 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMessage_JumpLink_" data-uid="DSharpPlus.Entities.DiscordMessage.JumpLink*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessage_JumpLink" data-uid="DSharpPlus.Entities.DiscordMessage.JumpLink">JumpLink</h4>
+  <div class="markdown level1 summary"><p>Gets the jump link to this message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri JumpLink { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Uri</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1025,7 +1051,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; ModifyAsync(Optional&lt;string&gt; content = default (Optional&lt;string&gt;), Optional&lt;DiscordEmbed&gt; embed = default (Optional&lt;DiscordEmbed&gt;))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; ModifyAsync(Optional&lt;string&gt; content = default(Optional&lt;string&gt;), Optional&lt;DiscordEmbed&gt; embed = default(Optional&lt;DiscordEmbed&gt;))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1158,7 +1184,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; RespondWithFileAsync(FileStream file_data, string content = null, bool tts = false, DiscordEmbed embed = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; RespondWithFileAsync(FileStream fileData, string content = null, bool tts = false, DiscordEmbed embed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1172,7 +1198,7 @@
     <tbody>
       <tr>
         <td><span class="xref">FileStream</span></td>
-        <td><span class="parametername">file_data</span></td>
+        <td><span class="parametername">fileData</span></td>
         <td><p>Stream containing the data to attach to the message as a file.</p>
 </td>
       </tr>
@@ -1215,13 +1241,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordMessage_RespondWithFileAsync_" data-uid="DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordMessage_RespondWithFileAsync_Stream_System_String_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_" data-uid="DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync(Stream,System.String,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)">RespondWithFileAsync(Stream, String, String, Boolean, DiscordEmbed)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordMessage_RespondWithFileAsync_System_String_Stream_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_" data-uid="DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync(System.String,Stream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)">RespondWithFileAsync(String, Stream, String, Boolean, DiscordEmbed)</h4>
   <div class="markdown level1 summary"><p>Responds to the message with a file.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; RespondWithFileAsync(Stream file_data, string file_name, string content = null, bool tts = false, DiscordEmbed embed = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; RespondWithFileAsync(string fileName, Stream fileData, string content = null, bool tts = false, DiscordEmbed embed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1234,15 +1260,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">file_data</span></td>
-        <td><p>Stream containing the data to attach to the message as a file.</p>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>Name of the file to be attached.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file_name</span></td>
-        <td><p>Name of the file to be attached.</p>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">fileData</span></td>
+        <td><p>Stream containing the data to attach to the message as a file.</p>
 </td>
       </tr>
       <tr>
@@ -1290,7 +1316,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; RespondWithFileAsync(string file_path, string content = null, bool tts = false, DiscordEmbed embed = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; RespondWithFileAsync(string filePath, string content = null, bool tts = false, DiscordEmbed embed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1304,7 +1330,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file_path</span></td>
+        <td><span class="parametername">filePath</span></td>
         <td><p>Path to the file to be attached to the message.</p>
 </td>
       </tr>

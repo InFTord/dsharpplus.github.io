@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordRestClient
    ">
-    <meta name="generator" content="docfx 2.31.0.0">
+    <meta name="generator" content="docfx 2.39.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -3120,6 +3120,58 @@
   
   
   <a id="DSharpPlus_DiscordRestClient_GetReactionsAsync_" data-uid="DSharpPlus.DiscordRestClient.GetReactionsAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_GetReactionsAsync_System_UInt64_System_UInt64_DiscordEmoji_" data-uid="DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64,System.UInt64,DiscordEmoji)">GetReactionsAsync(UInt64, UInt64, DiscordEmoji)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;DiscordUser&gt;&gt; GetReactionsAsync(ulong channel_id, ulong message_id, DiscordEmoji emoji)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">channel_id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">message_id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DiscordEmoji</span></td>
+        <td><span class="parametername">emoji</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">DiscordUser</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordRestClient_GetReactionsAsync_" data-uid="DSharpPlus.DiscordRestClient.GetReactionsAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_GetReactionsAsync_System_UInt64_System_UInt64_System_String_" data-uid="DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64,System.UInt64,System.String)">GetReactionsAsync(UInt64, UInt64, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -3431,6 +3483,31 @@
   </table>
   
   
+  <a id="DSharpPlus_DiscordRestClient_InitializeCacheAsync_" data-uid="DSharpPlus.DiscordRestClient.InitializeCacheAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_InitializeCacheAsync" data-uid="DSharpPlus.DiscordRestClient.InitializeCacheAsync">InitializeCacheAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task InitializeCacheAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordRestClient_JoinGroupDmAsync_" data-uid="DSharpPlus.DiscordRestClient.JoinGroupDmAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_JoinGroupDmAsync_System_UInt64_System_String_" data-uid="DSharpPlus.DiscordRestClient.JoinGroupDmAsync(System.UInt64,System.String)">JoinGroupDmAsync(UInt64, String)</h4>
   <div class="markdown level1 summary"></div>
@@ -3614,13 +3691,164 @@
   </table>
   
   
-  <a id="DSharpPlus_DiscordRestClient_ModifyChannelAsync_" data-uid="DSharpPlus.DiscordRestClient.ModifyChannelAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_ModifyChannelAsync_System_UInt64_System_String_System_Nullable_System_Int32__System_String_Optional_System_Nullable_System_UInt64___System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="DSharpPlus.DiscordRestClient.ModifyChannelAsync(System.UInt64,System.String,System.Nullable{System.Int32},System.String,Optional{System.Nullable{System.UInt64}},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">ModifyChannelAsync(UInt64, String, Nullable&lt;Int32&gt;, String, Optional&lt;Nullable&lt;UInt64&gt;&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String)</h4>
+  <a id="DSharpPlus_DiscordRestClient_ModifyAsync_" data-uid="DSharpPlus.DiscordRestClient.ModifyAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_ModifyAsync_System_UInt64_System_UInt64_System_Action_MemberEditModel__" data-uid="DSharpPlus.DiscordRestClient.ModifyAsync(System.UInt64,System.UInt64,System.Action{MemberEditModel})">ModifyAsync(UInt64, UInt64, Action&lt;MemberEditModel&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ModifyChannelAsync(ulong id, string name, int? position, string topic, Optional&lt;ulong? &gt; parent, int? bitrate, int? user_limit, string reason)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task ModifyAsync(ulong member_id, ulong guild_id, Action&lt;MemberEditModel&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">member_id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">guild_id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">MemberEditModel</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordRestClient_ModifyAsync_" data-uid="DSharpPlus.DiscordRestClient.ModifyAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_ModifyAsync_System_UInt64_System_UInt64_System_Action_RoleEditModel__" data-uid="DSharpPlus.DiscordRestClient.ModifyAsync(System.UInt64,System.UInt64,System.Action{RoleEditModel})">ModifyAsync(UInt64, UInt64, Action&lt;RoleEditModel&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ModifyAsync(ulong role_id, ulong guild_id, Action&lt;RoleEditModel&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">role_id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">guild_id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">RoleEditModel</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordRestClient_ModifyChannelAsync_" data-uid="DSharpPlus.DiscordRestClient.ModifyChannelAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_ModifyChannelAsync_System_UInt64_System_Action_ChannelEditModel__" data-uid="DSharpPlus.DiscordRestClient.ModifyChannelAsync(System.UInt64,System.Action{ChannelEditModel})">ModifyChannelAsync(UInt64, Action&lt;ChannelEditModel&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ModifyChannelAsync(ulong channel_id, Action&lt;ChannelEditModel&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">channel_id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">ChannelEditModel</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordRestClient_ModifyChannelAsync_" data-uid="DSharpPlus.DiscordRestClient.ModifyChannelAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_ModifyChannelAsync_System_UInt64_System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__Optional_System_Nullable_System_UInt64___System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="DSharpPlus.DiscordRestClient.ModifyChannelAsync(System.UInt64,System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},Optional{System.Nullable{System.UInt64}},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">ModifyChannelAsync(UInt64, String, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, Optional&lt;Nullable&lt;UInt64&gt;&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ModifyChannelAsync(ulong id, string name, int? position, string topic, bool? nsfw, Optional&lt;ulong? &gt; parent, int? bitrate, int? user_limit, string reason)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3650,6 +3878,11 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">topic</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">nsfw</span></td>
         <td></td>
       </tr>
       <tr>
@@ -3791,12 +4024,12 @@
   
   
   <a id="DSharpPlus_DiscordRestClient_ModifyGuildAsync_" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_ModifyGuildAsync_System_UInt64_System_String_System_String_System_Nullable_VerificationLevel__System_Nullable_DefaultMessageNotifications__System_Nullable_MfaLevel__System_Nullable_ExplicitContentFilter__System_Nullable_System_UInt64__System_Nullable_System_Int32__System_String_System_Nullable_System_UInt64__System_String_System_String_" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildAsync(System.UInt64,System.String,System.String,System.Nullable{VerificationLevel},System.Nullable{DefaultMessageNotifications},System.Nullable{MfaLevel},System.Nullable{ExplicitContentFilter},System.Nullable{System.UInt64},System.Nullable{System.Int32},System.String,System.Nullable{System.UInt64},System.String,System.String)">ModifyGuildAsync(UInt64, String, String, Nullable&lt;VerificationLevel&gt;, Nullable&lt;DefaultMessageNotifications&gt;, Nullable&lt;MfaLevel&gt;, Nullable&lt;ExplicitContentFilter&gt;, Nullable&lt;UInt64&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;UInt64&gt;, String, String)</h4>
+  <h4 id="DSharpPlus_DiscordRestClient_ModifyGuildAsync_System_UInt64_Optional_System_String__Optional_System_String__Optional_VerificationLevel__Optional_DefaultMessageNotifications__Optional_MfaLevel__Optional_ExplicitContentFilter__Optional_System_Nullable_System_UInt64___Optional_System_Int32__Optional_System_String__Optional_System_UInt64__Optional_System_String__Optional_System_Nullable_System_UInt64___System_String_" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildAsync(System.UInt64,Optional{System.String},Optional{System.String},Optional{VerificationLevel},Optional{DefaultMessageNotifications},Optional{MfaLevel},Optional{ExplicitContentFilter},Optional{System.Nullable{System.UInt64}},Optional{System.Int32},Optional{System.String},Optional{System.UInt64},Optional{System.String},Optional{System.Nullable{System.UInt64}},System.String)">ModifyGuildAsync(UInt64, Optional&lt;String&gt;, Optional&lt;String&gt;, Optional&lt;VerificationLevel&gt;, Optional&lt;DefaultMessageNotifications&gt;, Optional&lt;MfaLevel&gt;, Optional&lt;ExplicitContentFilter&gt;, Optional&lt;Nullable&lt;UInt64&gt;&gt;, Optional&lt;Int32&gt;, Optional&lt;String&gt;, Optional&lt;UInt64&gt;, Optional&lt;String&gt;, Optional&lt;Nullable&lt;UInt64&gt;&gt;, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuild&gt; ModifyGuildAsync(ulong guild_id, string name, string region, VerificationLevel? verification_level, DefaultMessageNotifications? default_message_notifications, MfaLevel? mfa_level, ExplicitContentFilter? explicit_content_filter, ulong? afk_channel_id, int? afk_timeout, string iconb64, ulong? owner_id, string splashb64, string reason)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuild&gt; ModifyGuildAsync(ulong guild_id, Optional&lt;string&gt; name, Optional&lt;string&gt; region, Optional&lt;VerificationLevel&gt; verification_level, Optional&lt;DefaultMessageNotifications&gt; default_message_notifications, Optional&lt;MfaLevel&gt; mfa_level, Optional&lt;ExplicitContentFilter&gt; explicit_content_filter, Optional&lt;ulong? &gt; afk_channel_id, Optional&lt;int&gt; afk_timeout, Optional&lt;string&gt; iconb64, Optional&lt;ulong&gt; owner_id, Optional&lt;string&gt; splashb64, Optional&lt;ulong? &gt; systemChannelId, string reason)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3814,63 +4047,115 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">region</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">VerificationLevel</span>&gt;</td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">VerificationLevel</span>&gt;</td>
         <td><span class="parametername">verification_level</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DefaultMessageNotifications</span>&gt;</td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">DefaultMessageNotifications</span>&gt;</td>
         <td><span class="parametername">default_message_notifications</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">MfaLevel</span>&gt;</td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">MfaLevel</span>&gt;</td>
         <td><span class="parametername">mfa_level</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">ExplicitContentFilter</span>&gt;</td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">ExplicitContentFilter</span>&gt;</td>
         <td><span class="parametername">explicit_content_filter</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;&gt;</td>
         <td><span class="parametername">afk_channel_id</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">afk_timeout</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">iconb64</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
         <td><span class="parametername">owner_id</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">splashb64</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;&gt;</td>
+        <td><span class="parametername">systemChannelId</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">reason</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordGuild</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordRestClient_ModifyGuildAsync_" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_ModifyGuildAsync_System_UInt64_System_Action_GuildEditModel__" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildAsync(System.UInt64,System.Action{GuildEditModel})">ModifyGuildAsync(UInt64, Action&lt;GuildEditModel&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuild&gt; ModifyGuildAsync(ulong guild_id, Action&lt;GuildEditModel&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">guild_id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">GuildEditModel</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -4002,12 +4287,12 @@
   
   
   <a id="DSharpPlus_DiscordRestClient_ModifyGuildMemberAsync_" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildMemberAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_ModifyGuildMemberAsync_System_UInt64_System_UInt64_System_String_System_Collections_Generic_IEnumerable_System_UInt64__System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_Nullable_System_UInt64__System_String_" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildMemberAsync(System.UInt64,System.UInt64,System.String,System.Collections.Generic.IEnumerable{System.UInt64},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.UInt64},System.String)">ModifyGuildMemberAsync(UInt64, UInt64, String, IEnumerable&lt;UInt64&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;UInt64&gt;, String)</h4>
+  <h4 id="DSharpPlus_DiscordRestClient_ModifyGuildMemberAsync_System_UInt64_System_UInt64_Optional_System_String__Optional_System_Collections_Generic_IEnumerable_System_UInt64___Optional_System_Boolean__Optional_System_Boolean__Optional_System_UInt64__System_String_" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildMemberAsync(System.UInt64,System.UInt64,Optional{System.String},Optional{System.Collections.Generic.IEnumerable{System.UInt64}},Optional{System.Boolean},Optional{System.Boolean},Optional{System.UInt64},System.String)">ModifyGuildMemberAsync(UInt64, UInt64, Optional&lt;String&gt;, Optional&lt;IEnumerable&lt;UInt64&gt;&gt;, Optional&lt;Boolean&gt;, Optional&lt;Boolean&gt;, Optional&lt;UInt64&gt;, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ModifyGuildMemberAsync(ulong guild_id, ulong user_id, string nick, IEnumerable&lt;ulong&gt; role_ids, bool? mute, bool? deaf, ulong? voice_channel_id, string reason)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task ModifyGuildMemberAsync(ulong guild_id, ulong user_id, Optional&lt;string&gt; nick, Optional&lt;IEnumerable&lt;ulong&gt;&gt; role_ids, Optional&lt;bool&gt; mute, Optional&lt;bool&gt; deaf, Optional&lt;ulong&gt; voice_channel_id, string reason)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4030,27 +4315,27 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">nick</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.UInt64</span>&gt;&gt;</td>
         <td><span class="parametername">role_ids</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">mute</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">deaf</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
         <td><span class="parametername">voice_channel_id</span></td>
         <td></td>
       </tr>
@@ -4079,12 +4364,12 @@
   
   
   <a id="DSharpPlus_DiscordRestClient_ModifyGuildRoleAsync_" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildRoleAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_ModifyGuildRoleAsync_System_UInt64_System_UInt64_System_String_System_Nullable_DSharpPlus_Permissions__System_Nullable_System_Int32__System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_String_" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildRoleAsync(System.UInt64,System.UInt64,System.String,System.Nullable{DSharpPlus.Permissions},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)">ModifyGuildRoleAsync(UInt64, UInt64, String, Nullable&lt;Permissions&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;Boolean&gt;, String)</h4>
+  <h4 id="DSharpPlus_DiscordRestClient_ModifyGuildRoleAsync_System_UInt64_System_UInt64_System_String_System_Nullable_DSharpPlus_Permissions__System_Nullable_DiscordColor__System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_String_" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildRoleAsync(System.UInt64,System.UInt64,System.String,System.Nullable{DSharpPlus.Permissions},System.Nullable{DiscordColor},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)">ModifyGuildRoleAsync(UInt64, UInt64, String, Nullable&lt;Permissions&gt;, Nullable&lt;DiscordColor&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;Boolean&gt;, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordRole&gt; ModifyGuildRoleAsync(ulong guild_id, ulong role_id, string name, Permissions? permissions, int? color, bool? hoist, bool? mentionable, string reason)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordRole&gt; ModifyGuildRoleAsync(ulong guild_id, ulong role_id, string name, Permissions? permissions, DiscordColor? color, bool? hoist, bool? mentionable, string reason)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4117,7 +4402,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DiscordColor</span>&gt;</td>
         <td><span class="parametername">color</span></td>
         <td></td>
       </tr>

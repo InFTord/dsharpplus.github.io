@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordChannel
    ">
-    <meta name="generator" content="docfx 2.31.0.0">
+    <meta name="generator" content="docfx 2.39.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -805,7 +805,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordWebhook&gt; CreateWebhookAsync(string name, Optional&lt;Stream&gt; avatar = default (Optional&lt;Stream&gt;), string reason = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordWebhook&gt; CreateWebhookAsync(string name, Optional&lt;Stream&gt; avatar = default(Optional&lt;Stream&gt;), string reason = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1187,7 +1187,7 @@
   <a id="DSharpPlus_Entities_DiscordChannel_GetMessagesAfterAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.GetMessagesAfterAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordChannel_GetMessagesAfterAsync_System_UInt64_System_Int32_" data-uid="DSharpPlus.Entities.DiscordChannel.GetMessagesAfterAsync(System.UInt64,System.Int32)">GetMessagesAfterAsync(UInt64, Int32)</h4>
   <div class="markdown level1 summary"><p>Returns a list of messages after a certain message.
-<param name="limit">The amount of messages to fetch, up to a maximum of 100
+<param name="limit">The amount of messages to fetch.
 <param name="after">Message to fetch after from.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1237,7 +1237,7 @@
   <a id="DSharpPlus_Entities_DiscordChannel_GetMessagesAroundAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.GetMessagesAroundAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordChannel_GetMessagesAroundAsync_System_UInt64_System_Int32_" data-uid="DSharpPlus.Entities.DiscordChannel.GetMessagesAroundAsync(System.UInt64,System.Int32)">GetMessagesAroundAsync(UInt64, Int32)</h4>
   <div class="markdown level1 summary"><p>Returns a list of messages around a certain message.
-<param name="limit">The amount of messages to fetch, up to a maximum of 100
+<param name="limit">The amount of messages to fetch.
 <param name="around">Message to fetch around from.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1287,7 +1287,7 @@
   <a id="DSharpPlus_Entities_DiscordChannel_GetMessagesAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.GetMessagesAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordChannel_GetMessagesAsync_System_Int32_" data-uid="DSharpPlus.Entities.DiscordChannel.GetMessagesAsync(System.Int32)">GetMessagesAsync(Int32)</h4>
   <div class="markdown level1 summary"><p>Returns a list of messages from the last message in the channel.
-<param name="limit">The amount of messages to fetch, up to a maximum of 100</p>
+<param name="limit">The amount of messages to fetch.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1331,7 +1331,7 @@
   <a id="DSharpPlus_Entities_DiscordChannel_GetMessagesBeforeAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.GetMessagesBeforeAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordChannel_GetMessagesBeforeAsync_System_UInt64_System_Int32_" data-uid="DSharpPlus.Entities.DiscordChannel.GetMessagesBeforeAsync(System.UInt64,System.Int32)">GetMessagesBeforeAsync(UInt64, Int32)</h4>
   <div class="markdown level1 summary"><p>Returns a list of messages before a certain message.
-<param name="limit">The amount of messages to fetch, up to a maximum of 100
+<param name="limit">The amount of messages to fetch.
 <param name="before">Message to fetch before from.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1618,7 +1618,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendFileAsync(FileStream file_data, string content = null, bool tts = false, DiscordEmbed embed = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendFileAsync(FileStream fileData, string content = null, bool tts = false, DiscordEmbed embed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1632,7 +1632,7 @@
     <tbody>
       <tr>
         <td><span class="xref">FileStream</span></td>
-        <td><span class="parametername">file_data</span></td>
+        <td><span class="parametername">fileData</span></td>
         <td><p>Stream containing the data to attach to the message as a file.</p>
 </td>
       </tr>
@@ -1675,13 +1675,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordChannel_SendFileAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.SendFileAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordChannel_SendFileAsync_Stream_System_String_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_" data-uid="DSharpPlus.Entities.DiscordChannel.SendFileAsync(Stream,System.String,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)">SendFileAsync(Stream, String, String, Boolean, DiscordEmbed)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_SendFileAsync_System_String_Stream_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_" data-uid="DSharpPlus.Entities.DiscordChannel.SendFileAsync(System.String,Stream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)">SendFileAsync(String, Stream, String, Boolean, DiscordEmbed)</h4>
   <div class="markdown level1 summary"><p>Sends a message containing an attached file to this channel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendFileAsync(Stream file_data, string file_name, string content = null, bool tts = false, DiscordEmbed embed = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendFileAsync(string fileName, Stream fileData, string content = null, bool tts = false, DiscordEmbed embed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1694,15 +1694,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">file_data</span></td>
-        <td><p>Stream containing the data to attach to the message as a file.</p>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>Name of the file to attach to the message.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file_name</span></td>
-        <td><p>Name of the file to attach to the message.</p>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">fileData</span></td>
+        <td><p>Stream containing the data to attach to the message as a file.</p>
 </td>
       </tr>
       <tr>
@@ -1750,7 +1750,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendFileAsync(string file_path, string content = null, bool tts = false, DiscordEmbed embed = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendFileAsync(string filePath, string content = null, bool tts = false, DiscordEmbed embed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1764,7 +1764,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file_path</span></td>
+        <td><span class="parametername">filePath</span></td>
         <td><p>Path to the file to be attached to the message.</p>
 </td>
       </tr>

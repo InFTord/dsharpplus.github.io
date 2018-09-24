@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class WebSocket4NetCoreClient
    ">
-    <meta name="generator" content="docfx 2.31.0.0">
+    <meta name="generator" content="docfx 2.39.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -143,13 +143,13 @@
   
   
   <a id="DSharpPlus_Net_WebSocket_WebSocket4NetCoreClient_ConnectAsync_" data-uid="DSharpPlus.Net.WebSocket.WebSocket4NetCoreClient.ConnectAsync*"></a>
-  <h4 id="DSharpPlus_Net_WebSocket_WebSocket4NetCoreClient_ConnectAsync_Uri_" data-uid="DSharpPlus.Net.WebSocket.WebSocket4NetCoreClient.ConnectAsync(Uri)">ConnectAsync(Uri)</h4>
+  <h4 id="DSharpPlus_Net_WebSocket_WebSocket4NetCoreClient_ConnectAsync_Uri_System_Collections_Generic_IReadOnlyDictionary_System_String_System_String__" data-uid="DSharpPlus.Net.WebSocket.WebSocket4NetCoreClient.ConnectAsync(Uri,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})">ConnectAsync(Uri, IReadOnlyDictionary&lt;String, String&gt;)</h4>
   <div class="markdown level1 summary"><p>Connects to the WebSocket server.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task ConnectAsync(Uri uri)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task ConnectAsync(Uri uri, IReadOnlyDictionary&lt;string, string&gt; customHeaders = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -165,6 +165,12 @@
         <td><span class="xref">Uri</span></td>
         <td><span class="parametername">uri</span></td>
         <td><p>The URI of the WebSocket server.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Custom headers to send with the request.</p>
 </td>
       </tr>
     </tbody>
@@ -185,7 +191,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_ConnectAsync_Uri_">BaseWebSocketClient.ConnectAsync(Uri)</a></div>
+  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_ConnectAsync_Uri_System_Collections_Generic_IReadOnlyDictionary_System_String_System_String__">BaseWebSocketClient.ConnectAsync(Uri, IReadOnlyDictionary&lt;String, String&gt;)</a></div>
   
   
   <a id="DSharpPlus_Net_WebSocket_WebSocket4NetCoreClient_CreateNew_" data-uid="DSharpPlus.Net.WebSocket.WebSocket4NetCoreClient.CreateNew*"></a>
@@ -385,13 +391,13 @@
   </h3>
   
   
-  <h4 id="DSharpPlus_Net_WebSocket_WebSocket4NetCoreClient_OnConnect" data-uid="DSharpPlus.Net.WebSocket.WebSocket4NetCoreClient.OnConnect">OnConnect</h4>
+  <h4 id="DSharpPlus_Net_WebSocket_WebSocket4NetCoreClient_Connected" data-uid="DSharpPlus.Net.WebSocket.WebSocket4NetCoreClient.Connected">Connected</h4>
   <div class="markdown level1 summary"><p>Triggered when the client connects successfully.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override event AsyncEventHandler OnConnect</code></pre>
+    <pre><code class="lang-csharp hljs">public override event AsyncEventHandler Connected</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -409,16 +415,16 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_OnConnect">BaseWebSocketClient.OnConnect</a></div>
+  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_Connected">BaseWebSocketClient.Connected</a></div>
   
   
-  <h4 id="DSharpPlus_Net_WebSocket_WebSocket4NetCoreClient_OnDisconnect" data-uid="DSharpPlus.Net.WebSocket.WebSocket4NetCoreClient.OnDisconnect">OnDisconnect</h4>
+  <h4 id="DSharpPlus_Net_WebSocket_WebSocket4NetCoreClient_Disconnected" data-uid="DSharpPlus.Net.WebSocket.WebSocket4NetCoreClient.Disconnected">Disconnected</h4>
   <div class="markdown level1 summary"><p>Triggered when the client is disconnected.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override event AsyncEventHandler&lt;SocketCloseEventArgs&gt; OnDisconnect</code></pre>
+    <pre><code class="lang-csharp hljs">public override event AsyncEventHandler&lt;SocketCloseEventArgs&gt; Disconnected</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -436,16 +442,16 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_OnDisconnect">BaseWebSocketClient.OnDisconnect</a></div>
+  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_Disconnected">BaseWebSocketClient.Disconnected</a></div>
   
   
-  <h4 id="DSharpPlus_Net_WebSocket_WebSocket4NetCoreClient_OnError" data-uid="DSharpPlus.Net.WebSocket.WebSocket4NetCoreClient.OnError">OnError</h4>
+  <h4 id="DSharpPlus_Net_WebSocket_WebSocket4NetCoreClient_Errored" data-uid="DSharpPlus.Net.WebSocket.WebSocket4NetCoreClient.Errored">Errored</h4>
   <div class="markdown level1 summary"><p>Triggered when an error occurs in the client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override event AsyncEventHandler&lt;SocketErrorEventArgs&gt; OnError</code></pre>
+    <pre><code class="lang-csharp hljs">public override event AsyncEventHandler&lt;SocketErrorEventArgs&gt; Errored</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -463,16 +469,16 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_OnError">BaseWebSocketClient.OnError</a></div>
+  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_Errored">BaseWebSocketClient.Errored</a></div>
   
   
-  <h4 id="DSharpPlus_Net_WebSocket_WebSocket4NetCoreClient_OnMessage" data-uid="DSharpPlus.Net.WebSocket.WebSocket4NetCoreClient.OnMessage">OnMessage</h4>
+  <h4 id="DSharpPlus_Net_WebSocket_WebSocket4NetCoreClient_MessageReceived" data-uid="DSharpPlus.Net.WebSocket.WebSocket4NetCoreClient.MessageReceived">MessageReceived</h4>
   <div class="markdown level1 summary"><p>Triggered when the client receives a message from the remote party.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override event AsyncEventHandler&lt;SocketMessageEventArgs&gt; OnMessage</code></pre>
+    <pre><code class="lang-csharp hljs">public override event AsyncEventHandler&lt;SocketMessageEventArgs&gt; MessageReceived</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -490,7 +496,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_OnMessage">BaseWebSocketClient.OnMessage</a></div>
+  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_MessageReceived">BaseWebSocketClient.MessageReceived</a></div>
 </article>
           </div>
           

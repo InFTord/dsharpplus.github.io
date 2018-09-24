@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class GuildEditModel
    ">
-    <meta name="generator" content="docfx 2.31.0.0">
+    <meta name="generator" content="docfx 2.39.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,13 +77,20 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">GuildEditModel</span></div>
+    <div class="level1"><a class="xref" href="DSharpPlus.Net.Models.BaseEditModel.html">BaseEditModel</a></div>
+    <div class="level2"><span class="xref">GuildEditModel</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DSharpPlus.Net.Models.BaseEditModel.html#DSharpPlus_Net_Models_BaseEditModel_AuditLogReason">BaseEditModel.AuditLogReason</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DSharpPlus.Net.Models.html">DSharpPlus.Net.Models</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="DSharpPlus_Net_Models_GuildEditModel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GuildEditModel</code></pre>
+    <pre><code class="lang-csharp hljs">public class GuildEditModel : BaseEditModel</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -95,7 +102,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordChannel AfkChannel { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Optional&lt;DiscordChannel&gt; AfkChannel { set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -107,7 +114,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DiscordChannel</span></td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">DiscordChannel</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -120,7 +127,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int? AfkTimeout { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Optional&lt;int&gt; AfkTimeout { set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -132,32 +139,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="DSharpPlus_Net_Models_GuildEditModel_AuditLogReason_" data-uid="DSharpPlus.Net.Models.GuildEditModel.AuditLogReason*"></a>
-  <h4 id="DSharpPlus_Net_Models_GuildEditModel_AuditLogReason" data-uid="DSharpPlus.Net.Models.GuildEditModel.AuditLogReason">AuditLogReason</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string AuditLogReason { set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -170,7 +152,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DefaultMessageNotifications DefaultMessageNotifications { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Optional&lt;DefaultMessageNotifications&gt; DefaultMessageNotifications { set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -182,7 +164,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DefaultMessageNotifications</span></td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">DefaultMessageNotifications</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -195,7 +177,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ExplicitContentFilter ExplicitContentFilter { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Optional&lt;ExplicitContentFilter&gt; ExplicitContentFilter { set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -207,7 +189,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ExplicitContentFilter</span></td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">ExplicitContentFilter</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -245,7 +227,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MfaLevel MfaLevel { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Optional&lt;MfaLevel&gt; MfaLevel { set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -257,7 +239,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MfaLevel</span></td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">MfaLevel</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -270,7 +252,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Optional&lt;string&gt; Name { set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -282,7 +264,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -295,7 +277,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordMember Owner { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Optional&lt;DiscordMember&gt; Owner { set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -307,7 +289,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DiscordMember</span></td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">DiscordMember</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -320,7 +302,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordVoiceRegion Region { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Optional&lt;DiscordVoiceRegion&gt; Region { set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -332,7 +314,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DiscordVoiceRegion</span></td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">DiscordVoiceRegion</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -364,13 +346,13 @@
   </table>
   
   
-  <a id="DSharpPlus_Net_Models_GuildEditModel_VerificationLevel_" data-uid="DSharpPlus.Net.Models.GuildEditModel.VerificationLevel*"></a>
-  <h4 id="DSharpPlus_Net_Models_GuildEditModel_VerificationLevel" data-uid="DSharpPlus.Net.Models.GuildEditModel.VerificationLevel">VerificationLevel</h4>
+  <a id="DSharpPlus_Net_Models_GuildEditModel_SystemChannel_" data-uid="DSharpPlus.Net.Models.GuildEditModel.SystemChannel*"></a>
+  <h4 id="DSharpPlus_Net_Models_GuildEditModel_SystemChannel" data-uid="DSharpPlus.Net.Models.GuildEditModel.SystemChannel">SystemChannel</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VerificationLevel VerificationLevel { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Optional&lt;DiscordChannel&gt; SystemChannel { set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -382,7 +364,32 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VerificationLevel</span></td>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">DiscordChannel</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Net_Models_GuildEditModel_VerificationLevel_" data-uid="DSharpPlus.Net.Models.GuildEditModel.VerificationLevel*"></a>
+  <h4 id="DSharpPlus_Net_Models_GuildEditModel_VerificationLevel" data-uid="DSharpPlus.Net.Models.GuildEditModel.VerificationLevel">VerificationLevel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Optional&lt;VerificationLevel&gt; VerificationLevel { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">VerificationLevel</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

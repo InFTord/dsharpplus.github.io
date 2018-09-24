@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordRole
    ">
-    <meta name="generator" content="docfx 2.31.0.0">
+    <meta name="generator" content="docfx 2.39.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -520,6 +520,122 @@
   <div><span class="xref">System.Object.GetHashCode()</span></div>
   
   
+  <a id="DSharpPlus_Entities_DiscordRole_ModifyAsync_" data-uid="DSharpPlus.Entities.DiscordRole.ModifyAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordRole_ModifyAsync_System_Action_RoleEditModel__" data-uid="DSharpPlus.Entities.DiscordRole.ModifyAsync(System.Action{RoleEditModel})">ModifyAsync(Action&lt;RoleEditModel&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ModifyAsync(Action&lt;RoleEditModel&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">RoleEditModel</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordRole_ModifyAsync_" data-uid="DSharpPlus.Entities.DiscordRole.ModifyAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordRole_ModifyAsync_System_String_System_Nullable_DSharpPlus_Permissions__System_Nullable_DSharpPlus_Entities_DiscordColor__System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_String_" data-uid="DSharpPlus.Entities.DiscordRole.ModifyAsync(System.String,System.Nullable{DSharpPlus.Permissions},System.Nullable{DSharpPlus.Entities.DiscordColor},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)">ModifyAsync(String, Nullable&lt;Permissions&gt;, Nullable&lt;DiscordColor&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;Boolean&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Updates this role.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ModifyAsync(string name = null, Permissions? permissions = default(Permissions? ), DiscordColor? color = default(DiscordColor? ), bool? hoist = default(bool? ), bool? mentionable = default(bool? ), string reason = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>New role name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DSharpPlus.Permissions.html">Permissions</a>&gt;</td>
+        <td><span class="parametername">permissions</span></td>
+        <td><p>New role permissions</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordColor.html">DiscordColor</a>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td><p>New role color</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">hoist</span></td>
+        <td><p>New role hoist</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">mentionable</span></td>
+        <td><p>Whether this role is mentionable</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>Reason why we made this change</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordRole_ModifyPositionAsync_" data-uid="DSharpPlus.Entities.DiscordRole.ModifyPositionAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordRole_ModifyPositionAsync_System_Int32_System_String_" data-uid="DSharpPlus.Entities.DiscordRole.ModifyPositionAsync(System.Int32,System.String)">ModifyPositionAsync(Int32, String)</h4>
   <div class="markdown level1 summary"><p>Modifies this role&apos;s position.</p>
@@ -597,80 +713,6 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.ToString()</span></div>
-  
-  
-  <a id="DSharpPlus_Entities_DiscordRole_UpdateAsync_" data-uid="DSharpPlus.Entities.DiscordRole.UpdateAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordRole_UpdateAsync_System_String_System_Nullable_DSharpPlus_Permissions__System_Nullable_DSharpPlus_Entities_DiscordColor__System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_String_" data-uid="DSharpPlus.Entities.DiscordRole.UpdateAsync(System.String,System.Nullable{DSharpPlus.Permissions},System.Nullable{DSharpPlus.Entities.DiscordColor},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)">UpdateAsync(String, Nullable&lt;Permissions&gt;, Nullable&lt;DiscordColor&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;Boolean&gt;, String)</h4>
-  <div class="markdown level1 summary"><p>Updates this role.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task UpdateAsync(string name = null, Permissions? permissions = default (Permissions? ), DiscordColor? color = default (DiscordColor? ), bool? hoist = default (bool? ), bool? mentionable = default (bool? ), string reason = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>New role name</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DSharpPlus.Permissions.html">Permissions</a>&gt;</td>
-        <td><span class="parametername">permissions</span></td>
-        <td><p>New role permissions</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordColor.html">DiscordColor</a>&gt;</td>
-        <td><span class="parametername">color</span></td>
-        <td><p>New role color</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td><span class="parametername">hoist</span></td>
-        <td><p>New role hoist</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td><span class="parametername">mentionable</span></td>
-        <td><p>Whether this role is mentionable</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">reason</span></td>
-        <td><p>Reason why we made this change</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="operators">Operators
   </h3>
   

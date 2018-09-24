@@ -8,7 +8,7 @@
     <title>Getting started with DSharpPlus - your first DSharpPlus bot </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Getting started with DSharpPlus - your first DSharpPlus bot ">
-    <meta name="generator" content="docfx 2.31.0.0">
+    <meta name="generator" content="docfx 2.39.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -132,7 +132,7 @@ of the client. Let&#39;s hook it then:</p>
         await e.Message.RespondAsync(&quot;pong!&quot;);
 };
 </code></pre><p>Now, once the bot connects, it will respond with &quot;pong!&quot; to each message that starts with &quot;ping&quot;.</p>
-<p>But that will happen only once you connect, so how do you do that? You use the <a class="xref" href="../../api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_ConnectAsync">ConnectAsync()</a> method.
+<p>But that will happen only once you connect, so how do you do that? You use the @DSharpPlus.DiscordClient.ConnectAsync method.
 of the client. You will need to <code>await</code> it, which is why you had to make an asynchronous <code>Main</code> method.</p>
 <pre><code class="lang-cs">await discord.ConnectAsync();
 </code></pre><p>This is not everything yet. If you start the bot now, it will just flash and quit. To prevent that, you need to add an 
@@ -190,7 +190,7 @@ on ways to fix the issue.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Emzi0767/DSharpPlus/blob/linux/build-scripts/docs/articles/getting_started/basic_bot.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Emzi0767/DSharpPlus/blob/master/docs/articles/getting_started/basic_bot.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

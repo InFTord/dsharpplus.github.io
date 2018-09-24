@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordConfiguration
    ">
-    <meta name="generator" content="docfx 2.31.0.0">
+    <meta name="generator" content="docfx 2.39.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -241,6 +241,34 @@
   </table>
   
   
+  <a id="DSharpPlus_DiscordConfiguration_HttpTimeout_" data-uid="DSharpPlus.DiscordConfiguration.HttpTimeout*"></a>
+  <h4 id="DSharpPlus_DiscordConfiguration_HttpTimeout" data-uid="DSharpPlus.DiscordConfiguration.HttpTimeout">HttpTimeout</h4>
+  <div class="markdown level1 summary"><p>Sets the timeout for HTTP requests.</p>
+<p>Set to <span class="xref">System.Threading.Timeout.InfiniteTimeSpan</span> to disable timeouts.</p>
+<p>Defaults to 10 seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan HttpTimeout { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordConfiguration_LargeThreshold_" data-uid="DSharpPlus.DiscordConfiguration.LargeThreshold*"></a>
   <h4 id="DSharpPlus_DiscordConfiguration_LargeThreshold" data-uid="DSharpPlus.DiscordConfiguration.LargeThreshold">LargeThreshold</h4>
   <div class="markdown level1 summary"><p>Sets the member count threshold at which guilds are considered large.</p>
@@ -343,6 +371,34 @@
     <tbody>
       <tr>
         <td><span class="xref">IWebProxy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordConfiguration_ReconnectIndefinitely_" data-uid="DSharpPlus.DiscordConfiguration.ReconnectIndefinitely*"></a>
+  <h4 id="DSharpPlus_DiscordConfiguration_ReconnectIndefinitely" data-uid="DSharpPlus.DiscordConfiguration.ReconnectIndefinitely">ReconnectIndefinitely</h4>
+  <div class="markdown level1 summary"><p>Defines that the client should attempt to reconnect indefinitely.</p>
+<p>This is typically a very bad idea to set to <code>true</code>, as it will swallow all connection errors.</p>
+<p>Defaults to false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReconnectIndefinitely { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordMember
    ">
-    <meta name="generator" content="docfx 2.31.0.0">
+    <meta name="generator" content="docfx 2.39.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -281,6 +281,32 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordGuild.html">DiscordGuild</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMember_Hierarchy_" data-uid="DSharpPlus.Entities.DiscordMember.Hierarchy*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMember_Hierarchy" data-uid="DSharpPlus.Entities.DiscordMember.Hierarchy">Hierarchy</h4>
+  <div class="markdown level1 summary"><p>Gets the member&apos;s position in the role hierarchy, which is the member&apos;s highest role&apos;s position. Returns <span class="xref">System.Int32.MaxValue</span> for guild&apos;s owner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Hierarchy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1114,7 +1140,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendFileAsync(FileStream file_data, string content = null, bool is_tts = false, DiscordEmbed embed = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendFileAsync(FileStream fileData, string content = null, bool is_tts = false, DiscordEmbed embed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1128,7 +1154,7 @@
     <tbody>
       <tr>
         <td><span class="xref">FileStream</span></td>
-        <td><span class="parametername">file_data</span></td>
+        <td><span class="parametername">fileData</span></td>
         <td><p>Stream containing the data to attach as a file.</p>
 </td>
       </tr>
@@ -1171,13 +1197,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordMember_SendFileAsync_" data-uid="DSharpPlus.Entities.DiscordMember.SendFileAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordMember_SendFileAsync_Stream_System_String_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_" data-uid="DSharpPlus.Entities.DiscordMember.SendFileAsync(Stream,System.String,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)">SendFileAsync(Stream, String, String, Boolean, DiscordEmbed)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordMember_SendFileAsync_System_String_Stream_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_" data-uid="DSharpPlus.Entities.DiscordMember.SendFileAsync(System.String,Stream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)">SendFileAsync(String, Stream, String, Boolean, DiscordEmbed)</h4>
   <div class="markdown level1 summary"><p>Sends a direct message with a file attached to this member. Creates a direct message channel if one does not exist already.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendFileAsync(Stream file_data, string file_name, string content = null, bool is_tts = false, DiscordEmbed embed = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendFileAsync(string fileName, Stream fileData, string content = null, bool is_tts = false, DiscordEmbed embed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1190,15 +1216,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">file_data</span></td>
-        <td><p>Stream containing the data to attach as a file.</p>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>Name of the file to attach.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file_name</span></td>
-        <td><p>Name of the file to attach.</p>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">fileData</span></td>
+        <td><p>Stream containing the data to attach as a file.</p>
 </td>
       </tr>
       <tr>
@@ -1246,7 +1272,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendFileAsync(string file_path, string content = null, bool is_tts = false, DiscordEmbed embed = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendFileAsync(string filePath, string content = null, bool is_tts = false, DiscordEmbed embed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1260,7 +1286,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file_path</span></td>
+        <td><span class="parametername">filePath</span></td>
         <td><p>Path to the file to attach to the message.</p>
 </td>
       </tr>

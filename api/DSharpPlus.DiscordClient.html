@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordClient
    ">
-    <meta name="generator" content="docfx 2.31.0.0">
+    <meta name="generator" content="docfx 2.39.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -403,14 +403,41 @@
   
   
   <a id="DSharpPlus_DiscordClient_ConnectAsync_" data-uid="DSharpPlus.DiscordClient.ConnectAsync*"></a>
-  <h4 id="DSharpPlus_DiscordClient_ConnectAsync" data-uid="DSharpPlus.DiscordClient.ConnectAsync">ConnectAsync()</h4>
+  <h4 id="DSharpPlus_DiscordClient_ConnectAsync_DiscordActivity_System_Nullable_UserStatus__System_Nullable_System_DateTimeOffset__" data-uid="DSharpPlus.DiscordClient.ConnectAsync(DiscordActivity,System.Nullable{UserStatus},System.Nullable{System.DateTimeOffset})">ConnectAsync(DiscordActivity, Nullable&lt;UserStatus&gt;, Nullable&lt;DateTimeOffset&gt;)</h4>
   <div class="markdown level1 summary"><p>Connects to the gateway</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ConnectAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task ConnectAsync(DiscordActivity activity = null, UserStatus? status = default(UserStatus? ), DateTimeOffset? idlesince = default(DateTimeOffset? ))</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DiscordActivity</span></td>
+        <td><span class="parametername">activity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">UserStatus</span>&gt;</td>
+        <td><span class="parametername">status</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td><span class="parametername">idlesince</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -435,7 +462,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuild&gt; CreateGuildAsync(string name, string region = null, Optional&lt;Stream&gt; icon = null, VerificationLevel? verificationLevel = default (VerificationLevel? ), DefaultMessageNotifications? defaultMessageNotifications = default (DefaultMessageNotifications? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuild&gt; CreateGuildAsync(string name, string region = null, Optional&lt;Stream&gt; icon = null, VerificationLevel? verificationLevel = default(VerificationLevel? ), DefaultMessageNotifications? defaultMessageNotifications = default(DefaultMessageNotifications? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -667,7 +694,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T GetExtension&lt;T&gt;()where T : BaseExtension</code></pre>
+    <pre><code class="lang-csharp hljs">public T GetExtension&lt;T&gt;()
+    where T : BaseExtension</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1126,7 +1154,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task UpdateStatusAsync(DiscordActivity activity = null, UserStatus? userStatus = default (UserStatus? ), DateTimeOffset? idleSince = default (DateTimeOffset? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task UpdateStatusAsync(DiscordActivity activity = null, UserStatus? userStatus = default(UserStatus? ), DateTimeOffset? idleSince = default(DateTimeOffset? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1471,6 +1499,31 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildDeleteEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DSharpPlus_DiscordClient_GuildDownloadCompleted" data-uid="DSharpPlus.DiscordClient.GuildDownloadCompleted">GuildDownloadCompleted</h4>
+  <div class="markdown level1 summary"><p>Fired when all guilds finish streaming from Discord.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildDownloadCompletedEventArgs&gt; GuildDownloadCompleted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildDownloadCompletedEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

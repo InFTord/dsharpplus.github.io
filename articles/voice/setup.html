@@ -8,7 +8,7 @@
     <title>Setting up VoiceNext </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Setting up VoiceNext ">
-    <meta name="generator" content="docfx 2.31.0.0">
+    <meta name="generator" content="docfx 2.39.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -82,7 +82,7 @@ That should provide you with following information:</p>
 <p><img src="/images/05_02_identify_gnulinux_lsb.png" alt="Identify - GNU/Linux" title="Identifying LSB-compatible GNU/Linux system"></p>
 <p>If that fails, try <code>ls -d1 /etc/* | grep &#39;\-release$&#39; | head -n 1 | xargs cat</code>. Output should look more or less like this</p>
 <p><img src="/images/05_03_identify_gnulinux_osrelease.png" alt="Identify - GNU/Linux" title="Identifying non-LSB-compatible GNU/Linux system"></p>
-<h3 id="mac-os-x">Mac OS X</h3>
+<h3 id="macos">macOS</h3>
 <p>You use Mac, not much to identify here.</p>
 <h3 id="bsd">BSD</h3>
 <p>To identify your BSD (or other UNIX system), you need to execute <code>uname -a</code>. It gives output similar to this one:</p>
@@ -124,7 +124,7 @@ names and installation method may vary.</p>
 <h4 id="gentoo">Gentoo</h4>
 <p><strong>NOTE</strong>: I do not own a Gentoo box, therefore the below might require tweaking:</p>
 <p><code>$ sudo emerge -atv opus libsodium</code></p>
-<h3 id="mac-os-x-1">Mac OS X</h3>
+<h3 id="macos-1">macOS</h3>
 <p><strong>NOTE</strong>: I do not own a Mac, therefore the below might require tweaking:</p>
 <p><code>$ brew install opus libsodium</code></p>
 <h3 id="freebsd">FreeBSD</h3>
@@ -156,9 +156,9 @@ caused to your system.</p>
 <h4 id="gentoo-1">Gentoo</h4>
 <p><strong>NOTE</strong>: I do not own a Gentoo box, therefore the below might require tweaking:</p>
 <p><code>$ sudo emerge -atv ffmpeg</code></p>
-<h3 id="mac-os-x-2">Mac OS X</h3>
+<h3 id="macos-2">macOS</h3>
 <p><strong>NOTE</strong>: I do not own a Mac, therefore the below might require tweaking:</p>
-<p><code>$ brew install ffmpeg --with-fdk-aac --with-ffplay --with-freetype --with-frei0r --with-libass --with-libvo-aacenc --with-libvorbis --with-libvpx --with-opencore-amr --with-openjpeg --with-opus --with-rtmpdump --with-schroedinger --with-speex --with-theora --with-tools</code></p>
+<p><code>$ brew install ffmpeg --with-fdk-aac --with-sdl2 --with-freetype --with-frei0r --with-libass --with-libvorbis --with-libvpx --with-opencore-amr --with-openjpeg --with-opus --with-rtmpdump --with-speex --with-theora --with-tools</code></p>
 <h3 id="freebsd-1">FreeBSD</h3>
 <p>On FreeBSD installing FFmpeg is as simple as executing the following:</p>
 <p><code># pkg install ffmpeg</code></p>
@@ -170,7 +170,7 @@ caused to your system.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Emzi0767/DSharpPlus/blob/linux/build-scripts/docs/articles/voice/setup.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Emzi0767/DSharpPlus/blob/master/docs/articles/voice/setup.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
