@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class InteractivityExtension
    ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
+    <meta property="docfx:rel" content="../">
     
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -57,6 +57,14 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -98,7 +106,8 @@
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_CollectReactionsAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.CollectReactionsAsync*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityExtension_CollectReactionsAsync_DiscordMessage_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.CollectReactionsAsync(DiscordMessage,System.Nullable{System.TimeSpan})">CollectReactionsAsync(DiscordMessage, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Collects all reactions on a message</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -117,12 +126,14 @@
       <tr>
         <td><span class="xref">DiscordMessage</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>Message to check</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td></td>
+        <td><p>Timeout override</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -145,7 +156,8 @@
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_CreatePollAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.CreatePollAsync*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityExtension_CreatePollAsync_DiscordMessage_System_Collections_Generic_IEnumerable_DiscordEmoji__System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.CreatePollAsync(DiscordMessage,System.Collections.Generic.IEnumerable{DiscordEmoji},System.Nullable{System.TimeSpan})">CreatePollAsync(DiscordMessage, IEnumerable&lt;DiscordEmoji&gt;, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a poll</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -164,17 +176,20 @@
       <tr>
         <td><span class="xref">DiscordMessage</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>Message poll belongs to</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">DiscordEmoji</span>&gt;</td>
         <td><span class="parametername">emojis</span></td>
-        <td></td>
+        <td><p>Emojis to poll</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td></td>
+        <td><p>Timeout override</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -197,7 +212,8 @@
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_DoPagination_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.DoPagination*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityExtension_DoPagination_DiscordEmoji_DiscordMessage_DSharpPlus_Interactivity_PaginatedMessage_CancellationTokenSource_DSharpPlus_Interactivity_PaginationEmojis_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.DoPagination(DiscordEmoji,DiscordMessage,DSharpPlus.Interactivity.PaginatedMessage,CancellationTokenSource,DSharpPlus.Interactivity.PaginationEmojis)">DoPagination(DiscordEmoji, DiscordMessage, PaginatedMessage, CancellationTokenSource, PaginationEmojis)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Does pagination (for custom handling)</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -216,27 +232,32 @@
       <tr>
         <td><span class="xref">DiscordEmoji</span></td>
         <td><span class="parametername">emoji</span></td>
-        <td></td>
+        <td><p>Emoji that was received</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">DiscordMessage</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>Message reaction belongs to</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="DSharpPlus.Interactivity.PaginatedMessage.html">PaginatedMessage</a></td>
         <td><span class="parametername">paginatedmessage</span></td>
-        <td></td>
+        <td><p>Paginated message</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">CancellationTokenSource</span></td>
         <td><span class="parametername">canceltoken</span></td>
-        <td></td>
+        <td><p>Cancellation token source</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="DSharpPlus.Interactivity.PaginationEmojis.html">PaginationEmojis</a></td>
         <td><span class="parametername">emojis</span></td>
-        <td></td>
+        <td><p>Pagination emoji collection</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -259,7 +280,8 @@
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePagesInEmbeds_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePagesInEmbeds*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePagesInEmbeds_System_String_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePagesInEmbeds(System.String)">GeneratePagesInEmbeds(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates pages in embeds from a long input string</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -278,7 +300,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">input</span></td>
-        <td></td>
+        <td><p>Input string</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -301,7 +324,8 @@
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePagesInStrings_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePagesInStrings*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePagesInStrings_System_String_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePagesInStrings(System.String)">GeneratePagesInStrings(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates pages in strings from a long input string</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -320,7 +344,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">input</span></td>
-        <td></td>
+        <td><p>Input string</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -343,7 +368,8 @@
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePaginationReactions_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePaginationReactions*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePaginationReactions_DiscordMessage_DSharpPlus_Interactivity_PaginationEmojis_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePaginationReactions(DiscordMessage,DSharpPlus.Interactivity.PaginationEmojis)">GeneratePaginationReactions(DiscordMessage, PaginationEmojis)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates pagination reactions</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -362,12 +388,14 @@
       <tr>
         <td><span class="xref">DiscordMessage</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>Message to attach reactions to</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="DSharpPlus.Interactivity.PaginationEmojis.html">PaginationEmojis</a></td>
         <td><span class="parametername">emojis</span></td>
-        <td></td>
+        <td><p>Emojis to attach</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -390,7 +418,8 @@
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_SendPaginatedMessage_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessage*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityExtension_SendPaginatedMessage_DiscordChannel_DiscordUser_System_Collections_Generic_IEnumerable_DSharpPlus_Interactivity_Page__System_Nullable_System_TimeSpan__System_Nullable_DSharpPlus_Interactivity_TimeoutBehaviour__DSharpPlus_Interactivity_PaginationEmojis_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessage(DiscordChannel,DiscordUser,System.Collections.Generic.IEnumerable{DSharpPlus.Interactivity.Page},System.Nullable{System.TimeSpan},System.Nullable{DSharpPlus.Interactivity.TimeoutBehaviour},DSharpPlus.Interactivity.PaginationEmojis)">SendPaginatedMessage(DiscordChannel, DiscordUser, IEnumerable&lt;Page&gt;, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeoutBehaviour&gt;, PaginationEmojis)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sends a paginated message</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -409,32 +438,38 @@
       <tr>
         <td><span class="xref">DiscordChannel</span></td>
         <td><span class="parametername">channel</span></td>
-        <td></td>
+        <td><p>Channel to send message to</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">DiscordUser</span></td>
         <td><span class="parametername">user</span></td>
-        <td></td>
+        <td><p>User that may interact with this paginated message</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.Page.html">Page</a>&gt;</td>
         <td><span class="parametername">message_pages</span></td>
-        <td></td>
+        <td><p>Pages for this message</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td></td>
+        <td><p>Timeout override</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.TimeoutBehaviour.html">TimeoutBehaviour</a>&gt;</td>
         <td><span class="parametername">timeoutbehaviouroverride</span></td>
-        <td></td>
+        <td><p>Timeout behaviour override</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="DSharpPlus.Interactivity.PaginationEmojis.html">PaginationEmojis</a></td>
         <td><span class="parametername">emojis</span></td>
-        <td></td>
+        <td><p>Pagination emoji override</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -486,7 +521,8 @@
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForMessageAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForMessageAsync*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForMessageAsync_System_Func_DiscordMessage_System_Boolean__System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForMessageAsync(System.Func{DiscordMessage,System.Boolean},System.Nullable{System.TimeSpan})">WaitForMessageAsync(Func&lt;DiscordMessage, Boolean&gt;, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Waits for a message to be received</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -505,12 +541,14 @@
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">DiscordMessage</span>, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td></td>
+        <td><p>Expected predicate</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td></td>
+        <td><p>Timeout override</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -533,7 +571,8 @@
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForMessageReactionAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForMessageReactionAsync*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForMessageReactionAsync_DiscordMessage_DiscordUser_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForMessageReactionAsync(DiscordMessage,DiscordUser,System.Nullable{System.TimeSpan})">WaitForMessageReactionAsync(DiscordMessage, DiscordUser, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Wait for any reaction on a specific message</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -552,17 +591,20 @@
       <tr>
         <td><span class="xref">DiscordMessage</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>Message to check</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">DiscordUser</span></td>
         <td><span class="parametername">user</span></td>
-        <td></td>
+        <td><p>(optional) User override</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td></td>
+        <td><p>Timeout override</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -585,7 +627,8 @@
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForMessageReactionAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForMessageReactionAsync*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForMessageReactionAsync_System_Func_DiscordEmoji_System_Boolean__DiscordMessage_DiscordUser_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForMessageReactionAsync(System.Func{DiscordEmoji,System.Boolean},DiscordMessage,DiscordUser,System.Nullable{System.TimeSpan})">WaitForMessageReactionAsync(Func&lt;DiscordEmoji, Boolean&gt;, DiscordMessage, DiscordUser, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Wait for a reaction on a specific message by a specific user</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -604,22 +647,26 @@
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">DiscordEmoji</span>, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td></td>
+        <td><p>Expected predicate</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">DiscordMessage</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>Message reaction has to be placed on</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">DiscordUser</span></td>
         <td><span class="parametername">user</span></td>
-        <td></td>
+        <td><p>User reaction was sent by</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td></td>
+        <td><p>Timeout override</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -642,7 +689,8 @@
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForReactionAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForReactionAsync*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForReactionAsync_System_Func_DiscordEmoji_System_Boolean__DiscordUser_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForReactionAsync(System.Func{DiscordEmoji,System.Boolean},DiscordUser,System.Nullable{System.TimeSpan})">WaitForReactionAsync(Func&lt;DiscordEmoji, Boolean&gt;, DiscordUser, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Wait for a reaction by a specific user to be received</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -661,17 +709,20 @@
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">DiscordEmoji</span>, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td></td>
+        <td><p>Expected predicate</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">DiscordUser</span></td>
         <td><span class="parametername">user</span></td>
-        <td></td>
+        <td><p>User that sends the reaction</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td></td>
+        <td><p>Timeout override</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -694,7 +745,8 @@
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForReactionAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForReactionAsync*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForReactionAsync_System_Func_DiscordEmoji_System_Boolean__System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForReactionAsync(System.Func{DiscordEmoji,System.Boolean},System.Nullable{System.TimeSpan})">WaitForReactionAsync(Func&lt;DiscordEmoji, Boolean&gt;, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Waits for a reaction to be received</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -713,12 +765,14 @@
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">DiscordEmoji</span>, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td></td>
+        <td><p>Expected predicate</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td></td>
+        <td><p>TImeout override</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -741,7 +795,8 @@
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForTypingChannelAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForTypingChannelAsync*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForTypingChannelAsync_DiscordUser_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForTypingChannelAsync(DiscordUser,System.Nullable{System.TimeSpan})">WaitForTypingChannelAsync(DiscordUser, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Waits for a user to type in any channel</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -760,12 +815,14 @@
       <tr>
         <td><span class="xref">DiscordUser</span></td>
         <td><span class="parametername">user</span></td>
-        <td></td>
+        <td><p>User to check</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td></td>
+        <td><p>Timeout override</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -788,7 +845,8 @@
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForTypingUserAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForTypingUserAsync*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForTypingUserAsync_DiscordChannel_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForTypingUserAsync(DiscordChannel,System.Nullable{System.TimeSpan})">WaitForTypingUserAsync(DiscordChannel, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Waits for any user to start typing</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -807,12 +865,14 @@
       <tr>
         <td><span class="xref">DiscordChannel</span></td>
         <td><span class="parametername">channel</span></td>
-        <td></td>
+        <td><p>Channel to check</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td></td>
+        <td><p>Timeout override</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -831,6 +891,7 @@
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
           
@@ -855,7 +916,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017 DSharpPlus development team
+            © 2017-2019 DSharpPlus development team
             
           </div>
         </div>

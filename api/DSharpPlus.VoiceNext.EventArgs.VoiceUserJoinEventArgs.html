@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class BaseModule
+    <title>Class VoiceUserJoinEventArgs
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class BaseModule
+    <meta name="title" content="Class VoiceUserJoinEventArgs
    ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
+    <meta property="docfx:rel" content="../">
     
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -57,6 +57,14 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -67,40 +75,37 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="DSharpPlus.BaseModule">
+            <article class="content wrap" id="_content" data-uid="DSharpPlus.VoiceNext.EventArgs.VoiceUserJoinEventArgs">
   
   
-  <h1 id="DSharpPlus_BaseModule" data-uid="DSharpPlus.BaseModule" class="text-break">Class BaseModule
+  <h1 id="DSharpPlus_VoiceNext_EventArgs_VoiceUserJoinEventArgs" data-uid="DSharpPlus.VoiceNext.EventArgs.VoiceUserJoinEventArgs" class="text-break">Class VoiceUserJoinEventArgs
   </h1>
-  <div class="markdown level0 summary"><p>Represents base for all DSharpPlus modules. To implement your own module, extend this class.</p>
+  <div class="markdown level0 summary"><p>Arguments for <a class="xref" href="DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_UserJoined">UserJoined</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">BaseModule</span></div>
+    <div class="level1"><span class="xref">VoiceUserJoinEventArgs</span></div>
   </div>
-      <div class="level2"><a class="xref" href="DSharpPlus.CommandsNext.CommandsNextModule.html">CommandsNextModule</a></div>
-      <div class="level2"><a class="xref" href="DSharpPlus.Interactivity.InteractivityModule.html">InteractivityModule</a></div>
-      <div class="level2"><a class="xref" href="DSharpPlus.VoiceNext.VoiceNextClient.html">VoiceNextClient</a></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="DSharpPlus.html">DSharpPlus</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DSharpPlus.VoiceNext.EventArgs.html">DSharpPlus.VoiceNext.EventArgs</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="DSharpPlus_BaseModule_syntax">Syntax</h5>
+  <h5 id="DSharpPlus_VoiceNext_EventArgs_VoiceUserJoinEventArgs_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class BaseModule</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class VoiceUserJoinEventArgs : DiscordEventArgs</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   
   
-  <a id="DSharpPlus_BaseModule_Client_" data-uid="DSharpPlus.BaseModule.Client*"></a>
-  <h4 id="DSharpPlus_BaseModule_Client" data-uid="DSharpPlus.BaseModule.Client">Client</h4>
-  <div class="markdown level1 summary"><p>Gets the instance of <a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a> this module is attached to.</p>
+  <a id="DSharpPlus_VoiceNext_EventArgs_VoiceUserJoinEventArgs_SSRC_" data-uid="DSharpPlus.VoiceNext.EventArgs.VoiceUserJoinEventArgs.SSRC*"></a>
+  <h4 id="DSharpPlus_VoiceNext_EventArgs_VoiceUserJoinEventArgs_SSRC" data-uid="DSharpPlus.VoiceNext.EventArgs.VoiceUserJoinEventArgs.SSRC">SSRC</h4>
+  <div class="markdown level1 summary"><p>Gets the SSRC of the user who joined.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordClient Client { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public uint SSRC { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -112,42 +117,38 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
   
   
-  <a id="DSharpPlus_BaseModule_Setup_" data-uid="DSharpPlus.BaseModule.Setup*"></a>
-  <h4 id="DSharpPlus_BaseModule_Setup_DSharpPlus_DiscordClient_" data-uid="DSharpPlus.BaseModule.Setup(DSharpPlus.DiscordClient)">Setup(DiscordClient)</h4>
-  <div class="markdown level1 summary"><p>Initializes this module for given <a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a> instance.</p>
+  <a id="DSharpPlus_VoiceNext_EventArgs_VoiceUserJoinEventArgs_User_" data-uid="DSharpPlus.VoiceNext.EventArgs.VoiceUserJoinEventArgs.User*"></a>
+  <h4 id="DSharpPlus_VoiceNext_EventArgs_VoiceUserJoinEventArgs_User" data-uid="DSharpPlus.VoiceNext.EventArgs.VoiceUserJoinEventArgs.User">User</h4>
+  <div class="markdown level1 summary"><p>Gets the user who left.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void Setup(DiscordClient client)</code></pre>
+    <pre><code class="lang-csharp hljs">public DiscordUser User { get; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a></td>
-        <td><span class="parametername">client</span></td>
-        <td><p>Discord client to initialize for.</p>
-</td>
+        <td><span class="xref">DiscordUser</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
           
@@ -172,7 +173,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017 DSharpPlus development team
+            © 2017-2019 DSharpPlus development team
             
           </div>
         </div>

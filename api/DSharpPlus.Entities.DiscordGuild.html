@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordGuild
    ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
+    <meta property="docfx:rel" content="../">
     
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -57,6 +57,14 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -672,6 +680,32 @@
   </table>
   
   
+  <a id="DSharpPlus_Entities_DiscordGuild_Permissions_" data-uid="DSharpPlus.Entities.DiscordGuild.Permissions*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_Permissions" data-uid="DSharpPlus.Entities.DiscordGuild.Permissions">Permissions</h4>
+  <div class="markdown level1 summary"><p>Gets permissions for the user in the guild (does not include channel overrides)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Permissions? Permissions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DSharpPlus.Permissions.html">Permissions</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordGuild_Roles_" data-uid="DSharpPlus.Entities.DiscordGuild.Roles*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_Roles" data-uid="DSharpPlus.Entities.DiscordGuild.Roles">Roles</h4>
   <div class="markdown level1 summary"><p>Gets a collection of this guild&apos;s roles.</p>
@@ -1114,13 +1148,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_CreateChannelAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateChannelAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_CreateChannelAsync_System_String_DSharpPlus_ChannelType_DSharpPlus_Entities_DiscordChannel_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Collections_Generic_IEnumerable_DSharpPlus_Entities_DiscordOverwriteBuilder__System_Nullable_System_Boolean__System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateChannelAsync(System.String,DSharpPlus.ChannelType,DSharpPlus.Entities.DiscordChannel,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{DSharpPlus.Entities.DiscordOverwriteBuilder},System.Nullable{System.Boolean},System.String)">CreateChannelAsync(String, ChannelType, DiscordChannel, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, IEnumerable&lt;DiscordOverwriteBuilder&gt;, Nullable&lt;Boolean&gt;, String)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_CreateChannelAsync_System_String_DSharpPlus_ChannelType_DSharpPlus_Entities_DiscordChannel_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Collections_Generic_IEnumerable_DSharpPlus_Entities_DiscordOverwriteBuilder__System_Nullable_System_Boolean__DSharpPlus_Entities_Optional_System_Nullable_System_Int32___System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateChannelAsync(System.String,DSharpPlus.ChannelType,DSharpPlus.Entities.DiscordChannel,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{DSharpPlus.Entities.DiscordOverwriteBuilder},System.Nullable{System.Boolean},DSharpPlus.Entities.Optional{System.Nullable{System.Int32}},System.String)">CreateChannelAsync(String, ChannelType, DiscordChannel, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, IEnumerable&lt;DiscordOverwriteBuilder&gt;, Nullable&lt;Boolean&gt;, Optional&lt;Nullable&lt;Int32&gt;&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new channel in this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordChannel&gt; CreateChannelAsync(string name, ChannelType type, DiscordChannel parent = null, int? bitrate = default(int? ), int? user_limit = default(int? ), IEnumerable&lt;DiscordOverwriteBuilder&gt; overwrites = null, bool? nsfw = default(bool? ), string reason = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordChannel&gt; CreateChannelAsync(string name, ChannelType type, DiscordChannel parent = null, int? bitrate = default(int? ), int? userLimit = default(int? ), IEnumerable&lt;DiscordOverwriteBuilder&gt; overwrites = null, bool? nsfw = default(bool? ), Optional&lt;int? &gt; perUserRateLimit = default(Optional&lt;int? &gt;), string reason = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1158,7 +1192,7 @@
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td><span class="parametername">user_limit</span></td>
+        <td><span class="parametername">userLimit</span></td>
         <td><p>Maximum number of users in the channel. Applies to voice only.</p>
 </td>
       </tr>
@@ -1172,6 +1206,12 @@
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">nsfw</span></td>
         <td><p>Whether the channel is to be flagged as not safe for work. Applies to text only.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.Optional-1.html">Optional</a>&lt;<span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;&gt;</td>
+        <td><span class="parametername">perUserRateLimit</span></td>
+        <td><p>Slow mode timeout for users.</p>
 </td>
       </tr>
       <tr>
@@ -1396,13 +1436,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_CreateTextChannelAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateTextChannelAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_CreateTextChannelAsync_System_String_DSharpPlus_Entities_DiscordChannel_System_Collections_Generic_IEnumerable_DSharpPlus_Entities_DiscordOverwriteBuilder__System_Nullable_System_Boolean__System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateTextChannelAsync(System.String,DSharpPlus.Entities.DiscordChannel,System.Collections.Generic.IEnumerable{DSharpPlus.Entities.DiscordOverwriteBuilder},System.Nullable{System.Boolean},System.String)">CreateTextChannelAsync(String, DiscordChannel, IEnumerable&lt;DiscordOverwriteBuilder&gt;, Nullable&lt;Boolean&gt;, String)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_CreateTextChannelAsync_System_String_DSharpPlus_Entities_DiscordChannel_System_Collections_Generic_IEnumerable_DSharpPlus_Entities_DiscordOverwriteBuilder__System_Nullable_System_Boolean__DSharpPlus_Entities_Optional_System_Nullable_System_Int32___System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateTextChannelAsync(System.String,DSharpPlus.Entities.DiscordChannel,System.Collections.Generic.IEnumerable{DSharpPlus.Entities.DiscordOverwriteBuilder},System.Nullable{System.Boolean},DSharpPlus.Entities.Optional{System.Nullable{System.Int32}},System.String)">CreateTextChannelAsync(String, DiscordChannel, IEnumerable&lt;DiscordOverwriteBuilder&gt;, Nullable&lt;Boolean&gt;, Optional&lt;Nullable&lt;Int32&gt;&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new text channel in this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordChannel&gt; CreateTextChannelAsync(string name, DiscordChannel parent = null, IEnumerable&lt;DiscordOverwriteBuilder&gt; overwrites = null, bool? nsfw = default(bool? ), string reason = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordChannel&gt; CreateTextChannelAsync(string name, DiscordChannel parent = null, IEnumerable&lt;DiscordOverwriteBuilder&gt; overwrites = null, bool? nsfw = default(bool? ), Optional&lt;int? &gt; perUserRateLimit = default(Optional&lt;int? &gt;), string reason = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1436,6 +1476,12 @@
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">nsfw</span></td>
         <td><p>Whether the channel is to be flagged as not safe for work.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.Optional-1.html">Optional</a>&lt;<span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;&gt;</td>
+        <td><span class="parametername">perUserRateLimit</span></td>
+        <td><p>Slow mode timeout for users.</p>
 </td>
       </tr>
       <tr>
@@ -2921,6 +2967,7 @@
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
           
@@ -2945,7 +2992,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017 DSharpPlus development team
+            © 2017-2019 DSharpPlus development team
             
           </div>
         </div>
