@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordApplication
    ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -87,10 +87,17 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="DSharpPlus.Entities.SnowflakeObject.html">SnowflakeObject</a></div>
-    <div class="level2"><span class="xref">DiscordApplication</span></div>
+    <div class="level2"><a class="xref" href="DSharpPlus.Entities.DiscordMessageApplication.html">DiscordMessageApplication</a></div>
+    <div class="level3"><span class="xref">DiscordApplication</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DSharpPlus.Entities.DiscordMessageApplication.html#DSharpPlus_Entities_DiscordMessageApplication_Description">DiscordMessageApplication.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="DSharpPlus.Entities.DiscordMessageApplication.html#DSharpPlus_Entities_DiscordMessageApplication_Name">DiscordMessageApplication.Name</a>
+    </div>
     <div>
       <a class="xref" href="DSharpPlus.Entities.SnowflakeObject.html#DSharpPlus_Entities_SnowflakeObject_Id">SnowflakeObject.Id</a>
     </div>
@@ -102,10 +109,36 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="DSharpPlus_Entities_DiscordApplication_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class DiscordApplication : SnowflakeObject, IEquatable&lt;DiscordApplication&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class DiscordApplication : DiscordMessageApplication, IEquatable&lt;DiscordApplication&gt;</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordApplication_CoverImageHash_" data-uid="DSharpPlus.Entities.DiscordApplication.CoverImageHash*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordApplication_CoverImageHash" data-uid="DSharpPlus.Entities.DiscordApplication.CoverImageHash">CoverImageHash</h4>
+  <div class="markdown level1 summary"><p>Gets the hash of the application&apos;s cover image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CoverImageHash { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordApplication_CoverImageUrl_" data-uid="DSharpPlus.Entities.DiscordApplication.CoverImageUrl*"></a>
@@ -115,7 +148,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CoverImageUrl { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override string CoverImageUrl { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -132,32 +165,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="DSharpPlus_Entities_DiscordApplication_Description_" data-uid="DSharpPlus.Entities.DiscordApplication.Description*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordApplication_Description" data-uid="DSharpPlus.Entities.DiscordApplication.Description">Description</h4>
-  <div class="markdown level1 summary"><p>Gets the application&apos;s description.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Description { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DSharpPlus.Entities.DiscordMessageApplication.html#DSharpPlus_Entities_DiscordMessageApplication_CoverImageUrl">DiscordMessageApplication.CoverImageUrl</a></div>
   
   
   <a id="DSharpPlus_Entities_DiscordApplication_Flags_" data-uid="DSharpPlus.Entities.DiscordApplication.Flags*"></a>
@@ -193,7 +202,35 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Icon { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override string Icon { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DSharpPlus.Entities.DiscordMessageApplication.html#DSharpPlus_Entities_DiscordMessageApplication_Icon">DiscordMessageApplication.Icon</a></div>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordApplication_IconHash_" data-uid="DSharpPlus.Entities.DiscordApplication.IconHash*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordApplication_IconHash" data-uid="DSharpPlus.Entities.DiscordApplication.IconHash">IconHash</h4>
+  <div class="markdown level1 summary"><p>Gets the application&apos;s icon hash.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IconHash { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -238,14 +275,14 @@
   </table>
   
   
-  <a id="DSharpPlus_Entities_DiscordApplication_Name_" data-uid="DSharpPlus.Entities.DiscordApplication.Name*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordApplication_Name" data-uid="DSharpPlus.Entities.DiscordApplication.Name">Name</h4>
-  <div class="markdown level1 summary"><p>Gets the application&apos;s name.</p>
+  <a id="DSharpPlus_Entities_DiscordApplication_Owners_" data-uid="DSharpPlus.Entities.DiscordApplication.Owners*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordApplication_Owners" data-uid="DSharpPlus.Entities.DiscordApplication.Owners">Owners</h4>
+  <div class="markdown level1 summary"><p>Gets the application&apos;s owners.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;DiscordUser&gt; Owners { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -257,33 +294,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="DSharpPlus_Entities_DiscordApplication_Owner_" data-uid="DSharpPlus.Entities.DiscordApplication.Owner*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordApplication_Owner" data-uid="DSharpPlus.Entities.DiscordApplication.Owner">Owner</h4>
-  <div class="markdown level1 summary"><p>Gets the application&apos;s owner.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordUser Owner { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Entities.DiscordUser.html">DiscordUser</a></td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordUser.html">DiscordUser</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -336,6 +347,58 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordApplication_Summary_" data-uid="DSharpPlus.Entities.DiscordApplication.Summary*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordApplication_Summary" data-uid="DSharpPlus.Entities.DiscordApplication.Summary">Summary</h4>
+  <div class="markdown level1 summary"><p>Gets the application&apos;s summary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Summary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordApplication_Team_" data-uid="DSharpPlus.Entities.DiscordApplication.Team*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordApplication_Team" data-uid="DSharpPlus.Entities.DiscordApplication.Team">Team</h4>
+  <div class="markdown level1 summary"><p>Gets the team which owns this application.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordTeam Team { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordTeam.html">DiscordTeam</a></td>
         <td></td>
       </tr>
     </tbody>

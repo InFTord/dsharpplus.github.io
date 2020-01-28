@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class LavalinkNodeConnection
    ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -150,6 +150,32 @@
   </table>
   
   
+  <a id="DSharpPlus_Lavalink_LavalinkNodeConnection_Rest_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.Rest*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkNodeConnection_Rest" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.Rest">Rest</h4>
+  <div class="markdown level1 summary"><p>Gets the REST client for this Lavalink connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LavalinkRest Rest { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Lavalink.LavalinkRest.html">LavalinkRest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Lavalink_LavalinkNodeConnection_Statistics_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.Statistics*"></a>
   <h4 id="DSharpPlus_Lavalink_LavalinkNodeConnection_Statistics" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.Statistics">Statistics</h4>
   <div class="markdown level1 summary"><p>Gets the current resource usage statistics.</p>
@@ -262,141 +288,6 @@
       <tr>
         <td><a class="xref" href="DSharpPlus.Lavalink.LavalinkGuildConnection.html">LavalinkGuildConnection</a></td>
         <td><p>Channel connection, which allows for playback control.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="DSharpPlus_Lavalink_LavalinkNodeConnection_GetTracksAsync_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.GetTracksAsync*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkNodeConnection_GetTracksAsync_FileInfo_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.GetTracksAsync(FileInfo)">GetTracksAsync(FileInfo)</h4>
-  <div class="markdown level1 summary"><p>Loads tracks from a local file.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;LavalinkLoadResult&gt; GetTracksAsync(FileInfo file)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">FileInfo</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>File to load tracks from.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkLoadResult.html">LavalinkLoadResult</a>&gt;</td>
-        <td><p>A collection of tracks from the file.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="DSharpPlus_Lavalink_LavalinkNodeConnection_GetTracksAsync_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.GetTracksAsync*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkNodeConnection_GetTracksAsync_System_String_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.GetTracksAsync(System.String)">GetTracksAsync(String)</h4>
-  <div class="markdown level1 summary"><p>Searches YouTube for specified terms.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;LavalinkLoadResult&gt; GetTracksAsync(string searchQuery)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">searchQuery</span></td>
-        <td><p>What to search for.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkLoadResult.html">LavalinkLoadResult</a>&gt;</td>
-        <td><p>A collection of tracks matching the criteria.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="DSharpPlus_Lavalink_LavalinkNodeConnection_GetTracksAsync_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.GetTracksAsync*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkNodeConnection_GetTracksAsync_Uri_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.GetTracksAsync(Uri)">GetTracksAsync(Uri)</h4>
-  <div class="markdown level1 summary"><p>Loads tracks from specified URL.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;LavalinkLoadResult&gt; GetTracksAsync(Uri uri)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Uri</span></td>
-        <td><span class="parametername">uri</span></td>
-        <td><p>URL to load tracks from.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkLoadResult.html">LavalinkLoadResult</a>&gt;</td>
-        <td><p>A collection of tracks from the URL.</p>
 </td>
       </tr>
     </tbody>
@@ -525,6 +416,31 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">PlayerUpdateEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DSharpPlus_Lavalink_LavalinkNodeConnection_StatisticsReceived" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.StatisticsReceived">StatisticsReceived</h4>
+  <div class="markdown level1 summary"><p>Triggered when this node receives a statistics update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;StatsReceivedEventArgs&gt; StatisticsReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">StatsReceivedEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

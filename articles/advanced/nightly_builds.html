@@ -8,7 +8,7 @@
     <title>I like living on the edge - give me the freshest builds </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="I like living on the edge - give me the freshest builds ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -76,16 +76,16 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="i-like-living-on-the-edge---give-me-the-freshest-builds">I like living on the edge - give me the freshest builds</h1>
 
-<p>We offer nightly builds for DSharpPlus. They contain bufixes and new features before the NuGet releases, however they are 
+<p>We offer nightly builds for DSharpPlus. They contain bugfixes and new features before the NuGet releases, however they are 
 not guaranteed to be stable, or work at all.</p>
-<p>If you want to use them, you need to open your <strong>Package Manager Settings</strong> in Visual Studio, and add the following MyGet 
+<p>If you want to use them, you need to open your <strong>Package Manager Settings</strong> in Visual Studio, and add the following SlimGet 
 feed to the package sources:</p>
-<p><a href="https://www.myget.org/F/dsharpplus-nightly/api/v3/index.json">https://www.myget.org/F/dsharpplus-nightly/api/v3/index.json</a></p>
-<p>Then open the NuGet interface for your project, check <strong>Prerelease</strong>, and make sure the <strong>package source</strong> is set to the MyGet 
+<p><code>https://nuget.emzi0767.com/api/v3/index.json</code></p>
+<p>Then open the NuGet interface for your project, check <strong>Prerelease</strong>, and make sure the <strong>package source</strong> is set to the SlimGet 
 feed you just added.</p>
 <p>Then just select <strong>Latest prerelease</strong> version of DSharpPlus packages, and install them.</p>
 <p>You might need to restart Visual Studio for changes to take effect.</p>
-<p>If you find any problems in the MyGet versions of the packages, please follow the instructions in <a href="/articles/advanced/reporting_issues.html">Reporting issues</a> 
+<p>If you find any problems in the SlimGet versions of the packages, please follow the instructions in <a href="/articles/advanced/reporting_issues.html">Reporting issues</a> 
 article.</p>
 <h2 id="but-im-running-gnulinux-mac-os-x-or-bsd">But I&#39;m running GNU/Linux, Mac OS X, or BSD!</h2>
 <p>If you&#39;re running on a non-Windows OS, you&#39;ll have to get your hands dirty. Prepare your text editor and file browser.</p>
@@ -97,7 +97,7 @@ article.</p>
   &lt;/packageSources&gt;
 &lt;/configuration&gt;
 </code></pre><p>Inside the <code>packageSources</code> element, you will need to add the following:</p>
-<p><code>&lt;add key=&quot;DSharpPlus MyGet&quot; value=&quot;https://www.myget.org/F/dsharpplus-nightly/api/v3/index.json&quot; /&gt;</code></p>
+<p><code>&lt;add key=&quot;DSharpPlus SlimGet&quot; value=&quot;https://nuget.emzi0767.com/api/v3/index.json&quot; /&gt;</code></p>
 <p>Once that&#39;s done, save the file. If you run <code>dotnet restore</code> right now, it should be able to restore the packages without problems.</p>
 </article>
           </div>

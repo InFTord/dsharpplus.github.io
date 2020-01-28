@@ -8,7 +8,7 @@
     <title>I want to diagnose a problem I believe originates from the library, how do? </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="I want to diagnose a problem I believe originates from the library, how do? ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -76,16 +76,19 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="i-want-to-diagnose-a-problem-i-believe-originates-from-the-library-how-do">I want to diagnose a problem I believe originates from the library, how do?</h1>
 
-<p>For situations where, for whatever reason, you need to debug the library, we offer debug symbols.</p>
+<p>In the event you need to debug DSharpPlus, we offer debug symbols. They are available at the following locations:</p>
 <h2 id="symbol-sources">Symbol sources</h2>
 <p>There are 2 symbol sources available:</p>
 <ul>
 <li>Stable: <a href="http://srv.symbolsource.org/pdb/Public">http://srv.symbolsource.org/pdb/Public</a></li>
-<li>Nightly: <a href="https://www.myget.org/F/dsharpplus-nightly/symbols/">https://www.myget.org/F/dsharpplus-nightly/symbols/</a></li>
+<li>Nightly: <a href="https://nuget.emzi0767.com/api/v3/symbolstore">https://nuget.emzi0767.com/api/v3/symbolstore</a></li>
 </ul>
 <h2 id="using-the-symbols">Using the symbols</h2>
-<p>To use the debug symbols in Visual Studio, go to Tools &gt; Options &gt; Debugging &gt; Symbols, and add the URL in there.</p>
-<p>Press OK, then debug your project again, the symbols should be loaded automatically.</p>
+<p>In Visual Studio:</p>
+<ol>
+<li>Go to Tools &gt; Options &gt; Debugging and make sure &quot;Just My Code&quot; is disabled and &quot;Source Server Support&quot; is enabled.</li>
+<li>Go to Tools &gt; Options &gt; Debugging &gt; Symbols, and add the URL in there.</li>
+</ol>
 </article>
           </div>
           

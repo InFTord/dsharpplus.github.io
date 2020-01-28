@@ -8,7 +8,7 @@
     <title>Alternative WebSocket client implementations </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Alternative WebSocket client implementations ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -104,9 +104,9 @@ appropriate factory method in <a class="xref" href="../../api/DSharpPlus.Discord
 <p>The factory methods are static methods, that return an instance of <a class="xref" href="../../api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html">BaseWebSocketClient</a>, and take a <code>System.Net.IWebProxy</code> 
 as an argument. For provided implementations, they are called <code>CreateNew</code>, and are available on the implementation classes:</p>
 <ul>
-<li>WebSocket4Net: <a class="xref" href="../../api/DSharpPlus.Net.WebSocket.WebSocket4NetClient.html#DSharpPlus_Net_WebSocket_WebSocket4NetClient_CreateNew_IWebProxy_">CreateNew(IWebProxy)</a></li>
-<li>WebSocket4NetCore: <a class="xref" href="../../api/DSharpPlus.Net.WebSocket.WebSocket4NetCoreClient.html#DSharpPlus_Net_WebSocket_WebSocket4NetCoreClient_CreateNew_IWebProxy_">CreateNew(IWebProxy)</a></li>
-<li>WebSocketSharp: <a class="xref" href="../../api/DSharpPlus.Net.WebSocket.WebSocketSharpClient.html#DSharpPlus_Net_WebSocket_WebSocketSharpClient_CreateNew_IWebProxy_">CreateNew(IWebProxy)</a></li>
+<li>WebSocket4Net: @DSharpPlus.Net.WebSocket.WebSocket4NetClient.CreateNew(IWebProxy)</li>
+<li>WebSocket4NetCore: @DSharpPlus.Net.WebSocket.WebSocket4NetCoreClient.CreateNew(IWebProxy)</li>
+<li>WebSocketSharp: @DSharpPlus.Net.WebSocket.WebSocketSharpClient.CreateNew(IWebProxy)</li>
 </ul>
 <p>In order to use a specific implementation, you pass selected factory method to the aformentioned <code>WebSocketClientFactory</code> property.</p>
 <p>For example, for WS4Net client, you need to set it like this:</p>

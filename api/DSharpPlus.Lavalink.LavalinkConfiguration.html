@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class LavalinkConfiguration
    ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -142,7 +142,8 @@
   
   <a id="DSharpPlus_Lavalink_LavalinkConfiguration_Password_" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.Password*"></a>
   <h4 id="DSharpPlus_Lavalink_LavalinkConfiguration_Password" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.Password">Password</h4>
-  <div class="markdown level1 summary"><p>Sets the password for Lavalink connection.</p>
+  <div class="markdown level1 summary"><p>Sets the password for the Lavalink connection.
+<p>Defaults to &quot;youshallnotpass&quot;.</p></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -168,7 +169,8 @@
   
   <a id="DSharpPlus_Lavalink_LavalinkConfiguration_RestEndpoint_" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.RestEndpoint*"></a>
   <h4 id="DSharpPlus_Lavalink_LavalinkConfiguration_RestEndpoint" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.RestEndpoint">RestEndpoint</h4>
-  <div class="markdown level1 summary"><p>Sets the endpoint for Lavalink REST.</p>
+  <div class="markdown level1 summary"><p>Sets the endpoint for Lavalink REST.
+<p>Defaults to 127.0.0.1 on port 2333.</p></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -192,9 +194,64 @@
   </table>
   
   
+  <a id="DSharpPlus_Lavalink_LavalinkConfiguration_ResumeKey_" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.ResumeKey*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkConfiguration_ResumeKey" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.ResumeKey">ResumeKey</h4>
+  <div class="markdown level1 summary"><p>Sets the resume key for the Lavalink connection.
+<p>This will allow existing voice sessions to continue for a certain time after the client is disconnected.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ResumeKey { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Lavalink_LavalinkConfiguration_ResumeTimeout_" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.ResumeTimeout*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkConfiguration_ResumeTimeout" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.ResumeTimeout">ResumeTimeout</h4>
+  <div class="markdown level1 summary"><p>Sets the time in seconds when all voice sessions are closed after the client disconnects.
+<p>Defaults to 60 seconds.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ResumeTimeout { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Lavalink_LavalinkConfiguration_SocketEndpoint_" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.SocketEndpoint*"></a>
   <h4 id="DSharpPlus_Lavalink_LavalinkConfiguration_SocketEndpoint" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.SocketEndpoint">SocketEndpoint</h4>
-  <div class="markdown level1 summary"><p>Sets the endpoint for Lavalink Websocket connection.</p>
+  <div class="markdown level1 summary"><p>Sets the endpoint for the Lavalink Websocket connection.
+<p>Defaults to 127.0.0.1 on port 2333.</p></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

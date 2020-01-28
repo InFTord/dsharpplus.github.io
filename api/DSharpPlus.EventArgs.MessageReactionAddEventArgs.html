@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class MessageReactionAddEventArgs
    ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -134,6 +134,9 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="DSharpPlus_EventArgs_MessageReactionAddEventArgs_Channel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This will be <code>null</code> for an uncached channel, which will usually happen for when this event triggers on
+DM channels in which no prior messages were received or sent.</p></div>
   
   
   <a id="DSharpPlus_EventArgs_MessageReactionAddEventArgs_Emoji_" data-uid="DSharpPlus.EventArgs.MessageReactionAddEventArgs.Emoji*"></a>
@@ -156,6 +159,32 @@
     <tbody>
       <tr>
         <td><span class="xref">DiscordEmoji</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_EventArgs_MessageReactionAddEventArgs_Guild_" data-uid="DSharpPlus.EventArgs.MessageReactionAddEventArgs.Guild*"></a>
+  <h4 id="DSharpPlus_EventArgs_MessageReactionAddEventArgs_Guild" data-uid="DSharpPlus.EventArgs.MessageReactionAddEventArgs.Guild">Guild</h4>
+  <div class="markdown level1 summary"><p>Gets the guild in which the reaction was added.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordGuild Guild { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DiscordGuild</span></td>
         <td></td>
       </tr>
     </tbody>

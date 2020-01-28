@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class InteractivityExtension
    ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -80,7 +80,8 @@
   
   <h1 id="DSharpPlus_Interactivity_InteractivityExtension" data-uid="DSharpPlus.Interactivity.InteractivityExtension" class="text-break">Class InteractivityExtension
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Extension class for DSharpPlus.Interactivity</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -104,14 +105,77 @@
   </h3>
   
   
+  <a id="DSharpPlus_Interactivity_InteractivityExtension_CollectEventArgsAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.CollectEventArgsAsync*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_CollectEventArgsAsync__1_System_Func___0_System_Boolean__System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.CollectEventArgsAsync``1(System.Func{``0,System.Boolean},System.Nullable{System.TimeSpan})">CollectEventArgsAsync&lt;T&gt;(Func&lt;T, Boolean&gt;, Nullable&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ReadOnlyCollection&lt;T&gt;&gt; CollectEventArgsAsync&lt;T&gt;(Func&lt;T, bool&gt; predicate, TimeSpan? timeoutoverride = default(TimeSpan? ))
+    where T : AsyncEventArgs</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><span class="parametername">timeoutoverride</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">ReadOnlyCollection</span>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Interactivity_InteractivityExtension_CollectReactionsAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.CollectReactionsAsync*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityExtension_CollectReactionsAsync_DiscordMessage_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.CollectReactionsAsync(DiscordMessage,System.Nullable{System.TimeSpan})">CollectReactionsAsync(DiscordMessage, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"><p>Collects all reactions on a message</p>
+  <div class="markdown level1 summary"><p>Collects reactions on a specific message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ReactionCollectionContext&gt; CollectReactionsAsync(DiscordMessage message, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;ReadOnlyCollection&lt;Reaction&gt;&gt; CollectReactionsAsync(DiscordMessage m, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -125,14 +189,14 @@
     <tbody>
       <tr>
         <td><span class="xref">DiscordMessage</span></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>Message to check</p>
+        <td><span class="parametername">m</span></td>
+        <td><p>Message to colelct reactions on.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td><p>Timeout override</p>
+        <td><p>Override timeout period.</p>
 </td>
       </tr>
     </tbody>
@@ -147,21 +211,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.ReactionCollectionContext.html">ReactionCollectionContext</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">ReadOnlyCollection</span>&lt;<span class="xref">Reaction</span>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="DSharpPlus_Interactivity_InteractivityExtension_CreatePollAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.CreatePollAsync*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_CreatePollAsync_DiscordMessage_System_Collections_Generic_IEnumerable_DiscordEmoji__System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.CreatePollAsync(DiscordMessage,System.Collections.Generic.IEnumerable{DiscordEmoji},System.Nullable{System.TimeSpan})">CreatePollAsync(DiscordMessage, IEnumerable&lt;DiscordEmoji&gt;, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"><p>Creates a poll</p>
+  <a id="DSharpPlus_Interactivity_InteractivityExtension_DoPollAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.DoPollAsync*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_DoPollAsync_DiscordMessage_DiscordEmoji___PollBehaviour_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.DoPollAsync(DiscordMessage,DiscordEmoji[],PollBehaviour,System.Nullable{System.TimeSpan})">DoPollAsync(DiscordMessage, DiscordEmoji[], PollBehaviour, Nullable&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"><p>Makes a poll and returns poll results.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ReactionCollectionContext&gt; CreatePollAsync(DiscordMessage message, IEnumerable&lt;DiscordEmoji&gt; emojis, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;ReadOnlyCollection&lt;PollEmoji&gt;&gt; DoPollAsync(DiscordMessage m, DiscordEmoji[] emojis, PollBehaviour behaviour = null, TimeSpan? timeout = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -175,20 +239,26 @@
     <tbody>
       <tr>
         <td><span class="xref">DiscordMessage</span></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>Message poll belongs to</p>
+        <td><span class="parametername">m</span></td>
+        <td><p>Message to create poll on.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">DiscordEmoji</span>&gt;</td>
+        <td><span class="xref">DiscordEmoji</span>[]</td>
         <td><span class="parametername">emojis</span></td>
-        <td><p>Emojis to poll</p>
+        <td><p>Emojis to use for this poll.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">PollBehaviour</span></td>
+        <td><span class="parametername">behaviour</span></td>
+        <td><p>What to do when the poll ends.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
-        <td><span class="parametername">timeoutoverride</span></td>
-        <td><p>Timeout override</p>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>override timeout period.</p>
 </td>
       </tr>
     </tbody>
@@ -203,89 +273,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.ReactionCollectionContext.html">ReactionCollectionContext</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">ReadOnlyCollection</span>&lt;<span class="xref">PollEmoji</span>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="DSharpPlus_Interactivity_InteractivityExtension_DoPagination_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.DoPagination*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_DoPagination_DiscordEmoji_DiscordMessage_DSharpPlus_Interactivity_PaginatedMessage_CancellationTokenSource_DSharpPlus_Interactivity_PaginationEmojis_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.DoPagination(DiscordEmoji,DiscordMessage,DSharpPlus.Interactivity.PaginatedMessage,CancellationTokenSource,DSharpPlus.Interactivity.PaginationEmojis)">DoPagination(DiscordEmoji, DiscordMessage, PaginatedMessage, CancellationTokenSource, PaginationEmojis)</h4>
-  <div class="markdown level1 summary"><p>Does pagination (for custom handling)</p>
+  <a id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePagesInContent_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePagesInContent*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePagesInContent_System_String_DSharpPlus_Interactivity_SplitType_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePagesInContent(System.String,DSharpPlus.Interactivity.SplitType)">GeneratePagesInContent(String, SplitType)</h4>
+  <div class="markdown level1 summary"><p>Generates pages from a string, and puts them in message content.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task DoPagination(DiscordEmoji emoji, DiscordMessage message, PaginatedMessage paginatedmessage, CancellationTokenSource canceltoken, PaginationEmojis emojis)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DiscordEmoji</span></td>
-        <td><span class="parametername">emoji</span></td>
-        <td><p>Emoji that was received</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">DiscordMessage</span></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>Message reaction belongs to</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Interactivity.PaginatedMessage.html">PaginatedMessage</a></td>
-        <td><span class="parametername">paginatedmessage</span></td>
-        <td><p>Paginated message</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">CancellationTokenSource</span></td>
-        <td><span class="parametername">canceltoken</span></td>
-        <td><p>Cancellation token source</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Interactivity.PaginationEmojis.html">PaginationEmojis</a></td>
-        <td><span class="parametername">emojis</span></td>
-        <td><p>Pagination emoji collection</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePagesInEmbeds_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePagesInEmbeds*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePagesInEmbeds_System_String_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePagesInEmbeds(System.String)">GeneratePagesInEmbeds(String)</h4>
-  <div class="markdown level1 summary"><p>Generates pages in embeds from a long input string</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Page&gt; GeneratePagesInEmbeds(string input)</code></pre>
+    <pre><code class="lang-csharp hljs">public Page[] GeneratePagesInContent(string input, SplitType splittype = SplitType.Character)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -300,7 +302,13 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">input</span></td>
-        <td><p>Input string</p>
+        <td><p>Input string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Interactivity.SplitType.html">SplitType</a></td>
+        <td><span class="parametername">splittype</span></td>
+        <td><p>How to split input string.</p>
 </td>
       </tr>
     </tbody>
@@ -315,21 +323,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.Page.html">Page</a>&gt;</td>
+        <td><a class="xref" href="DSharpPlus.Interactivity.Page.html">Page</a>[]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePagesInStrings_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePagesInStrings*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePagesInStrings_System_String_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePagesInStrings(System.String)">GeneratePagesInStrings(String)</h4>
-  <div class="markdown level1 summary"><p>Generates pages in strings from a long input string</p>
+  <a id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePagesInEmbed_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePagesInEmbed*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePagesInEmbed_System_String_DSharpPlus_Interactivity_SplitType_DiscordEmbedBuilder_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePagesInEmbed(System.String,DSharpPlus.Interactivity.SplitType,DiscordEmbedBuilder)">GeneratePagesInEmbed(String, SplitType, DiscordEmbedBuilder)</h4>
+  <div class="markdown level1 summary"><p>Generates pages from a string, and puts them in message embeds.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Page&gt; GeneratePagesInStrings(string input)</code></pre>
+    <pre><code class="lang-csharp hljs">public Page[] GeneratePagesInEmbed(string input, SplitType splittype = SplitType.Character, DiscordEmbedBuilder embedbase = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -344,7 +352,19 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">input</span></td>
-        <td><p>Input string</p>
+        <td><p>Input string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Interactivity.SplitType.html">SplitType</a></td>
+        <td><span class="parametername">splittype</span></td>
+        <td><p>How to split input string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DiscordEmbedBuilder</span></td>
+        <td><span class="parametername">embedbase</span></td>
+        <td><p>Base embed for output embeds.</p>
 </td>
       </tr>
     </tbody>
@@ -359,71 +379,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.Page.html">Page</a>&gt;</td>
+        <td><a class="xref" href="DSharpPlus.Interactivity.Page.html">Page</a>[]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePaginationReactions_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePaginationReactions*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_GeneratePaginationReactions_DiscordMessage_DSharpPlus_Interactivity_PaginationEmojis_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.GeneratePaginationReactions(DiscordMessage,DSharpPlus.Interactivity.PaginationEmojis)">GeneratePaginationReactions(DiscordMessage, PaginationEmojis)</h4>
-  <div class="markdown level1 summary"><p>Generates pagination reactions</p>
+  <a id="DSharpPlus_Interactivity_InteractivityExtension_SendPaginatedMessageAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessageAsync*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_SendPaginatedMessageAsync_DiscordChannel_DiscordUser_System_Collections_Generic_IEnumerable_DSharpPlus_Interactivity_Page__DSharpPlus_Interactivity_PaginationEmojis_PaginationBehaviour_PaginationDeletion_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessageAsync(DiscordChannel,DiscordUser,System.Collections.Generic.IEnumerable{DSharpPlus.Interactivity.Page},DSharpPlus.Interactivity.PaginationEmojis,PaginationBehaviour,PaginationDeletion,System.Nullable{System.TimeSpan})">SendPaginatedMessageAsync(DiscordChannel, DiscordUser, IEnumerable&lt;Page&gt;, PaginationEmojis, PaginationBehaviour, PaginationDeletion, Nullable&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sends a paginated message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task GeneratePaginationReactions(DiscordMessage message, PaginationEmojis emojis)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DiscordMessage</span></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>Message to attach reactions to</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Interactivity.PaginationEmojis.html">PaginationEmojis</a></td>
-        <td><span class="parametername">emojis</span></td>
-        <td><p>Emojis to attach</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="DSharpPlus_Interactivity_InteractivityExtension_SendPaginatedMessage_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessage*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_SendPaginatedMessage_DiscordChannel_DiscordUser_System_Collections_Generic_IEnumerable_DSharpPlus_Interactivity_Page__System_Nullable_System_TimeSpan__System_Nullable_DSharpPlus_Interactivity_TimeoutBehaviour__DSharpPlus_Interactivity_PaginationEmojis_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessage(DiscordChannel,DiscordUser,System.Collections.Generic.IEnumerable{DSharpPlus.Interactivity.Page},System.Nullable{System.TimeSpan},System.Nullable{DSharpPlus.Interactivity.TimeoutBehaviour},DSharpPlus.Interactivity.PaginationEmojis)">SendPaginatedMessage(DiscordChannel, DiscordUser, IEnumerable&lt;Page&gt;, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeoutBehaviour&gt;, PaginationEmojis)</h4>
-  <div class="markdown level1 summary"><p>Sends a paginated message</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task SendPaginatedMessage(DiscordChannel channel, DiscordUser user, IEnumerable&lt;Page&gt; message_pages, TimeSpan? timeoutoverride = default(TimeSpan? ), TimeoutBehaviour? timeoutbehaviouroverride = default(TimeoutBehaviour? ), PaginationEmojis emojis = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task SendPaginatedMessageAsync(DiscordChannel c, DiscordUser u, IEnumerable&lt;Page&gt; pages, PaginationEmojis emojis = null, PaginationBehaviour behaviour = null, PaginationDeletion deletion = null, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -437,38 +407,44 @@
     <tbody>
       <tr>
         <td><span class="xref">DiscordChannel</span></td>
-        <td><span class="parametername">channel</span></td>
-        <td><p>Channel to send message to</p>
+        <td><span class="parametername">c</span></td>
+        <td><p>Channel to send paginated message in.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">DiscordUser</span></td>
-        <td><span class="parametername">user</span></td>
-        <td><p>User that may interact with this paginated message</p>
+        <td><span class="parametername">u</span></td>
+        <td><p>User to give control.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.Page.html">Page</a>&gt;</td>
-        <td><span class="parametername">message_pages</span></td>
-        <td><p>Pages for this message</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
-        <td><span class="parametername">timeoutoverride</span></td>
-        <td><p>Timeout override</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.TimeoutBehaviour.html">TimeoutBehaviour</a>&gt;</td>
-        <td><span class="parametername">timeoutbehaviouroverride</span></td>
-        <td><p>Timeout behaviour override</p>
+        <td><span class="parametername">pages</span></td>
+        <td><p>Pages.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="DSharpPlus.Interactivity.PaginationEmojis.html">PaginationEmojis</a></td>
         <td><span class="parametername">emojis</span></td>
-        <td><p>Pagination emoji override</p>
+        <td><p>Pagination emojis (emojis set to null get disabled).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">PaginationBehaviour</span></td>
+        <td><span class="parametername">behaviour</span></td>
+        <td><p>Pagination behaviour (when hitting max and min indices).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">PaginationDeletion</span></td>
+        <td><span class="parametername">deletion</span></td>
+        <td><p>Deletion behaviour.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><span class="parametername">timeoutoverride</span></td>
+        <td><p>Override timeout period.</p>
 </td>
       </tr>
     </tbody>
@@ -519,14 +495,122 @@
   <div><a class="xref" href="DSharpPlus.BaseExtension.html#DSharpPlus_BaseExtension_Setup_DSharpPlus_DiscordClient_">BaseExtension.Setup(DiscordClient)</a></div>
   
   
-  <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForMessageAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForMessageAsync*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForMessageAsync_System_Func_DiscordMessage_System_Boolean__System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForMessageAsync(System.Func{DiscordMessage,System.Boolean},System.Nullable{System.TimeSpan})">WaitForMessageAsync(Func&lt;DiscordMessage, Boolean&gt;, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"><p>Waits for a message to be received</p>
+  <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForCustomPaginationAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForCustomPaginationAsync*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForCustomPaginationAsync_IPaginationRequest_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForCustomPaginationAsync(IPaginationRequest)">WaitForCustomPaginationAsync(IPaginationRequest)</h4>
+  <div class="markdown level1 summary"><p>Waits for a custom pagination request to finish.
+This does NOT handle removing emojis after finishing for you.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;MessageContext&gt; WaitForMessageAsync(Func&lt;DiscordMessage, bool&gt; predicate, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task WaitForCustomPaginationAsync(IPaginationRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPaginationRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForEventArgsAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForEventArgsAsync*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForEventArgsAsync__1_System_Func___0_System_Boolean__System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForEventArgsAsync``1(System.Func{``0,System.Boolean},System.Nullable{System.TimeSpan})">WaitForEventArgsAsync&lt;T&gt;(Func&lt;T, Boolean&gt;, Nullable&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for specific event args to be received</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;InteractivityResult&lt;T&gt;&gt; WaitForEventArgsAsync&lt;T&gt;(Func&lt;T, bool&gt; predicate, TimeSpan? timeoutoverride = default(TimeSpan? ))
+    where T : AsyncEventArgs</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><span class="parametername">timeoutoverride</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.InteractivityResult-1.html">InteractivityResult</a>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForMessageAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForMessageAsync*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForMessageAsync_System_Func_DiscordMessage_System_Boolean__System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForMessageAsync(System.Func{DiscordMessage,System.Boolean},System.Nullable{System.TimeSpan})">WaitForMessageAsync(Func&lt;DiscordMessage, Boolean&gt;, Nullable&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for a specific message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;InteractivityResult&lt;DiscordMessage&gt;&gt; WaitForMessageAsync(Func&lt;DiscordMessage, bool&gt; predicate, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -541,13 +625,13 @@
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">DiscordMessage</span>, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td><p>Expected predicate</p>
+        <td><p>Predicate to match.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td><p>Timeout override</p>
+        <td><p>override timeout period.</p>
 </td>
       </tr>
     </tbody>
@@ -562,21 +646,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.MessageContext.html">MessageContext</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.InteractivityResult-1.html">InteractivityResult</a>&lt;<span class="xref">DiscordMessage</span>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForMessageReactionAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForMessageReactionAsync*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForMessageReactionAsync_DiscordMessage_DiscordUser_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForMessageReactionAsync(DiscordMessage,DiscordUser,System.Nullable{System.TimeSpan})">WaitForMessageReactionAsync(DiscordMessage, DiscordUser, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"><p>Wait for any reaction on a specific message</p>
+  <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForReactionAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForReactionAsync*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForReactionAsync_DiscordMessage_DiscordUser_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForReactionAsync(DiscordMessage,DiscordUser,System.Nullable{System.TimeSpan})">WaitForReactionAsync(DiscordMessage, DiscordUser, Nullable&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"><p>Wait for a specific reaction.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ReactionContext&gt; WaitForMessageReactionAsync(DiscordMessage message, DiscordUser user = null, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;InteractivityResult&lt;MessageReactionAddEventArgs&gt;&gt; WaitForReactionAsync(DiscordMessage message, DiscordUser user, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -591,19 +675,19 @@
       <tr>
         <td><span class="xref">DiscordMessage</span></td>
         <td><span class="parametername">message</span></td>
-        <td><p>Message to check</p>
+        <td><p>Message reaction was added to.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">DiscordUser</span></td>
         <td><span class="parametername">user</span></td>
-        <td><p>(optional) User override</p>
+        <td><p>User that made the reaction.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td><p>Timeout override</p>
+        <td><p>override timeout period.</p>
 </td>
       </tr>
     </tbody>
@@ -618,21 +702,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.ReactionContext.html">ReactionContext</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.InteractivityResult-1.html">InteractivityResult</a>&lt;<span class="xref">MessageReactionAddEventArgs</span>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForMessageReactionAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForMessageReactionAsync*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForMessageReactionAsync_System_Func_DiscordEmoji_System_Boolean__DiscordMessage_DiscordUser_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForMessageReactionAsync(System.Func{DiscordEmoji,System.Boolean},DiscordMessage,DiscordUser,System.Nullable{System.TimeSpan})">WaitForMessageReactionAsync(Func&lt;DiscordEmoji, Boolean&gt;, DiscordMessage, DiscordUser, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"><p>Wait for a reaction on a specific message by a specific user</p>
+  <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForReactionAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForReactionAsync*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForReactionAsync_System_Func_MessageReactionAddEventArgs_System_Boolean__DiscordMessage_DiscordUser_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForReactionAsync(System.Func{MessageReactionAddEventArgs,System.Boolean},DiscordMessage,DiscordUser,System.Nullable{System.TimeSpan})">WaitForReactionAsync(Func&lt;MessageReactionAddEventArgs, Boolean&gt;, DiscordMessage, DiscordUser, Nullable&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for a specific reaction.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ReactionContext&gt; WaitForMessageReactionAsync(Func&lt;DiscordEmoji, bool&gt; predicate, DiscordMessage message, DiscordUser user = null, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;InteractivityResult&lt;MessageReactionAddEventArgs&gt;&gt; WaitForReactionAsync(Func&lt;MessageReactionAddEventArgs, bool&gt; predicate, DiscordMessage message, DiscordUser user, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -645,27 +729,27 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">DiscordEmoji</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">MessageReactionAddEventArgs</span>, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td><p>Expected predicate</p>
+        <td><p>Predicate to match.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">DiscordMessage</span></td>
         <td><span class="parametername">message</span></td>
-        <td><p>Message reaction has to be placed on</p>
+        <td><p>Message reaction was added to.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">DiscordUser</span></td>
         <td><span class="parametername">user</span></td>
-        <td><p>User reaction was sent by</p>
+        <td><p>User that made the reaction.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td><p>Timeout override</p>
+        <td><p>override timeout period.</p>
 </td>
       </tr>
     </tbody>
@@ -680,7 +764,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.ReactionContext.html">ReactionContext</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.InteractivityResult-1.html">InteractivityResult</a>&lt;<span class="xref">MessageReactionAddEventArgs</span>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -688,13 +772,13 @@
   
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForReactionAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForReactionAsync*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForReactionAsync_System_Func_DiscordEmoji_System_Boolean__DiscordUser_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForReactionAsync(System.Func{DiscordEmoji,System.Boolean},DiscordUser,System.Nullable{System.TimeSpan})">WaitForReactionAsync(Func&lt;DiscordEmoji, Boolean&gt;, DiscordUser, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"><p>Wait for a reaction by a specific user to be received</p>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForReactionAsync_System_Func_MessageReactionAddEventArgs_System_Boolean__DiscordUser_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForReactionAsync(System.Func{MessageReactionAddEventArgs,System.Boolean},DiscordUser,System.Nullable{System.TimeSpan})">WaitForReactionAsync(Func&lt;MessageReactionAddEventArgs, Boolean&gt;, DiscordUser, Nullable&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for a specific reaction.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ReactionContext&gt; WaitForReactionAsync(Func&lt;DiscordEmoji, bool&gt; predicate, DiscordUser user, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;InteractivityResult&lt;MessageReactionAddEventArgs&gt;&gt; WaitForReactionAsync(Func&lt;MessageReactionAddEventArgs, bool&gt; predicate, DiscordUser user, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -707,21 +791,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">DiscordEmoji</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">MessageReactionAddEventArgs</span>, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td><p>Expected predicate</p>
+        <td><p>predicate to match.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">DiscordUser</span></td>
         <td><span class="parametername">user</span></td>
-        <td><p>User that sends the reaction</p>
+        <td><p>User that made the reaction.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td><p>Timeout override</p>
+        <td><p>Override timeout period.</p>
 </td>
       </tr>
     </tbody>
@@ -736,7 +820,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.ReactionContext.html">ReactionContext</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.InteractivityResult-1.html">InteractivityResult</a>&lt;<span class="xref">MessageReactionAddEventArgs</span>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -744,13 +828,13 @@
   
   
   <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForReactionAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForReactionAsync*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForReactionAsync_System_Func_DiscordEmoji_System_Boolean__System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForReactionAsync(System.Func{DiscordEmoji,System.Boolean},System.Nullable{System.TimeSpan})">WaitForReactionAsync(Func&lt;DiscordEmoji, Boolean&gt;, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"><p>Waits for a reaction to be received</p>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForReactionAsync_System_Func_MessageReactionAddEventArgs_System_Boolean__System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForReactionAsync(System.Func{MessageReactionAddEventArgs,System.Boolean},System.Nullable{System.TimeSpan})">WaitForReactionAsync(Func&lt;MessageReactionAddEventArgs, Boolean&gt;, Nullable&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"><p>Wait for a specific reaction.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ReactionContext&gt; WaitForReactionAsync(Func&lt;DiscordEmoji, bool&gt; predicate, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;InteractivityResult&lt;MessageReactionAddEventArgs&gt;&gt; WaitForReactionAsync(Func&lt;MessageReactionAddEventArgs, bool&gt; predicate, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -763,15 +847,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">DiscordEmoji</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">MessageReactionAddEventArgs</span>, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td><p>Expected predicate</p>
+        <td><p>Predicate to match.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td><p>TImeout override</p>
+        <td><p>override timeout period.</p>
 </td>
       </tr>
     </tbody>
@@ -786,71 +870,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.ReactionContext.html">ReactionContext</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.InteractivityResult-1.html">InteractivityResult</a>&lt;<span class="xref">MessageReactionAddEventArgs</span>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForTypingChannelAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForTypingChannelAsync*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForTypingChannelAsync_DiscordUser_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForTypingChannelAsync(DiscordUser,System.Nullable{System.TimeSpan})">WaitForTypingChannelAsync(DiscordUser, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"><p>Waits for a user to type in any channel</p>
+  <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForTypingAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForTypingAsync*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForTypingAsync_DiscordChannel_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForTypingAsync(DiscordChannel,System.Nullable{System.TimeSpan})">WaitForTypingAsync(DiscordChannel, Nullable&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for any user to start typing.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;TypingContext&gt; WaitForTypingChannelAsync(DiscordUser user, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DiscordUser</span></td>
-        <td><span class="parametername">user</span></td>
-        <td><p>User to check</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
-        <td><span class="parametername">timeoutoverride</span></td>
-        <td><p>Timeout override</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.TypingContext.html">TypingContext</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForTypingUserAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForTypingUserAsync*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForTypingUserAsync_DiscordChannel_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForTypingUserAsync(DiscordChannel,System.Nullable{System.TimeSpan})">WaitForTypingUserAsync(DiscordChannel, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"><p>Waits for any user to start typing</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;TypingContext&gt; WaitForTypingUserAsync(DiscordChannel channel, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;InteractivityResult&lt;TypingStartEventArgs&gt;&gt; WaitForTypingAsync(DiscordChannel channel, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -865,13 +899,13 @@
       <tr>
         <td><span class="xref">DiscordChannel</span></td>
         <td><span class="parametername">channel</span></td>
-        <td><p>Channel to check</p>
+        <td><p>Channel to type in.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeoutoverride</span></td>
-        <td><p>Timeout override</p>
+        <td><p>Override timeout period.</p>
 </td>
       </tr>
     </tbody>
@@ -886,7 +920,113 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.TypingContext.html">TypingContext</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.InteractivityResult-1.html">InteractivityResult</a>&lt;<span class="xref">TypingStartEventArgs</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForUserTypingAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForUserTypingAsync*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForUserTypingAsync_DiscordUser_DiscordChannel_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForUserTypingAsync(DiscordUser,DiscordChannel,System.Nullable{System.TimeSpan})">WaitForUserTypingAsync(DiscordUser, DiscordChannel, Nullable&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for a user to start typing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;InteractivityResult&lt;TypingStartEventArgs&gt;&gt; WaitForUserTypingAsync(DiscordUser user, DiscordChannel channel, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DiscordUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>User that starts typing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DiscordChannel</span></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>Channel the user is typing in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><span class="parametername">timeoutoverride</span></td>
+        <td><p>Override timeout period.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.InteractivityResult-1.html">InteractivityResult</a>&lt;<span class="xref">TypingStartEventArgs</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Interactivity_InteractivityExtension_WaitForUserTypingAsync_" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForUserTypingAsync*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityExtension_WaitForUserTypingAsync_DiscordUser_System_Nullable_System_TimeSpan__" data-uid="DSharpPlus.Interactivity.InteractivityExtension.WaitForUserTypingAsync(DiscordUser,System.Nullable{System.TimeSpan})">WaitForUserTypingAsync(DiscordUser, Nullable&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for a user to start typing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;InteractivityResult&lt;TypingStartEventArgs&gt;&gt; WaitForUserTypingAsync(DiscordUser user, TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DiscordUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>User that starts typing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><span class="parametername">timeoutoverride</span></td>
+        <td><p>Override timeout period.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.InteractivityResult-1.html">InteractivityResult</a>&lt;<span class="xref">TypingStartEventArgs</span>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>

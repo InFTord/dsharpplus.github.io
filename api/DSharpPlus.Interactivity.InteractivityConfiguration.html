@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class InteractivityConfiguration
    ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -140,15 +140,14 @@
   </h3>
   
   
-  <a id="DSharpPlus_Interactivity_InteractivityConfiguration_PaginationBehavior_" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.PaginationBehavior*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityConfiguration_PaginationBehavior" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.PaginationBehavior">PaginationBehavior</h4>
-  <div class="markdown level1 summary"><p>Sets the default pagination timeout behaviour.</p>
-<p>Defaults to <a class="xref" href="DSharpPlus.Interactivity.TimeoutBehaviour.html#DSharpPlus_Interactivity_TimeoutBehaviour_Ignore">Ignore</a>.</p>
+  <a id="DSharpPlus_Interactivity_InteractivityConfiguration_PaginationBehaviour_" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.PaginationBehaviour*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityConfiguration_PaginationBehaviour" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.PaginationBehaviour">PaginationBehaviour</h4>
+  <div class="markdown level1 summary"><p>How to handle pagination. Defaults to WrapAround.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TimeoutBehaviour PaginationBehavior { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public PaginationBehaviour PaginationBehaviour { set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -160,22 +159,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Interactivity.TimeoutBehaviour.html">TimeoutBehaviour</a></td>
+        <td><span class="xref">PaginationBehaviour</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="DSharpPlus_Interactivity_InteractivityConfiguration_PaginationTimeout_" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.PaginationTimeout*"></a>
-  <h4 id="DSharpPlus_Interactivity_InteractivityConfiguration_PaginationTimeout" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.PaginationTimeout">PaginationTimeout</h4>
-  <div class="markdown level1 summary"><p>Sets the default pagination timeout.</p>
-<p>Defaults to 2 minutes.</p>
+  <a id="DSharpPlus_Interactivity_InteractivityConfiguration_PaginationDeletion_" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.PaginationDeletion*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityConfiguration_PaginationDeletion" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.PaginationDeletion">PaginationDeletion</h4>
+  <div class="markdown level1 summary"><p>How to handle pagination deletion. Defaults to DeleteEmojis.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TimeSpan PaginationTimeout { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public PaginationDeletion PaginationDeletion { set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -187,7 +185,59 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">PaginationDeletion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Interactivity_InteractivityConfiguration_PaginationEmojis_" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.PaginationEmojis*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityConfiguration_PaginationEmojis" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.PaginationEmojis">PaginationEmojis</h4>
+  <div class="markdown level1 summary"><p>Emojis to use for pagination</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PaginationEmojis PaginationEmojis { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Interactivity.PaginationEmojis.html">PaginationEmojis</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Interactivity_InteractivityConfiguration_PollBehaviour_" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.PollBehaviour*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityConfiguration_PollBehaviour" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.PollBehaviour">PollBehaviour</h4>
+  <div class="markdown level1 summary"><p>What to do after the poll ends</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PollBehaviour PollBehaviour { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PollBehaviour</span></td>
         <td></td>
       </tr>
     </tbody>

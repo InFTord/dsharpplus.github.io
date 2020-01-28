@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class VoiceTransmitStream
    ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -355,6 +355,17 @@
   </table>
   
   
+  <a id="DSharpPlus_VoiceNext_VoiceTransmitStream_Pause_" data-uid="DSharpPlus.VoiceNext.VoiceTransmitStream.Pause*"></a>
+  <h4 id="DSharpPlus_VoiceNext_VoiceTransmitStream_Pause" data-uid="DSharpPlus.VoiceNext.VoiceTransmitStream.Pause">Pause()</h4>
+  <div class="markdown level1 summary"><p>Pauses playback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pause()</code></pre>
+  </div>
+  
+  
   <a id="DSharpPlus_VoiceNext_VoiceTransmitStream_Read_" data-uid="DSharpPlus.VoiceNext.VoiceTransmitStream.Read*"></a>
   <h4 id="DSharpPlus_VoiceNext_VoiceTransmitStream_Read_System_Byte___System_Int32_System_Int32_" data-uid="DSharpPlus.VoiceNext.VoiceTransmitStream.Read(System.Byte[],System.Int32,System.Int32)">Read(Byte[], Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Reads from the stream. Throws <span class="xref">System.InvalidOperationException</span>.</p>
@@ -407,6 +418,32 @@
         <td><span class="xref">System.Int32</span></td>
         <td><p>Number of bytes read.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_VoiceNext_VoiceTransmitStream_ResumeAsync_" data-uid="DSharpPlus.VoiceNext.VoiceTransmitStream.ResumeAsync*"></a>
+  <h4 id="DSharpPlus_VoiceNext_VoiceTransmitStream_ResumeAsync" data-uid="DSharpPlus.VoiceNext.VoiceTransmitStream.ResumeAsync">ResumeAsync()</h4>
+  <div class="markdown level1 summary"><p>Resumes playback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ResumeAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -531,6 +568,35 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>Whether the filter was uninstalled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_VoiceNext_VoiceTransmitStream_Write_" data-uid="DSharpPlus.VoiceNext.VoiceTransmitStream.Write*"></a>
+  <h4 id="DSharpPlus_VoiceNext_VoiceTransmitStream_Write_ReadOnlySpan_System_Byte__" data-uid="DSharpPlus.VoiceNext.VoiceTransmitStream.Write(ReadOnlySpan{System.Byte})">Write(ReadOnlySpan&lt;Byte&gt;)</h4>
+  <div class="markdown level1 summary"><p>Writes PCM data to the stream. The data is prepared for transmission, and enqueued.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(ReadOnlySpan&lt;byte&gt; buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ReadOnlySpan</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>PCM data buffer to send.</p>
 </td>
       </tr>
     </tbody>

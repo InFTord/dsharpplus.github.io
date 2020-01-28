@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordClient
    ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -132,7 +132,7 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="DSharpPlus_DiscordClient_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DiscordClient : BaseDiscordClient, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class DiscordClient : BaseDiscordClient, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -223,7 +223,9 @@
   
   <a id="DSharpPlus_DiscordClient_Guilds_" data-uid="DSharpPlus.DiscordClient.Guilds*"></a>
   <h4 id="DSharpPlus_DiscordClient_Guilds" data-uid="DSharpPlus.DiscordClient.Guilds">Guilds</h4>
-  <div class="markdown level1 summary"><p>List of Guilds</p>
+  <div class="markdown level1 summary"><p>Gets a dictionary of guilds that this client is in. The dictionary&apos;s key is the guild ID. Note that the
+guild objects in this dictionary will not be filled in if the specific guilds aren&apos;t available (the
+<a class="xref" href="DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_GuildAvailable">GuildAvailable</a> or <a class="xref" href="DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_GuildDownloadCompleted">GuildDownloadCompleted</a> events haven&apos;t been fired yet)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -303,12 +305,13 @@
   
   <a id="DSharpPlus_DiscordClient_PrivateChannels_" data-uid="DSharpPlus.DiscordClient.PrivateChannels*"></a>
   <h4 id="DSharpPlus_DiscordClient_PrivateChannels" data-uid="DSharpPlus.DiscordClient.PrivateChannels">PrivateChannels</h4>
-  <div class="markdown level1 summary"><p>List of DM Channels</p>
+  <div class="markdown level1 summary"><p>Gets a dictionary of DM channels that have been cached by this client. The dictionary&apos;s key is the channel
+ID.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;DiscordDmChannel&gt; PrivateChannels { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;ulong, DiscordDmChannel&gt; PrivateChannels { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -320,7 +323,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">DiscordDmChannel</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.UInt64</span>, <span class="xref">DiscordDmChannel</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -581,51 +584,6 @@
   </div>
   
   
-  <a id="DSharpPlus_DiscordClient_GetApplicationAsync_" data-uid="DSharpPlus.DiscordClient.GetApplicationAsync*"></a>
-  <h4 id="DSharpPlus_DiscordClient_GetApplicationAsync_System_UInt64_" data-uid="DSharpPlus.DiscordClient.GetApplicationAsync(System.UInt64)">GetApplicationAsync(UInt64)</h4>
-  <div class="markdown level1 summary"><p>Gets information about specified API application.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordApplication&gt; GetApplicationAsync(ulong id)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt64</span></td>
-        <td><span class="parametername">id</span></td>
-        <td><p>ID of the application.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordApplication</span>&gt;</td>
-        <td><p>Information about specified API application.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="DSharpPlus_DiscordClient_GetChannelAsync_" data-uid="DSharpPlus.DiscordClient.GetChannelAsync*"></a>
   <h4 id="DSharpPlus_DiscordClient_GetChannelAsync_System_UInt64_" data-uid="DSharpPlus.DiscordClient.GetChannelAsync(System.UInt64)">GetChannelAsync(UInt64)</h4>
   <div class="markdown level1 summary"><p>Gets a channel</p>
@@ -783,13 +741,13 @@
   
   
   <a id="DSharpPlus_DiscordClient_GetInviteByCodeAsync_" data-uid="DSharpPlus.DiscordClient.GetInviteByCodeAsync*"></a>
-  <h4 id="DSharpPlus_DiscordClient_GetInviteByCodeAsync_System_String_" data-uid="DSharpPlus.DiscordClient.GetInviteByCodeAsync(System.String)">GetInviteByCodeAsync(String)</h4>
-  <div class="markdown level1 summary"><p>Gets an invite</p>
+  <h4 id="DSharpPlus_DiscordClient_GetInviteByCodeAsync_System_String_System_Nullable_System_Boolean__" data-uid="DSharpPlus.DiscordClient.GetInviteByCodeAsync(System.String,System.Nullable{System.Boolean})">GetInviteByCodeAsync(String, Nullable&lt;Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets an invite.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordInvite&gt; GetInviteByCodeAsync(string code)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordInvite&gt; GetInviteByCodeAsync(string code, bool? withCounts = default(bool? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -804,7 +762,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">code</span></td>
-        <td></td>
+        <td><p>The invite code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">withCounts</span></td>
+        <td><p>Whether to include presence and total member counts in the returned invite.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1054,51 +1019,6 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordMessage</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="DSharpPlus_DiscordClient_SyncGuildsAsync_" data-uid="DSharpPlus.DiscordClient.SyncGuildsAsync*"></a>
-  <h4 id="DSharpPlus_DiscordClient_SyncGuildsAsync_DiscordGuild___" data-uid="DSharpPlus.DiscordClient.SyncGuildsAsync(DiscordGuild[])">SyncGuildsAsync(DiscordGuild[])</h4>
-  <div class="markdown level1 summary"><p>Requests guild sync for specified guilds. Guild sync sends information about members and presences for a given guild, and makes gateway dispatch additional events.</p>
-<p>This can only be done for user tokens.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task SyncGuildsAsync(params DiscordGuild[] guilds)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DiscordGuild</span>[]</td>
-        <td><span class="parametername">guilds</span></td>
-        <td><p>Guilds to send a sync request for.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordWebhookClient
    ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -448,13 +448,13 @@
   
   
   <a id="DSharpPlus_DiscordWebhookClient_BroadcastMessageAsync_" data-uid="DSharpPlus.DiscordWebhookClient.BroadcastMessageAsync*"></a>
-  <h4 id="DSharpPlus_DiscordWebhookClient_BroadcastMessageAsync_System_String_System_Collections_Generic_List_DiscordEmbed__System_Boolean_System_String_System_String_" data-uid="DSharpPlus.DiscordWebhookClient.BroadcastMessageAsync(System.String,System.Collections.Generic.List{DiscordEmbed},System.Boolean,System.String,System.String)">BroadcastMessageAsync(String, List&lt;DiscordEmbed&gt;, Boolean, String, String)</h4>
+  <h4 id="DSharpPlus_DiscordWebhookClient_BroadcastMessageAsync_System_String_System_Collections_Generic_List_DiscordEmbed__System_Boolean_System_String_System_String_System_Collections_Generic_Dictionary_System_String_Stream__" data-uid="DSharpPlus.DiscordWebhookClient.BroadcastMessageAsync(System.String,System.Collections.Generic.List{DiscordEmbed},System.Boolean,System.String,System.String,System.Collections.Generic.Dictionary{System.String,Stream})">BroadcastMessageAsync(String, List&lt;DiscordEmbed&gt;, Boolean, String, String, Dictionary&lt;String, Stream&gt;)</h4>
   <div class="markdown level1 summary"><p>Broadcasts a message to all registered webhooks.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task BroadcastMessageAsync(string content = null, List&lt;DiscordEmbed&gt; embeds = null, bool tts = false, string username_override = null, string avatar_override = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task BroadcastMessageAsync(string content = null, List&lt;DiscordEmbed&gt; embeds = null, bool tts = false, string username_override = null, string avatar_override = null, Dictionary&lt;string, Stream&gt; files = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -494,6 +494,92 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">avatar_override</span></td>
         <td><p>Avatar URL to use for this broadcast.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Stream</span>&gt;</td>
+        <td><span class="parametername">files</span></td>
+        <td><p>Files to broadcast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordWebhookClient_BroadcastMessageAsync_" data-uid="DSharpPlus.DiscordWebhookClient.BroadcastMessageAsync*"></a>
+  <h4 id="DSharpPlus_DiscordWebhookClient_BroadcastMessageAsync_System_String_System_Collections_Generic_List_DiscordEmbed__System_Boolean_System_String_System_String_System_String_Stream_" data-uid="DSharpPlus.DiscordWebhookClient.BroadcastMessageAsync(System.String,System.Collections.Generic.List{DiscordEmbed},System.Boolean,System.String,System.String,System.String,Stream)">BroadcastMessageAsync(String, List&lt;DiscordEmbed&gt;, Boolean, String, String, String, Stream)</h4>
+  <div class="markdown level1 summary"><p>Broadcasts a message to all registered webhooks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task BroadcastMessageAsync(string content = null, List&lt;DiscordEmbed&gt; embeds = null, bool tts = false, string username_override = null, string avatar_override = null, string file_name = null, Stream file_data = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>Contents of the message to broadcast.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">DiscordEmbed</span>&gt;</td>
+        <td><span class="parametername">embeds</span></td>
+        <td><p>Embeds to send with the messages.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">tts</span></td>
+        <td><p>Whether the messages should be read aloud using TTS engine.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">username_override</span></td>
+        <td><p>Username to use for this broadcast.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">avatar_override</span></td>
+        <td><p>Avatar URL to use for this broadcast.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">file_name</span></td>
+        <td><p>Name of the file to broadcast.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">file_data</span></td>
+        <td><p>Content of the file to broadcast.</p>
 </td>
       </tr>
     </tbody>
