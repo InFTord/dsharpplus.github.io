@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordClient
    ">
-    <meta name="generator" content="docfx 2.48.1.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -734,6 +734,49 @@ ID.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordGuild</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordClient_GetGuildPreviewAsync_" data-uid="DSharpPlus.DiscordClient.GetGuildPreviewAsync*"></a>
+  <h4 id="DSharpPlus_DiscordClient_GetGuildPreviewAsync_System_UInt64_" data-uid="DSharpPlus.DiscordClient.GetGuildPreviewAsync(System.UInt64)">GetGuildPreviewAsync(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Gets a guild preview</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuildPreview&gt; GetGuildPreviewAsync(ulong id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordGuildPreview</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1760,6 +1803,56 @@ ID.</p>
   </table>
   
   
+  <h4 id="DSharpPlus_DiscordClient_InviteCreated" data-uid="DSharpPlus.DiscordClient.InviteCreated">InviteCreated</h4>
+  <div class="markdown level1 summary"><p>Fired when an invite is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;InviteCreateEventArgs&gt; InviteCreated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">InviteCreateEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DSharpPlus_DiscordClient_InviteDeleted" data-uid="DSharpPlus.DiscordClient.InviteDeleted">InviteDeleted</h4>
+  <div class="markdown level1 summary"><p>Fired when an invite is deleted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;InviteDeleteEventArgs&gt; InviteDeleted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">InviteDeleteEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="DSharpPlus_DiscordClient_MessageAcknowledged" data-uid="DSharpPlus.DiscordClient.MessageAcknowledged">MessageAcknowledged</h4>
   <div class="markdown level1 summary"><p>Fired when message is acknowledged by the user.</p>
 </div>
@@ -1879,6 +1972,31 @@ ID.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">MessageReactionRemoveEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DSharpPlus_DiscordClient_MessageReactionRemovedEmoji" data-uid="DSharpPlus.DiscordClient.MessageReactionRemovedEmoji">MessageReactionRemovedEmoji</h4>
+  <div class="markdown level1 summary"><p>Fired when all reactions of a specific reaction are removed from a message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;MessageReactionRemoveEmojiEventArgs&gt; MessageReactionRemovedEmoji</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">MessageReactionRemoveEmojiEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

@@ -8,7 +8,7 @@
     <title>Alternative WebSocket client implementations </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Alternative WebSocket client implementations ">
-    <meta name="generator" content="docfx 2.48.1.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -101,7 +101,7 @@ the library.</li>
 same as for all other DSharpPlus packages.</p>
 <p>Then you need to indicate that DSharpPlus should use that specific WebSocket implementation. This is done by setting an 
 appropriate factory method in <a class="xref" href="../../api/DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_WebSocketClientFactory">WebSocketClientFactory</a> property in your <a class="xref" href="../../api/DSharpPlus.DiscordConfiguration.html">DiscordConfiguration</a> instance.</p>
-<p>The factory methods are static methods, that return an instance of <a class="xref" href="../../api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html">BaseWebSocketClient</a>, and take a <code>System.Net.IWebProxy</code> 
+<p>The factory methods are static methods, that return an instance of @DSharpPlus.Net.WebSocket.BaseWebSocketClient, and take a <code>System.Net.IWebProxy</code> 
 as an argument. For provided implementations, they are called <code>CreateNew</code>, and are available on the implementation classes:</p>
 <ul>
 <li>WebSocket4Net: @DSharpPlus.Net.WebSocket.WebSocket4NetClient.CreateNew(IWebProxy)</li>
@@ -133,7 +133,7 @@ as an argument. For provided implementations, they are called <code>CreateNew</c
     // yadda yadda
     WebSocketClientFactory = WebSocketSharpClient.CreateNew
 };
-</code></pre><p>For any other implementation, make sure you have a class that inherits from <a class="xref" href="../../api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html">BaseWebSocketClient</a> class, 
+</code></pre><p>For any other implementation, make sure you have a class that inherits from @DSharpPlus.Net.WebSocket.BaseWebSocketClient class, 
 implements its abstract members, and has a public constructor which takes a <code>System.Net.IWebProxy</code> as an argument. Provide a factory 
 method which instantiates this implementation, and you&#39;re good to go.</p>
 <p>Lastly, don&#39;t forget to add <code>using DSharpPlus.Net.WebSocket;</code> at the top of your <code>.cs</code> file.</p>

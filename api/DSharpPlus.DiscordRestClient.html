@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordRestClient
    ">
-    <meta name="generator" content="docfx 2.48.1.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -3272,13 +3272,13 @@
   
   
   <a id="DSharpPlus_DiscordRestClient_GetReactionsAsync_" data-uid="DSharpPlus.DiscordRestClient.GetReactionsAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_GetReactionsAsync_System_UInt64_System_UInt64_DiscordEmoji_" data-uid="DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64,System.UInt64,DiscordEmoji)">GetReactionsAsync(UInt64, UInt64, DiscordEmoji)</h4>
+  <h4 id="DSharpPlus_DiscordRestClient_GetReactionsAsync_System_UInt64_System_UInt64_DiscordEmoji_System_Nullable_System_UInt64__System_Int32_" data-uid="DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64,System.UInt64,DiscordEmoji,System.Nullable{System.UInt64},System.Int32)">GetReactionsAsync(UInt64, UInt64, DiscordEmoji, Nullable&lt;UInt64&gt;, Int32)</h4>
   <div class="markdown level1 summary"><p>Gets all users that reacted with a specific emoji to a message</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;DiscordUser&gt;&gt; GetReactionsAsync(ulong channel_id, ulong message_id, DiscordEmoji emoji)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;DiscordUser&gt;&gt; GetReactionsAsync(ulong channel_id, ulong message_id, DiscordEmoji emoji, ulong? after_id = default(ulong? ), int limit = 25)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3308,6 +3308,18 @@
         <td><p>Emoji to check for</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">after_id</span></td>
+        <td><p>Whether to search for reactions after this message id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>The maximum amount of reactions to fetch.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -3328,13 +3340,13 @@
   
   
   <a id="DSharpPlus_DiscordRestClient_GetReactionsAsync_" data-uid="DSharpPlus.DiscordRestClient.GetReactionsAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_GetReactionsAsync_System_UInt64_System_UInt64_System_String_" data-uid="DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64,System.UInt64,System.String)">GetReactionsAsync(UInt64, UInt64, String)</h4>
+  <h4 id="DSharpPlus_DiscordRestClient_GetReactionsAsync_System_UInt64_System_UInt64_System_String_System_Nullable_System_UInt64__System_Int32_" data-uid="DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64,System.UInt64,System.String,System.Nullable{System.UInt64},System.Int32)">GetReactionsAsync(UInt64, UInt64, String, Nullable&lt;UInt64&gt;, Int32)</h4>
   <div class="markdown level1 summary"><p>Gets all users that reacted with a specific emoji to a message</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;DiscordUser&gt;&gt; GetReactionsAsync(ulong channel_id, ulong message_id, string emoji)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;DiscordUser&gt;&gt; GetReactionsAsync(ulong channel_id, ulong message_id, string emoji, ulong? after_id = default(ulong? ), int limit = 25)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3362,6 +3374,18 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">emoji</span></td>
         <td><p>Emoji to check for</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">after_id</span></td>
+        <td><p>Whether to search for reactions after this message id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>The maximum amount of reactions to fetch.</p>
 </td>
       </tr>
     </tbody>

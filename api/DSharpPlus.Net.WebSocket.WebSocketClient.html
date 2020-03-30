@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class WebSocketClient
    ">
-    <meta name="generator" content="docfx 2.48.1.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -86,48 +86,84 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html">BaseWebSocketClient</a></div>
-    <div class="level2"><span class="xref">WebSocketClient</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_ZLIB_STREAM_SUFFIX">BaseWebSocketClient.ZLIB_STREAM_SUFFIX</a>
-    </div>
-    <div>
-      <a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_Proxy">BaseWebSocketClient.Proxy</a>
-    </div>
-    <div>
-      <a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_StreamDecompressor">BaseWebSocketClient.StreamDecompressor</a>
-    </div>
-    <div>
-      <a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_DecompressedStream">BaseWebSocketClient.DecompressedStream</a>
-    </div>
-    <div>
-      <a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_CompressedStream">BaseWebSocketClient.CompressedStream</a>
-    </div>
-    <div>
-      <a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_Dispose">BaseWebSocketClient.Dispose()</a>
-    </div>
+    <div class="level1"><span class="xref">WebSocketClient</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DSharpPlus.Net.WebSocket.html">DSharpPlus.Net.WebSocket</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="DSharpPlus_Net_WebSocket_WebSocketClient_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WebSocketClient : BaseWebSocketClient, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class WebSocketClient : IWebSocketClient, IDisposable</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="properties">Properties
   </h3>
   
   
-  <a id="DSharpPlus_Net_WebSocket_WebSocketClient__ctor_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.#ctor*"></a>
-  <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient__ctor_IWebProxy_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.#ctor(IWebProxy)">WebSocketClient(IWebProxy)</h4>
-  <div class="markdown level1 summary"><p>Instantiates a new WebSocket client with specified proxy settings.</p>
+  <a id="DSharpPlus_Net_WebSocket_WebSocketClient_DefaultHeaders_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.DefaultHeaders*"></a>
+  <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_DefaultHeaders" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.DefaultHeaders">DefaultHeaders</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of default headers to send when connecting to the remote endpoint.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WebSocketClient(IWebProxy proxy)</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, string&gt; DefaultHeaders { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_DefaultHeaders">IWebSocketClient.DefaultHeaders</a></div>
+  
+  
+  <a id="DSharpPlus_Net_WebSocket_WebSocketClient_Proxy_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.Proxy*"></a>
+  <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_Proxy" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.Proxy">Proxy</h4>
+  <div class="markdown level1 summary"><p>Gets the proxy settings for this client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IWebProxy Proxy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IWebProxy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_Proxy">IWebSocketClient.Proxy</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DSharpPlus_Net_WebSocket_WebSocketClient_AddDefaultHeader_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.AddDefaultHeader*"></a>
+  <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_AddDefaultHeader_System_String_System_String_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.AddDefaultHeader(System.String,System.String)">AddDefaultHeader(String, String)</h4>
+  <div class="markdown level1 summary"><p>Adds a header to the default header collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddDefaultHeader(string name, string value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -140,25 +176,47 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IWebProxy</span></td>
-        <td><span class="parametername">proxy</span></td>
-        <td><p>Proxy settings for the client.</p>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the header to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value of the header to add.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the operation succeeded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_AddDefaultHeader_System_String_System_String_">IWebSocketClient.AddDefaultHeader(String, String)</a></div>
   
   
   <a id="DSharpPlus_Net_WebSocket_WebSocketClient_ConnectAsync_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.ConnectAsync*"></a>
-  <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_ConnectAsync_Uri_System_Collections_Generic_IReadOnlyDictionary_System_String_System_String__" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.ConnectAsync(Uri,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})">ConnectAsync(Uri, IReadOnlyDictionary&lt;String, String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Connects to the WebSocket server.</p>
+  <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_ConnectAsync_Uri_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.ConnectAsync(Uri)">ConnectAsync(Uri)</h4>
+  <div class="markdown level1 summary"><p>Connects to a specified remote WebSocket endpoint.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task ConnectAsync(Uri uri, IReadOnlyDictionary&lt;string, string&gt; customHeaders = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task ConnectAsync(Uri uri)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -173,13 +231,7 @@
       <tr>
         <td><span class="xref">Uri</span></td>
         <td><span class="parametername">uri</span></td>
-        <td><p>The URI of the WebSocket server.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">customHeaders</span></td>
-        <td><p>Custom headers to send with the request.</p>
+        <td><p>The URI of the WebSocket endpoint.</p>
 </td>
       </tr>
     </tbody>
@@ -199,8 +251,8 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_ConnectAsync_Uri_System_Collections_Generic_IReadOnlyDictionary_System_String_System_String__">BaseWebSocketClient.ConnectAsync(Uri, IReadOnlyDictionary&lt;String, String&gt;)</a></div>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_ConnectAsync_Uri_">IWebSocketClient.ConnectAsync(Uri)</a></div>
   
   
   <a id="DSharpPlus_Net_WebSocket_WebSocketClient_CreateNew_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.CreateNew*"></a>
@@ -210,7 +262,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BaseWebSocketClient CreateNew(IWebProxy proxy)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IWebSocketClient CreateNew(IWebProxy proxy)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -240,7 +292,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html">BaseWebSocketClient</a></td>
+        <td><a class="xref" href="DSharpPlus.Net.WebSocket.IWebSocketClient.html">IWebSocketClient</a></td>
         <td><p>An instance of <a class="xref" href="DSharpPlus.Net.WebSocket.WebSocketClient.html">WebSocketClient</a>.</p>
 </td>
       </tr>
@@ -249,13 +301,52 @@
   
   
   <a id="DSharpPlus_Net_WebSocket_WebSocketClient_DisconnectAsync_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.DisconnectAsync*"></a>
-  <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_DisconnectAsync_SocketCloseEventArgs_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.DisconnectAsync(SocketCloseEventArgs)">DisconnectAsync(SocketCloseEventArgs)</h4>
+  <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_DisconnectAsync" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.DisconnectAsync">DisconnectAsync()</h4>
   <div class="markdown level1 summary"><p>Disconnects the WebSocket connection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task DisconnectAsync(SocketCloseEventArgs e)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task DisconnectAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_DisconnectAsync">IWebSocketClient.DisconnectAsync()</a></div>
+  
+  
+  <a id="DSharpPlus_Net_WebSocket_WebSocketClient_Dispose_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.Dispose*"></a>
+  <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_Dispose" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes of resources used by this WebSocket client instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="DSharpPlus_Net_WebSocket_WebSocketClient_RemoveDefaultHeader_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.RemoveDefaultHeader*"></a>
+  <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_RemoveDefaultHeader_System_String_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.RemoveDefaultHeader(System.String)">RemoveDefaultHeader(String)</h4>
+  <div class="markdown level1 summary"><p>Removes a header from the default header collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveDefaultHeader(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -268,9 +359,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">SocketCloseEventArgs</span></td>
-        <td><span class="parametername">e</span></td>
-        <td><p>Disconect event arguments.</p>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the header to remove.</p>
 </td>
       </tr>
     </tbody>
@@ -285,96 +376,24 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the operation succeeded.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_DisconnectAsync_SocketCloseEventArgs_">BaseWebSocketClient.DisconnectAsync(SocketCloseEventArgs)</a></div>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_RemoveDefaultHeader_System_String_">IWebSocketClient.RemoveDefaultHeader(String)</a></div>
   
   
-  <a id="DSharpPlus_Net_WebSocket_WebSocketClient_OnConnectedAsync_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.OnConnectedAsync*"></a>
-  <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_OnConnectedAsync" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.OnConnectedAsync">OnConnectedAsync()</h4>
-  <div class="markdown level1 summary"><p>Set the Action to call when the connection has been established.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override Task OnConnectedAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_OnConnectedAsync">BaseWebSocketClient.OnConnectedAsync()</a></div>
-  
-  
-  <a id="DSharpPlus_Net_WebSocket_WebSocketClient_OnDisconnectedAsync_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.OnDisconnectedAsync*"></a>
-  <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_OnDisconnectedAsync_SocketCloseEventArgs_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.OnDisconnectedAsync(SocketCloseEventArgs)">OnDisconnectedAsync(SocketCloseEventArgs)</h4>
-  <div class="markdown level1 summary"><p>Set the Action to call when the connection has been terminated.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override Task OnDisconnectedAsync(SocketCloseEventArgs e)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">SocketCloseEventArgs</span></td>
-        <td><span class="parametername">e</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_OnDisconnectedAsync_SocketCloseEventArgs_">BaseWebSocketClient.OnDisconnectedAsync(SocketCloseEventArgs)</a></div>
-  
-  
-  <a id="DSharpPlus_Net_WebSocket_WebSocketClient_SendMessage_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.SendMessage*"></a>
-  <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_SendMessage_System_String_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.SendMessage(System.String)">SendMessage(String)</h4>
+  <a id="DSharpPlus_Net_WebSocket_WebSocketClient_SendMessageAsync_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.SendMessageAsync*"></a>
+  <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_SendMessageAsync_System_String_" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.SendMessageAsync(System.String)">SendMessageAsync(String)</h4>
   <div class="markdown level1 summary"><p>Send a message to the WebSocket server.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void SendMessage(string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task SendMessageAsync(string message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -389,13 +408,28 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
-        <td><p>The message to send</p>
+        <td><p>The message to send.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_SendMessage_System_String_">BaseWebSocketClient.SendMessage(String)</a></div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_SendMessageAsync_System_String_">IWebSocketClient.SendMessageAsync(String)</a></div>
   <h3 id="events">Events
   </h3>
   
@@ -406,7 +440,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override event AsyncEventHandler Connected</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler Connected</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -423,8 +457,8 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_Connected">BaseWebSocketClient.Connected</a></div>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_Connected">IWebSocketClient.Connected</a></div>
   
   
   <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_Disconnected" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.Disconnected">Disconnected</h4>
@@ -433,7 +467,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override event AsyncEventHandler&lt;SocketCloseEventArgs&gt; Disconnected</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;SocketCloseEventArgs&gt; Disconnected</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -450,17 +484,17 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_Disconnected">BaseWebSocketClient.Disconnected</a></div>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_Disconnected">IWebSocketClient.Disconnected</a></div>
   
   
-  <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_Errored" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.Errored">Errored</h4>
+  <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_ExceptionThrown" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.ExceptionThrown">ExceptionThrown</h4>
   <div class="markdown level1 summary"><p>Triggered when an error occurs in the client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override event AsyncEventHandler&lt;SocketErrorEventArgs&gt; Errored</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;SocketErrorEventArgs&gt; ExceptionThrown</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -477,8 +511,8 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_Errored">BaseWebSocketClient.Errored</a></div>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_ExceptionThrown">IWebSocketClient.ExceptionThrown</a></div>
   
   
   <h4 id="DSharpPlus_Net_WebSocket_WebSocketClient_MessageReceived" data-uid="DSharpPlus.Net.WebSocket.WebSocketClient.MessageReceived">MessageReceived</h4>
@@ -487,7 +521,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override event AsyncEventHandler&lt;SocketMessageEventArgs&gt; MessageReceived</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;SocketMessageEventArgs&gt; MessageReceived</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -504,8 +538,8 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_MessageReceived">BaseWebSocketClient.MessageReceived</a></div>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_MessageReceived">IWebSocketClient.MessageReceived</a></div>
 
 </article>
           </div>

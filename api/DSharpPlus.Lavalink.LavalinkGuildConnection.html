@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class LavalinkGuildConnection
    ">
-    <meta name="generator" content="docfx 2.48.1.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -204,14 +204,14 @@
   </h3>
   
   
-  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_AdjustEqualizer_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizer*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_AdjustEqualizer_DSharpPlus_Lavalink_LavalinkBandAdjustment___" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizer(DSharpPlus.Lavalink.LavalinkBandAdjustment[])">AdjustEqualizer(LavalinkBandAdjustment[])</h4>
+  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_AdjustEqualizerAsync_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizerAsync*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_AdjustEqualizerAsync_DSharpPlus_Lavalink_LavalinkBandAdjustment___" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizerAsync(DSharpPlus.Lavalink.LavalinkBandAdjustment[])">AdjustEqualizerAsync(LavalinkBandAdjustment[])</h4>
   <div class="markdown level1 summary"><p>Adjusts the specified bands in the audio equalizer. This will alter the sound output, and might incur a lot of CPU usage.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AdjustEqualizer(params LavalinkBandAdjustment[] bands)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task AdjustEqualizerAsync(params LavalinkBandAdjustment[] bands)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -231,38 +231,83 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
-  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_Disconnect_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.Disconnect*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_Disconnect" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.Disconnect">Disconnect()</h4>
+  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_DisconnectAsync_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.DisconnectAsync*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_DisconnectAsync" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.DisconnectAsync">DisconnectAsync()</h4>
   <div class="markdown level1 summary"><p>Disconnect from this voice channel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Disconnect()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task DisconnectAsync()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
-  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_Pause_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.Pause*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_Pause" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.Pause">Pause()</h4>
+  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_PauseAsync_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.PauseAsync*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_PauseAsync" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.PauseAsync">PauseAsync()</h4>
   <div class="markdown level1 summary"><p>Pauses the player.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Pause()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task PauseAsync()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
-  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_Play_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.Play*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_Play_DSharpPlus_Lavalink_LavalinkTrack_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.Play(DSharpPlus.Lavalink.LavalinkTrack)">Play(LavalinkTrack)</h4>
+  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_PlayAsync_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.PlayAsync*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_PlayAsync_DSharpPlus_Lavalink_LavalinkTrack_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.PlayAsync(DSharpPlus.Lavalink.LavalinkTrack)">PlayAsync(LavalinkTrack)</h4>
   <div class="markdown level1 summary"><p>Queues the specified track for playback.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Play(LavalinkTrack track)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task PlayAsync(LavalinkTrack track)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -282,16 +327,31 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
-  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_PlayPartial_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartial*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_PlayPartial_DSharpPlus_Lavalink_LavalinkTrack_System_TimeSpan_System_TimeSpan_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartial(DSharpPlus.Lavalink.LavalinkTrack,System.TimeSpan,System.TimeSpan)">PlayPartial(LavalinkTrack, TimeSpan, TimeSpan)</h4>
+  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_PlayPartialAsync_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartialAsync*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_PlayPartialAsync_DSharpPlus_Lavalink_LavalinkTrack_System_TimeSpan_System_TimeSpan_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartialAsync(DSharpPlus.Lavalink.LavalinkTrack,System.TimeSpan,System.TimeSpan)">PlayPartialAsync(LavalinkTrack, TimeSpan, TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Queues the specified track for playback. The track will be played from specified start timestamp to specified end timestamp.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void PlayPartial(LavalinkTrack track, TimeSpan start, TimeSpan end)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task PlayPartialAsync(LavalinkTrack track, TimeSpan start, TimeSpan end)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -323,38 +383,83 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
-  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_ResetEqualizer_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.ResetEqualizer*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_ResetEqualizer" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.ResetEqualizer">ResetEqualizer()</h4>
+  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_ResetEqualizerAsync_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.ResetEqualizerAsync*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_ResetEqualizerAsync" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.ResetEqualizerAsync">ResetEqualizerAsync()</h4>
   <div class="markdown level1 summary"><p>Resets the audio equalizer to default values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ResetEqualizer()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task ResetEqualizerAsync()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
-  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_Resume_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.Resume*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_Resume" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.Resume">Resume()</h4>
+  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_ResumeAsync_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.ResumeAsync*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_ResumeAsync" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.ResumeAsync">ResumeAsync()</h4>
   <div class="markdown level1 summary"><p>Resumes playback.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Resume()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task ResumeAsync()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
-  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_Seek_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.Seek*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_Seek_System_TimeSpan_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.Seek(System.TimeSpan)">Seek(TimeSpan)</h4>
+  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_SeekAsync_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.SeekAsync*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_SeekAsync_System_TimeSpan_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.SeekAsync(System.TimeSpan)">SeekAsync(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Seeks the current track to specified position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Seek(TimeSpan position)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task SeekAsync(TimeSpan position)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -374,16 +479,31 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
-  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_SetVolume_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.SetVolume*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_SetVolume_System_Int32_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.SetVolume(System.Int32)">SetVolume(Int32)</h4>
+  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_SetVolumeAsync_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.SetVolumeAsync*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_SetVolumeAsync_System_Int32_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.SetVolumeAsync(System.Int32)">SetVolumeAsync(Int32)</h4>
   <div class="markdown level1 summary"><p>Sets the playback volume. This might incur a lot of CPU usage.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetVolume(int volume)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task SetVolumeAsync(int volume)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -403,17 +523,47 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
-  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_Stop_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.Stop*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_Stop" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.Stop">Stop()</h4>
+  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_StopAsync_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.StopAsync*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_StopAsync" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.StopAsync">StopAsync()</h4>
   <div class="markdown level1 summary"><p>Stops the player completely.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task StopAsync()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="events">Events
   </h3>
   

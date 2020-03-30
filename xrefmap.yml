@@ -4907,6 +4907,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.DiscordClient.GetGuildAsync
   nameWithType: DiscordClient.GetGuildAsync
+- uid: DSharpPlus.DiscordClient.GetGuildPreviewAsync(System.UInt64)
+  name: GetGuildPreviewAsync(UInt64)
+  href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_GetGuildPreviewAsync_System_UInt64_
+  commentId: M:DSharpPlus.DiscordClient.GetGuildPreviewAsync(System.UInt64)
+  fullName: DSharpPlus.DiscordClient.GetGuildPreviewAsync(System.UInt64)
+  nameWithType: DiscordClient.GetGuildPreviewAsync(UInt64)
+- uid: DSharpPlus.DiscordClient.GetGuildPreviewAsync*
+  name: GetGuildPreviewAsync
+  href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_GetGuildPreviewAsync_
+  commentId: Overload:DSharpPlus.DiscordClient.GetGuildPreviewAsync
+  isSpec: "True"
+  fullName: DSharpPlus.DiscordClient.GetGuildPreviewAsync
+  nameWithType: DiscordClient.GetGuildPreviewAsync
 - uid: DSharpPlus.DiscordClient.GetInviteByCodeAsync(System.String,System.Nullable{System.Boolean})
   name: GetInviteByCodeAsync(String, Nullable<Boolean>)
   href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_GetInviteByCodeAsync_System_String_System_Nullable_System_Boolean__
@@ -5083,6 +5096,18 @@ references:
   commentId: E:DSharpPlus.DiscordClient.Heartbeated
   fullName: DSharpPlus.DiscordClient.Heartbeated
   nameWithType: DiscordClient.Heartbeated
+- uid: DSharpPlus.DiscordClient.InviteCreated
+  name: InviteCreated
+  href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_InviteCreated
+  commentId: E:DSharpPlus.DiscordClient.InviteCreated
+  fullName: DSharpPlus.DiscordClient.InviteCreated
+  nameWithType: DiscordClient.InviteCreated
+- uid: DSharpPlus.DiscordClient.InviteDeleted
+  name: InviteDeleted
+  href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_InviteDeleted
+  commentId: E:DSharpPlus.DiscordClient.InviteDeleted
+  fullName: DSharpPlus.DiscordClient.InviteDeleted
+  nameWithType: DiscordClient.InviteDeleted
 - uid: DSharpPlus.DiscordClient.MessageAcknowledged
   name: MessageAcknowledged
   href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_MessageAcknowledged
@@ -5113,6 +5138,12 @@ references:
   commentId: E:DSharpPlus.DiscordClient.MessageReactionRemoved
   fullName: DSharpPlus.DiscordClient.MessageReactionRemoved
   nameWithType: DiscordClient.MessageReactionRemoved
+- uid: DSharpPlus.DiscordClient.MessageReactionRemovedEmoji
+  name: MessageReactionRemovedEmoji
+  href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_MessageReactionRemovedEmoji
+  commentId: E:DSharpPlus.DiscordClient.MessageReactionRemovedEmoji
+  fullName: DSharpPlus.DiscordClient.MessageReactionRemovedEmoji
+  nameWithType: DiscordClient.MessageReactionRemovedEmoji
 - uid: DSharpPlus.DiscordClient.MessageReactionsCleared
   name: MessageReactionsCleared
   href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_MessageReactionsCleared
@@ -6333,18 +6364,24 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.DiscordRestClient.GetPinnedMessagesAsync
   nameWithType: DiscordRestClient.GetPinnedMessagesAsync
-- uid: DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64,System.UInt64,DiscordEmoji)
-  name: GetReactionsAsync(UInt64, UInt64, DiscordEmoji)
-  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_GetReactionsAsync_System_UInt64_System_UInt64_DiscordEmoji_
-  commentId: M:DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64,System.UInt64,DiscordEmoji)
-  fullName: DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64, System.UInt64, DiscordEmoji)
-  nameWithType: DiscordRestClient.GetReactionsAsync(UInt64, UInt64, DiscordEmoji)
-- uid: DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64,System.UInt64,System.String)
-  name: GetReactionsAsync(UInt64, UInt64, String)
-  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_GetReactionsAsync_System_UInt64_System_UInt64_System_String_
-  commentId: M:DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64,System.UInt64,System.String)
-  fullName: DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64, System.UInt64, System.String)
-  nameWithType: DiscordRestClient.GetReactionsAsync(UInt64, UInt64, String)
+- uid: DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64,System.UInt64,DiscordEmoji,System.Nullable{System.UInt64},System.Int32)
+  name: GetReactionsAsync(UInt64, UInt64, DiscordEmoji, Nullable<UInt64>, Int32)
+  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_GetReactionsAsync_System_UInt64_System_UInt64_DiscordEmoji_System_Nullable_System_UInt64__System_Int32_
+  commentId: M:DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64,System.UInt64,DiscordEmoji,System.Nullable{System.UInt64},System.Int32)
+  name.vb: GetReactionsAsync(UInt64, UInt64, DiscordEmoji, Nullable(Of UInt64), Int32)
+  fullName: DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64, System.UInt64, DiscordEmoji, System.Nullable<System.UInt64>, System.Int32)
+  fullName.vb: DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64, System.UInt64, DiscordEmoji, System.Nullable(Of System.UInt64), System.Int32)
+  nameWithType: DiscordRestClient.GetReactionsAsync(UInt64, UInt64, DiscordEmoji, Nullable<UInt64>, Int32)
+  nameWithType.vb: DiscordRestClient.GetReactionsAsync(UInt64, UInt64, DiscordEmoji, Nullable(Of UInt64), Int32)
+- uid: DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64,System.UInt64,System.String,System.Nullable{System.UInt64},System.Int32)
+  name: GetReactionsAsync(UInt64, UInt64, String, Nullable<UInt64>, Int32)
+  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_GetReactionsAsync_System_UInt64_System_UInt64_System_String_System_Nullable_System_UInt64__System_Int32_
+  commentId: M:DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64,System.UInt64,System.String,System.Nullable{System.UInt64},System.Int32)
+  name.vb: GetReactionsAsync(UInt64, UInt64, String, Nullable(Of UInt64), Int32)
+  fullName: DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64, System.UInt64, System.String, System.Nullable<System.UInt64>, System.Int32)
+  fullName.vb: DSharpPlus.DiscordRestClient.GetReactionsAsync(System.UInt64, System.UInt64, System.String, System.Nullable(Of System.UInt64), System.Int32)
+  nameWithType: DiscordRestClient.GetReactionsAsync(UInt64, UInt64, String, Nullable<UInt64>, Int32)
+  nameWithType.vb: DiscordRestClient.GetReactionsAsync(UInt64, UInt64, String, Nullable(Of UInt64), Int32)
 - uid: DSharpPlus.DiscordRestClient.GetReactionsAsync*
   name: GetReactionsAsync
   href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_GetReactionsAsync_
@@ -7051,6 +7088,18 @@ references:
   commentId: E:DSharpPlus.DiscordShardedClient.Heartbeated
   fullName: DSharpPlus.DiscordShardedClient.Heartbeated
   nameWithType: DiscordShardedClient.Heartbeated
+- uid: DSharpPlus.DiscordShardedClient.InviteCreated
+  name: InviteCreated
+  href: api/DSharpPlus.DiscordShardedClient.html#DSharpPlus_DiscordShardedClient_InviteCreated
+  commentId: E:DSharpPlus.DiscordShardedClient.InviteCreated
+  fullName: DSharpPlus.DiscordShardedClient.InviteCreated
+  nameWithType: DiscordShardedClient.InviteCreated
+- uid: DSharpPlus.DiscordShardedClient.InviteDeleted
+  name: InviteDeleted
+  href: api/DSharpPlus.DiscordShardedClient.html#DSharpPlus_DiscordShardedClient_InviteDeleted
+  commentId: E:DSharpPlus.DiscordShardedClient.InviteDeleted
+  fullName: DSharpPlus.DiscordShardedClient.InviteDeleted
+  nameWithType: DiscordShardedClient.InviteDeleted
 - uid: DSharpPlus.DiscordShardedClient.MessageCreated
   name: MessageCreated
   href: api/DSharpPlus.DiscordShardedClient.html#DSharpPlus_DiscordShardedClient_MessageCreated
@@ -7075,6 +7124,12 @@ references:
   commentId: E:DSharpPlus.DiscordShardedClient.MessageReactionRemoved
   fullName: DSharpPlus.DiscordShardedClient.MessageReactionRemoved
   nameWithType: DiscordShardedClient.MessageReactionRemoved
+- uid: DSharpPlus.DiscordShardedClient.MessageReactionRemovedEmoji
+  name: MessageReactionRemovedEmoji
+  href: api/DSharpPlus.DiscordShardedClient.html#DSharpPlus_DiscordShardedClient_MessageReactionRemovedEmoji
+  commentId: E:DSharpPlus.DiscordShardedClient.MessageReactionRemovedEmoji
+  fullName: DSharpPlus.DiscordShardedClient.MessageReactionRemovedEmoji
+  nameWithType: DiscordShardedClient.MessageReactionRemovedEmoji
 - uid: DSharpPlus.DiscordShardedClient.MessageReactionsCleared
   name: MessageReactionsCleared
   href: api/DSharpPlus.DiscordShardedClient.html#DSharpPlus_DiscordShardedClient_MessageReactionsCleared
@@ -8637,6 +8692,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordAuditLogGuildEntry.OwnerChange
   nameWithType: DiscordAuditLogGuildEntry.OwnerChange
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildEntry.RegionChange
+  name: RegionChange
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildEntry_RegionChange
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogGuildEntry.RegionChange
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildEntry.RegionChange
+  nameWithType: DiscordAuditLogGuildEntry.RegionChange
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildEntry.RegionChange*
+  name: RegionChange
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildEntry_RegionChange_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogGuildEntry.RegionChange
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildEntry.RegionChange
+  nameWithType: DiscordAuditLogGuildEntry.RegionChange
 - uid: DSharpPlus.Entities.DiscordAuditLogGuildEntry.SplashChange
   name: SplashChange
   href: api/DSharpPlus.Entities.DiscordAuditLogGuildEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildEntry_SplashChange
@@ -12247,6 +12315,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordGuild.AfkTimeout
   nameWithType: DiscordGuild.AfkTimeout
+- uid: DSharpPlus.Entities.DiscordGuild.ApplicationId
+  name: ApplicationId
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_ApplicationId
+  commentId: P:DSharpPlus.Entities.DiscordGuild.ApplicationId
+  fullName: DSharpPlus.Entities.DiscordGuild.ApplicationId
+  nameWithType: DiscordGuild.ApplicationId
+- uid: DSharpPlus.Entities.DiscordGuild.ApplicationId*
+  name: ApplicationId
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_ApplicationId_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.ApplicationId
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuild.ApplicationId
+  nameWithType: DiscordGuild.ApplicationId
 - uid: DSharpPlus.Entities.DiscordGuild.AttachUserIntegrationAsync(DSharpPlus.Entities.DiscordIntegration)
   name: AttachUserIntegrationAsync(DiscordIntegration)
   href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_AttachUserIntegrationAsync_DSharpPlus_Entities_DiscordIntegration_
@@ -12292,6 +12373,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordGuild.Banner
   nameWithType: DiscordGuild.Banner
+- uid: DSharpPlus.Entities.DiscordGuild.BannerUrl
+  name: BannerUrl
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_BannerUrl
+  commentId: P:DSharpPlus.Entities.DiscordGuild.BannerUrl
+  fullName: DSharpPlus.Entities.DiscordGuild.BannerUrl
+  nameWithType: DiscordGuild.BannerUrl
+- uid: DSharpPlus.Entities.DiscordGuild.BannerUrl*
+  name: BannerUrl
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_BannerUrl_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.BannerUrl
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuild.BannerUrl
+  nameWithType: DiscordGuild.BannerUrl
 - uid: DSharpPlus.Entities.DiscordGuild.Channels
   name: Channels
   href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_Channels
@@ -12492,6 +12586,32 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordGuild.Description
   nameWithType: DiscordGuild.Description
+- uid: DSharpPlus.Entities.DiscordGuild.DiscoverySplashHash
+  name: DiscoverySplashHash
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_DiscoverySplashHash
+  commentId: P:DSharpPlus.Entities.DiscordGuild.DiscoverySplashHash
+  fullName: DSharpPlus.Entities.DiscordGuild.DiscoverySplashHash
+  nameWithType: DiscordGuild.DiscoverySplashHash
+- uid: DSharpPlus.Entities.DiscordGuild.DiscoverySplashHash*
+  name: DiscoverySplashHash
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_DiscoverySplashHash_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.DiscoverySplashHash
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuild.DiscoverySplashHash
+  nameWithType: DiscordGuild.DiscoverySplashHash
+- uid: DSharpPlus.Entities.DiscordGuild.DiscoverySplashUrl
+  name: DiscoverySplashUrl
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_DiscoverySplashUrl
+  commentId: P:DSharpPlus.Entities.DiscordGuild.DiscoverySplashUrl
+  fullName: DSharpPlus.Entities.DiscordGuild.DiscoverySplashUrl
+  nameWithType: DiscordGuild.DiscoverySplashUrl
+- uid: DSharpPlus.Entities.DiscordGuild.DiscoverySplashUrl*
+  name: DiscoverySplashUrl
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_DiscoverySplashUrl_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.DiscoverySplashUrl
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuild.DiscoverySplashUrl
+  nameWithType: DiscordGuild.DiscoverySplashUrl
 - uid: DSharpPlus.Entities.DiscordGuild.EmbedChannel
   name: EmbedChannel
   href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_EmbedChannel
@@ -12735,6 +12855,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordGuild.GetIntegrationsAsync
   nameWithType: DiscordGuild.GetIntegrationsAsync
+- uid: DSharpPlus.Entities.DiscordGuild.GetInvite(System.String)
+  name: GetInvite(String)
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_GetInvite_System_String_
+  commentId: M:DSharpPlus.Entities.DiscordGuild.GetInvite(System.String)
+  fullName: DSharpPlus.Entities.DiscordGuild.GetInvite(System.String)
+  nameWithType: DiscordGuild.GetInvite(String)
+- uid: DSharpPlus.Entities.DiscordGuild.GetInvite*
+  name: GetInvite
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_GetInvite_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.GetInvite
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuild.GetInvite
+  nameWithType: DiscordGuild.GetInvite
 - uid: DSharpPlus.Entities.DiscordGuild.GetInvitesAsync
   name: GetInvitesAsync()
   href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_GetInvitesAsync
@@ -12787,6 +12920,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordGuild.GetRole
   nameWithType: DiscordGuild.GetRole
+- uid: DSharpPlus.Entities.DiscordGuild.GetVanityInviteAsync
+  name: GetVanityInviteAsync()
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_GetVanityInviteAsync
+  commentId: M:DSharpPlus.Entities.DiscordGuild.GetVanityInviteAsync
+  fullName: DSharpPlus.Entities.DiscordGuild.GetVanityInviteAsync()
+  nameWithType: DiscordGuild.GetVanityInviteAsync()
+- uid: DSharpPlus.Entities.DiscordGuild.GetVanityInviteAsync*
+  name: GetVanityInviteAsync
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_GetVanityInviteAsync_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.GetVanityInviteAsync
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuild.GetVanityInviteAsync
+  nameWithType: DiscordGuild.GetVanityInviteAsync
 - uid: DSharpPlus.Entities.DiscordGuild.GetWebhooksAsync
   name: GetWebhooksAsync()
   href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_GetWebhooksAsync
@@ -12800,6 +12946,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordGuild.GetWebhooksAsync
   nameWithType: DiscordGuild.GetWebhooksAsync
+- uid: DSharpPlus.Entities.DiscordGuild.GetWidgetImage(DSharpPlus.Entities.WidgetType)
+  name: GetWidgetImage(WidgetType)
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_GetWidgetImage_DSharpPlus_Entities_WidgetType_
+  commentId: M:DSharpPlus.Entities.DiscordGuild.GetWidgetImage(DSharpPlus.Entities.WidgetType)
+  fullName: DSharpPlus.Entities.DiscordGuild.GetWidgetImage(DSharpPlus.Entities.WidgetType)
+  nameWithType: DiscordGuild.GetWidgetImage(WidgetType)
+- uid: DSharpPlus.Entities.DiscordGuild.GetWidgetImage*
+  name: GetWidgetImage
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_GetWidgetImage_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.GetWidgetImage
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuild.GetWidgetImage
+  nameWithType: DiscordGuild.GetWidgetImage
 - uid: DSharpPlus.Entities.DiscordGuild.IconHash
   name: IconHash
   href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_IconHash
@@ -12904,6 +13063,32 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordGuild.ListVoiceRegionsAsync
   nameWithType: DiscordGuild.ListVoiceRegionsAsync
+- uid: DSharpPlus.Entities.DiscordGuild.MaxMembers
+  name: MaxMembers
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_MaxMembers
+  commentId: P:DSharpPlus.Entities.DiscordGuild.MaxMembers
+  fullName: DSharpPlus.Entities.DiscordGuild.MaxMembers
+  nameWithType: DiscordGuild.MaxMembers
+- uid: DSharpPlus.Entities.DiscordGuild.MaxMembers*
+  name: MaxMembers
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_MaxMembers_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.MaxMembers
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuild.MaxMembers
+  nameWithType: DiscordGuild.MaxMembers
+- uid: DSharpPlus.Entities.DiscordGuild.MaxPresences
+  name: MaxPresences
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_MaxPresences
+  commentId: P:DSharpPlus.Entities.DiscordGuild.MaxPresences
+  fullName: DSharpPlus.Entities.DiscordGuild.MaxPresences
+  nameWithType: DiscordGuild.MaxPresences
+- uid: DSharpPlus.Entities.DiscordGuild.MaxPresences*
+  name: MaxPresences
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_MaxPresences_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.MaxPresences
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuild.MaxPresences
+  nameWithType: DiscordGuild.MaxPresences
 - uid: DSharpPlus.Entities.DiscordGuild.MemberCount
   name: MemberCount
   href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_MemberCount
@@ -13053,6 +13238,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordGuild.Permissions
   nameWithType: DiscordGuild.Permissions
+- uid: DSharpPlus.Entities.DiscordGuild.PreferredLocale
+  name: PreferredLocale
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_PreferredLocale
+  commentId: P:DSharpPlus.Entities.DiscordGuild.PreferredLocale
+  fullName: DSharpPlus.Entities.DiscordGuild.PreferredLocale
+  nameWithType: DiscordGuild.PreferredLocale
+- uid: DSharpPlus.Entities.DiscordGuild.PreferredLocale*
+  name: PreferredLocale
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_PreferredLocale_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.PreferredLocale
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuild.PreferredLocale
+  nameWithType: DiscordGuild.PreferredLocale
 - uid: DSharpPlus.Entities.DiscordGuild.PremiumSubscriptionCount
   name: PremiumSubscriptionCount
   href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_PremiumSubscriptionCount
@@ -13092,19 +13290,32 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordGuild.PruneAsync
   nameWithType: DiscordGuild.PruneAsync
-- uid: DSharpPlus.Entities.DiscordGuild.RequestAllMembers
-  name: RequestAllMembers()
-  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_RequestAllMembers
-  commentId: M:DSharpPlus.Entities.DiscordGuild.RequestAllMembers
-  fullName: DSharpPlus.Entities.DiscordGuild.RequestAllMembers()
-  nameWithType: DiscordGuild.RequestAllMembers()
-- uid: DSharpPlus.Entities.DiscordGuild.RequestAllMembers*
-  name: RequestAllMembers
-  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_RequestAllMembers_
-  commentId: Overload:DSharpPlus.Entities.DiscordGuild.RequestAllMembers
+- uid: DSharpPlus.Entities.DiscordGuild.PublicUpdatesChannel
+  name: PublicUpdatesChannel
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_PublicUpdatesChannel
+  commentId: P:DSharpPlus.Entities.DiscordGuild.PublicUpdatesChannel
+  fullName: DSharpPlus.Entities.DiscordGuild.PublicUpdatesChannel
+  nameWithType: DiscordGuild.PublicUpdatesChannel
+- uid: DSharpPlus.Entities.DiscordGuild.PublicUpdatesChannel*
+  name: PublicUpdatesChannel
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_PublicUpdatesChannel_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.PublicUpdatesChannel
   isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordGuild.RequestAllMembers
-  nameWithType: DiscordGuild.RequestAllMembers
+  fullName: DSharpPlus.Entities.DiscordGuild.PublicUpdatesChannel
+  nameWithType: DiscordGuild.PublicUpdatesChannel
+- uid: DSharpPlus.Entities.DiscordGuild.RequestAllMembersAsync
+  name: RequestAllMembersAsync()
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_RequestAllMembersAsync
+  commentId: M:DSharpPlus.Entities.DiscordGuild.RequestAllMembersAsync
+  fullName: DSharpPlus.Entities.DiscordGuild.RequestAllMembersAsync()
+  nameWithType: DiscordGuild.RequestAllMembersAsync()
+- uid: DSharpPlus.Entities.DiscordGuild.RequestAllMembersAsync*
+  name: RequestAllMembersAsync
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_RequestAllMembersAsync_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.RequestAllMembersAsync
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuild.RequestAllMembersAsync
+  nameWithType: DiscordGuild.RequestAllMembersAsync
 - uid: DSharpPlus.Entities.DiscordGuild.Roles
   name: Roles
   href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_Roles
@@ -13118,6 +13329,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordGuild.Roles
   nameWithType: DiscordGuild.Roles
+- uid: DSharpPlus.Entities.DiscordGuild.RulesChannel
+  name: RulesChannel
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_RulesChannel
+  commentId: P:DSharpPlus.Entities.DiscordGuild.RulesChannel
+  fullName: DSharpPlus.Entities.DiscordGuild.RulesChannel
+  nameWithType: DiscordGuild.RulesChannel
+- uid: DSharpPlus.Entities.DiscordGuild.RulesChannel*
+  name: RulesChannel
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_RulesChannel_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.RulesChannel
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuild.RulesChannel
+  nameWithType: DiscordGuild.RulesChannel
 - uid: DSharpPlus.Entities.DiscordGuild.SplashHash
   name: SplashHash
   href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_SplashHash
@@ -13170,6 +13394,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordGuild.SystemChannel
   nameWithType: DiscordGuild.SystemChannel
+- uid: DSharpPlus.Entities.DiscordGuild.SystemChannelFlags
+  name: SystemChannelFlags
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_SystemChannelFlags
+  commentId: P:DSharpPlus.Entities.DiscordGuild.SystemChannelFlags
+  fullName: DSharpPlus.Entities.DiscordGuild.SystemChannelFlags
+  nameWithType: DiscordGuild.SystemChannelFlags
+- uid: DSharpPlus.Entities.DiscordGuild.SystemChannelFlags*
+  name: SystemChannelFlags
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_SystemChannelFlags_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.SystemChannelFlags
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuild.SystemChannelFlags
+  nameWithType: DiscordGuild.SystemChannelFlags
 - uid: DSharpPlus.Entities.DiscordGuild.ToString
   name: ToString()
   href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_ToString
@@ -13254,6 +13491,32 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordGuild.VoiceStates
   nameWithType: DiscordGuild.VoiceStates
+- uid: DSharpPlus.Entities.DiscordGuild.WidgetChannel
+  name: WidgetChannel
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_WidgetChannel
+  commentId: P:DSharpPlus.Entities.DiscordGuild.WidgetChannel
+  fullName: DSharpPlus.Entities.DiscordGuild.WidgetChannel
+  nameWithType: DiscordGuild.WidgetChannel
+- uid: DSharpPlus.Entities.DiscordGuild.WidgetChannel*
+  name: WidgetChannel
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_WidgetChannel_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.WidgetChannel
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuild.WidgetChannel
+  nameWithType: DiscordGuild.WidgetChannel
+- uid: DSharpPlus.Entities.DiscordGuild.WidgetEnabled
+  name: WidgetEnabled
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_WidgetEnabled
+  commentId: P:DSharpPlus.Entities.DiscordGuild.WidgetEnabled
+  fullName: DSharpPlus.Entities.DiscordGuild.WidgetEnabled
+  nameWithType: DiscordGuild.WidgetEnabled
+- uid: DSharpPlus.Entities.DiscordGuild.WidgetEnabled*
+  name: WidgetEnabled
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_WidgetEnabled_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.WidgetEnabled
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuild.WidgetEnabled
+  nameWithType: DiscordGuild.WidgetEnabled
 - uid: DSharpPlus.Entities.DiscordGuildEmbed
   name: DiscordGuildEmbed
   href: api/DSharpPlus.Entities.DiscordGuildEmbed.html
@@ -13347,6 +13610,129 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordGuildEmoji.User
   nameWithType: DiscordGuildEmoji.User
+- uid: DSharpPlus.Entities.DiscordGuildPreview
+  name: DiscordGuildPreview
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html
+  commentId: T:DSharpPlus.Entities.DiscordGuildPreview
+  fullName: DSharpPlus.Entities.DiscordGuildPreview
+  nameWithType: DiscordGuildPreview
+- uid: DSharpPlus.Entities.DiscordGuildPreview.ApproximateMemberCount
+  name: ApproximateMemberCount
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_ApproximateMemberCount
+  commentId: P:DSharpPlus.Entities.DiscordGuildPreview.ApproximateMemberCount
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.ApproximateMemberCount
+  nameWithType: DiscordGuildPreview.ApproximateMemberCount
+- uid: DSharpPlus.Entities.DiscordGuildPreview.ApproximateMemberCount*
+  name: ApproximateMemberCount
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_ApproximateMemberCount_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuildPreview.ApproximateMemberCount
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.ApproximateMemberCount
+  nameWithType: DiscordGuildPreview.ApproximateMemberCount
+- uid: DSharpPlus.Entities.DiscordGuildPreview.ApproximatePresenceCount
+  name: ApproximatePresenceCount
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_ApproximatePresenceCount
+  commentId: P:DSharpPlus.Entities.DiscordGuildPreview.ApproximatePresenceCount
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.ApproximatePresenceCount
+  nameWithType: DiscordGuildPreview.ApproximatePresenceCount
+- uid: DSharpPlus.Entities.DiscordGuildPreview.ApproximatePresenceCount*
+  name: ApproximatePresenceCount
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_ApproximatePresenceCount_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuildPreview.ApproximatePresenceCount
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.ApproximatePresenceCount
+  nameWithType: DiscordGuildPreview.ApproximatePresenceCount
+- uid: DSharpPlus.Entities.DiscordGuildPreview.Description
+  name: Description
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_Description
+  commentId: P:DSharpPlus.Entities.DiscordGuildPreview.Description
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.Description
+  nameWithType: DiscordGuildPreview.Description
+- uid: DSharpPlus.Entities.DiscordGuildPreview.Description*
+  name: Description
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_Description_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuildPreview.Description
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.Description
+  nameWithType: DiscordGuildPreview.Description
+- uid: DSharpPlus.Entities.DiscordGuildPreview.DiscoverySplash
+  name: DiscoverySplash
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_DiscoverySplash
+  commentId: P:DSharpPlus.Entities.DiscordGuildPreview.DiscoverySplash
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.DiscoverySplash
+  nameWithType: DiscordGuildPreview.DiscoverySplash
+- uid: DSharpPlus.Entities.DiscordGuildPreview.DiscoverySplash*
+  name: DiscoverySplash
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_DiscoverySplash_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuildPreview.DiscoverySplash
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.DiscoverySplash
+  nameWithType: DiscordGuildPreview.DiscoverySplash
+- uid: DSharpPlus.Entities.DiscordGuildPreview.Emojis
+  name: Emojis
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_Emojis
+  commentId: P:DSharpPlus.Entities.DiscordGuildPreview.Emojis
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.Emojis
+  nameWithType: DiscordGuildPreview.Emojis
+- uid: DSharpPlus.Entities.DiscordGuildPreview.Emojis*
+  name: Emojis
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_Emojis_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuildPreview.Emojis
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.Emojis
+  nameWithType: DiscordGuildPreview.Emojis
+- uid: DSharpPlus.Entities.DiscordGuildPreview.Features
+  name: Features
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_Features
+  commentId: P:DSharpPlus.Entities.DiscordGuildPreview.Features
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.Features
+  nameWithType: DiscordGuildPreview.Features
+- uid: DSharpPlus.Entities.DiscordGuildPreview.Features*
+  name: Features
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_Features_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuildPreview.Features
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.Features
+  nameWithType: DiscordGuildPreview.Features
+- uid: DSharpPlus.Entities.DiscordGuildPreview.Icon
+  name: Icon
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_Icon
+  commentId: P:DSharpPlus.Entities.DiscordGuildPreview.Icon
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.Icon
+  nameWithType: DiscordGuildPreview.Icon
+- uid: DSharpPlus.Entities.DiscordGuildPreview.Icon*
+  name: Icon
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_Icon_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuildPreview.Icon
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.Icon
+  nameWithType: DiscordGuildPreview.Icon
+- uid: DSharpPlus.Entities.DiscordGuildPreview.Name
+  name: Name
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_Name
+  commentId: P:DSharpPlus.Entities.DiscordGuildPreview.Name
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.Name
+  nameWithType: DiscordGuildPreview.Name
+- uid: DSharpPlus.Entities.DiscordGuildPreview.Name*
+  name: Name
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_Name_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuildPreview.Name
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.Name
+  nameWithType: DiscordGuildPreview.Name
+- uid: DSharpPlus.Entities.DiscordGuildPreview.Splash
+  name: Splash
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_Splash
+  commentId: P:DSharpPlus.Entities.DiscordGuildPreview.Splash
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.Splash
+  nameWithType: DiscordGuildPreview.Splash
+- uid: DSharpPlus.Entities.DiscordGuildPreview.Splash*
+  name: Splash
+  href: api/DSharpPlus.Entities.DiscordGuildPreview.html#DSharpPlus_Entities_DiscordGuildPreview_Splash_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuildPreview.Splash
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuildPreview.Splash
+  nameWithType: DiscordGuildPreview.Splash
 - uid: DSharpPlus.Entities.DiscordIntegration
   name: DiscordIntegration
   href: api/DSharpPlus.Entities.DiscordIntegration.html
@@ -14495,6 +14881,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordMessage.DeleteReactionAsync
   nameWithType: DiscordMessage.DeleteReactionAsync
+- uid: DSharpPlus.Entities.DiscordMessage.DeleteReactionsEmojiAsync(DSharpPlus.Entities.DiscordEmoji)
+  name: DeleteReactionsEmojiAsync(DiscordEmoji)
+  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_DeleteReactionsEmojiAsync_DSharpPlus_Entities_DiscordEmoji_
+  commentId: M:DSharpPlus.Entities.DiscordMessage.DeleteReactionsEmojiAsync(DSharpPlus.Entities.DiscordEmoji)
+  fullName: DSharpPlus.Entities.DiscordMessage.DeleteReactionsEmojiAsync(DSharpPlus.Entities.DiscordEmoji)
+  nameWithType: DiscordMessage.DeleteReactionsEmojiAsync(DiscordEmoji)
+- uid: DSharpPlus.Entities.DiscordMessage.DeleteReactionsEmojiAsync*
+  name: DeleteReactionsEmojiAsync
+  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_DeleteReactionsEmojiAsync_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessage.DeleteReactionsEmojiAsync
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessage.DeleteReactionsEmojiAsync
+  nameWithType: DiscordMessage.DeleteReactionsEmojiAsync
 - uid: DSharpPlus.Entities.DiscordMessage.EditedTimestamp
   name: EditedTimestamp
   href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_EditedTimestamp
@@ -14566,15 +14965,15 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordMessage.GetHashCode
   nameWithType: DiscordMessage.GetHashCode
-- uid: DSharpPlus.Entities.DiscordMessage.GetReactionsAsync(DSharpPlus.Entities.DiscordEmoji,System.Int32,System.Nullable{System.UInt64},System.Nullable{System.UInt64})
-  name: GetReactionsAsync(DiscordEmoji, Int32, Nullable<UInt64>, Nullable<UInt64>)
-  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_GetReactionsAsync_DSharpPlus_Entities_DiscordEmoji_System_Int32_System_Nullable_System_UInt64__System_Nullable_System_UInt64__
-  commentId: M:DSharpPlus.Entities.DiscordMessage.GetReactionsAsync(DSharpPlus.Entities.DiscordEmoji,System.Int32,System.Nullable{System.UInt64},System.Nullable{System.UInt64})
-  name.vb: GetReactionsAsync(DiscordEmoji, Int32, Nullable(Of UInt64), Nullable(Of UInt64))
-  fullName: DSharpPlus.Entities.DiscordMessage.GetReactionsAsync(DSharpPlus.Entities.DiscordEmoji, System.Int32, System.Nullable<System.UInt64>, System.Nullable<System.UInt64>)
-  fullName.vb: DSharpPlus.Entities.DiscordMessage.GetReactionsAsync(DSharpPlus.Entities.DiscordEmoji, System.Int32, System.Nullable(Of System.UInt64), System.Nullable(Of System.UInt64))
-  nameWithType: DiscordMessage.GetReactionsAsync(DiscordEmoji, Int32, Nullable<UInt64>, Nullable<UInt64>)
-  nameWithType.vb: DiscordMessage.GetReactionsAsync(DiscordEmoji, Int32, Nullable(Of UInt64), Nullable(Of UInt64))
+- uid: DSharpPlus.Entities.DiscordMessage.GetReactionsAsync(DSharpPlus.Entities.DiscordEmoji,System.Int32,System.Nullable{System.UInt64})
+  name: GetReactionsAsync(DiscordEmoji, Int32, Nullable<UInt64>)
+  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_GetReactionsAsync_DSharpPlus_Entities_DiscordEmoji_System_Int32_System_Nullable_System_UInt64__
+  commentId: M:DSharpPlus.Entities.DiscordMessage.GetReactionsAsync(DSharpPlus.Entities.DiscordEmoji,System.Int32,System.Nullable{System.UInt64})
+  name.vb: GetReactionsAsync(DiscordEmoji, Int32, Nullable(Of UInt64))
+  fullName: DSharpPlus.Entities.DiscordMessage.GetReactionsAsync(DSharpPlus.Entities.DiscordEmoji, System.Int32, System.Nullable<System.UInt64>)
+  fullName.vb: DSharpPlus.Entities.DiscordMessage.GetReactionsAsync(DSharpPlus.Entities.DiscordEmoji, System.Int32, System.Nullable(Of System.UInt64))
+  nameWithType: DiscordMessage.GetReactionsAsync(DiscordEmoji, Int32, Nullable<UInt64>)
+  nameWithType.vb: DiscordMessage.GetReactionsAsync(DiscordEmoji, Int32, Nullable(Of UInt64))
 - uid: DSharpPlus.Entities.DiscordMessage.GetReactionsAsync*
   name: GetReactionsAsync
   href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_GetReactionsAsync_
@@ -17416,6 +17815,42 @@ references:
   commentId: F:DSharpPlus.Entities.VerificationLevel.None
   fullName: DSharpPlus.Entities.VerificationLevel.None
   nameWithType: VerificationLevel.None
+- uid: DSharpPlus.Entities.WidgetType
+  name: WidgetType
+  href: api/DSharpPlus.Entities.WidgetType.html
+  commentId: T:DSharpPlus.Entities.WidgetType
+  fullName: DSharpPlus.Entities.WidgetType
+  nameWithType: WidgetType
+- uid: DSharpPlus.Entities.WidgetType.Banner1
+  name: Banner1
+  href: api/DSharpPlus.Entities.WidgetType.html#DSharpPlus_Entities_WidgetType_Banner1
+  commentId: F:DSharpPlus.Entities.WidgetType.Banner1
+  fullName: DSharpPlus.Entities.WidgetType.Banner1
+  nameWithType: WidgetType.Banner1
+- uid: DSharpPlus.Entities.WidgetType.Banner2
+  name: Banner2
+  href: api/DSharpPlus.Entities.WidgetType.html#DSharpPlus_Entities_WidgetType_Banner2
+  commentId: F:DSharpPlus.Entities.WidgetType.Banner2
+  fullName: DSharpPlus.Entities.WidgetType.Banner2
+  nameWithType: WidgetType.Banner2
+- uid: DSharpPlus.Entities.WidgetType.Banner3
+  name: Banner3
+  href: api/DSharpPlus.Entities.WidgetType.html#DSharpPlus_Entities_WidgetType_Banner3
+  commentId: F:DSharpPlus.Entities.WidgetType.Banner3
+  fullName: DSharpPlus.Entities.WidgetType.Banner3
+  nameWithType: WidgetType.Banner3
+- uid: DSharpPlus.Entities.WidgetType.Banner4
+  name: Banner4
+  href: api/DSharpPlus.Entities.WidgetType.html#DSharpPlus_Entities_WidgetType_Banner4
+  commentId: F:DSharpPlus.Entities.WidgetType.Banner4
+  fullName: DSharpPlus.Entities.WidgetType.Banner4
+  nameWithType: WidgetType.Banner4
+- uid: DSharpPlus.Entities.WidgetType.Shield
+  name: Shield
+  href: api/DSharpPlus.Entities.WidgetType.html#DSharpPlus_Entities_WidgetType_Shield
+  commentId: F:DSharpPlus.Entities.WidgetType.Shield
+  fullName: DSharpPlus.Entities.WidgetType.Shield
+  nameWithType: WidgetType.Shield
 - uid: DSharpPlus.Enums
   name: DSharpPlus.Enums
   href: api/DSharpPlus.Enums.html
@@ -17579,6 +18014,43 @@ references:
   commentId: F:DSharpPlus.Enums.MessageType.UserPremiumGuildSubscription
   fullName: DSharpPlus.Enums.MessageType.UserPremiumGuildSubscription
   nameWithType: MessageType.UserPremiumGuildSubscription
+- uid: DSharpPlus.Enums.SystemChannelFlags
+  name: SystemChannelFlags
+  href: api/DSharpPlus.Enums.SystemChannelFlags.html
+  commentId: T:DSharpPlus.Enums.SystemChannelFlags
+  fullName: DSharpPlus.Enums.SystemChannelFlags
+  nameWithType: SystemChannelFlags
+- uid: DSharpPlus.Enums.SystemChannelFlags.SuppressJoinNotifications
+  name: SuppressJoinNotifications
+  href: api/DSharpPlus.Enums.SystemChannelFlags.html#DSharpPlus_Enums_SystemChannelFlags_SuppressJoinNotifications
+  commentId: F:DSharpPlus.Enums.SystemChannelFlags.SuppressJoinNotifications
+  fullName: DSharpPlus.Enums.SystemChannelFlags.SuppressJoinNotifications
+  nameWithType: SystemChannelFlags.SuppressJoinNotifications
+- uid: DSharpPlus.Enums.SystemChannelFlags.SuppressPremiumSubscriptions
+  name: SuppressPremiumSubscriptions
+  href: api/DSharpPlus.Enums.SystemChannelFlags.html#DSharpPlus_Enums_SystemChannelFlags_SuppressPremiumSubscriptions
+  commentId: F:DSharpPlus.Enums.SystemChannelFlags.SuppressPremiumSubscriptions
+  fullName: DSharpPlus.Enums.SystemChannelFlags.SuppressPremiumSubscriptions
+  nameWithType: SystemChannelFlags.SuppressPremiumSubscriptions
+- uid: DSharpPlus.Enums.SystemChannelFlagsExtension
+  name: SystemChannelFlagsExtension
+  href: api/DSharpPlus.Enums.SystemChannelFlagsExtension.html
+  commentId: T:DSharpPlus.Enums.SystemChannelFlagsExtension
+  fullName: DSharpPlus.Enums.SystemChannelFlagsExtension
+  nameWithType: SystemChannelFlagsExtension
+- uid: DSharpPlus.Enums.SystemChannelFlagsExtension.HasSystemChannelFlag(DSharpPlus.Enums.SystemChannelFlags,DSharpPlus.Enums.SystemChannelFlags)
+  name: HasSystemChannelFlag(SystemChannelFlags, SystemChannelFlags)
+  href: api/DSharpPlus.Enums.SystemChannelFlagsExtension.html#DSharpPlus_Enums_SystemChannelFlagsExtension_HasSystemChannelFlag_DSharpPlus_Enums_SystemChannelFlags_DSharpPlus_Enums_SystemChannelFlags_
+  commentId: M:DSharpPlus.Enums.SystemChannelFlagsExtension.HasSystemChannelFlag(DSharpPlus.Enums.SystemChannelFlags,DSharpPlus.Enums.SystemChannelFlags)
+  fullName: DSharpPlus.Enums.SystemChannelFlagsExtension.HasSystemChannelFlag(DSharpPlus.Enums.SystemChannelFlags, DSharpPlus.Enums.SystemChannelFlags)
+  nameWithType: SystemChannelFlagsExtension.HasSystemChannelFlag(SystemChannelFlags, SystemChannelFlags)
+- uid: DSharpPlus.Enums.SystemChannelFlagsExtension.HasSystemChannelFlag*
+  name: HasSystemChannelFlag
+  href: api/DSharpPlus.Enums.SystemChannelFlagsExtension.html#DSharpPlus_Enums_SystemChannelFlagsExtension_HasSystemChannelFlag_
+  commentId: Overload:DSharpPlus.Enums.SystemChannelFlagsExtension.HasSystemChannelFlag
+  isSpec: "True"
+  fullName: DSharpPlus.Enums.SystemChannelFlagsExtension.HasSystemChannelFlag
+  nameWithType: SystemChannelFlagsExtension.HasSystemChannelFlag
 - uid: DSharpPlus.Enums.TargetUserType
   name: TargetUserType
   href: api/DSharpPlus.Enums.TargetUserType.html
@@ -18501,6 +18973,96 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.EventArgs.HeartbeatEventArgs.Timestamp
   nameWithType: HeartbeatEventArgs.Timestamp
+- uid: DSharpPlus.EventArgs.InviteCreateEventArgs
+  name: InviteCreateEventArgs
+  href: api/DSharpPlus.EventArgs.InviteCreateEventArgs.html
+  commentId: T:DSharpPlus.EventArgs.InviteCreateEventArgs
+  fullName: DSharpPlus.EventArgs.InviteCreateEventArgs
+  nameWithType: InviteCreateEventArgs
+- uid: DSharpPlus.EventArgs.InviteCreateEventArgs.Channel
+  name: Channel
+  href: api/DSharpPlus.EventArgs.InviteCreateEventArgs.html#DSharpPlus_EventArgs_InviteCreateEventArgs_Channel
+  commentId: P:DSharpPlus.EventArgs.InviteCreateEventArgs.Channel
+  fullName: DSharpPlus.EventArgs.InviteCreateEventArgs.Channel
+  nameWithType: InviteCreateEventArgs.Channel
+- uid: DSharpPlus.EventArgs.InviteCreateEventArgs.Channel*
+  name: Channel
+  href: api/DSharpPlus.EventArgs.InviteCreateEventArgs.html#DSharpPlus_EventArgs_InviteCreateEventArgs_Channel_
+  commentId: Overload:DSharpPlus.EventArgs.InviteCreateEventArgs.Channel
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.InviteCreateEventArgs.Channel
+  nameWithType: InviteCreateEventArgs.Channel
+- uid: DSharpPlus.EventArgs.InviteCreateEventArgs.Guild
+  name: Guild
+  href: api/DSharpPlus.EventArgs.InviteCreateEventArgs.html#DSharpPlus_EventArgs_InviteCreateEventArgs_Guild
+  commentId: P:DSharpPlus.EventArgs.InviteCreateEventArgs.Guild
+  fullName: DSharpPlus.EventArgs.InviteCreateEventArgs.Guild
+  nameWithType: InviteCreateEventArgs.Guild
+- uid: DSharpPlus.EventArgs.InviteCreateEventArgs.Guild*
+  name: Guild
+  href: api/DSharpPlus.EventArgs.InviteCreateEventArgs.html#DSharpPlus_EventArgs_InviteCreateEventArgs_Guild_
+  commentId: Overload:DSharpPlus.EventArgs.InviteCreateEventArgs.Guild
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.InviteCreateEventArgs.Guild
+  nameWithType: InviteCreateEventArgs.Guild
+- uid: DSharpPlus.EventArgs.InviteCreateEventArgs.Invite
+  name: Invite
+  href: api/DSharpPlus.EventArgs.InviteCreateEventArgs.html#DSharpPlus_EventArgs_InviteCreateEventArgs_Invite
+  commentId: P:DSharpPlus.EventArgs.InviteCreateEventArgs.Invite
+  fullName: DSharpPlus.EventArgs.InviteCreateEventArgs.Invite
+  nameWithType: InviteCreateEventArgs.Invite
+- uid: DSharpPlus.EventArgs.InviteCreateEventArgs.Invite*
+  name: Invite
+  href: api/DSharpPlus.EventArgs.InviteCreateEventArgs.html#DSharpPlus_EventArgs_InviteCreateEventArgs_Invite_
+  commentId: Overload:DSharpPlus.EventArgs.InviteCreateEventArgs.Invite
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.InviteCreateEventArgs.Invite
+  nameWithType: InviteCreateEventArgs.Invite
+- uid: DSharpPlus.EventArgs.InviteDeleteEventArgs
+  name: InviteDeleteEventArgs
+  href: api/DSharpPlus.EventArgs.InviteDeleteEventArgs.html
+  commentId: T:DSharpPlus.EventArgs.InviteDeleteEventArgs
+  fullName: DSharpPlus.EventArgs.InviteDeleteEventArgs
+  nameWithType: InviteDeleteEventArgs
+- uid: DSharpPlus.EventArgs.InviteDeleteEventArgs.Channel
+  name: Channel
+  href: api/DSharpPlus.EventArgs.InviteDeleteEventArgs.html#DSharpPlus_EventArgs_InviteDeleteEventArgs_Channel
+  commentId: P:DSharpPlus.EventArgs.InviteDeleteEventArgs.Channel
+  fullName: DSharpPlus.EventArgs.InviteDeleteEventArgs.Channel
+  nameWithType: InviteDeleteEventArgs.Channel
+- uid: DSharpPlus.EventArgs.InviteDeleteEventArgs.Channel*
+  name: Channel
+  href: api/DSharpPlus.EventArgs.InviteDeleteEventArgs.html#DSharpPlus_EventArgs_InviteDeleteEventArgs_Channel_
+  commentId: Overload:DSharpPlus.EventArgs.InviteDeleteEventArgs.Channel
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.InviteDeleteEventArgs.Channel
+  nameWithType: InviteDeleteEventArgs.Channel
+- uid: DSharpPlus.EventArgs.InviteDeleteEventArgs.Guild
+  name: Guild
+  href: api/DSharpPlus.EventArgs.InviteDeleteEventArgs.html#DSharpPlus_EventArgs_InviteDeleteEventArgs_Guild
+  commentId: P:DSharpPlus.EventArgs.InviteDeleteEventArgs.Guild
+  fullName: DSharpPlus.EventArgs.InviteDeleteEventArgs.Guild
+  nameWithType: InviteDeleteEventArgs.Guild
+- uid: DSharpPlus.EventArgs.InviteDeleteEventArgs.Guild*
+  name: Guild
+  href: api/DSharpPlus.EventArgs.InviteDeleteEventArgs.html#DSharpPlus_EventArgs_InviteDeleteEventArgs_Guild_
+  commentId: Overload:DSharpPlus.EventArgs.InviteDeleteEventArgs.Guild
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.InviteDeleteEventArgs.Guild
+  nameWithType: InviteDeleteEventArgs.Guild
+- uid: DSharpPlus.EventArgs.InviteDeleteEventArgs.Invite
+  name: Invite
+  href: api/DSharpPlus.EventArgs.InviteDeleteEventArgs.html#DSharpPlus_EventArgs_InviteDeleteEventArgs_Invite
+  commentId: P:DSharpPlus.EventArgs.InviteDeleteEventArgs.Invite
+  fullName: DSharpPlus.EventArgs.InviteDeleteEventArgs.Invite
+  nameWithType: InviteDeleteEventArgs.Invite
+- uid: DSharpPlus.EventArgs.InviteDeleteEventArgs.Invite*
+  name: Invite
+  href: api/DSharpPlus.EventArgs.InviteDeleteEventArgs.html#DSharpPlus_EventArgs_InviteDeleteEventArgs_Invite_
+  commentId: Overload:DSharpPlus.EventArgs.InviteDeleteEventArgs.Invite
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.InviteDeleteEventArgs.Invite
+  nameWithType: InviteDeleteEventArgs.Invite
 - uid: DSharpPlus.EventArgs.MessageAcknowledgeEventArgs
   name: MessageAcknowledgeEventArgs
   href: api/DSharpPlus.EventArgs.MessageAcknowledgeEventArgs.html
@@ -18791,6 +19353,64 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.EventArgs.MessageReactionAddEventArgs.User
   nameWithType: MessageReactionAddEventArgs.User
+- uid: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs
+  name: MessageReactionRemoveEmojiEventArgs
+  href: api/DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.html
+  commentId: T:DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs
+  fullName: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs
+  nameWithType: MessageReactionRemoveEmojiEventArgs
+- uid: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Channel
+  name: Channel
+  href: api/DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.html#DSharpPlus_EventArgs_MessageReactionRemoveEmojiEventArgs_Channel
+  commentId: P:DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Channel
+  fullName: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Channel
+  nameWithType: MessageReactionRemoveEmojiEventArgs.Channel
+- uid: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Channel*
+  name: Channel
+  href: api/DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.html#DSharpPlus_EventArgs_MessageReactionRemoveEmojiEventArgs_Channel_
+  commentId: Overload:DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Channel
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Channel
+  nameWithType: MessageReactionRemoveEmojiEventArgs.Channel
+- uid: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Emoji
+  name: Emoji
+  href: api/DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.html#DSharpPlus_EventArgs_MessageReactionRemoveEmojiEventArgs_Emoji
+  commentId: P:DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Emoji
+  fullName: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Emoji
+  nameWithType: MessageReactionRemoveEmojiEventArgs.Emoji
+- uid: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Emoji*
+  name: Emoji
+  href: api/DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.html#DSharpPlus_EventArgs_MessageReactionRemoveEmojiEventArgs_Emoji_
+  commentId: Overload:DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Emoji
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Emoji
+  nameWithType: MessageReactionRemoveEmojiEventArgs.Emoji
+- uid: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Guild
+  name: Guild
+  href: api/DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.html#DSharpPlus_EventArgs_MessageReactionRemoveEmojiEventArgs_Guild
+  commentId: P:DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Guild
+  fullName: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Guild
+  nameWithType: MessageReactionRemoveEmojiEventArgs.Guild
+- uid: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Guild*
+  name: Guild
+  href: api/DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.html#DSharpPlus_EventArgs_MessageReactionRemoveEmojiEventArgs_Guild_
+  commentId: Overload:DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Guild
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Guild
+  nameWithType: MessageReactionRemoveEmojiEventArgs.Guild
+- uid: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Message
+  name: Message
+  href: api/DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.html#DSharpPlus_EventArgs_MessageReactionRemoveEmojiEventArgs_Message
+  commentId: P:DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Message
+  fullName: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Message
+  nameWithType: MessageReactionRemoveEmojiEventArgs.Message
+- uid: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Message*
+  name: Message
+  href: api/DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.html#DSharpPlus_EventArgs_MessageReactionRemoveEmojiEventArgs_Message_
+  commentId: Overload:DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Message
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.Message
+  nameWithType: MessageReactionRemoveEmojiEventArgs.Message
 - uid: DSharpPlus.EventArgs.MessageReactionRemoveEventArgs
   name: MessageReactionRemoveEventArgs
   href: api/DSharpPlus.EventArgs.MessageReactionRemoveEventArgs.html
@@ -19120,6 +19740,41 @@ references:
   commentId: T:DSharpPlus.EventArgs.ReadyEventArgs
   fullName: DSharpPlus.EventArgs.ReadyEventArgs
   nameWithType: ReadyEventArgs
+- uid: DSharpPlus.EventArgs.SocketBinaryMessageEventArgs
+  name: SocketBinaryMessageEventArgs
+  href: api/DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.html
+  commentId: T:DSharpPlus.EventArgs.SocketBinaryMessageEventArgs
+  fullName: DSharpPlus.EventArgs.SocketBinaryMessageEventArgs
+  nameWithType: SocketBinaryMessageEventArgs
+- uid: DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.#ctor(System.Byte[])
+  name: SocketBinaryMessageEventArgs(Byte[])
+  href: api/DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.html#DSharpPlus_EventArgs_SocketBinaryMessageEventArgs__ctor_System_Byte___
+  commentId: M:DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.#ctor(System.Byte[])
+  name.vb: SocketBinaryMessageEventArgs(Byte())
+  fullName: DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.SocketBinaryMessageEventArgs(System.Byte[])
+  fullName.vb: DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.SocketBinaryMessageEventArgs(System.Byte())
+  nameWithType: SocketBinaryMessageEventArgs.SocketBinaryMessageEventArgs(Byte[])
+  nameWithType.vb: SocketBinaryMessageEventArgs.SocketBinaryMessageEventArgs(Byte())
+- uid: DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.#ctor*
+  name: SocketBinaryMessageEventArgs
+  href: api/DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.html#DSharpPlus_EventArgs_SocketBinaryMessageEventArgs__ctor_
+  commentId: Overload:DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.#ctor
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.SocketBinaryMessageEventArgs
+  nameWithType: SocketBinaryMessageEventArgs.SocketBinaryMessageEventArgs
+- uid: DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.Message
+  name: Message
+  href: api/DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.html#DSharpPlus_EventArgs_SocketBinaryMessageEventArgs_Message
+  commentId: P:DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.Message
+  fullName: DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.Message
+  nameWithType: SocketBinaryMessageEventArgs.Message
+- uid: DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.Message*
+  name: Message
+  href: api/DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.html#DSharpPlus_EventArgs_SocketBinaryMessageEventArgs_Message_
+  commentId: Overload:DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.Message
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.Message
+  nameWithType: SocketBinaryMessageEventArgs.Message
 - uid: DSharpPlus.EventArgs.SocketCloseEventArgs
   name: SocketCloseEventArgs
   href: api/DSharpPlus.EventArgs.SocketCloseEventArgs.html
@@ -19203,32 +19858,38 @@ references:
   commentId: T:DSharpPlus.EventArgs.SocketMessageEventArgs
   fullName: DSharpPlus.EventArgs.SocketMessageEventArgs
   nameWithType: SocketMessageEventArgs
-- uid: DSharpPlus.EventArgs.SocketMessageEventArgs.#ctor
-  name: SocketMessageEventArgs()
-  href: api/DSharpPlus.EventArgs.SocketMessageEventArgs.html#DSharpPlus_EventArgs_SocketMessageEventArgs__ctor
-  commentId: M:DSharpPlus.EventArgs.SocketMessageEventArgs.#ctor
-  fullName: DSharpPlus.EventArgs.SocketMessageEventArgs.SocketMessageEventArgs()
-  nameWithType: SocketMessageEventArgs.SocketMessageEventArgs()
-- uid: DSharpPlus.EventArgs.SocketMessageEventArgs.#ctor*
-  name: SocketMessageEventArgs
-  href: api/DSharpPlus.EventArgs.SocketMessageEventArgs.html#DSharpPlus_EventArgs_SocketMessageEventArgs__ctor_
-  commentId: Overload:DSharpPlus.EventArgs.SocketMessageEventArgs.#ctor
+- uid: DSharpPlus.EventArgs.SocketTextMessageEventArgs
+  name: SocketTextMessageEventArgs
+  href: api/DSharpPlus.EventArgs.SocketTextMessageEventArgs.html
+  commentId: T:DSharpPlus.EventArgs.SocketTextMessageEventArgs
+  fullName: DSharpPlus.EventArgs.SocketTextMessageEventArgs
+  nameWithType: SocketTextMessageEventArgs
+- uid: DSharpPlus.EventArgs.SocketTextMessageEventArgs.#ctor(System.String)
+  name: SocketTextMessageEventArgs(String)
+  href: api/DSharpPlus.EventArgs.SocketTextMessageEventArgs.html#DSharpPlus_EventArgs_SocketTextMessageEventArgs__ctor_System_String_
+  commentId: M:DSharpPlus.EventArgs.SocketTextMessageEventArgs.#ctor(System.String)
+  fullName: DSharpPlus.EventArgs.SocketTextMessageEventArgs.SocketTextMessageEventArgs(System.String)
+  nameWithType: SocketTextMessageEventArgs.SocketTextMessageEventArgs(String)
+- uid: DSharpPlus.EventArgs.SocketTextMessageEventArgs.#ctor*
+  name: SocketTextMessageEventArgs
+  href: api/DSharpPlus.EventArgs.SocketTextMessageEventArgs.html#DSharpPlus_EventArgs_SocketTextMessageEventArgs__ctor_
+  commentId: Overload:DSharpPlus.EventArgs.SocketTextMessageEventArgs.#ctor
   isSpec: "True"
-  fullName: DSharpPlus.EventArgs.SocketMessageEventArgs.SocketMessageEventArgs
-  nameWithType: SocketMessageEventArgs.SocketMessageEventArgs
-- uid: DSharpPlus.EventArgs.SocketMessageEventArgs.Message
+  fullName: DSharpPlus.EventArgs.SocketTextMessageEventArgs.SocketTextMessageEventArgs
+  nameWithType: SocketTextMessageEventArgs.SocketTextMessageEventArgs
+- uid: DSharpPlus.EventArgs.SocketTextMessageEventArgs.Message
   name: Message
-  href: api/DSharpPlus.EventArgs.SocketMessageEventArgs.html#DSharpPlus_EventArgs_SocketMessageEventArgs_Message
-  commentId: P:DSharpPlus.EventArgs.SocketMessageEventArgs.Message
-  fullName: DSharpPlus.EventArgs.SocketMessageEventArgs.Message
-  nameWithType: SocketMessageEventArgs.Message
-- uid: DSharpPlus.EventArgs.SocketMessageEventArgs.Message*
+  href: api/DSharpPlus.EventArgs.SocketTextMessageEventArgs.html#DSharpPlus_EventArgs_SocketTextMessageEventArgs_Message
+  commentId: P:DSharpPlus.EventArgs.SocketTextMessageEventArgs.Message
+  fullName: DSharpPlus.EventArgs.SocketTextMessageEventArgs.Message
+  nameWithType: SocketTextMessageEventArgs.Message
+- uid: DSharpPlus.EventArgs.SocketTextMessageEventArgs.Message*
   name: Message
-  href: api/DSharpPlus.EventArgs.SocketMessageEventArgs.html#DSharpPlus_EventArgs_SocketMessageEventArgs_Message_
-  commentId: Overload:DSharpPlus.EventArgs.SocketMessageEventArgs.Message
+  href: api/DSharpPlus.EventArgs.SocketTextMessageEventArgs.html#DSharpPlus_EventArgs_SocketTextMessageEventArgs_Message_
+  commentId: Overload:DSharpPlus.EventArgs.SocketTextMessageEventArgs.Message
   isSpec: "True"
-  fullName: DSharpPlus.EventArgs.SocketMessageEventArgs.Message
-  nameWithType: SocketMessageEventArgs.Message
+  fullName: DSharpPlus.EventArgs.SocketTextMessageEventArgs.Message
+  nameWithType: SocketTextMessageEventArgs.Message
 - uid: DSharpPlus.EventArgs.TypingStartEventArgs
   name: TypingStartEventArgs
   href: api/DSharpPlus.EventArgs.TypingStartEventArgs.html
@@ -19691,6 +20352,51 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Exceptions.RateLimitException.WebResponse
   nameWithType: RateLimitException.WebResponse
+- uid: DSharpPlus.Exceptions.RequestSizeException
+  name: RequestSizeException
+  href: api/DSharpPlus.Exceptions.RequestSizeException.html
+  commentId: T:DSharpPlus.Exceptions.RequestSizeException
+  fullName: DSharpPlus.Exceptions.RequestSizeException
+  nameWithType: RequestSizeException
+- uid: DSharpPlus.Exceptions.RequestSizeException.JsonMessage
+  name: JsonMessage
+  href: api/DSharpPlus.Exceptions.RequestSizeException.html#DSharpPlus_Exceptions_RequestSizeException_JsonMessage
+  commentId: P:DSharpPlus.Exceptions.RequestSizeException.JsonMessage
+  fullName: DSharpPlus.Exceptions.RequestSizeException.JsonMessage
+  nameWithType: RequestSizeException.JsonMessage
+- uid: DSharpPlus.Exceptions.RequestSizeException.JsonMessage*
+  name: JsonMessage
+  href: api/DSharpPlus.Exceptions.RequestSizeException.html#DSharpPlus_Exceptions_RequestSizeException_JsonMessage_
+  commentId: Overload:DSharpPlus.Exceptions.RequestSizeException.JsonMessage
+  isSpec: "True"
+  fullName: DSharpPlus.Exceptions.RequestSizeException.JsonMessage
+  nameWithType: RequestSizeException.JsonMessage
+- uid: DSharpPlus.Exceptions.RequestSizeException.WebRequest
+  name: WebRequest
+  href: api/DSharpPlus.Exceptions.RequestSizeException.html#DSharpPlus_Exceptions_RequestSizeException_WebRequest
+  commentId: P:DSharpPlus.Exceptions.RequestSizeException.WebRequest
+  fullName: DSharpPlus.Exceptions.RequestSizeException.WebRequest
+  nameWithType: RequestSizeException.WebRequest
+- uid: DSharpPlus.Exceptions.RequestSizeException.WebRequest*
+  name: WebRequest
+  href: api/DSharpPlus.Exceptions.RequestSizeException.html#DSharpPlus_Exceptions_RequestSizeException_WebRequest_
+  commentId: Overload:DSharpPlus.Exceptions.RequestSizeException.WebRequest
+  isSpec: "True"
+  fullName: DSharpPlus.Exceptions.RequestSizeException.WebRequest
+  nameWithType: RequestSizeException.WebRequest
+- uid: DSharpPlus.Exceptions.RequestSizeException.WebResponse
+  name: WebResponse
+  href: api/DSharpPlus.Exceptions.RequestSizeException.html#DSharpPlus_Exceptions_RequestSizeException_WebResponse
+  commentId: P:DSharpPlus.Exceptions.RequestSizeException.WebResponse
+  fullName: DSharpPlus.Exceptions.RequestSizeException.WebResponse
+  nameWithType: RequestSizeException.WebResponse
+- uid: DSharpPlus.Exceptions.RequestSizeException.WebResponse*
+  name: WebResponse
+  href: api/DSharpPlus.Exceptions.RequestSizeException.html#DSharpPlus_Exceptions_RequestSizeException_WebResponse_
+  commentId: Overload:DSharpPlus.Exceptions.RequestSizeException.WebResponse
+  isSpec: "True"
+  fullName: DSharpPlus.Exceptions.RequestSizeException.WebResponse
+  nameWithType: RequestSizeException.WebResponse
 - uid: DSharpPlus.Exceptions.UnauthorizedException
   name: UnauthorizedException
   href: api/DSharpPlus.Exceptions.UnauthorizedException.html
@@ -20276,12 +20982,6 @@ references:
   commentId: T:DSharpPlus.Interactivity.Enums.PaginationBehaviour
   fullName: DSharpPlus.Interactivity.Enums.PaginationBehaviour
   nameWithType: PaginationBehaviour
-- uid: DSharpPlus.Interactivity.Enums.PaginationBehaviour.Default
-  name: Default
-  href: api/DSharpPlus.Interactivity.Enums.PaginationBehaviour.html#DSharpPlus_Interactivity_Enums_PaginationBehaviour_Default
-  commentId: F:DSharpPlus.Interactivity.Enums.PaginationBehaviour.Default
-  fullName: DSharpPlus.Interactivity.Enums.PaginationBehaviour.Default
-  nameWithType: PaginationBehaviour.Default
 - uid: DSharpPlus.Interactivity.Enums.PaginationBehaviour.Ignore
   name: Ignore
   href: api/DSharpPlus.Interactivity.Enums.PaginationBehaviour.html#DSharpPlus_Interactivity_Enums_PaginationBehaviour_Ignore
@@ -20300,12 +21000,6 @@ references:
   commentId: T:DSharpPlus.Interactivity.Enums.PaginationDeletion
   fullName: DSharpPlus.Interactivity.Enums.PaginationDeletion
   nameWithType: PaginationDeletion
-- uid: DSharpPlus.Interactivity.Enums.PaginationDeletion.Default
-  name: Default
-  href: api/DSharpPlus.Interactivity.Enums.PaginationDeletion.html#DSharpPlus_Interactivity_Enums_PaginationDeletion_Default
-  commentId: F:DSharpPlus.Interactivity.Enums.PaginationDeletion.Default
-  fullName: DSharpPlus.Interactivity.Enums.PaginationDeletion.Default
-  nameWithType: PaginationDeletion.Default
 - uid: DSharpPlus.Interactivity.Enums.PaginationDeletion.DeleteEmojis
   name: DeleteEmojis
   href: api/DSharpPlus.Interactivity.Enums.PaginationDeletion.html#DSharpPlus_Interactivity_Enums_PaginationDeletion_DeleteEmojis
@@ -20330,12 +21024,6 @@ references:
   commentId: T:DSharpPlus.Interactivity.Enums.PollBehaviour
   fullName: DSharpPlus.Interactivity.Enums.PollBehaviour
   nameWithType: PollBehaviour
-- uid: DSharpPlus.Interactivity.Enums.PollBehaviour.Default
-  name: Default
-  href: api/DSharpPlus.Interactivity.Enums.PollBehaviour.html#DSharpPlus_Interactivity_Enums_PollBehaviour_Default
-  commentId: F:DSharpPlus.Interactivity.Enums.PollBehaviour.Default
-  fullName: DSharpPlus.Interactivity.Enums.PollBehaviour.Default
-  nameWithType: PollBehaviour.Default
 - uid: DSharpPlus.Interactivity.Enums.PollBehaviour.DeleteEmojis
   name: DeleteEmojis
   href: api/DSharpPlus.Interactivity.Enums.PollBehaviour.html#DSharpPlus_Interactivity_Enums_PollBehaviour_DeleteEmojis
@@ -20749,15 +21437,15 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Interactivity.Extensions.GetNextMessageAsync
   nameWithType: Extensions.GetNextMessageAsync
-- uid: DSharpPlus.Interactivity.Extensions.SendPaginatedMessageAsync(DiscordChannel,DiscordUser,DSharpPlus.Interactivity.Page[],DSharpPlus.Interactivity.PaginationEmojis,PaginationBehaviour,PaginationDeletion,System.Nullable{System.TimeSpan})
-  name: SendPaginatedMessageAsync(DiscordChannel, DiscordUser, Page[], PaginationEmojis, PaginationBehaviour, PaginationDeletion, Nullable<TimeSpan>)
-  href: api/DSharpPlus.Interactivity.Extensions.html#DSharpPlus_Interactivity_Extensions_SendPaginatedMessageAsync_DiscordChannel_DiscordUser_DSharpPlus_Interactivity_Page___DSharpPlus_Interactivity_PaginationEmojis_PaginationBehaviour_PaginationDeletion_System_Nullable_System_TimeSpan__
-  commentId: M:DSharpPlus.Interactivity.Extensions.SendPaginatedMessageAsync(DiscordChannel,DiscordUser,DSharpPlus.Interactivity.Page[],DSharpPlus.Interactivity.PaginationEmojis,PaginationBehaviour,PaginationDeletion,System.Nullable{System.TimeSpan})
-  name.vb: SendPaginatedMessageAsync(DiscordChannel, DiscordUser, Page(), PaginationEmojis, PaginationBehaviour, PaginationDeletion, Nullable(Of TimeSpan))
-  fullName: DSharpPlus.Interactivity.Extensions.SendPaginatedMessageAsync(DiscordChannel, DiscordUser, DSharpPlus.Interactivity.Page[], DSharpPlus.Interactivity.PaginationEmojis, PaginationBehaviour, PaginationDeletion, System.Nullable<System.TimeSpan>)
-  fullName.vb: DSharpPlus.Interactivity.Extensions.SendPaginatedMessageAsync(DiscordChannel, DiscordUser, DSharpPlus.Interactivity.Page(), DSharpPlus.Interactivity.PaginationEmojis, PaginationBehaviour, PaginationDeletion, System.Nullable(Of System.TimeSpan))
-  nameWithType: Extensions.SendPaginatedMessageAsync(DiscordChannel, DiscordUser, Page[], PaginationEmojis, PaginationBehaviour, PaginationDeletion, Nullable<TimeSpan>)
-  nameWithType.vb: Extensions.SendPaginatedMessageAsync(DiscordChannel, DiscordUser, Page(), PaginationEmojis, PaginationBehaviour, PaginationDeletion, Nullable(Of TimeSpan))
+- uid: DSharpPlus.Interactivity.Extensions.SendPaginatedMessageAsync(DiscordChannel,DiscordUser,DSharpPlus.Interactivity.Page[],DSharpPlus.Interactivity.PaginationEmojis,System.Nullable{PaginationBehaviour},System.Nullable{PaginationDeletion},System.Nullable{System.TimeSpan})
+  name: SendPaginatedMessageAsync(DiscordChannel, DiscordUser, Page[], PaginationEmojis, Nullable<PaginationBehaviour>, Nullable<PaginationDeletion>, Nullable<TimeSpan>)
+  href: api/DSharpPlus.Interactivity.Extensions.html#DSharpPlus_Interactivity_Extensions_SendPaginatedMessageAsync_DiscordChannel_DiscordUser_DSharpPlus_Interactivity_Page___DSharpPlus_Interactivity_PaginationEmojis_System_Nullable_PaginationBehaviour__System_Nullable_PaginationDeletion__System_Nullable_System_TimeSpan__
+  commentId: M:DSharpPlus.Interactivity.Extensions.SendPaginatedMessageAsync(DiscordChannel,DiscordUser,DSharpPlus.Interactivity.Page[],DSharpPlus.Interactivity.PaginationEmojis,System.Nullable{PaginationBehaviour},System.Nullable{PaginationDeletion},System.Nullable{System.TimeSpan})
+  name.vb: SendPaginatedMessageAsync(DiscordChannel, DiscordUser, Page(), PaginationEmojis, Nullable(Of PaginationBehaviour), Nullable(Of PaginationDeletion), Nullable(Of TimeSpan))
+  fullName: DSharpPlus.Interactivity.Extensions.SendPaginatedMessageAsync(DiscordChannel, DiscordUser, DSharpPlus.Interactivity.Page[], DSharpPlus.Interactivity.PaginationEmojis, System.Nullable<PaginationBehaviour>, System.Nullable<PaginationDeletion>, System.Nullable<System.TimeSpan>)
+  fullName.vb: DSharpPlus.Interactivity.Extensions.SendPaginatedMessageAsync(DiscordChannel, DiscordUser, DSharpPlus.Interactivity.Page(), DSharpPlus.Interactivity.PaginationEmojis, System.Nullable(Of PaginationBehaviour), System.Nullable(Of PaginationDeletion), System.Nullable(Of System.TimeSpan))
+  nameWithType: Extensions.SendPaginatedMessageAsync(DiscordChannel, DiscordUser, Page[], PaginationEmojis, Nullable<PaginationBehaviour>, Nullable<PaginationDeletion>, Nullable<TimeSpan>)
+  nameWithType.vb: Extensions.SendPaginatedMessageAsync(DiscordChannel, DiscordUser, Page(), PaginationEmojis, Nullable(Of PaginationBehaviour), Nullable(Of PaginationDeletion), Nullable(Of TimeSpan))
 - uid: DSharpPlus.Interactivity.Extensions.SendPaginatedMessageAsync*
   name: SendPaginatedMessageAsync
   href: api/DSharpPlus.Interactivity.Extensions.html#DSharpPlus_Interactivity_Extensions_SendPaginatedMessageAsync_
@@ -20934,15 +21622,15 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Interactivity.InteractivityExtension.CollectReactionsAsync
   nameWithType: InteractivityExtension.CollectReactionsAsync
-- uid: DSharpPlus.Interactivity.InteractivityExtension.DoPollAsync(DiscordMessage,DiscordEmoji[],PollBehaviour,System.Nullable{System.TimeSpan})
-  name: DoPollAsync(DiscordMessage, DiscordEmoji[], PollBehaviour, Nullable<TimeSpan>)
-  href: api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_DoPollAsync_DiscordMessage_DiscordEmoji___PollBehaviour_System_Nullable_System_TimeSpan__
-  commentId: M:DSharpPlus.Interactivity.InteractivityExtension.DoPollAsync(DiscordMessage,DiscordEmoji[],PollBehaviour,System.Nullable{System.TimeSpan})
-  name.vb: DoPollAsync(DiscordMessage, DiscordEmoji(), PollBehaviour, Nullable(Of TimeSpan))
-  fullName: DSharpPlus.Interactivity.InteractivityExtension.DoPollAsync(DiscordMessage, DiscordEmoji[], PollBehaviour, System.Nullable<System.TimeSpan>)
-  fullName.vb: DSharpPlus.Interactivity.InteractivityExtension.DoPollAsync(DiscordMessage, DiscordEmoji(), PollBehaviour, System.Nullable(Of System.TimeSpan))
-  nameWithType: InteractivityExtension.DoPollAsync(DiscordMessage, DiscordEmoji[], PollBehaviour, Nullable<TimeSpan>)
-  nameWithType.vb: InteractivityExtension.DoPollAsync(DiscordMessage, DiscordEmoji(), PollBehaviour, Nullable(Of TimeSpan))
+- uid: DSharpPlus.Interactivity.InteractivityExtension.DoPollAsync(DiscordMessage,DiscordEmoji[],System.Nullable{PollBehaviour},System.Nullable{System.TimeSpan})
+  name: DoPollAsync(DiscordMessage, DiscordEmoji[], Nullable<PollBehaviour>, Nullable<TimeSpan>)
+  href: api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_DoPollAsync_DiscordMessage_DiscordEmoji___System_Nullable_PollBehaviour__System_Nullable_System_TimeSpan__
+  commentId: M:DSharpPlus.Interactivity.InteractivityExtension.DoPollAsync(DiscordMessage,DiscordEmoji[],System.Nullable{PollBehaviour},System.Nullable{System.TimeSpan})
+  name.vb: DoPollAsync(DiscordMessage, DiscordEmoji(), Nullable(Of PollBehaviour), Nullable(Of TimeSpan))
+  fullName: DSharpPlus.Interactivity.InteractivityExtension.DoPollAsync(DiscordMessage, DiscordEmoji[], System.Nullable<PollBehaviour>, System.Nullable<System.TimeSpan>)
+  fullName.vb: DSharpPlus.Interactivity.InteractivityExtension.DoPollAsync(DiscordMessage, DiscordEmoji(), System.Nullable(Of PollBehaviour), System.Nullable(Of System.TimeSpan))
+  nameWithType: InteractivityExtension.DoPollAsync(DiscordMessage, DiscordEmoji[], Nullable<PollBehaviour>, Nullable<TimeSpan>)
+  nameWithType.vb: InteractivityExtension.DoPollAsync(DiscordMessage, DiscordEmoji(), Nullable(Of PollBehaviour), Nullable(Of TimeSpan))
 - uid: DSharpPlus.Interactivity.InteractivityExtension.DoPollAsync*
   name: DoPollAsync
   href: api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_DoPollAsync_
@@ -20976,15 +21664,15 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Interactivity.InteractivityExtension.GeneratePagesInEmbed
   nameWithType: InteractivityExtension.GeneratePagesInEmbed
-- uid: DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessageAsync(DiscordChannel,DiscordUser,System.Collections.Generic.IEnumerable{DSharpPlus.Interactivity.Page},DSharpPlus.Interactivity.PaginationEmojis,PaginationBehaviour,PaginationDeletion,System.Nullable{System.TimeSpan})
-  name: SendPaginatedMessageAsync(DiscordChannel, DiscordUser, IEnumerable<Page>, PaginationEmojis, PaginationBehaviour, PaginationDeletion, Nullable<TimeSpan>)
-  href: api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_SendPaginatedMessageAsync_DiscordChannel_DiscordUser_System_Collections_Generic_IEnumerable_DSharpPlus_Interactivity_Page__DSharpPlus_Interactivity_PaginationEmojis_PaginationBehaviour_PaginationDeletion_System_Nullable_System_TimeSpan__
-  commentId: M:DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessageAsync(DiscordChannel,DiscordUser,System.Collections.Generic.IEnumerable{DSharpPlus.Interactivity.Page},DSharpPlus.Interactivity.PaginationEmojis,PaginationBehaviour,PaginationDeletion,System.Nullable{System.TimeSpan})
-  name.vb: SendPaginatedMessageAsync(DiscordChannel, DiscordUser, IEnumerable(Of Page), PaginationEmojis, PaginationBehaviour, PaginationDeletion, Nullable(Of TimeSpan))
-  fullName: DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessageAsync(DiscordChannel, DiscordUser, System.Collections.Generic.IEnumerable<DSharpPlus.Interactivity.Page>, DSharpPlus.Interactivity.PaginationEmojis, PaginationBehaviour, PaginationDeletion, System.Nullable<System.TimeSpan>)
-  fullName.vb: DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessageAsync(DiscordChannel, DiscordUser, System.Collections.Generic.IEnumerable(Of DSharpPlus.Interactivity.Page), DSharpPlus.Interactivity.PaginationEmojis, PaginationBehaviour, PaginationDeletion, System.Nullable(Of System.TimeSpan))
-  nameWithType: InteractivityExtension.SendPaginatedMessageAsync(DiscordChannel, DiscordUser, IEnumerable<Page>, PaginationEmojis, PaginationBehaviour, PaginationDeletion, Nullable<TimeSpan>)
-  nameWithType.vb: InteractivityExtension.SendPaginatedMessageAsync(DiscordChannel, DiscordUser, IEnumerable(Of Page), PaginationEmojis, PaginationBehaviour, PaginationDeletion, Nullable(Of TimeSpan))
+- uid: DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessageAsync(DiscordChannel,DiscordUser,System.Collections.Generic.IEnumerable{DSharpPlus.Interactivity.Page},DSharpPlus.Interactivity.PaginationEmojis,System.Nullable{PaginationBehaviour},System.Nullable{PaginationDeletion},System.Nullable{System.TimeSpan})
+  name: SendPaginatedMessageAsync(DiscordChannel, DiscordUser, IEnumerable<Page>, PaginationEmojis, Nullable<PaginationBehaviour>, Nullable<PaginationDeletion>, Nullable<TimeSpan>)
+  href: api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_SendPaginatedMessageAsync_DiscordChannel_DiscordUser_System_Collections_Generic_IEnumerable_DSharpPlus_Interactivity_Page__DSharpPlus_Interactivity_PaginationEmojis_System_Nullable_PaginationBehaviour__System_Nullable_PaginationDeletion__System_Nullable_System_TimeSpan__
+  commentId: M:DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessageAsync(DiscordChannel,DiscordUser,System.Collections.Generic.IEnumerable{DSharpPlus.Interactivity.Page},DSharpPlus.Interactivity.PaginationEmojis,System.Nullable{PaginationBehaviour},System.Nullable{PaginationDeletion},System.Nullable{System.TimeSpan})
+  name.vb: SendPaginatedMessageAsync(DiscordChannel, DiscordUser, IEnumerable(Of Page), PaginationEmojis, Nullable(Of PaginationBehaviour), Nullable(Of PaginationDeletion), Nullable(Of TimeSpan))
+  fullName: DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessageAsync(DiscordChannel, DiscordUser, System.Collections.Generic.IEnumerable<DSharpPlus.Interactivity.Page>, DSharpPlus.Interactivity.PaginationEmojis, System.Nullable<PaginationBehaviour>, System.Nullable<PaginationDeletion>, System.Nullable<System.TimeSpan>)
+  fullName.vb: DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessageAsync(DiscordChannel, DiscordUser, System.Collections.Generic.IEnumerable(Of DSharpPlus.Interactivity.Page), DSharpPlus.Interactivity.PaginationEmojis, System.Nullable(Of PaginationBehaviour), System.Nullable(Of PaginationDeletion), System.Nullable(Of System.TimeSpan))
+  nameWithType: InteractivityExtension.SendPaginatedMessageAsync(DiscordChannel, DiscordUser, IEnumerable<Page>, PaginationEmojis, Nullable<PaginationBehaviour>, Nullable<PaginationDeletion>, Nullable<TimeSpan>)
+  nameWithType.vb: InteractivityExtension.SendPaginatedMessageAsync(DiscordChannel, DiscordUser, IEnumerable(Of Page), PaginationEmojis, Nullable(Of PaginationBehaviour), Nullable(Of PaginationDeletion), Nullable(Of TimeSpan))
 - uid: DSharpPlus.Interactivity.InteractivityExtension.SendPaginatedMessageAsync*
   name: SendPaginatedMessageAsync
   href: api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_SendPaginatedMessageAsync_
@@ -21936,25 +22624,25 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Lavalink.EventArgs.PlayerUpdateEventArgs.Timestamp
   nameWithType: PlayerUpdateEventArgs.Timestamp
-- uid: DSharpPlus.Lavalink.EventArgs.StatsReceivedEventArgs
-  name: StatsReceivedEventArgs
-  href: api/DSharpPlus.Lavalink.EventArgs.StatsReceivedEventArgs.html
-  commentId: T:DSharpPlus.Lavalink.EventArgs.StatsReceivedEventArgs
-  fullName: DSharpPlus.Lavalink.EventArgs.StatsReceivedEventArgs
-  nameWithType: StatsReceivedEventArgs
-- uid: DSharpPlus.Lavalink.EventArgs.StatsReceivedEventArgs.Statistics
+- uid: DSharpPlus.Lavalink.EventArgs.StatisticsReceivedEventArgs
+  name: StatisticsReceivedEventArgs
+  href: api/DSharpPlus.Lavalink.EventArgs.StatisticsReceivedEventArgs.html
+  commentId: T:DSharpPlus.Lavalink.EventArgs.StatisticsReceivedEventArgs
+  fullName: DSharpPlus.Lavalink.EventArgs.StatisticsReceivedEventArgs
+  nameWithType: StatisticsReceivedEventArgs
+- uid: DSharpPlus.Lavalink.EventArgs.StatisticsReceivedEventArgs.Statistics
   name: Statistics
-  href: api/DSharpPlus.Lavalink.EventArgs.StatsReceivedEventArgs.html#DSharpPlus_Lavalink_EventArgs_StatsReceivedEventArgs_Statistics
-  commentId: P:DSharpPlus.Lavalink.EventArgs.StatsReceivedEventArgs.Statistics
-  fullName: DSharpPlus.Lavalink.EventArgs.StatsReceivedEventArgs.Statistics
-  nameWithType: StatsReceivedEventArgs.Statistics
-- uid: DSharpPlus.Lavalink.EventArgs.StatsReceivedEventArgs.Statistics*
+  href: api/DSharpPlus.Lavalink.EventArgs.StatisticsReceivedEventArgs.html#DSharpPlus_Lavalink_EventArgs_StatisticsReceivedEventArgs_Statistics
+  commentId: P:DSharpPlus.Lavalink.EventArgs.StatisticsReceivedEventArgs.Statistics
+  fullName: DSharpPlus.Lavalink.EventArgs.StatisticsReceivedEventArgs.Statistics
+  nameWithType: StatisticsReceivedEventArgs.Statistics
+- uid: DSharpPlus.Lavalink.EventArgs.StatisticsReceivedEventArgs.Statistics*
   name: Statistics
-  href: api/DSharpPlus.Lavalink.EventArgs.StatsReceivedEventArgs.html#DSharpPlus_Lavalink_EventArgs_StatsReceivedEventArgs_Statistics_
-  commentId: Overload:DSharpPlus.Lavalink.EventArgs.StatsReceivedEventArgs.Statistics
+  href: api/DSharpPlus.Lavalink.EventArgs.StatisticsReceivedEventArgs.html#DSharpPlus_Lavalink_EventArgs_StatisticsReceivedEventArgs_Statistics_
+  commentId: Overload:DSharpPlus.Lavalink.EventArgs.StatisticsReceivedEventArgs.Statistics
   isSpec: "True"
-  fullName: DSharpPlus.Lavalink.EventArgs.StatsReceivedEventArgs.Statistics
-  nameWithType: StatsReceivedEventArgs.Statistics
+  fullName: DSharpPlus.Lavalink.EventArgs.StatisticsReceivedEventArgs.Statistics
+  nameWithType: StatisticsReceivedEventArgs.Statistics
 - uid: DSharpPlus.Lavalink.EventArgs.TrackEndReason
   name: TrackEndReason
   href: api/DSharpPlus.Lavalink.EventArgs.TrackEndReason.html
@@ -22363,22 +23051,22 @@ references:
   commentId: T:DSharpPlus.Lavalink.LavalinkGuildConnection
   fullName: DSharpPlus.Lavalink.LavalinkGuildConnection
   nameWithType: LavalinkGuildConnection
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizer(DSharpPlus.Lavalink.LavalinkBandAdjustment[])
-  name: AdjustEqualizer(LavalinkBandAdjustment[])
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_AdjustEqualizer_DSharpPlus_Lavalink_LavalinkBandAdjustment___
-  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizer(DSharpPlus.Lavalink.LavalinkBandAdjustment[])
-  name.vb: AdjustEqualizer(LavalinkBandAdjustment())
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizer(DSharpPlus.Lavalink.LavalinkBandAdjustment[])
-  fullName.vb: DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizer(DSharpPlus.Lavalink.LavalinkBandAdjustment())
-  nameWithType: LavalinkGuildConnection.AdjustEqualizer(LavalinkBandAdjustment[])
-  nameWithType.vb: LavalinkGuildConnection.AdjustEqualizer(LavalinkBandAdjustment())
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizer*
-  name: AdjustEqualizer
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_AdjustEqualizer_
-  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizer
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizerAsync(DSharpPlus.Lavalink.LavalinkBandAdjustment[])
+  name: AdjustEqualizerAsync(LavalinkBandAdjustment[])
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_AdjustEqualizerAsync_DSharpPlus_Lavalink_LavalinkBandAdjustment___
+  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizerAsync(DSharpPlus.Lavalink.LavalinkBandAdjustment[])
+  name.vb: AdjustEqualizerAsync(LavalinkBandAdjustment())
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizerAsync(DSharpPlus.Lavalink.LavalinkBandAdjustment[])
+  fullName.vb: DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizerAsync(DSharpPlus.Lavalink.LavalinkBandAdjustment())
+  nameWithType: LavalinkGuildConnection.AdjustEqualizerAsync(LavalinkBandAdjustment[])
+  nameWithType.vb: LavalinkGuildConnection.AdjustEqualizerAsync(LavalinkBandAdjustment())
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizerAsync*
+  name: AdjustEqualizerAsync
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_AdjustEqualizerAsync_
+  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizerAsync
   isSpec: "True"
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizer
-  nameWithType: LavalinkGuildConnection.AdjustEqualizer
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.AdjustEqualizerAsync
+  nameWithType: LavalinkGuildConnection.AdjustEqualizerAsync
 - uid: DSharpPlus.Lavalink.LavalinkGuildConnection.Channel
   name: Channel
   href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_Channel
@@ -22405,19 +23093,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.CurrentState
   nameWithType: LavalinkGuildConnection.CurrentState
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.Disconnect
-  name: Disconnect()
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_Disconnect
-  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.Disconnect
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.Disconnect()
-  nameWithType: LavalinkGuildConnection.Disconnect()
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.Disconnect*
-  name: Disconnect
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_Disconnect_
-  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.Disconnect
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.DisconnectAsync
+  name: DisconnectAsync()
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_DisconnectAsync
+  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.DisconnectAsync
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.DisconnectAsync()
+  nameWithType: LavalinkGuildConnection.DisconnectAsync()
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.DisconnectAsync*
+  name: DisconnectAsync
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_DisconnectAsync_
+  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.DisconnectAsync
   isSpec: "True"
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.Disconnect
-  nameWithType: LavalinkGuildConnection.Disconnect
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.DisconnectAsync
+  nameWithType: LavalinkGuildConnection.DisconnectAsync
 - uid: DSharpPlus.Lavalink.LavalinkGuildConnection.DiscordWebSocketClosed
   name: DiscordWebSocketClosed
   href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_DiscordWebSocketClosed
@@ -22450,32 +23138,32 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.IsConnected
   nameWithType: LavalinkGuildConnection.IsConnected
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.Pause
-  name: Pause()
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_Pause
-  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.Pause
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.Pause()
-  nameWithType: LavalinkGuildConnection.Pause()
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.Pause*
-  name: Pause
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_Pause_
-  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.Pause
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.PauseAsync
+  name: PauseAsync()
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_PauseAsync
+  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.PauseAsync
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.PauseAsync()
+  nameWithType: LavalinkGuildConnection.PauseAsync()
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.PauseAsync*
+  name: PauseAsync
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_PauseAsync_
+  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.PauseAsync
   isSpec: "True"
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.Pause
-  nameWithType: LavalinkGuildConnection.Pause
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.Play(DSharpPlus.Lavalink.LavalinkTrack)
-  name: Play(LavalinkTrack)
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_Play_DSharpPlus_Lavalink_LavalinkTrack_
-  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.Play(DSharpPlus.Lavalink.LavalinkTrack)
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.Play(DSharpPlus.Lavalink.LavalinkTrack)
-  nameWithType: LavalinkGuildConnection.Play(LavalinkTrack)
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.Play*
-  name: Play
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_Play_
-  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.Play
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.PauseAsync
+  nameWithType: LavalinkGuildConnection.PauseAsync
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.PlayAsync(DSharpPlus.Lavalink.LavalinkTrack)
+  name: PlayAsync(LavalinkTrack)
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_PlayAsync_DSharpPlus_Lavalink_LavalinkTrack_
+  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.PlayAsync(DSharpPlus.Lavalink.LavalinkTrack)
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.PlayAsync(DSharpPlus.Lavalink.LavalinkTrack)
+  nameWithType: LavalinkGuildConnection.PlayAsync(LavalinkTrack)
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.PlayAsync*
+  name: PlayAsync
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_PlayAsync_
+  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.PlayAsync
   isSpec: "True"
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.Play
-  nameWithType: LavalinkGuildConnection.Play
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.PlayAsync
+  nameWithType: LavalinkGuildConnection.PlayAsync
 - uid: DSharpPlus.Lavalink.LavalinkGuildConnection.PlaybackFinished
   name: PlaybackFinished
   href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_PlaybackFinished
@@ -22488,84 +23176,84 @@ references:
   commentId: E:DSharpPlus.Lavalink.LavalinkGuildConnection.PlayerUpdated
   fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.PlayerUpdated
   nameWithType: LavalinkGuildConnection.PlayerUpdated
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartial(DSharpPlus.Lavalink.LavalinkTrack,System.TimeSpan,System.TimeSpan)
-  name: PlayPartial(LavalinkTrack, TimeSpan, TimeSpan)
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_PlayPartial_DSharpPlus_Lavalink_LavalinkTrack_System_TimeSpan_System_TimeSpan_
-  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartial(DSharpPlus.Lavalink.LavalinkTrack,System.TimeSpan,System.TimeSpan)
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartial(DSharpPlus.Lavalink.LavalinkTrack, System.TimeSpan, System.TimeSpan)
-  nameWithType: LavalinkGuildConnection.PlayPartial(LavalinkTrack, TimeSpan, TimeSpan)
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartial*
-  name: PlayPartial
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_PlayPartial_
-  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartial
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartialAsync(DSharpPlus.Lavalink.LavalinkTrack,System.TimeSpan,System.TimeSpan)
+  name: PlayPartialAsync(LavalinkTrack, TimeSpan, TimeSpan)
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_PlayPartialAsync_DSharpPlus_Lavalink_LavalinkTrack_System_TimeSpan_System_TimeSpan_
+  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartialAsync(DSharpPlus.Lavalink.LavalinkTrack,System.TimeSpan,System.TimeSpan)
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartialAsync(DSharpPlus.Lavalink.LavalinkTrack, System.TimeSpan, System.TimeSpan)
+  nameWithType: LavalinkGuildConnection.PlayPartialAsync(LavalinkTrack, TimeSpan, TimeSpan)
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartialAsync*
+  name: PlayPartialAsync
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_PlayPartialAsync_
+  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartialAsync
   isSpec: "True"
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartial
-  nameWithType: LavalinkGuildConnection.PlayPartial
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.ResetEqualizer
-  name: ResetEqualizer()
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_ResetEqualizer
-  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.ResetEqualizer
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.ResetEqualizer()
-  nameWithType: LavalinkGuildConnection.ResetEqualizer()
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.ResetEqualizer*
-  name: ResetEqualizer
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_ResetEqualizer_
-  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.ResetEqualizer
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartialAsync
+  nameWithType: LavalinkGuildConnection.PlayPartialAsync
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.ResetEqualizerAsync
+  name: ResetEqualizerAsync()
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_ResetEqualizerAsync
+  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.ResetEqualizerAsync
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.ResetEqualizerAsync()
+  nameWithType: LavalinkGuildConnection.ResetEqualizerAsync()
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.ResetEqualizerAsync*
+  name: ResetEqualizerAsync
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_ResetEqualizerAsync_
+  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.ResetEqualizerAsync
   isSpec: "True"
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.ResetEqualizer
-  nameWithType: LavalinkGuildConnection.ResetEqualizer
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.Resume
-  name: Resume()
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_Resume
-  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.Resume
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.Resume()
-  nameWithType: LavalinkGuildConnection.Resume()
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.Resume*
-  name: Resume
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_Resume_
-  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.Resume
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.ResetEqualizerAsync
+  nameWithType: LavalinkGuildConnection.ResetEqualizerAsync
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.ResumeAsync
+  name: ResumeAsync()
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_ResumeAsync
+  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.ResumeAsync
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.ResumeAsync()
+  nameWithType: LavalinkGuildConnection.ResumeAsync()
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.ResumeAsync*
+  name: ResumeAsync
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_ResumeAsync_
+  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.ResumeAsync
   isSpec: "True"
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.Resume
-  nameWithType: LavalinkGuildConnection.Resume
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.Seek(System.TimeSpan)
-  name: Seek(TimeSpan)
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_Seek_System_TimeSpan_
-  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.Seek(System.TimeSpan)
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.Seek(System.TimeSpan)
-  nameWithType: LavalinkGuildConnection.Seek(TimeSpan)
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.Seek*
-  name: Seek
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_Seek_
-  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.Seek
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.ResumeAsync
+  nameWithType: LavalinkGuildConnection.ResumeAsync
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.SeekAsync(System.TimeSpan)
+  name: SeekAsync(TimeSpan)
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_SeekAsync_System_TimeSpan_
+  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.SeekAsync(System.TimeSpan)
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.SeekAsync(System.TimeSpan)
+  nameWithType: LavalinkGuildConnection.SeekAsync(TimeSpan)
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.SeekAsync*
+  name: SeekAsync
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_SeekAsync_
+  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.SeekAsync
   isSpec: "True"
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.Seek
-  nameWithType: LavalinkGuildConnection.Seek
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.SetVolume(System.Int32)
-  name: SetVolume(Int32)
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_SetVolume_System_Int32_
-  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.SetVolume(System.Int32)
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.SetVolume(System.Int32)
-  nameWithType: LavalinkGuildConnection.SetVolume(Int32)
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.SetVolume*
-  name: SetVolume
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_SetVolume_
-  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.SetVolume
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.SeekAsync
+  nameWithType: LavalinkGuildConnection.SeekAsync
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.SetVolumeAsync(System.Int32)
+  name: SetVolumeAsync(Int32)
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_SetVolumeAsync_System_Int32_
+  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.SetVolumeAsync(System.Int32)
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.SetVolumeAsync(System.Int32)
+  nameWithType: LavalinkGuildConnection.SetVolumeAsync(Int32)
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.SetVolumeAsync*
+  name: SetVolumeAsync
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_SetVolumeAsync_
+  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.SetVolumeAsync
   isSpec: "True"
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.SetVolume
-  nameWithType: LavalinkGuildConnection.SetVolume
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.Stop
-  name: Stop()
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_Stop
-  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.Stop
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.Stop()
-  nameWithType: LavalinkGuildConnection.Stop()
-- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.Stop*
-  name: Stop
-  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_Stop_
-  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.Stop
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.SetVolumeAsync
+  nameWithType: LavalinkGuildConnection.SetVolumeAsync
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.StopAsync
+  name: StopAsync()
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_StopAsync
+  commentId: M:DSharpPlus.Lavalink.LavalinkGuildConnection.StopAsync
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.StopAsync()
+  nameWithType: LavalinkGuildConnection.StopAsync()
+- uid: DSharpPlus.Lavalink.LavalinkGuildConnection.StopAsync*
+  name: StopAsync
+  href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_StopAsync_
+  commentId: Overload:DSharpPlus.Lavalink.LavalinkGuildConnection.StopAsync
   isSpec: "True"
-  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.Stop
-  nameWithType: LavalinkGuildConnection.Stop
+  fullName: DSharpPlus.Lavalink.LavalinkGuildConnection.StopAsync
+  nameWithType: LavalinkGuildConnection.StopAsync
 - uid: DSharpPlus.Lavalink.LavalinkGuildConnection.TrackException
   name: TrackException
   href: api/DSharpPlus.Lavalink.LavalinkGuildConnection.html#DSharpPlus_Lavalink_LavalinkGuildConnection_TrackException
@@ -23837,6 +24525,32 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Net.Models.GuildEditModel.Owner
   nameWithType: GuildEditModel.Owner
+- uid: DSharpPlus.Net.Models.GuildEditModel.PreferredLocale
+  name: PreferredLocale
+  href: api/DSharpPlus.Net.Models.GuildEditModel.html#DSharpPlus_Net_Models_GuildEditModel_PreferredLocale
+  commentId: P:DSharpPlus.Net.Models.GuildEditModel.PreferredLocale
+  fullName: DSharpPlus.Net.Models.GuildEditModel.PreferredLocale
+  nameWithType: GuildEditModel.PreferredLocale
+- uid: DSharpPlus.Net.Models.GuildEditModel.PreferredLocale*
+  name: PreferredLocale
+  href: api/DSharpPlus.Net.Models.GuildEditModel.html#DSharpPlus_Net_Models_GuildEditModel_PreferredLocale_
+  commentId: Overload:DSharpPlus.Net.Models.GuildEditModel.PreferredLocale
+  isSpec: "True"
+  fullName: DSharpPlus.Net.Models.GuildEditModel.PreferredLocale
+  nameWithType: GuildEditModel.PreferredLocale
+- uid: DSharpPlus.Net.Models.GuildEditModel.PublicUpdatesChannel
+  name: PublicUpdatesChannel
+  href: api/DSharpPlus.Net.Models.GuildEditModel.html#DSharpPlus_Net_Models_GuildEditModel_PublicUpdatesChannel
+  commentId: P:DSharpPlus.Net.Models.GuildEditModel.PublicUpdatesChannel
+  fullName: DSharpPlus.Net.Models.GuildEditModel.PublicUpdatesChannel
+  nameWithType: GuildEditModel.PublicUpdatesChannel
+- uid: DSharpPlus.Net.Models.GuildEditModel.PublicUpdatesChannel*
+  name: PublicUpdatesChannel
+  href: api/DSharpPlus.Net.Models.GuildEditModel.html#DSharpPlus_Net_Models_GuildEditModel_PublicUpdatesChannel_
+  commentId: Overload:DSharpPlus.Net.Models.GuildEditModel.PublicUpdatesChannel
+  isSpec: "True"
+  fullName: DSharpPlus.Net.Models.GuildEditModel.PublicUpdatesChannel
+  nameWithType: GuildEditModel.PublicUpdatesChannel
 - uid: DSharpPlus.Net.Models.GuildEditModel.Region
   name: Region
   href: api/DSharpPlus.Net.Models.GuildEditModel.html#DSharpPlus_Net_Models_GuildEditModel_Region
@@ -23850,6 +24564,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Net.Models.GuildEditModel.Region
   nameWithType: GuildEditModel.Region
+- uid: DSharpPlus.Net.Models.GuildEditModel.RulesChannel
+  name: RulesChannel
+  href: api/DSharpPlus.Net.Models.GuildEditModel.html#DSharpPlus_Net_Models_GuildEditModel_RulesChannel
+  commentId: P:DSharpPlus.Net.Models.GuildEditModel.RulesChannel
+  fullName: DSharpPlus.Net.Models.GuildEditModel.RulesChannel
+  nameWithType: GuildEditModel.RulesChannel
+- uid: DSharpPlus.Net.Models.GuildEditModel.RulesChannel*
+  name: RulesChannel
+  href: api/DSharpPlus.Net.Models.GuildEditModel.html#DSharpPlus_Net_Models_GuildEditModel_RulesChannel_
+  commentId: Overload:DSharpPlus.Net.Models.GuildEditModel.RulesChannel
+  isSpec: "True"
+  fullName: DSharpPlus.Net.Models.GuildEditModel.RulesChannel
+  nameWithType: GuildEditModel.RulesChannel
 - uid: DSharpPlus.Net.Models.GuildEditModel.Splash
   name: Splash
   href: api/DSharpPlus.Net.Models.GuildEditModel.html#DSharpPlus_Net_Models_GuildEditModel_Splash
@@ -24302,216 +25029,152 @@ references:
   commentId: N:DSharpPlus.Net.WebSocket
   fullName: DSharpPlus.Net.WebSocket
   nameWithType: DSharpPlus.Net.WebSocket
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient
-  name: BaseWebSocketClient
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html
-  commentId: T:DSharpPlus.Net.WebSocket.BaseWebSocketClient
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient
-  nameWithType: BaseWebSocketClient
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.#ctor(IWebProxy)
-  name: BaseWebSocketClient(IWebProxy)
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient__ctor_IWebProxy_
-  commentId: M:DSharpPlus.Net.WebSocket.BaseWebSocketClient.#ctor(IWebProxy)
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.BaseWebSocketClient(IWebProxy)
-  nameWithType: BaseWebSocketClient.BaseWebSocketClient(IWebProxy)
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.#ctor*
-  name: BaseWebSocketClient
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient__ctor_
-  commentId: Overload:DSharpPlus.Net.WebSocket.BaseWebSocketClient.#ctor
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient
+  name: IWebSocketClient
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html
+  commentId: T:DSharpPlus.Net.WebSocket.IWebSocketClient
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient
+  nameWithType: IWebSocketClient
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.AddDefaultHeader(System.String,System.String)
+  name: AddDefaultHeader(String, String)
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_AddDefaultHeader_System_String_System_String_
+  commentId: M:DSharpPlus.Net.WebSocket.IWebSocketClient.AddDefaultHeader(System.String,System.String)
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.AddDefaultHeader(System.String, System.String)
+  nameWithType: IWebSocketClient.AddDefaultHeader(String, String)
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.AddDefaultHeader*
+  name: AddDefaultHeader
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_AddDefaultHeader_
+  commentId: Overload:DSharpPlus.Net.WebSocket.IWebSocketClient.AddDefaultHeader
   isSpec: "True"
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.BaseWebSocketClient
-  nameWithType: BaseWebSocketClient.BaseWebSocketClient
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.CompressedStream
-  name: CompressedStream
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_CompressedStream
-  commentId: P:DSharpPlus.Net.WebSocket.BaseWebSocketClient.CompressedStream
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.CompressedStream
-  nameWithType: BaseWebSocketClient.CompressedStream
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.CompressedStream*
-  name: CompressedStream
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_CompressedStream_
-  commentId: Overload:DSharpPlus.Net.WebSocket.BaseWebSocketClient.CompressedStream
-  isSpec: "True"
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.CompressedStream
-  nameWithType: BaseWebSocketClient.CompressedStream
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.ConnectAsync(Uri,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
-  name: ConnectAsync(Uri, IReadOnlyDictionary<String, String>)
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_ConnectAsync_Uri_System_Collections_Generic_IReadOnlyDictionary_System_String_System_String__
-  commentId: M:DSharpPlus.Net.WebSocket.BaseWebSocketClient.ConnectAsync(Uri,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
-  name.vb: ConnectAsync(Uri, IReadOnlyDictionary(Of String, String))
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.ConnectAsync(Uri, System.Collections.Generic.IReadOnlyDictionary<System.String, System.String>)
-  fullName.vb: DSharpPlus.Net.WebSocket.BaseWebSocketClient.ConnectAsync(Uri, System.Collections.Generic.IReadOnlyDictionary(Of System.String, System.String))
-  nameWithType: BaseWebSocketClient.ConnectAsync(Uri, IReadOnlyDictionary<String, String>)
-  nameWithType.vb: BaseWebSocketClient.ConnectAsync(Uri, IReadOnlyDictionary(Of String, String))
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.ConnectAsync*
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.AddDefaultHeader
+  nameWithType: IWebSocketClient.AddDefaultHeader
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.ConnectAsync(Uri)
+  name: ConnectAsync(Uri)
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_ConnectAsync_Uri_
+  commentId: M:DSharpPlus.Net.WebSocket.IWebSocketClient.ConnectAsync(Uri)
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.ConnectAsync(Uri)
+  nameWithType: IWebSocketClient.ConnectAsync(Uri)
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.ConnectAsync*
   name: ConnectAsync
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_ConnectAsync_
-  commentId: Overload:DSharpPlus.Net.WebSocket.BaseWebSocketClient.ConnectAsync
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_ConnectAsync_
+  commentId: Overload:DSharpPlus.Net.WebSocket.IWebSocketClient.ConnectAsync
   isSpec: "True"
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.ConnectAsync
-  nameWithType: BaseWebSocketClient.ConnectAsync
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.Connected
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.ConnectAsync
+  nameWithType: IWebSocketClient.ConnectAsync
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.Connected
   name: Connected
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_Connected
-  commentId: E:DSharpPlus.Net.WebSocket.BaseWebSocketClient.Connected
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.Connected
-  nameWithType: BaseWebSocketClient.Connected
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.DecompressedStream
-  name: DecompressedStream
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_DecompressedStream
-  commentId: P:DSharpPlus.Net.WebSocket.BaseWebSocketClient.DecompressedStream
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.DecompressedStream
-  nameWithType: BaseWebSocketClient.DecompressedStream
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.DecompressedStream*
-  name: DecompressedStream
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_DecompressedStream_
-  commentId: Overload:DSharpPlus.Net.WebSocket.BaseWebSocketClient.DecompressedStream
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_Connected
+  commentId: E:DSharpPlus.Net.WebSocket.IWebSocketClient.Connected
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.Connected
+  nameWithType: IWebSocketClient.Connected
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.DefaultHeaders
+  name: DefaultHeaders
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_DefaultHeaders
+  commentId: P:DSharpPlus.Net.WebSocket.IWebSocketClient.DefaultHeaders
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.DefaultHeaders
+  nameWithType: IWebSocketClient.DefaultHeaders
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.DefaultHeaders*
+  name: DefaultHeaders
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_DefaultHeaders_
+  commentId: Overload:DSharpPlus.Net.WebSocket.IWebSocketClient.DefaultHeaders
   isSpec: "True"
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.DecompressedStream
-  nameWithType: BaseWebSocketClient.DecompressedStream
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.DisconnectAsync(SocketCloseEventArgs)
-  name: DisconnectAsync(SocketCloseEventArgs)
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_DisconnectAsync_SocketCloseEventArgs_
-  commentId: M:DSharpPlus.Net.WebSocket.BaseWebSocketClient.DisconnectAsync(SocketCloseEventArgs)
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.DisconnectAsync(SocketCloseEventArgs)
-  nameWithType: BaseWebSocketClient.DisconnectAsync(SocketCloseEventArgs)
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.DisconnectAsync*
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.DefaultHeaders
+  nameWithType: IWebSocketClient.DefaultHeaders
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.DisconnectAsync
+  name: DisconnectAsync()
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_DisconnectAsync
+  commentId: M:DSharpPlus.Net.WebSocket.IWebSocketClient.DisconnectAsync
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.DisconnectAsync()
+  nameWithType: IWebSocketClient.DisconnectAsync()
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.DisconnectAsync*
   name: DisconnectAsync
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_DisconnectAsync_
-  commentId: Overload:DSharpPlus.Net.WebSocket.BaseWebSocketClient.DisconnectAsync
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_DisconnectAsync_
+  commentId: Overload:DSharpPlus.Net.WebSocket.IWebSocketClient.DisconnectAsync
   isSpec: "True"
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.DisconnectAsync
-  nameWithType: BaseWebSocketClient.DisconnectAsync
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.Disconnected
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.DisconnectAsync
+  nameWithType: IWebSocketClient.DisconnectAsync
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.Disconnected
   name: Disconnected
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_Disconnected
-  commentId: E:DSharpPlus.Net.WebSocket.BaseWebSocketClient.Disconnected
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.Disconnected
-  nameWithType: BaseWebSocketClient.Disconnected
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.Dispose
-  name: Dispose()
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_Dispose
-  commentId: M:DSharpPlus.Net.WebSocket.BaseWebSocketClient.Dispose
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.Dispose()
-  nameWithType: BaseWebSocketClient.Dispose()
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.Dispose*
-  name: Dispose
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_Dispose_
-  commentId: Overload:DSharpPlus.Net.WebSocket.BaseWebSocketClient.Dispose
-  isSpec: "True"
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.Dispose
-  nameWithType: BaseWebSocketClient.Dispose
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.Errored
-  name: Errored
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_Errored
-  commentId: E:DSharpPlus.Net.WebSocket.BaseWebSocketClient.Errored
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.Errored
-  nameWithType: BaseWebSocketClient.Errored
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.MessageReceived
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_Disconnected
+  commentId: E:DSharpPlus.Net.WebSocket.IWebSocketClient.Disconnected
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.Disconnected
+  nameWithType: IWebSocketClient.Disconnected
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.ExceptionThrown
+  name: ExceptionThrown
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_ExceptionThrown
+  commentId: E:DSharpPlus.Net.WebSocket.IWebSocketClient.ExceptionThrown
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.ExceptionThrown
+  nameWithType: IWebSocketClient.ExceptionThrown
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.MessageReceived
   name: MessageReceived
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_MessageReceived
-  commentId: E:DSharpPlus.Net.WebSocket.BaseWebSocketClient.MessageReceived
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.MessageReceived
-  nameWithType: BaseWebSocketClient.MessageReceived
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.OnConnectedAsync
-  name: OnConnectedAsync()
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_OnConnectedAsync
-  commentId: M:DSharpPlus.Net.WebSocket.BaseWebSocketClient.OnConnectedAsync
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.OnConnectedAsync()
-  nameWithType: BaseWebSocketClient.OnConnectedAsync()
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.OnConnectedAsync*
-  name: OnConnectedAsync
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_OnConnectedAsync_
-  commentId: Overload:DSharpPlus.Net.WebSocket.BaseWebSocketClient.OnConnectedAsync
-  isSpec: "True"
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.OnConnectedAsync
-  nameWithType: BaseWebSocketClient.OnConnectedAsync
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.OnDisconnectedAsync(SocketCloseEventArgs)
-  name: OnDisconnectedAsync(SocketCloseEventArgs)
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_OnDisconnectedAsync_SocketCloseEventArgs_
-  commentId: M:DSharpPlus.Net.WebSocket.BaseWebSocketClient.OnDisconnectedAsync(SocketCloseEventArgs)
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.OnDisconnectedAsync(SocketCloseEventArgs)
-  nameWithType: BaseWebSocketClient.OnDisconnectedAsync(SocketCloseEventArgs)
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.OnDisconnectedAsync*
-  name: OnDisconnectedAsync
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_OnDisconnectedAsync_
-  commentId: Overload:DSharpPlus.Net.WebSocket.BaseWebSocketClient.OnDisconnectedAsync
-  isSpec: "True"
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.OnDisconnectedAsync
-  nameWithType: BaseWebSocketClient.OnDisconnectedAsync
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.Proxy
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_MessageReceived
+  commentId: E:DSharpPlus.Net.WebSocket.IWebSocketClient.MessageReceived
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.MessageReceived
+  nameWithType: IWebSocketClient.MessageReceived
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.Proxy
   name: Proxy
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_Proxy
-  commentId: P:DSharpPlus.Net.WebSocket.BaseWebSocketClient.Proxy
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.Proxy
-  nameWithType: BaseWebSocketClient.Proxy
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.Proxy*
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_Proxy
+  commentId: P:DSharpPlus.Net.WebSocket.IWebSocketClient.Proxy
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.Proxy
+  nameWithType: IWebSocketClient.Proxy
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.Proxy*
   name: Proxy
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_Proxy_
-  commentId: Overload:DSharpPlus.Net.WebSocket.BaseWebSocketClient.Proxy
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_Proxy_
+  commentId: Overload:DSharpPlus.Net.WebSocket.IWebSocketClient.Proxy
   isSpec: "True"
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.Proxy
-  nameWithType: BaseWebSocketClient.Proxy
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.SendMessage(System.String)
-  name: SendMessage(String)
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_SendMessage_System_String_
-  commentId: M:DSharpPlus.Net.WebSocket.BaseWebSocketClient.SendMessage(System.String)
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.SendMessage(System.String)
-  nameWithType: BaseWebSocketClient.SendMessage(String)
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.SendMessage*
-  name: SendMessage
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_SendMessage_
-  commentId: Overload:DSharpPlus.Net.WebSocket.BaseWebSocketClient.SendMessage
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.Proxy
+  nameWithType: IWebSocketClient.Proxy
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.RemoveDefaultHeader(System.String)
+  name: RemoveDefaultHeader(String)
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_RemoveDefaultHeader_System_String_
+  commentId: M:DSharpPlus.Net.WebSocket.IWebSocketClient.RemoveDefaultHeader(System.String)
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.RemoveDefaultHeader(System.String)
+  nameWithType: IWebSocketClient.RemoveDefaultHeader(String)
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.RemoveDefaultHeader*
+  name: RemoveDefaultHeader
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_RemoveDefaultHeader_
+  commentId: Overload:DSharpPlus.Net.WebSocket.IWebSocketClient.RemoveDefaultHeader
   isSpec: "True"
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.SendMessage
-  nameWithType: BaseWebSocketClient.SendMessage
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.StreamDecompressor
-  name: StreamDecompressor
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_StreamDecompressor
-  commentId: P:DSharpPlus.Net.WebSocket.BaseWebSocketClient.StreamDecompressor
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.StreamDecompressor
-  nameWithType: BaseWebSocketClient.StreamDecompressor
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.StreamDecompressor*
-  name: StreamDecompressor
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_StreamDecompressor_
-  commentId: Overload:DSharpPlus.Net.WebSocket.BaseWebSocketClient.StreamDecompressor
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.RemoveDefaultHeader
+  nameWithType: IWebSocketClient.RemoveDefaultHeader
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.SendMessageAsync(System.String)
+  name: SendMessageAsync(String)
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_SendMessageAsync_System_String_
+  commentId: M:DSharpPlus.Net.WebSocket.IWebSocketClient.SendMessageAsync(System.String)
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.SendMessageAsync(System.String)
+  nameWithType: IWebSocketClient.SendMessageAsync(String)
+- uid: DSharpPlus.Net.WebSocket.IWebSocketClient.SendMessageAsync*
+  name: SendMessageAsync
+  href: api/DSharpPlus.Net.WebSocket.IWebSocketClient.html#DSharpPlus_Net_WebSocket_IWebSocketClient_SendMessageAsync_
+  commentId: Overload:DSharpPlus.Net.WebSocket.IWebSocketClient.SendMessageAsync
   isSpec: "True"
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.StreamDecompressor
-  nameWithType: BaseWebSocketClient.StreamDecompressor
-- uid: DSharpPlus.Net.WebSocket.BaseWebSocketClient.ZLIB_STREAM_SUFFIX
-  name: ZLIB_STREAM_SUFFIX
-  href: api/DSharpPlus.Net.WebSocket.BaseWebSocketClient.html#DSharpPlus_Net_WebSocket_BaseWebSocketClient_ZLIB_STREAM_SUFFIX
-  commentId: F:DSharpPlus.Net.WebSocket.BaseWebSocketClient.ZLIB_STREAM_SUFFIX
-  fullName: DSharpPlus.Net.WebSocket.BaseWebSocketClient.ZLIB_STREAM_SUFFIX
-  nameWithType: BaseWebSocketClient.ZLIB_STREAM_SUFFIX
+  fullName: DSharpPlus.Net.WebSocket.IWebSocketClient.SendMessageAsync
+  nameWithType: IWebSocketClient.SendMessageAsync
 - uid: DSharpPlus.Net.WebSocket.WebSocketClient
   name: WebSocketClient
   href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html
   commentId: T:DSharpPlus.Net.WebSocket.WebSocketClient
   fullName: DSharpPlus.Net.WebSocket.WebSocketClient
   nameWithType: WebSocketClient
-- uid: DSharpPlus.Net.WebSocket.WebSocketClient.#ctor(IWebProxy)
-  name: WebSocketClient(IWebProxy)
-  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient__ctor_IWebProxy_
-  commentId: M:DSharpPlus.Net.WebSocket.WebSocketClient.#ctor(IWebProxy)
-  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.WebSocketClient(IWebProxy)
-  nameWithType: WebSocketClient.WebSocketClient(IWebProxy)
-- uid: DSharpPlus.Net.WebSocket.WebSocketClient.#ctor*
-  name: WebSocketClient
-  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient__ctor_
-  commentId: Overload:DSharpPlus.Net.WebSocket.WebSocketClient.#ctor
+- uid: DSharpPlus.Net.WebSocket.WebSocketClient.AddDefaultHeader(System.String,System.String)
+  name: AddDefaultHeader(String, String)
+  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_AddDefaultHeader_System_String_System_String_
+  commentId: M:DSharpPlus.Net.WebSocket.WebSocketClient.AddDefaultHeader(System.String,System.String)
+  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.AddDefaultHeader(System.String, System.String)
+  nameWithType: WebSocketClient.AddDefaultHeader(String, String)
+- uid: DSharpPlus.Net.WebSocket.WebSocketClient.AddDefaultHeader*
+  name: AddDefaultHeader
+  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_AddDefaultHeader_
+  commentId: Overload:DSharpPlus.Net.WebSocket.WebSocketClient.AddDefaultHeader
   isSpec: "True"
-  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.WebSocketClient
-  nameWithType: WebSocketClient.WebSocketClient
-- uid: DSharpPlus.Net.WebSocket.WebSocketClient.ConnectAsync(Uri,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
-  name: ConnectAsync(Uri, IReadOnlyDictionary<String, String>)
-  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_ConnectAsync_Uri_System_Collections_Generic_IReadOnlyDictionary_System_String_System_String__
-  commentId: M:DSharpPlus.Net.WebSocket.WebSocketClient.ConnectAsync(Uri,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
-  name.vb: ConnectAsync(Uri, IReadOnlyDictionary(Of String, String))
-  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.ConnectAsync(Uri, System.Collections.Generic.IReadOnlyDictionary<System.String, System.String>)
-  fullName.vb: DSharpPlus.Net.WebSocket.WebSocketClient.ConnectAsync(Uri, System.Collections.Generic.IReadOnlyDictionary(Of System.String, System.String))
-  nameWithType: WebSocketClient.ConnectAsync(Uri, IReadOnlyDictionary<String, String>)
-  nameWithType.vb: WebSocketClient.ConnectAsync(Uri, IReadOnlyDictionary(Of String, String))
+  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.AddDefaultHeader
+  nameWithType: WebSocketClient.AddDefaultHeader
+- uid: DSharpPlus.Net.WebSocket.WebSocketClient.ConnectAsync(Uri)
+  name: ConnectAsync(Uri)
+  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_ConnectAsync_Uri_
+  commentId: M:DSharpPlus.Net.WebSocket.WebSocketClient.ConnectAsync(Uri)
+  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.ConnectAsync(Uri)
+  nameWithType: WebSocketClient.ConnectAsync(Uri)
 - uid: DSharpPlus.Net.WebSocket.WebSocketClient.ConnectAsync*
   name: ConnectAsync
   href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_ConnectAsync_
@@ -24538,12 +25201,25 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Net.WebSocket.WebSocketClient.CreateNew
   nameWithType: WebSocketClient.CreateNew
-- uid: DSharpPlus.Net.WebSocket.WebSocketClient.DisconnectAsync(SocketCloseEventArgs)
-  name: DisconnectAsync(SocketCloseEventArgs)
-  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_DisconnectAsync_SocketCloseEventArgs_
-  commentId: M:DSharpPlus.Net.WebSocket.WebSocketClient.DisconnectAsync(SocketCloseEventArgs)
-  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.DisconnectAsync(SocketCloseEventArgs)
-  nameWithType: WebSocketClient.DisconnectAsync(SocketCloseEventArgs)
+- uid: DSharpPlus.Net.WebSocket.WebSocketClient.DefaultHeaders
+  name: DefaultHeaders
+  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_DefaultHeaders
+  commentId: P:DSharpPlus.Net.WebSocket.WebSocketClient.DefaultHeaders
+  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.DefaultHeaders
+  nameWithType: WebSocketClient.DefaultHeaders
+- uid: DSharpPlus.Net.WebSocket.WebSocketClient.DefaultHeaders*
+  name: DefaultHeaders
+  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_DefaultHeaders_
+  commentId: Overload:DSharpPlus.Net.WebSocket.WebSocketClient.DefaultHeaders
+  isSpec: "True"
+  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.DefaultHeaders
+  nameWithType: WebSocketClient.DefaultHeaders
+- uid: DSharpPlus.Net.WebSocket.WebSocketClient.DisconnectAsync
+  name: DisconnectAsync()
+  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_DisconnectAsync
+  commentId: M:DSharpPlus.Net.WebSocket.WebSocketClient.DisconnectAsync
+  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.DisconnectAsync()
+  nameWithType: WebSocketClient.DisconnectAsync()
 - uid: DSharpPlus.Net.WebSocket.WebSocketClient.DisconnectAsync*
   name: DisconnectAsync
   href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_DisconnectAsync_
@@ -24557,57 +25233,70 @@ references:
   commentId: E:DSharpPlus.Net.WebSocket.WebSocketClient.Disconnected
   fullName: DSharpPlus.Net.WebSocket.WebSocketClient.Disconnected
   nameWithType: WebSocketClient.Disconnected
-- uid: DSharpPlus.Net.WebSocket.WebSocketClient.Errored
-  name: Errored
-  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_Errored
-  commentId: E:DSharpPlus.Net.WebSocket.WebSocketClient.Errored
-  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.Errored
-  nameWithType: WebSocketClient.Errored
+- uid: DSharpPlus.Net.WebSocket.WebSocketClient.Dispose
+  name: Dispose()
+  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_Dispose
+  commentId: M:DSharpPlus.Net.WebSocket.WebSocketClient.Dispose
+  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.Dispose()
+  nameWithType: WebSocketClient.Dispose()
+- uid: DSharpPlus.Net.WebSocket.WebSocketClient.Dispose*
+  name: Dispose
+  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_Dispose_
+  commentId: Overload:DSharpPlus.Net.WebSocket.WebSocketClient.Dispose
+  isSpec: "True"
+  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.Dispose
+  nameWithType: WebSocketClient.Dispose
+- uid: DSharpPlus.Net.WebSocket.WebSocketClient.ExceptionThrown
+  name: ExceptionThrown
+  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_ExceptionThrown
+  commentId: E:DSharpPlus.Net.WebSocket.WebSocketClient.ExceptionThrown
+  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.ExceptionThrown
+  nameWithType: WebSocketClient.ExceptionThrown
 - uid: DSharpPlus.Net.WebSocket.WebSocketClient.MessageReceived
   name: MessageReceived
   href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_MessageReceived
   commentId: E:DSharpPlus.Net.WebSocket.WebSocketClient.MessageReceived
   fullName: DSharpPlus.Net.WebSocket.WebSocketClient.MessageReceived
   nameWithType: WebSocketClient.MessageReceived
-- uid: DSharpPlus.Net.WebSocket.WebSocketClient.OnConnectedAsync
-  name: OnConnectedAsync()
-  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_OnConnectedAsync
-  commentId: M:DSharpPlus.Net.WebSocket.WebSocketClient.OnConnectedAsync
-  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.OnConnectedAsync()
-  nameWithType: WebSocketClient.OnConnectedAsync()
-- uid: DSharpPlus.Net.WebSocket.WebSocketClient.OnConnectedAsync*
-  name: OnConnectedAsync
-  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_OnConnectedAsync_
-  commentId: Overload:DSharpPlus.Net.WebSocket.WebSocketClient.OnConnectedAsync
+- uid: DSharpPlus.Net.WebSocket.WebSocketClient.Proxy
+  name: Proxy
+  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_Proxy
+  commentId: P:DSharpPlus.Net.WebSocket.WebSocketClient.Proxy
+  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.Proxy
+  nameWithType: WebSocketClient.Proxy
+- uid: DSharpPlus.Net.WebSocket.WebSocketClient.Proxy*
+  name: Proxy
+  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_Proxy_
+  commentId: Overload:DSharpPlus.Net.WebSocket.WebSocketClient.Proxy
   isSpec: "True"
-  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.OnConnectedAsync
-  nameWithType: WebSocketClient.OnConnectedAsync
-- uid: DSharpPlus.Net.WebSocket.WebSocketClient.OnDisconnectedAsync(SocketCloseEventArgs)
-  name: OnDisconnectedAsync(SocketCloseEventArgs)
-  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_OnDisconnectedAsync_SocketCloseEventArgs_
-  commentId: M:DSharpPlus.Net.WebSocket.WebSocketClient.OnDisconnectedAsync(SocketCloseEventArgs)
-  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.OnDisconnectedAsync(SocketCloseEventArgs)
-  nameWithType: WebSocketClient.OnDisconnectedAsync(SocketCloseEventArgs)
-- uid: DSharpPlus.Net.WebSocket.WebSocketClient.OnDisconnectedAsync*
-  name: OnDisconnectedAsync
-  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_OnDisconnectedAsync_
-  commentId: Overload:DSharpPlus.Net.WebSocket.WebSocketClient.OnDisconnectedAsync
+  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.Proxy
+  nameWithType: WebSocketClient.Proxy
+- uid: DSharpPlus.Net.WebSocket.WebSocketClient.RemoveDefaultHeader(System.String)
+  name: RemoveDefaultHeader(String)
+  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_RemoveDefaultHeader_System_String_
+  commentId: M:DSharpPlus.Net.WebSocket.WebSocketClient.RemoveDefaultHeader(System.String)
+  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.RemoveDefaultHeader(System.String)
+  nameWithType: WebSocketClient.RemoveDefaultHeader(String)
+- uid: DSharpPlus.Net.WebSocket.WebSocketClient.RemoveDefaultHeader*
+  name: RemoveDefaultHeader
+  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_RemoveDefaultHeader_
+  commentId: Overload:DSharpPlus.Net.WebSocket.WebSocketClient.RemoveDefaultHeader
   isSpec: "True"
-  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.OnDisconnectedAsync
-  nameWithType: WebSocketClient.OnDisconnectedAsync
-- uid: DSharpPlus.Net.WebSocket.WebSocketClient.SendMessage(System.String)
-  name: SendMessage(String)
-  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_SendMessage_System_String_
-  commentId: M:DSharpPlus.Net.WebSocket.WebSocketClient.SendMessage(System.String)
-  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.SendMessage(System.String)
-  nameWithType: WebSocketClient.SendMessage(String)
-- uid: DSharpPlus.Net.WebSocket.WebSocketClient.SendMessage*
-  name: SendMessage
-  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_SendMessage_
-  commentId: Overload:DSharpPlus.Net.WebSocket.WebSocketClient.SendMessage
+  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.RemoveDefaultHeader
+  nameWithType: WebSocketClient.RemoveDefaultHeader
+- uid: DSharpPlus.Net.WebSocket.WebSocketClient.SendMessageAsync(System.String)
+  name: SendMessageAsync(String)
+  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_SendMessageAsync_System_String_
+  commentId: M:DSharpPlus.Net.WebSocket.WebSocketClient.SendMessageAsync(System.String)
+  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.SendMessageAsync(System.String)
+  nameWithType: WebSocketClient.SendMessageAsync(String)
+- uid: DSharpPlus.Net.WebSocket.WebSocketClient.SendMessageAsync*
+  name: SendMessageAsync
+  href: api/DSharpPlus.Net.WebSocket.WebSocketClient.html#DSharpPlus_Net_WebSocket_WebSocketClient_SendMessageAsync_
+  commentId: Overload:DSharpPlus.Net.WebSocket.WebSocketClient.SendMessageAsync
   isSpec: "True"
-  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.SendMessage
-  nameWithType: WebSocketClient.SendMessage
+  fullName: DSharpPlus.Net.WebSocket.WebSocketClient.SendMessageAsync
+  nameWithType: WebSocketClient.SendMessageAsync
 - uid: DSharpPlus.Net.WebSocket.WebSocketClientFactoryDelegate
   name: WebSocketClientFactoryDelegate
   href: api/DSharpPlus.Net.WebSocket.WebSocketClientFactoryDelegate.html
@@ -25651,19 +26340,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.VoiceNext.VoiceNextConnection.ResumeAsync
   nameWithType: VoiceNextConnection.ResumeAsync
-- uid: DSharpPlus.VoiceNext.VoiceNextConnection.SendSpeaking(System.Boolean)
-  name: SendSpeaking(Boolean)
-  href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_SendSpeaking_System_Boolean_
-  commentId: M:DSharpPlus.VoiceNext.VoiceNextConnection.SendSpeaking(System.Boolean)
-  fullName: DSharpPlus.VoiceNext.VoiceNextConnection.SendSpeaking(System.Boolean)
-  nameWithType: VoiceNextConnection.SendSpeaking(Boolean)
-- uid: DSharpPlus.VoiceNext.VoiceNextConnection.SendSpeaking*
-  name: SendSpeaking
-  href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_SendSpeaking_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceNextConnection.SendSpeaking
+- uid: DSharpPlus.VoiceNext.VoiceNextConnection.SendSpeakingAsync(System.Boolean)
+  name: SendSpeakingAsync(Boolean)
+  href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_SendSpeakingAsync_System_Boolean_
+  commentId: M:DSharpPlus.VoiceNext.VoiceNextConnection.SendSpeakingAsync(System.Boolean)
+  fullName: DSharpPlus.VoiceNext.VoiceNextConnection.SendSpeakingAsync(System.Boolean)
+  nameWithType: VoiceNextConnection.SendSpeakingAsync(Boolean)
+- uid: DSharpPlus.VoiceNext.VoiceNextConnection.SendSpeakingAsync*
+  name: SendSpeakingAsync
+  href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_SendSpeakingAsync_
+  commentId: Overload:DSharpPlus.VoiceNext.VoiceNextConnection.SendSpeakingAsync
   isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceNextConnection.SendSpeaking
-  nameWithType: VoiceNextConnection.SendSpeaking
+  fullName: DSharpPlus.VoiceNext.VoiceNextConnection.SendSpeakingAsync
+  nameWithType: VoiceNextConnection.SendSpeakingAsync
 - uid: DSharpPlus.VoiceNext.VoiceNextConnection.UdpPing
   name: UdpPing
   href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_UdpPing
