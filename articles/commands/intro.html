@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Talking with the bot - adding commands for enhanced user interaction </title>
+    <title>CommandsNext Introduction </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Talking with the bot - adding commands for enhanced user interaction ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="title" content="CommandsNext Introduction ">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -73,164 +73,247 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="talking-with-the-bot---adding-commands-for-enhanced-user-interaction">Talking with the bot - adding commands for enhanced user interaction</h1>
+            <article class="content wrap" id="_content" data-uid="commands_intro">
 
-<p>You now have a basic bot. In order to allow users to interact with it easily, you will want to add some commands to it. 
-This is done using the CommandsNext module, which will not only handle, registering and executing commands for you, but 
-it will also make grabbing additional data for your commands easy.</p>
-<h2 id="1-before-we-continue">1. Before we continue</h2>
-<p>Right now, your bot is console-mute. Let&#39;s change it. Let&#39;s make it output all information about its state and doings.</p>
-<p>To do that, add the following options to your <code>DiscordConfiguration</code>:</p>
-<pre><code class="lang-cs">UseInternalLogHandler = true,
-LogLevel = LogLevel.Debug
-</code></pre><h2 id="2-installing-commandsnext">2. Installing CommandsNext</h2>
-<p>Using the procedures in the previous article, install a NuGet package called <code>DSharpPlus.CommandsNext</code>.</p>
-<p>Now you need to enable CommandsNext extension on your DiscordClient. Add a new field to your bot&#39;s <code>Program</code> class: 
-<code>static CommandsNextExtension commands;</code></p>
-<p>Visual Studio will complain, you also need to add <code>using DSharpPlus.CommandsNext;</code> to your usings.</p>
-<p>Before you connect, enable the module on your client:</p>
-<pre><code class="lang-cs">commands = discord.UseCommandsNext(new CommandsNextConfiguration
-{
-    StringPrefix = &quot;;;&quot;
-});
-</code></pre><p>This will enable the module, and use <code>;;</code> as the command prefix for your bot.</p>
-<h2 id="3-creating-a-command-module">3. Creating a command module</h2>
-<p>First, you need to create a new class to hold your commands. In this example, we&#39;ll call it <code>MyCommands</code>.</p>
-<p>Once it&#39;s created, you should be presented with a file that looks like this:</p>
-<pre><code class="lang-cs">using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MyFirstBot
-{
-    class MyCommands
-    {
-    }
-}
-</code></pre><p>Add a <code>public</code> modifier to the class. That class will now serve as your command module.</p>
-<p>Before you can proceed, add <code>using System.Threading.Tasks;</code>, <code>using DSharpPlus;</code>, 
-<code>using DSharpPlus.CommandsNext;</code>, and <code>using DSharpPlus.CommandsNext.Attributes;</code> to the using section.</p>
-<p>Go back to your main bot class, and below the command module initialisation, add the following:</p>
-<pre><code class="lang-cs">commands.RegisterCommands&lt;MyCommands&gt;();
-</code></pre><p>This will enable all the commands in your command module.</p>
-<p>The class should now look like this:</p>
-<pre><code class="lang-cs">using System;
-using System.Threading.Tasks;
-using DSharpPlus;
-using DSharpPlus.CommandsNext;
-
-namespace MyFirstBot
-{
-    class Program
-    {
-        static DiscordClient discord;
-        static CommandsNextExtension commands;
-
-        static void Main(string[] args)
-        {
-            MainAsync(args).ConfigureAwait(false).GetAwaiter().GetResult();
-        }
-
-        static async Task MainAsync(string[] args)
-        {
-            discord = new DiscordClient(new DiscordConfiguration
-            {
-                Token = &quot;&lt;your token here&gt;&quot;,
-                TokenType = TokenType.Bot,
-                UseInternalLogHandler = true,
-                LogLevel = LogLevel.Debug
-            });
-
-            discord.MessageCreated += async e =&gt;
-            {
-                if (e.Message.Content.ToLower().StartsWith(&quot;ping&quot;))
-                    await e.Message.RespondAsync(&quot;pong!&quot;);
-            };
-
-            commands = discord.UseCommandsNext(new CommandsNextConfiguration
-            {
-                StringPrefix = &quot;;;&quot;
-            });
-
-            commands.RegisterCommands&lt;MyCommands&gt;();
-
-            await discord.ConnectAsync();
-            await Task.Delay(-1);
-        }
-    }
-}
-</code></pre><h2 id="4-creating-your-first-command">4. Creating your first command</h2>
-<p>So now that you have your module, you want to add some commands to it. Let&#39;s add a first one. </p>
-<p>But before you do, let&#39;s explain a couple concepts. </p>
-<p>What are commands? How do they work? How do I make the library recognize something as a command?</p>
-<p>Commands are basically methods with specific signatures. All commands must be public instance methods, that return a <code>Task</code>. 
-They also need to take <code>CommandContext</code> as first argument. </p>
-<p>Commands work by invoking the method which is tied to the command when any users sends a message that consists of a prefix, 
-command name, and its arguments, for example: <code>!hi</code>.</p>
-<p>Commands are marked with a special attribute. When you register commands, the library looks for methods with that attribute 
-and marks these methods as commands.</p>
-<p>Armed with that knowledge, let&#39;s create your first command, a simple &quot;hi, user!&quot;.</p>
-<p>In the class, create a public async method, that returns a Task, and call it Hi. Make CommandContext its first argument. It 
-should look like this:</p>
-<pre><code class="lang-cs">public async Task Hi(CommandContext ctx)
+<div class="NOTE"><h5>Note</h5><p>This article assumes you&#39;ve recently read the article on <em><a class="xref" href="../basics/first_bot.html">writing your first bot</a></em>.</p>
+</div>
+<h1 id="introduction-to-commandsnext">Introduction to CommandsNext</h1>
+<p>This article will introduce you to some basic concepts of our native command framework: <em>CommandsNext</em>.<br>
+Be sure to install the <code>DSharpPlus.CommandsNext</code> package from NuGet before continuing.</p>
+<p><img src="/images/commands_intro_01.png" alt="CommandsNext NuGet Package"></p>
+<p><br></p>
+<h2 id="writing-a-basic-command">Writing a Basic Command</h2>
+<h3 id="create-a-command-module">Create a Command Module</h3>
+<p>A command module is simply a class which acts as a container for your command methods. Instead of registering individual commands, 
+you&#39;d register a single command module which contains multiple commands. There&#39;s no limit to the amount of modules you can have,
+and no limit to the amount of commands each module can contain. For example: you could have a module for moderation commands and 
+a separate module for image commands. This will help you keep your commands organized and reduce the clutter in your project.</p>
+<p>Our first demonstration will be simple, consisting of one command module with a simple command.<br>
+We&#39;ll start by creating a new folder named <code>Commands</code> which contains a new class named <code>MyFirstModule</code>.</p>
+<p><img src="/images/commands_intro_02.png" alt="Solution Explorer"></p>
+<p>Give this new class <code>public</code> access and have it inherit from <code>BaseCommandModule</code>.</p>
+<pre><code class="lang-cs">public class MyFirstModule : BaseCommandModule
 {
 
 }
-</code></pre><p>Now, put the following code inside that method: <code>await ctx.RespondAsync($&quot;👋 Hi, {ctx.User.Mention}!&quot;);</code></p>
-<p>You&#39;re not ready yet. Above the method, put the Command attribute. It should look like this: <code>[Command(&quot;hi&quot;)]</code></p>
-<p>Put together, the class should now look like this:</p>
-<pre><code class="lang-cs">using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using DSharpPlus;
+</code></pre><h3 id="create-a-command-method">Create a Command Method</h3>
+<p>Within our new module, create a method named <code>GreetCommand</code> marked as <code>async</code> with a <code>Task</code> return type.
+The first parameter of your method <em>must</em> be of type <code>CommandContext</code>, as required by CommandsNext.</p>
+<pre><code class="lang-cs">public async Task GreetCommand(CommandContext ctx)
+{
+
+}
+</code></pre><p>In the body of our new method, we&#39;ll use <code>CommandContext#RespondAsync</code> to send a simple message.</p>
+<pre><code class="lang-cs">await ctx.RespondAsync(&quot;Greetings! Thank you for executing me!&quot;);
+</code></pre><p>Finally, mark your command method with the <code>Command</code> attribute so CommandsNext will know to treat our method as a command method. 
+This attribute takes a single parameter: the name of the command. </p>
+<p>We&#39;ll name our command <em>greet</em> to match the name of the method.</p>
+<pre><code class="lang-cs">[Command(&quot;greet&quot;)]
+public async Task GreetCommand(CommandContext ctx)
+{
+    await ctx.RespondAsync(&quot;Greetings! Thank you for executing me!&quot;);
+}
+</code></pre><p><br>
+Your command module should now resemble this:</p>
+<pre><code class="lang-cs">using System.Threading.Tasks;
 using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
 
-namespace MyFirstBot
+public class MyFirstModule : BaseCommandModule
 {
-    public class MyCommands
+    [Command(&quot;greet&quot;)]
+    public async Task GreetCommand(CommandContext ctx)
     {
-        [Command(&quot;hi&quot;)]
-        public async Task Hi(CommandContext ctx)
-        {
-            await ctx.RespondAsync($&quot;👋 Hi, {ctx.User.Mention}!&quot;);
-        }
+        await ctx.RespondAsync(&quot;Greetings! Thank you for executing me!&quot;);
     }
 }
-</code></pre><p>What this command will do is posting a message that contains the <span class="emoji" shortcode="wave">👋</span> emoji, and says Hi, followed by a mention of the 
-user who invoked the command.</p>
-<p>Once this is all done, hit F5, and notice that console will light up with notifications. Go to Discord, and type <code>;;hi</code>. 
-Your bot should now respond. If it did, congratulations!</p>
-<p><img src="/images/03_01_hi.png" alt="Step 1"></p>
-<h2 id="5-using-arguments">5. Using arguments</h2>
-<p>Close your bot, sit down, and listed to me.</p>
-<p>CommandsNext is capable of automatically converting user-supplied data to a variety of types. The default argument converters 
-can convert to the following:</p>
-<ul>
-<li>Integral types: <code>byte</code>, <code>sbyte</code>, <code>ushort</code>, <code>short</code>, <code>uint</code>, <code>int</code>, <code>ulong</code>, <code>long</code></li>
-<li>Floating-point types: <code>float</code>, <code>double</code>, <code>decimal</code></li>
-<li>Text and character types: <code>string</code>, <code>char</code></li>
-<li>Boolean types: <code>bool</code></li>
-<li>Date and time types: <code>DateTime</code>, <code>DateTimeOffset</code>, <code>TimeSpan</code></li>
-<li>Discord entities: <code>DiscordGuild</code>, <code>DiscordChannel</code>, <code>DiscordMember</code>, <code>DiscordUser</code>, <code>DiscordRole</code>, <code>DiscordMessage</code>, <code>DiscordEmoji</code>, <code>DiscordColor</code></li>
-</ul>
-<p>Using these is as simple as declaring additional arguments for your command function. Let&#39;s say you want to create a command 
-that generates a random number between the two specified numbers. You can do it by adding two <code>int</code> arguments to your function.</p>
-<p>For example:</p>
-<pre><code class="lang-cs">[Command(&quot;random&quot;)]
-public async Task Random(CommandContext ctx, int min, int max)
-{
-    var rnd = new Random();
-    await ctx.RespondAsync($&quot;🎲 Your random number is: {rnd.Next(min, max)}&quot;);
+</code></pre><h3 id="cleanup-and-configuration">Cleanup and Configuration</h3>
+<p>Before we can run our new command, we&#39;ll need modify our main method.<br>
+Start by removing the event handler we created <a class="xref" href="../basics/first_bot.html#spicing-up-your-bot">previously</a>.</p>
+<pre><code class="lang-cs">var discord = new DiscordClient();
+
+discord.MessageCreated += async (s, e) =&gt;               // REMOVE
+{                                                       // ALL
+    if (e.Message.Content.ToLower().StartsWith(&quot;ping&quot;)) // OF
+        await e.Message.RespondAsync(&quot;pong!&quot;);          // THESE
+};                                                      // LINES
+
+await discord.ConnectAsync();            
+</code></pre><p><br>
+Next, call the <code>UseCommandsNext</code> extension method on your <code>DiscordClient</code> instance and pass it a new <code>CommandsNextConfiguration</code> instance.
+Assign the resulting <code>CommandsNextExtension</code> instance to a new variable named <em>commands</em>. This important step will enable CommandsNext for your Discord client.</p>
+<pre><code class="lang-cs">var discord = new DiscordClient();
+var commands = discord.UseCommandsNext(new CommandsNextConfiguration());
+</code></pre><p>Create an object initializer for <code>CommandsNextConfiguration</code> and assign the <code>StringPrefixes</code> property a new <code>string</code> array containing your desired prefixes.
+Our example below will only define a single prefix: <code>!</code>.</p>
+<pre><code class="lang-cs">new CommandsNextConfiguration()
+{ 
+    StringPrefixes = new[] { &quot;!&quot; }
 }
-</code></pre><p>Now, if you hit F5, and go to your server, you can call <code>;;random 0 10</code>, and it will respond with a random number between 0 
-and 10 exclusive.</p>
-<p><img src="/images/03_02_random.png" alt="Step 2"></p>
-<h2 id="6-advanced-subjects">6. Advanced subjects</h2>
-<p>Commands are covered more in-depth in <a href="https://github.com/Emzi0767/DSharpPlus-Example-Bot/tree/master/DSPlus.Examples.CSharp.Ex02" title="Example Bot #2">Emzi0767&#39;s Example bot #2</a>. 
-If you want to check out all the cool things CommandsNext can do to make your life easier, make sure to check it out.</p>
+</code></pre><p><br>
+Now we&#39;ll register our command module.
+Call the <code>RegisterCommands</code> method on our <code>CommandsNextExtension</code> instance and provide it with your command module.</p>
+<pre><code class="lang-cs">var discord = new DiscordClient();
+var commands = discord.UseCommandsNext();
+
+commands.RegisterCommands&lt;MyFirstModule&gt;();
+
+await discord.ConnectAsync();            
+</code></pre><p>Alternatively, you can pass in your assembly to register commands from all modules in your program.</p>
+<pre><code class="lang-cs">commands.RegisterCommands(Assembly.GetExecutingAssembly());
+</code></pre><p><br>
+Your main method should look similar to the following:</p>
+<pre><code class="lang-cs">internal static async Task MainAsync()
+{
+    var discord = new DiscordClient(new DiscordConfiguration());
+    var commands = discord.UseCommandsNext(new CommandsNextConfiguration()
+    { 
+        StringPrefixes = new[] { &quot;!&quot; }
+    });
+
+    commands.RegisterCommands&lt;MyFirstModule&gt;();
+
+    await discord.ConnectAsync();            
+    await Task.Delay(-1);
+}
+</code></pre><h3 id="running-your-command">Running Your Command</h3>
+<p>It&#39;s now the moment of truth; all your blood, sweat, and tears have lead to this moment.
+Hit <code>F5</code> on your keyboard to compile and run your bot, then execute your command in any channel that your bot account has access to.</p>
+<p><img src="/images/commands_intro_03.png" alt="Congratulations, You&#39;ve Won!"></p>
+<p><a href="https://www.youtube.com/watch?v=GsQXadrmhws">That was easy</a>.</p>
+<p><br></p>
+<h2 id="taking-user-input">Taking User Input</h2>
+<h3 id="command-arguments">Command Arguments</h3>
+<p>Now that we have a basic command down, let&#39;s spice it up a bit by defining <em>arguments</em> to accept user input.</p>
+<p>Defining an argument is simple; just add additional parameters to your signature of your command method. 
+CommandsNext will automatically parse user input and populate the parameters of your command method with those arguments. 
+To demonstrate, we&#39;ll modify our <em>greet</em> command to greet a user with a given name.</p>
+<p>Head back to <code>MyFirstModule</code> and add a parameter of type <code>string</code> to the <code>GreetCommand</code> method.</p>
+<pre><code class="lang-cs">[Command(&quot;greet&quot;)]
+public async Task GreetCommand(CommandContext ctx, string name)
+</code></pre><p>CommandsNext will now interpret this as a command named <em>greet</em> that takes one argument.</p>
+<p>Next, replace our original response message with an <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated">interpolated string</a>
+which uses our new parameter.</p>
+<pre><code class="lang-cs">public async Task GreetCommand(CommandContext ctx, string name)
+{
+    await ctx.RespondAsync($&quot;Greetings, {name}! You&#39;re pretty neat!&quot;);
+}
+</code></pre><p>That&#39;s all there is to it. Smack <code>F5</code> and test it out in a channel your bot account has access to.</p>
+<p><img src="/images/commands_intro_04.png" alt="Greet Part 2: Electric Boogaloo"></p>
+<p><br>
+Now, you may have noticed that providing more than one word simply does not work.<br>
+For example, <code>!greet Luke Smith</code> will result in no response from your bot.</p>
+<p>This fails because a valid <a href="#command-overloads">overload</a> could not be found for your command.</p>
+<p>CommandsNext will split arguments by whitespace. This means <code>Luke Smith</code> is counted as two separate arguments; <code>Luke</code> and <code>Smith</code>.
+In addition to this, CommandsNext will attempt to find and execute an overload of your command that has the <em>same number</em> of provided arguments.
+Together, this means that any additional arguments will prevent CommandsNext from finding a valid overload to execute.</p>
+<p>The simplest way to get around this would be to wrap your input with double quotes.<br>
+CommandsNext will parse this as one argument, allowing your command to be executed.</p>
+<pre><code>!greet &quot;Luke Smith&quot;
+</code></pre><p>If you would prefer not to use quotes, you can use the <code>RemainingText</code> attribute on your parameter.<br>
+This attribute will instruct CommandsNext to parse all remaining arguments into that parameter. </p>
+<pre><code class="lang-cs">public async Task GreetCommand(CommandContext ctx, [RemainingText] string name)
+</code></pre><p>Alternatively, you can use the <code>params</code> keyword to have all remaining arguments parsed into an array.</p>
+<pre><code class="lang-cs">public async Task GreetCommand(CommandContext ctx, params string[] names)
+</code></pre><p>A more obvious solution is to add additional parameters to the method signature of your command method.<br></p>
+<pre><code class="lang-cs">public async Task GreetCommand(CommandContext ctx, string firstName, string lastName)
+</code></pre><p><br>
+Each of these has their own caveats; it&#39;ll be up to you to choose the best solution for your commands.</p>
+<h3 id="argument-converters">Argument Converters</h3>
+<p>CommandsNext can convert arguments, which are natively <code>string</code>, to the type specified by a command method parameter.
+This functionality is powered by <em>argument converters</em>, and it&#39;ll help to eliminate the boilerplate code needed to parse and convert <code>string</code> arguments. </p>
+<p>CommandsNext has built-in argument converters for the following types:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Category</th>
+<th style="text-align:left">Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Discord</td>
+<td style="text-align:left"><code>DiscordGuild</code>, <code>DiscordChannel</code>, <code>DiscordMember</code>, <code>DiscordUser</code>,<br><code>DiscordRole</code>, <code>DiscordMessage</code>, <code>DiscordEmoji</code>, <code>DiscordColor</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Integral</td>
+<td style="text-align:left"><code>byte</code>, <code>short</code>, <code>int</code>, <code>long</code>, <code>sbyte</code>, <code>ushort</code>, <code>uint</code>, <code>ulong</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Floating-Point</td>
+<td style="text-align:left"><code>float</code>, <code>double</code>, <code>decimal</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Date</td>
+<td style="text-align:left"><code>DateTime</code>, <code>DateTimeOffset</code>, <code>TimeSpan</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Character</td>
+<td style="text-align:left"><code>string</code>, <code>char</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Boolean</td>
+<td style="text-align:left"><code>bool</code></td>
+</tr>
+</tbody>
+</table>
+<p>You&#39;re also able to create and provide your own <a class="xref" href="argument_converters.html">custom argument converters</a>, if desired.</p>
+<p><br>
+Let&#39;s do a quick demonstration of the built-in converters. </p>
+<p>Create a new command method above our <code>GreetCommand</code> method named <code>RandomCommand</code> and have it take two integer arguments.
+As the method name suggests, this command will be named <em>random</em>.</p>
+<pre><code class="lang-cs">[Command(&quot;random&quot;)]
+public async Task RandomCommand(CommandContext ctx, int min, int max)
+{
+
+}
+</code></pre><p>Make a variable with a new instance of <code>Random</code>.</p>
+<pre><code class="lang-cs">var random = new Random();
+</code></pre><p>Finally, we&#39;ll respond with a random number within the range provided by the user.</p>
+<pre><code class="lang-cs">await ctx.RespondAsync($&quot;Your number is: {random.Next(min, max)}&quot;);
+</code></pre><p>Run your bot once more with <code>F5</code> and give this a try in a text channel.</p>
+<p><img src="/images/commands_intro_05.png" alt="Discord Channel"></p>
+<p>CommandsNext converted the two arguments from <code>string</code> into <code>int</code> and passed them to the parameters of our command,
+removing the need to manually parse and convert the arguments yourself.</p>
+<p><br>
+We&#39;ll do one more to drive the point home. Head back to our old <code>GreetCommand</code> method, remove our 
+<code>name</code> parameter, and replace it with a new parameter of type <code>DiscordMember</code> named <code>member</code>.</p>
+<pre><code class="lang-cs">public async Task GreetCommand(CommandContext ctx, DiscordMember member)
+</code></pre><p>Then modify the response to mention the provided member with the <code>Mention</code> property on <code>DiscordMember</code>.</p>
+<pre><code class="lang-cs">public async Task GreetCommand(CommandContext ctx, DiscordMember member)
+{
+    await ctx.RespondAsync($&quot;Greetings, {member.Mention}! Enjoy the mention!&quot;);
+}
+</code></pre><p>Go ahead and give that a test run. </p>
+<p><img src="/images/commands_intro_06.png" alt="According to all known laws of aviation,"></p>
+<p><img src="/images/commands_intro_07.png" alt="there is no way a bee should be able to fly."></p>
+<p><img src="/images/commands_intro_08.png" alt="Its wings are too small to get its fat little body off the ground."></p>
+<p>The argument converter for <code>DiscordMember</code> is able to parse mentions, usernames, nicknames, and user IDs then look for a matching member within the guild the command was executed from.
+Ain&#39;t that neat? </p>
+<h2 id="command-overloads">Command Overloads</h2>
+<p>Command method overloading allows you to create multiple argument configurations for a single command.</p>
+<pre><code class="lang-cs">[Command(&quot;foo&quot;)]
+public Task FooCommand(CommandContext ctx, string bar, int baz) { }
+
+[Command(&quot;foo&quot;)]
+public Task FooCommand(CommandContext ctx, DiscordUser bar) { }
+</code></pre><p>Executing <code>!foo green 5</code> will run the first method, and <code>!foo @Emzi0767</code> will run the second method.</p>
+<p><br>
+Additionally, all check attributes are shared between overloads.<br></p>
+<pre><code class="lang-cs">[Command(&quot;foo&quot;), Aliases(&quot;bar&quot;, &quot;baz&quot;)]
+[RequireGuild, RequireBotPermissions(Permissions.AttachFiles)]
+public Task FooCommand(CommandContext ctx, int bar, int baz, string qux = &quot;agony&quot;) { }
+
+[Command(&quot;foo&quot;)]
+public Task FooCommand(CommandContext ctx, DiscordChannel bar, TimeSpan baz) { }
+</code></pre><p>The additional attributes and checks applied to the first method will also be applied to the second method.</p>
+<h2 id="further-reading">Further Reading</h2>
+<p>Now that you&#39;ve gotten an understanding of CommandsNext, it&#39;d be a good idea check out the following:</p>
+<ul>
+<li><a class="xref" href="command_attributes.html">Command Attributes</a></li>
+<li><a class="xref" href="help_formatter.html">Help Formatter</a></li>
+<li><a class="xref" href="dependency_injection.html">Dependency Injection</a></li>
+</ul>
 </article>
           </div>
           
@@ -258,7 +341,7 @@ If you want to check out all the cool things CommandsNext can do to make your li
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

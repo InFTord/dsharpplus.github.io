@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Utilities
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -151,7 +151,7 @@
   
   <a id="DSharpPlus_Utilities_GetDateTimeOffset_" data-uid="DSharpPlus.Utilities.GetDateTimeOffset*"></a>
   <h4 id="DSharpPlus_Utilities_GetDateTimeOffset_System_Int64_System_Boolean_" data-uid="DSharpPlus.Utilities.GetDateTimeOffset(System.Int64,System.Boolean)">GetDateTimeOffset(Int64, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Helper method to create a <span class="xref">System.DateTimeOffset</span> from Unix time seconds for targets that do not support this natively.</p>
+  <div class="markdown level1 summary"><p>Helper method to create a <see cref="!:DateTimeOffset"></see> from Unix time seconds for targets that do not support this natively.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -192,8 +192,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTimeOffset</span></td>
-        <td><p>Calculated <span class="xref">System.DateTimeOffset</span>.</p>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td><p>Calculated <see cref="!:DateTimeOffset"></see>.</p>
 </td>
       </tr>
     </tbody>
@@ -202,7 +202,7 @@
   
   <a id="DSharpPlus_Utilities_GetDateTimeOffsetFromMilliseconds_" data-uid="DSharpPlus.Utilities.GetDateTimeOffsetFromMilliseconds*"></a>
   <h4 id="DSharpPlus_Utilities_GetDateTimeOffsetFromMilliseconds_System_Int64_System_Boolean_" data-uid="DSharpPlus.Utilities.GetDateTimeOffsetFromMilliseconds(System.Int64,System.Boolean)">GetDateTimeOffsetFromMilliseconds(Int64, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Helper method to create a <span class="xref">System.DateTimeOffset</span> from Unix time milliseconds for targets that do not support this natively.</p>
+  <div class="markdown level1 summary"><p>Helper method to create a <see cref="!:DateTimeOffset"></see> from Unix time milliseconds for targets that do not support this natively.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -243,8 +243,104 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTimeOffset</span></td>
-        <td><p>Calculated <span class="xref">System.DateTimeOffset</span>.</p>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td><p>Calculated <see cref="!:DateTimeOffset"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Utilities_GetShardId_" data-uid="DSharpPlus.Utilities.GetShardId*"></a>
+  <h4 id="DSharpPlus_Utilities_GetShardId_System_UInt64_System_Int32_" data-uid="DSharpPlus.Utilities.GetShardId(System.UInt64,System.Int32)">GetShardId(UInt64, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a shard id from a guild id and total shard count.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetShardId(ulong guildId, int shardCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">guildId</span></td>
+        <td><p>The guild id the shard is on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">shardCount</span></td>
+        <td><p>The total amount of shards.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The shard id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Utilities_GetSnowflakeTime_" data-uid="DSharpPlus.Utilities.GetSnowflakeTime*"></a>
+  <h4 id="DSharpPlus_Utilities_GetSnowflakeTime_System_UInt64_" data-uid="DSharpPlus.Utilities.GetSnowflakeTime(System.UInt64)">GetSnowflakeTime(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Computes a timestamp from a given snowflake.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTimeOffset GetSnowflakeTime(this ulong snowflake)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">snowflake</span></td>
+        <td><p>Snowflake to compute a timestamp from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td><p>Computed timestamp.</p>
 </td>
       </tr>
     </tbody>
@@ -252,8 +348,8 @@
   
   
   <a id="DSharpPlus_Utilities_GetUnixTime_" data-uid="DSharpPlus.Utilities.GetUnixTime*"></a>
-  <h4 id="DSharpPlus_Utilities_GetUnixTime_System_DateTimeOffset_" data-uid="DSharpPlus.Utilities.GetUnixTime(System.DateTimeOffset)">GetUnixTime(DateTimeOffset)</h4>
-  <div class="markdown level1 summary"><p>Helper method to calculate Unix time seconsd from a <span class="xref">System.DateTimeOffset</span> for targets that do not support this natively.</p>
+  <h4 id="DSharpPlus_Utilities_GetUnixTime_DateTimeOffset_" data-uid="DSharpPlus.Utilities.GetUnixTime(DateTimeOffset)">GetUnixTime(DateTimeOffset)</h4>
+  <div class="markdown level1 summary"><p>Helper method to calculate Unix time seconsd from a <see cref="!:DateTimeOffset"></see> for targets that do not support this natively.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -271,9 +367,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><span class="xref">DateTimeOffset</span></td>
         <td><span class="parametername">dto</span></td>
-        <td><p><span class="xref">System.DateTimeOffset</span> to calculate Unix time for.</p>
+        <td><p><see cref="!:DateTimeOffset"></see> to calculate Unix time for.</p>
 </td>
       </tr>
     </tbody>
@@ -364,7 +460,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

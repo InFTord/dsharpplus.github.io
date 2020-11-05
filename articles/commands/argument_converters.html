@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Augmenting commands - custom argument converters </title>
+    <title>Argument Converter </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Augmenting commands - custom argument converters ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="title" content="Argument Converter ">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -73,66 +73,53 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="augmenting-commands---custom-argument-converters">Augmenting commands - custom argument converters</h1>
+            <article class="content wrap" id="_content" data-uid="commands_argument_converters">
+<h2 id="custom-argument-converter">Custom Argument Converter</h2>
 
-<p>Suppose you want to augment an existing argument converter, or introduce a new one. The Argument Converter system in 
-CommandsNext allows you to modify or register converters for arguments passed to commands. An argument converter for 
-type <code>T</code> is a class which implements <a class="xref" href="../../api/DSharpPlus.CommandsNext.Converters.IArgumentConverter-1.html">IArgumentConverter&lt;T&gt;</a> and has an 
-implementation for @DSharpPlus.CommandsNext.Converters.IArgumentConverter`1.TryConvert(System.String,DSharpPlus.CommandsNext.CommandContext,`0@) method.</p>
-<p>Here&#39;s we&#39;ll be creating an augmented boolean converter.</p>
-<h2 id="1-creating-a-converter">1. Creating a converter</h2>
-<p>Create a new class, call it <code>EnhancedBoolConverter</code>, and make it implement <a class="xref" href="../../api/DSharpPlus.CommandsNext.Converters.IArgumentConverter-1.html">IArgumentConverter&lt;T&gt;</a>
-with generic argument set to bool (<code>IArgumentConverter&lt;bool&gt;</code>).</p>
-<p>In the <code>TryConvert</code> method, you will want to add code which checks if the <code>value</code> is equal to <code>&quot;yes&quot;</code> or <code>&quot;no&quot;</code>, and return 
-appropriate value. Otherwise it should fallback to default bool parser. It should look more or less like this:</p>
-<pre><code class="lang-cs">using System;
-using System.Collections.Generic;
-using System.Text;
-using DSharpPlus.CommandsNext;
-using DSharpPlus.CommandsNext.Converters;
-
-namespace MyFirstBot
+<p>Writing your own argument converter will enable you to convert custom types and replace the functionality of existing converters.
+Like many things in DSharpPlus, doing this is straightforward and simple.</p>
+<p>First, create a new class which implements <code>IArgumentConverter&lt;T&gt;</code> and its method <code>ConvertAsync</code>.
+Our example will be a boolean converter, so we&#39;ll also pass <code>bool</code> as the type parameter for <code>IArgumentConverter</code>.</p>
+<pre><code class="lang-cs">public class CustomArgumentConverter : IArgumentConverter&lt;bool&gt;
 {
-    public class EnhancedBoolConverter : IArgumentConverter&lt;bool&gt;
+    public Task&lt;Optional&lt;bool&gt;&gt; ConvertAsync(string value, CommandContext ctx)
     {
-        public bool TryConvert(string value, CommandContext ctx, out bool result)
+        if (bool.TryParse(value, out var boolean))
         {
-            switch (value.ToLowerInvariant())
-            {
-                case &quot;yes&quot;:
-                    result = true;
-                    return true;
+            return Task.FromResult(Optional.FromValue(boolean));
+        }           
 
-                case &quot;no&quot;:
-                    result = false;
-                    return true;
-            }
+        switch (value.ToLower())
+        {
+            case &quot;yes&quot;:
+            case &quot;y&quot;:
+            case &quot;t&quot;:
+                return Task.FromResult(Optional.FromValue(true));
 
-            return bool.TryParse(value, out result);
-        }
-    }
+            case &quot;no&quot;:
+            case &quot;n&quot;:
+            case &quot;f&quot;:
+                return Task.FromResult(Optional.FromValue(false));
+
+            default:
+                return Task.FromResult(Optional.FromNoValue&lt;bool&gt;());
+        } 
+    }   
 }
-</code></pre><h2 id="2-registering-the-converter">2. Registering the converter</h2>
-<p>Once your converter is created, you need to register it with CommandsNext. You can do that by invoking 
-<a class="xref" href="../../api/DSharpPlus.CommandsNext.CommandsNextExtension.html#DSharpPlus_CommandsNext_CommandsNextExtension_RegisterConverter__1_IArgumentConverter___0__">RegisterConverter&lt;T&gt;(IArgumentConverter&lt;T&gt;)</a> with the converter instance:</p>
-<pre><code class="lang-cs">commands.RegisterConverter(new EnhancedBoolConverter());
-</code></pre><p>You need to call the method before you register your commands.</p>
-<h2 id="3-making-use-of-the-converter">3. Making use of the converter</h2>
-<p>Create a new command which takes a bool argument to test the converter:</p>
-<pre><code class="lang-cs">[Command(&quot;yesno&quot;)]
-public async Task YesNo(CommandContext ctx, bool arg)
+</code></pre><p>Then register the argument converter with CommandContext.</p>
+<pre><code class="lang-cs">var discord = new DiscordClient();
+var commands = discord.UseCommandsNext();
+
+commands.RegisterConverter(new CustomArgumentConverter());
+</code></pre><p><br>
+Once the argument converter is written and registered, we&#39;ll be able to use it:</p>
+<pre><code class="lang-cs">[Command(&quot;boolean&quot;)]
+public async Task BooleanCommand(CommandContext ctx, bool boolean)
 {
-    await ctx.RespondAsync($&quot;Your pick: {arg ? &quot;Yes&quot; : &quot;No&quot;}&quot;);
+    await ctx.RespondAsync($&quot;Converted to {boolean}&quot;);
 }
-</code></pre><p>You can now invoke it as <code>;;yesno yes</code> or <code>;;yesno no</code>.</p>
-<h2 id="4-further-notes">4. Further notes</h2>
-<p>This particular example replaces an existing converter with a new one. You can also register converters for other types 
-(including custom ones). All you need is a converter instance for it.</p>
-<p>You can also give types a user-friendly name (that is used for help) by invoking the <a class="xref" href="../../api/DSharpPlus.CommandsNext.CommandsNextExtension.html#DSharpPlus_CommandsNext_CommandsNextExtension_RegisterUserFriendlyTypeName__1_System_String_">RegisterUserFriendlyTypeName&lt;T&gt;(String)</a> 
-method, e.g.:</p>
-<pre><code class="lang-cs">commands.RegisterUserFriendlyTypeName&lt;MyType&gt;(&quot;my custom data&quot;);
-</code></pre></article>
+</code></pre><p><img src="/images/commands_argument_converters_01.png" alt="true"></p>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -159,7 +146,7 @@ method, e.g.:</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

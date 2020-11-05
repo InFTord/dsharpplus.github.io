@@ -14,71 +14,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.AsyncEvent-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.AsyncEvent-1.html",
-          "hash": "yLN1fbev260kTKMB9fRxEA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.AsyncEvent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.AsyncEvent.html",
-          "hash": "Rp5RoHMK252HU2HHugFYzw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.AsyncEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.AsyncEventArgs.html",
-          "hash": "zcTeAFJnokBtpnlzZt+ndw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.AsyncEventHandler-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.AsyncEventHandler-1.html",
-          "hash": "Wsbh5JfPssV/ET/0aTFEkg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.AsyncEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.AsyncEventHandler.html",
-          "hash": "r8SFkvqEsKq3Q7IA6nVyyg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/DSharpPlus.BaseDiscordClient.yml",
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.BaseDiscordClient.html",
-          "hash": "e5QcyoJQEVKpLQQThJrG9A=="
+          "hash": "YOgowRLyilW3XbrKfN98wg=="
         }
       },
       "is_incremental": false,
@@ -90,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.BaseExtension.html",
-          "hash": "B4sAWbhLVBZIrUushPTT9g=="
+          "hash": "wmiMfuf7+kQGBlYaLK+W+A=="
         }
       },
       "is_incremental": false,
@@ -102,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.ChannelType.html",
-          "hash": "CYI2O8JUMTo/wTFkdmFw2A=="
+          "hash": "afconInZsFW5BQOnKGjoRg=="
         }
       },
       "is_incremental": false,
@@ -114,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.AliasesAttribute.html",
-          "hash": "SGvSvFDLtTFMIU8uVU9sPw=="
+          "hash": "6FhgX1TlvPaK+N2UgKdTGA=="
         }
       },
       "is_incremental": false,
@@ -126,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.CheckBaseAttribute.html",
-          "hash": "AvlU2aVNUBha9Po9d2ezeg=="
+          "hash": "ltILL/khZHOhITr9VqSVIw=="
         }
       },
       "is_incremental": false,
@@ -138,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.CommandAttribute.html",
-          "hash": "t+keNJtdzKR3lv3oh73BxQ=="
+          "hash": "VWAGzLDaxnHHmiUJbigLww=="
         }
       },
       "is_incremental": false,
@@ -150,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.CommandCooldownBucket.html",
-          "hash": "5T86vW+mb+HNje8GAAcxfg=="
+          "hash": "Me765rby3qLC74erxSExtA=="
         }
       },
       "is_incremental": false,
@@ -162,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.CooldownAttribute.html",
-          "hash": "Cb2jo2V9aoIKTlbUGCps0w=="
+          "hash": "1gW+OZy5qb+5n4Mjk3x30Q=="
         }
       },
       "is_incremental": false,
@@ -174,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.CooldownBucketType.html",
-          "hash": "BsFV2QdC5w5dXMiauJbpnA=="
+          "hash": "D7LoFZ6umHAdLXZKuUoMaA=="
         }
       },
       "is_incremental": false,
@@ -186,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.DescriptionAttribute.html",
-          "hash": "Xa6XI3p6YZOjWfhreDbw+w=="
+          "hash": "w3X8zAcxoKm6a1N2e4PibA=="
         }
       },
       "is_incremental": false,
@@ -198,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.DontInjectAttribute.html",
-          "hash": "BqNn1cSxoO6Q4wooh0gY5w=="
+          "hash": "jEj/ueFYKazcofcJeVCm/w=="
         }
       },
       "is_incremental": false,
@@ -210,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.GroupAttribute.html",
-          "hash": "30xksPF4itQ1gx6IAA7RmA=="
+          "hash": "NSqXenQYqsifHGZhDuqy8Q=="
         }
       },
       "is_incremental": false,
@@ -222,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.GroupCommandAttribute.html",
-          "hash": "yCdzObCQL/98yzi5Kem4GA=="
+          "hash": "i/Q0J2sAovway8H4TWPVuQ=="
         }
       },
       "is_incremental": false,
@@ -234,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.HiddenAttribute.html",
-          "hash": "ev0NHS0UPVNKjJ5ZNjN/bg=="
+          "hash": "clRl5lMoAdywk4bx5KTifg=="
         }
       },
       "is_incremental": false,
@@ -246,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.ModuleLifespan.html",
-          "hash": "mKyFi2eEfjec+wMLYK2htg=="
+          "hash": "x8/moXQPCH8gW0Mz8j3Iow=="
         }
       },
       "is_incremental": false,
@@ -258,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.ModuleLifespanAttribute.html",
-          "hash": "HfbLcnIMRLSKv/FAkyMNIA=="
+          "hash": "wtJYGeIEcL2ftO3mwKEVHw=="
         }
       },
       "is_incremental": false,
@@ -270,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.PriorityAttribute.html",
-          "hash": "7+RtNvxRNC8Hz7BQAcXMHw=="
+          "hash": "g70Ix1oolH9D1HpcpCr3aA=="
         }
       },
       "is_incremental": false,
@@ -282,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.RemainingTextAttribute.html",
-          "hash": "Gc6JeF+wKGI6KY+GglRn0A=="
+          "hash": "z6xBOGknt+uEj81j4qdwsw=="
         }
       },
       "is_incremental": false,
@@ -294,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.RequireBotPermissionsAttribute.html",
-          "hash": "+ZH7J3GYhGnfSxrK9CARPw=="
+          "hash": "jlTyyI5QDKQ7gktT1OuDjg=="
         }
       },
       "is_incremental": false,
@@ -306,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.RequireDirectMessageAttribute.html",
-          "hash": "u3yTqlrwQFRfLsJ43j70vw=="
+          "hash": "SOUeAks+fQ6M0v8U1NTCrg=="
         }
       },
       "is_incremental": false,
@@ -318,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.RequireGuildAttribute.html",
-          "hash": "yOSXtyPlvqSUxyNwuWFDAg=="
+          "hash": "PZCCjSqvARA4WS7eS0j3Ww=="
         }
       },
       "is_incremental": false,
@@ -330,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.RequireNsfwAttribute.html",
-          "hash": "g2evZmLEF22q2s+AKQWEZw=="
+          "hash": "JEBkEbvB+xUSxkj5lcf6Lg=="
         }
       },
       "is_incremental": false,
@@ -342,7 +282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.RequireOwnerAttribute.html",
-          "hash": "fumxHwyWEW4OfTDqyiicBg=="
+          "hash": "9O+6I5bWPtcoh9Gpb2FVGg=="
         }
       },
       "is_incremental": false,
@@ -354,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.RequirePermissionsAttribute.html",
-          "hash": "LaRmwhqhyhPvxmDrVeCczA=="
+          "hash": "nNw/l0l50TbRewe9Hk23NA=="
         }
       },
       "is_incremental": false,
@@ -366,7 +306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.RequirePrefixesAttribute.html",
-          "hash": "lr1rr2zBfGGKaKudFhTGPQ=="
+          "hash": "QPsQiKvHy6L07H+ojABUAA=="
         }
       },
       "is_incremental": false,
@@ -378,7 +318,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.RequireRolesAttribute.html",
-          "hash": "/sk/SnAcRf5HAeiVbcy+ZA=="
+          "hash": "h/nZQNwFenwp9Q5z1ImI2w=="
         }
       },
       "is_incremental": false,
@@ -390,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.RequireUserPermissionsAttribute.html",
-          "hash": "14MJN2ZDUcB1HxvHKLTjVQ=="
+          "hash": "CRoOFs8n4iLHVecu6Ncl9Q=="
         }
       },
       "is_incremental": false,
@@ -402,7 +342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.RoleCheckMode.html",
-          "hash": "zpLbILOqu1Bilr0IZJsVkA=="
+          "hash": "fJ9IZqeRIBBD96W6usqrRw=="
         }
       },
       "is_incremental": false,
@@ -414,7 +354,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Attributes.html",
-          "hash": "b4votVT9t/hbeUhjqm61Gg=="
+          "hash": "TTLncGWrSuLA8HL2LjRvKg=="
         }
       },
       "is_incremental": false,
@@ -426,7 +366,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.BaseCommandModule.html",
-          "hash": "z2pgyoeyTVBEabS/FOF9Aw=="
+          "hash": "UjxlufSnmHVkcdoYuSV4Jw=="
         }
       },
       "is_incremental": false,
@@ -438,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Builders.CommandBuilder.html",
-          "hash": "ZkkM9RIf4HfsBCdjWzDsHg=="
+          "hash": "oCfdq+jtsdl5fnIvG9OPgw=="
         }
       },
       "is_incremental": false,
@@ -450,7 +390,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Builders.CommandGroupBuilder.html",
-          "hash": "hVIM+4YhgQ82dcdpvDPzxg=="
+          "hash": "Y38dKfbACJGZzIz0RPZi4w=="
         }
       },
       "is_incremental": false,
@@ -462,7 +402,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Builders.CommandModuleBuilder.html",
-          "hash": "wVhC+aBuAD/zJGTJQJCuZQ=="
+          "hash": "U0W5jKvenfDaOy5y7w/+1g=="
         }
       },
       "is_incremental": false,
@@ -474,7 +414,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Builders.CommandOverloadBuilder.html",
-          "hash": "1BlUZp86jUgrXmFrJNunQg=="
+          "hash": "Fd71Li29FEzMN0AbHdrNUA=="
         }
       },
       "is_incremental": false,
@@ -486,7 +426,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Builders.html",
-          "hash": "SyU0i7oKKS9N7qZ0ekrmtQ=="
+          "hash": "RjKpAMhSKJOHkKCdjWF41Q=="
         }
       },
       "is_incremental": false,
@@ -498,7 +438,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Command.html",
-          "hash": "XTQnGmVkDxyVqnFKlCpT4w=="
+          "hash": "5xEmUXRvA9jUauWhHONXiQ=="
         }
       },
       "is_incremental": false,
@@ -510,7 +450,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.CommandArgument.html",
-          "hash": "onuo6X2HTWfTBq2GHLcaEA=="
+          "hash": "V+suKeUep7LQE0mHchOCYQ=="
         }
       },
       "is_incremental": false,
@@ -522,7 +462,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.CommandContext.html",
-          "hash": "FtvSHklizWudEUOLVrNvEA=="
+          "hash": "x0qnKa9Qe5NsG/jetfGeiA=="
         }
       },
       "is_incremental": false,
@@ -534,7 +474,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.CommandErrorEventArgs.html",
-          "hash": "gNnC7QoZ2ZBaheJ1aFERpQ=="
+          "hash": "pv44Ckz93O2h2LpXML+15w=="
         }
       },
       "is_incremental": false,
@@ -546,7 +486,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.CommandEventArgs.html",
-          "hash": "DcwIHMc01+IEylUgg+EG2g=="
+          "hash": "19Kqq0B/W3V6ki4X+k/XEQ=="
         }
       },
       "is_incremental": false,
@@ -558,7 +498,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.CommandExecutionEventArgs.html",
-          "hash": "WWpft8cjkSlNgWD+WR18dA=="
+          "hash": "3XO4ZE/o+1FLm6vB/0kOvQ=="
         }
       },
       "is_incremental": false,
@@ -570,7 +510,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.CommandGroup.html",
-          "hash": "NzD9Ejqx+RmDAxBdnr+U3w=="
+          "hash": "X358XNesO9e40Fruz0qq9g=="
         }
       },
       "is_incremental": false,
@@ -582,7 +522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.CommandOverload.html",
-          "hash": "IcbuVfA6yYPxVtBy5IjT4Q=="
+          "hash": "9HUCrUfvkYoc8FrPA4TQzw=="
         }
       },
       "is_incremental": false,
@@ -594,7 +534,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.CommandResult.html",
-          "hash": "59DuLq7OzwMKQ+mFiQxStg=="
+          "hash": "DBoQ64CtYP3+hDwzh3FywQ=="
         }
       },
       "is_incremental": false,
@@ -606,7 +546,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.CommandsNextConfiguration.html",
-          "hash": "EYA20Y6Vt5gtimYN4NcCEQ=="
+          "hash": "SJoCNsPe28ULNws6PZjMIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.CommandsNext.CommandsNextEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.CommandsNext.CommandsNextEvents.html",
+          "hash": "fATBX9UHeY7I7//zz5DCZA=="
         }
       },
       "is_incremental": false,
@@ -618,7 +570,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.CommandsNextExtension.DefaultHelpModule.html",
-          "hash": "eDNvVeuPiq8/NxvtFncwzg=="
+          "hash": "esDnbsUDt6wrZyTYuaZR3Q=="
         }
       },
       "is_incremental": false,
@@ -630,7 +582,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.CommandsNextExtension.html",
-          "hash": "fk9s8/f8A8tUT3kLmfgJPg=="
+          "hash": "T9p0oH8Z1KCUWvvSBYUubg=="
         }
       },
       "is_incremental": false,
@@ -642,7 +594,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.CommandsNextUtilities.html",
-          "hash": "EJlALXBa24od9S2aEDV+dA=="
+          "hash": "Ih+VtbAkIo5zK7Ly9yxSlQ=="
         }
       },
       "is_incremental": false,
@@ -654,7 +606,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.ArgumentBindingResult.html",
-          "hash": "Zphdja+jtZ5MqvaPWlaORw=="
+          "hash": "O8IE7naY5ex027Atj7C2lg=="
         }
       },
       "is_incremental": false,
@@ -666,7 +618,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.BaseHelpFormatter.html",
-          "hash": "Uh1m4L9vkfeZGTNsi5O8gQ=="
+          "hash": "6qKZhRo0v7OqrhziNFYyAg=="
         }
       },
       "is_incremental": false,
@@ -678,7 +630,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.BoolConverter.html",
-          "hash": "epm3lyDw3/+uJia1/ZvESA=="
+          "hash": "POMuO/M7OJPk2YTLkNYfjQ=="
         }
       },
       "is_incremental": false,
@@ -690,7 +642,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.DateTimeConverter.html",
-          "hash": "ZJvYIzIzRjWT7GyyJ+44Pg=="
+          "hash": "g6vi9tBmJzRXNAyOurHFnQ=="
         }
       },
       "is_incremental": false,
@@ -702,7 +654,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.DateTimeOffsetConverter.html",
-          "hash": "ug3pR2LMYA7A3KEwrx/uxg=="
+          "hash": "p7WIcxwHp5URWMjLjiQWPA=="
         }
       },
       "is_incremental": false,
@@ -714,7 +666,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.DefaultHelpFormatter.html",
-          "hash": "JdBYdHsUeQ4F9nBo7b75LQ=="
+          "hash": "27c0GntTouelkw0uniypMw=="
         }
       },
       "is_incremental": false,
@@ -726,7 +678,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.DiscordChannelConverter.html",
-          "hash": "I0Ma9Krllhjje8wko3PwZw=="
+          "hash": "Y+JeUVIzE8Jk/c8DLZBLPQ=="
         }
       },
       "is_incremental": false,
@@ -738,7 +690,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.DiscordColorConverter.html",
-          "hash": "oKAotO8O6KPgJVQtPSUDXA=="
+          "hash": "sfbTZMqipRgc6XqrWK1b/w=="
         }
       },
       "is_incremental": false,
@@ -750,7 +702,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.DiscordEmojiConverter.html",
-          "hash": "ypVihTcDWOItXmbOGodj1A=="
+          "hash": "qdcHnfKg7igLap+pz4sDZA=="
         }
       },
       "is_incremental": false,
@@ -762,7 +714,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.DiscordGuildConverter.html",
-          "hash": "jTik+/Yg4sSowpRfW09nXw=="
+          "hash": "Bk2NDyfSHCreO+su3BfZyQ=="
         }
       },
       "is_incremental": false,
@@ -774,7 +726,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.DiscordMemberConverter.html",
-          "hash": "hXCMgR9xhgNnvagCYisfgQ=="
+          "hash": "ZWXEPs4tnKMsRmEOkZC2vw=="
         }
       },
       "is_incremental": false,
@@ -786,7 +738,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.DiscordMessageConverter.html",
-          "hash": "zE2qXYo9vgYWiUaYaQp11A=="
+          "hash": "nIBoq7SSo00ozYjUWeRmPw=="
         }
       },
       "is_incremental": false,
@@ -798,7 +750,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.DiscordRoleConverter.html",
-          "hash": "0SlkOjJ+g9hC4lmqXT1Qsw=="
+          "hash": "1RE5QtkPT/V119UV3LwPnQ=="
         }
       },
       "is_incremental": false,
@@ -810,7 +762,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.DiscordUserConverter.html",
-          "hash": "b0reGTrZPlqNeVy3W1VaWQ=="
+          "hash": "1Ri+Uc5egY1fmHVrBZ/HrQ=="
         }
       },
       "is_incremental": false,
@@ -822,7 +774,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.EnumConverter-1.html",
-          "hash": "gEF0eDq9sR2x3L2YxFlgoQ=="
+          "hash": "6FIRKwBRcje2N00YEdT3SQ=="
         }
       },
       "is_incremental": false,
@@ -834,7 +786,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.Float128Converter.html",
-          "hash": "PBHOXg1YKZEwkS+YAI6pJA=="
+          "hash": "X152BsnqbG2a6DgNaD0Row=="
         }
       },
       "is_incremental": false,
@@ -846,7 +798,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.Float32Converter.html",
-          "hash": "baXlO+oGpN6Q2ukzzXge6g=="
+          "hash": "tgfGr7YGLLVqceRSgiVifg=="
         }
       },
       "is_incremental": false,
@@ -858,7 +810,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.Float64Converter.html",
-          "hash": "gY9qkrAtInqHlPpURqu5kA=="
+          "hash": "YDCJspH3pxz6QpWlVZ874Q=="
         }
       },
       "is_incremental": false,
@@ -870,7 +822,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.IArgumentConverter-1.html",
-          "hash": "jfnQyNpXNmKMkHjewaS0bg=="
+          "hash": "93PVmGp3Cqsi9WcglRl7rA=="
         }
       },
       "is_incremental": false,
@@ -882,7 +834,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.IArgumentConverter.html",
-          "hash": "/SODzs93fzISi0w8Z/Dkaw=="
+          "hash": "UlE7U42NCJoiPd0OhZ0tLg=="
         }
       },
       "is_incremental": false,
@@ -894,7 +846,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.Int16Converter.html",
-          "hash": "TKE/MXPYYktLxXld+dkXVw=="
+          "hash": "uJ9ypxcttZTKuhoQdEpnlQ=="
         }
       },
       "is_incremental": false,
@@ -906,7 +858,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.Int32Converter.html",
-          "hash": "3i4oc6DfYpogeDgWTzgMbg=="
+          "hash": "U9wojW6iDtDaZUaf+aIqvw=="
         }
       },
       "is_incremental": false,
@@ -918,7 +870,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.Int64Converter.html",
-          "hash": "uFE93i67DvR8dzLxYRxAeA=="
+          "hash": "DffThI9kPfNAQt/KNC8qIA=="
         }
       },
       "is_incremental": false,
@@ -930,7 +882,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.Int8Converter.html",
-          "hash": "Sl85jd2v2lfx5dEqFomYhA=="
+          "hash": "E8TJ78DnD3jHsWmb8QXe2g=="
         }
       },
       "is_incremental": false,
@@ -942,7 +894,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.NullableConverter-1.html",
-          "hash": "FVP1bFOKiI9AN+x73Aedyg=="
+          "hash": "VtlN8iTzR3oX0PP/ZSvw2w=="
         }
       },
       "is_incremental": false,
@@ -954,7 +906,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.StringConverter.html",
-          "hash": "01dFMrup9FwQShxilTzAcQ=="
+          "hash": "6grF/Hevcny0tNZKYr7gGQ=="
         }
       },
       "is_incremental": false,
@@ -966,7 +918,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.TimeSpanConverter.html",
-          "hash": "x/bZ5eBnxsNoPiFWYvmKWQ=="
+          "hash": "x1yn9x5/hMl1V87qx7dO0g=="
         }
       },
       "is_incremental": false,
@@ -978,7 +930,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.Uint16Converter.html",
-          "hash": "89d7/e8JU7fqfZQJn+ETaA=="
+          "hash": "aEbuZvPZoT0R0jS2LjEf6A=="
         }
       },
       "is_incremental": false,
@@ -990,7 +942,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.Uint32Converter.html",
-          "hash": "U+lo9Ktn2qq3FH7/jXfOeQ=="
+          "hash": "W3vBKiKm0+kFjTwUtkZnew=="
         }
       },
       "is_incremental": false,
@@ -1002,7 +954,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.Uint64Converter.html",
-          "hash": "3alvRuSt1UATw6gw9HfU6A=="
+          "hash": "KbxkE2xzR1qXB3iQ8aM5fw=="
         }
       },
       "is_incremental": false,
@@ -1014,7 +966,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.Uint8Converter.html",
-          "hash": "TVJxLCmVDgyM25GwCSnzAw=="
+          "hash": "9cTzbFUnywjhk7UJSqC8hw=="
         }
       },
       "is_incremental": false,
@@ -1026,7 +978,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.UriConverter.html",
-          "hash": "3Lkbm49ENLxYCIM+VpmdUQ=="
+          "hash": "KSr4PHdAz5ueVlf1H4EtjA=="
         }
       },
       "is_incremental": false,
@@ -1038,7 +990,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Converters.html",
-          "hash": "i170UXpiv7GgiY6pzBfDnw=="
+          "hash": "A9dyLYn/SningSzBEWIAWQ=="
         }
       },
       "is_incremental": false,
@@ -1050,7 +1002,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Entities.CommandHelpMessage.html",
-          "hash": "UzwkaKa4adyvf4OTCWUv9Q=="
+          "hash": "tKlh59Tyt8j0iiWWs6fJBA=="
         }
       },
       "is_incremental": false,
@@ -1062,7 +1014,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Entities.ICommandModule.html",
-          "hash": "4GINWl65l0vE4gOOUK0Btg=="
+          "hash": "g70FUVlpAW3kFWMH99vRwQ=="
         }
       },
       "is_incremental": false,
@@ -1074,7 +1026,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Entities.SingletonCommandModule.html",
-          "hash": "F7PkTheMz+j2qZN1CcmJsQ=="
+          "hash": "ixv9ZgLaly4KkA+yai+sjQ=="
         }
       },
       "is_incremental": false,
@@ -1086,7 +1038,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Entities.TransientCommandModule.html",
-          "hash": "vlUs6/XZHm7p63y33GCF3g=="
+          "hash": "R6MRKLmdfwaIKvVvN/UxdQ=="
         }
       },
       "is_incremental": false,
@@ -1098,7 +1050,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Entities.html",
-          "hash": "x/kve341OXJoj70fNNCm4g=="
+          "hash": "r5iG+St9xm7YxtTxlDYAHA=="
         }
       },
       "is_incremental": false,
@@ -1110,7 +1062,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Exceptions.ChecksFailedException.html",
-          "hash": "1APQWsOqcqI3YhSSxjxOiw=="
+          "hash": "Oz6/vwi+PK+hhosKi4rsbw=="
         }
       },
       "is_incremental": false,
@@ -1122,7 +1074,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Exceptions.CommandNotFoundException.html",
-          "hash": "+towuM2jKXKuFx7Le7LT5A=="
+          "hash": "pcaRwkxQLPhD9l/ZsrPkWg=="
         }
       },
       "is_incremental": false,
@@ -1134,7 +1086,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Exceptions.DuplicateCommandException.html",
-          "hash": "nmqC3pk83776OJAYXZlXCA=="
+          "hash": "Fk2iOGDaWZeZYh5tJvt6Cg=="
         }
       },
       "is_incremental": false,
@@ -1146,7 +1098,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Exceptions.DuplicateOverloadException.html",
-          "hash": "4XMp8p5mR/sEYVEeqUYubQ=="
+          "hash": "xIBhkNdaWLUBFEbI9vluOg=="
         }
       },
       "is_incremental": false,
@@ -1158,7 +1110,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Exceptions.InvalidOverloadException.html",
-          "hash": "4K7x2Wcj6W+F4iLWcDptNw=="
+          "hash": "ptguGc8PcgkX7o/Ut+nyTA=="
         }
       },
       "is_incremental": false,
@@ -1170,7 +1122,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.Exceptions.html",
-          "hash": "6Nf33g+VF/Y2e1Uf1NzFVg=="
+          "hash": "CG1sKNlKw1ICQ1X38y+ObQ=="
         }
       },
       "is_incremental": false,
@@ -1182,7 +1134,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.ExtensionMethods.html",
-          "hash": "eIVakhW45bQO2w6Hth5XDw=="
+          "hash": "mi/Vas4i81osHzoDf+Ynvw=="
         }
       },
       "is_incremental": false,
@@ -1194,7 +1146,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.PrefixResolverDelegate.html",
-          "hash": "hmlPuCuefZLaIzYWdV0nvw=="
+          "hash": "8LsJdGkOPSLrmIs6etIavw=="
         }
       },
       "is_incremental": false,
@@ -1206,7 +1158,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.html",
-          "hash": "T1X9pW10Tr/Jm3SmK3XHDQ=="
+          "hash": "YTQVyu0GZ+EqdCbcXy3pVg=="
         }
       },
       "is_incremental": false,
@@ -1214,11 +1166,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.DebugLogger.yml",
+      "source_relative_path": "api/DSharpPlus.DefaultLogger.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DSharpPlus.DebugLogger.html",
-          "hash": "UKqcKW9noI5XVgXrnirOkQ=="
+          "relative_path": "api/DSharpPlus.DefaultLogger.html",
+          "hash": "iL3IkrkjelVEo1Cf0wRr5Q=="
         }
       },
       "is_incremental": false,
@@ -1230,7 +1182,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.DiscordClient.html",
-          "hash": "x0r+ES8vy6Mb4H6oplp0PQ=="
+          "hash": "SgDTmgUXaS11euYUzQn3aw=="
         }
       },
       "is_incremental": false,
@@ -1242,7 +1194,31 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.DiscordConfiguration.html",
-          "hash": "Gr+zevdKwIJdXY4af6dmMg=="
+          "hash": "H6sUVM5vCEBi24kHmB5yNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.DiscordIntentExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.DiscordIntentExtensions.html",
+          "hash": "ihlXevN+FviEQqJTLk1WUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.DiscordIntents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.DiscordIntents.html",
+          "hash": "DsZc4FL/j8o/fu7uTky3nA=="
         }
       },
       "is_incremental": false,
@@ -1254,7 +1230,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.DiscordRestClient.html",
-          "hash": "FsSJBbLmI+sv4ZG2XQfBng=="
+          "hash": "01nm8JR0JmwLorQ9U8eDrA=="
         }
       },
       "is_incremental": false,
@@ -1266,7 +1242,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.DiscordShardedClient.html",
-          "hash": "Qa7/QVVBA5zRFPXgWKhVwQ=="
+          "hash": "OtHRFAeM7F3lzWMad5k3zA=="
         }
       },
       "is_incremental": false,
@@ -1278,7 +1254,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.DiscordWebhookClient.html",
-          "hash": "z/TfrxogidQZYfqNBF4VqQ=="
+          "hash": "jiBm1jmzHIid9HilW0P9Ww=="
         }
       },
       "is_incremental": false,
@@ -1290,7 +1266,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.ActivityType.html",
-          "hash": "+iOWoTdHELEqG3RXYfW6QA=="
+          "hash": "05OW074DP7H5phTZpAIZjA=="
         }
       },
       "is_incremental": false,
@@ -1302,7 +1278,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.ApplicationAssetType.html",
-          "hash": "ZhkCjuRcTtCDEQj1qK9zXg=="
+          "hash": "0cFdau3aWxu7gAjFealpNA=="
         }
       },
       "is_incremental": false,
@@ -1314,7 +1290,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.AuditLogActionCategory.html",
-          "hash": "ITuhF74DNvVCp4Dq3JSoKg=="
+          "hash": "JjBRNSKyokANgu+ZMgp6UQ=="
         }
       },
       "is_incremental": false,
@@ -1326,7 +1302,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.AuditLogActionType.html",
-          "hash": "NZVBSIgCsitVHKYQ+L+lXw=="
+          "hash": "6e9FhQNsRNGqHoxI5K1exQ=="
         }
       },
       "is_incremental": false,
@@ -1338,7 +1314,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DefaultMessageNotifications.html",
-          "hash": "+amC7tziltK0w0jTozhG2Q=="
+          "hash": "qm6wG5h2IYHyeaLlNEJY4Q=="
         }
       },
       "is_incremental": false,
@@ -1350,7 +1326,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordActivity.html",
-          "hash": "iGuPJLP2Oy0E78NZJNz8Lw=="
+          "hash": "ALMS1sLiNYeECW9jppOx8A=="
         }
       },
       "is_incremental": false,
@@ -1362,7 +1338,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordApplication.html",
-          "hash": "iDET+FrHYKaWBhXipgH8Yw=="
+          "hash": "jW6YLA3JCDbQJxRitZLOBA=="
         }
       },
       "is_incremental": false,
@@ -1374,7 +1350,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordApplicationAsset.html",
-          "hash": "+N4gohmr0JvXCzVPbsqKpg=="
+          "hash": "QLLcKI+Ot0bXtZET9TNZoA=="
         }
       },
       "is_incremental": false,
@@ -1386,7 +1362,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAsset.html",
-          "hash": "QV6j1zlvOKpHptVpfSl9SQ=="
+          "hash": "3ShIEJD2atdbme7VK22mjA=="
         }
       },
       "is_incremental": false,
@@ -1398,7 +1374,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAttachment.html",
-          "hash": "lXaMfi/BGAdbt7kHnpv32g=="
+          "hash": "7JqpFJIhNWMnFJCIRTfA8A=="
         }
       },
       "is_incremental": false,
@@ -1410,7 +1386,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogBanEntry.html",
-          "hash": "CsTm4p2hn12hkp1zYUSJXg=="
+          "hash": "Y6IA4ivkYypA33oSuc83jw=="
         }
       },
       "is_incremental": false,
@@ -1422,7 +1398,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogBotAddEntry.html",
-          "hash": "beGvrPaY0P7zmG90/g7lFQ=="
+          "hash": "lyxRE+1CGveSousIFA4IMg=="
         }
       },
       "is_incremental": false,
@@ -1434,7 +1410,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogChannelEntry.html",
-          "hash": "dL+41Op8DcM3/e9ocAc36Q=="
+          "hash": "e3JLZcy5BYRAic9H/RzOGA=="
         }
       },
       "is_incremental": false,
@@ -1446,7 +1422,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogEmojiEntry.html",
-          "hash": "B4ls0pzK90hkavm+JZIG9Q=="
+          "hash": "wzGTdKzUXPSaGdRbBRxTvA=="
         }
       },
       "is_incremental": false,
@@ -1458,7 +1434,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogEntry.html",
-          "hash": "ihIqtA1dvrksZXiXXRhEiQ=="
+          "hash": "PFRUOt7cAazN4KIHceqU0Q=="
         }
       },
       "is_incremental": false,
@@ -1470,7 +1446,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogGuildEntry.html",
-          "hash": "jyUhmRpkFIMkK2WW7ibAIA=="
+          "hash": "1GW8JyhWtFbk583D64mtwg=="
         }
       },
       "is_incremental": false,
@@ -1482,7 +1458,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogIntegrationEntry.html",
-          "hash": "2XXv9BwXJ15KCLpJ4FRxZQ=="
+          "hash": "wz+R3wAoNqrXsUjm05FiQg=="
         }
       },
       "is_incremental": false,
@@ -1494,7 +1470,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogInviteEntry.html",
-          "hash": "SqxDzFms5Ni3AxfMbgNjeA=="
+          "hash": "hwQrcSsOy7xq8DfIkXReFQ=="
         }
       },
       "is_incremental": false,
@@ -1506,7 +1482,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogKickEntry.html",
-          "hash": "tzgnk/XNDtIY1VT8neKfbg=="
+          "hash": "p2m4cQFLD7nyhUbB9pCJ5Q=="
         }
       },
       "is_incremental": false,
@@ -1518,7 +1494,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogMemberDisconnectEntry.html",
-          "hash": "8LOym/ypAtMLAdSopfRLqQ=="
+          "hash": "TACcI1aR7J1zZXVqIN7Btw=="
         }
       },
       "is_incremental": false,
@@ -1530,7 +1506,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogMemberMoveEntry.html",
-          "hash": "yuFu6Mgav4MHViVmvercOg=="
+          "hash": "YmozZZrmWlOdRYCuyowIoQ=="
         }
       },
       "is_incremental": false,
@@ -1542,7 +1518,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogMemberUpdateEntry.html",
-          "hash": "BQuI07FI5UAKvAPkydBgeA=="
+          "hash": "QhcvJuVB/p54krfRJwo7hQ=="
         }
       },
       "is_incremental": false,
@@ -1554,7 +1530,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogMessageEntry.html",
-          "hash": "E4FC3/O47XilgqQpZBt4Cw=="
+          "hash": "C9kirNctIUE/WHbMTIS1+A=="
         }
       },
       "is_incremental": false,
@@ -1566,7 +1542,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogMessagePinEntry.html",
-          "hash": "Zr+J12Na7kyWwLDFy2t8UQ=="
+          "hash": "ar9EBQZktzxNIs1IJGLZtg=="
         }
       },
       "is_incremental": false,
@@ -1578,7 +1554,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogOverwriteEntry.html",
-          "hash": "8pWow/S0R1HWoydarDpyUA=="
+          "hash": "napE5v85ei0Hk5rut4L09A=="
         }
       },
       "is_incremental": false,
@@ -1590,7 +1566,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogPruneEntry.html",
-          "hash": "q/W+Q/vTXgBdRczqbtannA=="
+          "hash": "3Ay0U4RtO032lEBxlhhYjQ=="
         }
       },
       "is_incremental": false,
@@ -1602,7 +1578,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogRoleUpdateEntry.html",
-          "hash": "Y4bZXN/MlUPAYlwmN1tCPQ=="
+          "hash": "mQeW81zvgiyww0S28Hi/SQ=="
         }
       },
       "is_incremental": false,
@@ -1614,7 +1590,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordAuditLogWebhookEntry.html",
-          "hash": "4/N9XNeTAe1KqGm7pozT8w=="
+          "hash": "1uSnv5HdueUwTmFgUoul8A=="
         }
       },
       "is_incremental": false,
@@ -1626,7 +1602,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordBan.html",
-          "hash": "R0bjGD6tWEz7egomyhVQCQ=="
+          "hash": "RbtCYhS4MZue+igewJwcZw=="
         }
       },
       "is_incremental": false,
@@ -1638,7 +1614,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordChannel.html",
-          "hash": "X2WqtX7uHSujCbZ6jC7JmA=="
+          "hash": "FNgIBfwsdZC6jZhsx7XvNQ=="
         }
       },
       "is_incremental": false,
@@ -1650,7 +1626,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordClientStatus.html",
-          "hash": "X+XQbJcY1kUO6qQtloFwsQ=="
+          "hash": "1wdR2hTbK6SoNUGdNR4vnQ=="
         }
       },
       "is_incremental": false,
@@ -1662,7 +1638,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordColor.html",
-          "hash": "ydCDyDZCz6gOxspaqHv0Xw=="
+          "hash": "wezWJzbugqIbPKfLbLnVxw=="
         }
       },
       "is_incremental": false,
@@ -1674,7 +1650,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordConnection.html",
-          "hash": "tzL6H+nT1cuPeAuDjicgog=="
+          "hash": "SoNpUl8EPyWJ93M3usB6CA=="
         }
       },
       "is_incremental": false,
@@ -1686,7 +1662,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordCustomStatus.html",
-          "hash": "4nSaRMnqd67ElOaBH46L9A=="
+          "hash": "peHxlDDtMNg6kl5RFDM1rw=="
         }
       },
       "is_incremental": false,
@@ -1698,7 +1674,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordDmChannel.html",
-          "hash": "mGeVR5zUZTaAhTI8twKh2A=="
+          "hash": "zqllnwONYUd4gKGvByTrdg=="
         }
       },
       "is_incremental": false,
@@ -1710,7 +1686,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordEmbed.html",
-          "hash": "b9pamXMyr06NSy88u6Recg=="
+          "hash": "wwTKer5sd+LvRTbtdAoSQQ=="
         }
       },
       "is_incremental": false,
@@ -1722,7 +1698,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordEmbedAuthor.html",
-          "hash": "X+RuQCdg80Hy2zx99HkPZQ=="
+          "hash": "ZghEWOyeIe8lKCGGNLrkgg=="
         }
       },
       "is_incremental": false,
@@ -1734,7 +1710,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordEmbedBuilder.EmbedAuthor.html",
-          "hash": "sX8SkCmlT2ZbutwaGFC/Aw=="
+          "hash": "wxT86pF/BHoEXnDFKLVLdA=="
         }
       },
       "is_incremental": false,
@@ -1746,7 +1722,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordEmbedBuilder.EmbedFooter.html",
-          "hash": "gw5tgIYP0pHLiQ/PJ+/wuA=="
+          "hash": "Ns2zNEGTwDEAT1H6rglUkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Entities.DiscordEmbedBuilder.EmbedThumbnail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Entities.DiscordEmbedBuilder.EmbedThumbnail.html",
+          "hash": "jfbHsFCvYXHcSCBOw48/QQ=="
         }
       },
       "is_incremental": false,
@@ -1758,7 +1746,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordEmbedBuilder.html",
-          "hash": "qhm2NyKJT3qzaPKt9F8LqQ=="
+          "hash": "kT0TPreRrjvrfPiiW0nGew=="
         }
       },
       "is_incremental": false,
@@ -1770,7 +1758,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordEmbedField.html",
-          "hash": "n4s5JPxMNgQxFxa12nAjqg=="
+          "hash": "dLzCdNVjLYYPYNANttDKbw=="
         }
       },
       "is_incremental": false,
@@ -1782,7 +1770,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordEmbedFooter.html",
-          "hash": "NWKwtq80eWgH6i7uPOdjoA=="
+          "hash": "xQ5t2Iew1OMBBfV+Pc4Rmg=="
         }
       },
       "is_incremental": false,
@@ -1794,7 +1782,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordEmbedImage.html",
-          "hash": "ind4CzEP9saeVa+z2dBIUg=="
+          "hash": "+GB6c3PMrg+WBUh/duPgNQ=="
         }
       },
       "is_incremental": false,
@@ -1806,7 +1794,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordEmbedProvider.html",
-          "hash": "l7RBdIssq3IUpXs4PwHKxQ=="
+          "hash": "Db97tjGw9eKs/ygqHUXpGQ=="
         }
       },
       "is_incremental": false,
@@ -1818,7 +1806,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordEmbedThumbnail.html",
-          "hash": "fob/pAJ6HxvQUc+PFPXh8Q=="
+          "hash": "uxwYEhW6ASLXdX2tP3T4dQ=="
         }
       },
       "is_incremental": false,
@@ -1830,7 +1818,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordEmbedVideo.html",
-          "hash": "X+6zq18yks3fY6KbN7xIHA=="
+          "hash": "gxBsiq1J+v+SqqgQIuaopg=="
         }
       },
       "is_incremental": false,
@@ -1842,7 +1830,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordEmoji.html",
-          "hash": "ApbwkhJqyq1KNKcQzbssIw=="
+          "hash": "2VuJn/Kd0lh92Psw2dQzqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Entities.DiscordFollowedChannel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Entities.DiscordFollowedChannel.html",
+          "hash": "wlCu7dDtrcsf7qfbKUR55w=="
         }
       },
       "is_incremental": false,
@@ -1854,7 +1854,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordGuild.html",
-          "hash": "xIHfQ4YaWDAOgdX7HgPF9Q=="
+          "hash": "7KCvtSy1vQtX3iJl+voFdg=="
         }
       },
       "is_incremental": false,
@@ -1866,7 +1866,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordGuildEmbed.html",
-          "hash": "X7eWHlC4kzedRQEBRObTgQ=="
+          "hash": "xXlsNuw6bONJDqE4Af4D7A=="
         }
       },
       "is_incremental": false,
@@ -1878,7 +1878,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordGuildEmoji.html",
-          "hash": "gsDKVQoFsWpSIfL+uiZVMg=="
+          "hash": "qKNeAFD3WLtULApD00IFMw=="
         }
       },
       "is_incremental": false,
@@ -1890,7 +1890,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordGuildPreview.html",
-          "hash": "HxGvf/ucDveBfwZaqeOczw=="
+          "hash": "ZA/kBwoHMvTvb5PCTNklsA=="
         }
       },
       "is_incremental": false,
@@ -1902,7 +1902,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordIntegration.html",
-          "hash": "l8p1a4b4fueanweH4jbAAQ=="
+          "hash": "7os3ie3UR5MmXnUYeSkI9g=="
         }
       },
       "is_incremental": false,
@@ -1914,7 +1914,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordIntegrationAccount.html",
-          "hash": "dBJvZqV3N0EAD9wYs2mMsw=="
+          "hash": "2I3JJQTmhbr7ja1phS5s4A=="
         }
       },
       "is_incremental": false,
@@ -1926,7 +1926,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordInvite.html",
-          "hash": "byFCyXm52wGwCvCWzeaRdw=="
+          "hash": "R4sBhnuxbmD60YKvcVZWpQ=="
         }
       },
       "is_incremental": false,
@@ -1938,7 +1938,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordInviteChannel.html",
-          "hash": "8PzbdDZTwBbIn7BTNHugRg=="
+          "hash": "yFeQ3kSUNly2Z3YdNVI3XQ=="
         }
       },
       "is_incremental": false,
@@ -1950,7 +1950,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordInviteGuild.html",
-          "hash": "c9JiznTsp8otDH+QZw/FBA=="
+          "hash": "naNKFSmSboPqJNf13dyYzg=="
         }
       },
       "is_incremental": false,
@@ -1962,7 +1962,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordMember.html",
-          "hash": "XqkGnuuvUbx0742TLJKEtg=="
+          "hash": "DR2/A1v724upFWW/5Vp42w=="
         }
       },
       "is_incremental": false,
@@ -1974,7 +1974,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordMessage.html",
-          "hash": "TrSXOw6CFDg4BpG/6xNTpQ=="
+          "hash": "hEsa9jkWZxGvz7c8h4sJag=="
         }
       },
       "is_incremental": false,
@@ -1986,7 +1986,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordMessageActivity.html",
-          "hash": "yh51MgvOlBTT5BgNA1T6SQ=="
+          "hash": "Gz7r+IIjyM0irIx+avzxhw=="
         }
       },
       "is_incremental": false,
@@ -1998,7 +1998,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordMessageApplication.html",
-          "hash": "9PYHnX2r2oEdhpa3NkdUxw=="
+          "hash": "WswhA7zXdJv2CaHSkFj6Hw=="
         }
       },
       "is_incremental": false,
@@ -2010,7 +2010,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordMessageReference.html",
-          "hash": "4IkKOLnKgjzGAiSMTl3LUA=="
+          "hash": "toivET0kIR/Vk0eCRTBVEg=="
         }
       },
       "is_incremental": false,
@@ -2022,7 +2022,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordOverwrite.html",
-          "hash": "sdbHB5cbevfqseMUATi/RA=="
+          "hash": "cTMsVq5gVe688Z+ugUNW3A=="
         }
       },
       "is_incremental": false,
@@ -2034,7 +2034,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordOverwriteBuilder.html",
-          "hash": "8bmGbNWh5oe9Gt+oczpWHQ=="
+          "hash": "f8LHU+PVmHByQ1c+TNg7wQ=="
         }
       },
       "is_incremental": false,
@@ -2046,7 +2046,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordPresence.html",
-          "hash": "oMw4+Rlao9z0BOKK4DVoHQ=="
+          "hash": "tV4OS4/NwbtWCWLHM7CZjw=="
         }
       },
       "is_incremental": false,
@@ -2058,7 +2058,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordReaction.html",
-          "hash": "9no97w6/dpFbdq98kR0Xvg=="
+          "hash": "40Wq/Y+OP5GMUXrhDHOG6g=="
         }
       },
       "is_incremental": false,
@@ -2070,7 +2070,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordRichPresence.html",
-          "hash": "0WT+PoEuW4pujmjmsH7NBA=="
+          "hash": "z8kQ6TOixG6zr9BZScTB/w=="
         }
       },
       "is_incremental": false,
@@ -2082,7 +2082,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordRole.html",
-          "hash": "J/FCKC700O9/jPhQ0OHjjg=="
+          "hash": "R47eUcfr7pwChRbjqvu5kA=="
         }
       },
       "is_incremental": false,
@@ -2094,7 +2094,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordSpotifyAsset.html",
-          "hash": "ODse1xPxdH29I/a6RxCNvQ=="
+          "hash": "enDJ/ASfbPyB5x+f8UwJvg=="
         }
       },
       "is_incremental": false,
@@ -2106,7 +2106,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordTeam.html",
-          "hash": "wtWkHGY/Eh0zvCvNMmq8bA=="
+          "hash": "6GhOF0GHf+tkPKwNEijUiw=="
         }
       },
       "is_incremental": false,
@@ -2118,7 +2118,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordTeamMember.html",
-          "hash": "IZRhh2XEZpa/9LuYZupzZQ=="
+          "hash": "0vGjYeolFv87DKodopX+Bw=="
         }
       },
       "is_incremental": false,
@@ -2130,7 +2130,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordTeamMembershipStatus.html",
-          "hash": "Tiw0EFpmI6KZjYvxt4zv8g=="
+          "hash": "4q0PcmH4CaFrHfPEW0ORhg=="
         }
       },
       "is_incremental": false,
@@ -2142,7 +2142,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordUser.html",
-          "hash": "aEHpbiRKWRYKgWkMSuSPtg=="
+          "hash": "gSFnNJohuPp2LJVxLvDySA=="
         }
       },
       "is_incremental": false,
@@ -2154,7 +2154,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordVoiceRegion.html",
-          "hash": "PzPjd1c/bX852KUjC4qv8g=="
+          "hash": "iwUuYC1upSxUAKkdXiV+DA=="
         }
       },
       "is_incremental": false,
@@ -2166,7 +2166,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordVoiceState.html",
-          "hash": "q0vQuSn+SSKJuf3kr4szTQ=="
+          "hash": "Hjstu21XMW969cc5yZJD5A=="
         }
       },
       "is_incremental": false,
@@ -2178,7 +2178,67 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordWebhook.html",
-          "hash": "oKmOofZvqVqNYdIwsacKiQ=="
+          "hash": "f0QSq//WWXETNP78o+yrpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Entities.DiscordWebhookBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Entities.DiscordWebhookBuilder.html",
+          "hash": "j4psmNyoZoyTmBlaZAIniA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Entities.DiscordWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Entities.DiscordWidget.html",
+          "hash": "qMSV3ikhx6UnsVEBZIR5bw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Entities.DiscordWidgetMember.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Entities.DiscordWidgetMember.html",
+          "hash": "pX4nUOhZ6PWVX8pYAEzvFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Entities.DiscordWidgetSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Entities.DiscordWidgetSettings.html",
+          "hash": "lcKEfkfqO24AAuRfIdVnyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Entities.EveryoneMention.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Entities.EveryoneMention.html",
+          "hash": "W16lhFFD/VANAeg0434ilA=="
         }
       },
       "is_incremental": false,
@@ -2190,7 +2250,31 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.ExplicitContentFilter.html",
-          "hash": "II4adl01nsn2JgLeTCQXyw=="
+          "hash": "1Awthr8iISZXlVFUPOgOkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Entities.IMention.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Entities.IMention.html",
+          "hash": "TTymBmP6kWMs1C53xiirEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Entities.Mentions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Entities.Mentions.html",
+          "hash": "o5AyvFjBBixF+O9tA1i2Bw=="
         }
       },
       "is_incremental": false,
@@ -2202,7 +2286,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.MfaLevel.html",
-          "hash": "wvpv09KlE9zUgpnIki7kmA=="
+          "hash": "V+brLWySC4ts0WhYd2IBJQ=="
         }
       },
       "is_incremental": false,
@@ -2214,7 +2298,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.Optional-1.html",
-          "hash": "8kvizlddBL8mR3zoKr3fVA=="
+          "hash": "UGac9QhtXayos7XNPCltDQ=="
         }
       },
       "is_incremental": false,
@@ -2226,7 +2310,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.Optional.html",
-          "hash": "0FSa1zvvl1IKvBbteqA6SA=="
+          "hash": "51IH9v3SDC8mgRKXB3Yl3w=="
         }
       },
       "is_incremental": false,
@@ -2238,7 +2322,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.PropertyChange-1.html",
-          "hash": "703Wsd27I12E0YTMrz4QFA=="
+          "hash": "81MFtrGnwO1FMxY54yS0Sw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Entities.RoleMention.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Entities.RoleMention.html",
+          "hash": "CyhggNEe21xqJdK6ktdQxg=="
         }
       },
       "is_incremental": false,
@@ -2250,7 +2346,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.SnowflakeObject.html",
-          "hash": "npxZYDnbHuPE6pJhWSLFlA=="
+          "hash": "u4w8ovSRMXFZ7V1LATpDjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Entities.UserMention.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Entities.UserMention.html",
+          "hash": "x/TS9xRLmkMonk50tJyLag=="
         }
       },
       "is_incremental": false,
@@ -2262,7 +2370,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.UserStatus.html",
-          "hash": "d0tGc73Utc1bACnAbREm1g=="
+          "hash": "o9NjeypqMPlSDitpzd3m/w=="
         }
       },
       "is_incremental": false,
@@ -2274,7 +2382,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.VerificationLevel.html",
-          "hash": "K6jdtJPya6Aoi0tr5rIZsw=="
+          "hash": "7t80bhUAi3v3rhN25dpbaA=="
         }
       },
       "is_incremental": false,
@@ -2286,7 +2394,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.WidgetType.html",
-          "hash": "PswSRp5yvm5JBr9mAT1OgA=="
+          "hash": "4Yj0ww3d/mMBMe82oyXyPw=="
         }
       },
       "is_incremental": false,
@@ -2298,103 +2406,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.html",
-          "hash": "xDFD4wWFxYcIxEZwBgtHlg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.Enums.MessageActivityType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.Enums.MessageActivityType.html",
-          "hash": "gtVM9z0UCwG7tt5gabQP6g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.Enums.MessageFlagExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.Enums.MessageFlagExtensions.html",
-          "hash": "aap3v/9ZBaoGL7ObpoAfPQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.Enums.MessageFlags.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.Enums.MessageFlags.html",
-          "hash": "QoyCGAewXP21X5uXOtMGSg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.Enums.MessageType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.Enums.MessageType.html",
-          "hash": "jQkuUuZlyhX8RbOsFmrCwQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.Enums.SystemChannelFlags.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.Enums.SystemChannelFlags.html",
-          "hash": "4qW/gBnO4pcYsiI7oLTyNQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.Enums.SystemChannelFlagsExtension.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.Enums.SystemChannelFlagsExtension.html",
-          "hash": "X+Xho0fggMcNuPpSa3OONA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.Enums.TargetUserType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.Enums.TargetUserType.html",
-          "hash": "K7rdnmU5rErPQ8G/UfF64w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.Enums.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.Enums.html",
-          "hash": "5agXXTiMMv4yfoiLZUiRzQ=="
+          "hash": "jBybGhXeyP9odBKseRkaPQ=="
         }
       },
       "is_incremental": false,
@@ -2406,7 +2418,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.ChannelCreateEventArgs.html",
-          "hash": "0hisdAP7hgcgVeXfHPNbog=="
+          "hash": "sd1Q56BQjUtzCJE4TBRYdw=="
         }
       },
       "is_incremental": false,
@@ -2418,7 +2430,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.ChannelDeleteEventArgs.html",
-          "hash": "NynoJG8mHy34+F0dX5pHpg=="
+          "hash": "Gg83OH6PuFQYkg96F+PbtQ=="
         }
       },
       "is_incremental": false,
@@ -2430,7 +2442,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.ChannelPinsUpdateEventArgs.html",
-          "hash": "3LcsGqOdUnmAFwCrbEwwWA=="
+          "hash": "SuwH72NvHFQo/5IHs+XgBQ=="
         }
       },
       "is_incremental": false,
@@ -2442,7 +2454,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.ChannelUpdateEventArgs.html",
-          "hash": "+Rsj+2VcKyCx/u5F3plcAg=="
+          "hash": "0OIV9zu53MjUfQLb+G9aTw=="
         }
       },
       "is_incremental": false,
@@ -2454,19 +2466,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.ClientErrorEventArgs.html",
-          "hash": "92NsttBXloVTmdkwgGFW8A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.EventArgs.DebugLogMessageEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.EventArgs.DebugLogMessageEventArgs.html",
-          "hash": "IPWJhjH+fXf4Wuw5ebxRcA=="
+          "hash": "fk0x84+7hBfaSVzpnd2+5g=="
         }
       },
       "is_incremental": false,
@@ -2478,7 +2478,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.DiscordEventArgs.html",
-          "hash": "+Wg/wpD3SL5WqvdNak+WFg=="
+          "hash": "rRwLlX4dWjB079IpnCmQGQ=="
         }
       },
       "is_incremental": false,
@@ -2490,7 +2490,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.DmChannelCreateEventArgs.html",
-          "hash": "3M4C6dNIX5fywclP14ItUA=="
+          "hash": "PBFN7BdqksIWJwzs2GkVIw=="
         }
       },
       "is_incremental": false,
@@ -2502,7 +2502,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.DmChannelDeleteEventArgs.html",
-          "hash": "okb4A4Dx947Ihpf2/5i0zg=="
+          "hash": "/KE2PHmFAjQnTF2F3Ec5eg=="
         }
       },
       "is_incremental": false,
@@ -2514,7 +2514,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.GuildBanAddEventArgs.html",
-          "hash": "nmRtarmoTOqK7qm63l5AyQ=="
+          "hash": "3PnxrCq2zk0zK4IFwosS/g=="
         }
       },
       "is_incremental": false,
@@ -2526,7 +2526,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.GuildBanRemoveEventArgs.html",
-          "hash": "+g7nUWkWxW41p2T2H32Xyg=="
+          "hash": "7PRfpAbdaeVSuFJe2ux7AA=="
         }
       },
       "is_incremental": false,
@@ -2538,7 +2538,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.GuildCreateEventArgs.html",
-          "hash": "RRnrxPx9SMmOBXXmUaBWOw=="
+          "hash": "5oMvMVXgaMLZBCl1OJylUA=="
         }
       },
       "is_incremental": false,
@@ -2550,7 +2550,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.GuildDeleteEventArgs.html",
-          "hash": "7g82S6Fy7h3wQEdYNbp9gQ=="
+          "hash": "raLMeWba37choSyPPblVJw=="
         }
       },
       "is_incremental": false,
@@ -2562,7 +2562,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.GuildDownloadCompletedEventArgs.html",
-          "hash": "FJyCXhcdIUW8Lr71uAGwLw=="
+          "hash": "QHPoRPwS7vriHz/vKu38Sg=="
         }
       },
       "is_incremental": false,
@@ -2574,7 +2574,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.GuildEmojisUpdateEventArgs.html",
-          "hash": "B4BfbqtuGIV8CDCY7x832A=="
+          "hash": "cxbmJy7aMn9DXL4LK8Qqng=="
         }
       },
       "is_incremental": false,
@@ -2586,7 +2586,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.GuildIntegrationsUpdateEventArgs.html",
-          "hash": "wPl5TIMmSq7auRgVAnDNyw=="
+          "hash": "J0Oy8JapYf/FxAl5i+d/2Q=="
         }
       },
       "is_incremental": false,
@@ -2598,7 +2598,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.GuildMemberAddEventArgs.html",
-          "hash": "ZzC/1j2w8l75zBAXe6aV3w=="
+          "hash": "RQOZCkU8eyOpuyC3DWKwpA=="
         }
       },
       "is_incremental": false,
@@ -2610,7 +2610,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.GuildMemberRemoveEventArgs.html",
-          "hash": "iJHQESDj2/r75G1c2+SFMA=="
+          "hash": "Gbf1vkTFsQCEhCgKfvyAlQ=="
         }
       },
       "is_incremental": false,
@@ -2622,7 +2622,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.html",
-          "hash": "3sEwfbcxTomxLd/u7WmI1w=="
+          "hash": "IKnck4ziSyp29rwtbJbnwg=="
         }
       },
       "is_incremental": false,
@@ -2634,7 +2634,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.GuildMembersChunkEventArgs.html",
-          "hash": "e6J5y4euo2eMLhJVQLV24Q=="
+          "hash": "oGMHwEnS2wrmuwXLMlPLCA=="
         }
       },
       "is_incremental": false,
@@ -2646,7 +2646,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.GuildRoleCreateEventArgs.html",
-          "hash": "VODOScYVAgoCUndcimyIaA=="
+          "hash": "9Vr+k7b15dnSiuBu+d3Wgg=="
         }
       },
       "is_incremental": false,
@@ -2658,7 +2658,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.GuildRoleDeleteEventArgs.html",
-          "hash": "5PYhjIwjtWPlZn3fQ4hagw=="
+          "hash": "XrscO0zWHty+r+fxl6XnWw=="
         }
       },
       "is_incremental": false,
@@ -2670,7 +2670,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.GuildRoleUpdateEventArgs.html",
-          "hash": "O5Y1LRGXdT+1DYlUJk40Cw=="
+          "hash": "6u8IePaOxLwBEKnQ+e3dXg=="
         }
       },
       "is_incremental": false,
@@ -2682,7 +2682,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.GuildUpdateEventArgs.html",
-          "hash": "z27Zzyiyx3Bi8JgXxPWu7g=="
+          "hash": "87EyNcBdvibLo7dR+yGffQ=="
         }
       },
       "is_incremental": false,
@@ -2694,7 +2694,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.HeartbeatEventArgs.html",
-          "hash": "yQyBbeuFvumS7kL6PSK9TQ=="
+          "hash": "XSZ8OCtDw+VBOdUIJ6KrjQ=="
         }
       },
       "is_incremental": false,
@@ -2706,7 +2706,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.InviteCreateEventArgs.html",
-          "hash": "fJWZHD8fvMl3nD2KcZ36Sw=="
+          "hash": "JhvD0kcjuZ/DurBb2LWHtQ=="
         }
       },
       "is_incremental": false,
@@ -2718,7 +2718,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.InviteDeleteEventArgs.html",
-          "hash": "41P8jP5EaTM94od65flRDw=="
+          "hash": "MXDzTOBh7v1jQ8XEllCXBw=="
         }
       },
       "is_incremental": false,
@@ -2730,7 +2730,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.MessageAcknowledgeEventArgs.html",
-          "hash": "gQYGGpVT2Y7+a4JIeyr5Cw=="
+          "hash": "Eu8LFsPvNPWXy9AbbIe2sw=="
         }
       },
       "is_incremental": false,
@@ -2742,7 +2742,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.MessageBulkDeleteEventArgs.html",
-          "hash": "Av/I0neO8k7dbC5Adl+wWg=="
+          "hash": "uAjdpOwGB4UxbMd5NNPtGg=="
         }
       },
       "is_incremental": false,
@@ -2754,7 +2754,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.MessageCreateEventArgs.html",
-          "hash": "N3OSb/roRnsA4WSDjZYVeQ=="
+          "hash": "4w5ozzKRG56LsRabXWb1fQ=="
         }
       },
       "is_incremental": false,
@@ -2766,7 +2766,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.MessageDeleteEventArgs.html",
-          "hash": "ULJ29OvaGQhGQetlbwxzgA=="
+          "hash": "ob4IR5nEqPo9yM8Fv4Sh6Q=="
         }
       },
       "is_incremental": false,
@@ -2778,7 +2778,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.MessageReactionAddEventArgs.html",
-          "hash": "oWR13hIAg3uSWXAqy9oB+A=="
+          "hash": "WH8YfJV/hStGRWdpdn5ZCQ=="
         }
       },
       "is_incremental": false,
@@ -2790,7 +2790,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.MessageReactionRemoveEmojiEventArgs.html",
-          "hash": "z7nZJgvYgif9v5Ud8DJTjw=="
+          "hash": "YJExLQs8tYJJXwsoVaeKUg=="
         }
       },
       "is_incremental": false,
@@ -2802,7 +2802,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.MessageReactionRemoveEventArgs.html",
-          "hash": "pTiMGyi5uH4My5h3UWWUsg=="
+          "hash": "xFkIG8Beucm2Ty6mK6Y+5A=="
         }
       },
       "is_incremental": false,
@@ -2814,7 +2814,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.MessageReactionsClearEventArgs.html",
-          "hash": "Cv5nrbXnbmefnnqc8q3LOg=="
+          "hash": "heWsRz7R05qpcEcLjW1C1g=="
         }
       },
       "is_incremental": false,
@@ -2826,7 +2826,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.MessageUpdateEventArgs.html",
-          "hash": "W6zt5sE6ryUB9swaxoUfGg=="
+          "hash": "KqG2TcsPxvpXBWP6+9311Q=="
         }
       },
       "is_incremental": false,
@@ -2838,7 +2838,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.PresenceUpdateEventArgs.html",
-          "hash": "4ufKDKukmHLydbdYJp4riQ=="
+          "hash": "ceYiu2AQe7pGFTacz+/Xpw=="
         }
       },
       "is_incremental": false,
@@ -2850,7 +2850,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.ReadyEventArgs.html",
-          "hash": "q5xq6YZ2A7d6ALa+T/UK3A=="
+          "hash": "S8CdQM5rVI3uZul7slvLhA=="
         }
       },
       "is_incremental": false,
@@ -2862,7 +2862,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.SocketBinaryMessageEventArgs.html",
-          "hash": "2xbI1/KbbIlMUkF1jD7OBg=="
+          "hash": "GeMVVF8zXkLZNDj5SpJnWg=="
         }
       },
       "is_incremental": false,
@@ -2874,7 +2874,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.SocketCloseEventArgs.html",
-          "hash": "l8BRa4HsRYg+a0RPR/Pw9g=="
+          "hash": "XoSgxpj21HM8wOAx+XF6KA=="
         }
       },
       "is_incremental": false,
@@ -2886,7 +2886,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.SocketErrorEventArgs.html",
-          "hash": "eJkHgbpSyzDggSYqS0z+uQ=="
+          "hash": "BgJ7BsKA2m+8xNrAelkQ1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.EventArgs.SocketEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.EventArgs.SocketEventArgs.html",
+          "hash": "ZCELFlzKqcJpdx7tVczZTg=="
         }
       },
       "is_incremental": false,
@@ -2898,7 +2910,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.SocketMessageEventArgs.html",
-          "hash": "v6TekF5dmaNEQYBznB8nSg=="
+          "hash": "EEU/1VzE953FMKndAF7V0w=="
         }
       },
       "is_incremental": false,
@@ -2910,7 +2922,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.SocketTextMessageEventArgs.html",
-          "hash": "TUx3vCxm4xO0pCAoxjh1kw=="
+          "hash": "PdNqoWbSkCZt/+LlHapqvw=="
         }
       },
       "is_incremental": false,
@@ -2922,7 +2934,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.TypingStartEventArgs.html",
-          "hash": "v6m2rVpy2NaZ/qrmSHBG5A=="
+          "hash": "8yj+olO0g/xmOAJC0cJBMQ=="
         }
       },
       "is_incremental": false,
@@ -2934,7 +2946,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.UnknownEventArgs.html",
-          "hash": "9oEodMJGJJ/+KRULQyBQKQ=="
+          "hash": "xZIl1oG8nVzoQMxaURnhIg=="
         }
       },
       "is_incremental": false,
@@ -2946,7 +2958,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.UserSettingsUpdateEventArgs.html",
-          "hash": "BOPWD5OX6JsVrXDXTu/C3Q=="
+          "hash": "Z5aW96+iZoZTA8zfA2QQqQ=="
         }
       },
       "is_incremental": false,
@@ -2958,7 +2970,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.UserSpeakingEventArgs.html",
-          "hash": "UwvwXDvINTlZ7zq/sUmJnA=="
+          "hash": "jiNf29gpyP+4IfvXLZKqPA=="
         }
       },
       "is_incremental": false,
@@ -2970,7 +2982,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.UserUpdateEventArgs.html",
-          "hash": "094do4eigp1W7TM4j2V5Yw=="
+          "hash": "onwdhdWOymrVUXKpjWbnGA=="
         }
       },
       "is_incremental": false,
@@ -2982,7 +2994,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.VoiceServerUpdateEventArgs.html",
-          "hash": "Vx8GE4g8cF1dMAXOakgolw=="
+          "hash": "aVt0HaQOU7rakkZGT4p6Rw=="
         }
       },
       "is_incremental": false,
@@ -2994,7 +3006,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.VoiceStateUpdateEventArgs.html",
-          "hash": "xzcNEXMHUOmldO63Pr9Ltg=="
+          "hash": "MxkjnryFYy33/B73hUWVVg=="
         }
       },
       "is_incremental": false,
@@ -3006,7 +3018,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.WebhooksUpdateEventArgs.html",
-          "hash": "kQb/L+8KzMJvXphd3PX1dg=="
+          "hash": "E5xoFJu+QswVaSO1mj03ZA=="
         }
       },
       "is_incremental": false,
@@ -3018,7 +3030,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.EventArgs.html",
-          "hash": "OgiTi6Vpb/UswtvTGk+CNQ=="
+          "hash": "T3VtErOSNFNW96Wo89/GFA=="
         }
       },
       "is_incremental": false,
@@ -3030,7 +3042,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Exceptions.BadRequestException.html",
-          "hash": "l6HntlnMoBcfmQH72CcXEw=="
+          "hash": "1WU8xQ0yFIYdvINJ5BTOPw=="
         }
       },
       "is_incremental": false,
@@ -3042,7 +3054,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Exceptions.NotFoundException.html",
-          "hash": "FHP68IlGsqUNt7BfxKyRkg=="
+          "hash": "Fh0X2eGcYKOj7ErMsmOgfA=="
         }
       },
       "is_incremental": false,
@@ -3054,7 +3066,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Exceptions.RateLimitException.html",
-          "hash": "OSBo3BGcBla1OkAFvCGKhA=="
+          "hash": "e0m2F+BaCJrV2XHkrstffg=="
         }
       },
       "is_incremental": false,
@@ -3066,7 +3078,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Exceptions.RequestSizeException.html",
-          "hash": "WtaDEgD796zt/J+9Ri00lA=="
+          "hash": "4y4FhmmsTugbUbwjq5J24g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Exceptions.ServerErrorException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Exceptions.ServerErrorException.html",
+          "hash": "UvuYGz4KVhp5YxbHDkYDzA=="
         }
       },
       "is_incremental": false,
@@ -3078,7 +3102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Exceptions.UnauthorizedException.html",
-          "hash": "438jdgsL2CgUcupu6Q90lQ=="
+          "hash": "uNyzs/gC+5W4pgc0Wo4NFg=="
         }
       },
       "is_incremental": false,
@@ -3090,7 +3114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Exceptions.html",
-          "hash": "tuxjqgNKr7QSJhvkA69skg=="
+          "hash": "+IIH9c0bwj/j6CgUV7n42g=="
         }
       },
       "is_incremental": false,
@@ -3102,7 +3126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Formatter.html",
-          "hash": "UYvtshjRJ/YECyQoSWqqrA=="
+          "hash": "WKgt26mZ89Oz7XtC/d+9Ow=="
         }
       },
       "is_incremental": false,
@@ -3114,7 +3138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.GatewayCompressionLevel.html",
-          "hash": "RxIW4YsXvUxtfh2n+TFE7Q=="
+          "hash": "RCz+D029vgQ1Lujc0g9DCg=="
         }
       },
       "is_incremental": false,
@@ -3126,7 +3150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.ImageFormat.html",
-          "hash": "g1+SpyMpwY2zgR2lB0tHhg=="
+          "hash": "p75sDTdNwifKGIu03xhTzg=="
         }
       },
       "is_incremental": false,
@@ -3138,31 +3162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.ImageTool.html",
-          "hash": "M4MnpmDSf2ekyrMMGiIl0g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.Interactivity.Concurrency.ConcurrentHashSet-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.Interactivity.Concurrency.ConcurrentHashSet-1.html",
-          "hash": "ZR9KYyouwQKPdyaIvnWuIw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.Interactivity.Concurrency.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.Interactivity.Concurrency.html",
-          "hash": "rOcBFJ9uJhIqY015YVX5Yw=="
+          "hash": "lkqIIGLNmpV5Hou+ehsBAg=="
         }
       },
       "is_incremental": false,
@@ -3174,7 +3174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.Enums.PaginationBehaviour.html",
-          "hash": "lSr2ORzdlCZBit/9bGKaoQ=="
+          "hash": "NiI3FSA+QmHXMiLDPLLsqg=="
         }
       },
       "is_incremental": false,
@@ -3186,7 +3186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.Enums.PaginationDeletion.html",
-          "hash": "XmRkuWn4FYhZsuQOXe+GTg=="
+          "hash": "e6m9s0vZBG5kgI2c5cVzPg=="
         }
       },
       "is_incremental": false,
@@ -3198,7 +3198,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.Enums.PollBehaviour.html",
-          "hash": "OucD1QnVguTh6wVmISjEpA=="
+          "hash": "wIti3U2NZ5muBF/lN3nhgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Interactivity.Enums.SplitType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Interactivity.Enums.SplitType.html",
+          "hash": "hDZHcgu1ZruXGs85ChgOJg=="
         }
       },
       "is_incremental": false,
@@ -3210,7 +3222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.Enums.html",
-          "hash": "9tGC56K0Pfx2s/+xG+Kdyw=="
+          "hash": "otvQ1yfOjmh8bYyvxo3KrQ=="
         }
       },
       "is_incremental": false,
@@ -3222,7 +3234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.EventHandling.IPaginationRequest.html",
-          "hash": "9gcM4fIW7jXTcg4tt1BMRA=="
+          "hash": "3RVW2FwxckfCYCe8NPdrRA=="
         }
       },
       "is_incremental": false,
@@ -3234,7 +3246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.EventHandling.PollEmoji.html",
-          "hash": "jLh3AzkTyCZq5MxijVa0Mw=="
+          "hash": "G4weD/Fc2BOJ+uxzfWEyAw=="
         }
       },
       "is_incremental": false,
@@ -3246,7 +3258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.EventHandling.PollRequest.html",
-          "hash": "tdM/F4ekknAlZDwsG8yOjw=="
+          "hash": "nOxelEbIVy1x4LdzYXeqWA=="
         }
       },
       "is_incremental": false,
@@ -3258,7 +3270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.EventHandling.Reaction.html",
-          "hash": "4/26wEVPC/GTxiyZ8g0sXA=="
+          "hash": "T6bOZJWd/m+wqy2vfRmUyg=="
         }
       },
       "is_incremental": false,
@@ -3270,7 +3282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.EventHandling.ReactionCollectRequest.html",
-          "hash": "r6Qy8V1ghNEvCkt3t0BgqA=="
+          "hash": "9CYuJOMFc001WzhF8jiNlA=="
         }
       },
       "is_incremental": false,
@@ -3282,7 +3294,43 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.EventHandling.html",
-          "hash": "zEJks7OGe9lfB6CL4sjyoA=="
+          "hash": "jR0UcT9MKGIePBfqhVxBew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Interactivity.Extensions.ChannelExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Interactivity.Extensions.ChannelExtensions.html",
+          "hash": "c4DTtrzsMNozkHHcSIesPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Interactivity.Extensions.ClientExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Interactivity.Extensions.ClientExtensions.html",
+          "hash": "sbz4hEW6+qqNtY+RMWEvrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Interactivity.Extensions.MessageExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Interactivity.Extensions.MessageExtensions.html",
+          "hash": "fiy5dn4R4jet0J3/tnpQCA=="
         }
       },
       "is_incremental": false,
@@ -3294,7 +3342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.Extensions.html",
-          "hash": "oN01ohv2sq02lKVDCNtSng=="
+          "hash": "m/brHP6GrsU9uiikQFqN+A=="
         }
       },
       "is_incremental": false,
@@ -3306,7 +3354,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.InteractivityConfiguration.html",
-          "hash": "07JYZ9RBVRlLnWN0KBR3fA=="
+          "hash": "KKjs+MqC8U5pvhbN/iLlBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Interactivity.InteractivityEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Interactivity.InteractivityEvents.html",
+          "hash": "QhuyCLsyr8H1C8pqmdVwPA=="
         }
       },
       "is_incremental": false,
@@ -3318,19 +3378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.InteractivityExtension.html",
-          "hash": "x/Z/17Z/HbMOaNTeY9/9sQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.Interactivity.InteractivityExtensionMethods.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.Interactivity.InteractivityExtensionMethods.html",
-          "hash": "dfIWNzgJcmcJaafuA1sJ+A=="
+          "hash": "a/cgi9CsAGExY7W1v4JGAA=="
         }
       },
       "is_incremental": false,
@@ -3342,7 +3390,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.InteractivityResult-1.html",
-          "hash": "1oS/4oqrjnHGyL/1xl7k6w=="
+          "hash": "D1PXapbBNBhKHqQBkxK03w=="
         }
       },
       "is_incremental": false,
@@ -3354,7 +3402,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.Page.html",
-          "hash": "gC105ySO/Z8+ch8JaMZ7wg=="
+          "hash": "cv4R5i0lEEPgR0idCL2tWg=="
         }
       },
       "is_incremental": false,
@@ -3366,19 +3414,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.PaginationEmojis.html",
-          "hash": "7iwApo6m6C2ypSC9rC7+6g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.Interactivity.SplitType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.Interactivity.SplitType.html",
-          "hash": "4H4jRxvssfClSvPiUOjApA=="
+          "hash": "5iIUYpXwL2zCi0RyusEw4Q=="
         }
       },
       "is_incremental": false,
@@ -3390,7 +3426,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.html",
-          "hash": "iPZlOPg6aE+iziiy+S8vGw=="
+          "hash": "UGxMZ6633zCFEGVBUY6cdA=="
         }
       },
       "is_incremental": false,
@@ -3402,7 +3438,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.DiscordClientExtensions.html",
-          "hash": "q1GxkDfXvv3hEJ7crKRKXw=="
+          "hash": "YLrlfEyrfZRmdmL3BfHbyw=="
         }
       },
       "is_incremental": false,
@@ -3414,7 +3450,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.Entities.LavalinkFailedAddress.html",
-          "hash": "89AZo3+gxsXVVPdJpw5GfA=="
+          "hash": "KBnAg2AEL3Kbi49D4xUggA=="
         }
       },
       "is_incremental": false,
@@ -3426,7 +3462,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.Entities.LavalinkIpBlock.html",
-          "hash": "B2NE8Zlww22ChxAKUAP4tw=="
+          "hash": "OEVu7hl8p5GqMqMaJm9ftg=="
         }
       },
       "is_incremental": false,
@@ -3438,7 +3474,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.Entities.LavalinkPlayerState.html",
-          "hash": "nTvgKqF+8yV+0xkJpsBmQA=="
+          "hash": "V+W6lSpaAxBT9N+Vtpmu8A=="
         }
       },
       "is_incremental": false,
@@ -3450,7 +3486,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.Entities.LavalinkRouteStatus.html",
-          "hash": "Hpaq6ngc06xDjZFVWWNKnA=="
+          "hash": "faXYYXak/uogvAVSN2bA2A=="
         }
       },
       "is_incremental": false,
@@ -3462,7 +3498,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.Entities.LavalinkRouteStatusDetails.html",
-          "hash": "b3x/HmHd+c3wGWkZ3FEt3w=="
+          "hash": "dEYhcCu7jxnhC3TEpsjoPQ=="
         }
       },
       "is_incremental": false,
@@ -3474,19 +3510,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.Entities.LavalinkStatistics.html",
-          "hash": "YDaiFIbmCbb40FdqMLS6CQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.Lavalink.Entities.RoutePlannerType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.Lavalink.Entities.RoutePlannerType.html",
-          "hash": "crkFrm+zVSbQKqwFuuI2Ew=="
+          "hash": "NTVA8hc8ZGsQYONudssZOw=="
         }
       },
       "is_incremental": false,
@@ -3498,7 +3522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.Entities.html",
-          "hash": "3J/JkjxowjR+1Yw0WkycsA=="
+          "hash": "ZLMZIzlJnfIc7B6xrs+r9g=="
         }
       },
       "is_incremental": false,
@@ -3510,7 +3534,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.EventArgs.NodeDisconnectedEventArgs.html",
-          "hash": "rPEqtB63GcBCFHwlj7zGiw=="
+          "hash": "X+s5VGW2VYL/qjKquKhTpw=="
         }
       },
       "is_incremental": false,
@@ -3522,7 +3546,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.EventArgs.PlayerUpdateEventArgs.html",
-          "hash": "3YVx4qTcmxPnO6CAH0E+Lg=="
+          "hash": "EPqjQkMTynbKb1yTkXX1+Q=="
         }
       },
       "is_incremental": false,
@@ -3534,7 +3558,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.EventArgs.StatisticsReceivedEventArgs.html",
-          "hash": "nI0hU/C0OhGbamB1HiWwlg=="
+          "hash": "NhH7d/TFEbMmRr20+8BT/g=="
         }
       },
       "is_incremental": false,
@@ -3546,7 +3570,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.EventArgs.TrackEndReason.html",
-          "hash": "YV0d65mj9MHNvqkHgesbJw=="
+          "hash": "v0E6Uf6vWxJCR1w942tZ4A=="
         }
       },
       "is_incremental": false,
@@ -3558,7 +3582,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.EventArgs.TrackExceptionEventArgs.html",
-          "hash": "P9jPIQVdwRD8Xf5BfcEnsw=="
+          "hash": "EGJKIi2wv6jK4N2LlSyQaw=="
         }
       },
       "is_incremental": false,
@@ -3570,7 +3594,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.EventArgs.TrackFinishEventArgs.html",
-          "hash": "doc6n9SIV4Nkr677LXUgjQ=="
+          "hash": "bKMTffXtnOE2wE57p6bvBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Lavalink.EventArgs.TrackStartEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Lavalink.EventArgs.TrackStartEventArgs.html",
+          "hash": "tQ6wCjzEUcG/uc3m4oKlCA=="
         }
       },
       "is_incremental": false,
@@ -3582,7 +3618,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.EventArgs.TrackStuckEventArgs.html",
-          "hash": "SwAc5W+6fHat0lq9IU6rUQ=="
+          "hash": "qwUGGyxXsvHebsoeLOlYZg=="
         }
       },
       "is_incremental": false,
@@ -3594,7 +3630,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.EventArgs.WebSocketCloseEventArgs.html",
-          "hash": "6vWn5GY4iVJEMp/9gayv4A=="
+          "hash": "9uYKBgN26wwmy05BpzotFQ=="
         }
       },
       "is_incremental": false,
@@ -3606,7 +3642,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.EventArgs.html",
-          "hash": "QDiHHzPuC2fPcKjur37AAA=="
+          "hash": "XgsxCPuISVboctV0hrPj4Q=="
         }
       },
       "is_incremental": false,
@@ -3618,7 +3654,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.LavalinkBandAdjustment.html",
-          "hash": "b6P/QMCD6OPDzQCJbrAPkQ=="
+          "hash": "XTi049Ejoic+FyVvSxYQJA=="
         }
       },
       "is_incremental": false,
@@ -3630,7 +3666,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.LavalinkConfiguration.html",
-          "hash": "lsIE5X6dLhtrx3xn2jvVHA=="
+          "hash": "6n9gPV19FUW3GlpbgHt1hQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Lavalink.LavalinkEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Lavalink.LavalinkEvents.html",
+          "hash": "q7+Y4AJhPGvUwOQBRUCYFg=="
         }
       },
       "is_incremental": false,
@@ -3642,7 +3690,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.LavalinkExtension.html",
-          "hash": "RUjJz4zydpTsQovOyNgOLQ=="
+          "hash": "HKHJhyYDiKjH0wn144i6tA=="
         }
       },
       "is_incremental": false,
@@ -3654,7 +3702,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.LavalinkGuildConnection.html",
-          "hash": "B0VNlk96+ZBx8Rp82zxDsg=="
+          "hash": "53weuCvX+CGFrfC8c9JwAQ=="
         }
       },
       "is_incremental": false,
@@ -3666,7 +3714,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.LavalinkLoadFailedInfo.html",
-          "hash": "zG/VVdAS20bHNohJNX8XWA=="
+          "hash": "eUk3w9c4pZpv82K44dw73A=="
         }
       },
       "is_incremental": false,
@@ -3678,7 +3726,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.LavalinkLoadResult.html",
-          "hash": "AkCnxWEYapwoD7Sij1YvcQ=="
+          "hash": "I83gbUdx9ia75xX4+Dhulw=="
         }
       },
       "is_incremental": false,
@@ -3690,7 +3738,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.LavalinkLoadResultType.html",
-          "hash": "twtV6/s1WX6Zmrkxes/3sA=="
+          "hash": "Spd1/o3NRxVdVCEaoy8FCw=="
         }
       },
       "is_incremental": false,
@@ -3702,7 +3750,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.LavalinkNodeConnection.html",
-          "hash": "ywo+AZrEAtskp7n3EQGMsA=="
+          "hash": "ZCZam3RAV+CjymyKAIObqg=="
         }
       },
       "is_incremental": false,
@@ -3714,7 +3762,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.LavalinkPlaylistInfo.html",
-          "hash": "42Eo6F8pFDFzOWLRrMDTTA=="
+          "hash": "qHxsjLkuRvLRXNp9XpBuig=="
         }
       },
       "is_incremental": false,
@@ -3722,11 +3770,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.Lavalink.LavalinkRest.yml",
+      "source_relative_path": "api/DSharpPlus.Lavalink.LavalinkRestClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DSharpPlus.Lavalink.LavalinkRest.html",
-          "hash": "39QMLmDS0GWjjK9lBgFK+A=="
+          "relative_path": "api/DSharpPlus.Lavalink.LavalinkRestClient.html",
+          "hash": "RvEbGfx12BK/zx8HCRBP3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Lavalink.LavalinkRoutePlannerType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Lavalink.LavalinkRoutePlannerType.html",
+          "hash": "+iWnpV6/ggNeewbEvS2YKg=="
         }
       },
       "is_incremental": false,
@@ -3738,7 +3798,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.LavalinkSearchType.html",
-          "hash": "wu5zOeXpVvD3Iek2DEkcWA=="
+          "hash": "QD8qsV6WpkwOFQw3gNPESw=="
         }
       },
       "is_incremental": false,
@@ -3750,7 +3810,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.LavalinkTrack.html",
-          "hash": "vLH/3SsMy6tOzg9WJbyN3w=="
+          "hash": "L/y5dU9RJYLYna8Z6+xDOQ=="
         }
       },
       "is_incremental": false,
@@ -3762,7 +3822,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.LavalinkUtilities.html",
-          "hash": "NKZAi4Gl6b4cof1tFusMKw=="
+          "hash": "NQo9OQITDt+CbPtAvLN/ag=="
         }
       },
       "is_incremental": false,
@@ -3774,7 +3834,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.LoadFailedSeverity.html",
-          "hash": "7CyT91sC6wQz3w71B6azWQ=="
+          "hash": "saOPZpC9FrL6nPiV3IZVaA=="
         }
       },
       "is_incremental": false,
@@ -3786,7 +3846,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Lavalink.html",
-          "hash": "Z8zG4WTcIwZKV/YCDjymLg=="
+          "hash": "MWjcAnrBU/N9UZGtLqHZMg=="
         }
       },
       "is_incremental": false,
@@ -3794,11 +3854,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.LogLevel.yml",
+      "source_relative_path": "api/DSharpPlus.LoggerEvents.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DSharpPlus.LogLevel.html",
-          "hash": "HbuR5wDmwDEQE4DakSquEA=="
+          "relative_path": "api/DSharpPlus.LoggerEvents.html",
+          "hash": "mCV8oFz061UBMzUsebJ0/w=="
         }
       },
       "is_incremental": false,
@@ -3810,7 +3870,55 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.MentionType.html",
-          "hash": "zFnmBg337sgJQXaT6YwXYQ=="
+          "hash": "Gf02LPLkrpiBMVPgtAqNKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.MessageActivityType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.MessageActivityType.html",
+          "hash": "e9ob/9HC9kehVzDatUFH8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.MessageFlagExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.MessageFlagExtensions.html",
+          "hash": "VfV02aoCCsxYzVItKOoIHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.MessageFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.MessageFlags.html",
+          "hash": "KruHqTKL3HycDSzA8AsbAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.MessageType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.MessageType.html",
+          "hash": "RO58RSeXqsrWcYaiEmEB3w=="
         }
       },
       "is_incremental": false,
@@ -3822,7 +3930,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.BaseRestRequest.html",
-          "hash": "xDHHWiiy8lejGYER/4KUPA=="
+          "hash": "1YkLKOIRSJWFuTyp+6wvbA=="
         }
       },
       "is_incremental": false,
@@ -3834,7 +3942,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.ConnectionEndpoint.html",
-          "hash": "y9e7lvT5YAP6/MOzkWNr+g=="
+          "hash": "UDOz2Dm/hxtFqqhwbLQu5Q=="
         }
       },
       "is_incremental": false,
@@ -3846,7 +3954,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.DiscordApiClient.html",
-          "hash": "6OzPb645AYWTGR74I0D3qg=="
+          "hash": "Dp4Okm3VSqXaeGg7X6Bm/g=="
         }
       },
       "is_incremental": false,
@@ -3858,7 +3966,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.DiscordUri.html",
-          "hash": "bJRkf1i0BH5/fwzVkpTQyg=="
+          "hash": "5Pd+lwoNrlro6KEC3LOhRg=="
         }
       },
       "is_incremental": false,
@@ -3870,7 +3978,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.DiscordUriType.html",
-          "hash": "S51f8fupW2YV6fTbenWbiA=="
+          "hash": "voF9+CS09WFthH4y/Aj9hg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Net.GatewayInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Net.GatewayInfo.html",
+          "hash": "5z4srS2efLuUHhcYbmCCKw=="
         }
       },
       "is_incremental": false,
@@ -3882,7 +4002,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.IpEndpoint.html",
-          "hash": "3/Jek0R+u1qbB90t1VT5iA=="
+          "hash": "jiihLsrnvyqUdCmPib/Txg=="
         }
       },
       "is_incremental": false,
@@ -3894,7 +4014,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.Models.BaseEditModel.html",
-          "hash": "jrU3wxJQeeBRgbmeUs8p4A=="
+          "hash": "aXtuqCu80SO8ABbw8ZVIhA=="
         }
       },
       "is_incremental": false,
@@ -3906,7 +4026,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.Models.ChannelEditModel.html",
-          "hash": "S2uoInUdNkspkBo3o6//dQ=="
+          "hash": "ZwGALjwq/c9TT6oMUu0CxQ=="
         }
       },
       "is_incremental": false,
@@ -3918,7 +4038,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.Models.GuildEditModel.html",
-          "hash": "2Xc4tlSuSHoJQw7QHuM2uA=="
+          "hash": "+tmc0emNC3jh801LpvJI9Q=="
         }
       },
       "is_incremental": false,
@@ -3930,7 +4050,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.Models.MemberEditModel.html",
-          "hash": "JC6Nk32QeLuV6JmuaUziSQ=="
+          "hash": "qL2BCEzuxJPv3PnhdxJQVw=="
         }
       },
       "is_incremental": false,
@@ -3942,7 +4062,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.Models.RoleEditModel.html",
-          "hash": "F80EC5LNHE74n4CgThyWnA=="
+          "hash": "royL+53o39h+WkhtSoX/ZA=="
         }
       },
       "is_incremental": false,
@@ -3954,31 +4074,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.Models.html",
-          "hash": "FBOAvQirOT68K/0kYTsqRg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.Net.MultipartWebRequest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.Net.MultipartWebRequest.html",
-          "hash": "2FLy7XWfI74XKX7CyF6MGw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DSharpPlus.Net.RestRequest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DSharpPlus.Net.RestRequest.html",
-          "hash": "D2TuCUBaUqH70UjO6jEcHg=="
+          "hash": "gxjEFR2zLT26zSzExCMcbQ=="
         }
       },
       "is_incremental": false,
@@ -3990,7 +4086,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.RestRequestMethod.html",
-          "hash": "bFRQCdtyOgW1bklc/bFatA=="
+          "hash": "AjahYTonIuYV9+UiFbFp+Q=="
         }
       },
       "is_incremental": false,
@@ -4002,7 +4098,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.RestResponse.html",
-          "hash": "92D6AEjRP3MYvyTenvRA4A=="
+          "hash": "7L5Czgfe2I+/icrzJLmf3A=="
         }
       },
       "is_incremental": false,
@@ -4014,7 +4110,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.Serialization.DiscordJson.html",
-          "hash": "4TSZ675KUlKGqGQir/R2PQ=="
+          "hash": "pZDjEuGs+7BM6YQL8CwCvw=="
         }
       },
       "is_incremental": false,
@@ -4026,7 +4122,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.Serialization.html",
-          "hash": "/FAcgja4V/YLsXUsVRCJBQ=="
+          "hash": "iMyRRI/f4Q5oDrWxACoIog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Net.SessionBucket.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Net.SessionBucket.html",
+          "hash": "0AucsRK/Lnt2P7taholyuw=="
         }
       },
       "is_incremental": false,
@@ -4038,7 +4146,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.Udp.BaseUdpClient.html",
-          "hash": "UNfHodbbpuLBbSeFq4IFyQ=="
+          "hash": "AePAgpB3Bv5JEHap839+OA=="
         }
       },
       "is_incremental": false,
@@ -4050,7 +4158,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.Udp.UdpClientFactoryDelegate.html",
-          "hash": "mkncHTD9FQal/cjx1362Aw=="
+          "hash": "7T0g/fVA9MpXOeeranbUkg=="
         }
       },
       "is_incremental": false,
@@ -4062,7 +4170,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.Udp.html",
-          "hash": "0OxFqzM7ZCcqCYm7oZPZzg=="
+          "hash": "v3SkDz1tH63D7fwoijpg3w=="
         }
       },
       "is_incremental": false,
@@ -4074,7 +4182,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.WebSocket.IWebSocketClient.html",
-          "hash": "0z9I4ABXV+bMhENsmoGQfw=="
+          "hash": "nkNZ/lq37JYbLFBt3Yx/bw=="
         }
       },
       "is_incremental": false,
@@ -4086,7 +4194,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.WebSocket.WebSocketClient.html",
-          "hash": "JziUYdqgRAWlpYLyjVNa0w=="
+          "hash": "A3GSZaR6f/fL9RQIGw960A=="
         }
       },
       "is_incremental": false,
@@ -4098,7 +4206,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.WebSocket.WebSocketClientFactoryDelegate.html",
-          "hash": "nsBpb8uLjfmeum/gHvfH1A=="
+          "hash": "Fs8qcmfbezZSKCXIPU4r7Q=="
         }
       },
       "is_incremental": false,
@@ -4110,7 +4218,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.WebSocket.html",
-          "hash": "+FBwf0JQcYMLfG66gE+Epw=="
+          "hash": "EwsQphZXJQ0jvOGGA727Vw=="
         }
       },
       "is_incremental": false,
@@ -4122,7 +4230,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.html",
-          "hash": "HJ3uFZwTkRyChy8E+KmUjQ=="
+          "hash": "26wzwyYoqEYQrO6/XFcpvg=="
         }
       },
       "is_incremental": false,
@@ -4134,7 +4242,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.OverwriteType.html",
-          "hash": "6mrRBzwc0gugmcsAd8fgcw=="
+          "hash": "E+0xt9TC9B1DRBsKjUaW/A=="
         }
       },
       "is_incremental": false,
@@ -4146,7 +4254,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.PermissionLevel.html",
-          "hash": "2IDMzC7gAIYaz/VTR1BTYA=="
+          "hash": "cB3Koa0uBeqACpFAdjnHKw=="
         }
       },
       "is_incremental": false,
@@ -4158,7 +4266,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.PermissionMethods.html",
-          "hash": "/mTXsIK50e83XWBjx4CebA=="
+          "hash": "UbqZ21sesXpEqhdHSmrg6A=="
         }
       },
       "is_incremental": false,
@@ -4170,7 +4278,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.PermissionStringAttribute.html",
-          "hash": "dMaj9ecXkHu7vxPjVGvvqA=="
+          "hash": "Oq5ve9qI9dvYRxy/5zuz/w=="
         }
       },
       "is_incremental": false,
@@ -4182,7 +4290,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Permissions.html",
-          "hash": "lEsPZhBGmXfIZ4nW3ZkVrA=="
+          "hash": "pg6VzSy3pUUq8xoHL9DsnQ=="
         }
       },
       "is_incremental": false,
@@ -4194,7 +4302,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.PremiumTier.html",
-          "hash": "15XVy3KbOl9qMy+FnV89wA=="
+          "hash": "vjQnJ1nzQR+HxIEqs5Y/VQ=="
         }
       },
       "is_incremental": false,
@@ -4206,7 +4314,43 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.PremiumType.html",
-          "hash": "zY5lDNv1+907sdlBTA8Xvg=="
+          "hash": "KFEA2MibZwuLCthU49VzfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.SystemChannelFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.SystemChannelFlags.html",
+          "hash": "AFnjcPzAiNoGKsndaRf+eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.SystemChannelFlagsExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.SystemChannelFlagsExtension.html",
+          "hash": "Z80AbrDKqmBLiqm6BCB/+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.TargetUserType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.TargetUserType.html",
+          "hash": "0PWQMxAnSoFhntIxfXd6lw=="
         }
       },
       "is_incremental": false,
@@ -4218,7 +4362,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.TokenType.html",
-          "hash": "NIbrtAgLte55CLyO5OaXBw=="
+          "hash": "L3QnZOAyruA0YqCOc+ylfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.UserFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.UserFlags.html",
+          "hash": "I29wEZ1aKcdOGdp6mEoWWg=="
         }
       },
       "is_incremental": false,
@@ -4230,7 +4386,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Utilities.html",
-          "hash": "8u1aIMk3cqzdzAsbUFLYZw=="
+          "hash": "s7gJh7x/5QNFSeD9WLoKbw=="
         }
       },
       "is_incremental": false,
@@ -4242,7 +4398,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.VoiceNext.AudioFormat.html",
-          "hash": "cYt2Ew4o1ukSA2wMTfegYg=="
+          "hash": "ekc3UuuuTmRsgThLXzk0Ww=="
         }
       },
       "is_incremental": false,
@@ -4254,7 +4410,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.VoiceNext.DiscordClientExtensions.html",
-          "hash": "pByPG3HjwuEJCWdo3yhiLA=="
+          "hash": "GVn5RhSPPPfCK0wmuiXnig=="
         }
       },
       "is_incremental": false,
@@ -4266,7 +4422,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.VoiceNext.EventArgs.VoiceReceiveEventArgs.html",
-          "hash": "aSdUMBfjLp55ga/YnWbC6Q=="
+          "hash": "coZyR9056AoSvzP9GwARCA=="
         }
       },
       "is_incremental": false,
@@ -4278,7 +4434,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.VoiceNext.EventArgs.VoiceUserJoinEventArgs.html",
-          "hash": "1h1EQFDbi0X/dcKPvs4b4Q=="
+          "hash": "Xn3tp6DTbbGNJPNcR+PxoQ=="
         }
       },
       "is_incremental": false,
@@ -4290,7 +4446,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.VoiceNext.EventArgs.VoiceUserLeaveEventArgs.html",
-          "hash": "YGXXv/YKk3qkwd0K4vW/+A=="
+          "hash": "SBaIJmBiHzl5mfp0mqbixQ=="
         }
       },
       "is_incremental": false,
@@ -4302,7 +4458,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.VoiceNext.EventArgs.html",
-          "hash": "33qm02N9T39Nngv5dMDXmw=="
+          "hash": "g2gMMCIjAvjJqUA5S6fnCg=="
         }
       },
       "is_incremental": false,
@@ -4314,7 +4470,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.VoiceNext.IVoiceFilter.html",
-          "hash": "pkcz7JEd1ltDP5PWfGl5og=="
+          "hash": "9hKuvr0xGHx8YB/KyxRyRg=="
         }
       },
       "is_incremental": false,
@@ -4326,7 +4482,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.VoiceNext.VoiceApplication.html",
-          "hash": "JeAsUZ43WvDMhtPmqat3tw=="
+          "hash": "aQ8XM2RLsc10zXlZ5Cq+OA=="
         }
       },
       "is_incremental": false,
@@ -4338,7 +4494,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.VoiceNext.VoiceNextConfiguration.html",
-          "hash": "+ItoSJ4+bKsnF5jnyz78RQ=="
+          "hash": "ENd5wrgicHKcnC6ncIs8xQ=="
         }
       },
       "is_incremental": false,
@@ -4350,7 +4506,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.VoiceNext.VoiceNextConnection.html",
-          "hash": "/5ITz3RRas4kn/+fDvIzBw=="
+          "hash": "F/kx8u0LJtnjXZ6UmtN6cA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.VoiceNext.VoiceNextEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.VoiceNext.VoiceNextEvents.html",
+          "hash": "dGVwm2hhgUZ8RG0ETu0OGw=="
         }
       },
       "is_incremental": false,
@@ -4362,7 +4530,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.VoiceNext.VoiceNextExtension.html",
-          "hash": "ytNv8DDUshQRq766LnZ5gw=="
+          "hash": "AlzTadCkctAOFfUB0GAR8g=="
         }
       },
       "is_incremental": false,
@@ -4374,7 +4542,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.VoiceNext.VoiceTransmitStream.html",
-          "hash": "Z9iuAR/Subi++Gl37muFEw=="
+          "hash": "71rCxDCQg5wHRNhUi6kSmQ=="
         }
       },
       "is_incremental": false,
@@ -4386,7 +4554,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.VoiceNext.html",
-          "hash": "i4inQS96VvHXnOqrwJ73aw=="
+          "hash": "2O1aCHk6E5ZMBjs23klpMA=="
         }
       },
       "is_incremental": false,
@@ -4398,7 +4566,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.html",
-          "hash": "m/7XwRiO1NnbI/FxYGFOSg=="
+          "hash": "j6+bv2n3u5FsuV5nA5B9XQ=="
         }
       },
       "is_incremental": false,
@@ -4410,7 +4578,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "XB3Yc9ViGv/HFqQVFbVS8w=="
+          "hash": "TgIWqY5DcaP0qTfaQdMNug=="
         }
       },
       "is_incremental": false,
@@ -4422,7 +4590,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "XwBbzB0c5Rlt9YV6CYgX+Q=="
+          "hash": "evhulnQslJ3w8nvDC89DBw=="
         }
       },
       "is_incremental": false,
@@ -4430,11 +4598,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/advanced/debug_symbols.md",
+      "source_relative_path": "articles/audio/lavalink/configuration.md",
       "output": {
         ".html": {
-          "relative_path": "articles/advanced/debug_symbols.html",
-          "hash": "BvdmrFcBmoUhz43Cs8yrdg=="
+          "relative_path": "articles/audio/lavalink/configuration.html",
+          "hash": "qp/PXv61UXO+w4+YVpxlwg=="
         }
       },
       "is_incremental": false,
@@ -4442,11 +4610,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/advanced/nightly_builds.md",
+      "source_relative_path": "articles/audio/lavalink/music_commands.md",
       "output": {
         ".html": {
-          "relative_path": "articles/advanced/nightly_builds.html",
-          "hash": "Fzp3t40VUOH7Pkk/ywUrTg=="
+          "relative_path": "articles/audio/lavalink/music_commands.html",
+          "hash": "aDVg8ZmupFLIClt4KRslxw=="
         }
       },
       "is_incremental": false,
@@ -4454,11 +4622,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/advanced/reporting_issues.md",
+      "source_relative_path": "articles/audio/lavalink/setup.md",
       "output": {
         ".html": {
-          "relative_path": "articles/advanced/reporting_issues.html",
-          "hash": "9d+lgjTq2+dc3IWdygTSdg=="
+          "relative_path": "articles/audio/lavalink/setup.html",
+          "hash": "pczmflRN+m1/42fRPRAvxA=="
         }
       },
       "is_incremental": false,
@@ -4466,11 +4634,107 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/advanced/sharding.md",
+      "source_relative_path": "articles/audio/voicenext/prerequisites.md",
       "output": {
         ".html": {
-          "relative_path": "articles/advanced/sharding.html",
-          "hash": "uObtok2G9e+r6/MfDOGtjg=="
+          "relative_path": "articles/audio/voicenext/prerequisites.html",
+          "hash": "X+9iwrTdzVsU69Wg32cwFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/audio/voicenext/receive.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/audio/voicenext/receive.html",
+          "hash": "A1i30+Ib6TaiAJpqGqXZ+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/audio/voicenext/transmit.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/audio/voicenext/transmit.html",
+          "hash": "Cu3p2oTBJ/LOaqFFMZmh/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/basics/bot_account.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/basics/bot_account.html",
+          "hash": "fOpghySJXpzzgMW+ehyaWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/basics/first_bot.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/basics/first_bot.html",
+          "hash": "9A8N+Sl+SmD6emMxVRGKdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/beyond_basics/events.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/beyond_basics/events.html",
+          "hash": "WW7/nUekuiWs3L5QckeHJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/beyond_basics/logging/default.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/beyond_basics/logging/default.html",
+          "hash": "YK5/PRbqq3ZPzfbf0drHWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/beyond_basics/logging/third_party.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/beyond_basics/logging/third_party.html",
+          "hash": "79Y70zabtc+CQAzTQhhVuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/beyond_basics/sharding.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/beyond_basics/sharding.html",
+          "hash": "gj6xQp49RFmuwu1ob7g70w=="
         }
       },
       "is_incremental": false,
@@ -4482,7 +4746,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/commands/argument_converters.html",
-          "hash": "5wUh8HWgbvwkZa1EIeiTOQ=="
+          "hash": "NaD4CJgkEFTSEfBfghVF+Q=="
         }
       },
       "is_incremental": false,
@@ -4490,11 +4754,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/commands/custom_handler.md",
+      "source_relative_path": "articles/commands/command_attributes.md",
       "output": {
         ".html": {
-          "relative_path": "articles/commands/custom_handler.html",
-          "hash": "uPRkPvs247UUhhHXzIoUCw=="
+          "relative_path": "articles/commands/command_attributes.html",
+          "hash": "zIRPq0kzJrGuHQgxAovRaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/commands/command_handler.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/commands/command_handler.html",
+          "hash": "k6UntBKfv/JJb+keuJnwNg=="
         }
       },
       "is_incremental": false,
@@ -4506,7 +4782,19 @@
       "output": {
         ".html": {
           "relative_path": "articles/commands/dependency_injection.html",
-          "hash": "9aDt61I/jLSVpFMWHZ+B/w=="
+          "hash": "yInLKPWWPKUZQn3W8xjOFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/commands/help_formatter.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/commands/help_formatter.html",
+          "hash": "GchfLmdAE31qj4KCtjblBA=="
         }
       },
       "is_incremental": false,
@@ -4518,7 +4806,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/commands/intro.html",
-          "hash": "XL1Z0E4wRmo1bFE9l4j2kw=="
+          "hash": "LXEM+0Mh6yj2ccPdlYcDPQ=="
         }
       },
       "is_incremental": false,
@@ -4526,11 +4814,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/commands/module_lifespans.md",
+      "source_relative_path": "articles/hosting.md",
       "output": {
         ".html": {
-          "relative_path": "articles/commands/module_lifespans.html",
-          "hash": "XhullUPAw7bEs0NLTLTLpQ=="
+          "relative_path": "articles/hosting.html",
+          "hash": "//uRGdSV9HGeV8N7l1MP5A=="
         }
       },
       "is_incremental": false,
@@ -4538,119 +4826,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/getting_started/alternate_ws.md",
+      "source_relative_path": "articles/interactivity.md",
       "output": {
         ".html": {
-          "relative_path": "articles/getting_started/alternate_ws.html",
-          "hash": "wq4VtXRraJ/p0wlhGKvklg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/getting_started/basic_bot.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/getting_started/basic_bot.html",
-          "hash": "b9L9RJKEg5iFA7jhWo6oPw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/getting_started/bot_application.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/getting_started/bot_application.html",
-          "hash": "WIEcfMiyV+4OGxjX3EVX5A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/getting_started/event_reference.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/getting_started/event_reference.html",
-          "hash": "gke7EmMhgmZUtrvTyGbiyQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/getting_started/mono.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/getting_started/mono.html",
-          "hash": "yvCuOsd5Rp28AVOZeDucCQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/hosting/options.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/hosting/options.html",
-          "hash": "CRPs7NCY+UxJV7sg9o9yxA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/hosting/raspberry_pi.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/hosting/raspberry_pi.html",
-          "hash": "uB9h9R/fgUuWiAqioudgXg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/interactivity/intro.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/interactivity/intro.html",
-          "hash": "dh1y1J44CJsziUVhd0jqGw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/intro.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/intro.html",
-          "hash": "NRRiUv/HdZ7UUJBUS+kx9g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/lavalink/intro.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/lavalink/intro.html",
-          "hash": "flDNxq1qqB+cNoxZmPO4VQ=="
+          "relative_path": "articles/interactivity.html",
+          "hash": "d0OL+KwgzAb1VDdl3k/TrA=="
         }
       },
       "is_incremental": false,
@@ -4662,7 +4842,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/migration/2x_to_3x.html",
-          "hash": "fqLyCYgHCNQC/zkBHOkmUQ=="
+          "hash": "hZwR2mV9+A+YGifIM7AcbQ=="
         }
       },
       "is_incremental": false,
@@ -4674,7 +4854,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/migration/3x_to_4x.html",
-          "hash": "oviNSRqY99iwYQ6Ths1Sfw=="
+          "hash": "esHO8Jp96dxzWU/93c5GjQ=="
         }
       },
       "is_incremental": false,
@@ -4686,7 +4866,55 @@
       "output": {
         ".html": {
           "relative_path": "articles/migration/dsharp.html",
-          "hash": "Y9PnhIoch6dzfytG33Vw6g=="
+          "hash": "DVL0Ha6xvgycJTRa0DSezg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/misc/debug_symbols.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/misc/debug_symbols.html",
+          "hash": "Udx3mBGpUf+/yHj+n5u+iA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/misc/nightly_builds.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/misc/nightly_builds.html",
+          "hash": "A3G5tkGnjVCQEUZGF7PD6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/misc/reporting_issues.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/misc/reporting_issues.html",
+          "hash": "dL+ObVP2VHxqiUzVkcw03Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/preamble.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/preamble.html",
+          "hash": "557i9TAChwJDPCXViktKjw=="
         }
       },
       "is_incremental": false,
@@ -4698,7 +4926,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "7XQYup8voWwWSSkXkjZzQQ=="
+          "hash": "FortHKSgizbAbpOCSjx7Tg=="
         }
       },
       "is_incremental": false,
@@ -4706,35 +4934,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/voice/receive.md",
+      "source_relative_path": "faq.md",
       "output": {
         ".html": {
-          "relative_path": "articles/voice/receive.html",
-          "hash": "btIJdebynuag3dE16Kdd+g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/voice/send.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/voice/send.html",
-          "hash": "ZD1k2RXka2F9E2+vfp3Wxw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/voice/setup.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/voice/setup.html",
-          "hash": "4BnViAj3RZbN3y4o6ixA3Q=="
+          "relative_path": "faq.html",
+          "hash": "oZNgZqvWa0RV38MiSk6KpA=="
         }
       },
       "is_incremental": false,
@@ -4742,10 +4946,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/01_01_new_app.png",
+      "source_relative_path": "images/basics_bot_account_01.png",
       "output": {
         "resource": {
-          "relative_path": "images/01_01_new_app.png"
+          "relative_path": "images/basics_bot_account_01.png"
         }
       },
       "is_incremental": false,
@@ -4753,10 +4957,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/01_02_app_data.png",
+      "source_relative_path": "images/basics_bot_account_02.png",
       "output": {
         "resource": {
-          "relative_path": "images/01_02_app_data.png"
+          "relative_path": "images/basics_bot_account_02.png"
         }
       },
       "is_incremental": false,
@@ -4764,10 +4968,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/01_03_make_bot.png",
+      "source_relative_path": "images/basics_bot_account_03.png",
       "output": {
         "resource": {
-          "relative_path": "images/01_03_make_bot.png"
+          "relative_path": "images/basics_bot_account_03.png"
         }
       },
       "is_incremental": false,
@@ -4775,10 +4979,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/01_04_settings.png",
+      "source_relative_path": "images/basics_bot_account_04.png",
       "output": {
         "resource": {
-          "relative_path": "images/01_04_settings.png"
+          "relative_path": "images/basics_bot_account_04.png"
         }
       },
       "is_incremental": false,
@@ -4786,10 +4990,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/02_01_vs_netcore.png",
+      "source_relative_path": "images/basics_bot_account_05.png",
       "output": {
         "resource": {
-          "relative_path": "images/02_01_vs_netcore.png"
+          "relative_path": "images/basics_bot_account_05.png"
         }
       },
       "is_incremental": false,
@@ -4797,10 +5001,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/02_02_new_project.png",
+      "source_relative_path": "images/basics_bot_account_06.png",
       "output": {
         "resource": {
-          "relative_path": "images/02_02_new_project.png"
+          "relative_path": "images/basics_bot_account_06.png"
         }
       },
       "is_incremental": false,
@@ -4808,10 +5012,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/02_03_new_project_settings.png",
+      "source_relative_path": "images/basics_bot_account_07.png",
       "output": {
         "resource": {
-          "relative_path": "images/02_03_new_project_settings.png"
+          "relative_path": "images/basics_bot_account_07.png"
         }
       },
       "is_incremental": false,
@@ -4819,10 +5023,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/02_04_solution_explorer.png",
+      "source_relative_path": "images/basics_bot_account_08.png",
       "output": {
         "resource": {
-          "relative_path": "images/02_04_solution_explorer.png"
+          "relative_path": "images/basics_bot_account_08.png"
         }
       },
       "is_incremental": false,
@@ -4830,10 +5034,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/02_05_manage_packages.png",
+      "source_relative_path": "images/basics_bot_account_09.png",
       "output": {
         "resource": {
-          "relative_path": "images/02_05_manage_packages.png"
+          "relative_path": "images/basics_bot_account_09.png"
         }
       },
       "is_incremental": false,
@@ -4841,10 +5045,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/02_06_nuget.png",
+      "source_relative_path": "images/basics_first_bot_01.png",
       "output": {
         "resource": {
-          "relative_path": "images/02_06_nuget.png"
+          "relative_path": "images/basics_first_bot_01.png"
         }
       },
       "is_incremental": false,
@@ -4852,10 +5056,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/02_07_installing.png",
+      "source_relative_path": "images/basics_first_bot_02.png",
       "output": {
         "resource": {
-          "relative_path": "images/02_07_installing.png"
+          "relative_path": "images/basics_first_bot_02.png"
         }
       },
       "is_incremental": false,
@@ -4863,10 +5067,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/02_08_alive.png",
+      "source_relative_path": "images/basics_first_bot_03.png",
       "output": {
         "resource": {
-          "relative_path": "images/02_08_alive.png"
+          "relative_path": "images/basics_first_bot_03.png"
         }
       },
       "is_incremental": false,
@@ -4874,10 +5078,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/03_01_hi.png",
+      "source_relative_path": "images/basics_first_bot_04.png",
       "output": {
         "resource": {
-          "relative_path": "images/03_01_hi.png"
+          "relative_path": "images/basics_first_bot_04.png"
         }
       },
       "is_incremental": false,
@@ -4885,10 +5089,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/03_02_random.png",
+      "source_relative_path": "images/basics_first_bot_05.png",
       "output": {
         "resource": {
-          "relative_path": "images/03_02_random.png"
+          "relative_path": "images/basics_first_bot_05.png"
         }
       },
       "is_incremental": false,
@@ -4896,10 +5100,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/04_01_hi_how_are_you.png",
+      "source_relative_path": "images/basics_first_bot_06.png",
       "output": {
         "resource": {
-          "relative_path": "images/04_01_hi_how_are_you.png"
+          "relative_path": "images/basics_first_bot_06.png"
         }
       },
       "is_incremental": false,
@@ -4907,10 +5111,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/05_01_identify_win32.jpg",
+      "source_relative_path": "images/basics_first_bot_07.png",
       "output": {
         "resource": {
-          "relative_path": "images/05_01_identify_win32.jpg"
+          "relative_path": "images/basics_first_bot_07.png"
         }
       },
       "is_incremental": false,
@@ -4918,10 +5122,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/05_02_identify_gnulinux_lsb.png",
+      "source_relative_path": "images/basics_first_bot_08.png",
       "output": {
         "resource": {
-          "relative_path": "images/05_02_identify_gnulinux_lsb.png"
+          "relative_path": "images/basics_first_bot_08.png"
         }
       },
       "is_incremental": false,
@@ -4929,10 +5133,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/05_03_identify_gnulinux_osrelease.png",
+      "source_relative_path": "images/basics_first_bot_09.png",
       "output": {
         "resource": {
-          "relative_path": "images/05_03_identify_gnulinux_osrelease.png"
+          "relative_path": "images/basics_first_bot_09.png"
         }
       },
       "is_incremental": false,
@@ -4940,10 +5144,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/05_04_identify_bsd.png",
+      "source_relative_path": "images/basics_first_bot_10.png",
       "output": {
         "resource": {
-          "relative_path": "images/05_04_identify_bsd.png"
+          "relative_path": "images/basics_first_bot_10.png"
         }
       },
       "is_incremental": false,
@@ -4951,10 +5155,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/05_05_natives_flowchart.png",
+      "source_relative_path": "images/basics_first_bot_11.png",
       "output": {
         "resource": {
-          "relative_path": "images/05_05_natives_flowchart.png"
+          "relative_path": "images/basics_first_bot_11.png"
         }
       },
       "is_incremental": false,
@@ -4962,10 +5166,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/06_01_voice_join.png",
+      "source_relative_path": "images/basics_first_bot_12.png",
       "output": {
         "resource": {
-          "relative_path": "images/06_01_voice_join.png"
+          "relative_path": "images/basics_first_bot_12.png"
         }
       },
       "is_incremental": false,
@@ -4973,10 +5177,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/06_02_voice_leave.png",
+      "source_relative_path": "images/basics_first_bot_13.png",
       "output": {
         "resource": {
-          "relative_path": "images/06_02_voice_leave.png"
+          "relative_path": "images/basics_first_bot_13.png"
         }
       },
       "is_incremental": false,
@@ -4984,10 +5188,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/06_03_voice_play.png",
+      "source_relative_path": "images/beyond_basics_logging_default_01.png",
       "output": {
         "resource": {
-          "relative_path": "images/06_03_voice_play.png"
+          "relative_path": "images/beyond_basics_logging_default_01.png"
         }
       },
       "is_incremental": false,
@@ -4995,10 +5199,351 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/06_04_voice_console.png",
+      "source_relative_path": "images/beyond_basics_logging_default_02.png",
       "output": {
         "resource": {
-          "relative_path": "images/06_04_voice_console.png"
+          "relative_path": "images/beyond_basics_logging_default_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/beyond_basics_logging_default_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/beyond_basics_logging_default_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/beyond_basics_logging_third_party_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/beyond_basics_logging_third_party_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/beyond_basics_logging_user_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/beyond_basics_logging_user_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/beyond_basics_logging_user_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/beyond_basics_logging_user_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/beyond_basics_logging_user_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/beyond_basics_logging_user_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/beyond_basics_logging_user_04.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/beyond_basics_logging_user_04.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/beyond_basics_logging_user_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/beyond_basics_logging_user_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/beyond_basics_logging_user_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/beyond_basics_logging_user_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/commands_argument_converters_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/commands_argument_converters_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/commands_command_attributes_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/commands_command_attributes_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/commands_dependency_injection_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/commands_dependency_injection_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/commands_help_formatter_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/commands_help_formatter_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/commands_help_formatter_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/commands_help_formatter_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/commands_intro_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/commands_intro_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/commands_intro_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/commands_intro_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/commands_intro_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/commands_intro_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/commands_intro_04.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/commands_intro_04.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/commands_intro_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/commands_intro_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/commands_intro_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/commands_intro_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/commands_intro_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/commands_intro_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/commands_intro_08.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/commands_intro_08.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/faq_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/faq_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/faq_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/faq_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/faq_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/faq_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/interactivity_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/interactivity_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/interactivity_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/interactivity_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/interactivity_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/interactivity_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/interactivity_04.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/interactivity_04.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/interactivity_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/interactivity_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/voicenext_receive_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/voicenext_receive_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/voicenext_transmit_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/voicenext_transmit_01.png"
         }
       },
       "is_incremental": false,
@@ -5010,7 +5555,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "0Z4Zx/v6SqS6xl64WxNjlg=="
+          "hash": "865ijq1ako5qOiCcYA5KfA=="
         }
       },
       "is_incremental": false,
@@ -5022,7 +5567,7 @@
       "output": {
         ".html": {
           "relative_path": "natives/index.html",
-          "hash": "+hxYnLxIC6L/b6KKwCbuJw=="
+          "hash": "OhbovMTWXcVgY8cFIw9tNQ=="
         }
       },
       "is_incremental": false,
@@ -5034,7 +5579,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "HGifY/sVhamG5iokFpQ2AA=="
+          "hash": "bSja/xTiAw8thUVo9R3tEw=="
         }
       },
       "is_incremental": false,
@@ -5053,14 +5598,14 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 28,
-          "skipped_file_count": 28
+          "total_file_count": 31,
+          "skipped_file_count": 31
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 366,
-          "skipped_file_count": 366
+          "total_file_count": 380,
+          "skipped_file_count": 380
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

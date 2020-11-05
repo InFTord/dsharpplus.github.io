@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class LavalinkGuildConnection
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -200,6 +200,32 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_Node_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.Node*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_Node" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.Node">Node</h4>
+  <div class="markdown level1 summary"><p>Gets the Lavalink node associated with this connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LavalinkNodeConnection Node { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Lavalink.LavalinkNodeConnection.html">LavalinkNodeConnection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
@@ -249,14 +275,32 @@
   
   
   <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_DisconnectAsync_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.DisconnectAsync*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_DisconnectAsync" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.DisconnectAsync">DisconnectAsync()</h4>
-  <div class="markdown level1 summary"><p>Disconnect from this voice channel.</p>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_DisconnectAsync_System_Boolean_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.DisconnectAsync(System.Boolean)">DisconnectAsync(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Disconnects the connection from the voice channel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task DisconnectAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task DisconnectAsync(bool shouldDestroy = true)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">shouldDestroy</span></td>
+        <td><p>Whether the connection should be destroyed on the Lavalink server when leaving.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -269,6 +313,147 @@
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_GetTracksAsync_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.GetTracksAsync*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_GetTracksAsync_FileInfo_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.GetTracksAsync(FileInfo)">GetTracksAsync(FileInfo)</h4>
+  <div class="markdown level1 summary"><p>Loads tracks from a local file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;LavalinkLoadResult&gt; GetTracksAsync(FileInfo file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FileInfo</span></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>File to load tracks from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkLoadResult.html">LavalinkLoadResult</a>&gt;</td>
+        <td><p>A collection of tracks from the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_GetTracksAsync_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.GetTracksAsync*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_GetTracksAsync_System_String_DSharpPlus_Lavalink_LavalinkSearchType_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.GetTracksAsync(System.String,DSharpPlus.Lavalink.LavalinkSearchType)">GetTracksAsync(String, LavalinkSearchType)</h4>
+  <div class="markdown level1 summary"><p>Searches for specified terms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;LavalinkLoadResult&gt; GetTracksAsync(string searchQuery, LavalinkSearchType type = LavalinkSearchType.Youtube)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">searchQuery</span></td>
+        <td><p>What to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Lavalink.LavalinkSearchType.html">LavalinkSearchType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>What platform will search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkLoadResult.html">LavalinkLoadResult</a>&gt;</td>
+        <td><p>A collection of tracks matching the criteria.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_GetTracksAsync_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.GetTracksAsync*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_GetTracksAsync_Uri_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.GetTracksAsync(Uri)">GetTracksAsync(Uri)</h4>
+  <div class="markdown level1 summary"><p>Loads tracks from specified URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;LavalinkLoadResult&gt; GetTracksAsync(Uri uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Uri</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>URL to load tracks from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkLoadResult.html">LavalinkLoadResult</a>&gt;</td>
+        <td><p>A collection of tracks from the URL.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -345,7 +530,7 @@
   
   
   <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_PlayPartialAsync_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartialAsync*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_PlayPartialAsync_DSharpPlus_Lavalink_LavalinkTrack_System_TimeSpan_System_TimeSpan_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartialAsync(DSharpPlus.Lavalink.LavalinkTrack,System.TimeSpan,System.TimeSpan)">PlayPartialAsync(LavalinkTrack, TimeSpan, TimeSpan)</h4>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_PlayPartialAsync_DSharpPlus_Lavalink_LavalinkTrack_TimeSpan_TimeSpan_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.PlayPartialAsync(DSharpPlus.Lavalink.LavalinkTrack,TimeSpan,TimeSpan)">PlayPartialAsync(LavalinkTrack, TimeSpan, TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Queues the specified track for playback. The track will be played from specified start timestamp to specified end timestamp.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -370,13 +555,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><span class="parametername">start</span></td>
         <td><p>Timestamp to start playback at.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><span class="parametername">end</span></td>
         <td><p>Timestamp to stop playback at.</p>
 </td>
@@ -453,7 +638,7 @@
   
   
   <a id="DSharpPlus_Lavalink_LavalinkGuildConnection_SeekAsync_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.SeekAsync*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_SeekAsync_System_TimeSpan_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.SeekAsync(System.TimeSpan)">SeekAsync(TimeSpan)</h4>
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_SeekAsync_TimeSpan_" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.SeekAsync(TimeSpan)">SeekAsync(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Seeks the current track to specified position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -472,7 +657,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><span class="parametername">position</span></td>
         <td><p>Position to seek to.</p>
 </td>
@@ -574,7 +759,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;WebSocketCloseEventArgs&gt; DiscordWebSocketClosed</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;LavalinkGuildConnection, WebSocketCloseEventArgs&gt; DiscordWebSocketClosed</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -586,7 +771,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">WebSocketCloseEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkGuildConnection.html">LavalinkGuildConnection</a>, <span class="xref">WebSocketCloseEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -599,7 +784,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;TrackFinishEventArgs&gt; PlaybackFinished</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;LavalinkGuildConnection, TrackFinishEventArgs&gt; PlaybackFinished</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -611,7 +796,33 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">TrackFinishEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkGuildConnection.html">LavalinkGuildConnection</a>, <span class="xref">TrackFinishEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DSharpPlus_Lavalink_LavalinkGuildConnection_PlaybackStarted" data-uid="DSharpPlus.Lavalink.LavalinkGuildConnection.PlaybackStarted">PlaybackStarted</h4>
+  <div class="markdown level1 summary"><p>Triggered whenever playback of a track starts.
+<p>This is only available for version 3.3.1 and greater.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;LavalinkGuildConnection, TrackStartEventArgs&gt; PlaybackStarted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkGuildConnection.html">LavalinkGuildConnection</a>, <span class="xref">TrackStartEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -624,7 +835,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;PlayerUpdateEventArgs&gt; PlayerUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;LavalinkGuildConnection, PlayerUpdateEventArgs&gt; PlayerUpdated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -636,7 +847,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">PlayerUpdateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkGuildConnection.html">LavalinkGuildConnection</a>, <span class="xref">PlayerUpdateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -649,7 +860,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;TrackExceptionEventArgs&gt; TrackException</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;LavalinkGuildConnection, TrackExceptionEventArgs&gt; TrackException</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -661,7 +872,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">TrackExceptionEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkGuildConnection.html">LavalinkGuildConnection</a>, <span class="xref">TrackExceptionEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -674,7 +885,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;TrackStuckEventArgs&gt; TrackStuck</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;LavalinkGuildConnection, TrackStuckEventArgs&gt; TrackStuck</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -686,7 +897,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">TrackStuckEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkGuildConnection.html">LavalinkGuildConnection</a>, <span class="xref">TrackStuckEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -716,7 +927,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

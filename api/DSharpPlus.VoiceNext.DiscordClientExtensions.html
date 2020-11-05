@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordClientExtensions
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -187,6 +187,51 @@
   </table>
   
   
+  <a id="DSharpPlus_VoiceNext_DiscordClientExtensions_GetVoiceNextAsync_" data-uid="DSharpPlus.VoiceNext.DiscordClientExtensions.GetVoiceNextAsync*"></a>
+  <h4 id="DSharpPlus_VoiceNext_DiscordClientExtensions_GetVoiceNextAsync_DSharpPlus_DiscordShardedClient_" data-uid="DSharpPlus.VoiceNext.DiscordClientExtensions.GetVoiceNextAsync(DSharpPlus.DiscordShardedClient)">GetVoiceNextAsync(DiscordShardedClient)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a <a class="xref" href="DSharpPlus.VoiceNext.VoiceNextExtension.html">VoiceNextExtension</a> instance for each shard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;IReadOnlyDictionary&lt;int, VoiceNextExtension&gt;&gt; GetVoiceNextAsync(this DiscordShardedClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.DiscordShardedClient.html">DiscordShardedClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>The shard client to retrieve <a class="xref" href="DSharpPlus.VoiceNext.VoiceNextExtension.html">VoiceNextExtension</a> instances from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.VoiceNext.VoiceNextExtension.html">VoiceNextExtension</a>&gt;&gt;</td>
+        <td><p>A dictionary containing <a class="xref" href="DSharpPlus.VoiceNext.VoiceNextExtension.html">VoiceNextExtension</a> instances for each shard.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_VoiceNext_DiscordClientExtensions_UseVoiceNext_" data-uid="DSharpPlus.VoiceNext.DiscordClientExtensions.UseVoiceNext*"></a>
   <h4 id="DSharpPlus_VoiceNext_DiscordClientExtensions_UseVoiceNext_DSharpPlus_DiscordClient_" data-uid="DSharpPlus.VoiceNext.DiscordClientExtensions.UseVoiceNext(DSharpPlus.DiscordClient)">UseVoiceNext(DiscordClient)</h4>
   <div class="markdown level1 summary"><p>Creates a new VoiceNext client with default settings.</p>
@@ -326,7 +371,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.VoiceNext.VoiceNextExtension.html">VoiceNextExtension</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.VoiceNext.VoiceNextExtension.html">VoiceNextExtension</a>&gt;&gt;</td>
         <td><p>A dictionary of created VoiceNext clients.</p>
 </td>
       </tr>
@@ -357,7 +402,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

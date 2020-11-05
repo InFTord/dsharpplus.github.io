@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordShardedClient
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -181,14 +181,14 @@
   </table>
   
   
-  <a id="DSharpPlus_DiscordShardedClient_DebugLogger_" data-uid="DSharpPlus.DiscordShardedClient.DebugLogger*"></a>
-  <h4 id="DSharpPlus_DiscordShardedClient_DebugLogger" data-uid="DSharpPlus.DiscordShardedClient.DebugLogger">DebugLogger</h4>
-  <div class="markdown level1 summary"><p>Gets the logger for this client.</p>
+  <a id="DSharpPlus_DiscordShardedClient_GatewayInfo_" data-uid="DSharpPlus.DiscordShardedClient.GatewayInfo*"></a>
+  <h4 id="DSharpPlus_DiscordShardedClient_GatewayInfo" data-uid="DSharpPlus.DiscordShardedClient.GatewayInfo">GatewayInfo</h4>
+  <div class="markdown level1 summary"><p>Gets the gateway info for the client&apos;s session.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DebugLogger DebugLogger { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public GatewayInfo GatewayInfo { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -200,7 +200,33 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.DebugLogger.html">DebugLogger</a></td>
+        <td><span class="xref">GatewayInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordShardedClient_Logger_" data-uid="DSharpPlus.DiscordShardedClient.Logger*"></a>
+  <h4 id="DSharpPlus_DiscordShardedClient_Logger" data-uid="DSharpPlus.DiscordShardedClient.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>Gets the logger for this client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILogger&lt;BaseDiscordClient&gt; Logger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="DSharpPlus.BaseDiscordClient.html">BaseDiscordClient</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -226,7 +252,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>&gt;</td>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -252,13 +278,115 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">DiscordVoiceRegion</span>&gt;</td>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">DiscordVoiceRegion</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="DSharpPlus_DiscordShardedClient_Finalize_" data-uid="DSharpPlus.DiscordShardedClient.Finalize*"></a>
+  <h4 id="DSharpPlus_DiscordShardedClient_Finalize" data-uid="DSharpPlus.DiscordShardedClient.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  
+  
+  <a id="DSharpPlus_DiscordShardedClient_GetShard_" data-uid="DSharpPlus.DiscordShardedClient.GetShard*"></a>
+  <h4 id="DSharpPlus_DiscordShardedClient_GetShard_DiscordGuild_" data-uid="DSharpPlus.DiscordShardedClient.GetShard(DiscordGuild)">GetShard(DiscordGuild)</h4>
+  <div class="markdown level1 summary"><p>Gets a shard from a guild.
+<p>This method uses the <a class="xref" href="DSharpPlus.Utilities.html#DSharpPlus_Utilities_GetShardId_System_UInt64_System_Int32_">GetShardId(UInt64, Int32)</a> method and will not iterate through the shard guild caches.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordClient GetShard(DiscordGuild guild)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DiscordGuild</span></td>
+        <td><span class="parametername">guild</span></td>
+        <td><p>The guild for the shard.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a></td>
+        <td><p>The found <a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a> shard.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordShardedClient_GetShard_" data-uid="DSharpPlus.DiscordShardedClient.GetShard*"></a>
+  <h4 id="DSharpPlus_DiscordShardedClient_GetShard_System_UInt64_" data-uid="DSharpPlus.DiscordShardedClient.GetShard(System.UInt64)">GetShard(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Gets a shard from a guild id.
+<p>This method uses the <a class="xref" href="DSharpPlus.Utilities.html#DSharpPlus_Utilities_GetShardId_System_UInt64_System_Int32_">GetShardId(UInt64, Int32)</a> method and will not iterate through the shard guild caches.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordClient GetShard(ulong guildId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">guildId</span></td>
+        <td><p>The guild id for the shard.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a></td>
+        <td><p>The found <a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a> shard.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_DiscordShardedClient_StartAsync_" data-uid="DSharpPlus.DiscordShardedClient.StartAsync*"></a>
@@ -287,8 +415,34 @@
   </table>
   
   
+  <a id="DSharpPlus_DiscordShardedClient_StopAsync_" data-uid="DSharpPlus.DiscordShardedClient.StopAsync*"></a>
+  <h4 id="DSharpPlus_DiscordShardedClient_StopAsync" data-uid="DSharpPlus.DiscordShardedClient.StopAsync">StopAsync()</h4>
+  <div class="markdown level1 summary"><p>Disconnects and disposes of all shards.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StopAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordShardedClient_UpdateStatusAsync_" data-uid="DSharpPlus.DiscordShardedClient.UpdateStatusAsync*"></a>
-  <h4 id="DSharpPlus_DiscordShardedClient_UpdateStatusAsync_DiscordActivity_System_Nullable_UserStatus__System_Nullable_System_DateTimeOffset__" data-uid="DSharpPlus.DiscordShardedClient.UpdateStatusAsync(DiscordActivity,System.Nullable{UserStatus},System.Nullable{System.DateTimeOffset})">UpdateStatusAsync(DiscordActivity, Nullable&lt;UserStatus&gt;, Nullable&lt;DateTimeOffset&gt;)</h4>
+  <h4 id="DSharpPlus_DiscordShardedClient_UpdateStatusAsync_DiscordActivity_System_Nullable_UserStatus__System_Nullable_DateTimeOffset__" data-uid="DSharpPlus.DiscordShardedClient.UpdateStatusAsync(DiscordActivity,System.Nullable{UserStatus},System.Nullable{DateTimeOffset})">UpdateStatusAsync(DiscordActivity, Nullable&lt;UserStatus&gt;, Nullable&lt;DateTimeOffset&gt;)</h4>
   <div class="markdown level1 summary"><p>Updates playing statuses on all shards.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -319,7 +473,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTimeOffset</span>&gt;</td>
         <td><span class="parametername">idleSince</span></td>
         <td><p>Since when is the client performing the specified activity.</p>
 </td>
@@ -352,7 +506,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;ChannelCreateEventArgs&gt; ChannelCreated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, ChannelCreateEventArgs&gt; ChannelCreated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -364,7 +518,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">ChannelCreateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">ChannelCreateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -377,7 +531,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;ChannelDeleteEventArgs&gt; ChannelDeleted</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, ChannelDeleteEventArgs&gt; ChannelDeleted</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -389,7 +543,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">ChannelDeleteEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">ChannelDeleteEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -402,7 +556,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;ChannelPinsUpdateEventArgs&gt; ChannelPinsUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, ChannelPinsUpdateEventArgs&gt; ChannelPinsUpdated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -414,7 +568,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">ChannelPinsUpdateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">ChannelPinsUpdateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -427,7 +581,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;ChannelUpdateEventArgs&gt; ChannelUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, ChannelUpdateEventArgs&gt; ChannelUpdated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -439,7 +593,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">ChannelUpdateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">ChannelUpdateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -452,7 +606,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;ClientErrorEventArgs&gt; ClientErrored</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, ClientErrorEventArgs&gt; ClientErrored</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -464,7 +618,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">ClientErrorEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">ClientErrorEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -477,7 +631,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DmChannelCreateEventArgs&gt; DmChannelCreated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, DmChannelCreateEventArgs&gt; DmChannelCreated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -489,7 +643,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">DmChannelCreateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">DmChannelCreateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -502,7 +656,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DmChannelDeleteEventArgs&gt; DmChannelDeleted</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, DmChannelDeleteEventArgs&gt; DmChannelDeleted</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -514,7 +668,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">DmChannelDeleteEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">DmChannelDeleteEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -527,7 +681,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildCreateEventArgs&gt; GuildAvailable</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildCreateEventArgs&gt; GuildAvailable</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -539,7 +693,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildCreateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildCreateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -552,7 +706,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildBanAddEventArgs&gt; GuildBanAdded</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildBanAddEventArgs&gt; GuildBanAdded</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -564,7 +718,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildBanAddEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildBanAddEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -577,7 +731,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildBanRemoveEventArgs&gt; GuildBanRemoved</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildBanRemoveEventArgs&gt; GuildBanRemoved</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -589,7 +743,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildBanRemoveEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildBanRemoveEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -602,7 +756,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildCreateEventArgs&gt; GuildCreated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildCreateEventArgs&gt; GuildCreated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -614,11 +768,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildCreateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildCreateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+          <h5 id="DSharpPlus_DiscordShardedClient_GuildCreated_aliases">Equivalent names</h5>
+          <h6 class="markdown level1 aliases"><p>GuildJoined, JoinedGuild</p></h6>
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_GuildDeleted" data-uid="DSharpPlus.DiscordShardedClient.GuildDeleted">GuildDeleted</h4>
@@ -627,7 +783,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildDeleteEventArgs&gt; GuildDeleted</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildDeleteEventArgs&gt; GuildDeleted</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -639,7 +795,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildDeleteEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildDeleteEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -652,7 +808,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildDownloadCompletedEventArgs&gt; GuildDownloadCompleted</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildDownloadCompletedEventArgs&gt; GuildDownloadCompleted</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -664,7 +820,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildDownloadCompletedEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildDownloadCompletedEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -677,7 +833,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildEmojisUpdateEventArgs&gt; GuildEmojisUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildEmojisUpdateEventArgs&gt; GuildEmojisUpdated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -689,7 +845,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildEmojisUpdateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildEmojisUpdateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -702,7 +858,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildIntegrationsUpdateEventArgs&gt; GuildIntegrationsUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildIntegrationsUpdateEventArgs&gt; GuildIntegrationsUpdated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -714,7 +870,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildIntegrationsUpdateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildIntegrationsUpdateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -727,7 +883,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildMemberAddEventArgs&gt; GuildMemberAdded</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildMemberAddEventArgs&gt; GuildMemberAdded</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -739,7 +895,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildMemberAddEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildMemberAddEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -752,7 +908,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildMemberRemoveEventArgs&gt; GuildMemberRemoved</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildMemberRemoveEventArgs&gt; GuildMemberRemoved</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -764,7 +920,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildMemberRemoveEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildMemberRemoveEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -777,7 +933,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildMembersChunkEventArgs&gt; GuildMembersChunked</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildMembersChunkEventArgs&gt; GuildMembersChunked</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -789,7 +945,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildMembersChunkEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildMembersChunkEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -802,7 +958,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildMemberUpdateEventArgs&gt; GuildMemberUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildMemberUpdateEventArgs&gt; GuildMemberUpdated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -814,7 +970,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildMemberUpdateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildMemberUpdateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -827,7 +983,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildRoleCreateEventArgs&gt; GuildRoleCreated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildRoleCreateEventArgs&gt; GuildRoleCreated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -839,7 +995,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildRoleCreateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildRoleCreateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -852,7 +1008,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildRoleDeleteEventArgs&gt; GuildRoleDeleted</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildRoleDeleteEventArgs&gt; GuildRoleDeleted</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -864,7 +1020,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildRoleDeleteEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildRoleDeleteEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -877,7 +1033,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildRoleUpdateEventArgs&gt; GuildRoleUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildRoleUpdateEventArgs&gt; GuildRoleUpdated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -889,7 +1045,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildRoleUpdateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildRoleUpdateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -902,7 +1058,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildDeleteEventArgs&gt; GuildUnavailable</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildDeleteEventArgs&gt; GuildUnavailable</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -914,7 +1070,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildDeleteEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildDeleteEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -927,7 +1083,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;GuildUpdateEventArgs&gt; GuildUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildUpdateEventArgs&gt; GuildUpdated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -939,7 +1095,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">GuildUpdateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildUpdateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -952,7 +1108,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;HeartbeatEventArgs&gt; Heartbeated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, HeartbeatEventArgs&gt; Heartbeated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -964,7 +1120,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">HeartbeatEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">HeartbeatEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -977,7 +1133,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;InviteCreateEventArgs&gt; InviteCreated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, InviteCreateEventArgs&gt; InviteCreated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -989,7 +1145,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">InviteCreateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">InviteCreateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1002,7 +1158,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;InviteDeleteEventArgs&gt; InviteDeleted</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, InviteDeleteEventArgs&gt; InviteDeleted</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1014,7 +1170,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">InviteDeleteEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">InviteDeleteEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1027,7 +1183,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;MessageCreateEventArgs&gt; MessageCreated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, MessageCreateEventArgs&gt; MessageCreated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1039,7 +1195,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">MessageCreateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">MessageCreateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1052,7 +1208,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;MessageDeleteEventArgs&gt; MessageDeleted</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, MessageDeleteEventArgs&gt; MessageDeleted</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1064,7 +1220,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">MessageDeleteEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">MessageDeleteEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1077,7 +1233,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;MessageReactionAddEventArgs&gt; MessageReactionAdded</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, MessageReactionAddEventArgs&gt; MessageReactionAdded</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1089,7 +1245,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">MessageReactionAddEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">MessageReactionAddEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1102,7 +1258,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;MessageReactionRemoveEventArgs&gt; MessageReactionRemoved</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, MessageReactionRemoveEventArgs&gt; MessageReactionRemoved</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1114,7 +1270,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">MessageReactionRemoveEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">MessageReactionRemoveEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1127,7 +1283,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;MessageReactionRemoveEmojiEventArgs&gt; MessageReactionRemovedEmoji</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, MessageReactionRemoveEmojiEventArgs&gt; MessageReactionRemovedEmoji</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1139,7 +1295,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">MessageReactionRemoveEmojiEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">MessageReactionRemoveEmojiEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1152,7 +1308,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;MessageReactionsClearEventArgs&gt; MessageReactionsCleared</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, MessageReactionsClearEventArgs&gt; MessageReactionsCleared</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1164,7 +1320,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">MessageReactionsClearEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">MessageReactionsClearEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1177,7 +1333,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;MessageBulkDeleteEventArgs&gt; MessagesBulkDeleted</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, MessageBulkDeleteEventArgs&gt; MessagesBulkDeleted</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1189,7 +1345,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">MessageBulkDeleteEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">MessageBulkDeleteEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1202,7 +1358,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;MessageUpdateEventArgs&gt; MessageUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, MessageUpdateEventArgs&gt; MessageUpdated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1214,7 +1370,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">MessageUpdateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">MessageUpdateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1227,7 +1383,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;PresenceUpdateEventArgs&gt; PresenceUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, PresenceUpdateEventArgs&gt; PresenceUpdated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1239,7 +1395,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">PresenceUpdateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">PresenceUpdateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1252,7 +1408,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;ReadyEventArgs&gt; Ready</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, ReadyEventArgs&gt; Ready</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1264,7 +1420,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">ReadyEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">ReadyEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1277,7 +1433,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;ReadyEventArgs&gt; Resumed</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, ReadyEventArgs&gt; Resumed</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1289,7 +1445,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">ReadyEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">ReadyEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1302,7 +1458,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;SocketCloseEventArgs&gt; SocketClosed</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, SocketCloseEventArgs&gt; SocketClosed</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1314,7 +1470,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">SocketCloseEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">SocketCloseEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1327,7 +1483,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;SocketErrorEventArgs&gt; SocketErrored</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, SocketErrorEventArgs&gt; SocketErrored</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1339,7 +1495,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">SocketErrorEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">SocketErrorEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1352,7 +1508,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler SocketOpened</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, SocketEventArgs&gt; SocketOpened</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1364,7 +1520,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler.html">AsyncEventHandler</a></td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">SocketEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1377,7 +1533,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;TypingStartEventArgs&gt; TypingStarted</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, TypingStartEventArgs&gt; TypingStarted</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1389,7 +1545,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">TypingStartEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">TypingStartEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1402,7 +1558,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;UnknownEventArgs&gt; UnknownEvent</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, UnknownEventArgs&gt; UnknownEvent</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1414,7 +1570,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">UnknownEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">UnknownEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1427,7 +1583,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;UserSettingsUpdateEventArgs&gt; UserSettingsUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, UserSettingsUpdateEventArgs&gt; UserSettingsUpdated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1439,7 +1595,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">UserSettingsUpdateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">UserSettingsUpdateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1447,12 +1603,12 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_UserUpdated" data-uid="DSharpPlus.DiscordShardedClient.UserUpdated">UserUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when properties about the user change.</p>
+  <div class="markdown level1 summary"><p>Fired when properties about the current user change.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;UserUpdateEventArgs&gt; UserUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, UserUpdateEventArgs&gt; UserUpdated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1464,11 +1620,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">UserUpdateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">UserUpdateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="DSharpPlus_DiscordShardedClient_UserUpdated_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>NB: This event only applies for changes to the <strong>current user</strong>, the client that is connected to Discord.</p></div>
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_VoiceServerUpdated" data-uid="DSharpPlus.DiscordShardedClient.VoiceServerUpdated">VoiceServerUpdated</h4>
@@ -1477,7 +1635,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;VoiceServerUpdateEventArgs&gt; VoiceServerUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, VoiceServerUpdateEventArgs&gt; VoiceServerUpdated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1489,7 +1647,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">VoiceServerUpdateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">VoiceServerUpdateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1502,7 +1660,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;VoiceStateUpdateEventArgs&gt; VoiceStateUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, VoiceStateUpdateEventArgs&gt; VoiceStateUpdated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1514,7 +1672,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">VoiceStateUpdateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">VoiceStateUpdateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1527,7 +1685,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;WebhooksUpdateEventArgs&gt; WebhooksUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, WebhooksUpdateEventArgs&gt; WebhooksUpdated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1539,12 +1697,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">WebhooksUpdateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">WebhooksUpdateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
 
+    <h3 id="aliases">Equivalent names</h3>
+        <h4 id="GuildJoined">GuildJoined</h4>
+        <h5 class="decalaration">See <a class="xref" href="DSharpPlus.DiscordShardedClient.html#DSharpPlus_DiscordShardedClient_GuildCreated">GuildCreated</a></h5>
+        <h4 id="JoinedGuild">JoinedGuild</h4>
+        <h5 class="decalaration">See <a class="xref" href="DSharpPlus.DiscordShardedClient.html#DSharpPlus_DiscordShardedClient_GuildCreated">GuildCreated</a></h5>
 </article>
           </div>
           
@@ -1569,7 +1732,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

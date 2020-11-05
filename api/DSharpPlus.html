@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace DSharpPlus
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -84,28 +84,22 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="DSharpPlus.AsyncEvent.html">AsyncEvent</a></h4>
-      <section><p>Represents an asynchronously-handled event.</p>
-</section>
-      <h4><a class="xref" href="DSharpPlus.AsyncEvent-1.html">AsyncEvent&lt;T&gt;</a></h4>
-      <section><p>Represents an asynchronously-handled event.</p>
-</section>
-      <h4><a class="xref" href="DSharpPlus.AsyncEventArgs.html">AsyncEventArgs</a></h4>
-      <section><p>Represents asynchronous event arguments.</p>
-</section>
       <h4><a class="xref" href="DSharpPlus.BaseDiscordClient.html">BaseDiscordClient</a></h4>
-      <section></section>
+      <section><p>Represents a common base for various Discord client implementations.</p>
+</section>
       <h4><a class="xref" href="DSharpPlus.BaseExtension.html">BaseExtension</a></h4>
       <section><p>Represents base for all DSharpPlus extensions. To implement your own extension, extend this class, and implement its abstract members.</p>
 </section>
-      <h4><a class="xref" href="DSharpPlus.DebugLogger.html">DebugLogger</a></h4>
+      <h4><a class="xref" href="DSharpPlus.DefaultLogger.html">DefaultLogger</a></h4>
       <section></section>
       <h4><a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a></h4>
-      <section><p>A Discord api wrapper</p>
+      <section><p>A Discord API wrapper.</p>
 </section>
       <h4><a class="xref" href="DSharpPlus.DiscordConfiguration.html">DiscordConfiguration</a></h4>
       <section><p>Represents configuration for <a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a> and <a class="xref" href="DSharpPlus.DiscordShardedClient.html">DiscordShardedClient</a>.</p>
 </section>
+      <h4><a class="xref" href="DSharpPlus.DiscordIntentExtensions.html">DiscordIntentExtensions</a></h4>
+      <section></section>
       <h4><a class="xref" href="DSharpPlus.DiscordRestClient.html">DiscordRestClient</a></h4>
       <section></section>
       <h4><a class="xref" href="DSharpPlus.DiscordShardedClient.html">DiscordShardedClient</a></h4>
@@ -120,11 +114,18 @@
       <h4><a class="xref" href="DSharpPlus.ImageTool.html">ImageTool</a></h4>
       <section><p>Tool to detect image formats and convert from binary data to base64 strings.</p>
 </section>
+      <h4><a class="xref" href="DSharpPlus.LoggerEvents.html">LoggerEvents</a></h4>
+      <section><p>Contains well-defined event IDs used by core of DSharpPlus.</p>
+</section>
+      <h4><a class="xref" href="DSharpPlus.MessageFlagExtensions.html">MessageFlagExtensions</a></h4>
+      <section></section>
       <h4><a class="xref" href="DSharpPlus.PermissionMethods.html">PermissionMethods</a></h4>
       <section></section>
       <h4><a class="xref" href="DSharpPlus.PermissionStringAttribute.html">PermissionStringAttribute</a></h4>
       <section><p>Defines a readable name for this permission.</p>
 </section>
+      <h4><a class="xref" href="DSharpPlus.SystemChannelFlagsExtension.html">SystemChannelFlagsExtension</a></h4>
+      <section></section>
       <h4><a class="xref" href="DSharpPlus.Utilities.html">Utilities</a></h4>
       <section><p>Various Discord-related utilities.</p>
 </section>
@@ -133,17 +134,26 @@
       <h4><a class="xref" href="DSharpPlus.ChannelType.html">ChannelType</a></h4>
       <section><p>Represents a channel&apos;s type.</p>
 </section>
+      <h4><a class="xref" href="DSharpPlus.DiscordIntents.html">DiscordIntents</a></h4>
+      <section><p>Represents gateway intents to be specified for connecting to Discord.</p>
+</section>
       <h4><a class="xref" href="DSharpPlus.GatewayCompressionLevel.html">GatewayCompressionLevel</a></h4>
       <section><p>Determines at which level should the WebSocket traffic be compressed.</p>
 </section>
       <h4><a class="xref" href="DSharpPlus.ImageFormat.html">ImageFormat</a></h4>
       <section><p>Represents format of an image.</p>
 </section>
-      <h4><a class="xref" href="DSharpPlus.LogLevel.html">LogLevel</a></h4>
-      <section><p>Represents information about log&apos;s verbosity level.</p>
-</section>
       <h4><a class="xref" href="DSharpPlus.MentionType.html">MentionType</a></h4>
       <section><p>Type of mention being made</p>
+</section>
+      <h4><a class="xref" href="DSharpPlus.MessageActivityType.html">MessageActivityType</a></h4>
+      <section><p>Indicates the type of MessageActivity for the Rich Presence.</p>
+</section>
+      <h4><a class="xref" href="DSharpPlus.MessageFlags.html">MessageFlags</a></h4>
+      <section><p>Represents additional features of a message.</p>
+</section>
+      <h4><a class="xref" href="DSharpPlus.MessageType.html">MessageType</a></h4>
+      <section><p>Indicates the type of the message.</p>
 </section>
       <h4><a class="xref" href="DSharpPlus.OverwriteType.html">OverwriteType</a></h4>
       <section><p>Represents a channelpermissions overwrite&apos;s type.</p>
@@ -160,16 +170,17 @@
       <h4><a class="xref" href="DSharpPlus.PremiumType.html">PremiumType</a></h4>
       <section><p>The type of Nitro subscription on a user&apos;s account.</p>
 </section>
+      <h4><a class="xref" href="DSharpPlus.SystemChannelFlags.html">SystemChannelFlags</a></h4>
+      <section><p>Represents settings for a guild&apos;s system channel.</p>
+</section>
+      <h4><a class="xref" href="DSharpPlus.TargetUserType.html">TargetUserType</a></h4>
+      <section><p>Represents the type of user who the invite is for.</p>
+</section>
       <h4><a class="xref" href="DSharpPlus.TokenType.html">TokenType</a></h4>
       <section><p>Token type</p>
 </section>
-    <h3 id="delegates">Delegates
-  </h3>
-      <h4><a class="xref" href="DSharpPlus.AsyncEventHandler.html">AsyncEventHandler</a></h4>
-      <section><p>Represents an asynchronous event handler.</p>
-</section>
-      <h4><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler&lt;T&gt;</a></h4>
-      <section><p>Represents an asynchronous event handler.</p>
+      <h4><a class="xref" href="DSharpPlus.UserFlags.html">UserFlags</a></h4>
+      <section><p>Represents additional details of a users account.</p>
 </section>
 
 </article>
@@ -196,7 +207,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

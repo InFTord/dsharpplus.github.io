@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BaseRestRequest
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -88,8 +88,6 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">BaseRestRequest</span></div>
   </div>
-      <div class="level2"><a class="xref" href="DSharpPlus.Net.MultipartWebRequest.html">MultipartWebRequest</a></div>
-      <div class="level2"><a class="xref" href="DSharpPlus.Net.RestRequest.html">RestRequest</a></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DSharpPlus.Net.html">DSharpPlus.Net</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="DSharpPlus_Net_BaseRestRequest_syntax">Syntax</h5>
@@ -144,7 +142,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -228,6 +226,32 @@
   </table>
   
   
+  <a id="DSharpPlus_Net_BaseRestRequest_Route_" data-uid="DSharpPlus.Net.BaseRestRequest.Route*"></a>
+  <h4 id="DSharpPlus_Net_BaseRestRequest_Route" data-uid="DSharpPlus.Net.BaseRestRequest.Route">Route</h4>
+  <div class="markdown level1 summary"><p>Gets the generic path (no parameters) for this request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Route { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Net_BaseRestRequest_Url_" data-uid="DSharpPlus.Net.BaseRestRequest.Url*"></a>
   <h4 id="DSharpPlus_Net_BaseRestRequest_Url" data-uid="DSharpPlus.Net.BaseRestRequest.Url">Url</h4>
   <div class="markdown level1 summary"><p>Gets the url to which this request is going to be made.</p>
@@ -284,7 +308,7 @@
   
   
   <a id="DSharpPlus_Net_BaseRestRequest_SetFaulted_" data-uid="DSharpPlus.Net.BaseRestRequest.SetFaulted*"></a>
-  <h4 id="DSharpPlus_Net_BaseRestRequest_SetFaulted_System_Exception_" data-uid="DSharpPlus.Net.BaseRestRequest.SetFaulted(System.Exception)">SetFaulted(Exception)</h4>
+  <h4 id="DSharpPlus_Net_BaseRestRequest_SetFaulted_Exception_" data-uid="DSharpPlus.Net.BaseRestRequest.SetFaulted(Exception)">SetFaulted(Exception)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -302,7 +326,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><span class="xref">Exception</span></td>
         <td><span class="parametername">ex</span></td>
         <td></td>
       </tr>
@@ -311,7 +335,7 @@
   
   
   <a id="DSharpPlus_Net_BaseRestRequest_TrySetFaulted_" data-uid="DSharpPlus.Net.BaseRestRequest.TrySetFaulted*"></a>
-  <h4 id="DSharpPlus_Net_BaseRestRequest_TrySetFaulted_System_Exception_" data-uid="DSharpPlus.Net.BaseRestRequest.TrySetFaulted(System.Exception)">TrySetFaulted(Exception)</h4>
+  <h4 id="DSharpPlus_Net_BaseRestRequest_TrySetFaulted_Exception_" data-uid="DSharpPlus.Net.BaseRestRequest.TrySetFaulted(Exception)">TrySetFaulted(Exception)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -329,7 +353,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><span class="xref">Exception</span></td>
         <td><span class="parametername">ex</span></td>
         <td></td>
       </tr>
@@ -402,7 +426,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class LavalinkNodeConnection
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -98,9 +98,61 @@
   </h3>
   
   
+  <a id="DSharpPlus_Lavalink_LavalinkNodeConnection_ConnectedGuilds_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.ConnectedGuilds*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkNodeConnection_ConnectedGuilds" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.ConnectedGuilds">ConnectedGuilds</h4>
+  <div class="markdown level1 summary"><p>Gets a dictionary of Lavalink guild connections for this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;ulong, LavalinkGuildConnection&gt; ConnectedGuilds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.UInt64</span>, <a class="xref" href="DSharpPlus.Lavalink.LavalinkGuildConnection.html">LavalinkGuildConnection</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Lavalink_LavalinkNodeConnection_Discord_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.Discord*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkNodeConnection_Discord" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.Discord">Discord</h4>
+  <div class="markdown level1 summary"><p>Gets the Discord client this node connection belongs to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordClient Discord { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Lavalink_LavalinkNodeConnection_IsConnected_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.IsConnected*"></a>
   <h4 id="DSharpPlus_Lavalink_LavalinkNodeConnection_IsConnected" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.IsConnected">IsConnected</h4>
-  <div class="markdown level1 summary"><p>Gets whether this channel is still connected.</p>
+  <div class="markdown level1 summary"><p>Gets whether the client is connected to Lavalink.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -150,14 +202,14 @@
   </table>
   
   
-  <a id="DSharpPlus_Lavalink_LavalinkNodeConnection_Rest_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.Rest*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkNodeConnection_Rest" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.Rest">Rest</h4>
-  <div class="markdown level1 summary"><p>Gets the REST client for this Lavalink connection.</p>
+  <a id="DSharpPlus_Lavalink_LavalinkNodeConnection_Parent_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.Parent*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkNodeConnection_Parent" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.Parent">Parent</h4>
+  <div class="markdown level1 summary"><p>Gets the parent extension which this node connection belongs to.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LavalinkRest Rest { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public LavalinkExtension Parent { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -169,7 +221,33 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Lavalink.LavalinkRest.html">LavalinkRest</a></td>
+        <td><a class="xref" href="DSharpPlus.Lavalink.LavalinkExtension.html">LavalinkExtension</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Lavalink_LavalinkNodeConnection_Rest_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.Rest*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkNodeConnection_Rest" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.Rest">Rest</h4>
+  <div class="markdown level1 summary"><p>Gets the REST client for this Lavalink connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LavalinkRestClient Rest { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Lavalink.LavalinkRestClient.html">LavalinkRestClient</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -249,14 +327,14 @@
   </table>
   
   
-  <a id="DSharpPlus_Lavalink_LavalinkNodeConnection_GetConnection_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.GetConnection*"></a>
-  <h4 id="DSharpPlus_Lavalink_LavalinkNodeConnection_GetConnection_DiscordGuild_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.GetConnection(DiscordGuild)">GetConnection(DiscordGuild)</h4>
+  <a id="DSharpPlus_Lavalink_LavalinkNodeConnection_GetGuildConnection_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.GetGuildConnection*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkNodeConnection_GetGuildConnection_DiscordGuild_" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.GetGuildConnection(DiscordGuild)">GetGuildConnection(DiscordGuild)</h4>
   <div class="markdown level1 summary"><p>Gets a Lavalink connection to specified Discord channel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LavalinkGuildConnection GetConnection(DiscordGuild guild)</code></pre>
+    <pre><code class="lang-csharp hljs">public LavalinkGuildConnection GetGuildConnection(DiscordGuild guild)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -328,7 +406,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;NodeDisconnectedEventArgs&gt; Disconnected</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;LavalinkNodeConnection, NodeDisconnectedEventArgs&gt; Disconnected</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -340,7 +418,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">NodeDisconnectedEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkNodeConnection.html">LavalinkNodeConnection</a>, <span class="xref">NodeDisconnectedEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -353,7 +431,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;SocketErrorEventArgs&gt; LavalinkSocketErrored</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;LavalinkNodeConnection, SocketErrorEventArgs&gt; LavalinkSocketErrored</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -365,7 +443,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">SocketErrorEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkNodeConnection.html">LavalinkNodeConnection</a>, <span class="xref">SocketErrorEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -378,7 +456,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;TrackFinishEventArgs&gt; PlaybackFinished</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;LavalinkGuildConnection, TrackFinishEventArgs&gt; PlaybackFinished</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -390,7 +468,33 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">TrackFinishEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkGuildConnection.html">LavalinkGuildConnection</a>, <span class="xref">TrackFinishEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DSharpPlus_Lavalink_LavalinkNodeConnection_PlaybackStarted" data-uid="DSharpPlus.Lavalink.LavalinkNodeConnection.PlaybackStarted">PlaybackStarted</h4>
+  <div class="markdown level1 summary"><p>Triggered whenever playback of a track starts.
+<p>This is only available for version 3.3.1 and greater.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;LavalinkGuildConnection, TrackStartEventArgs&gt; PlaybackStarted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkGuildConnection.html">LavalinkGuildConnection</a>, <span class="xref">TrackStartEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -403,7 +507,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;PlayerUpdateEventArgs&gt; PlayerUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;LavalinkGuildConnection, PlayerUpdateEventArgs&gt; PlayerUpdated</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -415,7 +519,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">PlayerUpdateEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkGuildConnection.html">LavalinkGuildConnection</a>, <span class="xref">PlayerUpdateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -428,7 +532,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;StatisticsReceivedEventArgs&gt; StatisticsReceived</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;LavalinkNodeConnection, StatisticsReceivedEventArgs&gt; StatisticsReceived</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -440,7 +544,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">StatisticsReceivedEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkNodeConnection.html">LavalinkNodeConnection</a>, <span class="xref">StatisticsReceivedEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -453,7 +557,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;TrackExceptionEventArgs&gt; TrackException</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;LavalinkGuildConnection, TrackExceptionEventArgs&gt; TrackException</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -465,7 +569,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">TrackExceptionEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkGuildConnection.html">LavalinkGuildConnection</a>, <span class="xref">TrackExceptionEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -478,7 +582,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;TrackStuckEventArgs&gt; TrackStuck</code></pre>
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;LavalinkGuildConnection, TrackStuckEventArgs&gt; TrackStuck</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -490,7 +594,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<span class="xref">TrackStuckEventArgs</span>&gt;</td>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.Lavalink.LavalinkGuildConnection.html">LavalinkGuildConnection</a>, <span class="xref">TrackStuckEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -520,7 +624,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

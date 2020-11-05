@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordGuild
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -186,6 +186,58 @@
   </table>
   
   
+  <a id="DSharpPlus_Entities_DiscordGuild_ApproximateMemberCount_" data-uid="DSharpPlus.Entities.DiscordGuild.ApproximateMemberCount*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_ApproximateMemberCount" data-uid="DSharpPlus.Entities.DiscordGuild.ApproximateMemberCount">ApproximateMemberCount</h4>
+  <div class="markdown level1 summary"><p>Gets the approximate number of members in this guild, when using <a class="xref" href="DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_GetGuildAsync_System_UInt64_System_Nullable_System_Boolean__">GetGuildAsync(UInt64, Nullable&lt;Boolean&gt;)</a> and having <code data-dev-comment-type="paramref" class="paramref">withCounts</code> set to true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? ApproximateMemberCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordGuild_ApproximatePresenceCount_" data-uid="DSharpPlus.Entities.DiscordGuild.ApproximatePresenceCount*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_ApproximatePresenceCount" data-uid="DSharpPlus.Entities.DiscordGuild.ApproximatePresenceCount">ApproximatePresenceCount</h4>
+  <div class="markdown level1 summary"><p>Gets the approximate number of presences in this guild, when using <a class="xref" href="DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_GetGuildAsync_System_UInt64_System_Nullable_System_Boolean__">GetGuildAsync(UInt64, Nullable&lt;Boolean&gt;)</a> and having <code data-dev-comment-type="paramref" class="paramref">withCounts</code> set to true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? ApproximatePresenceCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordGuild_Banner_" data-uid="DSharpPlus.Entities.DiscordGuild.Banner*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_Banner" data-uid="DSharpPlus.Entities.DiscordGuild.Banner">Banner</h4>
   <div class="markdown level1 summary"><p>Gets this guild&apos;s banner hash, when applicable.</p>
@@ -257,7 +309,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.UInt64</span>, <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a>&gt;</td>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.UInt64</span>, <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -465,7 +517,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.UInt64</span>, <a class="xref" href="DSharpPlus.Entities.DiscordEmoji.html">DiscordEmoji</a>&gt;</td>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.UInt64</span>, <a class="xref" href="DSharpPlus.Entities.DiscordEmoji.html">DiscordEmoji</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -543,7 +595,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -699,7 +751,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><span class="xref">DateTimeOffset</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -740,6 +792,32 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int? MaxPresences { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordGuild_MaxVideoChannelUsers_" data-uid="DSharpPlus.Entities.DiscordGuild.MaxVideoChannelUsers*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_MaxVideoChannelUsers" data-uid="DSharpPlus.Entities.DiscordGuild.MaxVideoChannelUsers">MaxVideoChannelUsers</h4>
+  <div class="markdown level1 summary"><p>Gets the maximum amount of users allowed per video channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? MaxVideoChannelUsers { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -803,7 +881,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.UInt64</span>, <a class="xref" href="DSharpPlus.Entities.DiscordMember.html">DiscordMember</a>&gt;</td>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.UInt64</span>, <a class="xref" href="DSharpPlus.Entities.DiscordMember.html">DiscordMember</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1039,7 +1117,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.UInt64</span>, <a class="xref" href="DSharpPlus.Entities.DiscordRole.html">DiscordRole</a>&gt;</td>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.UInt64</span>, <a class="xref" href="DSharpPlus.Entities.DiscordRole.html">DiscordRole</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1170,7 +1248,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">SystemChannelFlags</span></td>
+        <td><a class="xref" href="DSharpPlus.SystemChannelFlags.html">SystemChannelFlags</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1275,7 +1353,7 @@ the voice state corresponds to.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.UInt64</span>, <a class="xref" href="DSharpPlus.Entities.DiscordVoiceState.html">DiscordVoiceState</a>&gt;</td>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.UInt64</span>, <a class="xref" href="DSharpPlus.Entities.DiscordVoiceState.html">DiscordVoiceState</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1337,7 +1415,7 @@ the voice state corresponds to.</p>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_AddMemberAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.AddMemberAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_AddMemberAsync_DSharpPlus_Entities_DiscordUser_System_String_System_String_System_Collections_Generic_IEnumerable_DSharpPlus_Entities_DiscordRole__System_Boolean_System_Boolean_" data-uid="DSharpPlus.Entities.DiscordGuild.AddMemberAsync(DSharpPlus.Entities.DiscordUser,System.String,System.String,System.Collections.Generic.IEnumerable{DSharpPlus.Entities.DiscordRole},System.Boolean,System.Boolean)">AddMemberAsync(DiscordUser, String, String, IEnumerable&lt;DiscordRole&gt;, Boolean, Boolean)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_AddMemberAsync_DSharpPlus_Entities_DiscordUser_System_String_System_String_IEnumerable_DSharpPlus_Entities_DiscordRole__System_Boolean_System_Boolean_" data-uid="DSharpPlus.Entities.DiscordGuild.AddMemberAsync(DSharpPlus.Entities.DiscordUser,System.String,System.String,IEnumerable{DSharpPlus.Entities.DiscordRole},System.Boolean,System.Boolean)">AddMemberAsync(DiscordUser, String, String, IEnumerable&lt;DiscordRole&gt;, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Adds a new member to this guild</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1374,7 +1452,7 @@ the voice state corresponds to.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordRole.html">DiscordRole</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordRole.html">DiscordRole</a>&gt;</td>
         <td><span class="parametername">roles</span></td>
         <td><p>new roles</p>
 </td>
@@ -1405,6 +1483,37 @@ the voice state corresponds to.</p>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_CreateInstantInvite">CreateInstantInvite</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the <code data-dev-comment-type="paramref" class="paramref">user</code> or <code data-dev-comment-type="paramref" class="paramref">access_token</code> is not found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1449,6 +1558,37 @@ the voice state corresponds to.</p>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordIntegration.html">DiscordIntegration</a>&gt;</td>
         <td><p>The integration after being attached to the guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageGuild">ManageGuild</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the guild does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -1509,6 +1649,37 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_BanMembers">BanMembers</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the member does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_BanMemberAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.BanMemberAsync*"></a>
@@ -1565,10 +1736,41 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_BanMembers">BanMembers</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the member does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_CreateChannelAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateChannelAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_CreateChannelAsync_System_String_DSharpPlus_ChannelType_DSharpPlus_Entities_DiscordChannel_DSharpPlus_Entities_Optional_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Collections_Generic_IEnumerable_DSharpPlus_Entities_DiscordOverwriteBuilder__System_Nullable_System_Boolean__DSharpPlus_Entities_Optional_System_Nullable_System_Int32___System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateChannelAsync(System.String,DSharpPlus.ChannelType,DSharpPlus.Entities.DiscordChannel,DSharpPlus.Entities.Optional{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{DSharpPlus.Entities.DiscordOverwriteBuilder},System.Nullable{System.Boolean},DSharpPlus.Entities.Optional{System.Nullable{System.Int32}},System.String)">CreateChannelAsync(String, ChannelType, DiscordChannel, Optional&lt;String&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, IEnumerable&lt;DiscordOverwriteBuilder&gt;, Nullable&lt;Boolean&gt;, Optional&lt;Nullable&lt;Int32&gt;&gt;, String)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_CreateChannelAsync_System_String_DSharpPlus_ChannelType_DSharpPlus_Entities_DiscordChannel_DSharpPlus_Entities_Optional_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__IEnumerable_DSharpPlus_Entities_DiscordOverwriteBuilder__System_Nullable_System_Boolean__DSharpPlus_Entities_Optional_System_Nullable_System_Int32___System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateChannelAsync(System.String,DSharpPlus.ChannelType,DSharpPlus.Entities.DiscordChannel,DSharpPlus.Entities.Optional{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},IEnumerable{DSharpPlus.Entities.DiscordOverwriteBuilder},System.Nullable{System.Boolean},DSharpPlus.Entities.Optional{System.Nullable{System.Int32}},System.String)">CreateChannelAsync(String, ChannelType, DiscordChannel, Optional&lt;String&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, IEnumerable&lt;DiscordOverwriteBuilder&gt;, Nullable&lt;Boolean&gt;, Optional&lt;Nullable&lt;Int32&gt;&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new channel in this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1623,7 +1825,7 @@ the voice state corresponds to.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordOverwriteBuilder.html">DiscordOverwriteBuilder</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordOverwriteBuilder.html">DiscordOverwriteBuilder</a>&gt;</td>
         <td><span class="parametername">overwrites</span></td>
         <td><p>Permission overwrites for this channel.</p>
 </td>
@@ -1664,10 +1866,41 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageChannels">ManageChannels</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the guild does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_CreateChannelCategoryAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateChannelCategoryAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_CreateChannelCategoryAsync_System_String_System_Collections_Generic_IEnumerable_DSharpPlus_Entities_DiscordOverwriteBuilder__System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateChannelCategoryAsync(System.String,System.Collections.Generic.IEnumerable{DSharpPlus.Entities.DiscordOverwriteBuilder},System.String)">CreateChannelCategoryAsync(String, IEnumerable&lt;DiscordOverwriteBuilder&gt;, String)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_CreateChannelCategoryAsync_System_String_IEnumerable_DSharpPlus_Entities_DiscordOverwriteBuilder__System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateChannelCategoryAsync(System.String,IEnumerable{DSharpPlus.Entities.DiscordOverwriteBuilder},System.String)">CreateChannelCategoryAsync(String, IEnumerable&lt;DiscordOverwriteBuilder&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new channel category in this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1692,7 +1925,7 @@ the voice state corresponds to.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordOverwriteBuilder.html">DiscordOverwriteBuilder</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordOverwriteBuilder.html">DiscordOverwriteBuilder</a>&gt;</td>
         <td><span class="parametername">overwrites</span></td>
         <td><p>Permission overwrites for this category.</p>
 </td>
@@ -1721,10 +1954,41 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageChannels">ManageChannels</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the guild does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_CreateEmojiAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateEmojiAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_CreateEmojiAsync_System_String_Stream_System_Collections_Generic_IEnumerable_DSharpPlus_Entities_DiscordRole__System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateEmojiAsync(System.String,Stream,System.Collections.Generic.IEnumerable{DSharpPlus.Entities.DiscordRole},System.String)">CreateEmojiAsync(String, Stream, IEnumerable&lt;DiscordRole&gt;, String)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_CreateEmojiAsync_System_String_Stream_IEnumerable_DSharpPlus_Entities_DiscordRole__System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateEmojiAsync(System.String,Stream,IEnumerable{DSharpPlus.Entities.DiscordRole},System.String)">CreateEmojiAsync(String, Stream, IEnumerable&lt;DiscordRole&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new custom emoji for this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1755,7 +2019,7 @@ the voice state corresponds to.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordRole.html">DiscordRole</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordRole.html">DiscordRole</a>&gt;</td>
         <td><span class="parametername">roles</span></td>
         <td><p>Roles for which the emoji will be available. This works only if your application is whitelisted as integration.</p>
 </td>
@@ -1780,6 +2044,27 @@ the voice state corresponds to.</p>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordGuildEmoji.html">DiscordGuildEmoji</a>&gt;</td>
         <td><p>The newly-created emoji.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageEmojis">ManageEmojis</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -1859,10 +2144,31 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageRoles">ManageRoles</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_CreateTextChannelAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateTextChannelAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_CreateTextChannelAsync_System_String_DSharpPlus_Entities_DiscordChannel_DSharpPlus_Entities_Optional_System_String__System_Collections_Generic_IEnumerable_DSharpPlus_Entities_DiscordOverwriteBuilder__System_Nullable_System_Boolean__DSharpPlus_Entities_Optional_System_Nullable_System_Int32___System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateTextChannelAsync(System.String,DSharpPlus.Entities.DiscordChannel,DSharpPlus.Entities.Optional{System.String},System.Collections.Generic.IEnumerable{DSharpPlus.Entities.DiscordOverwriteBuilder},System.Nullable{System.Boolean},DSharpPlus.Entities.Optional{System.Nullable{System.Int32}},System.String)">CreateTextChannelAsync(String, DiscordChannel, Optional&lt;String&gt;, IEnumerable&lt;DiscordOverwriteBuilder&gt;, Nullable&lt;Boolean&gt;, Optional&lt;Nullable&lt;Int32&gt;&gt;, String)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_CreateTextChannelAsync_System_String_DSharpPlus_Entities_DiscordChannel_DSharpPlus_Entities_Optional_System_String__IEnumerable_DSharpPlus_Entities_DiscordOverwriteBuilder__System_Nullable_System_Boolean__DSharpPlus_Entities_Optional_System_Nullable_System_Int32___System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateTextChannelAsync(System.String,DSharpPlus.Entities.DiscordChannel,DSharpPlus.Entities.Optional{System.String},IEnumerable{DSharpPlus.Entities.DiscordOverwriteBuilder},System.Nullable{System.Boolean},DSharpPlus.Entities.Optional{System.Nullable{System.Int32}},System.String)">CreateTextChannelAsync(String, DiscordChannel, Optional&lt;String&gt;, IEnumerable&lt;DiscordOverwriteBuilder&gt;, Nullable&lt;Boolean&gt;, Optional&lt;Nullable&lt;Int32&gt;&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new text channel in this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1899,7 +2205,7 @@ the voice state corresponds to.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordOverwriteBuilder.html">DiscordOverwriteBuilder</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordOverwriteBuilder.html">DiscordOverwriteBuilder</a>&gt;</td>
         <td><span class="parametername">overwrites</span></td>
         <td><p>Permission overwrites for this channel.</p>
 </td>
@@ -1940,10 +2246,41 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageChannels">ManageChannels</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the guild does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_CreateVoiceChannelAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateVoiceChannelAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_CreateVoiceChannelAsync_System_String_DSharpPlus_Entities_DiscordChannel_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Collections_Generic_IEnumerable_DSharpPlus_Entities_DiscordOverwriteBuilder__System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateVoiceChannelAsync(System.String,DSharpPlus.Entities.DiscordChannel,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{DSharpPlus.Entities.DiscordOverwriteBuilder},System.String)">CreateVoiceChannelAsync(String, DiscordChannel, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, IEnumerable&lt;DiscordOverwriteBuilder&gt;, String)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_CreateVoiceChannelAsync_System_String_DSharpPlus_Entities_DiscordChannel_System_Nullable_System_Int32__System_Nullable_System_Int32__IEnumerable_DSharpPlus_Entities_DiscordOverwriteBuilder__System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateVoiceChannelAsync(System.String,DSharpPlus.Entities.DiscordChannel,System.Nullable{System.Int32},System.Nullable{System.Int32},IEnumerable{DSharpPlus.Entities.DiscordOverwriteBuilder},System.String)">CreateVoiceChannelAsync(String, DiscordChannel, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, IEnumerable&lt;DiscordOverwriteBuilder&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new voice channel in this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1986,7 +2323,7 @@ the voice state corresponds to.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordOverwriteBuilder.html">DiscordOverwriteBuilder</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordOverwriteBuilder.html">DiscordOverwriteBuilder</a>&gt;</td>
         <td><span class="parametername">overwrites</span></td>
         <td><p>Permission overwrites for this channel.</p>
 </td>
@@ -2011,6 +2348,37 @@ the voice state corresponds to.</p>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a>&gt;</td>
         <td><p>The newly-created channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageChannels">ManageChannels</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the guild does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -2068,6 +2436,27 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client is not the owner of the guild.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_DeleteEmojiAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.DeleteEmojiAsync*"></a>
@@ -2118,6 +2507,27 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageEmojis">ManageEmojis</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_DeleteIntegrationAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.DeleteIntegrationAsync*"></a>
@@ -2159,6 +2569,37 @@ the voice state corresponds to.</p>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageGuild">ManageGuild</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the guild does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2275,8 +2716,24 @@ the voice state corresponds to.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMember.html">DiscordMember</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMember.html">DiscordMember</a>&gt;&gt;</td>
         <td><p>A collection of all members in this guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -2332,8 +2789,29 @@ the voice state corresponds to.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordAuditLogEntry.html">DiscordAuditLogEntry</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordAuditLogEntry.html">DiscordAuditLogEntry</a>&gt;&gt;</td>
         <td><p>A collection of requested audit log entries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ViewAuditLog">ViewAuditLog</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -2359,8 +2837,29 @@ the voice state corresponds to.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordBan.html">DiscordBan</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordBan.html">DiscordBan</a>&gt;&gt;</td>
         <td><p>Collection of bans in this guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_BanMembers">BanMembers</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -2410,6 +2909,22 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_GetChannelsAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetChannelsAsync*"></a>
@@ -2431,8 +2946,24 @@ the voice state corresponds to.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a>&gt;&gt;</td>
         <td><p>A collection of this guild&apos;s channels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -2465,6 +2996,22 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_GetEmbedAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetEmbedAsync*"></a>
@@ -2488,6 +3035,37 @@ the voice state corresponds to.</p>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordGuildEmbed.html">DiscordGuildEmbed</a>&gt;</td>
         <td><p>This guild&apos;s widget.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageGuild">ManageGuild</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the guild does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -2537,6 +3115,22 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_GetEmojisAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetEmojisAsync*"></a>
@@ -2558,8 +3152,24 @@ the voice state corresponds to.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordGuildEmoji.html">DiscordGuildEmoji</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordGuildEmoji.html">DiscordGuildEmoji</a>&gt;&gt;</td>
         <td><p>All of this guild&apos;s custom emojis.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -2614,8 +3224,39 @@ the voice state corresponds to.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordIntegration.html">DiscordIntegration</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordIntegration.html">DiscordIntegration</a>&gt;&gt;</td>
         <td><p>Collection of integrations attached to this guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageGuild">ManageGuild</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the guild does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -2660,7 +3301,7 @@ the voice state corresponds to.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordInvite.html">DiscordInvite</a></td>
-        <td><p>An invite.</p>
+        <td><p>An invite, or null if not in cache.</p>
 </td>
       </tr>
     </tbody>
@@ -2686,8 +3327,24 @@ the voice state corresponds to.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordInvite.html">DiscordInvite</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordInvite.html">DiscordInvite</a>&gt;&gt;</td>
         <td><p>A collection of invites.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -2737,16 +3394,32 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_GetPruneCountAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetPruneCountAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_GetPruneCountAsync_System_Int32_" data-uid="DSharpPlus.Entities.DiscordGuild.GetPruneCountAsync(System.Int32)">GetPruneCountAsync(Int32)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_GetPruneCountAsync_System_Int32_IEnumerable_DSharpPlus_Entities_DiscordRole__" data-uid="DSharpPlus.Entities.DiscordGuild.GetPruneCountAsync(System.Int32,IEnumerable{DSharpPlus.Entities.DiscordRole})">GetPruneCountAsync(Int32, IEnumerable&lt;DiscordRole&gt;)</h4>
   <div class="markdown level1 summary"><p>Estimates the number of users to be pruned.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; GetPruneCountAsync(int days)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; GetPruneCountAsync(int days = 7, IEnumerable&lt;DiscordRole&gt; includedRoles = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2761,7 +3434,13 @@ the voice state corresponds to.</p>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">days</span></td>
-        <td><p>Minimum number of inactivity days required for users to be pruned.</p>
+        <td><p>Minimum number of inactivity days required for users to be pruned. Defaults to 7.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordRole.html">DiscordRole</a>&gt;</td>
+        <td><span class="parametername">includedRoles</span></td>
+        <td><p>The roles to be included in the prune.</p>
 </td>
       </tr>
     </tbody>
@@ -2778,6 +3457,37 @@ the voice state corresponds to.</p>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><p>Number of users that will be pruned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_KickMembers">KickMembers</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the guild does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -2827,6 +3537,22 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_GetVanityInviteAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetVanityInviteAsync*"></a>
@@ -2854,6 +3580,27 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageGuild">ManageGuild</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_GetWebhooksAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetWebhooksAsync*"></a>
@@ -2875,8 +3622,56 @@ the voice state corresponds to.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordWebhook.html">DiscordWebhook</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordWebhook.html">DiscordWebhook</a>&gt;&gt;</td>
         <td><p>A collection of webhooks this guild has.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageWebhooks">ManageWebhooks</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordGuild_GetWidgetAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetWidgetAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_GetWidgetAsync" data-uid="DSharpPlus.Entities.DiscordGuild.GetWidgetAsync">GetWidgetAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets the guild&apos;s widget</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordWidget&gt; GetWidgetAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordWidget.html">DiscordWidget</a>&gt;</td>
+        <td><p>The guild&apos;s widget</p>
 </td>
       </tr>
     </tbody>
@@ -2928,6 +3723,33 @@ the voice state corresponds to.</p>
   </table>
   
   
+  <a id="DSharpPlus_Entities_DiscordGuild_GetWidgetSettingsAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetWidgetSettingsAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_GetWidgetSettingsAsync" data-uid="DSharpPlus.Entities.DiscordGuild.GetWidgetSettingsAsync">GetWidgetSettingsAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets the guild&apos;s widget settings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordWidgetSettings&gt; GetWidgetSettingsAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordWidgetSettings.html">DiscordWidgetSettings</a>&gt;</td>
+        <td><p>The guild&apos;s widget settings</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordGuild_LeaveAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.LeaveAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_LeaveAsync" data-uid="DSharpPlus.Entities.DiscordGuild.LeaveAsync">LeaveAsync()</h4>
   <div class="markdown level1 summary"><p>Leaves this guild.</p>
@@ -2952,6 +3774,22 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_ListVoiceRegionsAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.ListVoiceRegionsAsync*"></a>
@@ -2973,8 +3811,24 @@ the voice state corresponds to.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordVoiceRegion.html">DiscordVoiceRegion</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordVoiceRegion.html">DiscordVoiceRegion</a>&gt;&gt;</td>
         <td><p>Voice regions available for this guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -2982,7 +3836,7 @@ the voice state corresponds to.</p>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_ModifyAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.ModifyAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_ModifyAsync_System_Action_GuildEditModel__" data-uid="DSharpPlus.Entities.DiscordGuild.ModifyAsync(System.Action{GuildEditModel})">ModifyAsync(Action&lt;GuildEditModel&gt;)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_ModifyAsync_Action_GuildEditModel__" data-uid="DSharpPlus.Entities.DiscordGuild.ModifyAsync(Action{GuildEditModel})">ModifyAsync(Action&lt;GuildEditModel&gt;)</h4>
   <div class="markdown level1 summary"><p>Modifies this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -3001,7 +3855,7 @@ the voice state corresponds to.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">GuildEditModel</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">GuildEditModel</span>&gt;</td>
         <td><span class="parametername">action</span></td>
         <td><p>Action to perform on this guild..</p>
 </td>
@@ -3024,10 +3878,41 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageGuild">ManageGuild</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the guild does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_ModifyEmojiAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.ModifyEmojiAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_ModifyEmojiAsync_DSharpPlus_Entities_DiscordGuildEmoji_System_String_System_Collections_Generic_IEnumerable_DSharpPlus_Entities_DiscordRole__System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.ModifyEmojiAsync(DSharpPlus.Entities.DiscordGuildEmoji,System.String,System.Collections.Generic.IEnumerable{DSharpPlus.Entities.DiscordRole},System.String)">ModifyEmojiAsync(DiscordGuildEmoji, String, IEnumerable&lt;DiscordRole&gt;, String)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_ModifyEmojiAsync_DSharpPlus_Entities_DiscordGuildEmoji_System_String_IEnumerable_DSharpPlus_Entities_DiscordRole__System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.ModifyEmojiAsync(DSharpPlus.Entities.DiscordGuildEmoji,System.String,IEnumerable{DSharpPlus.Entities.DiscordRole},System.String)">ModifyEmojiAsync(DiscordGuildEmoji, String, IEnumerable&lt;DiscordRole&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Modifies a this guild&apos;s custom emoji.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -3058,7 +3943,7 @@ the voice state corresponds to.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordRole.html">DiscordRole</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordRole.html">DiscordRole</a>&gt;</td>
         <td><span class="parametername">roles</span></td>
         <td><p>Roles for which the emoji will be available. This works only if your application is whitelisted as integration.</p>
 </td>
@@ -3083,6 +3968,27 @@ the voice state corresponds to.</p>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordGuildEmoji.html">DiscordGuildEmoji</a>&gt;</td>
         <td><p>The modified emoji.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageEmojis">ManageEmojis</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -3150,16 +4056,104 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageGuild">ManageGuild</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the guild does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordGuild_ModifyWidgetSettingsAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.ModifyWidgetSettingsAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_ModifyWidgetSettingsAsync_System_Nullable_System_Boolean__DSharpPlus_Entities_DiscordChannel_System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.ModifyWidgetSettingsAsync(System.Nullable{System.Boolean},DSharpPlus.Entities.DiscordChannel,System.String)">ModifyWidgetSettingsAsync(Nullable&lt;Boolean&gt;, DiscordChannel, String)</h4>
+  <div class="markdown level1 summary"><p>Modifies the guild&apos;s widget settings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordWidgetSettings&gt; ModifyWidgetSettingsAsync(bool? isEnabled = default(bool? ), DiscordChannel channel = null, string reason = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">isEnabled</span></td>
+        <td><p>If the widget is enabled or not</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>Widget channel</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>Reason the widget settings were modified</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordWidgetSettings.html">DiscordWidgetSettings</a>&gt;</td>
+        <td><p>The newly modified widget settings</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_PruneAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.PruneAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_PruneAsync_System_Int32_System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.PruneAsync(System.Int32,System.String)">PruneAsync(Int32, String)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_PruneAsync_System_Int32_System_Boolean_IEnumerable_DSharpPlus_Entities_DiscordRole__System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.PruneAsync(System.Int32,System.Boolean,IEnumerable{DSharpPlus.Entities.DiscordRole},System.String)">PruneAsync(Int32, Boolean, IEnumerable&lt;DiscordRole&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Prunes inactive users from this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; PruneAsync(int days, string reason = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;int?&gt; PruneAsync(int days = 7, bool computePruneCount = true, IEnumerable&lt;DiscordRole&gt; includedRoles = null, string reason = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3174,7 +4168,19 @@ the voice state corresponds to.</p>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">days</span></td>
-        <td><p>Minimum number of inactivity days required for users to be pruned.</p>
+        <td><p>Minimum number of inactivity days required for users to be pruned. Defaults to 7.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">computePruneCount</span></td>
+        <td><p>Whether to return the prune count after this method completes. This is discouraged for larger guilds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordRole.html">DiscordRole</a>&gt;</td>
+        <td><span class="parametername">includedRoles</span></td>
+        <td><p>The roles to be included in the prune.</p>
 </td>
       </tr>
       <tr>
@@ -3195,23 +4201,98 @@ the voice state corresponds to.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;&gt;</td>
         <td><p>Number of users pruned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageChannels">ManageChannels</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the guild does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="DSharpPlus_Entities_DiscordGuild_RequestAllMembersAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.RequestAllMembersAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_RequestAllMembersAsync" data-uid="DSharpPlus.Entities.DiscordGuild.RequestAllMembersAsync">RequestAllMembersAsync()</h4>
-  <div class="markdown level1 summary"><p>Requests that Discord send a complete list of guild members. This method will return immediately.</p>
+  <a id="DSharpPlus_Entities_DiscordGuild_RequestMembersAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.RequestMembersAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_RequestMembersAsync_System_String_System_Int32_System_Nullable_System_Boolean__IEnumerable_System_UInt64__System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.RequestMembersAsync(System.String,System.Int32,System.Nullable{System.Boolean},IEnumerable{System.UInt64},System.String)">RequestMembersAsync(String, Int32, Nullable&lt;Boolean&gt;, IEnumerable&lt;UInt64&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Requests that Discord send a list of guild members based on the specified arguments. This method will fire the <a class="xref" href="DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_GuildMembersChunked">GuildMembersChunked</a> event.
+<p>If no arguments aside from <code data-dev-comment-type="paramref" class="paramref">presences</code> and <code data-dev-comment-type="paramref" class="paramref">nonce</code> are specified, this will request all guild members.</p></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task RequestAllMembersAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task RequestMembersAsync(string query = &quot;&quot;, int limit = 0, bool? presences = default(bool? ), IEnumerable&lt;ulong&gt; userIds = null, string nonce = null)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>Filters the returned members based on what the username starts with. Either this or <code data-dev-comment-type="paramref" class="paramref">userIds</code> must not be null. 
+The <code data-dev-comment-type="paramref" class="paramref">limit</code> must also be greater than 0 if this is specified.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>Total number of members to request. This must be greater than 0 if <code data-dev-comment-type="paramref" class="paramref">query</code> is specified.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">presences</span></td>
+        <td><p>Whether to include the <a class="xref" href="DSharpPlus.EventArgs.GuildMembersChunkEventArgs.html#DSharpPlus_EventArgs_GuildMembersChunkEventArgs_Presences">Presences</a> associated with the fetched members.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">userIds</span></td>
+        <td><p>Whether to limit the request to the specified user ids. Either this or <code data-dev-comment-type="paramref" class="paramref">query</code> must not be null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">nonce</span></td>
+        <td><p>The unique string to identify the response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -3268,6 +4349,37 @@ the voice state corresponds to.</p>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageGuild">ManageGuild</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the guild does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3350,6 +4462,37 @@ the voice state corresponds to.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_BanMembers">BanMembers</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the user does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_UnbanMemberAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.UnbanMemberAsync*"></a>
@@ -3397,6 +4540,37 @@ the voice state corresponds to.</p>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_BanMembers">BanMembers</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the user does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3529,7 +4703,7 @@ the voice state corresponds to.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

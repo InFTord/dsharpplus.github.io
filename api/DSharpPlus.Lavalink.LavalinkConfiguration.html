@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class LavalinkConfiguration
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -167,6 +167,33 @@
   </table>
   
   
+  <a id="DSharpPlus_Lavalink_LavalinkConfiguration_Region_" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.Region*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkConfiguration_Region" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.Region">Region</h4>
+  <div class="markdown level1 summary"><p>Sets the voice region ID for the Lavalink connection.
+<p>This should be used if nodes should be filtered by region with <a class="xref" href="DSharpPlus.Lavalink.LavalinkExtension.html#DSharpPlus_Lavalink_LavalinkExtension_GetIdealNodeConnection_DiscordVoiceRegion_">GetIdealNodeConnection(DiscordVoiceRegion)</a>.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordVoiceRegion Region { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DiscordVoiceRegion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Lavalink_LavalinkConfiguration_RestEndpoint_" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.RestEndpoint*"></a>
   <h4 id="DSharpPlus_Lavalink_LavalinkConfiguration_RestEndpoint" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.RestEndpoint">RestEndpoint</h4>
   <div class="markdown level1 summary"><p>Sets the endpoint for Lavalink REST.
@@ -248,6 +275,33 @@
   </table>
   
   
+  <a id="DSharpPlus_Lavalink_LavalinkConfiguration_SocketAutoReconnect_" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.SocketAutoReconnect*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkConfiguration_SocketAutoReconnect" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.SocketAutoReconnect">SocketAutoReconnect</h4>
+  <div class="markdown level1 summary"><p>Sets whether the connection wrapper should attempt automatic reconnects should the connection drop.
+<p>Defaults to true.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SocketAutoReconnect { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Lavalink_LavalinkConfiguration_SocketEndpoint_" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.SocketEndpoint*"></a>
   <h4 id="DSharpPlus_Lavalink_LavalinkConfiguration_SocketEndpoint" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.SocketEndpoint">SocketEndpoint</h4>
   <div class="markdown level1 summary"><p>Sets the endpoint for the Lavalink Websocket connection.
@@ -269,6 +323,34 @@
     <tbody>
       <tr>
         <td><span class="xref">ConnectionEndpoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Lavalink_LavalinkConfiguration_WebSocketCloseTimeout_" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.WebSocketCloseTimeout*"></a>
+  <h4 id="DSharpPlus_Lavalink_LavalinkConfiguration_WebSocketCloseTimeout" data-uid="DSharpPlus.Lavalink.LavalinkConfiguration.WebSocketCloseTimeout">WebSocketCloseTimeout</h4>
+  <div class="markdown level1 summary"><p>Sets the time in miliseconds to wait for Lavalink&apos;s voice WebSocket to close after leaving a voice channel.
+<p>This will be the delay before the guild connection is removed.</p>
+<p>Defaults to 3000 miliseconds.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WebSocketCloseTimeout { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -298,7 +380,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

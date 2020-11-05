@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ExtensionMethods
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -143,14 +143,14 @@
   </table>
   
   
-  <a id="DSharpPlus_CommandsNext_ExtensionMethods_GetCommandsNext_" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.GetCommandsNext*"></a>
-  <h4 id="DSharpPlus_CommandsNext_ExtensionMethods_GetCommandsNext_DSharpPlus_DiscordShardedClient_" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.GetCommandsNext(DSharpPlus.DiscordShardedClient)">GetCommandsNext(DiscordShardedClient)</h4>
+  <a id="DSharpPlus_CommandsNext_ExtensionMethods_GetCommandsNextAsync_" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.GetCommandsNextAsync*"></a>
+  <h4 id="DSharpPlus_CommandsNext_ExtensionMethods_GetCommandsNextAsync_DSharpPlus_DiscordShardedClient_" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.GetCommandsNextAsync(DSharpPlus.DiscordShardedClient)">GetCommandsNextAsync(DiscordShardedClient)</h4>
   <div class="markdown level1 summary"><p>Gets the active CommandsNext modules for all shards in this client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IReadOnlyDictionary&lt;int, CommandsNextExtension&gt; GetCommandsNext(this DiscordShardedClient client)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;IReadOnlyDictionary&lt;int, CommandsNextExtension&gt;&gt; GetCommandsNextAsync(this DiscordShardedClient client)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -180,7 +180,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a>&gt;&gt;</td>
         <td><p>A dictionary of the modules, indexed by shard id.</p>
 </td>
       </tr>
@@ -282,7 +282,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a>&gt;&gt;</td>
         <td><p>A dictionary of created <a class="xref" href="DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a>, indexed by shard id.</p>
 </td>
       </tr>
@@ -313,7 +313,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

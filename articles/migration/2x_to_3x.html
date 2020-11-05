@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>I updated the library and now I'm drowning in red underline! </title>
+    <title>Migration 2.x - 3.x </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="I updated the library and now I'm drowning in red underline! ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="title" content="Migration 2.x - 3.x ">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -73,44 +73,71 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="i-updated-the-library-and-now-im-drowning-in-red-underline">I updated the library and now I&#39;m drowning in red underline!</h1>
+            <article class="content wrap" id="_content" data-uid="migration_2_3">
+<h1 id="migration-from-2x-to-3x">Migration From 2.x to 3.x</h1>
 
-<p>3.0 was a major breaking change compared to 2.0. A lot has changed internally, and even more externally.</p>
-<p>Among the breaking changes there are:</p>
+<p>Major breaking changes:</p>
 <ul>
 <li>Most classes were organized into namespaces.</li>
 <li>Several classes and methods were renamed to maintain consistency with the rest of the library.</li>
 <li>All events were renamed to be in the past tense.</li>
-<li><a class="xref" href="../../api/DSharpPlus.Entities.DiscordEmbed.html">DiscordEmbed</a> instances are no longer constructed directly; instead, they are built via the brand-new 
-<a class="xref" href="../../api/DSharpPlus.Entities.DiscordEmbedBuilder.html">DiscordEmbedBuilder</a>.</li>
-<li>All colors are now passed as instances of <a class="xref" href="../../api/DSharpPlus.Entities.DiscordColor.html">DiscordColor</a>.</li>
-<li>Concept of default channel has been removed as it no longer exists; this means that you can no longer create invites to 
-guilds directly.</li>
-<li>Modules are now based on an abstract class rather than an interface.</li>
-<li>A brand-new ratelimit handler was implemented.</li>
+<li><code>DiscordEmbed</code> instances are no longer constructed directly. <ul>
+<li>Instead, they are built using a <code>DiscordEmbedBuilder</code>.</li>
 </ul>
-<p>The list of changes goes on, but the above are what affects the consumers of the library. Some of them require major changes to 
-your code.</p>
+</li>
+<li>All colors are now passed as instances of <code>DiscordColor</code>.</li>
+<li>Command modules are now based on an abstract class rather than an interface.</li>
+<li>A brand-new ratelimit handler has been implemented.</li>
+</ul>
 <h2 id="fixing-namespace-issues">Fixing namespace issues.</h2>
-<p>One of the fastest fixes is adding missing <code>using</code> instructions to your code. For entities such as <code>DiscordUser</code>, 
-<code>DiscordChannel</code>, etc. this requires adding <code>DSharpPlus.Entities</code> namespace. Exceptions lie in <code>DSharpPlus.Exceptions</code>, event 
-arg classes can be found in <code>DSharpPlus.EventArgs</code>, and network components are in <code>DSharpPlus.Net</code>.</p>
-<h2 id="major-renames">Major renames</h2>
-<p>Several classes and methods were renamed to fit the current naming scheme in the library. Most notable ones are:</p>
-<ul>
-<li><code>DiscordConfig</code> -&gt; <code>DiscordConfiguration</code></li>
-<li><code>CommandExecutedEventArgs</code> -&gt; <code>CommandExecutionEventArgs</code></li>
-<li><code>SnowflakeObject.CreationDate</code> -&gt; <code>SnowflakeObject.CreationTimestamp</code></li>
-<li><code>VoiceReceivedEventArgs</code> -&gt; <code>VoiceReceiveEventArgs</code></li>
-<li><code>DiscordMessage.EditAsync()</code> -&gt; <code>DiscordMessage.ModifyAsync()</code></li>
-<li><code>SocketDisconnectEventArgs</code> -&gt; <code>SocketCloseEventArgs</code></li>
-<li><code>DiscordMember.TakeRoleAsync()</code> -&gt; <code>DiscordMember.RevokeRoleAsync()</code></li>
-<li><code>MessageReactionRemoveAllEventArgs</code> -&gt; <code>MessageReactionsClearEventArgs</code></li>
-</ul>
-<h2 id="event-renames">Event renames</h2>
-<p>All events received a rename to maintain consistent naming across the library. If your event shows up as not found, try adding 
-<code>d</code> or <code>ed</code> to the end of its name.</p>
+<p>Entities such as <code>DiscordUser</code>, <code>DiscordChannel</code>, and similar are in the <code>DSharpPlus.Entities</code> namespace, exceptions in <code>DSharpPlus.Exceptions</code>,
+event arguments in <code>DSharpPlus.EventArgs</code>, and network components in <code>DSharpPlus.Net</code>.</p>
+<p>Be sure to add these namespaces to your <code>using</code> directives as needed.</p>
+<h2 id="class-method-and-event-renames">Class, Method, and Event Renames</h2>
+<p>Several classes and methods were renamed to fit the current naming scheme in the library.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">2.X</th>
+<th style="text-align:center">3.X</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>DiscordConfig</code></td>
+<td style="text-align:center"><code>DiscordConfiguration</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>CommandExecutedEventArgs</code></td>
+<td style="text-align:center"><code>CommandExecutionEventArgs</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>SnowflakeObject.CreationDate</code></td>
+<td style="text-align:center"><code>SnowflakeObject.CreationTimestamp</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>VoiceReceivedEventArgs</code></td>
+<td style="text-align:center"><code>VoiceReceiveEventArgs</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>DiscordMessage.EditAsync()</code></td>
+<td style="text-align:center"><code>DiscordMessage.ModifyAsync()</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>SocketDisconnectEventArgs</code></td>
+<td style="text-align:center"><code>SocketCloseEventArgs</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>DiscordMember.TakeRoleAsync()</code></td>
+<td style="text-align:center"><code>DiscordMember.RevokeRoleAsync()</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>MessageReactionRemoveAllEventArgs</code></td>
+<td style="text-align:center"><code>MessageReactionsClearEventArgs</code></td>
+</tr>
+</tbody>
+</table>
+<p>Additionally, all events received a rename to maintain consistent naming across the library with many receiving an <em>d</em> or <em>ed</em> to the end of their name.</p>
 <h2 id="embed-woes">Embed woes</h2>
 <p>Embeds can no longer be constructed or modified directly. Instead, you have to use the embed builder. For the most part, this 
 can be achieved using Find/Replace and doing <code>new DiscordEmbed</code> -&gt; <code>new DiscordEmbedBuilder</code>.</p>
@@ -161,7 +188,7 @@ changes drastically.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

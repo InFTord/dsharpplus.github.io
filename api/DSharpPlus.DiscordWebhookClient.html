@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordWebhookClient
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -139,13 +139,13 @@
   
   
   <a id="DSharpPlus_DiscordWebhookClient__ctor_" data-uid="DSharpPlus.DiscordWebhookClient.#ctor*"></a>
-  <h4 id="DSharpPlus_DiscordWebhookClient__ctor_IWebProxy_System_TimeSpan_" data-uid="DSharpPlus.DiscordWebhookClient.#ctor(IWebProxy,System.TimeSpan)">DiscordWebhookClient(IWebProxy, TimeSpan)</h4>
+  <h4 id="DSharpPlus_DiscordWebhookClient__ctor_IWebProxy_TimeSpan_System_Boolean_" data-uid="DSharpPlus.DiscordWebhookClient.#ctor(IWebProxy,TimeSpan,System.Boolean)">DiscordWebhookClient(IWebProxy, TimeSpan, Boolean)</h4>
   <div class="markdown level1 summary"><p>Creates a new webhook client, with specified HTTP proxy and timeout settings.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordWebhookClient(IWebProxy proxy, TimeSpan timeout)</code></pre>
+    <pre><code class="lang-csharp hljs">public DiscordWebhookClient(IWebProxy proxy, TimeSpan timeout, bool useRelativeRateLimit = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -164,9 +164,15 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><span class="parametername">timeout</span></td>
         <td><p>Timeout to use for HTTP requests. Set to <span class="xref">System.Threading.Timeout.InfiniteTimeSpan</span> to disable timeouts.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useRelativeRateLimit</span></td>
+        <td><p>Whether to use the system clock for computing rate limit resets. See <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_UseRelativeRatelimit">UseRelativeRatelimit</a> for more details.</p>
 </td>
       </tr>
     </tbody>
@@ -246,7 +252,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">DiscordWebhook</span>&gt;</td>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">DiscordWebhook</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -448,13 +454,13 @@
   
   
   <a id="DSharpPlus_DiscordWebhookClient_BroadcastMessageAsync_" data-uid="DSharpPlus.DiscordWebhookClient.BroadcastMessageAsync*"></a>
-  <h4 id="DSharpPlus_DiscordWebhookClient_BroadcastMessageAsync_System_String_System_Collections_Generic_List_DiscordEmbed__System_Boolean_System_String_System_String_System_Collections_Generic_Dictionary_System_String_Stream__" data-uid="DSharpPlus.DiscordWebhookClient.BroadcastMessageAsync(System.String,System.Collections.Generic.List{DiscordEmbed},System.Boolean,System.String,System.String,System.Collections.Generic.Dictionary{System.String,Stream})">BroadcastMessageAsync(String, List&lt;DiscordEmbed&gt;, Boolean, String, String, Dictionary&lt;String, Stream&gt;)</h4>
+  <h4 id="DSharpPlus_DiscordWebhookClient_BroadcastMessageAsync_DiscordWebhookBuilder_" data-uid="DSharpPlus.DiscordWebhookClient.BroadcastMessageAsync(DiscordWebhookBuilder)">BroadcastMessageAsync(DiscordWebhookBuilder)</h4>
   <div class="markdown level1 summary"><p>Broadcasts a message to all registered webhooks.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task BroadcastMessageAsync(string content = null, List&lt;DiscordEmbed&gt; embeds = null, bool tts = false, string username_override = null, string avatar_override = null, Dictionary&lt;string, Stream&gt; files = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;Dictionary&lt;DiscordWebhook, DiscordMessage&gt;&gt; BroadcastMessageAsync(DiscordWebhookBuilder builder)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -467,39 +473,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">content</span></td>
-        <td><p>Contents of the message to broadcast.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">DiscordEmbed</span>&gt;</td>
-        <td><span class="parametername">embeds</span></td>
-        <td><p>Embeds to send with the messages.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">tts</span></td>
-        <td><p>Whether the messages should be read aloud using TTS engine.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">username_override</span></td>
-        <td><p>Username to use for this broadcast.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">avatar_override</span></td>
-        <td><p>Avatar URL to use for this broadcast.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Stream</span>&gt;</td>
-        <td><span class="parametername">files</span></td>
-        <td><p>Files to broadcast.</p>
+        <td><span class="xref">DiscordWebhookBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>Webhook builder filled with data to send.</p>
 </td>
       </tr>
     </tbody>
@@ -514,91 +490,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Dictionary</span>&lt;<span class="xref">DiscordWebhook</span>, <span class="xref">DiscordMessage</span>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="DSharpPlus_DiscordWebhookClient_BroadcastMessageAsync_" data-uid="DSharpPlus.DiscordWebhookClient.BroadcastMessageAsync*"></a>
-  <h4 id="DSharpPlus_DiscordWebhookClient_BroadcastMessageAsync_System_String_System_Collections_Generic_List_DiscordEmbed__System_Boolean_System_String_System_String_System_String_Stream_" data-uid="DSharpPlus.DiscordWebhookClient.BroadcastMessageAsync(System.String,System.Collections.Generic.List{DiscordEmbed},System.Boolean,System.String,System.String,System.String,Stream)">BroadcastMessageAsync(String, List&lt;DiscordEmbed&gt;, Boolean, String, String, String, Stream)</h4>
-  <div class="markdown level1 summary"><p>Broadcasts a message to all registered webhooks.</p>
-</div>
+  <a id="DSharpPlus_DiscordWebhookClient_Finalize_" data-uid="DSharpPlus.DiscordWebhookClient.Finalize*"></a>
+  <h4 id="DSharpPlus_DiscordWebhookClient_Finalize" data-uid="DSharpPlus.DiscordWebhookClient.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task BroadcastMessageAsync(string content = null, List&lt;DiscordEmbed&gt; embeds = null, bool tts = false, string username_override = null, string avatar_override = null, string file_name = null, Stream file_data = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">content</span></td>
-        <td><p>Contents of the message to broadcast.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">DiscordEmbed</span>&gt;</td>
-        <td><span class="parametername">embeds</span></td>
-        <td><p>Embeds to send with the messages.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">tts</span></td>
-        <td><p>Whether the messages should be read aloud using TTS engine.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">username_override</span></td>
-        <td><p>Username to use for this broadcast.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">avatar_override</span></td>
-        <td><p>Avatar URL to use for this broadcast.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file_name</span></td>
-        <td><p>Name of the file to broadcast.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">file_data</span></td>
-        <td><p>Content of the file to broadcast.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="DSharpPlus_DiscordWebhookClient_GetRegisteredWebhook_" data-uid="DSharpPlus.DiscordWebhookClient.GetRegisteredWebhook*"></a>
@@ -714,7 +620,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

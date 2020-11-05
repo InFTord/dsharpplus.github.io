@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordConfiguration
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -167,33 +167,6 @@
   </table>
   
   
-  <a id="DSharpPlus_DiscordConfiguration_DateTimeFormat_" data-uid="DSharpPlus.DiscordConfiguration.DateTimeFormat*"></a>
-  <h4 id="DSharpPlus_DiscordConfiguration_DateTimeFormat" data-uid="DSharpPlus.DiscordConfiguration.DateTimeFormat">DateTimeFormat</h4>
-  <div class="markdown level1 summary"><p>Allows you to overwrite the time format used by the internal debug logger.</p>
-<p>Only applicable when <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_UseInternalLogHandler">UseInternalLogHandler</a> is set to true. Defaults to ISO 8601-like format.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string DateTimeFormat { set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="DSharpPlus_DiscordConfiguration_GatewayCompressionLevel_" data-uid="DSharpPlus.DiscordConfiguration.GatewayCompressionLevel*"></a>
   <h4 id="DSharpPlus_DiscordConfiguration_GatewayCompressionLevel" data-uid="DSharpPlus.DiscordConfiguration.GatewayCompressionLevel">GatewayCompressionLevel</h4>
   <div class="markdown level1 summary"><p>Sets the level of compression for WebSocket traffic.</p>
@@ -243,7 +216,35 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordConfiguration_Intents_" data-uid="DSharpPlus.DiscordConfiguration.Intents*"></a>
+  <h4 id="DSharpPlus_DiscordConfiguration_Intents" data-uid="DSharpPlus.DiscordConfiguration.Intents">Intents</h4>
+  <div class="markdown level1 summary"><p>Sets the gateway intents for this client.</p>
+<p>If set, the client will only receive events that they specify with intents.</p>
+<p>Defaults to null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordIntents? Intents { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DSharpPlus.DiscordIntents.html">DiscordIntents</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -277,15 +278,16 @@
   </table>
   
   
-  <a id="DSharpPlus_DiscordConfiguration_LogLevel_" data-uid="DSharpPlus.DiscordConfiguration.LogLevel*"></a>
-  <h4 id="DSharpPlus_DiscordConfiguration_LogLevel" data-uid="DSharpPlus.DiscordConfiguration.LogLevel">LogLevel</h4>
-  <div class="markdown level1 summary"><p>Sets the maximum logging level for messages.</p>
-<p>Typically, the default value of <a class="xref" href="DSharpPlus.LogLevel.html#DSharpPlus_LogLevel_Info">Info</a> is ok for most uses.</p>
+  <a id="DSharpPlus_DiscordConfiguration_LoggerFactory_" data-uid="DSharpPlus.DiscordConfiguration.LoggerFactory*"></a>
+  <h4 id="DSharpPlus_DiscordConfiguration_LoggerFactory" data-uid="DSharpPlus.DiscordConfiguration.LoggerFactory">LoggerFactory</h4>
+  <div class="markdown level1 summary"><p>Sets the logger implementation to use.</p>
+<p>To create your own logger, implement the <see cref="!:ILoggerFactory"></see> instance.</p>
+<p>Defaults to built-in implementation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LogLevel LogLevel { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ILoggerFactory LoggerFactory { set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -297,7 +299,34 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.LogLevel.html">LogLevel</a></td>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordConfiguration_LogTimestampFormat_" data-uid="DSharpPlus.DiscordConfiguration.LogTimestampFormat*"></a>
+  <h4 id="DSharpPlus_DiscordConfiguration_LogTimestampFormat" data-uid="DSharpPlus.DiscordConfiguration.LogTimestampFormat">LogTimestampFormat</h4>
+  <div class="markdown level1 summary"><p>Allows you to overwrite the time format used by the internal debug logger.</p>
+<p>Only applicable when <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_LoggerFactory">LoggerFactory</a> is set left at default value. Defaults to ISO 8601-like format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LogTimestampFormat { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -325,6 +354,33 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordConfiguration_MinimumLogLevel_" data-uid="DSharpPlus.DiscordConfiguration.MinimumLogLevel*"></a>
+  <h4 id="DSharpPlus_DiscordConfiguration_MinimumLogLevel" data-uid="DSharpPlus.DiscordConfiguration.MinimumLogLevel">MinimumLogLevel</h4>
+  <div class="markdown level1 summary"><p>Sets the minimum logging level for messages.</p>
+<p>Typically, the default value of <see cref="!:LogLevel.Information"></see> is ok for most uses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LogLevel MinimumLogLevel { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LogLevel</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -521,15 +577,17 @@
   </table>
   
   
-  <a id="DSharpPlus_DiscordConfiguration_UseInternalLogHandler_" data-uid="DSharpPlus.DiscordConfiguration.UseInternalLogHandler*"></a>
-  <h4 id="DSharpPlus_DiscordConfiguration_UseInternalLogHandler" data-uid="DSharpPlus.DiscordConfiguration.UseInternalLogHandler">UseInternalLogHandler</h4>
-  <div class="markdown level1 summary"><p>Sets whether to use the internal log handler.</p>
-<p>This is disabled by default. Use it if you don&apos;t want to provide your own log handlers.</p>
+  <a id="DSharpPlus_DiscordConfiguration_UseRelativeRatelimit_" data-uid="DSharpPlus.DiscordConfiguration.UseRelativeRatelimit*"></a>
+  <h4 id="DSharpPlus_DiscordConfiguration_UseRelativeRatelimit" data-uid="DSharpPlus.DiscordConfiguration.UseRelativeRatelimit">UseRelativeRatelimit</h4>
+  <div class="markdown level1 summary"><p>Sets whether to rely on Discord for NTP (Network Time Protocol) synchronization with the &quot;X-Ratelimit-Reset-After&quot; header.</p>
+<p>If the system clock is unsynced, setting this to true will ensure ratelimits are synced with Discord and reduce the risk of hitting one.</p>
+<p>This should only be set to false if the system clock is synced with NTP.</p>
+<p>Defaults to true.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool UseInternalLogHandler { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool UseRelativeRatelimit { set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -599,7 +657,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

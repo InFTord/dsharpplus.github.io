@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordUser
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -215,7 +215,8 @@
   
   <a id="DSharpPlus_Entities_DiscordUser_Email_" data-uid="DSharpPlus.Entities.DiscordUser.Email*"></a>
   <h4 id="DSharpPlus_Entities_DiscordUser_Email" data-uid="DSharpPlus.Entities.DiscordUser.Email">Email</h4>
-  <div class="markdown level1 summary"><p>Gets the user&apos;s email address.</p>
+  <div class="markdown level1 summary"><p>Gets the user&apos;s email address.
+<p>This is only present in OAuth.</p></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -233,6 +234,32 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordUser_Flags_" data-uid="DSharpPlus.Entities.DiscordUser.Flags*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordUser_Flags" data-uid="DSharpPlus.Entities.DiscordUser.Flags">Flags</h4>
+  <div class="markdown level1 summary"><p>Gets the user&apos;s flags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual UserFlags? Flags { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DSharpPlus.UserFlags.html">UserFlags</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -285,6 +312,32 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordUser_IsSystem_" data-uid="DSharpPlus.Entities.DiscordUser.IsSystem*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordUser_IsSystem" data-uid="DSharpPlus.Entities.DiscordUser.IsSystem">IsSystem</h4>
+  <div class="markdown level1 summary"><p>Gets whether the user is an official Discord system user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? IsSystem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -363,6 +416,32 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordUser_OAuthFlags_" data-uid="DSharpPlus.Entities.DiscordUser.OAuthFlags*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordUser_OAuthFlags" data-uid="DSharpPlus.Entities.DiscordUser.OAuthFlags">OAuthFlags</h4>
+  <div class="markdown level1 summary"><p>Gets the user&apos;s flags for OAuth.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual UserFlags? OAuthFlags { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DSharpPlus.UserFlags.html">UserFlags</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -449,7 +528,8 @@
   
   <a id="DSharpPlus_Entities_DiscordUser_Verified_" data-uid="DSharpPlus.Entities.DiscordUser.Verified*"></a>
   <h4 id="DSharpPlus_Entities_DiscordUser_Verified" data-uid="DSharpPlus.Entities.DiscordUser.Verified">Verified</h4>
-  <div class="markdown level1 summary"><p>Gets whether the user is verified.</p>
+  <div class="markdown level1 summary"><p>Gets whether the user is verified.
+<p>This is only present in OAuth.</p></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -724,6 +804,37 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_BanMembers">BanMembers</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the user does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="operators">Operators
   </h3>
   
@@ -853,7 +964,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

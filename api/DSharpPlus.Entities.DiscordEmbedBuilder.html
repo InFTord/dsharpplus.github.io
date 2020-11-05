@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordEmbedBuilder
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -142,7 +142,7 @@
   
   <a id="DSharpPlus_Entities_DiscordEmbedBuilder_Author_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.Author*"></a>
   <h4 id="DSharpPlus_Entities_DiscordEmbedBuilder_Author" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.Author">Author</h4>
-  <div class="markdown level1 summary"><p>Gets the embed&apos;s author.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the embed&apos;s author.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -237,7 +237,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordEmbedField.html">DiscordEmbedField</a>&gt;</td>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordEmbedField.html">DiscordEmbedField</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -246,7 +246,7 @@
   
   <a id="DSharpPlus_Entities_DiscordEmbedBuilder_Footer_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.Footer*"></a>
   <h4 id="DSharpPlus_Entities_DiscordEmbedBuilder_Footer" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.Footer">Footer</h4>
-  <div class="markdown level1 summary"><p>Gets the embed&apos;s footer.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the embed&apos;s footer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -296,14 +296,14 @@
   </table>
   
   
-  <a id="DSharpPlus_Entities_DiscordEmbedBuilder_ThumbnailUrl_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.ThumbnailUrl*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordEmbedBuilder_ThumbnailUrl" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.ThumbnailUrl">ThumbnailUrl</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the thumbnail&apos;s image url.</p>
+  <a id="DSharpPlus_Entities_DiscordEmbedBuilder_Thumbnail_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.Thumbnail*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordEmbedBuilder_Thumbnail" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.Thumbnail">Thumbnail</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the embed&apos;s thumbnail.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ThumbnailUrl { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public DiscordEmbedBuilder.EmbedThumbnail Thumbnail { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -315,7 +315,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordEmbedBuilder.EmbedThumbnail.html">DiscordEmbedBuilder.EmbedThumbnail</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -341,7 +341,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTimeOffset</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -495,6 +495,102 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DiscordEmbedBuilder ClearFields()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordEmbedBuilder.html">DiscordEmbedBuilder</a></td>
+        <td><p>This embed builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordEmbedBuilder_RemoveFieldAt_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.RemoveFieldAt*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordEmbedBuilder_RemoveFieldAt_System_Int32_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.RemoveFieldAt(System.Int32)">RemoveFieldAt(Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes a field of the specified index from this embed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordEmbedBuilder RemoveFieldAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Index of the field to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordEmbedBuilder.html">DiscordEmbedBuilder</a></td>
+        <td><p>This embed builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordEmbedBuilder_RemoveFieldRange_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.RemoveFieldRange*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordEmbedBuilder_RemoveFieldRange_System_Int32_System_Int32_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.RemoveFieldRange(System.Int32,System.Int32)">RemoveFieldRange(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes fields of the specified range from this embed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordEmbedBuilder RemoveFieldRange(int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Index of the first field to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of fields to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -801,14 +897,14 @@
   </table>
   
   
-  <a id="DSharpPlus_Entities_DiscordEmbedBuilder_WithThumbnailUrl_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.WithThumbnailUrl*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordEmbedBuilder_WithThumbnailUrl_System_String_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.WithThumbnailUrl(System.String)">WithThumbnailUrl(String)</h4>
-  <div class="markdown level1 summary"><p>Sets the embed&apos;s thumbnail url.</p>
+  <a id="DSharpPlus_Entities_DiscordEmbedBuilder_WithThumbnail_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.WithThumbnail*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordEmbedBuilder_WithThumbnail_System_String_System_Int32_System_Int32_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.WithThumbnail(System.String,System.Int32,System.Int32)">WithThumbnail(String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed&apos;s thumbnail.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordEmbedBuilder WithThumbnailUrl(string url)</code></pre>
+    <pre><code class="lang-csharp hljs">public DiscordEmbedBuilder WithThumbnail(string url, int height = 0, int width = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -824,6 +920,18 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">url</span></td>
         <td><p>Thumbnail url to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>The height of the thumbnail to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>The width of the thumbnail to set.</p>
 </td>
       </tr>
     </tbody>
@@ -846,14 +954,14 @@
   </table>
   
   
-  <a id="DSharpPlus_Entities_DiscordEmbedBuilder_WithThumbnailUrl_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.WithThumbnailUrl*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordEmbedBuilder_WithThumbnailUrl_Uri_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.WithThumbnailUrl(Uri)">WithThumbnailUrl(Uri)</h4>
-  <div class="markdown level1 summary"><p>Sets the embed&apos;s thumbnail url.</p>
+  <a id="DSharpPlus_Entities_DiscordEmbedBuilder_WithThumbnail_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.WithThumbnail*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordEmbedBuilder_WithThumbnail_Uri_System_Int32_System_Int32_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.WithThumbnail(Uri,System.Int32,System.Int32)">WithThumbnail(Uri, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed&apos;s thumbnail.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordEmbedBuilder WithThumbnailUrl(Uri url)</code></pre>
+    <pre><code class="lang-csharp hljs">public DiscordEmbedBuilder WithThumbnail(Uri url, int height = 0, int width = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -869,6 +977,18 @@
         <td><span class="xref">Uri</span></td>
         <td><span class="parametername">url</span></td>
         <td><p>Thumbnail url to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>The height of the thumbnail to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>The width of the thumbnail to set.</p>
 </td>
       </tr>
     </tbody>
@@ -892,7 +1012,7 @@
   
   
   <a id="DSharpPlus_Entities_DiscordEmbedBuilder_WithTimestamp_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.WithTimestamp*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordEmbedBuilder_WithTimestamp_System_Nullable_System_DateTime__" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.WithTimestamp(System.Nullable{System.DateTime})">WithTimestamp(Nullable&lt;DateTime&gt;)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordEmbedBuilder_WithTimestamp_System_Nullable_DateTime__" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.WithTimestamp(System.Nullable{DateTime})">WithTimestamp(Nullable&lt;DateTime&gt;)</h4>
   <div class="markdown level1 summary"><p>Sets the embed&apos;s timestamp.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -911,7 +1031,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
         <td><span class="parametername">timestamp</span></td>
         <td><p>Timestamp to set.</p>
 </td>
@@ -937,7 +1057,7 @@
   
   
   <a id="DSharpPlus_Entities_DiscordEmbedBuilder_WithTimestamp_" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.WithTimestamp*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordEmbedBuilder_WithTimestamp_System_Nullable_System_DateTimeOffset__" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.WithTimestamp(System.Nullable{System.DateTimeOffset})">WithTimestamp(Nullable&lt;DateTimeOffset&gt;)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordEmbedBuilder_WithTimestamp_System_Nullable_DateTimeOffset__" data-uid="DSharpPlus.Entities.DiscordEmbedBuilder.WithTimestamp(System.Nullable{DateTimeOffset})">WithTimestamp(Nullable&lt;DateTimeOffset&gt;)</h4>
   <div class="markdown level1 summary"><p>Sets the embed&apos;s timestamp.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -956,7 +1076,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTimeOffset</span>&gt;</td>
         <td><span class="parametername">timestamp</span></td>
         <td><p>Timestamp to set.</p>
 </td>
@@ -1230,7 +1350,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class GuildMembersChunkEventArgs
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -86,19 +86,8 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">System.EventArgs</span></div>
-    <div class="level2"><a class="xref" href="DSharpPlus.AsyncEventArgs.html">AsyncEventArgs</a></div>
-    <div class="level3"><a class="xref" href="DSharpPlus.EventArgs.DiscordEventArgs.html">DiscordEventArgs</a></div>
-    <div class="level4"><span class="xref">GuildMembersChunkEventArgs</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="DSharpPlus.EventArgs.DiscordEventArgs.html#DSharpPlus_EventArgs_DiscordEventArgs_Client">DiscordEventArgs.Client</a>
-    </div>
-    <div>
-      <a class="xref" href="DSharpPlus.AsyncEventArgs.html#DSharpPlus_AsyncEventArgs_Handled">AsyncEventArgs.Handled</a>
-    </div>
+    <div class="level1"><a class="xref" href="DSharpPlus.EventArgs.DiscordEventArgs.html">DiscordEventArgs</a></div>
+    <div class="level2"><span class="xref">GuildMembersChunkEventArgs</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DSharpPlus.EventArgs.html">DSharpPlus.EventArgs</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
@@ -110,9 +99,61 @@
   </h3>
   
   
+  <a id="DSharpPlus_EventArgs_GuildMembersChunkEventArgs_ChunkCount_" data-uid="DSharpPlus.EventArgs.GuildMembersChunkEventArgs.ChunkCount*"></a>
+  <h4 id="DSharpPlus_EventArgs_GuildMembersChunkEventArgs_ChunkCount" data-uid="DSharpPlus.EventArgs.GuildMembersChunkEventArgs.ChunkCount">ChunkCount</h4>
+  <div class="markdown level1 summary"><p>Gets the total amount of chunks for the request. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ChunkCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_EventArgs_GuildMembersChunkEventArgs_ChunkIndex_" data-uid="DSharpPlus.EventArgs.GuildMembersChunkEventArgs.ChunkIndex*"></a>
+  <h4 id="DSharpPlus_EventArgs_GuildMembersChunkEventArgs_ChunkIndex" data-uid="DSharpPlus.EventArgs.GuildMembersChunkEventArgs.ChunkIndex">ChunkIndex</h4>
+  <div class="markdown level1 summary"><p>Gets the current chunk index from the response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ChunkIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_EventArgs_GuildMembersChunkEventArgs_Guild_" data-uid="DSharpPlus.EventArgs.GuildMembersChunkEventArgs.Guild*"></a>
   <h4 id="DSharpPlus_EventArgs_GuildMembersChunkEventArgs_Guild" data-uid="DSharpPlus.EventArgs.GuildMembersChunkEventArgs.Guild">Guild</h4>
-  <div class="markdown level1 summary"><p>Gets the guild whose members were requested.</p>
+  <div class="markdown level1 summary"><p>Gets the guild that requested this chunk.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -138,7 +179,7 @@
   
   <a id="DSharpPlus_EventArgs_GuildMembersChunkEventArgs_Members_" data-uid="DSharpPlus.EventArgs.GuildMembersChunkEventArgs.Members*"></a>
   <h4 id="DSharpPlus_EventArgs_GuildMembersChunkEventArgs_Members" data-uid="DSharpPlus.EventArgs.GuildMembersChunkEventArgs.Members">Members</h4>
-  <div class="markdown level1 summary"><p>Gets a collection containing the members in the received chunk.</p>
+  <div class="markdown level1 summary"><p>Gets the collection of members returned from this chunk.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -155,7 +196,85 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<span class="xref">DiscordMember</span>&gt;</td>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<span class="xref">DiscordMember</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_EventArgs_GuildMembersChunkEventArgs_Nonce_" data-uid="DSharpPlus.EventArgs.GuildMembersChunkEventArgs.Nonce*"></a>
+  <h4 id="DSharpPlus_EventArgs_GuildMembersChunkEventArgs_Nonce" data-uid="DSharpPlus.EventArgs.GuildMembersChunkEventArgs.Nonce">Nonce</h4>
+  <div class="markdown level1 summary"><p>Gets the unique string used to identify the request, if specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Nonce { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_EventArgs_GuildMembersChunkEventArgs_NotFound_" data-uid="DSharpPlus.EventArgs.GuildMembersChunkEventArgs.NotFound*"></a>
+  <h4 id="DSharpPlus_EventArgs_GuildMembersChunkEventArgs_NotFound" data-uid="DSharpPlus.EventArgs.GuildMembersChunkEventArgs.NotFound">NotFound</h4>
+  <div class="markdown level1 summary"><p>Gets the returned Ids that were not found in the chunk, if specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;ulong&gt; NotFound { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_EventArgs_GuildMembersChunkEventArgs_Presences_" data-uid="DSharpPlus.EventArgs.GuildMembersChunkEventArgs.Presences*"></a>
+  <h4 id="DSharpPlus_EventArgs_GuildMembersChunkEventArgs_Presences" data-uid="DSharpPlus.EventArgs.GuildMembersChunkEventArgs.Presences">Presences</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of presences returned from this chunk, if specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;DiscordPresence&gt; Presences { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<span class="xref">DiscordPresence</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -185,7 +304,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2019 DSharpPlus development team
+            © 2017-2020 DSharpPlus Contributors
             
           </div>
         </div>
