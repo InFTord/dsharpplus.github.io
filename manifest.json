@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/projects/dsharpplus/docs",
+  "source_base_path": "X:/Developer/Git/DSharpPlus/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -582,7 +582,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.CommandsNext.CommandsNextExtension.html",
-          "hash": "T9p0oH8Z1KCUWvvSBYUubg=="
+          "hash": "9y+zkgisu5+6zKYEHphDIw=="
         }
       },
       "is_incremental": false,
@@ -1182,7 +1182,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.DiscordClient.html",
-          "hash": "SgDTmgUXaS11euYUzQn3aw=="
+          "hash": "r3RhY34hhgB2o8VIvf7nJw=="
         }
       },
       "is_incremental": false,
@@ -3378,7 +3378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Interactivity.InteractivityExtension.html",
-          "hash": "a/cgi9CsAGExY7W1v4JGAA=="
+          "hash": "1h4jZ45Qu2/Ey1w6x7TCAQ=="
         }
       },
       "is_incremental": false,
@@ -4194,7 +4194,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Net.WebSocket.WebSocketClient.html",
-          "hash": "A3GSZaR6f/fL9RQIGw960A=="
+          "hash": "/awOpOwK6v3PJIEBkkitgA=="
         }
       },
       "is_incremental": false,
@@ -4638,7 +4638,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/audio/voicenext/prerequisites.html",
-          "hash": "X+9iwrTdzVsU69Wg32cwFQ=="
+          "hash": "FdipmWyGOaLi9DyPjzZOUg=="
         }
       },
       "is_incremental": false,
@@ -5567,7 +5567,7 @@
       "output": {
         ".html": {
           "relative_path": "natives/index.html",
-          "hash": "OhbovMTWXcVgY8cFIw9tNQ=="
+          "hash": "nDqQioqs6uqLO/waGTTiCg=="
         }
       },
       "is_incremental": false,
