@@ -8,7 +8,7 @@
     <title>Lavalink Music Commands </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Lavalink Music Commands ">
-    <meta name="generator" content="docfx 2.56.4.0">
+    <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -138,6 +138,12 @@ namespace MyFirstMusicBot
         public async Task Join(CommandContext ctx, DiscordChannel channel)
         {
             var lava = ctx.Client.GetLavalink();
+            if (!lava.ConnectedNodes.Any())
+            {
+                await ctx.RespondAsync(&quot;The Lavalink connection is not established&quot;);
+                return;
+            }
+
             var node = lava.ConnectedNodes.Values.First();
 
             if (channel.Type != ChannelType.Voice)
@@ -154,6 +160,12 @@ namespace MyFirstMusicBot
         public async Task Leave(CommandContext ctx, DiscordChannel channel)
         {
             var lava = ctx.Client.GetLavalink();
+            if (!lava.ConnectedNodes.Any())
+            {
+                await ctx.RespondAsync(&quot;The Lavalink connection is not established&quot;);
+                return;
+            }
+
             var node = lava.ConnectedNodes.Values.First();
 
             if (channel.Type != ChannelType.Voice)
@@ -162,7 +174,7 @@ namespace MyFirstMusicBot
                 return;
             }
 
-            var conn = node.GetConnection(channel.Guild);
+            var conn = node.GetGuildConnection(channel.Guild);
 
             if (conn == null)
             {

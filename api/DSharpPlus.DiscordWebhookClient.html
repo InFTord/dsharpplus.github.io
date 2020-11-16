@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordWebhookClient
    ">
-    <meta name="generator" content="docfx 2.56.4.0">
+    <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -110,42 +110,13 @@
   
   
   <a id="DSharpPlus_DiscordWebhookClient__ctor_" data-uid="DSharpPlus.DiscordWebhookClient.#ctor*"></a>
-  <h4 id="DSharpPlus_DiscordWebhookClient__ctor_IWebProxy_" data-uid="DSharpPlus.DiscordWebhookClient.#ctor(IWebProxy)">DiscordWebhookClient(IWebProxy)</h4>
-  <div class="markdown level1 summary"><p>Creates a new webhook client, with specified HTTP proxy settings.</p>
+  <h4 id="DSharpPlus_DiscordWebhookClient__ctor_IWebProxy_System_Nullable_TimeSpan__System_Boolean_ILoggerFactory_LogLevel_System_String_" data-uid="DSharpPlus.DiscordWebhookClient.#ctor(IWebProxy,System.Nullable{TimeSpan},System.Boolean,ILoggerFactory,LogLevel,System.String)">DiscordWebhookClient(IWebProxy, Nullable&lt;TimeSpan&gt;, Boolean, ILoggerFactory, LogLevel, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new webhook client, with specified HTTP proxy, timeout, and logging settings.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordWebhookClient(IWebProxy proxy)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IWebProxy</span></td>
-        <td><span class="parametername">proxy</span></td>
-        <td><p>Proxy to use for HTTP connections.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="DSharpPlus_DiscordWebhookClient__ctor_" data-uid="DSharpPlus.DiscordWebhookClient.#ctor*"></a>
-  <h4 id="DSharpPlus_DiscordWebhookClient__ctor_IWebProxy_TimeSpan_System_Boolean_" data-uid="DSharpPlus.DiscordWebhookClient.#ctor(IWebProxy,TimeSpan,System.Boolean)">DiscordWebhookClient(IWebProxy, TimeSpan, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Creates a new webhook client, with specified HTTP proxy and timeout settings.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordWebhookClient(IWebProxy proxy, TimeSpan timeout, bool useRelativeRateLimit = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public DiscordWebhookClient(IWebProxy proxy = null, TimeSpan? timeout = default(TimeSpan? ), bool useRelativeRateLimit = true, ILoggerFactory loggerFactory = null, LogLevel minimumLogLevel = null, string logTimestampFormat = &quot;yyyy-MM-dd HH:mm:ss zzz&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -164,7 +135,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
         <td><span class="parametername">timeout</span></td>
         <td><p>Timeout to use for HTTP requests. Set to <span class="xref">System.Threading.Timeout.InfiniteTimeSpan</span> to disable timeouts.</p>
 </td>
@@ -173,6 +144,24 @@
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">useRelativeRateLimit</span></td>
         <td><p>Whether to use the system clock for computing rate limit resets. See <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_UseRelativeRatelimit">UseRelativeRatelimit</a> for more details.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td><p>The optional logging factory to use for this client.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">LogLevel</span></td>
+        <td><span class="parametername">minimumLogLevel</span></td>
+        <td><p>The minimum logging level for messages.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">logTimestampFormat</span></td>
+        <td><p>The timestamp format to use for the logger.</p>
 </td>
       </tr>
     </tbody>

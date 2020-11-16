@@ -8,7 +8,7 @@
     <title>Migration 3.x - 4.x </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Migration 3.x - 4.x ">
-    <meta name="generator" content="docfx 2.56.4.0">
+    <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -107,6 +107,11 @@ To proxy your traffic, create a new instance of <code>System.Net.WebProxy</code>
 </tr>
 </tbody>
 </table>
+<h3 id="intents">Intents</h3>
+<p>In certain circumstances intents will have to be enabled to receive certain events in both the 
+<a class="xref" href="../../api/DSharpPlus.DiscordConfiguration.html">DiscordConfiguration</a> and the Discord Application Portal.  We have an
+<a class="xref" href="../beyond_basics/intents.html">article</a> that covers all that has to be done to set
+this up.</p>
 <h3 id="entity-mutation-changes">Entity mutation changes</h3>
 <p>Entity updating methods now take an action which mutates the state of the 
 object, instead of taking large lists of arguments. This means that instead of 
@@ -118,7 +123,19 @@ updating e.g. a role like this:</p>
     x.Name = &quot;Modified Role&quot;;
     x.Color = new DiscordColor(0xFF00FF);
 });
-</code></pre><h3 id="other-minor-changes">Other minor changes</h3>
+</code></pre><h3 id="logging-changes">Logging Changes</h3>
+<p>Logging was overhauled and now some of the Properties on <a class="xref" href="../../api/DSharpPlus.DiscordConfiguration.html">DiscordConfiguration</a> along with 
+some of the events on <a class="xref" href="../../api/DSharpPlus.DiscordClient.html">DiscordClient</a> are Gone/Modified/Added.  Below is a listing of what changed:</p>
+<ul>
+<li><strong><a class="xref" href="../../api/DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_LoggerFactory">LoggerFactory</a></strong> - this is where you can specify your own logging factory 
+to help augment the output of the log messages, redirect the output to other locations, etc</li>
+<li><strong><a class="xref" href="../../api/DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_MinimumLogLevel">MinimumLogLevel</a></strong>  -  this replaces LogLevel</li>
+<li><strong>DebugLogger</strong> - this has been removed.</li>
+<li><strong>UseInternalLogHandler</strong> - this has been removed.</li>
+<li><strong>DebugLogMessageEventArgs</strong> - this event has been removed.</li>
+</ul>
+<p>We have also created an <a class="xref" href="../beyond_basics/logging/default.html">article</a> on how to setup the new logger</p>
+<h3 id="other-minor-changes">Other minor changes</h3>
 <ul>
 <li><strong>User DM handling</strong> - Users can no longer be DM&#39;d directly. Instead, you 
 will need to find a member object for the user you want to DM, then use the 

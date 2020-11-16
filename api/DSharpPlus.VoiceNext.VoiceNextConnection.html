@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class VoiceNextConnection
    ">
-    <meta name="generator" content="docfx 2.56.4.0">
+    <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -124,32 +124,6 @@
   </table>
   
   
-  <a id="DSharpPlus_VoiceNext_VoiceNextConnection_Channel_" data-uid="DSharpPlus.VoiceNext.VoiceNextConnection.Channel*"></a>
-  <h4 id="DSharpPlus_VoiceNext_VoiceNextConnection_Channel" data-uid="DSharpPlus.VoiceNext.VoiceNextConnection.Channel">Channel</h4>
-  <div class="markdown level1 summary"><p>Gets the channel this voice client is connected to.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordChannel Channel { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DiscordChannel</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="DSharpPlus_VoiceNext_VoiceNextConnection_IsPlaying_" data-uid="DSharpPlus.VoiceNext.VoiceNextConnection.IsPlaying*"></a>
   <h4 id="DSharpPlus_VoiceNext_VoiceNextConnection_IsPlaying" data-uid="DSharpPlus.VoiceNext.VoiceNextConnection.IsPlaying">IsPlaying</h4>
   <div class="markdown level1 summary"><p>Gets whether this connection is still playing audio.</p>
@@ -170,6 +144,32 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_VoiceNext_VoiceNextConnection_TargetChannel_" data-uid="DSharpPlus.VoiceNext.VoiceNextConnection.TargetChannel*"></a>
+  <h4 id="DSharpPlus_VoiceNext_VoiceNextConnection_TargetChannel" data-uid="DSharpPlus.VoiceNext.VoiceNextConnection.TargetChannel">TargetChannel</h4>
+  <div class="markdown level1 summary"><p>Gets the channel this voice client is connected to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordChannel TargetChannel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DiscordChannel</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -262,14 +262,14 @@
   </div>
   
   
-  <a id="DSharpPlus_VoiceNext_VoiceNextConnection_GetTransmitStream_" data-uid="DSharpPlus.VoiceNext.VoiceNextConnection.GetTransmitStream*"></a>
-  <h4 id="DSharpPlus_VoiceNext_VoiceNextConnection_GetTransmitStream_System_Int32_" data-uid="DSharpPlus.VoiceNext.VoiceNextConnection.GetTransmitStream(System.Int32)">GetTransmitStream(Int32)</h4>
+  <a id="DSharpPlus_VoiceNext_VoiceNextConnection_GetTransmitSink_" data-uid="DSharpPlus.VoiceNext.VoiceNextConnection.GetTransmitSink*"></a>
+  <h4 id="DSharpPlus_VoiceNext_VoiceNextConnection_GetTransmitSink_System_Int32_" data-uid="DSharpPlus.VoiceNext.VoiceNextConnection.GetTransmitSink(System.Int32)">GetTransmitSink(Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a transmit stream for this connection, optionally specifying a packet size to use with the stream. If a stream is already configured, it will return the existing one.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VoiceTransmitStream GetTransmitStream(int sampleDuration = 20)</code></pre>
+    <pre><code class="lang-csharp hljs">public VoiceTransmitSink GetTransmitSink(int sampleDuration = 20)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -299,7 +299,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.VoiceNext.VoiceTransmitStream.html">VoiceTransmitStream</a></td>
+        <td><a class="xref" href="DSharpPlus.VoiceNext.VoiceTransmitSink.html">VoiceTransmitSink</a></td>
         <td><p>Transmit stream.</p>
 </td>
       </tr>

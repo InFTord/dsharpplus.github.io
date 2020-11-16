@@ -19,6 +19,9 @@ references:
 - uid: beyond_basics_events
   name: DSharpPlus Events
   href: articles/beyond_basics/events.html
+- uid: beyond_basics_intents
+  name: Intents
+  href: articles/beyond_basics/intents.html
 - uid: beyond_basics_logging_default
   name: The Default Logger
   href: articles/beyond_basics/logging/default.html
@@ -7548,18 +7551,15 @@ references:
   commentId: M:DSharpPlus.DiscordWebhookClient.#ctor
   fullName: DSharpPlus.DiscordWebhookClient.DiscordWebhookClient()
   nameWithType: DiscordWebhookClient.DiscordWebhookClient()
-- uid: DSharpPlus.DiscordWebhookClient.#ctor(IWebProxy)
-  name: DiscordWebhookClient(IWebProxy)
-  href: api/DSharpPlus.DiscordWebhookClient.html#DSharpPlus_DiscordWebhookClient__ctor_IWebProxy_
-  commentId: M:DSharpPlus.DiscordWebhookClient.#ctor(IWebProxy)
-  fullName: DSharpPlus.DiscordWebhookClient.DiscordWebhookClient(IWebProxy)
-  nameWithType: DiscordWebhookClient.DiscordWebhookClient(IWebProxy)
-- uid: DSharpPlus.DiscordWebhookClient.#ctor(IWebProxy,TimeSpan,System.Boolean)
-  name: DiscordWebhookClient(IWebProxy, TimeSpan, Boolean)
-  href: api/DSharpPlus.DiscordWebhookClient.html#DSharpPlus_DiscordWebhookClient__ctor_IWebProxy_TimeSpan_System_Boolean_
-  commentId: M:DSharpPlus.DiscordWebhookClient.#ctor(IWebProxy,TimeSpan,System.Boolean)
-  fullName: DSharpPlus.DiscordWebhookClient.DiscordWebhookClient(IWebProxy, TimeSpan, System.Boolean)
-  nameWithType: DiscordWebhookClient.DiscordWebhookClient(IWebProxy, TimeSpan, Boolean)
+- uid: DSharpPlus.DiscordWebhookClient.#ctor(IWebProxy,System.Nullable{TimeSpan},System.Boolean,ILoggerFactory,LogLevel,System.String)
+  name: DiscordWebhookClient(IWebProxy, Nullable<TimeSpan>, Boolean, ILoggerFactory, LogLevel, String)
+  href: api/DSharpPlus.DiscordWebhookClient.html#DSharpPlus_DiscordWebhookClient__ctor_IWebProxy_System_Nullable_TimeSpan__System_Boolean_ILoggerFactory_LogLevel_System_String_
+  commentId: M:DSharpPlus.DiscordWebhookClient.#ctor(IWebProxy,System.Nullable{TimeSpan},System.Boolean,ILoggerFactory,LogLevel,System.String)
+  name.vb: DiscordWebhookClient(IWebProxy, Nullable(Of TimeSpan), Boolean, ILoggerFactory, LogLevel, String)
+  fullName: DSharpPlus.DiscordWebhookClient.DiscordWebhookClient(IWebProxy, System.Nullable<TimeSpan>, System.Boolean, ILoggerFactory, LogLevel, System.String)
+  fullName.vb: DSharpPlus.DiscordWebhookClient.DiscordWebhookClient(IWebProxy, System.Nullable(Of TimeSpan), System.Boolean, ILoggerFactory, LogLevel, System.String)
+  nameWithType: DiscordWebhookClient.DiscordWebhookClient(IWebProxy, Nullable<TimeSpan>, Boolean, ILoggerFactory, LogLevel, String)
+  nameWithType.vb: DiscordWebhookClient.DiscordWebhookClient(IWebProxy, Nullable(Of TimeSpan), Boolean, ILoggerFactory, LogLevel, String)
 - uid: DSharpPlus.DiscordWebhookClient.#ctor*
   name: DiscordWebhookClient
   href: api/DSharpPlus.DiscordWebhookClient.html#DSharpPlus_DiscordWebhookClient__ctor_
@@ -28286,6 +28286,28 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.VoiceNext.IVoiceFilter.Transform
   nameWithType: IVoiceFilter.Transform
+- uid: DSharpPlus.VoiceNext.StreamExtensions
+  name: StreamExtensions
+  href: api/DSharpPlus.VoiceNext.StreamExtensions.html
+  commentId: T:DSharpPlus.VoiceNext.StreamExtensions
+  fullName: DSharpPlus.VoiceNext.StreamExtensions
+  nameWithType: StreamExtensions
+- uid: DSharpPlus.VoiceNext.StreamExtensions.CopyToAsync(Stream,DSharpPlus.VoiceNext.VoiceTransmitSink,System.Nullable{System.Int32},System.Threading.CancellationToken)
+  name: CopyToAsync(Stream, VoiceTransmitSink, Nullable<Int32>, CancellationToken)
+  href: api/DSharpPlus.VoiceNext.StreamExtensions.html#DSharpPlus_VoiceNext_StreamExtensions_CopyToAsync_Stream_DSharpPlus_VoiceNext_VoiceTransmitSink_System_Nullable_System_Int32__System_Threading_CancellationToken_
+  commentId: M:DSharpPlus.VoiceNext.StreamExtensions.CopyToAsync(Stream,DSharpPlus.VoiceNext.VoiceTransmitSink,System.Nullable{System.Int32},System.Threading.CancellationToken)
+  name.vb: CopyToAsync(Stream, VoiceTransmitSink, Nullable(Of Int32), CancellationToken)
+  fullName: DSharpPlus.VoiceNext.StreamExtensions.CopyToAsync(Stream, DSharpPlus.VoiceNext.VoiceTransmitSink, System.Nullable<System.Int32>, System.Threading.CancellationToken)
+  fullName.vb: DSharpPlus.VoiceNext.StreamExtensions.CopyToAsync(Stream, DSharpPlus.VoiceNext.VoiceTransmitSink, System.Nullable(Of System.Int32), System.Threading.CancellationToken)
+  nameWithType: StreamExtensions.CopyToAsync(Stream, VoiceTransmitSink, Nullable<Int32>, CancellationToken)
+  nameWithType.vb: StreamExtensions.CopyToAsync(Stream, VoiceTransmitSink, Nullable(Of Int32), CancellationToken)
+- uid: DSharpPlus.VoiceNext.StreamExtensions.CopyToAsync*
+  name: CopyToAsync
+  href: api/DSharpPlus.VoiceNext.StreamExtensions.html#DSharpPlus_VoiceNext_StreamExtensions_CopyToAsync_
+  commentId: Overload:DSharpPlus.VoiceNext.StreamExtensions.CopyToAsync
+  isSpec: "True"
+  fullName: DSharpPlus.VoiceNext.StreamExtensions.CopyToAsync
+  nameWithType: StreamExtensions.CopyToAsync
 - uid: DSharpPlus.VoiceNext.VoiceApplication
   name: VoiceApplication
   href: api/DSharpPlus.VoiceNext.VoiceApplication.html
@@ -28361,6 +28383,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.VoiceNext.VoiceNextConfiguration.EnableIncoming
   nameWithType: VoiceNextConfiguration.EnableIncoming
+- uid: DSharpPlus.VoiceNext.VoiceNextConfiguration.PacketQueueSize
+  name: PacketQueueSize
+  href: api/DSharpPlus.VoiceNext.VoiceNextConfiguration.html#DSharpPlus_VoiceNext_VoiceNextConfiguration_PacketQueueSize
+  commentId: P:DSharpPlus.VoiceNext.VoiceNextConfiguration.PacketQueueSize
+  fullName: DSharpPlus.VoiceNext.VoiceNextConfiguration.PacketQueueSize
+  nameWithType: VoiceNextConfiguration.PacketQueueSize
+- uid: DSharpPlus.VoiceNext.VoiceNextConfiguration.PacketQueueSize*
+  name: PacketQueueSize
+  href: api/DSharpPlus.VoiceNext.VoiceNextConfiguration.html#DSharpPlus_VoiceNext_VoiceNextConfiguration_PacketQueueSize_
+  commentId: Overload:DSharpPlus.VoiceNext.VoiceNextConfiguration.PacketQueueSize
+  isSpec: "True"
+  fullName: DSharpPlus.VoiceNext.VoiceNextConfiguration.PacketQueueSize
+  nameWithType: VoiceNextConfiguration.PacketQueueSize
 - uid: DSharpPlus.VoiceNext.VoiceNextConnection
   name: VoiceNextConnection
   href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html
@@ -28380,19 +28415,6 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.VoiceNext.VoiceNextConnection.AudioFormat
   nameWithType: VoiceNextConnection.AudioFormat
-- uid: DSharpPlus.VoiceNext.VoiceNextConnection.Channel
-  name: Channel
-  href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_Channel
-  commentId: P:DSharpPlus.VoiceNext.VoiceNextConnection.Channel
-  fullName: DSharpPlus.VoiceNext.VoiceNextConnection.Channel
-  nameWithType: VoiceNextConnection.Channel
-- uid: DSharpPlus.VoiceNext.VoiceNextConnection.Channel*
-  name: Channel
-  href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_Channel_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceNextConnection.Channel
-  isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceNextConnection.Channel
-  nameWithType: VoiceNextConnection.Channel
 - uid: DSharpPlus.VoiceNext.VoiceNextConnection.Disconnect
   name: Disconnect()
   href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_Disconnect
@@ -28432,19 +28454,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.VoiceNext.VoiceNextConnection.Finalize
   nameWithType: VoiceNextConnection.Finalize
-- uid: DSharpPlus.VoiceNext.VoiceNextConnection.GetTransmitStream(System.Int32)
-  name: GetTransmitStream(Int32)
-  href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_GetTransmitStream_System_Int32_
-  commentId: M:DSharpPlus.VoiceNext.VoiceNextConnection.GetTransmitStream(System.Int32)
-  fullName: DSharpPlus.VoiceNext.VoiceNextConnection.GetTransmitStream(System.Int32)
-  nameWithType: VoiceNextConnection.GetTransmitStream(Int32)
-- uid: DSharpPlus.VoiceNext.VoiceNextConnection.GetTransmitStream*
-  name: GetTransmitStream
-  href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_GetTransmitStream_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceNextConnection.GetTransmitStream
+- uid: DSharpPlus.VoiceNext.VoiceNextConnection.GetTransmitSink(System.Int32)
+  name: GetTransmitSink(Int32)
+  href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_GetTransmitSink_System_Int32_
+  commentId: M:DSharpPlus.VoiceNext.VoiceNextConnection.GetTransmitSink(System.Int32)
+  fullName: DSharpPlus.VoiceNext.VoiceNextConnection.GetTransmitSink(System.Int32)
+  nameWithType: VoiceNextConnection.GetTransmitSink(Int32)
+- uid: DSharpPlus.VoiceNext.VoiceNextConnection.GetTransmitSink*
+  name: GetTransmitSink
+  href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_GetTransmitSink_
+  commentId: Overload:DSharpPlus.VoiceNext.VoiceNextConnection.GetTransmitSink
   isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceNextConnection.GetTransmitStream
-  nameWithType: VoiceNextConnection.GetTransmitStream
+  fullName: DSharpPlus.VoiceNext.VoiceNextConnection.GetTransmitSink
+  nameWithType: VoiceNextConnection.GetTransmitSink
 - uid: DSharpPlus.VoiceNext.VoiceNextConnection.IsPlaying
   name: IsPlaying
   href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_IsPlaying
@@ -28497,6 +28519,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.VoiceNext.VoiceNextConnection.SendSpeakingAsync
   nameWithType: VoiceNextConnection.SendSpeakingAsync
+- uid: DSharpPlus.VoiceNext.VoiceNextConnection.TargetChannel
+  name: TargetChannel
+  href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_TargetChannel
+  commentId: P:DSharpPlus.VoiceNext.VoiceNextConnection.TargetChannel
+  fullName: DSharpPlus.VoiceNext.VoiceNextConnection.TargetChannel
+  nameWithType: VoiceNextConnection.TargetChannel
+- uid: DSharpPlus.VoiceNext.VoiceNextConnection.TargetChannel*
+  name: TargetChannel
+  href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_TargetChannel_
+  commentId: Overload:DSharpPlus.VoiceNext.VoiceNextConnection.TargetChannel
+  isSpec: "True"
+  fullName: DSharpPlus.VoiceNext.VoiceNextConnection.TargetChannel
+  nameWithType: VoiceNextConnection.TargetChannel
 - uid: DSharpPlus.VoiceNext.VoiceNextConnection.UdpPing
   name: UdpPing
   href: api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_UdpPing
@@ -28760,248 +28795,167 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.VoiceNext.VoiceNextExtension.Setup
   nameWithType: VoiceNextExtension.Setup
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream
-  name: VoiceTransmitStream
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html
-  commentId: T:DSharpPlus.VoiceNext.VoiceTransmitStream
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream
-  nameWithType: VoiceTransmitStream
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.CanRead
-  name: CanRead
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_CanRead
-  commentId: P:DSharpPlus.VoiceNext.VoiceTransmitStream.CanRead
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.CanRead
-  nameWithType: VoiceTransmitStream.CanRead
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.CanRead*
-  name: CanRead
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_CanRead_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.CanRead
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink
+  name: VoiceTransmitSink
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html
+  commentId: T:DSharpPlus.VoiceNext.VoiceTransmitSink
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink
+  nameWithType: VoiceTransmitSink
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.Dispose
+  name: Dispose()
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_Dispose
+  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitSink.Dispose
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.Dispose()
+  nameWithType: VoiceTransmitSink.Dispose()
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.Dispose*
+  name: Dispose
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_Dispose_
+  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitSink.Dispose
   isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.CanRead
-  nameWithType: VoiceTransmitStream.CanRead
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.CanSeek
-  name: CanSeek
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_CanSeek
-  commentId: P:DSharpPlus.VoiceNext.VoiceTransmitStream.CanSeek
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.CanSeek
-  nameWithType: VoiceTransmitStream.CanSeek
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.CanSeek*
-  name: CanSeek
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_CanSeek_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.CanSeek
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.Dispose
+  nameWithType: VoiceTransmitSink.Dispose
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.FlushAsync(System.Threading.CancellationToken)
+  name: FlushAsync(CancellationToken)
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_FlushAsync_System_Threading_CancellationToken_
+  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitSink.FlushAsync(System.Threading.CancellationToken)
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.FlushAsync(System.Threading.CancellationToken)
+  nameWithType: VoiceTransmitSink.FlushAsync(CancellationToken)
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.FlushAsync*
+  name: FlushAsync
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_FlushAsync_
+  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitSink.FlushAsync
   isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.CanSeek
-  nameWithType: VoiceTransmitStream.CanSeek
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.CanWrite
-  name: CanWrite
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_CanWrite
-  commentId: P:DSharpPlus.VoiceNext.VoiceTransmitStream.CanWrite
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.CanWrite
-  nameWithType: VoiceTransmitStream.CanWrite
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.CanWrite*
-  name: CanWrite
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_CanWrite_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.CanWrite
-  isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.CanWrite
-  nameWithType: VoiceTransmitStream.CanWrite
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.Flush
-  name: Flush()
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_Flush
-  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitStream.Flush
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.Flush()
-  nameWithType: VoiceTransmitStream.Flush()
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.Flush*
-  name: Flush
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_Flush_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.Flush
-  isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.Flush
-  nameWithType: VoiceTransmitStream.Flush
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.GetInstalledFilters
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.FlushAsync
+  nameWithType: VoiceTransmitSink.FlushAsync
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.GetInstalledFilters
   name: GetInstalledFilters()
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_GetInstalledFilters
-  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitStream.GetInstalledFilters
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.GetInstalledFilters()
-  nameWithType: VoiceTransmitStream.GetInstalledFilters()
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.GetInstalledFilters*
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_GetInstalledFilters
+  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitSink.GetInstalledFilters
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.GetInstalledFilters()
+  nameWithType: VoiceTransmitSink.GetInstalledFilters()
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.GetInstalledFilters*
   name: GetInstalledFilters
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_GetInstalledFilters_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.GetInstalledFilters
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_GetInstalledFilters_
+  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitSink.GetInstalledFilters
   isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.GetInstalledFilters
-  nameWithType: VoiceTransmitStream.GetInstalledFilters
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.InstallFilter(DSharpPlus.VoiceNext.IVoiceFilter,System.Int32)
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.GetInstalledFilters
+  nameWithType: VoiceTransmitSink.GetInstalledFilters
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.InstallFilter(DSharpPlus.VoiceNext.IVoiceFilter,System.Int32)
   name: InstallFilter(IVoiceFilter, Int32)
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_InstallFilter_DSharpPlus_VoiceNext_IVoiceFilter_System_Int32_
-  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitStream.InstallFilter(DSharpPlus.VoiceNext.IVoiceFilter,System.Int32)
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.InstallFilter(DSharpPlus.VoiceNext.IVoiceFilter, System.Int32)
-  nameWithType: VoiceTransmitStream.InstallFilter(IVoiceFilter, Int32)
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.InstallFilter*
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_InstallFilter_DSharpPlus_VoiceNext_IVoiceFilter_System_Int32_
+  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitSink.InstallFilter(DSharpPlus.VoiceNext.IVoiceFilter,System.Int32)
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.InstallFilter(DSharpPlus.VoiceNext.IVoiceFilter, System.Int32)
+  nameWithType: VoiceTransmitSink.InstallFilter(IVoiceFilter, Int32)
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.InstallFilter*
   name: InstallFilter
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_InstallFilter_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.InstallFilter
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_InstallFilter_
+  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitSink.InstallFilter
   isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.InstallFilter
-  nameWithType: VoiceTransmitStream.InstallFilter
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.Length
-  name: Length
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_Length
-  commentId: P:DSharpPlus.VoiceNext.VoiceTransmitStream.Length
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.Length
-  nameWithType: VoiceTransmitStream.Length
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.Length*
-  name: Length
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_Length_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.Length
-  isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.Length
-  nameWithType: VoiceTransmitStream.Length
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.Pause
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.InstallFilter
+  nameWithType: VoiceTransmitSink.InstallFilter
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.Pause
   name: Pause()
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_Pause
-  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitStream.Pause
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.Pause()
-  nameWithType: VoiceTransmitStream.Pause()
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.Pause*
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_Pause
+  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitSink.Pause
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.Pause()
+  nameWithType: VoiceTransmitSink.Pause()
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.Pause*
   name: Pause
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_Pause_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.Pause
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_Pause_
+  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitSink.Pause
   isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.Pause
-  nameWithType: VoiceTransmitStream.Pause
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.Position
-  name: Position
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_Position
-  commentId: P:DSharpPlus.VoiceNext.VoiceTransmitStream.Position
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.Position
-  nameWithType: VoiceTransmitStream.Position
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.Position*
-  name: Position
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_Position_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.Position
-  isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.Position
-  nameWithType: VoiceTransmitStream.Position
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.Read(System.Byte[],System.Int32,System.Int32)
-  name: Read(Byte[], Int32, Int32)
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_Read_System_Byte___System_Int32_System_Int32_
-  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitStream.Read(System.Byte[],System.Int32,System.Int32)
-  name.vb: Read(Byte(), Int32, Int32)
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.Read(System.Byte[], System.Int32, System.Int32)
-  fullName.vb: DSharpPlus.VoiceNext.VoiceTransmitStream.Read(System.Byte(), System.Int32, System.Int32)
-  nameWithType: VoiceTransmitStream.Read(Byte[], Int32, Int32)
-  nameWithType.vb: VoiceTransmitStream.Read(Byte(), Int32, Int32)
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.Read*
-  name: Read
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_Read_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.Read
-  isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.Read
-  nameWithType: VoiceTransmitStream.Read
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.ResumeAsync
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.Pause
+  nameWithType: VoiceTransmitSink.Pause
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.ResumeAsync
   name: ResumeAsync()
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_ResumeAsync
-  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitStream.ResumeAsync
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.ResumeAsync()
-  nameWithType: VoiceTransmitStream.ResumeAsync()
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.ResumeAsync*
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_ResumeAsync
+  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitSink.ResumeAsync
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.ResumeAsync()
+  nameWithType: VoiceTransmitSink.ResumeAsync()
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.ResumeAsync*
   name: ResumeAsync
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_ResumeAsync_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.ResumeAsync
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_ResumeAsync_
+  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitSink.ResumeAsync
   isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.ResumeAsync
-  nameWithType: VoiceTransmitStream.ResumeAsync
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.SampleDuration
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.ResumeAsync
+  nameWithType: VoiceTransmitSink.ResumeAsync
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.SampleDuration
   name: SampleDuration
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_SampleDuration
-  commentId: P:DSharpPlus.VoiceNext.VoiceTransmitStream.SampleDuration
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.SampleDuration
-  nameWithType: VoiceTransmitStream.SampleDuration
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.SampleDuration*
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_SampleDuration
+  commentId: P:DSharpPlus.VoiceNext.VoiceTransmitSink.SampleDuration
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.SampleDuration
+  nameWithType: VoiceTransmitSink.SampleDuration
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.SampleDuration*
   name: SampleDuration
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_SampleDuration_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.SampleDuration
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_SampleDuration_
+  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitSink.SampleDuration
   isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.SampleDuration
-  nameWithType: VoiceTransmitStream.SampleDuration
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.Seek(System.Int64,SeekOrigin)
-  name: Seek(Int64, SeekOrigin)
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_Seek_System_Int64_SeekOrigin_
-  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitStream.Seek(System.Int64,SeekOrigin)
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.Seek(System.Int64, SeekOrigin)
-  nameWithType: VoiceTransmitStream.Seek(Int64, SeekOrigin)
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.Seek*
-  name: Seek
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_Seek_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.Seek
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.SampleDuration
+  nameWithType: VoiceTransmitSink.SampleDuration
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.SampleLength
+  name: SampleLength
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_SampleLength
+  commentId: P:DSharpPlus.VoiceNext.VoiceTransmitSink.SampleLength
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.SampleLength
+  nameWithType: VoiceTransmitSink.SampleLength
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.SampleLength*
+  name: SampleLength
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_SampleLength_
+  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitSink.SampleLength
   isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.Seek
-  nameWithType: VoiceTransmitStream.Seek
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.SetLength(System.Int64)
-  name: SetLength(Int64)
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_SetLength_System_Int64_
-  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitStream.SetLength(System.Int64)
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.SetLength(System.Int64)
-  nameWithType: VoiceTransmitStream.SetLength(Int64)
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.SetLength*
-  name: SetLength
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_SetLength_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.SetLength
-  isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.SetLength
-  nameWithType: VoiceTransmitStream.SetLength
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.UninstallFilter(DSharpPlus.VoiceNext.IVoiceFilter)
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.SampleLength
+  nameWithType: VoiceTransmitSink.SampleLength
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.UninstallFilter(DSharpPlus.VoiceNext.IVoiceFilter)
   name: UninstallFilter(IVoiceFilter)
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_UninstallFilter_DSharpPlus_VoiceNext_IVoiceFilter_
-  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitStream.UninstallFilter(DSharpPlus.VoiceNext.IVoiceFilter)
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.UninstallFilter(DSharpPlus.VoiceNext.IVoiceFilter)
-  nameWithType: VoiceTransmitStream.UninstallFilter(IVoiceFilter)
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.UninstallFilter*
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_UninstallFilter_DSharpPlus_VoiceNext_IVoiceFilter_
+  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitSink.UninstallFilter(DSharpPlus.VoiceNext.IVoiceFilter)
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.UninstallFilter(DSharpPlus.VoiceNext.IVoiceFilter)
+  nameWithType: VoiceTransmitSink.UninstallFilter(IVoiceFilter)
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.UninstallFilter*
   name: UninstallFilter
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_UninstallFilter_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.UninstallFilter
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_UninstallFilter_
+  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitSink.UninstallFilter
   isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.UninstallFilter
-  nameWithType: VoiceTransmitStream.UninstallFilter
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.VolumeModifier
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.UninstallFilter
+  nameWithType: VoiceTransmitSink.UninstallFilter
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.VolumeModifier
   name: VolumeModifier
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_VolumeModifier
-  commentId: P:DSharpPlus.VoiceNext.VoiceTransmitStream.VolumeModifier
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.VolumeModifier
-  nameWithType: VoiceTransmitStream.VolumeModifier
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.VolumeModifier*
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_VolumeModifier
+  commentId: P:DSharpPlus.VoiceNext.VoiceTransmitSink.VolumeModifier
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.VolumeModifier
+  nameWithType: VoiceTransmitSink.VolumeModifier
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.VolumeModifier*
   name: VolumeModifier
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_VolumeModifier_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.VolumeModifier
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_VolumeModifier_
+  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitSink.VolumeModifier
   isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.VolumeModifier
-  nameWithType: VoiceTransmitStream.VolumeModifier
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.Write(ReadOnlySpan{System.Byte})
-  name: Write(ReadOnlySpan<Byte>)
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_Write_ReadOnlySpan_System_Byte__
-  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitStream.Write(ReadOnlySpan{System.Byte})
-  name.vb: Write(ReadOnlySpan(Of Byte))
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.Write(ReadOnlySpan<System.Byte>)
-  fullName.vb: DSharpPlus.VoiceNext.VoiceTransmitStream.Write(ReadOnlySpan(Of System.Byte))
-  nameWithType: VoiceTransmitStream.Write(ReadOnlySpan<Byte>)
-  nameWithType.vb: VoiceTransmitStream.Write(ReadOnlySpan(Of Byte))
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.Write(System.Byte[],System.Int32,System.Int32)
-  name: Write(Byte[], Int32, Int32)
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_Write_System_Byte___System_Int32_System_Int32_
-  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitStream.Write(System.Byte[],System.Int32,System.Int32)
-  name.vb: Write(Byte(), Int32, Int32)
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.Write(System.Byte[], System.Int32, System.Int32)
-  fullName.vb: DSharpPlus.VoiceNext.VoiceTransmitStream.Write(System.Byte(), System.Int32, System.Int32)
-  nameWithType: VoiceTransmitStream.Write(Byte[], Int32, Int32)
-  nameWithType.vb: VoiceTransmitStream.Write(Byte(), Int32, Int32)
-- uid: DSharpPlus.VoiceNext.VoiceTransmitStream.Write*
-  name: Write
-  href: api/DSharpPlus.VoiceNext.VoiceTransmitStream.html#DSharpPlus_VoiceNext_VoiceTransmitStream_Write_
-  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitStream.Write
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.VolumeModifier
+  nameWithType: VoiceTransmitSink.VolumeModifier
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.WriteAsync(ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)
+  name: WriteAsync(ReadOnlyMemory<Byte>, CancellationToken)
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_WriteAsync_ReadOnlyMemory_System_Byte__System_Threading_CancellationToken_
+  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitSink.WriteAsync(ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)
+  name.vb: WriteAsync(ReadOnlyMemory(Of Byte), CancellationToken)
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.WriteAsync(ReadOnlyMemory<System.Byte>, System.Threading.CancellationToken)
+  fullName.vb: DSharpPlus.VoiceNext.VoiceTransmitSink.WriteAsync(ReadOnlyMemory(Of System.Byte), System.Threading.CancellationToken)
+  nameWithType: VoiceTransmitSink.WriteAsync(ReadOnlyMemory<Byte>, CancellationToken)
+  nameWithType.vb: VoiceTransmitSink.WriteAsync(ReadOnlyMemory(Of Byte), CancellationToken)
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  name: WriteAsync(Byte[], Int32, Int32, CancellationToken)
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_WriteAsync_System_Byte___System_Int32_System_Int32_System_Threading_CancellationToken_
+  commentId: M:DSharpPlus.VoiceNext.VoiceTransmitSink.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  name.vb: WriteAsync(Byte(), Int32, Int32, CancellationToken)
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.WriteAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  fullName.vb: DSharpPlus.VoiceNext.VoiceTransmitSink.WriteAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  nameWithType: VoiceTransmitSink.WriteAsync(Byte[], Int32, Int32, CancellationToken)
+  nameWithType.vb: VoiceTransmitSink.WriteAsync(Byte(), Int32, Int32, CancellationToken)
+- uid: DSharpPlus.VoiceNext.VoiceTransmitSink.WriteAsync*
+  name: WriteAsync
+  href: api/DSharpPlus.VoiceNext.VoiceTransmitSink.html#DSharpPlus_VoiceNext_VoiceTransmitSink_WriteAsync_
+  commentId: Overload:DSharpPlus.VoiceNext.VoiceTransmitSink.WriteAsync
   isSpec: "True"
-  fullName: DSharpPlus.VoiceNext.VoiceTransmitStream.Write
-  nameWithType: VoiceTransmitStream.Write
+  fullName: DSharpPlus.VoiceNext.VoiceTransmitSink.WriteAsync
+  nameWithType: VoiceTransmitSink.WriteAsync
 - uid: faq
   name: Frequently Asked Questions
   href: faq.html
