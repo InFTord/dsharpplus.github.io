@@ -231,7 +231,7 @@ namespace MyFirstBot
                 TokenType = TokenType.Bot
             });
 
-            discord.MessageCreated += async e =&gt;
+            discord.MessageCreated += async (s, e) =&gt;
             {
                 if (e.Message.Content.ToLower().StartsWith(&quot;ping&quot;)) 
                     await e.Message.RespondAsync(&quot;pong!&quot;);

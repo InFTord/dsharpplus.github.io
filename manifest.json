@@ -1194,7 +1194,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.DiscordConfiguration.html",
-          "hash": "0oUHMHxXYUJZKo1dvf2fmw=="
+          "hash": "zoGCQn9mg16D0fijasijhA=="
         }
       },
       "is_incremental": false,
@@ -1230,7 +1230,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.DiscordRestClient.html",
-          "hash": "6Dlsy5xKgUOAGViuzjdmJA=="
+          "hash": "qXz6zT1/59oAk0uE+tBtrQ=="
         }
       },
       "is_incremental": false,
@@ -1830,7 +1830,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordEmoji.html",
-          "hash": "kDV/E4eORIeAm5xqhgTQ6g=="
+          "hash": "QL8Zer6J1o43dF20ZubntA=="
         }
       },
       "is_incremental": false,
@@ -1854,7 +1854,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordGuild.html",
-          "hash": "lokSIHuF1VoUPMF/hBdl/Q=="
+          "hash": "F9B66LkHiPOutE9WRkmjLg=="
         }
       },
       "is_incremental": false,
@@ -1878,7 +1878,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordGuildEmoji.html",
-          "hash": "BgSN8G0BXSaP8wlLNJPeaw=="
+          "hash": "eZluYV/ajNr1GIjMmGoT5g=="
         }
       },
       "is_incremental": false,
@@ -1974,7 +1974,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordMessage.html",
-          "hash": "fXaPOQFPV6grgUNQPw7ttQ=="
+          "hash": "KAtgkePPM+4CQ6zpYcZk5Q=="
         }
       },
       "is_incremental": false,
@@ -2011,6 +2011,18 @@
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordMessageReference.html",
           "hash": "hKIO6Zf3HHSUPZk4ncwX+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Entities.DiscordMessageSticker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Entities.DiscordMessageSticker.html",
+          "hash": "nNuZ7jpO80RiorHx4I/E/g=="
         }
       },
       "is_incremental": false,
@@ -2166,7 +2178,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.DiscordVoiceState.html",
-          "hash": "RQJEptgtLRYmtPQiolYeUg=="
+          "hash": "I80c63H0B59RTJ1MWyvsFQ=="
         }
       },
       "is_incremental": false,
@@ -2346,7 +2358,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.SnowflakeObject.html",
-          "hash": "/Po62EdC7+nNUq1us7/X5A=="
+          "hash": "L6tGGkmOh3Bqvhpwpddsug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DSharpPlus.Entities.StickerFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DSharpPlus.Entities.StickerFormat.html",
+          "hash": "Ce9Q8OTLxGC5GBNY4TKjuw=="
         }
       },
       "is_incremental": false,
@@ -2406,7 +2430,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DSharpPlus.Entities.html",
-          "hash": "5B9UbrzDGESA/7rmZdPbKg=="
+          "hash": "76F+d8hZMvWckKVyas3ALA=="
         }
       },
       "is_incremental": false,
@@ -4602,7 +4626,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "01g1omaDxh5SE8T1ET/ctA=="
+          "hash": "bws/P0Sfs2Kglw/9jkDQ1w=="
         }
       },
       "is_incremental": false,
@@ -4698,7 +4722,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/basics/first_bot.html",
-          "hash": "FzmAGdsNVtFIZS5JBygoLQ=="
+          "hash": "QKHLj1mTg3cFVo563rcdug=="
         }
       },
       "is_incremental": false,
@@ -4842,7 +4866,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/hosting.html",
-          "hash": "cxc7RU7FEE0PV2/WgergrQ=="
+          "hash": "n+rmVYLKM8q6c27rLDbewg=="
         }
       },
       "is_incremental": false,
@@ -5639,8 +5663,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 381,
-          "skipped_file_count": 381
+          "total_file_count": 383,
+          "skipped_file_count": 383
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

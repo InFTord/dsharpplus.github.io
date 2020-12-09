@@ -2087,13 +2087,13 @@
   
   
   <a id="DSharpPlus_DiscordRestClient_EditMessageAsync_" data-uid="DSharpPlus.DiscordRestClient.EditMessageAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_EditMessageAsync_System_UInt64_System_UInt64_Optional_System_String__Optional_DiscordEmbed__" data-uid="DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64,System.UInt64,Optional{System.String},Optional{DiscordEmbed})">EditMessageAsync(UInt64, UInt64, Optional&lt;String&gt;, Optional&lt;DiscordEmbed&gt;)</h4>
+  <h4 id="DSharpPlus_DiscordRestClient_EditMessageAsync_System_UInt64_System_UInt64_Optional_System_String__Optional_DiscordEmbed__IEnumerable_IMention__" data-uid="DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64,System.UInt64,Optional{System.String},Optional{DiscordEmbed},IEnumerable{IMention})">EditMessageAsync(UInt64, UInt64, Optional&lt;String&gt;, Optional&lt;DiscordEmbed&gt;, IEnumerable&lt;IMention&gt;)</h4>
   <div class="markdown level1 summary"><p>Edits a message</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; EditMessageAsync(ulong channel_id, ulong message_id, Optional&lt;string&gt; content, Optional&lt;DiscordEmbed&gt; embed)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; EditMessageAsync(ulong channel_id, ulong message_id, Optional&lt;string&gt; content, Optional&lt;DiscordEmbed&gt; embed, IEnumerable&lt;IMention&gt; mentions)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2128,6 +2128,11 @@
         <td><span class="parametername">embed</span></td>
         <td><p>New message embed</p>
 </td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IMention</span>&gt;</td>
+        <td><span class="parametername">mentions</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

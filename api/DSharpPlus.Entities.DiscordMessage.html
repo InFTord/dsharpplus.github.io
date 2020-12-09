@@ -654,6 +654,32 @@
   </table>
   
   
+  <a id="DSharpPlus_Entities_DiscordMessage_Stickers_" data-uid="DSharpPlus.Entities.DiscordMessage.Stickers*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessage_Stickers" data-uid="DSharpPlus.Entities.DiscordMessage.Stickers">Stickers</h4>
+  <div class="markdown level1 summary"><p>Gets stickers for this message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;DiscordMessageSticker&gt; Stickers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessageSticker.html">DiscordMessageSticker</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordMessage_Timestamp_" data-uid="DSharpPlus.Entities.DiscordMessage.Timestamp*"></a>
   <h4 id="DSharpPlus_Entities_DiscordMessage_Timestamp" data-uid="DSharpPlus.Entities.DiscordMessage.Timestamp">Timestamp</h4>
   <div class="markdown level1 summary"><p>Gets the message&apos;s creation timestamp.</p>
@@ -1394,13 +1420,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordMessage_ModifyAsync_" data-uid="DSharpPlus.Entities.DiscordMessage.ModifyAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordMessage_ModifyAsync_DSharpPlus_Entities_Optional_System_String__DSharpPlus_Entities_Optional_DSharpPlus_Entities_DiscordEmbed__" data-uid="DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.Optional{System.String},DSharpPlus.Entities.Optional{DSharpPlus.Entities.DiscordEmbed})">ModifyAsync(Optional&lt;String&gt;, Optional&lt;DiscordEmbed&gt;)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordMessage_ModifyAsync_DSharpPlus_Entities_Optional_System_String__DSharpPlus_Entities_Optional_DSharpPlus_Entities_DiscordEmbed__IEnumerable_DSharpPlus_Entities_IMention__" data-uid="DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.Optional{System.String},DSharpPlus.Entities.Optional{DSharpPlus.Entities.DiscordEmbed},IEnumerable{DSharpPlus.Entities.IMention})">ModifyAsync(Optional&lt;String&gt;, Optional&lt;DiscordEmbed&gt;, IEnumerable&lt;IMention&gt;)</h4>
   <div class="markdown level1 summary"><p>Edits the message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; ModifyAsync(Optional&lt;string&gt; content = default(Optional&lt;string&gt;), Optional&lt;DiscordEmbed&gt; embed = default(Optional&lt;DiscordEmbed&gt;))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; ModifyAsync(Optional&lt;string&gt; content = default(Optional&lt;string&gt;), Optional&lt;DiscordEmbed&gt; embed = default(Optional&lt;DiscordEmbed&gt;), IEnumerable&lt;IMention&gt; mentions = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1422,6 +1448,12 @@
         <td><a class="xref" href="DSharpPlus.Entities.Optional-1.html">Optional</a>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordEmbed.html">DiscordEmbed</a>&gt;</td>
         <td><span class="parametername">embed</span></td>
         <td><p>New embed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.IMention.html">IMention</a>&gt;</td>
+        <td><span class="parametername">mentions</span></td>
+        <td><p>Allowed mentions in the message.</p>
 </td>
       </tr>
     </tbody>
