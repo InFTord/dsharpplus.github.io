@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordClient
    ">
-    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -642,6 +642,84 @@ ID.</p>
   </table>
   
   
+  <a id="DSharpPlus_DiscordClient_CreateGuildFromTemplateAsync_" data-uid="DSharpPlus.DiscordClient.CreateGuildFromTemplateAsync*"></a>
+  <h4 id="DSharpPlus_DiscordClient_CreateGuildFromTemplateAsync_System_String_System_String_Optional_Stream__" data-uid="DSharpPlus.DiscordClient.CreateGuildFromTemplateAsync(System.String,System.String,Optional{Stream})">CreateGuildFromTemplateAsync(String, String, Optional&lt;Stream&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a guild from a template. This requires the bot to be in less than 10 guilds total.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuild&gt; CreateGuildFromTemplateAsync(string code, string name, Optional&lt;Stream&gt; icon = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The template code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the guild.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">Stream</span>&gt;</td>
+        <td><span class="parametername">icon</span></td>
+        <td><p>Stream containing the icon for the guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordGuild</span>&gt;</td>
+        <td><p>The created guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordClient_DisconnectAsync_" data-uid="DSharpPlus.DiscordClient.DisconnectAsync*"></a>
   <h4 id="DSharpPlus_DiscordClient_DisconnectAsync" data-uid="DSharpPlus.DiscordClient.DisconnectAsync">DisconnectAsync()</h4>
   <div class="markdown level1 summary"><p>Disconnects from the gateway</p>
@@ -1077,6 +1155,72 @@ ID.</p>
   </table>
   
   
+  <a id="DSharpPlus_DiscordClient_GetTemplateAsync_" data-uid="DSharpPlus.DiscordClient.GetTemplateAsync*"></a>
+  <h4 id="DSharpPlus_DiscordClient_GetTemplateAsync_System_String_" data-uid="DSharpPlus.DiscordClient.GetTemplateAsync(System.String)">GetTemplateAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a guild template by the code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuildTemplate&gt; GetTemplateAsync(string code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The code of the template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordGuildTemplate</span>&gt;</td>
+        <td><p>The guild template for the code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordClient_GetUserAsync_" data-uid="DSharpPlus.DiscordClient.GetUserAsync*"></a>
   <h4 id="DSharpPlus_DiscordClient_GetUserAsync_System_UInt64_" data-uid="DSharpPlus.DiscordClient.GetUserAsync(System.UInt64)">GetUserAsync(UInt64)</h4>
   <div class="markdown level1 summary"><p>Gets a user</p>
@@ -1328,13 +1472,13 @@ ID.</p>
   
   
   <a id="DSharpPlus_DiscordClient_SendMessageAsync_" data-uid="DSharpPlus.DiscordClient.SendMessageAsync*"></a>
-  <h4 id="DSharpPlus_DiscordClient_SendMessageAsync_DiscordChannel_System_String_System_Boolean_DiscordEmbed_IEnumerable_IMention__" data-uid="DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel,System.String,System.Boolean,DiscordEmbed,IEnumerable{IMention})">SendMessageAsync(DiscordChannel, String, Boolean, DiscordEmbed, IEnumerable&lt;IMention&gt;)</h4>
+  <h4 id="DSharpPlus_DiscordClient_SendMessageAsync_DiscordChannel_DiscordEmbed_" data-uid="DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel,DiscordEmbed)">SendMessageAsync(DiscordChannel, DiscordEmbed)</h4>
   <div class="markdown level1 summary"><p>Sends a message</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendMessageAsync(DiscordChannel channel, string content = null, bool isTTS = false, DiscordEmbed embed = null, IEnumerable&lt;IMention&gt; mentions = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendMessageAsync(DiscordChannel channel, DiscordEmbed embed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1353,27 +1497,9 @@ ID.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">content</span></td>
-        <td><p>Message content to send.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">isTTS</span></td>
-        <td><p>Whether the message is to be read using TTS.</p>
-</td>
-      </tr>
-      <tr>
         <td><span class="xref">DiscordEmbed</span></td>
         <td><span class="parametername">embed</span></td>
         <td><p>Embed to attach to the message.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IMention</span>&gt;</td>
-        <td><span class="parametername">mentions</span></td>
-        <td><p>Allowed mentions in the message</p>
 </td>
       </tr>
     </tbody>
@@ -1405,7 +1531,259 @@ ID.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendMessages">SendMessages</a> permission if <code data-dev-comment-type="paramref" class="paramref">isTTS</code> is false and <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendTtsMessages">SendTtsMessages</a> if <code data-dev-comment-type="paramref" class="paramref">isTTS</code> is true.</p>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendMessages">SendMessages</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the channel does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordClient_SendMessageAsync_" data-uid="DSharpPlus.DiscordClient.SendMessageAsync*"></a>
+  <h4 id="DSharpPlus_DiscordClient_SendMessageAsync_DiscordChannel_DiscordMessageBuilder_" data-uid="DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel,DiscordMessageBuilder)">SendMessageAsync(DiscordChannel, DiscordMessageBuilder)</h4>
+  <div class="markdown level1 summary"><p>Sends a message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendMessageAsync(DiscordChannel channel, DiscordMessageBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DiscordChannel</span></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>Channel to send to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DiscordMessageBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The Discord Mesage builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordMessage</span>&gt;</td>
+        <td><p>The Discord Message that was sent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendMessages">SendMessages</a> permission if TTS is false and <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendTtsMessages">SendTtsMessages</a> if TTS is true.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the channel does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordClient_SendMessageAsync_" data-uid="DSharpPlus.DiscordClient.SendMessageAsync*"></a>
+  <h4 id="DSharpPlus_DiscordClient_SendMessageAsync_DiscordChannel_System_String_" data-uid="DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel,System.String)">SendMessageAsync(DiscordChannel, String)</h4>
+  <div class="markdown level1 summary"><p>Sends a message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendMessageAsync(DiscordChannel channel, string content = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DiscordChannel</span></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>Channel to send to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>Message content to send.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordMessage</span>&gt;</td>
+        <td><p>The Discord Message that was sent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendMessages">SendMessages</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the channel does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordClient_SendMessageAsync_" data-uid="DSharpPlus.DiscordClient.SendMessageAsync*"></a>
+  <h4 id="DSharpPlus_DiscordClient_SendMessageAsync_DiscordChannel_System_String_DiscordEmbed_" data-uid="DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel,System.String,DiscordEmbed)">SendMessageAsync(DiscordChannel, String, DiscordEmbed)</h4>
+  <div class="markdown level1 summary"><p>Sends a message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendMessageAsync(DiscordChannel channel, string content = null, DiscordEmbed embed = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DiscordChannel</span></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>Channel to send to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>Message content to send.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DiscordEmbed</span></td>
+        <td><span class="parametername">embed</span></td>
+        <td><p>Embed to attach to the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordMessage</span>&gt;</td>
+        <td><p>The Discord Message that was sent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendMessages">SendMessages</a> permission.</p>
 </td>
       </tr>
       <tr>
@@ -1562,7 +1940,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_ChannelCreated" data-uid="DSharpPlus.DiscordClient.ChannelCreated">ChannelCreated</h4>
-  <div class="markdown level1 summary"><p>Fired when a new channel is created.</p>
+  <div class="markdown level1 summary"><p>Fired when a new channel is created.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1587,7 +1966,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_ChannelDeleted" data-uid="DSharpPlus.DiscordClient.ChannelDeleted">ChannelDeleted</h4>
-  <div class="markdown level1 summary"><p>Fired when a channel is deleted</p>
+  <div class="markdown level1 summary"><p>Fired when a channel is deleted
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1612,7 +1992,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_ChannelPinsUpdated" data-uid="DSharpPlus.DiscordClient.ChannelPinsUpdated">ChannelPinsUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired whenever a channel&apos;s pinned message list is updated.</p>
+  <div class="markdown level1 summary"><p>Fired whenever a channel&apos;s pinned message list is updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1637,7 +2018,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_ChannelUpdated" data-uid="DSharpPlus.DiscordClient.ChannelUpdated">ChannelUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a channel is updated.</p>
+  <div class="markdown level1 summary"><p>Fired when a channel is updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1687,7 +2069,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_DmChannelCreated" data-uid="DSharpPlus.DiscordClient.DmChannelCreated">DmChannelCreated</h4>
-  <div class="markdown level1 summary"><p>Fired when a new direct message channel is created.</p>
+  <div class="markdown level1 summary"><p>Fired when a new direct message channel is created.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_DirectMessages">DirectMessages</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1712,7 +2095,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_DmChannelDeleted" data-uid="DSharpPlus.DiscordClient.DmChannelDeleted">DmChannelDeleted</h4>
-  <div class="markdown level1 summary"><p>Fired when a dm channel is deleted</p>
+  <div class="markdown level1 summary"><p>Fired when a dm channel is deleted
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_DirectMessages">DirectMessages</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1737,7 +2121,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_GuildAvailable" data-uid="DSharpPlus.DiscordClient.GuildAvailable">GuildAvailable</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild is becoming available.</p>
+  <div class="markdown level1 summary"><p>Fired when a guild is becoming available.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1762,7 +2147,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_GuildBanAdded" data-uid="DSharpPlus.DiscordClient.GuildBanAdded">GuildBanAdded</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild ban gets added</p>
+  <div class="markdown level1 summary"><p>Fired when a guild ban gets added
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildBans">GuildBans</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1787,7 +2173,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_GuildBanRemoved" data-uid="DSharpPlus.DiscordClient.GuildBanRemoved">GuildBanRemoved</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild ban gets removed</p>
+  <div class="markdown level1 summary"><p>Fired when a guild ban gets removed
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildBans">GuildBans</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1812,7 +2199,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_GuildCreated" data-uid="DSharpPlus.DiscordClient.GuildCreated">GuildCreated</h4>
-  <div class="markdown level1 summary"><p>Fired when the user joins a new guild.</p>
+  <div class="markdown level1 summary"><p>Fired when the user joins a new guild.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1839,7 +2227,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_GuildDeleted" data-uid="DSharpPlus.DiscordClient.GuildDeleted">GuildDeleted</h4>
-  <div class="markdown level1 summary"><p>Fired when the user leaves or is removed from a guild.</p>
+  <div class="markdown level1 summary"><p>Fired when the user leaves or is removed from a guild.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1889,7 +2278,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_GuildEmojisUpdated" data-uid="DSharpPlus.DiscordClient.GuildEmojisUpdated">GuildEmojisUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a guilds emojis get updated</p>
+  <div class="markdown level1 summary"><p>Fired when a guilds emojis get updated
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildEmojis">GuildEmojis</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1939,7 +2329,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_GuildMemberAdded" data-uid="DSharpPlus.DiscordClient.GuildMemberAdded">GuildMemberAdded</h4>
-  <div class="markdown level1 summary"><p>Fired when a new user joins a guild.</p>
+  <div class="markdown level1 summary"><p>Fired when a new user joins a guild.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMembers">GuildMembers</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1964,7 +2355,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_GuildMemberRemoved" data-uid="DSharpPlus.DiscordClient.GuildMemberRemoved">GuildMemberRemoved</h4>
-  <div class="markdown level1 summary"><p>Fired when a user is removed from a guild (leave/kick/ban).</p>
+  <div class="markdown level1 summary"><p>Fired when a user is removed from a guild (leave/kick/ban).
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMembers">GuildMembers</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2014,7 +2406,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_GuildMemberUpdated" data-uid="DSharpPlus.DiscordClient.GuildMemberUpdated">GuildMemberUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild member is updated.</p>
+  <div class="markdown level1 summary"><p>Fired when a guild member is updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMembers">GuildMembers</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2039,7 +2432,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_GuildRoleCreated" data-uid="DSharpPlus.DiscordClient.GuildRoleCreated">GuildRoleCreated</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild role is created.</p>
+  <div class="markdown level1 summary"><p>Fired when a guild role is created.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2064,7 +2458,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_GuildRoleDeleted" data-uid="DSharpPlus.DiscordClient.GuildRoleDeleted">GuildRoleDeleted</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild role is updated.</p>
+  <div class="markdown level1 summary"><p>Fired when a guild role is updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2089,7 +2484,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_GuildRoleUpdated" data-uid="DSharpPlus.DiscordClient.GuildRoleUpdated">GuildRoleUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild role is updated.</p>
+  <div class="markdown level1 summary"><p>Fired when a guild role is updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2139,7 +2535,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_GuildUpdated" data-uid="DSharpPlus.DiscordClient.GuildUpdated">GuildUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild is updated.</p>
+  <div class="markdown level1 summary"><p>Fired when a guild is updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2189,7 +2586,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_InviteCreated" data-uid="DSharpPlus.DiscordClient.InviteCreated">InviteCreated</h4>
-  <div class="markdown level1 summary"><p>Fired when an invite is created.</p>
+  <div class="markdown level1 summary"><p>Fired when an invite is created.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildInvites">GuildInvites</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2214,7 +2612,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_InviteDeleted" data-uid="DSharpPlus.DiscordClient.InviteDeleted">InviteDeleted</h4>
-  <div class="markdown level1 summary"><p>Fired when an invite is deleted.</p>
+  <div class="markdown level1 summary"><p>Fired when an invite is deleted.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildInvites">GuildInvites</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2239,7 +2638,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_MessageAcknowledged" data-uid="DSharpPlus.DiscordClient.MessageAcknowledged">MessageAcknowledged</h4>
-  <div class="markdown level1 summary"><p>Fired when message is acknowledged by the user.</p>
+  <div class="markdown level1 summary"><p>Fired when message is acknowledged by the user.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessages">GuildMessages</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2264,7 +2664,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_MessageCreated" data-uid="DSharpPlus.DiscordClient.MessageCreated">MessageCreated</h4>
-  <div class="markdown level1 summary"><p>Fired when a message is created.</p>
+  <div class="markdown level1 summary"><p>Fired when a message is created.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessages">GuildMessages</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2289,7 +2690,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_MessageDeleted" data-uid="DSharpPlus.DiscordClient.MessageDeleted">MessageDeleted</h4>
-  <div class="markdown level1 summary"><p>Fired when a message is deleted.</p>
+  <div class="markdown level1 summary"><p>Fired when a message is deleted.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessages">GuildMessages</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2314,7 +2716,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_MessageReactionAdded" data-uid="DSharpPlus.DiscordClient.MessageReactionAdded">MessageReactionAdded</h4>
-  <div class="markdown level1 summary"><p>Fired when a reaction gets added to a message.</p>
+  <div class="markdown level1 summary"><p>Fired when a reaction gets added to a message.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessageReactions">GuildMessageReactions</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2339,7 +2742,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_MessageReactionRemoved" data-uid="DSharpPlus.DiscordClient.MessageReactionRemoved">MessageReactionRemoved</h4>
-  <div class="markdown level1 summary"><p>Fired when a reaction gets removed from a message.</p>
+  <div class="markdown level1 summary"><p>Fired when a reaction gets removed from a message.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessageReactions">GuildMessageReactions</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2364,7 +2768,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_MessageReactionRemovedEmoji" data-uid="DSharpPlus.DiscordClient.MessageReactionRemovedEmoji">MessageReactionRemovedEmoji</h4>
-  <div class="markdown level1 summary"><p>Fired when all reactions of a specific reaction are removed from a message.</p>
+  <div class="markdown level1 summary"><p>Fired when all reactions of a specific reaction are removed from a message.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessageReactions">GuildMessageReactions</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2389,7 +2794,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_MessageReactionsCleared" data-uid="DSharpPlus.DiscordClient.MessageReactionsCleared">MessageReactionsCleared</h4>
-  <div class="markdown level1 summary"><p>Fired when all reactions get removed from a message.</p>
+  <div class="markdown level1 summary"><p>Fired when all reactions get removed from a message.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessageReactions">GuildMessageReactions</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2414,7 +2820,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_MessagesBulkDeleted" data-uid="DSharpPlus.DiscordClient.MessagesBulkDeleted">MessagesBulkDeleted</h4>
-  <div class="markdown level1 summary"><p>Fired when multiple messages are deleted at once.</p>
+  <div class="markdown level1 summary"><p>Fired when multiple messages are deleted at once.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessages">GuildMessages</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2439,7 +2846,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_MessageUpdated" data-uid="DSharpPlus.DiscordClient.MessageUpdated">MessageUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a message is updated.</p>
+  <div class="markdown level1 summary"><p>Fired when a message is updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessages">GuildMessages</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2464,7 +2872,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_PresenceUpdated" data-uid="DSharpPlus.DiscordClient.PresenceUpdated">PresenceUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a presence has been updated.</p>
+  <div class="markdown level1 summary"><p>Fired when a presence has been updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildPresences">GuildPresences</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2664,7 +3073,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_UserSettingsUpdated" data-uid="DSharpPlus.DiscordClient.UserSettingsUpdated">UserSettingsUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when the current user updates their settings.</p>
+  <div class="markdown level1 summary"><p>Fired when the current user updates their settings.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildPresences">GuildPresences</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2712,11 +3122,13 @@ ID.</p>
     </tbody>
   </table>
   <h5 id="DSharpPlus_DiscordClient_UserUpdated_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>NB: This event only applies for changes to the <strong>current user</strong>, the client that is connected to Discord.</p></div>
+  <div class="markdown level1 remarks"><p>NB: This event only applies for changes to the <strong>current user</strong>, the client that is connected to Discord.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildPresences">GuildPresences</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p></div>
   
   
   <h4 id="DSharpPlus_DiscordClient_VoiceServerUpdated" data-uid="DSharpPlus.DiscordClient.VoiceServerUpdated">VoiceServerUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild&apos;s voice server is updated.</p>
+  <div class="markdown level1 summary"><p>Fired when a guild&apos;s voice server is updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildVoiceStates">GuildVoiceStates</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2741,7 +3153,8 @@ ID.</p>
   
   
   <h4 id="DSharpPlus_DiscordClient_VoiceStateUpdated" data-uid="DSharpPlus.DiscordClient.VoiceStateUpdated">VoiceStateUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when someone joins/leaves/moves voice channels.</p>
+  <div class="markdown level1 summary"><p>Fired when someone joins/leaves/moves voice channels.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildVoiceStates">GuildVoiceStates</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

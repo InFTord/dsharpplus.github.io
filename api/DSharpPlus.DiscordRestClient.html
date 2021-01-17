@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordRestClient
    ">
-    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -861,6 +861,63 @@
   </table>
   
   
+  <a id="DSharpPlus_DiscordRestClient_CreateGuildFromTemplateAsync_" data-uid="DSharpPlus.DiscordRestClient.CreateGuildFromTemplateAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_CreateGuildFromTemplateAsync_System_String_System_String_System_String_" data-uid="DSharpPlus.DiscordRestClient.CreateGuildFromTemplateAsync(System.String,System.String,System.String)">CreateGuildFromTemplateAsync(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a guild from a template. This requires the bot to be in less than 10 guilds total.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuild&gt; CreateGuildFromTemplateAsync(string code, string name, string icon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The template code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the guild.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">icon</span></td>
+        <td><p>Stream containing the icon for the guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordGuild</span>&gt;</td>
+        <td><p>The created guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordRestClient_CreateGuildIntegrationAsync_" data-uid="DSharpPlus.DiscordRestClient.CreateGuildIntegrationAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_CreateGuildIntegrationAsync_System_UInt64_System_String_System_UInt64_" data-uid="DSharpPlus.DiscordRestClient.CreateGuildIntegrationAsync(System.UInt64,System.String,System.UInt64)">CreateGuildIntegrationAsync(UInt64, String, UInt64)</h4>
   <div class="markdown level1 summary"><p>Creates guild integration</p>
@@ -997,14 +1054,221 @@
   </table>
   
   
+  <a id="DSharpPlus_DiscordRestClient_CreateGuildTemplateAsync_" data-uid="DSharpPlus.DiscordRestClient.CreateGuildTemplateAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_CreateGuildTemplateAsync_System_UInt64_System_String_System_String_" data-uid="DSharpPlus.DiscordRestClient.CreateGuildTemplateAsync(System.UInt64,System.String,System.String)">CreateGuildTemplateAsync(UInt64, String, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a guild template.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuildTemplate&gt; CreateGuildTemplateAsync(ulong guild_id, string name, string description = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">guild_id</span></td>
+        <td><p>Guild id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the template.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>Description of the template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordGuildTemplate</span>&gt;</td>
+        <td><p>The template created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordRestClient_CreateMessageAsync_" data-uid="DSharpPlus.DiscordRestClient.CreateMessageAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_CreateMessageAsync_System_UInt64_System_String_System_Nullable_System_Boolean__DiscordEmbed_IEnumerable_IMention__" data-uid="DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64,System.String,System.Nullable{System.Boolean},DiscordEmbed,IEnumerable{IMention})">CreateMessageAsync(UInt64, String, Nullable&lt;Boolean&gt;, DiscordEmbed, IEnumerable&lt;IMention&gt;)</h4>
+  <h4 id="DSharpPlus_DiscordRestClient_CreateMessageAsync_System_UInt64_DiscordEmbed_" data-uid="DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64,DiscordEmbed)">CreateMessageAsync(UInt64, DiscordEmbed)</h4>
   <div class="markdown level1 summary"><p>Sends a message</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; CreateMessageAsync(ulong channel_id, string content, bool? tts, DiscordEmbed embed, IEnumerable&lt;IMention&gt; mentions)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; CreateMessageAsync(ulong channel_id, DiscordEmbed embed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">channel_id</span></td>
+        <td><p>Channel id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DiscordEmbed</span></td>
+        <td><span class="parametername">embed</span></td>
+        <td><p>Embed to attach</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordRestClient_CreateMessageAsync_" data-uid="DSharpPlus.DiscordRestClient.CreateMessageAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_CreateMessageAsync_System_UInt64_DiscordMessageBuilder_" data-uid="DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64,DiscordMessageBuilder)">CreateMessageAsync(UInt64, DiscordMessageBuilder)</h4>
+  <div class="markdown level1 summary"><p>Sends a message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; CreateMessageAsync(ulong channel_id, DiscordMessageBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">channel_id</span></td>
+        <td><p>Channel id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DiscordMessageBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The Discord Mesage builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordRestClient_CreateMessageAsync_" data-uid="DSharpPlus.DiscordRestClient.CreateMessageAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_CreateMessageAsync_System_UInt64_System_String_" data-uid="DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64,System.String)">CreateMessageAsync(UInt64, String)</h4>
+  <div class="markdown level1 summary"><p>Sends a message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; CreateMessageAsync(ulong channel_id, string content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">channel_id</span></td>
+        <td><p>Channel id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>Message (text) content</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordRestClient_CreateMessageAsync_" data-uid="DSharpPlus.DiscordRestClient.CreateMessageAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_CreateMessageAsync_System_UInt64_System_String_DiscordEmbed_" data-uid="DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64,System.String,DiscordEmbed)">CreateMessageAsync(UInt64, String, DiscordEmbed)</h4>
+  <div class="markdown level1 summary"><p>Sends a message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; CreateMessageAsync(ulong channel_id, string content, DiscordEmbed embed)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1029,21 +1293,9 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td><span class="parametername">tts</span></td>
-        <td><p>Whether this message is a text-to-speech message</p>
-</td>
-      </tr>
-      <tr>
         <td><span class="xref">DiscordEmbed</span></td>
         <td><span class="parametername">embed</span></td>
         <td><p>Embed to attach</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IMention</span>&gt;</td>
-        <td><span class="parametername">mentions</span></td>
-        <td><p>Allowed mentions in the message</p>
 </td>
       </tr>
     </tbody>
@@ -1607,6 +1859,57 @@
   </table>
   
   
+  <a id="DSharpPlus_DiscordRestClient_DeleteGuildTemplateAsync_" data-uid="DSharpPlus.DiscordRestClient.DeleteGuildTemplateAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_DeleteGuildTemplateAsync_System_UInt64_System_String_" data-uid="DSharpPlus.DiscordRestClient.DeleteGuildTemplateAsync(System.UInt64,System.String)">DeleteGuildTemplateAsync(UInt64, String)</h4>
+  <div class="markdown level1 summary"><p>Deletes the template.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuildTemplate&gt; DeleteGuildTemplateAsync(ulong guild_id, string code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">guild_id</span></td>
+        <td><p>Guild id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The code of the template to delete.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordGuildTemplate</span>&gt;</td>
+        <td><p>The deleted template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordRestClient_DeleteInvite_" data-uid="DSharpPlus.DiscordRestClient.DeleteInvite*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_DeleteInvite_System_String_System_String_" data-uid="DSharpPlus.DiscordRestClient.DeleteInvite(System.String,System.String)">DeleteInvite(String, String)</h4>
   <div class="markdown level1 summary"><p>Removes an invite</p>
@@ -2087,13 +2390,125 @@
   
   
   <a id="DSharpPlus_DiscordRestClient_EditMessageAsync_" data-uid="DSharpPlus.DiscordRestClient.EditMessageAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_EditMessageAsync_System_UInt64_System_UInt64_Optional_System_String__Optional_DiscordEmbed__IEnumerable_IMention__" data-uid="DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64,System.UInt64,Optional{System.String},Optional{DiscordEmbed},IEnumerable{IMention})">EditMessageAsync(UInt64, UInt64, Optional&lt;String&gt;, Optional&lt;DiscordEmbed&gt;, IEnumerable&lt;IMention&gt;)</h4>
+  <h4 id="DSharpPlus_DiscordRestClient_EditMessageAsync_System_UInt64_System_UInt64_DiscordMessageBuilder_" data-uid="DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64,System.UInt64,DiscordMessageBuilder)">EditMessageAsync(UInt64, UInt64, DiscordMessageBuilder)</h4>
   <div class="markdown level1 summary"><p>Edits a message</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; EditMessageAsync(ulong channel_id, ulong message_id, Optional&lt;string&gt; content, Optional&lt;DiscordEmbed&gt; embed, IEnumerable&lt;IMention&gt; mentions)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; EditMessageAsync(ulong channel_id, ulong message_id, DiscordMessageBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">channel_id</span></td>
+        <td><p>Channel id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">message_id</span></td>
+        <td><p>Message id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DiscordMessageBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder of the message to edit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordRestClient_EditMessageAsync_" data-uid="DSharpPlus.DiscordRestClient.EditMessageAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_EditMessageAsync_System_UInt64_System_UInt64_Optional_DiscordEmbed__" data-uid="DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64,System.UInt64,Optional{DiscordEmbed})">EditMessageAsync(UInt64, UInt64, Optional&lt;DiscordEmbed&gt;)</h4>
+  <div class="markdown level1 summary"><p>Edits a message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; EditMessageAsync(ulong channel_id, ulong message_id, Optional&lt;DiscordEmbed&gt; embed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">channel_id</span></td>
+        <td><p>Channel id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">message_id</span></td>
+        <td><p>Message id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">DiscordEmbed</span>&gt;</td>
+        <td><span class="parametername">embed</span></td>
+        <td><p>New message embed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordRestClient_EditMessageAsync_" data-uid="DSharpPlus.DiscordRestClient.EditMessageAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_EditMessageAsync_System_UInt64_System_UInt64_Optional_System_String__" data-uid="DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64,System.UInt64,Optional{System.String})">EditMessageAsync(UInt64, UInt64, Optional&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Edits a message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; EditMessageAsync(ulong channel_id, ulong message_id, Optional&lt;string&gt; content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2122,17 +2537,6 @@
         <td><span class="parametername">content</span></td>
         <td><p>New message content</p>
 </td>
-      </tr>
-      <tr>
-        <td><span class="xref">Optional</span>&lt;<span class="xref">DiscordEmbed</span>&gt;</td>
-        <td><span class="parametername">embed</span></td>
-        <td><p>New message embed</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IMention</span>&gt;</td>
-        <td><span class="parametername">mentions</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -3055,6 +3459,51 @@
   </table>
   
   
+  <a id="DSharpPlus_DiscordRestClient_GetGuildTemplatesAsync_" data-uid="DSharpPlus.DiscordRestClient.GetGuildTemplatesAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_GetGuildTemplatesAsync_System_UInt64_" data-uid="DSharpPlus.DiscordRestClient.GetGuildTemplatesAsync(System.UInt64)">GetGuildTemplatesAsync(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Gets a guild&apos;s templates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;DiscordGuildTemplate&gt;&gt; GetGuildTemplatesAsync(ulong guild_id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">guild_id</span></td>
+        <td><p>Guild id</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<span class="xref">DiscordGuildTemplate</span>&gt;&gt;</td>
+        <td><p>All of the guild&apos;s templates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordRestClient_GetGuildVoiceRegionsAsync_" data-uid="DSharpPlus.DiscordRestClient.GetGuildVoiceRegionsAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_GetGuildVoiceRegionsAsync_System_UInt64_" data-uid="DSharpPlus.DiscordRestClient.GetGuildVoiceRegionsAsync(System.UInt64)">GetGuildVoiceRegionsAsync(UInt64)</h4>
   <div class="markdown level1 summary"><p>Get a guild&apos;s voice region</p>
@@ -3506,6 +3955,51 @@
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<span class="xref">DiscordUser</span>&gt;&gt;</td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordRestClient_GetTemplateAsync_" data-uid="DSharpPlus.DiscordRestClient.GetTemplateAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_GetTemplateAsync_System_String_" data-uid="DSharpPlus.DiscordRestClient.GetTemplateAsync(System.String)">GetTemplateAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a guild template by the code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuildTemplate&gt; GetTemplateAsync(string code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The code of the template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordGuildTemplate</span>&gt;</td>
+        <td><p>The guild template for the code.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -4885,6 +5379,69 @@
   </table>
   
   
+  <a id="DSharpPlus_DiscordRestClient_ModifyGuildTemplateAsync_" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildTemplateAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_ModifyGuildTemplateAsync_System_UInt64_System_String_System_String_System_String_" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildTemplateAsync(System.UInt64,System.String,System.String,System.String)">ModifyGuildTemplateAsync(UInt64, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Modifies the template&apos;s metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuildTemplate&gt; ModifyGuildTemplateAsync(ulong guild_id, string code, string name = null, string description = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">guild_id</span></td>
+        <td><p>Guild id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The template&apos;s code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the template.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>Description of the template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordGuildTemplate</span>&gt;</td>
+        <td><p>The template modified.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordRestClient_ModifyGuildWidgetSettingsAsync_" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildWidgetSettingsAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_ModifyGuildWidgetSettingsAsync_System_UInt64_System_Nullable_System_Boolean__System_Nullable_System_UInt64__System_String_" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildWidgetSettingsAsync(System.UInt64,System.Nullable{System.Boolean},System.Nullable{System.UInt64},System.String)">ModifyGuildWidgetSettingsAsync(UInt64, Nullable&lt;Boolean&gt;, Nullable&lt;UInt64&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Modifies a guild&apos;s widget settings</p>
@@ -5443,6 +6000,57 @@
   </table>
   
   
+  <a id="DSharpPlus_DiscordRestClient_SyncGuildTemplateAsync_" data-uid="DSharpPlus.DiscordRestClient.SyncGuildTemplateAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_SyncGuildTemplateAsync_System_UInt64_System_String_" data-uid="DSharpPlus.DiscordRestClient.SyncGuildTemplateAsync(System.UInt64,System.String)">SyncGuildTemplateAsync(UInt64, String)</h4>
+  <div class="markdown level1 summary"><p>Syncs the template to the current guild&apos;s state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuildTemplate&gt; SyncGuildTemplateAsync(ulong guild_id, string code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">guild_id</span></td>
+        <td><p>Guild id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The code of the template to sync.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordGuildTemplate</span>&gt;</td>
+        <td><p>The template synced.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordRestClient_TriggerTypingAsync_" data-uid="DSharpPlus.DiscordRestClient.TriggerTypingAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_TriggerTypingAsync_System_UInt64_" data-uid="DSharpPlus.DiscordRestClient.TriggerTypingAsync(System.UInt64)">TriggerTypingAsync(UInt64)</h4>
   <div class="markdown level1 summary"><p>Send a typing indicator to a channel</p>
@@ -5655,160 +6263,6 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="DSharpPlus_DiscordRestClient_UploadFileAsync_" data-uid="DSharpPlus.DiscordRestClient.UploadFileAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_UploadFileAsync_System_UInt64_Stream_System_String_System_String_System_Nullable_System_Boolean__DiscordEmbed_IEnumerable_IMention__" data-uid="DSharpPlus.DiscordRestClient.UploadFileAsync(System.UInt64,Stream,System.String,System.String,System.Nullable{System.Boolean},DiscordEmbed,IEnumerable{IMention})">UploadFileAsync(UInt64, Stream, String, String, Nullable&lt;Boolean&gt;, DiscordEmbed, IEnumerable&lt;IMention&gt;)</h4>
-  <div class="markdown level1 summary"><p>Uploads a file</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; UploadFileAsync(ulong channel_id, Stream file_data, string file_name, string content, bool? tts, DiscordEmbed embed, IEnumerable&lt;IMention&gt; mentions)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt64</span></td>
-        <td><span class="parametername">channel_id</span></td>
-        <td><p>Channel id</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">file_data</span></td>
-        <td><p>File data</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file_name</span></td>
-        <td><p>File name</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">content</span></td>
-        <td><p>Message (text) content</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td><span class="parametername">tts</span></td>
-        <td><p>Whether this message is a text-to-speech message</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">DiscordEmbed</span></td>
-        <td><span class="parametername">embed</span></td>
-        <td><p>Embed to attach</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IMention</span>&gt;</td>
-        <td><span class="parametername">mentions</span></td>
-        <td><p>Allowed mentions in the message</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordMessage</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="DSharpPlus_DiscordRestClient_UploadFilesAsync_" data-uid="DSharpPlus.DiscordRestClient.UploadFilesAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_UploadFilesAsync_System_UInt64_Dictionary_System_String_Stream__System_String_System_Nullable_System_Boolean__DiscordEmbed_IEnumerable_IMention__" data-uid="DSharpPlus.DiscordRestClient.UploadFilesAsync(System.UInt64,Dictionary{System.String,Stream},System.String,System.Nullable{System.Boolean},DiscordEmbed,IEnumerable{IMention})">UploadFilesAsync(UInt64, Dictionary&lt;String, Stream&gt;, String, Nullable&lt;Boolean&gt;, DiscordEmbed, IEnumerable&lt;IMention&gt;)</h4>
-  <div class="markdown level1 summary"><p>Uploads multiple files</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; UploadFilesAsync(ulong channel_id, Dictionary&lt;string, Stream&gt; files, string content, bool? tts, DiscordEmbed embed, IEnumerable&lt;IMention&gt; mentions)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt64</span></td>
-        <td><span class="parametername">channel_id</span></td>
-        <td><p>Channel id</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Stream</span>&gt;</td>
-        <td><span class="parametername">files</span></td>
-        <td><p>Files to attach (filename, data)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">content</span></td>
-        <td><p>Message (text) content</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td><span class="parametername">tts</span></td>
-        <td><p>Whether this message is a text-to-speech message</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">DiscordEmbed</span></td>
-        <td><span class="parametername">embed</span></td>
-        <td><p>Embed to attach</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IMention</span>&gt;</td>
-        <td><span class="parametername">mentions</span></td>
-        <td><p>Allowed mentions in the message</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordMessage</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
