@@ -446,58 +446,6 @@
   </table>
   
   
-  <a id="DSharpPlus_Entities_DiscordGuild_EmbedChannel_" data-uid="DSharpPlus.Entities.DiscordGuild.EmbedChannel*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_EmbedChannel" data-uid="DSharpPlus.Entities.DiscordGuild.EmbedChannel">EmbedChannel</h4>
-  <div class="markdown level1 summary"><p>Gets the channel from the guild&apos;s embed.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordChannel EmbedChannel { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="DSharpPlus_Entities_DiscordGuild_EmbedEnabled_" data-uid="DSharpPlus.Entities.DiscordGuild.EmbedEnabled*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_EmbedEnabled" data-uid="DSharpPlus.Entities.DiscordGuild.EmbedEnabled">EmbedEnabled</h4>
-  <div class="markdown level1 summary"><p>Gets whether this guild has the guild embed enabled.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool EmbedEnabled { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="DSharpPlus_Entities_DiscordGuild_Emojis_" data-uid="DSharpPlus.Entities.DiscordGuild.Emojis*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_Emojis" data-uid="DSharpPlus.Entities.DiscordGuild.Emojis">Emojis</h4>
   <div class="markdown level1 summary"><p>Gets a collection of this guild&apos;s emojis.</p>
@@ -3188,64 +3136,6 @@ the voice state corresponds to.</p>
   </table>
   
   
-  <a id="DSharpPlus_Entities_DiscordGuild_GetEmbedAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetEmbedAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_GetEmbedAsync" data-uid="DSharpPlus.Entities.DiscordGuild.GetEmbedAsync">GetEmbedAsync()</h4>
-  <div class="markdown level1 summary"><p>Gets the guild widget.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuildEmbed&gt; GetEmbedAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordGuildEmbed.html">DiscordGuildEmbed</a>&gt;</td>
-        <td><p>This guild&apos;s widget.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageGuild">ManageGuild</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the guild does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="DSharpPlus_Entities_DiscordGuild_GetEmojiAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetEmojiAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_GetEmojiAsync_System_UInt64_" data-uid="DSharpPlus.Entities.DiscordGuild.GetEmojiAsync(System.UInt64)">GetEmojiAsync(UInt64)</h4>
   <div class="markdown level1 summary"><p>Gets this guild&apos;s specified custom emoji.</p>
@@ -3564,6 +3454,49 @@ the voice state corresponds to.</p>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMember.html">DiscordMember</a>&gt;</td>
         <td><p>The requested member.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordGuild_GetMembershipScreeningFormAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetMembershipScreeningFormAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_GetMembershipScreeningFormAsync" data-uid="DSharpPlus.Entities.DiscordGuild.GetMembershipScreeningFormAsync">GetMembershipScreeningFormAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets this guild&apos;s membership screening form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuildMembershipScreening&gt; GetMembershipScreeningFormAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordGuildMembershipScreening.html">DiscordGuildMembershipScreening</a>&gt;</td>
+        <td><p>This guild&apos;s membership screening form.</p>
 </td>
       </tr>
     </tbody>
@@ -4300,6 +4233,72 @@ the voice state corresponds to.</p>
       <tr>
         <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
         <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordGuild_ModifyMembershipScreeningFormAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.ModifyMembershipScreeningFormAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_ModifyMembershipScreeningFormAsync_Action_MembershipScreeningEditModel__" data-uid="DSharpPlus.Entities.DiscordGuild.ModifyMembershipScreeningFormAsync(Action{MembershipScreeningEditModel})">ModifyMembershipScreeningFormAsync(Action&lt;MembershipScreeningEditModel&gt;)</h4>
+  <div class="markdown level1 summary"><p>Modifies this guild&apos;s membership screening form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuildMembershipScreening&gt; ModifyMembershipScreeningFormAsync(Action&lt;MembershipScreeningEditModel&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">MembershipScreeningEditModel</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to perform</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordGuildMembershipScreening.html">DiscordGuildMembershipScreening</a>&gt;</td>
+        <td><p>The modified screening form.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client doesn&apos;t have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageGuild">ManageGuild</a> permission, or community is not enabled on this guild.</p>
 </td>
       </tr>
       <tr>
