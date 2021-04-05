@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordEmoji
    ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -438,7 +438,9 @@
   
   <a id="DSharpPlus_Entities_DiscordEmoji_FromName_" data-uid="DSharpPlus.Entities.DiscordEmoji.FromName*"></a>
   <h4 id="DSharpPlus_Entities_DiscordEmoji_FromName_DSharpPlus_BaseDiscordClient_System_String_System_Boolean_" data-uid="DSharpPlus.Entities.DiscordEmoji.FromName(DSharpPlus.BaseDiscordClient,System.String,System.Boolean)">FromName(BaseDiscordClient, String, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Creates a DiscordEmoji from emote name that includes colons (eg. :thinking:). This method also supports skin tone variations (eg. <span class="emoji" shortcode="ok_hand">👌</span>:skin-tone-2:), standard emoticons (eg. :D), as well as guild emoji (still specified by :name:).</p>
+  <div class="markdown level1 summary"><p>Creates an emoji obejct from emote name that includes colons (eg. :thinking:). This method also supports 
+skin tone variations (eg. <span class="emoji" shortcode="ok_hand">👌</span>:skin-tone-2:), standard emoticons (eg. :D), as well as guild emoji 
+(still specified by :name:).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -500,7 +502,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DiscordEmoji FromUnicode(BaseDiscordClient client, string unicode_entity)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DiscordEmoji FromUnicode(BaseDiscordClient client, string unicodeEntity)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -520,7 +522,7 @@
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">unicode_entity</span></td>
+        <td><span class="parametername">unicodeEntity</span></td>
         <td><p>Unicode entity to create the object from.</p>
 </td>
       </tr>
@@ -551,7 +553,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DiscordEmoji FromUnicode(string unicode_entity)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DiscordEmoji FromUnicode(string unicodeEntity)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -565,7 +567,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">unicode_entity</span></td>
+        <td><span class="parametername">unicodeEntity</span></td>
         <td><p>Unicode entity to create the object from.</p>
 </td>
       </tr>
@@ -644,6 +646,51 @@
   <div><span class="xref">System.Object.GetHashCode()</span></div>
   
   
+  <a id="DSharpPlus_Entities_DiscordEmoji_IsValidUnicode_" data-uid="DSharpPlus.Entities.DiscordEmoji.IsValidUnicode*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordEmoji_IsValidUnicode_System_String_" data-uid="DSharpPlus.Entities.DiscordEmoji.IsValidUnicode(System.String)">IsValidUnicode(String)</h4>
+  <div class="markdown level1 summary"><p>Checks whether specified unicode entity is a valid unicode emoji.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidUnicode(string unicodeEntity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">unicodeEntity</span></td>
+        <td><p>Entity to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether it&apos;s a valid emoji.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordEmoji_ToString_" data-uid="DSharpPlus.Entities.DiscordEmoji.ToString*"></a>
   <h4 id="DSharpPlus_Entities_DiscordEmoji_ToString" data-uid="DSharpPlus.Entities.DiscordEmoji.ToString">ToString()</h4>
   <div class="markdown level1 summary"><p>Returns a string representation of this emoji.</p>
@@ -671,6 +718,295 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.ToString()</span></div>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordEmoji_TryFromGuildEmote_" data-uid="DSharpPlus.Entities.DiscordEmoji.TryFromGuildEmote*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordEmoji_TryFromGuildEmote_DSharpPlus_BaseDiscordClient_System_UInt64_DSharpPlus_Entities_DiscordEmoji__" data-uid="DSharpPlus.Entities.DiscordEmoji.TryFromGuildEmote(DSharpPlus.BaseDiscordClient,System.UInt64,DSharpPlus.Entities.DiscordEmoji@)">TryFromGuildEmote(BaseDiscordClient, UInt64, out DiscordEmoji)</h4>
+  <div class="markdown level1 summary"><p>Attempts to create an emoji object from a guild emote.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryFromGuildEmote(BaseDiscordClient client, ulong id, out DiscordEmoji emoji)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.BaseDiscordClient.html">BaseDiscordClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p><a class="xref" href="DSharpPlus.BaseDiscordClient.html">BaseDiscordClient</a> to attach to the object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Id of the emote.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordEmoji.html">DiscordEmoji</a></td>
+        <td><span class="parametername">emoji</span></td>
+        <td><p>Resulting <a class="xref" href="DSharpPlus.Entities.DiscordEmoji.html">DiscordEmoji</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the operation was successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordEmoji_TryFromName_" data-uid="DSharpPlus.Entities.DiscordEmoji.TryFromName*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordEmoji_TryFromName_DSharpPlus_BaseDiscordClient_System_String_DSharpPlus_Entities_DiscordEmoji__" data-uid="DSharpPlus.Entities.DiscordEmoji.TryFromName(DSharpPlus.BaseDiscordClient,System.String,DSharpPlus.Entities.DiscordEmoji@)">TryFromName(BaseDiscordClient, String, out DiscordEmoji)</h4>
+  <div class="markdown level1 summary"><p>Attempts to create an emoji obejct from emote name that includes colons (eg. :thinking:). This method also 
+supports skin tone variations (eg. <span class="emoji" shortcode="ok_hand">👌</span>:skin-tone-2:), standard emoticons (eg. :D), as well as guild 
+emoji (still specified by :name:).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryFromName(BaseDiscordClient client, string name, out DiscordEmoji emoji)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.BaseDiscordClient.html">BaseDiscordClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p><a class="xref" href="DSharpPlus.BaseDiscordClient.html">BaseDiscordClient</a> to attach to the object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the emote to find, including colons (eg. :thinking:).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordEmoji.html">DiscordEmoji</a></td>
+        <td><span class="parametername">emoji</span></td>
+        <td><p>Resulting <a class="xref" href="DSharpPlus.Entities.DiscordEmoji.html">DiscordEmoji</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the operation was successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordEmoji_TryFromName_" data-uid="DSharpPlus.Entities.DiscordEmoji.TryFromName*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordEmoji_TryFromName_DSharpPlus_BaseDiscordClient_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmoji__" data-uid="DSharpPlus.Entities.DiscordEmoji.TryFromName(DSharpPlus.BaseDiscordClient,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmoji@)">TryFromName(BaseDiscordClient, String, Boolean, out DiscordEmoji)</h4>
+  <div class="markdown level1 summary"><p>Attempts to create an emoji obejct from emote name that includes colons (eg. :thinking:). This method also 
+supports skin tone variations (eg. <span class="emoji" shortcode="ok_hand">👌</span>:skin-tone-2:), standard emoticons (eg. :D), as well as guild 
+emoji (still specified by :name:).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryFromName(BaseDiscordClient client, string name, bool includeGuilds, out DiscordEmoji emoji)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.BaseDiscordClient.html">BaseDiscordClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p><a class="xref" href="DSharpPlus.BaseDiscordClient.html">BaseDiscordClient</a> to attach to the object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the emote to find, including colons (eg. :thinking:).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeGuilds</span></td>
+        <td><p>Should guild emojis be included in the search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordEmoji.html">DiscordEmoji</a></td>
+        <td><span class="parametername">emoji</span></td>
+        <td><p>Resulting <a class="xref" href="DSharpPlus.Entities.DiscordEmoji.html">DiscordEmoji</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the operation was successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordEmoji_TryFromUnicode_" data-uid="DSharpPlus.Entities.DiscordEmoji.TryFromUnicode*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordEmoji_TryFromUnicode_DSharpPlus_BaseDiscordClient_System_String_DSharpPlus_Entities_DiscordEmoji__" data-uid="DSharpPlus.Entities.DiscordEmoji.TryFromUnicode(DSharpPlus.BaseDiscordClient,System.String,DSharpPlus.Entities.DiscordEmoji@)">TryFromUnicode(BaseDiscordClient, String, out DiscordEmoji)</h4>
+  <div class="markdown level1 summary"><p>Attempts to create an emoji object from a unicode entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryFromUnicode(BaseDiscordClient client, string unicodeEntity, out DiscordEmoji emoji)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.BaseDiscordClient.html">BaseDiscordClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p><a class="xref" href="DSharpPlus.BaseDiscordClient.html">BaseDiscordClient</a> to attach to the object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">unicodeEntity</span></td>
+        <td><p>Unicode entity to create the object from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordEmoji.html">DiscordEmoji</a></td>
+        <td><span class="parametername">emoji</span></td>
+        <td><p>Resulting <a class="xref" href="DSharpPlus.Entities.DiscordEmoji.html">DiscordEmoji</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the operation was successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordEmoji_TryFromUnicode_" data-uid="DSharpPlus.Entities.DiscordEmoji.TryFromUnicode*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordEmoji_TryFromUnicode_System_String_DSharpPlus_Entities_DiscordEmoji__" data-uid="DSharpPlus.Entities.DiscordEmoji.TryFromUnicode(System.String,DSharpPlus.Entities.DiscordEmoji@)">TryFromUnicode(String, out DiscordEmoji)</h4>
+  <div class="markdown level1 summary"><p>Attempts to create an emoji object from a unicode entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryFromUnicode(string unicodeEntity, out DiscordEmoji emoji)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">unicodeEntity</span></td>
+        <td><p>Unicode entity to create the object from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordEmoji.html">DiscordEmoji</a></td>
+        <td><span class="parametername">emoji</span></td>
+        <td><p>Resulting <a class="xref" href="DSharpPlus.Entities.DiscordEmoji.html">DiscordEmoji</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the operation was successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="operators">Operators
   </h3>
   

@@ -8,7 +8,7 @@
     <title>Message Builder </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Message Builder ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -77,8 +77,8 @@
 <h2 id="background">Background</h2>
 
 <p>Before the message builder was put into place, we had one large method for sending messages along with 3 additional methods for sending files. This
-was becoming a major code smell and it was hard to maintain and add more params onto it. Now we support just sending a simple message, an embed, a simple
-message with an embed, or a full fledged message builder.</p>
+was becoming a major code smell and it was hard to maintain and add more parameters onto it. Now we support just sending a simple message, an embed, a simple
+message with an embed, or a message builder.</p>
 <h2 id="using-the-message-builder">Using the Message Builder</h2>
 <p>The API Documentation for the message builder can be found at <a class="xref" href="../../api/DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a> but here we&#39;ll go over some of the concepts of using the
 message builder:</p>
@@ -91,11 +91,6 @@ message builder:</p>
         .WithFiles(new Dictionary&lt;string, Stream&gt;() { { &quot;ADumbFile1.txt&quot;, fs } })
         .SendAsync(ctx.Channel);           
 }
-</code></pre><p>OR</p>
-<pre><code class="lang-cs">var msg = await new DiscordMessageBuilder()
-    .WithContent(&quot;Here is a really dumb file that I am testing with.&quot;)
-    .WithFile(&quot;./ADumbFile.txt&quot;)
-    .SendAsync(ctx.Channel);
 </code></pre><h3 id="adding-mentions">Adding Mentions</h3>
 <p>For sending mentions, you&#39;ll have to use the MessageBuilder to construct your message, see example below:</p>
 <pre><code class="lang-cs">var msg = await new DiscordMessageBuilder()

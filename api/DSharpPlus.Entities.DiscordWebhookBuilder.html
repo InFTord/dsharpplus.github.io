@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordWebhookBuilder
    ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -196,7 +196,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, Stream&gt; Files { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;DiscordMessageFile&gt; Files { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -208,7 +208,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Stream</span>&gt;</td>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessageFile.html">DiscordMessageFile</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -384,13 +384,63 @@
   
   
   <a id="DSharpPlus_Entities_DiscordWebhookBuilder_AddFile_" data-uid="DSharpPlus.Entities.DiscordWebhookBuilder.AddFile*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordWebhookBuilder_AddFile_System_String_Stream_" data-uid="DSharpPlus.Entities.DiscordWebhookBuilder.AddFile(System.String,Stream)">AddFile(String, Stream)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordWebhookBuilder_AddFile_FileStream_System_Boolean_" data-uid="DSharpPlus.Entities.DiscordWebhookBuilder.AddFile(FileStream,System.Boolean)">AddFile(FileStream, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets if the message has files to be sent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordWebhookBuilder AddFile(FileStream stream, bool resetStreamPosition = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FileStream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The Stream to the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">resetStreamPosition</span></td>
+        <td><p>Tells the API Client to reset the stream position to what it was after the file is sent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordWebhookBuilder.html">DiscordWebhookBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordWebhookBuilder_AddFile_" data-uid="DSharpPlus.Entities.DiscordWebhookBuilder.AddFile*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordWebhookBuilder_AddFile_System_String_Stream_System_Boolean_" data-uid="DSharpPlus.Entities.DiscordWebhookBuilder.AddFile(System.String,Stream,System.Boolean)">AddFile(String, Stream, Boolean)</h4>
   <div class="markdown level1 summary"><p>Adds a file to send at the execution of the webhook.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordWebhookBuilder AddFile(string filename, Stream data)</code></pre>
+    <pre><code class="lang-csharp hljs">public DiscordWebhookBuilder AddFile(string filename, Stream data, bool resetStreamPosition = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -414,6 +464,12 @@
         <td><p>File data.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">resetStreamPosition</span></td>
+        <td><p>Tells the API Client to reset the stream position to what it was after the file is sent.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -434,13 +490,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordWebhookBuilder_AddFiles_" data-uid="DSharpPlus.Entities.DiscordWebhookBuilder.AddFiles*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordWebhookBuilder_AddFiles_Dictionary_System_String_Stream__" data-uid="DSharpPlus.Entities.DiscordWebhookBuilder.AddFiles(Dictionary{System.String,Stream})">AddFiles(Dictionary&lt;String, Stream&gt;)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordWebhookBuilder_AddFiles_Dictionary_System_String_Stream__System_Boolean_" data-uid="DSharpPlus.Entities.DiscordWebhookBuilder.AddFiles(Dictionary{System.String,Stream},System.Boolean)">AddFiles(Dictionary&lt;String, Stream&gt;, Boolean)</h4>
   <div class="markdown level1 summary"><p>Adds the given files to send at the execution of the webhook.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordWebhookBuilder AddFiles(Dictionary&lt;string, Stream&gt; files)</code></pre>
+    <pre><code class="lang-csharp hljs">public DiscordWebhookBuilder AddFiles(Dictionary&lt;string, Stream&gt; files, bool resetStreamPosition = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -456,6 +512,12 @@
         <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Stream</span>&gt;</td>
         <td><span class="parametername">files</span></td>
         <td><p>Dictionary of file name and file data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">resetStreamPosition</span></td>
+        <td><p>Tells the API Client to reset the stream position to what it was after the file is sent.</p>
 </td>
       </tr>
     </tbody>
@@ -560,6 +622,164 @@
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordWebhookBuilder.html">DiscordWebhookBuilder</a></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordWebhookBuilder_Clear_" data-uid="DSharpPlus.Entities.DiscordWebhookBuilder.Clear*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordWebhookBuilder_Clear" data-uid="DSharpPlus.Entities.DiscordWebhookBuilder.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Allows for clearing the Webhook Builder so that it can be used again to send a new message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordWebhookBuilder_ModifyAsync_" data-uid="DSharpPlus.Entities.DiscordWebhookBuilder.ModifyAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordWebhookBuilder_ModifyAsync_DSharpPlus_Entities_DiscordWebhook_DSharpPlus_Entities_DiscordMessage_" data-uid="DSharpPlus.Entities.DiscordWebhookBuilder.ModifyAsync(DSharpPlus.Entities.DiscordWebhook,DSharpPlus.Entities.DiscordMessage)">ModifyAsync(DiscordWebhook, DiscordMessage)</h4>
+  <div class="markdown level1 summary"><p>Sends the modified webhook message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; ModifyAsync(DiscordWebhook webhook, DiscordMessage message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordWebhook.html">DiscordWebhook</a></td>
+        <td><span class="parametername">webhook</span></td>
+        <td><p>The webhook that should be executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to modify.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
+        <td><p>The modified message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordWebhookBuilder_ModifyAsync_" data-uid="DSharpPlus.Entities.DiscordWebhookBuilder.ModifyAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordWebhookBuilder_ModifyAsync_DSharpPlus_Entities_DiscordWebhook_System_UInt64_" data-uid="DSharpPlus.Entities.DiscordWebhookBuilder.ModifyAsync(DSharpPlus.Entities.DiscordWebhook,System.UInt64)">ModifyAsync(DiscordWebhook, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Sends the modified webhook message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; ModifyAsync(DiscordWebhook webhook, ulong messageId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordWebhook.html">DiscordWebhook</a></td>
+        <td><span class="parametername">webhook</span></td>
+        <td><p>The webhook that should be executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">messageId</span></td>
+        <td><p>The id of the message to modify.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
+        <td><p>The modified message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordWebhookBuilder_SendAsync_" data-uid="DSharpPlus.Entities.DiscordWebhookBuilder.SendAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordWebhookBuilder_SendAsync_DSharpPlus_Entities_DiscordWebhook_" data-uid="DSharpPlus.Entities.DiscordWebhookBuilder.SendAsync(DSharpPlus.Entities.DiscordWebhook)">SendAsync(DiscordWebhook)</h4>
+  <div class="markdown level1 summary"><p>Executes a webhook.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendAsync(DiscordWebhook webhook)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordWebhook.html">DiscordWebhook</a></td>
+        <td><span class="parametername">webhook</span></td>
+        <td><p>The webhook that should be executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
+        <td><p>The message sent</p>
+</td>
       </tr>
     </tbody>
   </table>

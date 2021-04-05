@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordGuild
    ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -1743,6 +1743,96 @@ the voice state corresponds to.</p>
   </table>
   
   
+  <a id="DSharpPlus_Entities_DiscordGuild_BulkOverwriteApplicationCommandsAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.BulkOverwriteApplicationCommandsAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_BulkOverwriteApplicationCommandsAsync_IEnumerable_DSharpPlus_Entities_DiscordApplicationCommand__" data-uid="DSharpPlus.Entities.DiscordGuild.BulkOverwriteApplicationCommandsAsync(IEnumerable{DSharpPlus.Entities.DiscordApplicationCommand})">BulkOverwriteApplicationCommandsAsync(IEnumerable&lt;DiscordApplicationCommand&gt;)</h4>
+  <div class="markdown level1 summary"><p>Overwrites the existing slash commands in this guild. New commands are automatically created and missing commands are automatically delete</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;DiscordApplicationCommand&gt;&gt; BulkOverwriteApplicationCommandsAsync(IEnumerable&lt;DiscordApplicationCommand&gt; commands)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a>&gt;</td>
+        <td><span class="parametername">commands</span></td>
+        <td><p>The list of commands to overwrite with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a>&gt;&gt;</td>
+        <td><p>The list of guild commands</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordGuild_CreateApplicationCommandAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateApplicationCommandAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_CreateApplicationCommandAsync_DSharpPlus_Entities_DiscordApplicationCommand_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateApplicationCommandAsync(DSharpPlus.Entities.DiscordApplicationCommand)">CreateApplicationCommandAsync(DiscordApplicationCommand)</h4>
+  <div class="markdown level1 summary"><p>Creates or overwrites a slash command in this guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordApplicationCommand&gt; CreateApplicationCommandAsync(DiscordApplicationCommand command)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>The command to create.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a>&gt;</td>
+        <td><p>The created command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordGuild_CreateChannelAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateChannelAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_CreateChannelAsync_System_String_DSharpPlus_ChannelType_DSharpPlus_Entities_DiscordChannel_DSharpPlus_Entities_Optional_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__IEnumerable_DSharpPlus_Entities_DiscordOverwriteBuilder__System_Nullable_System_Boolean__DSharpPlus_Entities_Optional_System_Nullable_System_Int32___System_String_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateChannelAsync(System.String,DSharpPlus.ChannelType,DSharpPlus.Entities.DiscordChannel,DSharpPlus.Entities.Optional{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},IEnumerable{DSharpPlus.Entities.DiscordOverwriteBuilder},System.Nullable{System.Boolean},DSharpPlus.Entities.Optional{System.Nullable{System.Int32}},System.String)">CreateChannelAsync(String, ChannelType, DiscordChannel, Optional&lt;String&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, IEnumerable&lt;DiscordOverwriteBuilder&gt;, Nullable&lt;Boolean&gt;, Optional&lt;Nullable&lt;Int32&gt;&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new channel in this guild.</p>
@@ -2727,6 +2817,57 @@ the voice state corresponds to.</p>
   </table>
   
   
+  <a id="DSharpPlus_Entities_DiscordGuild_EditApplicationCommandAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.EditApplicationCommandAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_EditApplicationCommandAsync_System_UInt64_Action_ApplicationCommandEditModel__" data-uid="DSharpPlus.Entities.DiscordGuild.EditApplicationCommandAsync(System.UInt64,Action{ApplicationCommandEditModel})">EditApplicationCommandAsync(UInt64, Action&lt;ApplicationCommandEditModel&gt;)</h4>
+  <div class="markdown level1 summary"><p>Edits a slash command in this guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordApplicationCommand&gt; EditApplicationCommandAsync(ulong commandId, Action&lt;ApplicationCommandEditModel&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">commandId</span></td>
+        <td><p>The id of the command to edit.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">ApplicationCommandEditModel</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to perform.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a>&gt;</td>
+        <td><p>The edit command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordGuild_Equals_" data-uid="DSharpPlus.Entities.DiscordGuild.Equals*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_Equals_DSharpPlus_Entities_DiscordGuild_" data-uid="DSharpPlus.Entities.DiscordGuild.Equals(DSharpPlus.Entities.DiscordGuild)">Equals(DiscordGuild)</h4>
   <div class="markdown level1 summary"><p>Checks whether this <a class="xref" href="DSharpPlus.Entities.DiscordGuild.html">DiscordGuild</a> is equal to another <a class="xref" href="DSharpPlus.Entities.DiscordGuild.html">DiscordGuild</a>.</p>
@@ -2856,6 +2997,33 @@ the voice state corresponds to.</p>
       <tr>
         <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
         <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordGuild_GetApplicationCommandsAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetApplicationCommandsAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_GetApplicationCommandsAsync" data-uid="DSharpPlus.Entities.DiscordGuild.GetApplicationCommandsAsync">GetApplicationCommandsAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets all the slash commands in this guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;DiscordApplicationCommand&gt;&gt; GetApplicationCommandsAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a>&gt;&gt;</td>
+        <td><p>A list of slash commands in this guild.</p>
 </td>
       </tr>
     </tbody>
@@ -3806,6 +3974,49 @@ the voice state corresponds to.</p>
   </table>
   
   
+  <a id="DSharpPlus_Entities_DiscordGuild_GetWelcomeScreenAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetWelcomeScreenAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_GetWelcomeScreenAsync" data-uid="DSharpPlus.Entities.DiscordGuild.GetWelcomeScreenAsync">GetWelcomeScreenAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets this guild&apos;s welcome screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuildWelcomeScreen&gt; GetWelcomeScreenAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordGuildWelcomeScreen.html">DiscordGuildWelcomeScreen</a>&gt;</td>
+        <td><p>This guild&apos;s welcome screen object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordGuild_GetWidgetAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetWidgetAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_GetWidgetAsync" data-uid="DSharpPlus.Entities.DiscordGuild.GetWidgetAsync">GetWidgetAsync()</h4>
   <div class="markdown level1 summary"><p>Gets the guild&apos;s widget</p>
@@ -4382,6 +4593,72 @@ the voice state corresponds to.</p>
       <tr>
         <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
         <td><p>Throws when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageGuild">ManageGuild</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordGuild_ModifyWelcomeScreenAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.ModifyWelcomeScreenAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_ModifyWelcomeScreenAsync_Action_WelcomeScreenEditModel__" data-uid="DSharpPlus.Entities.DiscordGuild.ModifyWelcomeScreenAsync(Action{WelcomeScreenEditModel})">ModifyWelcomeScreenAsync(Action&lt;WelcomeScreenEditModel&gt;)</h4>
+  <div class="markdown level1 summary"><p>Modifies this guild&apos;s welcome screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuildWelcomeScreen&gt; ModifyWelcomeScreenAsync(Action&lt;WelcomeScreenEditModel&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">WelcomeScreenEditModel</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to perform.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordGuildWelcomeScreen.html">DiscordGuildWelcomeScreen</a>&gt;</td>
+        <td><p>The modified welcome screen.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client doesn&apos;t have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageGuild">ManageGuild</a> permission, or community is not enabled on this guild.</p>
 </td>
       </tr>
       <tr>

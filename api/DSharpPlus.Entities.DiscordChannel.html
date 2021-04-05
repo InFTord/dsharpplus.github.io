@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordChannel
    ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -311,6 +311,32 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_LastPinTimestamp_" data-uid="DSharpPlus.Entities.DiscordChannel.LastPinTimestamp*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_LastPinTimestamp" data-uid="DSharpPlus.Entities.DiscordChannel.LastPinTimestamp">LastPinTimestamp</h4>
+  <div class="markdown level1 summary"><p>Gets when the last pinned message was pinned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset? LastPinTimestamp { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTimeOffset</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2319,6 +2345,82 @@
       <tr>
         <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
         <td><p>Thrown when the channel does not exists or if the Member does not exists.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_SendMessageAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.SendMessageAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_SendMessageAsync_Action_DSharpPlus_Entities_DiscordMessageBuilder__" data-uid="DSharpPlus.Entities.DiscordChannel.SendMessageAsync(Action{DSharpPlus.Entities.DiscordMessageBuilder})">SendMessageAsync(Action&lt;DiscordMessageBuilder&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sends a message to this channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendMessageAsync(Action&lt;DiscordMessageBuilder&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>The builder with all the items to send.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
+        <td><p>The sent message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendMessages">SendMessages</a> permission TTS is true and <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendTtsMessages">SendTtsMessages</a> if TTS is true.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the channel does not exist.</p>
 </td>
       </tr>
       <tr>

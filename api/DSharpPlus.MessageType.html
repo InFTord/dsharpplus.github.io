@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Enum MessageType
    ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -80,7 +80,7 @@
   
   <h1 id="DSharpPlus_MessageType" data-uid="DSharpPlus.MessageType" class="text-break">Enum MessageType
   </h1>
-  <div class="markdown level0 summary"><p>Indicates the type of the message.</p>
+  <div class="markdown level0 summary"><p>Represents the type of a message.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DSharpPlus.html">DSharpPlus</a></h6>
@@ -100,13 +100,18 @@
     <thead>
     <tbody>
       <tr>
+        <td id="DSharpPlus_MessageType_ApplicationCommand">ApplicationCommand</td>
+        <td><p>Message indicating an application command was invoked.</p>
+</td>
+      </tr>
+      <tr>
         <td id="DSharpPlus_MessageType_Call">Call</td>
         <td><p>Message indicating a call.</p>
 </td>
       </tr>
       <tr>
         <td id="DSharpPlus_MessageType_ChannelFollowAdd">ChannelFollowAdd</td>
-        <td><p>Message when a user follows a news channel.</p>
+        <td><p>Message indicating a user followed a news channel.</p>
 </td>
       </tr>
       <tr>
@@ -121,7 +126,7 @@
       </tr>
       <tr>
         <td id="DSharpPlus_MessageType_ChannelPinnedMessage">ChannelPinnedMessage</td>
-        <td><p>USER pinned a message to this channel.</p>
+        <td><p>Message indiciating a user pinned a message to a channel.</p>
 </td>
       </tr>
       <tr>
@@ -130,8 +135,28 @@
 </td>
       </tr>
       <tr>
+        <td id="DSharpPlus_MessageType_GuildDiscoveryDisqualified">GuildDiscoveryDisqualified</td>
+        <td><p>Message indicating a guild was removed from guild discovery.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DSharpPlus_MessageType_GuildDiscoveryGracePeriodFinalWarning">GuildDiscoveryGracePeriodFinalWarning</td>
+        <td><p>Message indicating that a guild has failed to meet guild discovery requirements for 3 weeks.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DSharpPlus_MessageType_GuildDiscoveryGracePeriodInitialWarning">GuildDiscoveryGracePeriodInitialWarning</td>
+        <td><p>Message indicating that a guild has failed to meet guild discovery requirements for a week.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DSharpPlus_MessageType_GuildDiscoveryRequalified">GuildDiscoveryRequalified</td>
+        <td><p>Message indicating a guild was readded to guild discovery.</p>
+</td>
+      </tr>
+      <tr>
         <td id="DSharpPlus_MessageType_GuildMemberJoin">GuildMemberJoin</td>
-        <td><p>Message when a guild member joins. Most frequently seen in newer, smaller guilds.</p>
+        <td><p>Message indicating a guild member joined. Most frequently seen in newer, smaller guilds.</p>
 </td>
       </tr>
       <tr>
@@ -146,27 +171,27 @@
       </tr>
       <tr>
         <td id="DSharpPlus_MessageType_Reply">Reply</td>
-        <td><p>Message when a user replies to another user</p>
+        <td><p>Message indicating a user replied to another user.</p>
 </td>
       </tr>
       <tr>
         <td id="DSharpPlus_MessageType_TierOneUserPremiumGuildSubscription">TierOneUserPremiumGuildSubscription</td>
-        <td><p>Message when the guild reaches tier one of nitro boosts.</p>
+        <td><p>Message indicating a guild reached tier one of nitro boosts.</p>
 </td>
       </tr>
       <tr>
         <td id="DSharpPlus_MessageType_TierThreeUserPremiumGuildSubscription">TierThreeUserPremiumGuildSubscription</td>
-        <td><p>Message when the guild reaches tier three of nitro boosts.</p>
+        <td><p>Message indicating a guild reached tier three of nitro boosts.</p>
 </td>
       </tr>
       <tr>
         <td id="DSharpPlus_MessageType_TierTwoUserPremiumGuildSubscription">TierTwoUserPremiumGuildSubscription</td>
-        <td><p>Message when the guild reaches tier two of nitro boosts.</p>
+        <td><p>Message indicating a guild reached tier two of nitro boosts.</p>
 </td>
       </tr>
       <tr>
         <td id="DSharpPlus_MessageType_UserPremiumGuildSubscription">UserPremiumGuildSubscription</td>
-        <td><p>Message when a member nitro boosts the guild.</p>
+        <td><p>Message indicating a member nitro boosted a guild.</p>
 </td>
       </tr>
     </tbody>
