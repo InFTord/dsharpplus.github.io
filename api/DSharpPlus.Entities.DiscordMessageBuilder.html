@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordMessageBuilder
    ">
-    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="generator" content="docfx 2.57.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -144,6 +144,34 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordEmbed.html">DiscordEmbed</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMessageBuilder_FailOnInvalidReply_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.FailOnInvalidReply*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_FailOnInvalidReply" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.FailOnInvalidReply">FailOnInvalidReply</h4>
+  <div class="markdown level1 summary"><p>Gets if the Reply will error if the Reply Message Id does not reference a valid message.
+<p>If set to false, invalid replies are send as a regular message.</p>
+<p>Defaults to false.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FailOnInvalidReply { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -758,13 +786,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordMessageBuilder_WithReply_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.WithReply*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_WithReply_System_UInt64_System_Boolean_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.WithReply(System.UInt64,System.Boolean)">WithReply(UInt64, Boolean)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_WithReply_System_UInt64_System_Boolean_System_Boolean_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.WithReply(System.UInt64,System.Boolean,System.Boolean)">WithReply(UInt64, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Sets if the message is a reply</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordMessageBuilder WithReply(ulong messageId, bool mention = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public DiscordMessageBuilder WithReply(ulong messageId, bool mention = false, bool failOnInvalidReply = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -786,6 +814,12 @@
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">mention</span></td>
         <td><p>If we should mention the user in the reply.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">failOnInvalidReply</span></td>
+        <td><p>Whether sending a reply that references an invalid message should be </p>
 </td>
       </tr>
     </tbody>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordShardedClient
    ">
-    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="generator" content="docfx 2.57.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -300,7 +300,9 @@
   <a id="DSharpPlus_DiscordShardedClient_GetShard_" data-uid="DSharpPlus.DiscordShardedClient.GetShard*"></a>
   <h4 id="DSharpPlus_DiscordShardedClient_GetShard_DiscordGuild_" data-uid="DSharpPlus.DiscordShardedClient.GetShard(DiscordGuild)">GetShard(DiscordGuild)</h4>
   <div class="markdown level1 summary"><p>Gets a shard from a guild.
-<p>This method uses the <a class="xref" href="DSharpPlus.Utilities.html#DSharpPlus_Utilities_GetShardId_System_UInt64_System_Int32_">GetShardId(UInt64, Int32)</a> method and will not iterate through the shard guild caches.</p></p>
+<p>
+    If automatically sharding, this will use the <a class="xref" href="DSharpPlus.Utilities.html#DSharpPlus_Utilities_GetShardId_System_UInt64_System_Int32_">GetShardId(UInt64, Int32)</a> method. 
+    Otherwise if manually sharding, it will instead iterate through each shard&apos;s guild caches.<br></p></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -336,7 +338,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a></td>
-        <td><p>The found <a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a> shard.</p>
+        <td><p>The found <a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a> shard. Otherwise <span class="xref">null</span> if the shard was not found for the guild.</p>
 </td>
       </tr>
     </tbody>
@@ -345,8 +347,10 @@
   
   <a id="DSharpPlus_DiscordShardedClient_GetShard_" data-uid="DSharpPlus.DiscordShardedClient.GetShard*"></a>
   <h4 id="DSharpPlus_DiscordShardedClient_GetShard_System_UInt64_" data-uid="DSharpPlus.DiscordShardedClient.GetShard(System.UInt64)">GetShard(UInt64)</h4>
-  <div class="markdown level1 summary"><p>Gets a shard from a guild id.
-<p>This method uses the <a class="xref" href="DSharpPlus.Utilities.html#DSharpPlus_Utilities_GetShardId_System_UInt64_System_Int32_">GetShardId(UInt64, Int32)</a> method and will not iterate through the shard guild caches.</p></p>
+  <div class="markdown level1 summary"><p>Gets a shard from a guild ID.
+<p>
+    If automatically sharding, this will use the <a class="xref" href="DSharpPlus.Utilities.html#DSharpPlus_Utilities_GetShardId_System_UInt64_System_Int32_">GetShardId(UInt64, Int32)</a> method. 
+    Otherwise if manually sharding, it will instead iterate through each shard&apos;s guild caches.<br></p></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -366,7 +370,7 @@
       <tr>
         <td><span class="xref">System.UInt64</span></td>
         <td><span class="parametername">guildId</span></td>
-        <td><p>The guild id for the shard.</p>
+        <td><p>The guild ID for the shard.</p>
 </td>
       </tr>
     </tbody>
@@ -382,7 +386,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a></td>
-        <td><p>The found <a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a> shard.</p>
+        <td><p>The found <a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a> shard. Otherwise <span class="xref">null</span> if the shard was not found for the guild ID.</p>
 </td>
       </tr>
     </tbody>

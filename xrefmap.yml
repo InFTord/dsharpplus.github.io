@@ -18552,6 +18552,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordMessageBuilder.Embed
   nameWithType: DiscordMessageBuilder.Embed
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.FailOnInvalidReply
+  name: FailOnInvalidReply
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_FailOnInvalidReply
+  commentId: P:DSharpPlus.Entities.DiscordMessageBuilder.FailOnInvalidReply
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.FailOnInvalidReply
+  nameWithType: DiscordMessageBuilder.FailOnInvalidReply
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.FailOnInvalidReply*
+  name: FailOnInvalidReply
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_FailOnInvalidReply_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageBuilder.FailOnInvalidReply
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.FailOnInvalidReply
+  nameWithType: DiscordMessageBuilder.FailOnInvalidReply
 - uid: DSharpPlus.Entities.DiscordMessageBuilder.Files
   name: Files
   href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_Files
@@ -18746,12 +18759,12 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithFiles
   nameWithType: DiscordMessageBuilder.WithFiles
-- uid: DSharpPlus.Entities.DiscordMessageBuilder.WithReply(System.UInt64,System.Boolean)
-  name: WithReply(UInt64, Boolean)
-  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithReply_System_UInt64_System_Boolean_
-  commentId: M:DSharpPlus.Entities.DiscordMessageBuilder.WithReply(System.UInt64,System.Boolean)
-  fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithReply(System.UInt64, System.Boolean)
-  nameWithType: DiscordMessageBuilder.WithReply(UInt64, Boolean)
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.WithReply(System.UInt64,System.Boolean,System.Boolean)
+  name: WithReply(UInt64, Boolean, Boolean)
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithReply_System_UInt64_System_Boolean_System_Boolean_
+  commentId: M:DSharpPlus.Entities.DiscordMessageBuilder.WithReply(System.UInt64,System.Boolean,System.Boolean)
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithReply(System.UInt64, System.Boolean, System.Boolean)
+  nameWithType: DiscordMessageBuilder.WithReply(UInt64, Boolean, Boolean)
 - uid: DSharpPlus.Entities.DiscordMessageBuilder.WithReply*
   name: WithReply
   href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithReply_
