@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordGuild
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -1823,7 +1823,7 @@ the voice state corresponds to.</p>
   
   <a id="DSharpPlus_Entities_DiscordGuild_BatchEditApplicationCommandPermissionsAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.BatchEditApplicationCommandPermissionsAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_BatchEditApplicationCommandPermissionsAsync_IEnumerable_DSharpPlus_Entities_DiscordGuildApplicationCommandPermissions__" data-uid="DSharpPlus.Entities.DiscordGuild.BatchEditApplicationCommandPermissionsAsync(IEnumerable{DSharpPlus.Entities.DiscordGuildApplicationCommandPermissions})">BatchEditApplicationCommandPermissionsAsync(IEnumerable&lt;DiscordGuildApplicationCommandPermissions&gt;)</h4>
-  <div class="markdown level1 summary"><p>Batch edits permissions for a application command in this guild.</p>
+  <div class="markdown level1 summary"><p>Batch edits permissions for a slash command in this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1868,7 +1868,7 @@ the voice state corresponds to.</p>
   
   <a id="DSharpPlus_Entities_DiscordGuild_BulkOverwriteApplicationCommandsAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.BulkOverwriteApplicationCommandsAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_BulkOverwriteApplicationCommandsAsync_IEnumerable_DSharpPlus_Entities_DiscordApplicationCommand__" data-uid="DSharpPlus.Entities.DiscordGuild.BulkOverwriteApplicationCommandsAsync(IEnumerable{DSharpPlus.Entities.DiscordApplicationCommand})">BulkOverwriteApplicationCommandsAsync(IEnumerable&lt;DiscordApplicationCommand&gt;)</h4>
-  <div class="markdown level1 summary"><p>Overwrites the existing application commands in this guild. New commands are automatically created and missing commands are automatically delete</p>
+  <div class="markdown level1 summary"><p>Overwrites the existing slash commands in this guild. New commands are automatically created and missing commands are automatically delete</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1913,7 +1913,7 @@ the voice state corresponds to.</p>
   
   <a id="DSharpPlus_Entities_DiscordGuild_CreateApplicationCommandAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_CreateApplicationCommandAsync_DSharpPlus_Entities_DiscordApplicationCommand_" data-uid="DSharpPlus.Entities.DiscordGuild.CreateApplicationCommandAsync(DSharpPlus.Entities.DiscordApplicationCommand)">CreateApplicationCommandAsync(DiscordApplicationCommand)</h4>
-  <div class="markdown level1 summary"><p>Creates or overwrites a application command in this guild.</p>
+  <div class="markdown level1 summary"><p>Creates or overwrites a slash command in this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1963,7 +1963,7 @@ the voice state corresponds to.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordChannel&gt; CreateChannelAsync(string name, ChannelType type, DiscordChannel parent = null, Optional&lt;string&gt; topic = default(Optional&lt;string&gt;), int? bitrate = default(int? ), int? userLimit = default(int? ), IEnumerable&lt;DiscordOverwriteBuilder&gt; overwrites = null, bool? nsfw = default(bool? ), Optional&lt;int?&gt; perUserRateLimit = default(Optional&lt;int?&gt;), VideoQualityMode? qualityMode = default(VideoQualityMode? ), string reason = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordChannel&gt; CreateChannelAsync(string name, ChannelType type, DiscordChannel parent = null, Optional&lt;string&gt; topic = default(Optional&lt;string&gt;), int? bitrate = null, int? userLimit = null, IEnumerable&lt;DiscordOverwriteBuilder&gt; overwrites = null, bool? nsfw = null, Optional&lt;int?&gt; perUserRateLimit = default(Optional&lt;int?&gt;), VideoQualityMode? qualityMode = null, string reason = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2271,7 +2271,7 @@ the voice state corresponds to.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordRole&gt; CreateRoleAsync(string name = null, Permissions? permissions = default(Permissions? ), DiscordColor? color = default(DiscordColor? ), bool? hoist = default(bool? ), bool? mentionable = default(bool? ), string reason = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordRole&gt; CreateRoleAsync(string name = null, Permissions? permissions = null, DiscordColor? color = null, bool? hoist = null, bool? mentionable = null, string reason = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2512,7 +2512,7 @@ the voice state corresponds to.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordChannel&gt; CreateTextChannelAsync(string name, DiscordChannel parent = null, Optional&lt;string&gt; topic = default(Optional&lt;string&gt;), IEnumerable&lt;DiscordOverwriteBuilder&gt; overwrites = null, bool? nsfw = default(bool? ), Optional&lt;int?&gt; perUserRateLimit = default(Optional&lt;int?&gt;), string reason = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordChannel&gt; CreateTextChannelAsync(string name, DiscordChannel parent = null, Optional&lt;string&gt; topic = default(Optional&lt;string&gt;), IEnumerable&lt;DiscordOverwriteBuilder&gt; overwrites = null, bool? nsfw = null, Optional&lt;int?&gt; perUserRateLimit = default(Optional&lt;int?&gt;), string reason = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2624,7 +2624,7 @@ the voice state corresponds to.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordChannel&gt; CreateVoiceChannelAsync(string name, DiscordChannel parent = null, int? bitrate = default(int? ), int? user_limit = default(int? ), IEnumerable&lt;DiscordOverwriteBuilder&gt; overwrites = null, VideoQualityMode? qualityMode = default(VideoQualityMode? ), string reason = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordChannel&gt; CreateVoiceChannelAsync(string name, DiscordChannel parent = null, int? bitrate = null, int? user_limit = null, IEnumerable&lt;DiscordOverwriteBuilder&gt; overwrites = null, VideoQualityMode? qualityMode = null, string reason = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3064,7 +3064,7 @@ the voice state corresponds to.</p>
   
   <a id="DSharpPlus_Entities_DiscordGuild_EditApplicationCommandAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.EditApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_EditApplicationCommandAsync_System_UInt64_Action_ApplicationCommandEditModel__" data-uid="DSharpPlus.Entities.DiscordGuild.EditApplicationCommandAsync(System.UInt64,Action{ApplicationCommandEditModel})">EditApplicationCommandAsync(UInt64, Action&lt;ApplicationCommandEditModel&gt;)</h4>
-  <div class="markdown level1 summary"><p>Edits a application command in this guild.</p>
+  <div class="markdown level1 summary"><p>Edits a slash command in this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3115,7 +3115,7 @@ the voice state corresponds to.</p>
   
   <a id="DSharpPlus_Entities_DiscordGuild_EditApplicationCommandPermissionsAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.EditApplicationCommandPermissionsAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_EditApplicationCommandPermissionsAsync_DSharpPlus_Entities_DiscordApplicationCommand_IEnumerable_DSharpPlus_Entities_DiscordApplicationCommandPermission__" data-uid="DSharpPlus.Entities.DiscordGuild.EditApplicationCommandPermissionsAsync(DSharpPlus.Entities.DiscordApplicationCommand,IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandPermission})">EditApplicationCommandPermissionsAsync(DiscordApplicationCommand, IEnumerable&lt;DiscordApplicationCommandPermission&gt;)</h4>
-  <div class="markdown level1 summary"><p>Edits permissions for a application command in this guild.</p>
+  <div class="markdown level1 summary"><p>Edits permissions for a slash command in this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3301,7 +3301,7 @@ the voice state corresponds to.</p>
   
   <a id="DSharpPlus_Entities_DiscordGuild_GetApplicationCommandPermissionsAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetApplicationCommandPermissionsAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_GetApplicationCommandPermissionsAsync_DSharpPlus_Entities_DiscordApplicationCommand_" data-uid="DSharpPlus.Entities.DiscordGuild.GetApplicationCommandPermissionsAsync(DSharpPlus.Entities.DiscordApplicationCommand)">GetApplicationCommandPermissionsAsync(DiscordApplicationCommand)</h4>
-  <div class="markdown level1 summary"><p>Gets permissions for a application command in this guild.</p>
+  <div class="markdown level1 summary"><p>Gets permissions for a slash command in this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3346,7 +3346,7 @@ the voice state corresponds to.</p>
   
   <a id="DSharpPlus_Entities_DiscordGuild_GetApplicationCommandsAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetApplicationCommandsAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_GetApplicationCommandsAsync" data-uid="DSharpPlus.Entities.DiscordGuild.GetApplicationCommandsAsync">GetApplicationCommandsAsync()</h4>
-  <div class="markdown level1 summary"><p>Gets all the application commands in this guild.</p>
+  <div class="markdown level1 summary"><p>Gets all the slash commands in this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3364,7 +3364,7 @@ the voice state corresponds to.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a>&gt;&gt;</td>
-        <td><p>A list of application commands in this guild.</p>
+        <td><p>A list of slash commands in this guild.</p>
 </td>
       </tr>
     </tbody>
@@ -3373,7 +3373,7 @@ the voice state corresponds to.</p>
   
   <a id="DSharpPlus_Entities_DiscordGuild_GetApplicationCommandsPermissionsAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetApplicationCommandsPermissionsAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_GetApplicationCommandsPermissionsAsync" data-uid="DSharpPlus.Entities.DiscordGuild.GetApplicationCommandsPermissionsAsync">GetApplicationCommandsPermissionsAsync()</h4>
-  <div class="markdown level1 summary"><p>Gets all application command permissions in this guild.</p>
+  <div class="markdown level1 summary"><p>Gets all slash command permissions in this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3405,7 +3405,7 @@ the voice state corresponds to.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;IReadOnlyList&lt;DiscordAuditLogEntry&gt;&gt; GetAuditLogsAsync(int? limit = default(int? ), DiscordMember by_member = null, AuditLogActionType? action_type = default(AuditLogActionType? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;IReadOnlyList&lt;DiscordAuditLogEntry&gt;&gt; GetAuditLogsAsync(int? limit = null, DiscordMember by_member = null, AuditLogActionType? action_type = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5252,7 +5252,7 @@ the voice state corresponds to.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordWidgetSettings&gt; ModifyWidgetSettingsAsync(bool? isEnabled = default(bool? ), DiscordChannel channel = null, string reason = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordWidgetSettings&gt; ModifyWidgetSettingsAsync(bool? isEnabled = null, DiscordChannel channel = null, string reason = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5404,7 +5404,7 @@ the voice state corresponds to.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task RequestMembersAsync(string query = &quot;&quot;, int limit = 0, bool? presences = default(bool? ), IEnumerable&lt;ulong&gt; userIds = null, string nonce = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task RequestMembersAsync(string query = &quot;&quot;, int limit = 0, bool? presences = null, IEnumerable&lt;ulong&gt; userIds = null, string nonce = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5473,7 +5473,7 @@ The <code data-dev-comment-type="paramref" class="paramref">limit</code> must al
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;DiscordMember&gt;&gt; SearchMembersAsync(string name, int? limit)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;DiscordMember&gt;&gt; SearchMembersAsync(string name, int? limit = 1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

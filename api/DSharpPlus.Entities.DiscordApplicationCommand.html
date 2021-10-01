@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordApplicationCommand
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -109,13 +109,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordApplicationCommand__ctor_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.#ctor*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordApplicationCommand__ctor_System_String_System_String_IEnumerable_DSharpPlus_Entities_DiscordApplicationCommandOption__System_Nullable_System_Boolean__DSharpPlus_ApplicationCommandType_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.#ctor(System.String,System.String,IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOption},System.Nullable{System.Boolean},DSharpPlus.ApplicationCommandType)">DiscordApplicationCommand(String, String, IEnumerable&lt;DiscordApplicationCommandOption&gt;, Nullable&lt;Boolean&gt;, ApplicationCommandType)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordApplicationCommand__ctor_System_String_System_String_IEnumerable_DSharpPlus_Entities_DiscordApplicationCommandOption__System_Nullable_System_Boolean__" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.#ctor(System.String,System.String,IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOption},System.Nullable{System.Boolean})">DiscordApplicationCommand(String, String, IEnumerable&lt;DiscordApplicationCommandOption&gt;, Nullable&lt;Boolean&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a new instance of a <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordApplicationCommand(string name, string description, IEnumerable&lt;DiscordApplicationCommandOption&gt; options = null, bool? defaultPermission = default(bool? ), ApplicationCommandType type = ApplicationCommandType.SlashCommand)</code></pre>
+    <pre><code class="lang-csharp hljs">public DiscordApplicationCommand(string name, string description, IEnumerable&lt;DiscordApplicationCommandOption&gt; options = null, bool? defaultPermission = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -150,11 +150,6 @@
         <td><span class="parametername">defaultPermission</span></td>
         <td><p>Whether the command is enabled by default when the application is added to a guild.</p>
 </td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.ApplicationCommandType.html">ApplicationCommandType</a></td>
-        <td><span class="parametername">type</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -290,32 +285,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="DSharpPlus_Entities_DiscordApplicationCommand_Type_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.Type*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordApplicationCommand_Type" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.Type">Type</h4>
-  <div class="markdown level1 summary"><p>Gets the type of this application command.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ApplicationCommandType Type { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.ApplicationCommandType.html">ApplicationCommandType</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   
@@ -445,7 +414,7 @@
   
   <a id="DSharpPlus_Entities_DiscordApplicationCommand_op_Equality_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.op_Equality*"></a>
   <h4 id="DSharpPlus_Entities_DiscordApplicationCommand_op_Equality_DSharpPlus_Entities_DiscordApplicationCommand_DSharpPlus_Entities_DiscordApplicationCommand_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.op_Equality(DSharpPlus.Entities.DiscordApplicationCommand,DSharpPlus.Entities.DiscordApplicationCommand)">Equality(DiscordApplicationCommand, DiscordApplicationCommand)</h4>
-  <div class="markdown level1 summary"><p>Determines if two <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a> objects are equal.</p>
+  <div class="markdown level1 summary"><p>Determines if two <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a> objects are equal. </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -496,7 +465,7 @@
   
   <a id="DSharpPlus_Entities_DiscordApplicationCommand_op_Inequality_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.op_Inequality*"></a>
   <h4 id="DSharpPlus_Entities_DiscordApplicationCommand_op_Inequality_DSharpPlus_Entities_DiscordApplicationCommand_DSharpPlus_Entities_DiscordApplicationCommand_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.op_Inequality(DSharpPlus.Entities.DiscordApplicationCommand,DSharpPlus.Entities.DiscordApplicationCommand)">Inequality(DiscordApplicationCommand, DiscordApplicationCommand)</h4>
-  <div class="markdown level1 summary"><p>Determines if two <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a> objects are not equal.</p>
+  <div class="markdown level1 summary"><p>Determines if two <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a> objects are not equal. </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

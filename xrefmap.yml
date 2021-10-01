@@ -148,30 +148,6 @@ references:
   commentId: F:DSharpPlus.ApplicationCommandPermissionType.User
   fullName: DSharpPlus.ApplicationCommandPermissionType.User
   nameWithType: ApplicationCommandPermissionType.User
-- uid: DSharpPlus.ApplicationCommandType
-  name: ApplicationCommandType
-  href: api/DSharpPlus.ApplicationCommandType.html
-  commentId: T:DSharpPlus.ApplicationCommandType
-  fullName: DSharpPlus.ApplicationCommandType
-  nameWithType: ApplicationCommandType
-- uid: DSharpPlus.ApplicationCommandType.MessageContextMenu
-  name: MessageContextMenu
-  href: api/DSharpPlus.ApplicationCommandType.html#DSharpPlus_ApplicationCommandType_MessageContextMenu
-  commentId: F:DSharpPlus.ApplicationCommandType.MessageContextMenu
-  fullName: DSharpPlus.ApplicationCommandType.MessageContextMenu
-  nameWithType: ApplicationCommandType.MessageContextMenu
-- uid: DSharpPlus.ApplicationCommandType.SlashCommand
-  name: SlashCommand
-  href: api/DSharpPlus.ApplicationCommandType.html#DSharpPlus_ApplicationCommandType_SlashCommand
-  commentId: F:DSharpPlus.ApplicationCommandType.SlashCommand
-  fullName: DSharpPlus.ApplicationCommandType.SlashCommand
-  nameWithType: ApplicationCommandType.SlashCommand
-- uid: DSharpPlus.ApplicationCommandType.UserContextMenu
-  name: UserContextMenu
-  href: api/DSharpPlus.ApplicationCommandType.html#DSharpPlus_ApplicationCommandType_UserContextMenu
-  commentId: F:DSharpPlus.ApplicationCommandType.UserContextMenu
-  fullName: DSharpPlus.ApplicationCommandType.UserContextMenu
-  nameWithType: ApplicationCommandType.UserContextMenu
 - uid: DSharpPlus.ApplicationFlags
   name: ApplicationFlags
   href: api/DSharpPlus.ApplicationFlags.html
@@ -5055,12 +5031,6 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.DiscordClient.ConnectAsync
   nameWithType: DiscordClient.ConnectAsync
-- uid: DSharpPlus.DiscordClient.ContextMenuInteractionCreated
-  name: ContextMenuInteractionCreated
-  href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_ContextMenuInteractionCreated
-  commentId: E:DSharpPlus.DiscordClient.ContextMenuInteractionCreated
-  fullName: DSharpPlus.DiscordClient.ContextMenuInteractionCreated
-  nameWithType: DiscordClient.ContextMenuInteractionCreated
 - uid: DSharpPlus.DiscordClient.CreateGlobalApplicationCommandAsync(DiscordApplicationCommand)
   name: CreateGlobalApplicationCommandAsync(DiscordApplicationCommand)
   href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_CreateGlobalApplicationCommandAsync_DiscordApplicationCommand_
@@ -5936,12 +5906,6 @@ references:
   commentId: E:DSharpPlus.DiscordClient.WebhooksUpdated
   fullName: DSharpPlus.DiscordClient.WebhooksUpdated
   nameWithType: DiscordClient.WebhooksUpdated
-- uid: DSharpPlus.DiscordClient.Zombied
-  name: Zombied
-  href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_Zombied
-  commentId: E:DSharpPlus.DiscordClient.Zombied
-  fullName: DSharpPlus.DiscordClient.Zombied
-  nameWithType: DiscordClient.Zombied
 - uid: DSharpPlus.DiscordConfiguration
   name: DiscordConfiguration
   href: api/DSharpPlus.DiscordConfiguration.html
@@ -8319,12 +8283,6 @@ references:
   commentId: E:DSharpPlus.DiscordShardedClient.ComponentInteractionCreated
   fullName: DSharpPlus.DiscordShardedClient.ComponentInteractionCreated
   nameWithType: DiscordShardedClient.ComponentInteractionCreated
-- uid: DSharpPlus.DiscordShardedClient.ContextMenuInteractionCreated
-  name: ContextMenuInteractionCreated
-  href: api/DSharpPlus.DiscordShardedClient.html#DSharpPlus_DiscordShardedClient_ContextMenuInteractionCreated
-  commentId: E:DSharpPlus.DiscordShardedClient.ContextMenuInteractionCreated
-  fullName: DSharpPlus.DiscordShardedClient.ContextMenuInteractionCreated
-  nameWithType: DiscordShardedClient.ContextMenuInteractionCreated
 - uid: DSharpPlus.DiscordShardedClient.CurrentApplication
   name: CurrentApplication
   href: api/DSharpPlus.DiscordShardedClient.html#DSharpPlus_DiscordShardedClient_CurrentApplication
@@ -8759,12 +8717,6 @@ references:
   commentId: E:DSharpPlus.DiscordShardedClient.WebhooksUpdated
   fullName: DSharpPlus.DiscordShardedClient.WebhooksUpdated
   nameWithType: DiscordShardedClient.WebhooksUpdated
-- uid: DSharpPlus.DiscordShardedClient.Zombied
-  name: Zombied
-  href: api/DSharpPlus.DiscordShardedClient.html#DSharpPlus_DiscordShardedClient_Zombied
-  commentId: E:DSharpPlus.DiscordShardedClient.Zombied
-  fullName: DSharpPlus.DiscordShardedClient.Zombied
-  nameWithType: DiscordShardedClient.Zombied
 - uid: DSharpPlus.DiscordWebhookClient
   name: DiscordWebhookClient
   href: api/DSharpPlus.DiscordWebhookClient.html
@@ -8883,19 +8835,6 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.DiscordWebhookClient.GetRegisteredWebhook
   nameWithType: DiscordWebhookClient.GetRegisteredWebhook
-- uid: DSharpPlus.DiscordWebhookClient.Logger
-  name: Logger
-  href: api/DSharpPlus.DiscordWebhookClient.html#DSharpPlus_DiscordWebhookClient_Logger
-  commentId: P:DSharpPlus.DiscordWebhookClient.Logger
-  fullName: DSharpPlus.DiscordWebhookClient.Logger
-  nameWithType: DiscordWebhookClient.Logger
-- uid: DSharpPlus.DiscordWebhookClient.Logger*
-  name: Logger
-  href: api/DSharpPlus.DiscordWebhookClient.html#DSharpPlus_DiscordWebhookClient_Logger_
-  commentId: Overload:DSharpPlus.DiscordWebhookClient.Logger
-  isSpec: "True"
-  fullName: DSharpPlus.DiscordWebhookClient.Logger
-  nameWithType: DiscordWebhookClient.Logger
 - uid: DSharpPlus.DiscordWebhookClient.RemoveWebhook(System.UInt64)
   name: RemoveWebhook(UInt64)
   href: api/DSharpPlus.DiscordWebhookClient.html#DSharpPlus_DiscordWebhookClient_RemoveWebhook_System_UInt64_
@@ -9614,19 +9553,6 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordApplication.Owners
   nameWithType: DiscordApplication.Owners
-- uid: DSharpPlus.Entities.DiscordApplication.PrivacyPolicyUrl
-  name: PrivacyPolicyUrl
-  href: api/DSharpPlus.Entities.DiscordApplication.html#DSharpPlus_Entities_DiscordApplication_PrivacyPolicyUrl
-  commentId: P:DSharpPlus.Entities.DiscordApplication.PrivacyPolicyUrl
-  fullName: DSharpPlus.Entities.DiscordApplication.PrivacyPolicyUrl
-  nameWithType: DiscordApplication.PrivacyPolicyUrl
-- uid: DSharpPlus.Entities.DiscordApplication.PrivacyPolicyUrl*
-  name: PrivacyPolicyUrl
-  href: api/DSharpPlus.Entities.DiscordApplication.html#DSharpPlus_Entities_DiscordApplication_PrivacyPolicyUrl_
-  commentId: Overload:DSharpPlus.Entities.DiscordApplication.PrivacyPolicyUrl
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordApplication.PrivacyPolicyUrl
-  nameWithType: DiscordApplication.PrivacyPolicyUrl
 - uid: DSharpPlus.Entities.DiscordApplication.RequiresCodeGrant
   name: RequiresCodeGrant
   href: api/DSharpPlus.Entities.DiscordApplication.html#DSharpPlus_Entities_DiscordApplication_RequiresCodeGrant
@@ -9679,19 +9605,6 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordApplication.Team
   nameWithType: DiscordApplication.Team
-- uid: DSharpPlus.Entities.DiscordApplication.TermsOfServiceUrl
-  name: TermsOfServiceUrl
-  href: api/DSharpPlus.Entities.DiscordApplication.html#DSharpPlus_Entities_DiscordApplication_TermsOfServiceUrl
-  commentId: P:DSharpPlus.Entities.DiscordApplication.TermsOfServiceUrl
-  fullName: DSharpPlus.Entities.DiscordApplication.TermsOfServiceUrl
-  nameWithType: DiscordApplication.TermsOfServiceUrl
-- uid: DSharpPlus.Entities.DiscordApplication.TermsOfServiceUrl*
-  name: TermsOfServiceUrl
-  href: api/DSharpPlus.Entities.DiscordApplication.html#DSharpPlus_Entities_DiscordApplication_TermsOfServiceUrl_
-  commentId: Overload:DSharpPlus.Entities.DiscordApplication.TermsOfServiceUrl
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordApplication.TermsOfServiceUrl
-  nameWithType: DiscordApplication.TermsOfServiceUrl
 - uid: DSharpPlus.Entities.DiscordApplicationAsset
   name: DiscordApplicationAsset
   href: api/DSharpPlus.Entities.DiscordApplicationAsset.html
@@ -9814,15 +9727,15 @@ references:
   commentId: T:DSharpPlus.Entities.DiscordApplicationCommand
   fullName: DSharpPlus.Entities.DiscordApplicationCommand
   nameWithType: DiscordApplicationCommand
-- uid: DSharpPlus.Entities.DiscordApplicationCommand.#ctor(System.String,System.String,IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOption},System.Nullable{System.Boolean},DSharpPlus.ApplicationCommandType)
-  name: DiscordApplicationCommand(String, String, IEnumerable<DiscordApplicationCommandOption>, Nullable<Boolean>, ApplicationCommandType)
-  href: api/DSharpPlus.Entities.DiscordApplicationCommand.html#DSharpPlus_Entities_DiscordApplicationCommand__ctor_System_String_System_String_IEnumerable_DSharpPlus_Entities_DiscordApplicationCommandOption__System_Nullable_System_Boolean__DSharpPlus_ApplicationCommandType_
-  commentId: M:DSharpPlus.Entities.DiscordApplicationCommand.#ctor(System.String,System.String,IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOption},System.Nullable{System.Boolean},DSharpPlus.ApplicationCommandType)
-  name.vb: DiscordApplicationCommand(String, String, IEnumerable(Of DiscordApplicationCommandOption), Nullable(Of Boolean), ApplicationCommandType)
-  fullName: DSharpPlus.Entities.DiscordApplicationCommand.DiscordApplicationCommand(System.String, System.String, IEnumerable<DSharpPlus.Entities.DiscordApplicationCommandOption>, System.Nullable<System.Boolean>, DSharpPlus.ApplicationCommandType)
-  fullName.vb: DSharpPlus.Entities.DiscordApplicationCommand.DiscordApplicationCommand(System.String, System.String, IEnumerable(Of DSharpPlus.Entities.DiscordApplicationCommandOption), System.Nullable(Of System.Boolean), DSharpPlus.ApplicationCommandType)
-  nameWithType: DiscordApplicationCommand.DiscordApplicationCommand(String, String, IEnumerable<DiscordApplicationCommandOption>, Nullable<Boolean>, ApplicationCommandType)
-  nameWithType.vb: DiscordApplicationCommand.DiscordApplicationCommand(String, String, IEnumerable(Of DiscordApplicationCommandOption), Nullable(Of Boolean), ApplicationCommandType)
+- uid: DSharpPlus.Entities.DiscordApplicationCommand.#ctor(System.String,System.String,IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOption},System.Nullable{System.Boolean})
+  name: DiscordApplicationCommand(String, String, IEnumerable<DiscordApplicationCommandOption>, Nullable<Boolean>)
+  href: api/DSharpPlus.Entities.DiscordApplicationCommand.html#DSharpPlus_Entities_DiscordApplicationCommand__ctor_System_String_System_String_IEnumerable_DSharpPlus_Entities_DiscordApplicationCommandOption__System_Nullable_System_Boolean__
+  commentId: M:DSharpPlus.Entities.DiscordApplicationCommand.#ctor(System.String,System.String,IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOption},System.Nullable{System.Boolean})
+  name.vb: DiscordApplicationCommand(String, String, IEnumerable(Of DiscordApplicationCommandOption), Nullable(Of Boolean))
+  fullName: DSharpPlus.Entities.DiscordApplicationCommand.DiscordApplicationCommand(System.String, System.String, IEnumerable<DSharpPlus.Entities.DiscordApplicationCommandOption>, System.Nullable<System.Boolean>)
+  fullName.vb: DSharpPlus.Entities.DiscordApplicationCommand.DiscordApplicationCommand(System.String, System.String, IEnumerable(Of DSharpPlus.Entities.DiscordApplicationCommandOption), System.Nullable(Of System.Boolean))
+  nameWithType: DiscordApplicationCommand.DiscordApplicationCommand(String, String, IEnumerable<DiscordApplicationCommandOption>, Nullable<Boolean>)
+  nameWithType.vb: DiscordApplicationCommand.DiscordApplicationCommand(String, String, IEnumerable(Of DiscordApplicationCommandOption), Nullable(Of Boolean))
 - uid: DSharpPlus.Entities.DiscordApplicationCommand.#ctor*
   name: DiscordApplicationCommand
   href: api/DSharpPlus.Entities.DiscordApplicationCommand.html#DSharpPlus_Entities_DiscordApplicationCommand__ctor_
@@ -9953,19 +9866,6 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordApplicationCommand.Options
   nameWithType: DiscordApplicationCommand.Options
-- uid: DSharpPlus.Entities.DiscordApplicationCommand.Type
-  name: Type
-  href: api/DSharpPlus.Entities.DiscordApplicationCommand.html#DSharpPlus_Entities_DiscordApplicationCommand_Type
-  commentId: P:DSharpPlus.Entities.DiscordApplicationCommand.Type
-  fullName: DSharpPlus.Entities.DiscordApplicationCommand.Type
-  nameWithType: DiscordApplicationCommand.Type
-- uid: DSharpPlus.Entities.DiscordApplicationCommand.Type*
-  name: Type
-  href: api/DSharpPlus.Entities.DiscordApplicationCommand.html#DSharpPlus_Entities_DiscordApplicationCommand_Type_
-  commentId: Overload:DSharpPlus.Entities.DiscordApplicationCommand.Type
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordApplicationCommand.Type
-  nameWithType: DiscordApplicationCommand.Type
 - uid: DSharpPlus.Entities.DiscordApplicationCommandOption
   name: DiscordApplicationCommandOption
   href: api/DSharpPlus.Entities.DiscordApplicationCommandOption.html
@@ -17658,19 +17558,6 @@ references:
   commentId: T:DSharpPlus.Entities.DiscordIntegrationAccount
   fullName: DSharpPlus.Entities.DiscordIntegrationAccount
   nameWithType: DiscordIntegrationAccount
-- uid: DSharpPlus.Entities.DiscordIntegrationAccount.Id
-  name: Id
-  href: api/DSharpPlus.Entities.DiscordIntegrationAccount.html#DSharpPlus_Entities_DiscordIntegrationAccount_Id
-  commentId: P:DSharpPlus.Entities.DiscordIntegrationAccount.Id
-  fullName: DSharpPlus.Entities.DiscordIntegrationAccount.Id
-  nameWithType: DiscordIntegrationAccount.Id
-- uid: DSharpPlus.Entities.DiscordIntegrationAccount.Id*
-  name: Id
-  href: api/DSharpPlus.Entities.DiscordIntegrationAccount.html#DSharpPlus_Entities_DiscordIntegrationAccount_Id_
-  commentId: Overload:DSharpPlus.Entities.DiscordIntegrationAccount.Id
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordIntegrationAccount.Id
-  nameWithType: DiscordIntegrationAccount.Id
 - uid: DSharpPlus.Entities.DiscordIntegrationAccount.Name
   name: Name
   href: api/DSharpPlus.Entities.DiscordIntegrationAccount.html#DSharpPlus_Entities_DiscordIntegrationAccount_Name
@@ -18001,19 +17888,6 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordInteractionData.Resolved
   nameWithType: DiscordInteractionData.Resolved
-- uid: DSharpPlus.Entities.DiscordInteractionData.Type
-  name: Type
-  href: api/DSharpPlus.Entities.DiscordInteractionData.html#DSharpPlus_Entities_DiscordInteractionData_Type
-  commentId: P:DSharpPlus.Entities.DiscordInteractionData.Type
-  fullName: DSharpPlus.Entities.DiscordInteractionData.Type
-  nameWithType: DiscordInteractionData.Type
-- uid: DSharpPlus.Entities.DiscordInteractionData.Type*
-  name: Type
-  href: api/DSharpPlus.Entities.DiscordInteractionData.html#DSharpPlus_Entities_DiscordInteractionData_Type_
-  commentId: Overload:DSharpPlus.Entities.DiscordInteractionData.Type
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordInteractionData.Type
-  nameWithType: DiscordInteractionData.Type
 - uid: DSharpPlus.Entities.DiscordInteractionData.Values
   name: Values
   href: api/DSharpPlus.Entities.DiscordInteractionData.html#DSharpPlus_Entities_DiscordInteractionData_Values
@@ -18117,19 +17991,6 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordInteractionResolvedCollection.Members
   nameWithType: DiscordInteractionResolvedCollection.Members
-- uid: DSharpPlus.Entities.DiscordInteractionResolvedCollection.Messages
-  name: Messages
-  href: api/DSharpPlus.Entities.DiscordInteractionResolvedCollection.html#DSharpPlus_Entities_DiscordInteractionResolvedCollection_Messages
-  commentId: P:DSharpPlus.Entities.DiscordInteractionResolvedCollection.Messages
-  fullName: DSharpPlus.Entities.DiscordInteractionResolvedCollection.Messages
-  nameWithType: DiscordInteractionResolvedCollection.Messages
-- uid: DSharpPlus.Entities.DiscordInteractionResolvedCollection.Messages*
-  name: Messages
-  href: api/DSharpPlus.Entities.DiscordInteractionResolvedCollection.html#DSharpPlus_Entities_DiscordInteractionResolvedCollection_Messages_
-  commentId: Overload:DSharpPlus.Entities.DiscordInteractionResolvedCollection.Messages
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordInteractionResolvedCollection.Messages
-  nameWithType: DiscordInteractionResolvedCollection.Messages
 - uid: DSharpPlus.Entities.DiscordInteractionResolvedCollection.Roles
   name: Roles
   href: api/DSharpPlus.Entities.DiscordInteractionResolvedCollection.html#DSharpPlus_Entities_DiscordInteractionResolvedCollection_Roles
@@ -18927,45 +18788,6 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordMember.BanAsync
   nameWithType: DiscordMember.BanAsync
-- uid: DSharpPlus.Entities.DiscordMember.BannerColor
-  name: BannerColor
-  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_BannerColor
-  commentId: P:DSharpPlus.Entities.DiscordMember.BannerColor
-  fullName: DSharpPlus.Entities.DiscordMember.BannerColor
-  nameWithType: DiscordMember.BannerColor
-- uid: DSharpPlus.Entities.DiscordMember.BannerColor*
-  name: BannerColor
-  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_BannerColor_
-  commentId: Overload:DSharpPlus.Entities.DiscordMember.BannerColor
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordMember.BannerColor
-  nameWithType: DiscordMember.BannerColor
-- uid: DSharpPlus.Entities.DiscordMember.BannerHash
-  name: BannerHash
-  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_BannerHash
-  commentId: P:DSharpPlus.Entities.DiscordMember.BannerHash
-  fullName: DSharpPlus.Entities.DiscordMember.BannerHash
-  nameWithType: DiscordMember.BannerHash
-- uid: DSharpPlus.Entities.DiscordMember.BannerHash*
-  name: BannerHash
-  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_BannerHash_
-  commentId: Overload:DSharpPlus.Entities.DiscordMember.BannerHash
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordMember.BannerHash
-  nameWithType: DiscordMember.BannerHash
-- uid: DSharpPlus.Entities.DiscordMember.BannerUrl
-  name: BannerUrl
-  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_BannerUrl
-  commentId: P:DSharpPlus.Entities.DiscordMember.BannerUrl
-  fullName: DSharpPlus.Entities.DiscordMember.BannerUrl
-  nameWithType: DiscordMember.BannerUrl
-- uid: DSharpPlus.Entities.DiscordMember.BannerUrl*
-  name: BannerUrl
-  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_BannerUrl_
-  commentId: Overload:DSharpPlus.Entities.DiscordMember.BannerUrl
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordMember.BannerUrl
-  nameWithType: DiscordMember.BannerUrl
 - uid: DSharpPlus.Entities.DiscordMember.Color
   name: Color
   href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_Color
@@ -22612,45 +22434,6 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordUser.AvatarUrl
   nameWithType: DiscordUser.AvatarUrl
-- uid: DSharpPlus.Entities.DiscordUser.BannerColor
-  name: BannerColor
-  href: api/DSharpPlus.Entities.DiscordUser.html#DSharpPlus_Entities_DiscordUser_BannerColor
-  commentId: P:DSharpPlus.Entities.DiscordUser.BannerColor
-  fullName: DSharpPlus.Entities.DiscordUser.BannerColor
-  nameWithType: DiscordUser.BannerColor
-- uid: DSharpPlus.Entities.DiscordUser.BannerColor*
-  name: BannerColor
-  href: api/DSharpPlus.Entities.DiscordUser.html#DSharpPlus_Entities_DiscordUser_BannerColor_
-  commentId: Overload:DSharpPlus.Entities.DiscordUser.BannerColor
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordUser.BannerColor
-  nameWithType: DiscordUser.BannerColor
-- uid: DSharpPlus.Entities.DiscordUser.BannerHash
-  name: BannerHash
-  href: api/DSharpPlus.Entities.DiscordUser.html#DSharpPlus_Entities_DiscordUser_BannerHash
-  commentId: P:DSharpPlus.Entities.DiscordUser.BannerHash
-  fullName: DSharpPlus.Entities.DiscordUser.BannerHash
-  nameWithType: DiscordUser.BannerHash
-- uid: DSharpPlus.Entities.DiscordUser.BannerHash*
-  name: BannerHash
-  href: api/DSharpPlus.Entities.DiscordUser.html#DSharpPlus_Entities_DiscordUser_BannerHash_
-  commentId: Overload:DSharpPlus.Entities.DiscordUser.BannerHash
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordUser.BannerHash
-  nameWithType: DiscordUser.BannerHash
-- uid: DSharpPlus.Entities.DiscordUser.BannerUrl
-  name: BannerUrl
-  href: api/DSharpPlus.Entities.DiscordUser.html#DSharpPlus_Entities_DiscordUser_BannerUrl
-  commentId: P:DSharpPlus.Entities.DiscordUser.BannerUrl
-  fullName: DSharpPlus.Entities.DiscordUser.BannerUrl
-  nameWithType: DiscordUser.BannerUrl
-- uid: DSharpPlus.Entities.DiscordUser.BannerUrl*
-  name: BannerUrl
-  href: api/DSharpPlus.Entities.DiscordUser.html#DSharpPlus_Entities_DiscordUser_BannerUrl_
-  commentId: Overload:DSharpPlus.Entities.DiscordUser.BannerUrl
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordUser.BannerUrl
-  nameWithType: DiscordUser.BannerUrl
 - uid: DSharpPlus.Entities.DiscordUser.DefaultAvatarUrl
   name: DefaultAvatarUrl
   href: api/DSharpPlus.Entities.DiscordUser.html#DSharpPlus_Entities_DiscordUser_DefaultAvatarUrl
@@ -25163,64 +24946,6 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.EventArgs.ComponentInteractionCreateEventArgs.Values
   nameWithType: ComponentInteractionCreateEventArgs.Values
-- uid: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs
-  name: ContextMenuInteractionCreateEventArgs
-  href: api/DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.html
-  commentId: T:DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs
-  fullName: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs
-  nameWithType: ContextMenuInteractionCreateEventArgs
-- uid: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.TargetMessage
-  name: TargetMessage
-  href: api/DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.html#DSharpPlus_EventArgs_ContextMenuInteractionCreateEventArgs_TargetMessage
-  commentId: P:DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.TargetMessage
-  fullName: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.TargetMessage
-  nameWithType: ContextMenuInteractionCreateEventArgs.TargetMessage
-- uid: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.TargetMessage*
-  name: TargetMessage
-  href: api/DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.html#DSharpPlus_EventArgs_ContextMenuInteractionCreateEventArgs_TargetMessage_
-  commentId: Overload:DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.TargetMessage
-  isSpec: "True"
-  fullName: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.TargetMessage
-  nameWithType: ContextMenuInteractionCreateEventArgs.TargetMessage
-- uid: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.TargetUser
-  name: TargetUser
-  href: api/DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.html#DSharpPlus_EventArgs_ContextMenuInteractionCreateEventArgs_TargetUser
-  commentId: P:DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.TargetUser
-  fullName: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.TargetUser
-  nameWithType: ContextMenuInteractionCreateEventArgs.TargetUser
-- uid: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.TargetUser*
-  name: TargetUser
-  href: api/DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.html#DSharpPlus_EventArgs_ContextMenuInteractionCreateEventArgs_TargetUser_
-  commentId: Overload:DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.TargetUser
-  isSpec: "True"
-  fullName: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.TargetUser
-  nameWithType: ContextMenuInteractionCreateEventArgs.TargetUser
-- uid: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.Type
-  name: Type
-  href: api/DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.html#DSharpPlus_EventArgs_ContextMenuInteractionCreateEventArgs_Type
-  commentId: P:DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.Type
-  fullName: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.Type
-  nameWithType: ContextMenuInteractionCreateEventArgs.Type
-- uid: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.Type*
-  name: Type
-  href: api/DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.html#DSharpPlus_EventArgs_ContextMenuInteractionCreateEventArgs_Type_
-  commentId: Overload:DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.Type
-  isSpec: "True"
-  fullName: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.Type
-  nameWithType: ContextMenuInteractionCreateEventArgs.Type
-- uid: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.User
-  name: User
-  href: api/DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.html#DSharpPlus_EventArgs_ContextMenuInteractionCreateEventArgs_User
-  commentId: P:DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.User
-  fullName: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.User
-  nameWithType: ContextMenuInteractionCreateEventArgs.User
-- uid: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.User*
-  name: User
-  href: api/DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.html#DSharpPlus_EventArgs_ContextMenuInteractionCreateEventArgs_User_
-  commentId: Overload:DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.User
-  isSpec: "True"
-  fullName: DSharpPlus.EventArgs.ContextMenuInteractionCreateEventArgs.User
-  nameWithType: ContextMenuInteractionCreateEventArgs.User
 - uid: DSharpPlus.EventArgs.DiscordEventArgs
   name: DiscordEventArgs
   href: api/DSharpPlus.EventArgs.DiscordEventArgs.html
@@ -27331,38 +27056,6 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.EventArgs.WebhooksUpdateEventArgs.Guild
   nameWithType: WebhooksUpdateEventArgs.Guild
-- uid: DSharpPlus.EventArgs.ZombiedEventArgs
-  name: ZombiedEventArgs
-  href: api/DSharpPlus.EventArgs.ZombiedEventArgs.html
-  commentId: T:DSharpPlus.EventArgs.ZombiedEventArgs
-  fullName: DSharpPlus.EventArgs.ZombiedEventArgs
-  nameWithType: ZombiedEventArgs
-- uid: DSharpPlus.EventArgs.ZombiedEventArgs.Failures
-  name: Failures
-  href: api/DSharpPlus.EventArgs.ZombiedEventArgs.html#DSharpPlus_EventArgs_ZombiedEventArgs_Failures
-  commentId: P:DSharpPlus.EventArgs.ZombiedEventArgs.Failures
-  fullName: DSharpPlus.EventArgs.ZombiedEventArgs.Failures
-  nameWithType: ZombiedEventArgs.Failures
-- uid: DSharpPlus.EventArgs.ZombiedEventArgs.Failures*
-  name: Failures
-  href: api/DSharpPlus.EventArgs.ZombiedEventArgs.html#DSharpPlus_EventArgs_ZombiedEventArgs_Failures_
-  commentId: Overload:DSharpPlus.EventArgs.ZombiedEventArgs.Failures
-  isSpec: "True"
-  fullName: DSharpPlus.EventArgs.ZombiedEventArgs.Failures
-  nameWithType: ZombiedEventArgs.Failures
-- uid: DSharpPlus.EventArgs.ZombiedEventArgs.GuildDownloadCompleted
-  name: GuildDownloadCompleted
-  href: api/DSharpPlus.EventArgs.ZombiedEventArgs.html#DSharpPlus_EventArgs_ZombiedEventArgs_GuildDownloadCompleted
-  commentId: P:DSharpPlus.EventArgs.ZombiedEventArgs.GuildDownloadCompleted
-  fullName: DSharpPlus.EventArgs.ZombiedEventArgs.GuildDownloadCompleted
-  nameWithType: ZombiedEventArgs.GuildDownloadCompleted
-- uid: DSharpPlus.EventArgs.ZombiedEventArgs.GuildDownloadCompleted*
-  name: GuildDownloadCompleted
-  href: api/DSharpPlus.EventArgs.ZombiedEventArgs.html#DSharpPlus_EventArgs_ZombiedEventArgs_GuildDownloadCompleted_
-  commentId: Overload:DSharpPlus.EventArgs.ZombiedEventArgs.GuildDownloadCompleted
-  isSpec: "True"
-  fullName: DSharpPlus.EventArgs.ZombiedEventArgs.GuildDownloadCompleted
-  nameWithType: ZombiedEventArgs.GuildDownloadCompleted
 - uid: DSharpPlus.Exceptions
   name: DSharpPlus.Exceptions
   href: api/DSharpPlus.Exceptions.html
@@ -28890,24 +28583,6 @@ references:
   commentId: M:DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForButtonAsync(DiscordMessage,DiscordUser,System.Threading.CancellationToken)
   fullName: DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForButtonAsync(DiscordMessage, DiscordUser, System.Threading.CancellationToken)
   nameWithType: MessageExtensions.WaitForButtonAsync(DiscordMessage, DiscordUser, CancellationToken)
-- uid: DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForButtonAsync(DiscordMessage,Func{ComponentInteractionCreateEventArgs,System.Boolean},System.Nullable{TimeSpan})
-  name: WaitForButtonAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, Boolean>, Nullable<TimeSpan>)
-  href: api/DSharpPlus.Interactivity.Extensions.MessageExtensions.html#DSharpPlus_Interactivity_Extensions_MessageExtensions_WaitForButtonAsync_DiscordMessage_Func_ComponentInteractionCreateEventArgs_System_Boolean__System_Nullable_TimeSpan__
-  commentId: M:DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForButtonAsync(DiscordMessage,Func{ComponentInteractionCreateEventArgs,System.Boolean},System.Nullable{TimeSpan})
-  name.vb: WaitForButtonAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, Boolean), Nullable(Of TimeSpan))
-  fullName: DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForButtonAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, System.Boolean>, System.Nullable<TimeSpan>)
-  fullName.vb: DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForButtonAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, System.Boolean), System.Nullable(Of TimeSpan))
-  nameWithType: MessageExtensions.WaitForButtonAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, Boolean>, Nullable<TimeSpan>)
-  nameWithType.vb: MessageExtensions.WaitForButtonAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, Boolean), Nullable(Of TimeSpan))
-- uid: DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForButtonAsync(DiscordMessage,Func{ComponentInteractionCreateEventArgs,System.Boolean},System.Threading.CancellationToken)
-  name: WaitForButtonAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, Boolean>, CancellationToken)
-  href: api/DSharpPlus.Interactivity.Extensions.MessageExtensions.html#DSharpPlus_Interactivity_Extensions_MessageExtensions_WaitForButtonAsync_DiscordMessage_Func_ComponentInteractionCreateEventArgs_System_Boolean__System_Threading_CancellationToken_
-  commentId: M:DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForButtonAsync(DiscordMessage,Func{ComponentInteractionCreateEventArgs,System.Boolean},System.Threading.CancellationToken)
-  name.vb: WaitForButtonAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, Boolean), CancellationToken)
-  fullName: DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForButtonAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, System.Boolean>, System.Threading.CancellationToken)
-  fullName.vb: DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForButtonAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, System.Boolean), System.Threading.CancellationToken)
-  nameWithType: MessageExtensions.WaitForButtonAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, Boolean>, CancellationToken)
-  nameWithType.vb: MessageExtensions.WaitForButtonAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, Boolean), CancellationToken)
 - uid: DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForButtonAsync(DiscordMessage,System.Nullable{TimeSpan})
   name: WaitForButtonAsync(DiscordMessage, Nullable<TimeSpan>)
   href: api/DSharpPlus.Interactivity.Extensions.MessageExtensions.html#DSharpPlus_Interactivity_Extensions_MessageExtensions_WaitForButtonAsync_DiscordMessage_System_Nullable_TimeSpan__
@@ -28985,24 +28660,6 @@ references:
   commentId: M:DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForSelectAsync(DiscordMessage,DiscordUser,System.String,System.Threading.CancellationToken)
   fullName: DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForSelectAsync(DiscordMessage, DiscordUser, System.String, System.Threading.CancellationToken)
   nameWithType: MessageExtensions.WaitForSelectAsync(DiscordMessage, DiscordUser, String, CancellationToken)
-- uid: DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForSelectAsync(DiscordMessage,Func{ComponentInteractionCreateEventArgs,System.Boolean},System.Nullable{TimeSpan})
-  name: WaitForSelectAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, Boolean>, Nullable<TimeSpan>)
-  href: api/DSharpPlus.Interactivity.Extensions.MessageExtensions.html#DSharpPlus_Interactivity_Extensions_MessageExtensions_WaitForSelectAsync_DiscordMessage_Func_ComponentInteractionCreateEventArgs_System_Boolean__System_Nullable_TimeSpan__
-  commentId: M:DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForSelectAsync(DiscordMessage,Func{ComponentInteractionCreateEventArgs,System.Boolean},System.Nullable{TimeSpan})
-  name.vb: WaitForSelectAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, Boolean), Nullable(Of TimeSpan))
-  fullName: DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForSelectAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, System.Boolean>, System.Nullable<TimeSpan>)
-  fullName.vb: DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForSelectAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, System.Boolean), System.Nullable(Of TimeSpan))
-  nameWithType: MessageExtensions.WaitForSelectAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, Boolean>, Nullable<TimeSpan>)
-  nameWithType.vb: MessageExtensions.WaitForSelectAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, Boolean), Nullable(Of TimeSpan))
-- uid: DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForSelectAsync(DiscordMessage,Func{ComponentInteractionCreateEventArgs,System.Boolean},System.Threading.CancellationToken)
-  name: WaitForSelectAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, Boolean>, CancellationToken)
-  href: api/DSharpPlus.Interactivity.Extensions.MessageExtensions.html#DSharpPlus_Interactivity_Extensions_MessageExtensions_WaitForSelectAsync_DiscordMessage_Func_ComponentInteractionCreateEventArgs_System_Boolean__System_Threading_CancellationToken_
-  commentId: M:DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForSelectAsync(DiscordMessage,Func{ComponentInteractionCreateEventArgs,System.Boolean},System.Threading.CancellationToken)
-  name.vb: WaitForSelectAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, Boolean), CancellationToken)
-  fullName: DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForSelectAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, System.Boolean>, System.Threading.CancellationToken)
-  fullName.vb: DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForSelectAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, System.Boolean), System.Threading.CancellationToken)
-  nameWithType: MessageExtensions.WaitForSelectAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, Boolean>, CancellationToken)
-  nameWithType.vb: MessageExtensions.WaitForSelectAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, Boolean), CancellationToken)
 - uid: DSharpPlus.Interactivity.Extensions.MessageExtensions.WaitForSelectAsync(DiscordMessage,System.String,System.Nullable{TimeSpan})
   name: WaitForSelectAsync(DiscordMessage, String, Nullable<TimeSpan>)
   href: api/DSharpPlus.Interactivity.Extensions.MessageExtensions.html#DSharpPlus_Interactivity_Extensions_MessageExtensions_WaitForSelectAsync_DiscordMessage_System_String_System_Nullable_TimeSpan__
@@ -29378,6 +29035,12 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Interactivity.InteractivityExtension.Setup
   nameWithType: InteractivityExtension.Setup
+- uid: DSharpPlus.Interactivity.InteractivityExtension.WaitForButtonAsync(DiscordMessage)
+  name: WaitForButtonAsync(DiscordMessage)
+  href: api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_WaitForButtonAsync_DiscordMessage_
+  commentId: M:DSharpPlus.Interactivity.InteractivityExtension.WaitForButtonAsync(DiscordMessage)
+  fullName: DSharpPlus.Interactivity.InteractivityExtension.WaitForButtonAsync(DiscordMessage)
+  nameWithType: InteractivityExtension.WaitForButtonAsync(DiscordMessage)
 - uid: DSharpPlus.Interactivity.InteractivityExtension.WaitForButtonAsync(DiscordMessage,DiscordUser,System.Nullable{TimeSpan})
   name: WaitForButtonAsync(DiscordMessage, DiscordUser, Nullable<TimeSpan>)
   href: api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_WaitForButtonAsync_DiscordMessage_DiscordUser_System_Nullable_TimeSpan__
@@ -29393,24 +29056,6 @@ references:
   commentId: M:DSharpPlus.Interactivity.InteractivityExtension.WaitForButtonAsync(DiscordMessage,DiscordUser,System.Threading.CancellationToken)
   fullName: DSharpPlus.Interactivity.InteractivityExtension.WaitForButtonAsync(DiscordMessage, DiscordUser, System.Threading.CancellationToken)
   nameWithType: InteractivityExtension.WaitForButtonAsync(DiscordMessage, DiscordUser, CancellationToken)
-- uid: DSharpPlus.Interactivity.InteractivityExtension.WaitForButtonAsync(DiscordMessage,Func{ComponentInteractionCreateEventArgs,System.Boolean},System.Nullable{TimeSpan})
-  name: WaitForButtonAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, Boolean>, Nullable<TimeSpan>)
-  href: api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_WaitForButtonAsync_DiscordMessage_Func_ComponentInteractionCreateEventArgs_System_Boolean__System_Nullable_TimeSpan__
-  commentId: M:DSharpPlus.Interactivity.InteractivityExtension.WaitForButtonAsync(DiscordMessage,Func{ComponentInteractionCreateEventArgs,System.Boolean},System.Nullable{TimeSpan})
-  name.vb: WaitForButtonAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, Boolean), Nullable(Of TimeSpan))
-  fullName: DSharpPlus.Interactivity.InteractivityExtension.WaitForButtonAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, System.Boolean>, System.Nullable<TimeSpan>)
-  fullName.vb: DSharpPlus.Interactivity.InteractivityExtension.WaitForButtonAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, System.Boolean), System.Nullable(Of TimeSpan))
-  nameWithType: InteractivityExtension.WaitForButtonAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, Boolean>, Nullable<TimeSpan>)
-  nameWithType.vb: InteractivityExtension.WaitForButtonAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, Boolean), Nullable(Of TimeSpan))
-- uid: DSharpPlus.Interactivity.InteractivityExtension.WaitForButtonAsync(DiscordMessage,Func{ComponentInteractionCreateEventArgs,System.Boolean},System.Threading.CancellationToken)
-  name: WaitForButtonAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, Boolean>, CancellationToken)
-  href: api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_WaitForButtonAsync_DiscordMessage_Func_ComponentInteractionCreateEventArgs_System_Boolean__System_Threading_CancellationToken_
-  commentId: M:DSharpPlus.Interactivity.InteractivityExtension.WaitForButtonAsync(DiscordMessage,Func{ComponentInteractionCreateEventArgs,System.Boolean},System.Threading.CancellationToken)
-  name.vb: WaitForButtonAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, Boolean), CancellationToken)
-  fullName: DSharpPlus.Interactivity.InteractivityExtension.WaitForButtonAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, System.Boolean>, System.Threading.CancellationToken)
-  fullName.vb: DSharpPlus.Interactivity.InteractivityExtension.WaitForButtonAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, System.Boolean), System.Threading.CancellationToken)
-  nameWithType: InteractivityExtension.WaitForButtonAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, Boolean>, CancellationToken)
-  nameWithType.vb: InteractivityExtension.WaitForButtonAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, Boolean), CancellationToken)
 - uid: DSharpPlus.Interactivity.InteractivityExtension.WaitForButtonAsync(DiscordMessage,IEnumerable{DiscordButtonComponent},System.Nullable{TimeSpan})
   name: WaitForButtonAsync(DiscordMessage, IEnumerable<DiscordButtonComponent>, Nullable<TimeSpan>)
   href: api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_WaitForButtonAsync_DiscordMessage_IEnumerable_DiscordButtonComponent__System_Nullable_TimeSpan__
@@ -29582,24 +29227,6 @@ references:
   commentId: M:DSharpPlus.Interactivity.InteractivityExtension.WaitForSelectAsync(DiscordMessage,DiscordUser,System.String,System.Threading.CancellationToken)
   fullName: DSharpPlus.Interactivity.InteractivityExtension.WaitForSelectAsync(DiscordMessage, DiscordUser, System.String, System.Threading.CancellationToken)
   nameWithType: InteractivityExtension.WaitForSelectAsync(DiscordMessage, DiscordUser, String, CancellationToken)
-- uid: DSharpPlus.Interactivity.InteractivityExtension.WaitForSelectAsync(DiscordMessage,Func{ComponentInteractionCreateEventArgs,System.Boolean},System.Nullable{TimeSpan})
-  name: WaitForSelectAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, Boolean>, Nullable<TimeSpan>)
-  href: api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_WaitForSelectAsync_DiscordMessage_Func_ComponentInteractionCreateEventArgs_System_Boolean__System_Nullable_TimeSpan__
-  commentId: M:DSharpPlus.Interactivity.InteractivityExtension.WaitForSelectAsync(DiscordMessage,Func{ComponentInteractionCreateEventArgs,System.Boolean},System.Nullable{TimeSpan})
-  name.vb: WaitForSelectAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, Boolean), Nullable(Of TimeSpan))
-  fullName: DSharpPlus.Interactivity.InteractivityExtension.WaitForSelectAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, System.Boolean>, System.Nullable<TimeSpan>)
-  fullName.vb: DSharpPlus.Interactivity.InteractivityExtension.WaitForSelectAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, System.Boolean), System.Nullable(Of TimeSpan))
-  nameWithType: InteractivityExtension.WaitForSelectAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, Boolean>, Nullable<TimeSpan>)
-  nameWithType.vb: InteractivityExtension.WaitForSelectAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, Boolean), Nullable(Of TimeSpan))
-- uid: DSharpPlus.Interactivity.InteractivityExtension.WaitForSelectAsync(DiscordMessage,Func{ComponentInteractionCreateEventArgs,System.Boolean},System.Threading.CancellationToken)
-  name: WaitForSelectAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, Boolean>, CancellationToken)
-  href: api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_WaitForSelectAsync_DiscordMessage_Func_ComponentInteractionCreateEventArgs_System_Boolean__System_Threading_CancellationToken_
-  commentId: M:DSharpPlus.Interactivity.InteractivityExtension.WaitForSelectAsync(DiscordMessage,Func{ComponentInteractionCreateEventArgs,System.Boolean},System.Threading.CancellationToken)
-  name.vb: WaitForSelectAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, Boolean), CancellationToken)
-  fullName: DSharpPlus.Interactivity.InteractivityExtension.WaitForSelectAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, System.Boolean>, System.Threading.CancellationToken)
-  fullName.vb: DSharpPlus.Interactivity.InteractivityExtension.WaitForSelectAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, System.Boolean), System.Threading.CancellationToken)
-  nameWithType: InteractivityExtension.WaitForSelectAsync(DiscordMessage, Func<ComponentInteractionCreateEventArgs, Boolean>, CancellationToken)
-  nameWithType.vb: InteractivityExtension.WaitForSelectAsync(DiscordMessage, Func(Of ComponentInteractionCreateEventArgs, Boolean), CancellationToken)
 - uid: DSharpPlus.Interactivity.InteractivityExtension.WaitForSelectAsync(DiscordMessage,System.String,System.Nullable{TimeSpan})
   name: WaitForSelectAsync(DiscordMessage, String, Nullable<TimeSpan>)
   href: api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_WaitForSelectAsync_DiscordMessage_System_String_System_Nullable_TimeSpan__

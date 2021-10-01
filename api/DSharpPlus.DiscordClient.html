@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordClient
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -470,7 +470,7 @@ ID.</p>
   
   <a id="DSharpPlus_DiscordClient_BulkOverwriteGlobalApplicationCommandsAsync_" data-uid="DSharpPlus.DiscordClient.BulkOverwriteGlobalApplicationCommandsAsync*"></a>
   <h4 id="DSharpPlus_DiscordClient_BulkOverwriteGlobalApplicationCommandsAsync_IEnumerable_DiscordApplicationCommand__" data-uid="DSharpPlus.DiscordClient.BulkOverwriteGlobalApplicationCommandsAsync(IEnumerable{DiscordApplicationCommand})">BulkOverwriteGlobalApplicationCommandsAsync(IEnumerable&lt;DiscordApplicationCommand&gt;)</h4>
-  <div class="markdown level1 summary"><p>Overwrites the existing global application commands. New commands are automatically created and missing commands are automatically deleted.</p>
+  <div class="markdown level1 summary"><p>Overwrites the existing global slash commands. New commands are automatically created and missing commands are automatically deleted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -515,7 +515,7 @@ ID.</p>
   
   <a id="DSharpPlus_DiscordClient_BulkOverwriteGuildApplicationCommandsAsync_" data-uid="DSharpPlus.DiscordClient.BulkOverwriteGuildApplicationCommandsAsync*"></a>
   <h4 id="DSharpPlus_DiscordClient_BulkOverwriteGuildApplicationCommandsAsync_System_UInt64_IEnumerable_DiscordApplicationCommand__" data-uid="DSharpPlus.DiscordClient.BulkOverwriteGuildApplicationCommandsAsync(System.UInt64,IEnumerable{DiscordApplicationCommand})">BulkOverwriteGuildApplicationCommandsAsync(UInt64, IEnumerable&lt;DiscordApplicationCommand&gt;)</h4>
-  <div class="markdown level1 summary"><p>Overwrites the existing application commands in a guild. New commands are automatically created and missing commands are automatically deleted.</p>
+  <div class="markdown level1 summary"><p>Overwrites the existing slash commands in a guild. New commands are automatically created and missing commands are automatically deleted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -571,7 +571,7 @@ ID.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task ConnectAsync(DiscordActivity activity = null, UserStatus? status = default(UserStatus? ), DateTimeOffset? idlesince = default(DateTimeOffset? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task ConnectAsync(DiscordActivity activity = null, UserStatus? status = null, DateTimeOffset? idlesince = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -645,7 +645,7 @@ ID.</p>
   
   <a id="DSharpPlus_DiscordClient_CreateGlobalApplicationCommandAsync_" data-uid="DSharpPlus.DiscordClient.CreateGlobalApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_DiscordClient_CreateGlobalApplicationCommandAsync_DiscordApplicationCommand_" data-uid="DSharpPlus.DiscordClient.CreateGlobalApplicationCommandAsync(DiscordApplicationCommand)">CreateGlobalApplicationCommandAsync(DiscordApplicationCommand)</h4>
-  <div class="markdown level1 summary"><p>Creates or overwrites a global application command.</p>
+  <div class="markdown level1 summary"><p>Creates or overwrites a global slash command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -690,7 +690,7 @@ ID.</p>
   
   <a id="DSharpPlus_DiscordClient_CreateGuildApplicationCommandAsync_" data-uid="DSharpPlus.DiscordClient.CreateGuildApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_DiscordClient_CreateGuildApplicationCommandAsync_System_UInt64_DiscordApplicationCommand_" data-uid="DSharpPlus.DiscordClient.CreateGuildApplicationCommandAsync(System.UInt64,DiscordApplicationCommand)">CreateGuildApplicationCommandAsync(UInt64, DiscordApplicationCommand)</h4>
-  <div class="markdown level1 summary"><p>Creates or overwrites a guild application command.</p>
+  <div class="markdown level1 summary"><p>Creates or overwrites a guild slash command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -710,7 +710,7 @@ ID.</p>
       <tr>
         <td><span class="xref">System.UInt64</span></td>
         <td><span class="parametername">guildId</span></td>
-        <td><p>The id of the guild to create the application command in.</p>
+        <td><p>The id of the guild to create the slash command in.</p>
 </td>
       </tr>
       <tr>
@@ -746,7 +746,7 @@ ID.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuild&gt; CreateGuildAsync(string name, string region = null, Optional&lt;Stream&gt; icon = null, VerificationLevel? verificationLevel = default(VerificationLevel? ), DefaultMessageNotifications? defaultMessageNotifications = default(DefaultMessageNotifications? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuild&gt; CreateGuildAsync(string name, string region = null, Optional&lt;Stream&gt; icon = null, VerificationLevel? verificationLevel = null, DefaultMessageNotifications? defaultMessageNotifications = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -914,7 +914,7 @@ ID.</p>
   
   <a id="DSharpPlus_DiscordClient_DeleteGlobalApplicationCommandAsync_" data-uid="DSharpPlus.DiscordClient.DeleteGlobalApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_DiscordClient_DeleteGlobalApplicationCommandAsync_System_UInt64_" data-uid="DSharpPlus.DiscordClient.DeleteGlobalApplicationCommandAsync(System.UInt64)">DeleteGlobalApplicationCommandAsync(UInt64)</h4>
-  <div class="markdown level1 summary"><p>Deletes a global application command.</p>
+  <div class="markdown level1 summary"><p>Deletes a global slash command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -958,7 +958,7 @@ ID.</p>
   
   <a id="DSharpPlus_DiscordClient_DeleteGuildApplicationCommandAsync_" data-uid="DSharpPlus.DiscordClient.DeleteGuildApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_DiscordClient_DeleteGuildApplicationCommandAsync_System_UInt64_System_UInt64_" data-uid="DSharpPlus.DiscordClient.DeleteGuildApplicationCommandAsync(System.UInt64,System.UInt64)">DeleteGuildApplicationCommandAsync(UInt64, UInt64)</h4>
-  <div class="markdown level1 summary"><p>Deletes a application command in a guild.</p>
+  <div class="markdown level1 summary"><p>Deletes a slash command in a guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -978,7 +978,7 @@ ID.</p>
       <tr>
         <td><span class="xref">System.UInt64</span></td>
         <td><span class="parametername">guildId</span></td>
-        <td><p>The id of the guild to delete the application command in.</p>
+        <td><p>The id of the guild to delete the slash command in.</p>
 </td>
       </tr>
       <tr>
@@ -1047,7 +1047,7 @@ ID.</p>
   
   <a id="DSharpPlus_DiscordClient_EditGlobalApplicationCommandAsync_" data-uid="DSharpPlus.DiscordClient.EditGlobalApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_DiscordClient_EditGlobalApplicationCommandAsync_System_UInt64_Action_ApplicationCommandEditModel__" data-uid="DSharpPlus.DiscordClient.EditGlobalApplicationCommandAsync(System.UInt64,Action{ApplicationCommandEditModel})">EditGlobalApplicationCommandAsync(UInt64, Action&lt;ApplicationCommandEditModel&gt;)</h4>
-  <div class="markdown level1 summary"><p>Edits a global application command.</p>
+  <div class="markdown level1 summary"><p>Edits a global slash command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1098,7 +1098,7 @@ ID.</p>
   
   <a id="DSharpPlus_DiscordClient_EditGuildApplicationCommandAsync_" data-uid="DSharpPlus.DiscordClient.EditGuildApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_DiscordClient_EditGuildApplicationCommandAsync_System_UInt64_System_UInt64_Action_ApplicationCommandEditModel__" data-uid="DSharpPlus.DiscordClient.EditGuildApplicationCommandAsync(System.UInt64,System.UInt64,Action{ApplicationCommandEditModel})">EditGuildApplicationCommandAsync(UInt64, UInt64, Action&lt;ApplicationCommandEditModel&gt;)</h4>
-  <div class="markdown level1 summary"><p>Edits a application command in a guild.</p>
+  <div class="markdown level1 summary"><p>Edits a slash command in a guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1118,7 +1118,7 @@ ID.</p>
       <tr>
         <td><span class="xref">System.UInt64</span></td>
         <td><span class="parametername">guildId</span></td>
-        <td><p>The id of the guild the application command is in.</p>
+        <td><p>The id of the guild the slash command is in.</p>
 </td>
       </tr>
       <tr>
@@ -1288,7 +1288,6 @@ ID.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public T GetExtension&lt;T&gt;()
-
     where T : BaseExtension</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
@@ -1327,7 +1326,7 @@ ID.</p>
   
   <a id="DSharpPlus_DiscordClient_GetGlobalApplicationCommandAsync_" data-uid="DSharpPlus.DiscordClient.GetGlobalApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_DiscordClient_GetGlobalApplicationCommandAsync_System_UInt64_" data-uid="DSharpPlus.DiscordClient.GetGlobalApplicationCommandAsync(System.UInt64)">GetGlobalApplicationCommandAsync(UInt64)</h4>
-  <div class="markdown level1 summary"><p>Gets a global application command by its id.</p>
+  <div class="markdown level1 summary"><p>Gets a global slash command by its id.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1372,7 +1371,7 @@ ID.</p>
   
   <a id="DSharpPlus_DiscordClient_GetGlobalApplicationCommandsAsync_" data-uid="DSharpPlus.DiscordClient.GetGlobalApplicationCommandsAsync*"></a>
   <h4 id="DSharpPlus_DiscordClient_GetGlobalApplicationCommandsAsync" data-uid="DSharpPlus.DiscordClient.GetGlobalApplicationCommandsAsync">GetGlobalApplicationCommandsAsync()</h4>
-  <div class="markdown level1 summary"><p>Gets all the global application commands for this application.</p>
+  <div class="markdown level1 summary"><p>Gets all the global slash commands for this application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1390,7 +1389,7 @@ ID.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<span class="xref">DiscordApplicationCommand</span>&gt;&gt;</td>
-        <td><p>A list of global application commands.</p>
+        <td><p>A list of global slash commands.</p>
 </td>
       </tr>
     </tbody>
@@ -1399,7 +1398,7 @@ ID.</p>
   
   <a id="DSharpPlus_DiscordClient_GetGuildApplicationCommandAsync_" data-uid="DSharpPlus.DiscordClient.GetGuildApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_DiscordClient_GetGuildApplicationCommandAsync_System_UInt64_System_UInt64_" data-uid="DSharpPlus.DiscordClient.GetGuildApplicationCommandAsync(System.UInt64,System.UInt64)">GetGuildApplicationCommandAsync(UInt64, UInt64)</h4>
-  <div class="markdown level1 summary"><p>Gets a application command in a guild by its id.</p>
+  <div class="markdown level1 summary"><p>Gets a slash command in a guild by its id.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1419,7 +1418,7 @@ ID.</p>
       <tr>
         <td><span class="xref">System.UInt64</span></td>
         <td><span class="parametername">guildId</span></td>
-        <td><p>The id of the guild the application command is in.</p>
+        <td><p>The id of the guild the slash command is in.</p>
 </td>
       </tr>
       <tr>
@@ -1450,7 +1449,7 @@ ID.</p>
   
   <a id="DSharpPlus_DiscordClient_GetGuildApplicationCommandsAsync_" data-uid="DSharpPlus.DiscordClient.GetGuildApplicationCommandsAsync*"></a>
   <h4 id="DSharpPlus_DiscordClient_GetGuildApplicationCommandsAsync_System_UInt64_" data-uid="DSharpPlus.DiscordClient.GetGuildApplicationCommandsAsync(System.UInt64)">GetGuildApplicationCommandsAsync(UInt64)</h4>
-  <div class="markdown level1 summary"><p>Gets all the application commands for a guild.</p>
+  <div class="markdown level1 summary"><p>Gets all the slash commands for a guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1470,7 +1469,7 @@ ID.</p>
       <tr>
         <td><span class="xref">System.UInt64</span></td>
         <td><span class="parametername">guildId</span></td>
-        <td><p>The id of the guild to get application commands for.</p>
+        <td><p>The id of the guild to get slash commands for.</p>
 </td>
       </tr>
     </tbody>
@@ -1486,7 +1485,7 @@ ID.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<span class="xref">DiscordApplicationCommand</span>&gt;&gt;</td>
-        <td><p>A list of application commands in the guild.</p>
+        <td><p>A list of slash commands in the guild.</p>
 </td>
       </tr>
     </tbody>
@@ -1501,7 +1500,7 @@ ID.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordGuild&gt; GetGuildAsync(ulong id, bool? withCounts = default(bool? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordGuild&gt; GetGuildAsync(ulong id, bool? withCounts = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1648,7 +1647,7 @@ ID.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordInvite&gt; GetInviteByCodeAsync(string code, bool? withCounts = default(bool? ), bool? withExpiration = default(bool? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordInvite&gt; GetInviteByCodeAsync(string code, bool? withCounts = null, bool? withExpiration = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2610,7 +2609,7 @@ ID.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task UpdateStatusAsync(DiscordActivity activity = null, UserStatus? userStatus = default(UserStatus? ), DateTimeOffset? idleSince = default(DateTimeOffset? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task UpdateStatusAsync(DiscordActivity activity = null, UserStatus? userStatus = null, DateTimeOffset? idleSince = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2884,31 +2883,6 @@ For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html
     <tbody>
       <tr>
         <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">ComponentInteractionCreateEventArgs</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="DSharpPlus_DiscordClient_ContextMenuInteractionCreated" data-uid="DSharpPlus.DiscordClient.ContextMenuInteractionCreated">ContextMenuInteractionCreated</h4>
-  <div class="markdown level1 summary"><p>Fired when a user uses a context menu.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, ContextMenuInteractionCreateEventArgs&gt; ContextMenuInteractionCreated</code></pre>
-  </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">ContextMenuInteractionCreateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -4142,31 +4116,6 @@ For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html
     <tbody>
       <tr>
         <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">WebhooksUpdateEventArgs</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="DSharpPlus_DiscordClient_Zombied" data-uid="DSharpPlus.DiscordClient.Zombied">Zombied</h4>
-  <div class="markdown level1 summary"><p>Fired on heartbeat attempt cancellation due to too many failed heartbeats.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, ZombiedEventArgs&gt; Zombied</code></pre>
-  </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">ZombiedEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
