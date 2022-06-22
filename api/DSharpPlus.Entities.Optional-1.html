@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Struct Optional&lt;T&gt;
-   </title>
+   | DSharpPlus documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct Optional&lt;T&gt;
-   ">
-    <meta name="generator" content="docfx 2.58.4.0">
+   | DSharpPlus documentation ">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -87,7 +87,7 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="DSharpPlus_Entities_Optional_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly struct Optional&lt;T&gt; : IEquatable&lt;Optional&lt;T&gt;&gt;, IEquatable&lt;T&gt;, IOptional</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly struct Optional&lt;T&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -159,7 +159,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -231,7 +231,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>Whether the object is equal to the value of this <a class="xref" href="DSharpPlus.Entities.Optional-1.html">Optional&lt;T&gt;</a>.</p>
 </td>
       </tr>
@@ -276,7 +276,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>Whether the <a class="xref" href="DSharpPlus.Entities.Optional-1.html">Optional&lt;T&gt;</a> is equal to this <a class="xref" href="DSharpPlus.Entities.Optional-1.html">Optional&lt;T&gt;</a>.</p>
 </td>
       </tr>
@@ -304,7 +304,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><span class="parametername">obj</span></td>
         <td><p>Object to compare to.</p>
 </td>
@@ -321,14 +321,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>Whether the object is equal to this <a class="xref" href="DSharpPlus.Entities.Optional-1.html">Optional&lt;T&gt;</a> or its value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.equals#system-valuetype-equals(system-object)">ValueType.Equals(Object)</a></div>
   
   
   <a id="DSharpPlus_Entities_Optional_1_GetHashCode_" data-uid="DSharpPlus.Entities.Optional`1.GetHashCode*"></a>
@@ -350,14 +350,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><p>The hash code for this <a class="xref" href="DSharpPlus.Entities.Optional-1.html">Optional&lt;T&gt;</a>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.gethashcode#system-valuetype-gethashcode">ValueType.GetHashCode()</a></div>
   
   
   <a id="DSharpPlus_Entities_Optional_1_IfPresent_" data-uid="DSharpPlus.Entities.Optional`1.IfPresent*"></a>
@@ -425,6 +425,51 @@ type.</p>
   </table>
   
   
+  <a id="DSharpPlus_Entities_Optional_1_IsDefined_" data-uid="DSharpPlus.Entities.Optional`1.IsDefined*"></a>
+  <h4 id="DSharpPlus_Entities_Optional_1_IsDefined__0__" data-uid="DSharpPlus.Entities.Optional`1.IsDefined(`0@)">IsDefined(out T)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the optional has a value, and the value is non-null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool IsDefined(out T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value contained within the optional.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if the value is set, and is not null, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_Optional_1_ToString_" data-uid="DSharpPlus.Entities.Optional`1.ToString*"></a>
   <h4 id="DSharpPlus_Entities_Optional_1_ToString" data-uid="DSharpPlus.Entities.Optional`1.ToString">ToString()</h4>
   <div class="markdown level1 summary"><p>Returns a string representation of this optional value.</p>
@@ -444,14 +489,14 @@ type.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><p>String representation of this optional value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.ValueType.ToString()</span></div>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.tostring#system-valuetype-tostring">ValueType.ToString()</a></div>
   <h3 id="operators">Operators
   </h3>
   
@@ -496,7 +541,7 @@ type.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -543,7 +588,7 @@ type.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -674,7 +719,7 @@ type.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -721,7 +766,7 @@ type.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>

@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class DiscordChannel
-   </title>
+   | DSharpPlus documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordChannel
-   ">
-    <meta name="generator" content="docfx 2.58.4.0">
+   | DSharpPlus documentation ">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -85,11 +85,12 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="DSharpPlus.Entities.SnowflakeObject.html">SnowflakeObject</a></div>
     <div class="level2"><span class="xref">DiscordChannel</span></div>
   </div>
       <div class="level3"><a class="xref" href="DSharpPlus.Entities.DiscordDmChannel.html">DiscordDmChannel</a></div>
+      <div class="level3"><a class="xref" href="DSharpPlus.Entities.DiscordThreadChannel.html">DiscordThreadChannel</a></div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -103,7 +104,7 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="DSharpPlus_Entities_DiscordChannel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DiscordChannel : SnowflakeObject, IEquatable&lt;DiscordChannel&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class DiscordChannel : SnowflakeObject</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -128,7 +129,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -142,7 +143,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;DiscordChannel&gt; Children { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;DiscordChannel&gt; Children { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -154,7 +155,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a>&gt;</td>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -206,7 +207,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -232,7 +233,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -258,7 +259,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -284,7 +285,33 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_IsThread_" data-uid="DSharpPlus.Entities.DiscordChannel.IsThread*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_IsThread" data-uid="DSharpPlus.Entities.DiscordChannel.IsThread">IsThread</h4>
+  <div class="markdown level1 summary"><p>Gets whether this channel is a thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsThread { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -310,7 +337,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -336,7 +363,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTimeOffset</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">DateTimeOffset</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -362,7 +389,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -388,7 +415,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -397,7 +424,7 @@
   
   <a id="DSharpPlus_Entities_DiscordChannel_Parent_" data-uid="DSharpPlus.Entities.DiscordChannel.Parent*"></a>
   <h4 id="DSharpPlus_Entities_DiscordChannel_Parent" data-uid="DSharpPlus.Entities.DiscordChannel.Parent">Parent</h4>
-  <div class="markdown level1 summary"><p>Gets the category that contains this channel.</p>
+  <div class="markdown level1 summary"><p>Gets the category that contains this channel. For threads, gets the channel this thread was created in.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -423,7 +450,7 @@
   
   <a id="DSharpPlus_Entities_DiscordChannel_ParentId_" data-uid="DSharpPlus.Entities.DiscordChannel.ParentId*"></a>
   <h4 id="DSharpPlus_Entities_DiscordChannel_ParentId" data-uid="DSharpPlus.Entities.DiscordChannel.ParentId">ParentId</h4>
-  <div class="markdown level1 summary"><p>Gets ID of the category that contains this channel.</p>
+  <div class="markdown level1 summary"><p>Gets ID of the category that contains this channel. For threads, gets the ID of the channel this thread was created in.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -440,7 +467,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -493,7 +520,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -519,7 +546,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -545,7 +572,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DSharpPlus.VideoQualityMode.html">VideoQualityMode</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="DSharpPlus.VideoQualityMode.html">VideoQualityMode</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -578,6 +605,32 @@
   </table>
   
   
+  <a id="DSharpPlus_Entities_DiscordChannel_Threads_" data-uid="DSharpPlus.Entities.DiscordChannel.Threads*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_Threads" data-uid="DSharpPlus.Entities.DiscordChannel.Threads">Threads</h4>
+  <div class="markdown level1 summary"><p>Gets this channel&apos;s threads. This applies only to text and news channels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;DiscordThreadChannel&gt; Threads { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordThreadChannel.html">DiscordThreadChannel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordChannel_Topic_" data-uid="DSharpPlus.Entities.DiscordChannel.Topic*"></a>
   <h4 id="DSharpPlus_Entities_DiscordChannel_Topic" data-uid="DSharpPlus.Entities.DiscordChannel.Topic">Topic</h4>
   <div class="markdown level1 summary"><p>Gets the channel&apos;s topic. This is applicable to text channels only.</p>
@@ -597,7 +650,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -649,7 +702,34 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_UserPermissions_" data-uid="DSharpPlus.Entities.DiscordChannel.UserPermissions*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_UserPermissions" data-uid="DSharpPlus.Entities.DiscordChannel.UserPermissions">UserPermissions</h4>
+  <div class="markdown level1 summary"><p>Gets the permissions of the user who invoked the command in this channel.
+<p>Only sent on the resolved channels of interaction responses for application commands.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Permissions? UserPermissions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="DSharpPlus.Permissions.html">Permissions</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -663,7 +743,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;DiscordMember&gt; Users { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual IReadOnlyList&lt;DiscordMember&gt; Users { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -675,7 +755,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMember.html">DiscordMember</a>&gt;</td>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMember.html">DiscordMember</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -722,7 +802,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">reason</span></td>
         <td><p>Reason for audit logs.</p>
 </td>
@@ -739,39 +819,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageRoles">ManageRoles</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -815,7 +864,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">reason</span></td>
         <td><p>Reason for audit logs.</p>
 </td>
@@ -832,39 +881,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageRoles">ManageRoles</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -890,7 +908,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">reason</span></td>
         <td><p>Reason for audit logs.</p>
 </td>
@@ -907,53 +925,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a>&gt;</td>
         <td><p>Newly-created channel.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageChannels">ManageChannels</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
-  <a id="DSharpPlus_Entities_DiscordChannel_CreateInviteAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.CreateInviteAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordChannel_CreateInviteAsync_System_Int32_System_Int32_System_Boolean_System_Boolean_System_String_" data-uid="DSharpPlus.Entities.DiscordChannel.CreateInviteAsync(System.Int32,System.Int32,System.Boolean,System.Boolean,System.String)">CreateInviteAsync(Int32, Int32, Boolean, Boolean, String)</h4>
-  <div class="markdown level1 summary"><p>Create a new invite object</p>
+  <a id="DSharpPlus_Entities_DiscordChannel_CreateGuildEventAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.CreateGuildEventAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_CreateGuildEventAsync_System_String_System_String_DSharpPlus_Entities_ScheduledGuildEventPrivacyLevel_DateTimeOffset_System_Nullable_DateTimeOffset__" data-uid="DSharpPlus.Entities.DiscordChannel.CreateGuildEventAsync(System.String,System.String,DSharpPlus.Entities.ScheduledGuildEventPrivacyLevel,DateTimeOffset,System.Nullable{DateTimeOffset})">CreateGuildEventAsync(String, String, ScheduledGuildEventPrivacyLevel, DateTimeOffset, Nullable&lt;DateTimeOffset&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates an event bound to this channel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordInvite&gt; CreateInviteAsync(int max_age = 86400, int max_uses = 0, bool temporary = false, bool unique = false, string reason = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordScheduledGuildEvent&gt; CreateGuildEventAsync(string name, string description, ScheduledGuildEventPrivacyLevel privacyLevel, DateTimeOffset start, DateTimeOffset? end)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -966,31 +953,237 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the event, up to 100 characters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>The description of this event, up to 1000 characters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.ScheduledGuildEventPrivacyLevel.html">ScheduledGuildEventPrivacyLevel</a></td>
+        <td><span class="parametername">privacyLevel</span></td>
+        <td><p>The privacy level. Currently only <a class="xref" href="DSharpPlus.Entities.ScheduledGuildEventPrivacyLevel.html#DSharpPlus_Entities_ScheduledGuildEventPrivacyLevel_GuildOnly">GuildOnly</a> is supported</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>When this event starts.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">DateTimeOffset</span>&gt;</td>
+        <td><span class="parametername">end</span></td>
+        <td><p>When this event ends. External events require an end time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordScheduledGuildEvent.html">DiscordScheduledGuildEvent</a>&gt;</td>
+        <td><p>The created event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_CreateInviteAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.CreateInviteAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_CreateInviteAsync_System_Int32_System_Int32_System_Boolean_System_Boolean_System_String_System_Nullable_DSharpPlus_InviteTargetType__System_Nullable_System_UInt64__System_Nullable_System_UInt64__" data-uid="DSharpPlus.Entities.DiscordChannel.CreateInviteAsync(System.Int32,System.Int32,System.Boolean,System.Boolean,System.String,System.Nullable{DSharpPlus.InviteTargetType},System.Nullable{System.UInt64},System.Nullable{System.UInt64})">CreateInviteAsync(Int32, Int32, Boolean, Boolean, String, Nullable&lt;InviteTargetType&gt;, Nullable&lt;UInt64&gt;, Nullable&lt;UInt64&gt;)</h4>
+  <div class="markdown level1 summary"><p>Create a new invite object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordInvite&gt; CreateInviteAsync(int max_age = 86400, int max_uses = 0, bool temporary = false, bool unique = false, string reason = null, InviteTargetType? targetType = null, ulong? targetUserId = null, ulong? targetApplicationId = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">max_age</span></td>
         <td><p>Duration of invite in seconds before expiry, or 0 for never.  Defaults to 86400.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">max_uses</span></td>
         <td><p>Max number of uses or 0 for unlimited.  Defaults to 0</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">temporary</span></td>
         <td><p>Whether this invite only grants temporary membership.  Defaults to false.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">unique</span></td>
         <td><p>If true, don&apos;t try to reuse a similar invite (useful for creating many unique one time use invites)</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>Reason for audit logs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="DSharpPlus.InviteTargetType.html">InviteTargetType</a>&gt;</td>
+        <td><span class="parametername">targetType</span></td>
+        <td><p>The target type of the invite, for stream and embedded application invites.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a>&gt;</td>
+        <td><span class="parametername">targetUserId</span></td>
+        <td><p>The id of the target user.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a>&gt;</td>
+        <td><span class="parametername">targetApplicationId</span></td>
+        <td><p>The id of the target application.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordInvite.html">DiscordInvite</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_CreateStageInstanceAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.CreateStageInstanceAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_CreateStageInstanceAsync_System_String_System_Nullable_DSharpPlus_PrivacyLevel__System_String_" data-uid="DSharpPlus.Entities.DiscordChannel.CreateStageInstanceAsync(System.String,System.Nullable{DSharpPlus.PrivacyLevel},System.String)">CreateStageInstanceAsync(String, Nullable&lt;PrivacyLevel&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a stage instance in this stage channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordStageInstance&gt; CreateStageInstanceAsync(string topic, PrivacyLevel? privacyLevel = null, string reason = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">topic</span></td>
+        <td><p>The topic of the stage instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="DSharpPlus.PrivacyLevel.html">PrivacyLevel</a>&gt;</td>
+        <td><span class="parametername">privacyLevel</span></td>
+        <td><p>The privacy level of the stage instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>The reason the stage instance was created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordStageInstance.html">DiscordStageInstance</a>&gt;</td>
+        <td><p>The created stage instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_CreateThreadAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.CreateThreadAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_CreateThreadAsync_DSharpPlus_Entities_DiscordMessage_System_String_DSharpPlus_AutoArchiveDuration_System_String_" data-uid="DSharpPlus.Entities.DiscordChannel.CreateThreadAsync(DSharpPlus.Entities.DiscordMessage,System.String,DSharpPlus.AutoArchiveDuration,System.String)">CreateThreadAsync(DiscordMessage, String, AutoArchiveDuration, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new thread within this channel from the given message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordThreadChannel&gt; CreateThreadAsync(DiscordMessage message, string name, AutoArchiveDuration archiveAfter, string reason = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Message to create the thread from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the thread.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.AutoArchiveDuration.html">AutoArchiveDuration</a></td>
+        <td><span class="parametername">archiveAfter</span></td>
+        <td><p>The auto archive duration of the thread. 3 day and 7 day archive durations require a level 1 and 2 server boost respectively.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">reason</span></td>
         <td><p>Reason for audit logs.</p>
 </td>
@@ -1007,38 +1200,71 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordInvite.html">DiscordInvite</a>&gt;</td>
-        <td></td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordThreadChannel.html">DiscordThreadChannel</a>&gt;</td>
+        <td><p>The created thread.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_CreateThreadAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.CreateThreadAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_CreateThreadAsync_System_String_DSharpPlus_AutoArchiveDuration_DSharpPlus_ChannelType_System_String_" data-uid="DSharpPlus.Entities.DiscordChannel.CreateThreadAsync(System.String,DSharpPlus.AutoArchiveDuration,DSharpPlus.ChannelType,System.String)">CreateThreadAsync(String, AutoArchiveDuration, ChannelType, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new thread within this channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordThreadChannel&gt; CreateThreadAsync(string name, AutoArchiveDuration archiveAfter, ChannelType threadType, string reason = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Condition</th>
+        <th>Name</th>
+        <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_CreateInstantInvite">CreateInstantInvite</a> permission.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the thread.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
+        <td><a class="xref" href="DSharpPlus.AutoArchiveDuration.html">AutoArchiveDuration</a></td>
+        <td><span class="parametername">archiveAfter</span></td>
+        <td><p>The auto archive duration of the thread. 3 day and 7 day archive durations require a level 1 and 2 server boost respectively.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
+        <td><a class="xref" href="DSharpPlus.ChannelType.html">ChannelType</a></td>
+        <td><span class="parametername">threadType</span></td>
+        <td><p>The type of thread to create, either a public, news or, private thread. Private threads requires a level 2 server boost and can only be created within channels of type <a class="xref" href="DSharpPlus.ChannelType.html#DSharpPlus_ChannelType_Text">Text</a>.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>Reason for audit logs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordThreadChannel.html">DiscordThreadChannel</a>&gt;</td>
+        <td><p>The created thread.</p>
 </td>
       </tr>
     </tbody>
@@ -1065,7 +1291,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>The name of the webhook.</p>
 </td>
@@ -1077,7 +1303,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">reason</span></td>
         <td><p>Reason for audit logs.</p>
 </td>
@@ -1094,39 +1320,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordWebhook.html">DiscordWebhook</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordWebhook.html">DiscordWebhook</a>&gt;</td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageWebhooks">ManageWebhooks</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -1169,7 +1364,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1196,7 +1391,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">reason</span></td>
         <td><p>Reason for audit logs.</p>
 </td>
@@ -1213,39 +1408,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageChannels">ManageChannels</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -1277,7 +1441,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">reason</span></td>
         <td><p>Reason for audit logs.</p>
 </td>
@@ -1294,39 +1458,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageMessages">ManageMessages</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -1334,7 +1467,7 @@
   
   <a id="DSharpPlus_Entities_DiscordChannel_DeleteMessagesAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.DeleteMessagesAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordChannel_DeleteMessagesAsync_IEnumerable_DSharpPlus_Entities_DiscordMessage__System_String_" data-uid="DSharpPlus.Entities.DiscordChannel.DeleteMessagesAsync(IEnumerable{DSharpPlus.Entities.DiscordMessage},System.String)">DeleteMessagesAsync(IEnumerable&lt;DiscordMessage&gt;, String)</h4>
-  <div class="markdown level1 summary"><p>Deletes multiple messages if they are less than 14 days old.  If they are older, none of the messages will be deleted and you will receive a <a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a> error.</p>
+  <div class="markdown level1 summary"><p>Deletes multiple messages if they are less than 14 days old.  If they are older, none of the messages will be deleted and you will receive a <see cref="!:BadRequestException"></see> error.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1358,7 +1491,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">reason</span></td>
         <td><p>Reason for audit logs.</p>
 </td>
@@ -1375,39 +1508,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageMessages">ManageMessages</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -1439,7 +1541,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">reason</span></td>
         <td><p>Reason for audit logs.</p>
 </td>
@@ -1456,39 +1558,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageRoles">ManageRoles</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -1520,7 +1591,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">reason</span></td>
         <td><p>Reason for audit logs.</p>
 </td>
@@ -1537,39 +1608,52 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_DeleteStageInstanceAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.DeleteStageInstanceAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_DeleteStageInstanceAsync_System_String_" data-uid="DSharpPlus.Entities.DiscordChannel.DeleteStageInstanceAsync(System.String)">DeleteStageInstanceAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Deletes the stage instance in this stage channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteStageInstanceAsync(string reason = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Condition</th>
+        <th>Name</th>
+        <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageRoles">ManageRoles</a> permission.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>The reason the stage instance was deleted.</p>
 </td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
+        <th>Type</th>
+        <th>Description</th>
       </tr>
+    </thead>
+    <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
+        <td><span class="xref">Task</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1612,7 +1696,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>Whether the <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a> is equal to this <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a>.</p>
 </td>
       </tr>
@@ -1640,7 +1724,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><span class="parametername">obj</span></td>
         <td><p>Object to compare to.</p>
 </td>
@@ -1657,14 +1741,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>Whether the object is equal to this <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a></div>
   
   
   <a id="DSharpPlus_Entities_DiscordChannel_FollowAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.FollowAsync*"></a>
@@ -1704,7 +1788,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordFollowedChannel.html">DiscordFollowedChannel</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordFollowedChannel.html">DiscordFollowedChannel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1730,14 +1814,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><p>The hash code for this <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a></div>
   
   
   <a id="DSharpPlus_Entities_DiscordChannel_GetInvitesAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.GetInvitesAsync*"></a>
@@ -1759,39 +1843,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordInvite.html">DiscordInvite</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordInvite.html">DiscordInvite</a>&gt;&gt;</td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_CreateInstantInvite">CreateInstantInvite</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -1817,7 +1870,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.UInt64</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
         <td><span class="parametername">id</span></td>
         <td><p>The id of the message</p>
 </td>
@@ -1834,39 +1887,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ReadMessageHistory">ReadMessageHistory</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -1894,12 +1916,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.UInt64</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
         <td><span class="parametername">after</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">limit</span></td>
         <td></td>
       </tr>
@@ -1915,39 +1937,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;&gt;</td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_AccessChannels">AccessChannels</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -1975,12 +1966,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.UInt64</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
         <td><span class="parametername">around</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">limit</span></td>
         <td></td>
       </tr>
@@ -1996,39 +1987,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;&gt;</td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_AccessChannels">AccessChannels</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -2055,7 +2015,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">limit</span></td>
         <td></td>
       </tr>
@@ -2071,39 +2031,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;&gt;</td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_AccessChannels">AccessChannels</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -2131,12 +2060,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.UInt64</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
         <td><span class="parametername">before</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">limit</span></td>
         <td></td>
       </tr>
@@ -2152,39 +2081,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;&gt;</td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_AccessChannels">AccessChannels</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -2209,38 +2107,34 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_GetStageInstanceAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.GetStageInstanceAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_GetStageInstanceAsync" data-uid="DSharpPlus.Entities.DiscordChannel.GetStageInstanceAsync">GetStageInstanceAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets the stage instance in this stage channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordStageInstance&gt; GetStageInstanceAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Condition</th>
+        <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_AccessChannels">AccessChannels</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordStageInstance.html">DiscordStageInstance</a>&gt;</td>
+        <td><p>The stage instance in the channel.</p>
 </td>
       </tr>
     </tbody>
@@ -2266,33 +2160,154 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordWebhook.html">DiscordWebhook</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordWebhook.html">DiscordWebhook</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_ListJoinedPrivateArchivedThreadsAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.ListJoinedPrivateArchivedThreadsAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_ListJoinedPrivateArchivedThreadsAsync_System_Nullable_DateTimeOffset__System_Int32_" data-uid="DSharpPlus.Entities.DiscordChannel.ListJoinedPrivateArchivedThreadsAsync(System.Nullable{DateTimeOffset},System.Int32)">ListJoinedPrivateArchivedThreadsAsync(Nullable&lt;DateTimeOffset&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the private and archived threads that the current member has joined in this channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ThreadQueryResult&gt; ListJoinedPrivateArchivedThreadsAsync(DateTimeOffset? before = null, int limit = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Condition</th>
+        <th>Name</th>
+        <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageWebhooks">ManageWebhooks</a> permission.</p>
-</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">DateTimeOffset</span>&gt;</td>
+        <td><span class="parametername">before</span></td>
+        <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">limit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.ThreadQueryResult.html">ThreadQueryResult</a>&gt;</td>
+        <td><p>A <a class="xref" href="DSharpPlus.Entities.ThreadQueryResult.html">ThreadQueryResult</a> containing the threads for this query and if an other call will yield more threads.</p>
 </td>
       </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_ListPrivateArchivedThreadsAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.ListPrivateArchivedThreadsAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_ListPrivateArchivedThreadsAsync_System_Nullable_DateTimeOffset__System_Int32_" data-uid="DSharpPlus.Entities.DiscordChannel.ListPrivateArchivedThreadsAsync(System.Nullable{DateTimeOffset},System.Int32)">ListPrivateArchivedThreadsAsync(Nullable&lt;DateTimeOffset&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the threads that are private and archived for this channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ThreadQueryResult&gt; ListPrivateArchivedThreadsAsync(DateTimeOffset? before = null, int limit = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">DateTimeOffset</span>&gt;</td>
+        <td><span class="parametername">before</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">limit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.ThreadQueryResult.html">ThreadQueryResult</a>&gt;</td>
+        <td><p>A <a class="xref" href="DSharpPlus.Entities.ThreadQueryResult.html">ThreadQueryResult</a> containing the threads for this query and if an other call will yield more threads.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_ListPublicArchivedThreadsAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.ListPublicArchivedThreadsAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_ListPublicArchivedThreadsAsync_System_Nullable_DateTimeOffset__System_Int32_" data-uid="DSharpPlus.Entities.DiscordChannel.ListPublicArchivedThreadsAsync(System.Nullable{DateTimeOffset},System.Int32)">ListPublicArchivedThreadsAsync(Nullable&lt;DateTimeOffset&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the threads that are public and archived for this channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ThreadQueryResult&gt; ListPublicArchivedThreadsAsync(DateTimeOffset? before = null, int limit = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">DateTimeOffset</span>&gt;</td>
+        <td><span class="parametername">before</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">limit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.ThreadQueryResult.html">ThreadQueryResult</a>&gt;</td>
+        <td><p>A <a class="xref" href="DSharpPlus.Entities.ThreadQueryResult.html">ThreadQueryResult</a> containing the threads for this query and if an other call will yield more threads.</p>
 </td>
       </tr>
     </tbody>
@@ -2336,39 +2351,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageChannels">ManageChannels</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -2394,25 +2378,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">position</span></td>
         <td><p>Position the channel should be moved to.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">reason</span></td>
         <td><p>Reason for audit logs.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">lockPermissions</span></td>
         <td><p>Whether to sync channel permissions with the parent, if moving to a new category.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a>&gt;</td>
         <td><span class="parametername">parentId</span></td>
         <td><p>The new parent id if the channel is to be moved to a new category.</p>
 </td>
@@ -2429,38 +2413,52 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_ModifyStageInstanceAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.ModifyStageInstanceAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_ModifyStageInstanceAsync_Action_StageInstanceEditModel__" data-uid="DSharpPlus.Entities.DiscordChannel.ModifyStageInstanceAsync(Action{StageInstanceEditModel})">ModifyStageInstanceAsync(Action&lt;StageInstanceEditModel&gt;)</h4>
+  <div class="markdown level1 summary"><p>Modifies the stage instance in this stage channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordStageInstance&gt; ModifyStageInstanceAsync(Action&lt;StageInstanceEditModel&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Condition</th>
+        <th>Name</th>
+        <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageChannels">ManageChannels</a> permission.</p>
+        <td><span class="xref">Action</span>&lt;<span class="xref">StageInstanceEditModel</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action to perform.</p>
 </td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
+        <th>Type</th>
+        <th>Description</th>
       </tr>
+    </thead>
+    <tbody>
       <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordStageInstance.html">DiscordStageInstance</a>&gt;</td>
+        <td><p>The modified stage instance.</p>
 </td>
       </tr>
     </tbody>
@@ -2549,39 +2547,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_MoveMembers">MoveMembers</a> permission.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exists or if the Member does not exists.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -2624,39 +2591,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
         <td><p>The sent message.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendMessages">SendMessages</a> permission TTS is true and <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendTtsMessages">SendTtsMessages</a> if TTS is true.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -2700,39 +2636,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
         <td><p>The sent message.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendMessages">SendMessages</a> permission if TTS is true and <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendTtsMessages">SendTtsMessages</a> if TTS is true.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -2776,39 +2681,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
         <td><p>The sent message.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendMessages">SendMessages</a> permission TTS is true and <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendTtsMessages">SendTtsMessages</a> if TTS is true.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -2835,7 +2709,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">content</span></td>
         <td><p>Content of the message to send.</p>
 </td>
@@ -2852,39 +2726,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
         <td><p>The sent message.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendMessages">SendMessages</a> permission if TTS is true and <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendTtsMessages">SendTtsMessages</a> if TTS is true.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -2911,7 +2754,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">content</span></td>
         <td><p>Content of the message to send.</p>
 </td>
@@ -2934,39 +2777,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
         <td><p>The sent message.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendMessages">SendMessages</a> permission if TTS is true and <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_SendTtsMessages">SendTtsMessages</a> if TTS is true.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
 </td>
       </tr>
     </tbody>
@@ -2992,14 +2804,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><p>String representation of this channel.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a></div>
   
   
   <a id="DSharpPlus_Entities_DiscordChannel_TriggerTypingAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.TriggerTypingAsync*"></a>
@@ -3021,34 +2833,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the channel does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -3074,13 +2860,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">suppress</span></td>
         <td><p>Toggles the suppress state.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTimeOffset</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">DateTimeOffset</span>&gt;</td>
         <td><span class="parametername">requestToSpeakTimestamp</span></td>
         <td><p>Sets the time the user requested to speak.</p>
 </td>
@@ -3097,7 +2883,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -3149,7 +2935,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>Whether the two channels are equal.</p>
 </td>
       </tr>
@@ -3200,7 +2986,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>Whether the two channels are not equal.</p>
 </td>
       </tr>

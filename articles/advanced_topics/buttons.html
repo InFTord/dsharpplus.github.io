@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Buttons </title>
+    <title>Buttons | DSharpPlus documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Buttons ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="title" content="Buttons | DSharpPlus documentation ">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -73,13 +73,15 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="advanced_topics_buttons">
+            <article class="content wrap" id="_content" data-uid="articles.advanced_topics.buttons">
 <h1 id="introduction">Introduction</h1>
 
-<p>Buttons are a feature in Discord based on the interaction framework appended to the bottom of a message which come in several colors.
-You will want to familarize yourself with the <a class="xref" href="../beyond_basics/messagebuilder.html">message builder</a> as it and similar builder objects will be used throughout this article.</p>
-<p>With buttons, you can have up to five buttons in a row, and up to five (5) rows of buttons, for a maximum for 25 buttons per message.
-Furthermore, buttons come in two types: regular, and link. Link buttons contain a Url field, and are always grey.</p>
+<p>Buttons are a feature in Discord based on the interaction framework appended to the bottom of a message which come in
+several colors. You will want to familarize yourself with the <a class="xref" href="../beyond_basics/messagebuilder.html">message builder</a> as it and similar builder objects
+will be used throughout this article.</p>
+<p>With buttons, you can have up to five buttons in a row, and up to five (5) rows of buttons, for a maximum for 25 buttons
+per message. Furthermore, buttons come in two types: regular, and link. Link buttons contain a Url field, and are always
+grey.</p>
 <h1 id="buttons-continued">Buttons Continued</h1>
 <div class="WARNING"><h5>Warning</h5><p>Component (Button) Ids on buttons should be unique, as this is what&#39;s sent back when a user presses a button.</p>
 <p>Link buttons do <strong>not</strong> have a custom id and do <strong>not</strong> send interactions when pressed.</p>
@@ -92,27 +94,43 @@ Furthermore, buttons come in two types: regular, and link. Link buttons contain 
 <li>Emoji</li>
 <li>Disabled</li>
 </ul>
-<p>The id of the button is a settable string on buttons, and is specified by the developer. Discord sends this id back in the <a href="https://discord.dev/interactions/slash-commands#interaction">interaction object</a>.</p>
-<p>Non-link buttons come in four colors, which are known as styles: Blurple, Grey, Green, and Red. Or as their styles are named: Primary, Secondary, Success, and Danger respectively.</p>
+<p>The id of the button is a settable string on buttons, and is specified by the developer. Discord sends this id back in
+the <a href="https://discord.dev/interactions/slash-commands#interaction">interaction object</a>.</p>
+<p>Non-link buttons come in four colors, which are known as styles: Blurple, Grey, Green, and Red. Or as their styles are
+named: Primary, Secondary, Success, and Danger respectively.</p>
 <p>How does one construct a button? It&#39;s simple, buttons support constructor and object initialization like so:</p>
-<pre><code class="lang-cs">var myButton = new DiscordButtonComponent(ButtonStyle.Primary, &quot;my_very_cool_button&quot;, &quot;Very cool button!&quot;, false, new DiscordComponentEmoji(&quot;😀&quot;));
-</code></pre><p>This will create a blurple button with the text that reads &quot;Very cool button!&quot;. When a user pushes it, <code>&quot;my_very_cool_button&quot;</code> will be sent back as the <code>Id</code> property on the event. This is expanded on in the <a href="#responding-to-button-presses">how to respond to buttons</a>.</p>
-<p>The label of a button is optional <em>if</em> an emoji is specified. The label can be up to 80 characters in length.
-The emoji of a button is a <a href="https://discord.dev/interactions/message-components#component-object">partial emoji object</a>, which means that <strong>any valid emoji is usable</strong>, even if your bot does not have access to it&#39;s origin server.</p>
-<p>The disabled field of a button is rather self explanatory. If this is set to true, the user will see a greyed out button which they cannot interact with.</p>
+<pre><code class="lang-cs">var myButton = new DiscordButtonComponent(
+    ButtonStyle.Primary,
+    &quot;my_very_cool_button&quot;,
+    &quot;Very cool button!&quot;,
+    false,
+    new DiscordComponentEmoji(&quot;😀&quot;));
+</code></pre><p>This will create a blurple button with the text that reads &quot;Very cool button!&quot;. When a user pushes it,
+<code>&quot;my_very_cool_button&quot;</code> will be sent back as the <a class="xref" href="../../api/DSharpPlus.EventArgs.ComponentInteractionCreateEventArgs.html#DSharpPlus_EventArgs_ComponentInteractionCreateEventArgs_Id">Id</a> property
+on the event. This is expanded on in the <a href="#responding-to-button-presses">how to respond to buttons</a>.</p>
+<p>The label of a button is optional <em>if</em> an emoji is specified. The label can be up to 80 characters in length. The emoji
+of a button is a <a href="https://discord.dev/interactions/message-components#component-object">partial emoji object</a>, which means that <strong>any valid emoji is usable</strong>, even if your bot does not 
+have access to it&#39;s origin server.</p>
+<p>The disabled field of a button is rather self explanatory. If this is set to true, the user will see a greyed out button
+which they cannot interact with.</p>
 <h1 id="adding-buttons">Adding buttons</h1>
 <div class="NOTE"><h5>Note</h5><p>This article will use underscores in button ids for consistency and styling, but spaces are also usable.</p>
 </div>
-<p>Adding buttons to a message is relatively simple. Simply make a builder, and sprinkle some content and the buttons you&#39;d like.</p>
+<p>Adding buttons to a message is relatively simple. Simply make a builder, and sprinkle some content and the buttons you&#39;d
+like.</p>
 <pre><code class="lang-cs">var builder = new DiscordMessageBuilder();
 builder.WithContent(&quot;This message has buttons! Pretty neat innit?&quot;);
-</code></pre><p>Well, there&#39;s a builder, but no buttons. What now? Simply make a new button object (<code>DiscordButtonComponent</code>) and call <code>.AddComponents()</code> on the MessageBuilder.</p>
+</code></pre><p>Well, there&#39;s a builder, but no buttons. What now? Simply make a new <a class="xref" href="../../api/DSharpPlus.Entities.DiscordButtonComponent.html">DiscordButtonComponent</a> object
+and call <a class="xref" href="../../api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_AddComponents_">AddComponents</a> on the
+message builder.</p>
 <pre><code class="lang-cs">var myButton = new DiscordButtonComponent(ButtonStyle.Primary, &quot;my_custom_id&quot;, &quot;This is a button!&quot;);
 
 var builder = new DiscordMessageBuilder()
     .WithContent(&quot;This message has buttons! Pretty neat innit?&quot;)
     .AddComponents(myButton);
-</code></pre><p>Now you have a message with a button. Congratulations! It&#39;s important to note that <code>.AddComponents()</code> will create a new row with each call, so <strong>add everything you want on one row in one call!</strong></p>
+</code></pre><p>Now you have a message with a button. Congratulations! It&#39;s important to note that
+<a class="xref" href="../../api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_AddComponents_">AddComponents</a> will create a new row with each call, so <strong>add everything you
+want on one row in one call!</strong></p>
 <p>Buttons can be added in any order you fancy. Lets add 5 to demonstrate each color, and a link button for good measure.</p>
 <pre><code class="lang-cs">var builder = new DiscordMessageBuilder()
     .WithContent(&quot;This message has buttons! Pretty neat innit?&quot;)
@@ -124,7 +142,8 @@ var builder = new DiscordMessageBuilder()
         new DiscordButtonComponent(ButtonStyle.Danger, &quot;4_top&quot;, &quot;Red!&quot;),
         new DiscordLinkButtonComponent(&quot;https://some-super-cool.site&quot;, &quot;Link!&quot;)
     });
-</code></pre><p>As promised, not too complicated. Links however are <code>DiscordLinkButtonComponent</code>, which takes a URL as it&#39;s first parameter, and the label. Link buttons can also have an emoji, like regular buttons.</p>
+</code></pre><p>As promised, not too complicated. Links however are <a class="xref" href="../../api/DSharpPlus.Entities.DiscordLinkButtonComponent.html">DiscordLinkButtonComponent</a>, which takes a URL
+as its first parameter, and the label. Link buttons can also have an emoji, like regular buttons.</p>
 <p>Lets also add a second row of buttons, but disable them, so the user can&#39;t push them all willy-nilly.</p>
 <pre><code class="lang-cs">builder.AddComponents(new DiscordComponent[]
 {
@@ -134,40 +153,66 @@ var builder = new DiscordMessageBuilder()
     new DiscordButtonComponent(ButtonStyle.Danger, &quot;4_top_d&quot;, &quot;Red!&quot;, true),
     new DiscordLinkButtonComponent(&quot;https://some-super-cool.site&quot;, &quot;Link!&quot;, true)
 });
-</code></pre><p>Practically identical, but now with <code>true</code> as an extra paremeter. This is the <code>Disabled</code> property.</p>
+</code></pre><p>Practically identical, but now with <code>true</code> as an extra paremeter. This is the 
+<a class="xref" href="../../api/DSharpPlus.Entities.DiscordButtonComponent.html#DSharpPlus_Entities_DiscordButtonComponent_Disabled">Disabled</a> property.</p>
 <p>Produces a message like such: <img src="/images/advanced_topics_buttons_01.png" alt="Buttons"></p>
-<p>Well, that&#39;s all neat, but lets say you want to add an emoji. Being able to use any emoji is pretty neat, afterall. That&#39;s also very simple!</p>
-<pre><code class="lang-cs">var myButton = new DiscordButtonComponent(ButtonStyle.Primary, &quot;emoji_button&quot;, null, false, new DiscordComponentEmoji(595381687026843651));
-</code></pre><p>And you&#39;re done! Simply add that to a builder, and when you send, you&#39;ll get a message that has a button with a little Pikachu enjoying a lolipop. Adorable. <img src="/images/advanced_topics_buttons_02.png" alt="PikaLolipop"></p>
+<p>Well, that&#39;s all neat, but lets say you want to add an emoji. Being able to use any emoji is pretty neat, afterall.
+That&#39;s also very simple!</p>
+<pre><code class="lang-cs">var myButton = new DiscordButtonComponent(
+    ButtonStyle.Primary,
+    &quot;emoji_button&quot;,
+    null,
+    false,
+    new DiscordComponentEmoji(595381687026843651));
+</code></pre><p>And you&#39;re done! Simply add that to a builder, and when you send, you&#39;ll get a message that has a button with a little
+Pikachu enjoying a lolipop. Adorable. <img src="/images/advanced_topics_buttons_02.png" alt="PikaLolipop"></p>
 <h1 id="responding-to-button-presses">Responding to button presses</h1>
-<p>When any button is pressed, it will fire the <a class="xref" href="../../api/DSharpPlus.DiscordClient.html#ComponentInteractionCreated">ComponentInteractionCreated</a> event.</p>
-<p>In the event args, <code>Id</code> will be the id of the button you specified. There&#39;s also an <code>Interaction</code> property, which contains the interaction the event created. It&#39;s important to respond to an interaction within 3 seconds, or it will time out. Responding after this period will throw a <code>NotFoundException</code>.</p>
-<p>With buttons, there are two new response types: <code>DeferredMessageUpdate</code> and <code>UpdateMessage</code>.</p>
-<p>Using <code>DeferredMessageUpdate</code> lets you create followup messages via the <a class="xref" href="../../api/DSharpPlus.Entities.DiscordFollowupMessageBuilder.html">followup message builder</a>. The button will return to being in it&#39;s &#39;dormant&#39; state, or it&#39;s &#39;unpushed&#39; state, if you will.</p>
+<p>When any button is pressed, it will fire the <a class="xref" href="../../api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_ComponentInteractionCreated">ComponentInteractionCreated</a>.</p>
+<p>In the event args, <a class="xref" href="../../api/DSharpPlus.EventArgs.ComponentInteractionCreateEventArgs.html#DSharpPlus_EventArgs_ComponentInteractionCreateEventArgs_Id">Id</a> will be the id of the button you
+specified. There&#39;s also an <a class="xref" href="../../api/DSharpPlus.EventArgs.InteractionCreateEventArgs.html#DSharpPlus_EventArgs_InteractionCreateEventArgs_Interaction">Interaction</a> property, which contains the
+interaction the event created. It&#39;s important to respond to an interaction within 3 seconds, or it will time out.
+Responding after this period will throw a <a class="xref" href="../../api/DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a>.</p>
+<p>With buttons, there are two new response types: <a class="xref" href="../../api/DSharpPlus.InteractionResponseType.html#DSharpPlus_InteractionResponseType_DeferredMessageUpdate">DeferredMessageUpdate</a> and
+<a class="xref" href="../../api/DSharpPlus.InteractionResponseType.html#DSharpPlus_InteractionResponseType_UpdateMessage">UpdateMessage</a>.</p>
+<p>Using <a class="xref" href="../../api/DSharpPlus.InteractionResponseType.html#DSharpPlus_InteractionResponseType_DeferredMessageUpdate">DeferredMessageUpdate</a> lets you create followup messages via the
+<a class="xref" href="../../api/DSharpPlus.Entities.DiscordFollowupMessageBuilder.html">followup message builder</a>. The button will return to being in it&#39;s &#39;dormant&#39; state, or it&#39;s &#39;unpushed&#39; state, if you
+will.</p>
 <p>You have 15 minutes from that point to make followup messages. Responding to that interaction looks like this:</p>
 <pre><code class="lang-cs">client.ComponentInteractionCreated += async (s, e) =&gt;
 {
     await e.Interaction.CreateResponseAsync(InteractionResponseType.DeferredMessageUpdate);
     // Do things.. //
 }
-</code></pre><p>If you would like to update the message when a button is pressed, however, you&#39;d use <code>UpdateMessage</code> instead, and pass a <code>DiscordInteractionResponseBuilder</code> with the new content you&#39;d like.</p>
+</code></pre><p>If you would like to update the message when a button is pressed, however, you&#39;d use
+<a class="xref" href="../../api/DSharpPlus.InteractionResponseType.html#DSharpPlus_InteractionResponseType_UpdateMessage">UpdateMessage</a> instead, and pass a
+<a class="xref" href="../../api/DSharpPlus.Entities.DiscordInteractionResponseBuilder.html">DiscordInteractionResponseBuilder</a> with the new content you&#39;d like.</p>
 <pre><code class="lang-cs">client.ComponentInteractionCreated += async (s, e) =&gt;
 {
-    await e.Interaction.CreateResponseAsync(InteractionResponseType.UpdateMessage, new DiscordInteractionResponseBuilder().WithContent(&quot;No more buttons for you &gt;:)&quot;));
+    await e.Interaction.CreateResponseAsync(
+        InteractionResponseType.UpdateMessage,
+        new DiscordInteractionResponseBuilder()
+            .WithContent(&quot;No more buttons for you &gt;:)&quot;));
 }
 </code></pre><p>This will update the message, and without the infamous <sub>(edited)</sub> next to it. Nice.</p>
 <h1 id="interactivity">Interactivity</h1>
-<p>Along with the typical <code>WaitForMessageAsync</code> and <code>WaitForReactionAsync</code> methods provided by interactivity, there are also button implementations as well.</p>
-<p>More information about how interactivity works can be found in <a class="xref" href="../interactivity.html">the interactivity article</a></p>
+<p>Along with the typical <a class="xref" href="../../api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_WaitForMessageAsync_">WaitForMessageAsync</a> and
+<a class="xref" href="../../api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_WaitForReactionAsync_">WaitForReactionAsync</a> methods provided by interactivity, there are also
+button implementations as well.</p>
+<p>More information about how interactivity works can be found in <a class="xref" href="../interactivity.html">the interactivity article</a>.</p>
 <p>Since buttons create interactions, there are also two additional properties in the configuration:</p>
 <ul>
-<li>RepsonseBehavior</li>
-<li>ResponseMessage</li>
+<li><a class="xref" href="../../api/DSharpPlus.Interactivity.InteractivityConfiguration.html#DSharpPlus_Interactivity_InteractivityConfiguration_ResponseBehavior">ResponseBehavior</a></li>
+<li><a class="xref" href="../../api/DSharpPlus.Interactivity.InteractivityConfiguration.html#DSharpPlus_Interactivity_InteractivityConfiguration_ResponseMessage">ResponseMessage</a></li>
 </ul>
-<p>ResponseBehavior is what interactivity will do when handling something that isn&#39;t a valid valid button, in the context of waiting for a specific button. It defaults to <code>Ignore</code>, which will cause the interaction fail.</p>
-<p>Alternatively, setting it to <code>Ack</code> will acknowledge the button, and continue waiting.</p>
+<p><a class="xref" href="../../api/DSharpPlus.Interactivity.InteractivityConfiguration.html#DSharpPlus_Interactivity_InteractivityConfiguration_ResponseBehavior">ResponseBehavior</a> is what interactivity will do when handling
+something that isn&#39;t a valid valid button, in the context of waiting for a specific button. It defaults to
+<a class="xref" href="../../api/DSharpPlus.Interactivity.Enums.InteractionResponseBehavior.html#DSharpPlus_Interactivity_Enums_InteractionResponseBehavior_Ignore">Ignore</a>, which will cause the interaction fail.</p>
+<p>Alternatively, setting it to <a class="xref" href="../../api/DSharpPlus.Interactivity.Enums.InteractionResponseBehavior.html#DSharpPlus_Interactivity_Enums_InteractionResponseBehavior_Ack">Ack</a> will acknowledge the
+button, and continue waiting.</p>
 <p>Respond will reply with an ephemeral message with the aforementioned response message.</p>
-<p>ResponseBehavior only applies to the overload accepting a string id of the button to wait for.</p>
+<p><a class="xref" href="../../api/DSharpPlus.Interactivity.InteractivityConfiguration.html#DSharpPlus_Interactivity_InteractivityConfiguration_ResponseBehavior">ResponseBehavior</a> only applies to the overload accepting a string id
+of the button to wait for.</p>
+<!-- LINKS -->
 </article>
           </div>
           
@@ -176,7 +221,7 @@ var builder = new DiscordMessageBuilder()
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/DSharpPlus/DSharpPlus/blob/release/4.1/docs/articles/advanced_topics/buttons.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/DSharpPlus/DSharpPlus/blob/release/4.2/docs/articles/advanced_topics/buttons.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class DiscordInteractionResponseBuilder
-   </title>
+   | DSharpPlus documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordInteractionResponseBuilder
-   ">
-    <meta name="generator" content="docfx 2.58.4.0">
+   | DSharpPlus documentation ">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -85,7 +85,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">DiscordInteractionResponseBuilder</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DSharpPlus.Entities.html">DSharpPlus.Entities</a></h6>
@@ -140,9 +140,36 @@
   </h3>
   
   
+  <a id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_Choices_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.Choices*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_Choices" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.Choices">Choices</h4>
+  <div class="markdown level1 summary"><p>The choices to send on this interaction response. Mutually exclusive with content, embed, and components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;DiscordAutoCompleteChoice&gt; Choices { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordAutoCompleteChoice.html">DiscordAutoCompleteChoice</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_Components_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.Components*"></a>
   <h4 id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_Components" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.Components">Components</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Components to send on this interaction response.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -184,7 +211,33 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_CustomId_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.CustomId*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_CustomId" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.CustomId">CustomId</h4>
+  <div class="markdown level1 summary"><p>The custom id to send with this interaction response. Only applicable when creating a modal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CustomId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -217,6 +270,32 @@
   </table>
   
   
+  <a id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_Files_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.Files*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_Files" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.Files">Files</h4>
+  <div class="markdown level1 summary"><p>Files to send on this interaction response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;DiscordMessageFile&gt; Files { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessageFile.html">DiscordMessageFile</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_IsEphemeral_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.IsEphemeral*"></a>
   <h4 id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_IsEphemeral" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.IsEphemeral">IsEphemeral</h4>
   <div class="markdown level1 summary"><p>Whether this interaction response should be ephemeral.</p>
@@ -236,7 +315,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -262,7 +341,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -293,8 +372,169 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_Title_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.Title*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_Title" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.Title">Title</h4>
+  <div class="markdown level1 summary"><p>The title to send with this interaction response. Only applicable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Title { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_AddAutoCompleteChoice_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.AddAutoCompleteChoice*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_AddAutoCompleteChoice_DSharpPlus_Entities_DiscordAutoCompleteChoice_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.AddAutoCompleteChoice(DSharpPlus.Entities.DiscordAutoCompleteChoice)">AddAutoCompleteChoice(DiscordAutoCompleteChoice)</h4>
+  <div class="markdown level1 summary"><p>Adds a single auto-complete choice to the builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordInteractionResponseBuilder AddAutoCompleteChoice(DiscordAutoCompleteChoice choice)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordAutoCompleteChoice.html">DiscordAutoCompleteChoice</a></td>
+        <td><span class="parametername">choice</span></td>
+        <td><p>The choice to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordInteractionResponseBuilder.html">DiscordInteractionResponseBuilder</a></td>
+        <td><p>The current builder to chain calls with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_AddAutoCompleteChoices_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.AddAutoCompleteChoices*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_AddAutoCompleteChoices_DSharpPlus_Entities_DiscordAutoCompleteChoice___" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.AddAutoCompleteChoices(DSharpPlus.Entities.DiscordAutoCompleteChoice[])">AddAutoCompleteChoices(DiscordAutoCompleteChoice[])</h4>
+  <div class="markdown level1 summary"><p>Adds auto-complete choices to the builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordInteractionResponseBuilder AddAutoCompleteChoices(params DiscordAutoCompleteChoice[] choices)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordAutoCompleteChoice.html">DiscordAutoCompleteChoice</a>[]</td>
+        <td><span class="parametername">choices</span></td>
+        <td><p>The choices to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordInteractionResponseBuilder.html">DiscordInteractionResponseBuilder</a></td>
+        <td><p>The current builder to chain calls with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_AddAutoCompleteChoices_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.AddAutoCompleteChoices*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_AddAutoCompleteChoices_IEnumerable_DSharpPlus_Entities_DiscordAutoCompleteChoice__" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.AddAutoCompleteChoices(IEnumerable{DSharpPlus.Entities.DiscordAutoCompleteChoice})">AddAutoCompleteChoices(IEnumerable&lt;DiscordAutoCompleteChoice&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds auto-complete choices to the builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordInteractionResponseBuilder AddAutoCompleteChoices(IEnumerable&lt;DiscordAutoCompleteChoice&gt; choices)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordAutoCompleteChoice.html">DiscordAutoCompleteChoice</a>&gt;</td>
+        <td><span class="parametername">choices</span></td>
+        <td><p>The choices to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordInteractionResponseBuilder.html">DiscordInteractionResponseBuilder</a></td>
+        <td><p>The current builder to chain calls with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_AddComponents_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.AddComponents*"></a>
@@ -519,6 +759,165 @@
   </table>
   
   
+  <a id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_AddFile_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.AddFile*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_AddFile_FileStream_System_Boolean_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.AddFile(FileStream,System.Boolean)">AddFile(FileStream, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets if the message has files to be sent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordInteractionResponseBuilder AddFile(FileStream stream, bool resetStreamPosition = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FileStream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The Stream to the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">resetStreamPosition</span></td>
+        <td><p>Tells the API Client to reset the stream position to what it was after the file is sent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordInteractionResponseBuilder.html">DiscordInteractionResponseBuilder</a></td>
+        <td><p>The builder to chain calls with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_AddFile_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.AddFile*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_AddFile_System_String_Stream_System_Boolean_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.AddFile(System.String,Stream,System.Boolean)">AddFile(String, Stream, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Adds a file to the interaction response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordInteractionResponseBuilder AddFile(string filename, Stream data, bool resetStreamPosition = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Name of the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>File data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">resetStreamPosition</span></td>
+        <td><p>Tells the API Client to reset the stream position to what it was after the file is sent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordInteractionResponseBuilder.html">DiscordInteractionResponseBuilder</a></td>
+        <td><p>The builder to chain calls with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_AddFiles_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.AddFiles*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_AddFiles_Dictionary_System_String_Stream__System_Boolean_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.AddFiles(Dictionary{System.String,Stream},System.Boolean)">AddFiles(Dictionary&lt;String, Stream&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Adds the given files to the interaction response builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordInteractionResponseBuilder AddFiles(Dictionary&lt;string, Stream&gt; files, bool resetStreamPosition = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <span class="xref">Stream</span>&gt;</td>
+        <td><span class="parametername">files</span></td>
+        <td><p>Dictionary of file name and file data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">resetStreamPosition</span></td>
+        <td><p>Tells the API Client to reset the stream position to what it was after the file is sent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordInteractionResponseBuilder.html">DiscordInteractionResponseBuilder</a></td>
+        <td><p>The builder to chain calls with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_AddMention_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.AddMention*"></a>
   <h4 id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_AddMention_DSharpPlus_Entities_IMention_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.AddMention(DSharpPlus.Entities.IMention)">AddMention(IMention)</h4>
   <div class="markdown level1 summary"><p>Adds the mention to the mentions to parse, etc. with the interaction response.</p>
@@ -614,7 +1013,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordInteractionResponseBuilder AsEphemeral(bool ephemeral)</code></pre>
+    <pre><code class="lang-csharp hljs">public DiscordInteractionResponseBuilder AsEphemeral(bool ephemeral = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -627,7 +1026,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">ephemeral</span></td>
         <td><p>Ephemeral.</p>
 </td>
@@ -693,10 +1092,96 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">content</span></td>
         <td><p>Content to send.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordInteractionResponseBuilder.html">DiscordInteractionResponseBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_WithCustomId_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.WithCustomId*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_WithCustomId_System_String_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.WithCustomId(System.String)">WithCustomId(String)</h4>
+  <div class="markdown level1 summary"><p>If responding with a modal, sets the custom id for the modal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordInteractionResponseBuilder WithCustomId(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordInteractionResponseBuilder.html">DiscordInteractionResponseBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_WithTitle_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.WithTitle*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteractionResponseBuilder_WithTitle_System_String_" data-uid="DSharpPlus.Entities.DiscordInteractionResponseBuilder.WithTitle(System.String)">WithTitle(String)</h4>
+  <div class="markdown level1 summary"><p>If responding with a modal, sets the title of the modal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordInteractionResponseBuilder WithTitle(string title)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">title</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -737,7 +1222,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">tts</span></td>
         <td><p>Text-to-speech</p>
 </td>

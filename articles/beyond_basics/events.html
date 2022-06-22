@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>DSharpPlus Events </title>
+    <title>DSharpPlus Events | DSharpPlus documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="DSharpPlus Events ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="title" content="DSharpPlus Events | DSharpPlus documentation ">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -73,13 +73,13 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="beyond_basics_events">
+            <article class="content wrap" id="_content" data-uid="articles.beyond_basics.events">
 <h1 id="consuming-events">Consuming Events</h1>
 
-<p>DSharpPlus makes use of <em>asynchronous events</em> which will execute each handler asynchronously in sequential order. 
-This event system will require event handlers have a <code>Task</code> return type and take two parameters.</p>
-<p>The first parameter will contain an instance of the object which fired the event.<br>
-The second parameter will contain an arguments object for the specific event you&#39;re handling.</p>
+<p>DSharpPlus makes use of <em>asynchronous events</em> which will execute each handler asynchronously in sequential order. This
+event system will require event handlers have a <code>Task</code> return type and take two parameters.</p>
+<p>The first parameter will contain an instance of the object which fired the event. The second parameter will contain an
+arguments object for the specific event you&#39;re handling.</p>
 <p>Below is a snippet demonstrating this with a lambda expression.</p>
 <pre><code class="lang-cs">private async Task MainAsync()
 {
@@ -118,11 +118,12 @@ private Task MemberAddedHandler(DiscordClient s, GuildMemberAddEventArgs e)
     return Task.CompletedTask;
 }
 </code></pre><h1 id="avoiding-deadlocks">Avoiding Deadlocks</h1>
-<p>Despite the fact that your event handlers are executed asynchronously, they are also executed one at a time on the gateway thread for consistency. 
-This means that each handler must complete its execution before others can be dispatched. </p>
-<p>Because of this, executing code in your event handlers that runs for an extended period of time may inadvertently 
-create brief unresponsiveness or, even worse, cause a <a href="https://en.wikipedia.org/wiki/Deadlock">deadlock</a>.
-To prevent such issues, any event handler that has the potential to take more than 2 seconds to execute should have its logic offloaded to a <code>Task.Run</code>.</p>
+<p>Despite the fact that your event handlers are executed asynchronously, they are also executed one at a time on the
+gateway thread for consistency. This means that each handler must complete its execution before others can be
+dispatched. </p>
+<p>Because of this, executing code in your event handlers that runs for an extended period of time may inadvertently create
+brief unresponsiveness or, even worse, cause a <a href="https://en.wikipedia.org/wiki/Deadlock">deadlock</a>. To prevent such issues, any event handler that has the
+potential to take more than 2 seconds to execute should have its logic offloaded to a <code>Task.Run</code>.</p>
 <pre><code class="lang-cs">discord.MessageCreated += (s, e) =&gt;
 {
     _ = Task.Run(async () =&gt;
@@ -138,7 +139,9 @@ To prevent such issues, any event handler that has the potential to take more th
 
     return Task.CompletedTask;
 };
-</code></pre><p>Doing this will allow the handler to complete its execution quicker, which will in turn allow other handlers to be executed and prevent the gateway thread from being blocked.</p>
+</code></pre><p>Doing this will allow the handler to complete its execution quicker, which will in turn allow other handlers to be
+executed and prevent the gateway thread from being blocked.</p>
+<!-- LINKS -->
 </article>
           </div>
           
@@ -147,7 +150,7 @@ To prevent such issues, any event handler that has the potential to take more th
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/DSharpPlus/DSharpPlus/blob/release/4.1/docs/articles/beyond_basics/events.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/DSharpPlus/DSharpPlus/blob/release/4.2/docs/articles/beyond_basics/events.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

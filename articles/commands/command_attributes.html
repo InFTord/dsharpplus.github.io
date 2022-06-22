@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Command Attributes </title>
+    <title>Command Attributes | DSharpPlus documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Command Attributes ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="title" content="Command Attributes | DSharpPlus documentation ">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -73,7 +73,7 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="commands_command_attributes">
+            <article class="content wrap" id="_content" data-uid="articles.commands.command_attributes">
 <h2 id="built-in-attributes">Built-In Attributes</h2>
 
 <p>CommandsNext has a variety of built-in attributes to enhance your commands and provide some access control.
@@ -99,7 +99,8 @@ The majority of these attributes can be applied to your command methods and comm
 </ul>
 <h2 id="custom-attributes">Custom Attributes</h2>
 <p>If the above attributes don&#39;t meet your needs, CommandsNext also gives you the option of writing your own!
-Simply create a new class which inherits from <code>CheckBaseAttribute</code> and implement the required method.</p>
+Simply create a new class which inherits from <a class="xref" href="../../api/DSharpPlus.CommandsNext.Attributes.CheckBaseAttribute.html">CheckBaseAttribute</a> and implement the
+required method.</p>
 <p>Our example below will only allow a command to be ran during a specified year.</p>
 <pre><code class="lang-cs">public class RequireYearAttribute : CheckBaseAttribute
 {
@@ -115,15 +116,14 @@ Simply create a new class which inherits from <code>CheckBaseAttribute</code> an
         return Task.FromResult(AllowedYear == DateTime.Now.Year);
     }
 }
-</code></pre><p><br>
-You&#39;ll also need to apply the <code>AttributeUsage</code> attribute to your attribute.<br>
-For our example attribute, we&#39;ll set it to only be usable once on methods.</p>
+</code></pre><p>You&#39;ll also need to apply the <code>AttributeUsage</code> attribute to your attribute. For our example attribute, we&#39;ll set it to
+only be usable once on methods.</p>
 <pre><code class="lang-cs">[AttributeUsage(AttributeTargets.Method, AllowMultiple = false)]
 public class RequireYearAttribute : CheckBaseAttribute
 {
     // ...
 }
-</code></pre><p>You can provide feedback to the user using the <code>CommandsNextExtension#CommandErrored</code> event.</p>
+</code></pre><p>You can provide feedback to the user using the <a class="xref" href="../../api/DSharpPlus.CommandsNext.CommandsNextExtension.html#DSharpPlus_CommandsNext_CommandsNextExtension_CommandErrored">CommandErrored</a> event.</p>
 <pre><code class="lang-cs">private async Task MainAsync()
 {
     var discord = new DiscordClient();
@@ -144,14 +144,14 @@ private async Task CmdErroredHandler(CommandsNextExtension _, CommandErrorEventA
         } 
     }
 }
-</code></pre><p><br>
-Once you&#39;ve got all of that completed, you&#39;ll be able to use it on a command!</p>
+</code></pre><p>Once you&#39;ve got all of that completed, you&#39;ll be able to use it on a command!</p>
 <pre><code class="lang-cs">[Command(&quot;generic&quot;), RequireYear(2030)]
 public async Task GenericCommand(CommandContext ctx, string generic)
 {
     await ctx.RespondAsync(&quot;Generic response.&quot;);
 }
 </code></pre><p><img src="/images/commands_command_attributes_01.png" alt="Generic Image"></p>
+<!-- LINKS -->
 </article>
           </div>
           
@@ -160,7 +160,7 @@ public async Task GenericCommand(CommandContext ctx, string generic)
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/DSharpPlus/DSharpPlus/blob/release/4.1/docs/articles/commands/command_attributes.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/DSharpPlus/DSharpPlus/blob/release/4.2/docs/articles/commands/command_attributes.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

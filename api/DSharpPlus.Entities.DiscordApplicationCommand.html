@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class DiscordApplicationCommand
-   </title>
+   | DSharpPlus documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordApplicationCommand
-   ">
-    <meta name="generator" content="docfx 2.58.4.0">
+   | DSharpPlus documentation ">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -85,7 +85,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="DSharpPlus.Entities.SnowflakeObject.html">SnowflakeObject</a></div>
     <div class="level2"><span class="xref">DiscordApplicationCommand</span></div>
   </div>
@@ -102,20 +102,20 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="DSharpPlus_Entities_DiscordApplicationCommand_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class DiscordApplicationCommand : SnowflakeObject, IEquatable&lt;DiscordApplicationCommand&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class DiscordApplicationCommand : SnowflakeObject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="DSharpPlus_Entities_DiscordApplicationCommand__ctor_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.#ctor*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordApplicationCommand__ctor_System_String_System_String_IEnumerable_DSharpPlus_Entities_DiscordApplicationCommandOption__System_Nullable_System_Boolean__" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.#ctor(System.String,System.String,IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOption},System.Nullable{System.Boolean})">DiscordApplicationCommand(String, String, IEnumerable&lt;DiscordApplicationCommandOption&gt;, Nullable&lt;Boolean&gt;)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordApplicationCommand__ctor_System_String_System_String_IEnumerable_DSharpPlus_Entities_DiscordApplicationCommandOption__System_Nullable_System_Boolean__DSharpPlus_ApplicationCommandType_IReadOnlyDictionary_System_String_System_String__IReadOnlyDictionary_System_String_System_String__" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.#ctor(System.String,System.String,IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOption},System.Nullable{System.Boolean},DSharpPlus.ApplicationCommandType,IReadOnlyDictionary{System.String,System.String},IReadOnlyDictionary{System.String,System.String})">DiscordApplicationCommand(String, String, IEnumerable&lt;DiscordApplicationCommandOption&gt;, Nullable&lt;Boolean&gt;, ApplicationCommandType, IReadOnlyDictionary&lt;String, String&gt;, IReadOnlyDictionary&lt;String, String&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a new instance of a <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordApplicationCommand(string name, string description, IEnumerable&lt;DiscordApplicationCommandOption&gt; options = null, bool? defaultPermission = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public DiscordApplicationCommand(string name, string description, IEnumerable&lt;DiscordApplicationCommandOption&gt; options = null, bool? defaultPermission = null, ApplicationCommandType type = ApplicationCommandType.SlashCommand, IReadOnlyDictionary&lt;string, string&gt; name_localizations = null, IReadOnlyDictionary&lt;string, string&gt; description_localizations = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -128,13 +128,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>The name of the command.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">description</span></td>
         <td><p>The description of the command.</p>
 </td>
@@ -146,10 +146,26 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">defaultPermission</span></td>
         <td><p>Whether the command is enabled by default when the application is added to a guild.</p>
 </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.ApplicationCommandType.html">ApplicationCommandType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the application command</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">name_localizations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">description_localizations</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -176,7 +192,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.UInt64</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -202,7 +218,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -228,7 +244,32 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordApplicationCommand_DescriptionLocalizations_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.DescriptionLocalizations*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordApplicationCommand_DescriptionLocalizations" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.DescriptionLocalizations">DescriptionLocalizations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, string&gt; DescriptionLocalizations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -254,7 +295,32 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordApplicationCommand_NameLocalizations_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.NameLocalizations*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordApplicationCommand_NameLocalizations" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.NameLocalizations">NameLocalizations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, string&gt; NameLocalizations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -281,6 +347,58 @@
     <tbody>
       <tr>
         <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommandOption.html">DiscordApplicationCommandOption</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordApplicationCommand_Type_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.Type*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordApplicationCommand_Type" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets the type of this application command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApplicationCommandType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.ApplicationCommandType.html">ApplicationCommandType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordApplicationCommand_Version_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.Version*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordApplicationCommand_Version" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.Version">Version</h4>
+  <div class="markdown level1 summary"><p>Gets the autoincrementing version number for this command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong Version { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -326,7 +444,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>Whether the command is equal to this <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a>.</p>
 </td>
       </tr>
@@ -336,7 +454,7 @@
   
   <a id="DSharpPlus_Entities_DiscordApplicationCommand_Equals_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.Equals*"></a>
   <h4 id="DSharpPlus_Entities_DiscordApplicationCommand_Equals_System_Object_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"><p>Determines if a <span class="xref">System.Object</span> is equal to the current <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a>.</p>
+  <div class="markdown level1 summary"><p>Determines if a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a> is equal to the current <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -354,7 +472,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><span class="parametername">other</span></td>
         <td><p>The object to compare to.</p>
 </td>
@@ -371,14 +489,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>Whether the two <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a> objects are not equal.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a></div>
   
   
   <a id="DSharpPlus_Entities_DiscordApplicationCommand_GetHashCode_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.GetHashCode*"></a>
@@ -400,21 +518,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><p>The hash code for this <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a></div>
   <h3 id="operators">Operators
   </h3>
   
   
   <a id="DSharpPlus_Entities_DiscordApplicationCommand_op_Equality_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.op_Equality*"></a>
   <h4 id="DSharpPlus_Entities_DiscordApplicationCommand_op_Equality_DSharpPlus_Entities_DiscordApplicationCommand_DSharpPlus_Entities_DiscordApplicationCommand_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.op_Equality(DSharpPlus.Entities.DiscordApplicationCommand,DSharpPlus.Entities.DiscordApplicationCommand)">Equality(DiscordApplicationCommand, DiscordApplicationCommand)</h4>
-  <div class="markdown level1 summary"><p>Determines if two <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a> objects are equal. </p>
+  <div class="markdown level1 summary"><p>Determines if two <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a> objects are equal.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -455,7 +573,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>Whether the two <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a> objects are equal.</p>
 </td>
       </tr>
@@ -465,7 +583,7 @@
   
   <a id="DSharpPlus_Entities_DiscordApplicationCommand_op_Inequality_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.op_Inequality*"></a>
   <h4 id="DSharpPlus_Entities_DiscordApplicationCommand_op_Inequality_DSharpPlus_Entities_DiscordApplicationCommand_DSharpPlus_Entities_DiscordApplicationCommand_" data-uid="DSharpPlus.Entities.DiscordApplicationCommand.op_Inequality(DSharpPlus.Entities.DiscordApplicationCommand,DSharpPlus.Entities.DiscordApplicationCommand)">Inequality(DiscordApplicationCommand, DiscordApplicationCommand)</h4>
-  <div class="markdown level1 summary"><p>Determines if two <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a> objects are not equal. </p>
+  <div class="markdown level1 summary"><p>Determines if two <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a> objects are not equal.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -506,7 +624,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>Whether the two <a class="xref" href="DSharpPlus.Entities.DiscordApplicationCommand.html">DiscordApplicationCommand</a> objects are not equal.</p>
 </td>
       </tr>

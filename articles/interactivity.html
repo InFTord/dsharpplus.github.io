@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interactivity Introduction </title>
+    <title>Interactivity Introduction | DSharpPlus documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interactivity Introduction ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="title" content="Interactivity Introduction | DSharpPlus documentation ">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,7 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="interactivity">
+            <article class="content wrap" id="_content" data-uid="articles.interactivity">
 <h1 id="introduction-to-interactivity">Introduction to Interactivity</h1>
 
 <p>Interactivity will enable you to write commands which the user can interact with through reactions and messages.
@@ -81,8 +81,10 @@ The goal of this article is to introduce you to the general flow of this extensi
 <p>Make sure to install the <code>DSharpPlus.Interactivity</code> package from NuGet before continuing.</p>
 <p><img src="/images/interactivity_01.png" alt="Interactivity NuGet"></p>
 <h2 id="enabling-interactivity">Enabling Interactivity</h2>
-<p>Interactivity can be registered using the <code>DiscordClient#UseInteractivity()</code> extension method.<br>
-Optionally, you can also provide an instance of <code>InteractivityConfiguration</code> to modify default behaviors.</p>
+<p>Interactivity can be registered using the
+<a class="xref" href="../api/DSharpPlus.Interactivity.Extensions.ClientExtensions.html#DSharpPlus_Interactivity_Extensions_ClientExtensions_UseInteractivity_DSharpPlus_DiscordClient_DSharpPlus_Interactivity_InteractivityConfiguration_">UseInteractivity(DiscordClient, InteractivityConfiguration)</a>
+extension method. Optionally, you can also provide an instance of <a class="xref" href="../api/DSharpPlus.Interactivity.InteractivityConfiguration.html">InteractivityConfiguration</a>
+to modify default behaviors.</p>
 <pre><code class="lang-cs">var discord = new DiscordClient();
 
 discord.UseInteractivity(new InteractivityConfiguration() 
@@ -93,18 +95,22 @@ discord.UseInteractivity(new InteractivityConfiguration()
 </code></pre><h2 id="using-interactivity">Using Interactivity</h2>
 <p>There are two ways available to use interactivity: </p>
 <ul>
-<li>Extension methods available for <code>DiscordChannel</code> and <code>DiscordMessage</code>.</li>
-<li><a class="xref" href="../api/DSharpPlus.Interactivity.InteractivityExtension.html#methods">Instance methods</a> available from <code>InteractivityExtension</code>.</li>
+<li>Extension methods available for <a class="xref" href="../api/DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a> and <a class="xref" href="../api/DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>.</li>
+<li><a class="xref" href="../api/DSharpPlus.Interactivity.InteractivityExtension.html#methods">Instance methods</a> available from <a class="xref" href="../api/DSharpPlus.Interactivity.InteractivityExtension.html">InteractivityExtension</a>.</li>
 </ul>
 <p>We&#39;ll have a quick look at a few common interactivity methods along with an example of use for each.</p>
-<p><br>
-The first (and arguably most useful) extension method is <code>SendPaginatedMessageAsync</code> for <code>DiscordChannel</code>.</p>
+<p>The first (and arguably most useful) extension method is
+<a class="xref" href="../api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_SendPaginatedMessageAsync_">SendPaginatedMessageAsync</a> for <a class="xref" href="../api/DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a></p>
 <p>This method displays a collection of <em>&#39;pages&#39;</em> which are selected one-at-a-time by the user through reaction buttons.
 Each button click will move the page view in one direction or the other until the timeout is reached.</p>
-<p>You&#39;ll need to create a collection of pages before you can invoke this method. 
-This can be done easily using the <code>GeneratePagesInEmbed</code> and <code>GeneratePagesInContent</code> instance methods from <code>InteractivityExtension</code>.<br>
-Alternatively, for pre-generated content, you can create and add individual instances of <code>Page</code> to a collection.</p>
-<p>This example will use the <code>GeneratePagesInEmbed</code> method to generate the pages.</p>
+<p>You&#39;ll need to create a collection of pages before you can invoke this method. This can be done easily using the
+<a class="xref" href="../api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_GeneratePagesInEmbed_">GeneratePagesInEmbed</a> and
+<a class="xref" href="../api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_GeneratePagesInContent_">GeneratePagesInContent</a> instance methods from
+<a class="xref" href="../api/DSharpPlus.Interactivity.InteractivityExtension.html">InteractivityExtension</a>.
+Alternatively, for pre-generated content, you can create and add individual instances of <a class="xref" href="../api/DSharpPlus.Interactivity.Page.html">Page</a>
+to a collection.</p>
+<p>This example will use the <a class="xref" href="../api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_GeneratePagesInEmbed_">GeneratePagesInEmbed</a> method to generate the
+pages.</p>
 <pre><code class="lang-cs">public async Task PaginationCommand(CommandContext ctx)
 {
     var reallyLongString = &quot;Lorem ipsum dolor sit amet, consectetur adipiscing ...&quot;
@@ -115,9 +121,9 @@ Alternatively, for pre-generated content, you can create and add individual inst
     await ctx.Channel.SendPaginatedMessageAsync(ctx.Member, pages);
 }
 </code></pre><p><img src="/images/interactivity_02.png" alt="Pagination Pages"></p>
-<p><br>
-Next we&#39;ll look at the <code>WaitForReactionAsync</code> extension method for <code>DiscordMessage</code>.<br>
-This method waits for a reaction from a specific user and returns the emoji that was used.</p>
+<p>Next we&#39;ll look at the <a class="xref" href="../api/DSharpPlus.Interactivity.Extensions.MessageExtensions.html#DSharpPlus_Interactivity_Extensions_MessageExtensions_WaitForReactionAsync_">WaitForReactionAsync</a> extension method for
+<a class="xref" href="../api/DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>. This method waits for a reaction from a specific user and returns the emoji that
+was used.</p>
 <p>An overload of this method also enables you to wait for a <em>specific</em> reaction, as shown in the example below.</p>
 <pre><code class="lang-cs">public async Task ReactionCommand(CommandContext ctx, DiscordMember member)
 {
@@ -129,9 +135,9 @@ This method waits for a reaction from a specific user and returns the emoji that
     if (!result.TimedOut) await ctx.RespondAsync(&quot;Thank you!&quot;);
 }
 </code></pre><p><img src="/images/interactivity_03.png" alt="Thank You!"></p>
-<p><br>
-Another reaction extension method for <code>DiscordMessage</code> is <code>CollectReactionsAsync</code>.<br>
-As the name implies, this method collects all reactions on a message until the timeout is reached.</p>
+<p>Another reaction extension method for <a class="xref" href="../api/DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a> is
+<a class="xref" href="../api/DSharpPlus.Interactivity.InteractivityExtension.html#DSharpPlus_Interactivity_InteractivityExtension_CollectReactionsAsync_">CollectReactionsAsync</a> As the name implies, this method collects all
+reactions on a message until the timeout is reached.</p>
 <pre><code class="lang-cs">public async Task CollectionCommand(CommandContext ctx)
 {
     var message = await ctx.RespondAsync(&quot;React here!&quot;);
@@ -146,10 +152,10 @@ As the name implies, this method collects all reactions on a message until the t
     await ctx.RespondAsync(strBuilder.ToString());
 }
 </code></pre><p><img src="/images/interactivity_04.png" alt="Reaction Count"></p>
-<p><br>
-The final one we&#39;ll take a look at is the <code>GetNextMessageAsync</code> extension method for <code>DiscordMessage</code>.<br></p>
-<p>This method will return the next message sent from the author of the original message.<br>
-Our example here will use its alternate overload which accepts an additional predicate.</p>
+<p>The final one we&#39;ll take a look at is the <a class="xref" href="../api/DSharpPlus.Interactivity.Extensions.ChannelExtensions.html#DSharpPlus_Interactivity_Extensions_ChannelExtensions_GetNextMessageAsync_">GetNextMessageAsync</a>
+extension method for <a class="xref" href="../api/DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>.</p>
+<p>This method will return the next message sent from the author of the original message. Our example here will use its
+alternate overload which accepts an additional predicate.</p>
 <pre><code class="lang-cs">public async Task ActionCommand(CommandContext ctx)
 {
     await ctx.RespondAsync(&quot;Respond with *confirm* to continue.&quot;);
@@ -161,6 +167,7 @@ Our example here will use its alternate overload which accepts an additional pre
     if (!result.TimedOut) await ctx.RespondAsync(&quot;Action confirmed.&quot;);
 }
 </code></pre><p><img src="/images/interactivity_05.png" alt="Confirmed"></p>
+<!-- LINKS -->
 </article>
           </div>
           
@@ -169,7 +176,7 @@ Our example here will use its alternate overload which accepts an additional pre
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/DSharpPlus/DSharpPlus/blob/release/4.1/docs/articles/interactivity.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/DSharpPlus/DSharpPlus/blob/release/4.2/docs/articles/interactivity.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

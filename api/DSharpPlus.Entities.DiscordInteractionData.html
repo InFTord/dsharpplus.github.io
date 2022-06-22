@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class DiscordInteractionData
-   </title>
+   | DSharpPlus documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordInteractionData
-   ">
-    <meta name="generator" content="docfx 2.58.4.0">
+   | DSharpPlus documentation ">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -85,7 +85,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="DSharpPlus.Entities.SnowflakeObject.html">SnowflakeObject</a></div>
     <div class="level2"><span class="xref">DiscordInteractionData</span></div>
   </div>
@@ -106,6 +106,32 @@
   </div>
   <h3 id="properties">Properties
   </h3>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordInteractionData_Components_" data-uid="DSharpPlus.Entities.DiscordInteractionData.Components*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteractionData_Components" data-uid="DSharpPlus.Entities.DiscordInteractionData.Components">Components</h4>
+  <div class="markdown level1 summary"><p>Components on this interaction. Only applies to modal interactions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;DiscordActionRowComponent&gt; Components { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordActionRowComponent.html">DiscordActionRowComponent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordInteractionData_ComponentType_" data-uid="DSharpPlus.Entities.DiscordInteractionData.ComponentType*"></a>
@@ -136,7 +162,7 @@
   
   <a id="DSharpPlus_Entities_DiscordInteractionData_CustomId_" data-uid="DSharpPlus.Entities.DiscordInteractionData.CustomId*"></a>
   <h4 id="DSharpPlus_Entities_DiscordInteractionData_CustomId" data-uid="DSharpPlus.Entities.DiscordInteractionData.CustomId">CustomId</h4>
-  <div class="markdown level1 summary"><p>The Id of the component that invoked this interaction, if applicable.</p>
+  <div class="markdown level1 summary"><p>The Id of the component that invoked this interaction, or the Id of the modal the interaction was spawned from.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -153,7 +179,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -179,7 +205,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -238,6 +264,57 @@
   </table>
   
   
+  <a id="DSharpPlus_Entities_DiscordInteractionData_Title_" data-uid="DSharpPlus.Entities.DiscordInteractionData.Title*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteractionData_Title" data-uid="DSharpPlus.Entities.DiscordInteractionData.Title">Title</h4>
+  <div class="markdown level1 summary"><p>The title of the modal, if applicable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Title { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordInteractionData_Type_" data-uid="DSharpPlus.Entities.DiscordInteractionData.Type*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteractionData_Type" data-uid="DSharpPlus.Entities.DiscordInteractionData.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApplicationCommandType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.ApplicationCommandType.html">ApplicationCommandType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordInteractionData_Values_" data-uid="DSharpPlus.Entities.DiscordInteractionData.Values*"></a>
   <h4 id="DSharpPlus_Entities_DiscordInteractionData_Values" data-uid="DSharpPlus.Entities.DiscordInteractionData.Values">Values</h4>
   <div class="markdown level1 summary"></div>
@@ -256,7 +333,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]</td>
         <td></td>
       </tr>
     </tbody>

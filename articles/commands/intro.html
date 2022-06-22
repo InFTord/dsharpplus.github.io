@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CommandsNext Introduction </title>
+    <title>CommandsNext Introduction | DSharpPlus documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="CommandsNext Introduction ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="title" content="CommandsNext Introduction | DSharpPlus documentation ">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -73,23 +73,23 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="commands_intro">
+            <article class="content wrap" id="_content" data-uid="articles.commands.intro">
 
 <div class="NOTE"><h5>Note</h5><p>This article assumes you&#39;ve recently read the article on <em><a class="xref" href="../basics/first_bot.html">writing your first bot</a></em>.</p>
 </div>
 <h1 id="introduction-to-commandsnext">Introduction to CommandsNext</h1>
-<p>This article will introduce you to some basic concepts of our native command framework: <em>CommandsNext</em>.<br>
-Be sure to install the <code>DSharpPlus.CommandsNext</code> package from NuGet before continuing.</p>
+<p>This article will introduce you to some basic concepts of our native command framework: <em>CommandsNext</em>. Be sure to
+install the <code>DSharpPlus.CommandsNext</code> package from NuGet before continuing.</p>
 <p><img src="/images/commands_intro_01.png" alt="CommandsNext NuGet Package"></p>
-<p><br></p>
 <h2 id="writing-a-basic-command">Writing a Basic Command</h2>
 <h3 id="create-a-command-module">Create a Command Module</h3>
-<p>A command module is simply a class which acts as a container for your command methods. Instead of registering individual commands, 
-you&#39;d register a single command module which contains multiple commands. There&#39;s no limit to the amount of modules you can have,
-and no limit to the amount of commands each module can contain. For example: you could have a module for moderation commands and 
-a separate module for image commands. This will help you keep your commands organized and reduce the clutter in your project.</p>
-<p>Our first demonstration will be simple, consisting of one command module with a simple command.<br>
-We&#39;ll start by creating a new folder named <code>Commands</code> which contains a new class named <code>MyFirstModule</code>.</p>
+<p>A command module is simply a class which acts as a container for your command methods. Instead of registering individual
+commands, you&#39;d register a single command module which contains multiple commands. There&#39;s no limit to the amount of
+modules you can have, and no limit to the amount of commands each module can contain. For example: you could have a
+module for moderation commands and a separate module for image commands. This will help you keep your commands organized
+and reduce the clutter in your project.</p>
+<p>Our first demonstration will be simple, consisting of one command module with a simple command. We&#39;ll start by creating
+a new folder named <code>Commands</code> which contains a new class named <code>MyFirstModule</code>.</p>
 <p><img src="/images/commands_intro_02.png" alt="Solution Explorer"></p>
 <p>Give this new class <code>public</code> access and have it inherit from <code>BaseCommandModule</code>.</p>
 <pre><code class="lang-cs">public class MyFirstModule : BaseCommandModule
@@ -97,24 +97,23 @@ We&#39;ll start by creating a new folder named <code>Commands</code> which conta
 
 }
 </code></pre><h3 id="create-a-command-method">Create a Command Method</h3>
-<p>Within our new module, create a method named <code>GreetCommand</code> marked as <code>async</code> with a <code>Task</code> return type.
-The first parameter of your method <em>must</em> be of type <code>CommandContext</code>, as required by CommandsNext.</p>
+<p>Within our new module, create a method named <code>GreetCommand</code> marked as <code>async</code> with a <code>Task</code> return type. The first
+parameter of your method <em>must</em> be of type <a class="xref" href="../../api/DSharpPlus.CommandsNext.CommandContext.html">CommandContext</a>, as required by CommandsNext.</p>
 <pre><code class="lang-cs">public async Task GreetCommand(CommandContext ctx)
 {
 
 }
-</code></pre><p>In the body of our new method, we&#39;ll use <code>CommandContext#RespondAsync</code> to send a simple message.</p>
+</code></pre><p>In the body of our new method, we&#39;ll use <a class="xref" href="../../api/DSharpPlus.CommandsNext.CommandContext.html#DSharpPlus_CommandsNext_CommandContext_RespondAsync_">RespondAsync</a> to send a simple message.</p>
 <pre><code class="lang-cs">await ctx.RespondAsync(&quot;Greetings! Thank you for executing me!&quot;);
-</code></pre><p>Finally, mark your command method with the <code>Command</code> attribute so CommandsNext will know to treat our method as a command method. 
-This attribute takes a single parameter: the name of the command. </p>
+</code></pre><p>Finally, mark your command method with the <a class="xref" href="../../api/DSharpPlus.CommandsNext.Attributes.CommandAttribute.html">CommandAttribute</a> so CommandsNext will
+know to treat our method as a command method. This attribute takes a single parameter: the name of the command. </p>
 <p>We&#39;ll name our command <em>greet</em> to match the name of the method.</p>
 <pre><code class="lang-cs">[Command(&quot;greet&quot;)]
 public async Task GreetCommand(CommandContext ctx)
 {
     await ctx.RespondAsync(&quot;Greetings! Thank you for executing me!&quot;);
 }
-</code></pre><p><br>
-Your command module should now resemble this:</p>
+</code></pre><p>Your command module should now resemble this:</p>
 <pre><code class="lang-cs">using System.Threading.Tasks;
 using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
@@ -128,8 +127,8 @@ public class MyFirstModule : BaseCommandModule
     }
 }
 </code></pre><h3 id="cleanup-and-configuration">Cleanup and Configuration</h3>
-<p>Before we can run our new command, we&#39;ll need modify our main method.<br>
-Start by removing the event handler we created <a class="xref" href="../basics/first_bot.html#spicing-up-your-bot">previously</a>.</p>
+<p>Before we can run our new command, we&#39;ll need modify our main method. Start by removing the event handler we created
+<a class="xref" href="../basics/first_bot.html#spicing-up-your-bot">previously</a>.</p>
 <pre><code class="lang-cs">var discord = new DiscordClient();
 
 discord.MessageCreated += async (s, e) =&gt;               // REMOVE
@@ -139,20 +138,21 @@ discord.MessageCreated += async (s, e) =&gt;               // REMOVE
 };                                                      // LINES
 
 await discord.ConnectAsync();            
-</code></pre><p><br>
-Next, call the <code>UseCommandsNext</code> extension method on your <code>DiscordClient</code> instance and pass it a new <code>CommandsNextConfiguration</code> instance.
-Assign the resulting <code>CommandsNextExtension</code> instance to a new variable named <em>commands</em>. This important step will enable CommandsNext for your Discord client.</p>
+</code></pre><p>Next, call the <a class="xref" href="../../api/DSharpPlus.CommandsNext.ExtensionMethods.html#DSharpPlus_CommandsNext_ExtensionMethods_UseCommandsNext_">UseCommandsNext</a> extension method on your
+<a class="xref" href="../../api/DSharpPlus.DiscordClient.html">DiscordClient</a> instance and pass it a new <a class="xref" href="../../api/DSharpPlus.CommandsNext.CommandsNextConfiguration.html">CommandsNextConfiguration</a> instance. Assign
+the resulting <a class="xref" href="../../api/DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a> instance to a new variable named <em>commands</em>. This important
+step will enable CommandsNext for your Discord client.</p>
 <pre><code class="lang-cs">var discord = new DiscordClient();
 var commands = discord.UseCommandsNext(new CommandsNextConfiguration());
-</code></pre><p>Create an object initializer for <code>CommandsNextConfiguration</code> and assign the <code>StringPrefixes</code> property a new <code>string</code> array containing your desired prefixes.
-Our example below will only define a single prefix: <code>!</code>.</p>
+</code></pre><p>Create an object initializer for <a class="xref" href="../../api/DSharpPlus.CommandsNext.CommandsNextConfiguration.html">CommandsNextConfiguration</a> and assign the
+<a class="xref" href="../../api/DSharpPlus.CommandsNext.CommandsNextConfiguration.html#DSharpPlus_CommandsNext_CommandsNextConfiguration_StringPrefixes">StringPrefixes</a> property a new <code>string</code> array containing your desired
+prefixes. Our example below will only define a single prefix: <code>!</code>.</p>
 <pre><code class="lang-cs">new CommandsNextConfiguration()
 { 
     StringPrefixes = new[] { &quot;!&quot; }
 }
-</code></pre><p><br>
-Now we&#39;ll register our command module.
-Call the <code>RegisterCommands</code> method on our <code>CommandsNextExtension</code> instance and provide it with your command module.</p>
+</code></pre><p>Now we&#39;ll register our command module. Call the <a class="xref" href="../../api/DSharpPlus.CommandsNext.CommandsNextExtension.html#DSharpPlus_CommandsNext_CommandsNextExtension_RegisterCommands_">RegisterCommands</a> method
+on our <a class="xref" href="../../api/DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a> instance and provide it with your command module.</p>
 <pre><code class="lang-cs">var discord = new DiscordClient();
 var commands = discord.UseCommandsNext();
 
@@ -161,8 +161,7 @@ commands.RegisterCommands&lt;MyFirstModule&gt;();
 await discord.ConnectAsync();            
 </code></pre><p>Alternatively, you can pass in your assembly to register commands from all modules in your program.</p>
 <pre><code class="lang-cs">commands.RegisterCommands(Assembly.GetExecutingAssembly());
-</code></pre><p><br>
-Your main method should look similar to the following:</p>
+</code></pre><p>Your main method should look similar to the following:</p>
 <pre><code class="lang-cs">internal static async Task MainAsync()
 {
     var discord = new DiscordClient(new DiscordConfiguration());
@@ -177,51 +176,50 @@ Your main method should look similar to the following:</p>
     await Task.Delay(-1);
 }
 </code></pre><h3 id="running-your-command">Running Your Command</h3>
-<p>It&#39;s now the moment of truth; all your blood, sweat, and tears have lead to this moment.
-Hit <code>F5</code> on your keyboard to compile and run your bot, then execute your command in any channel that your bot account has access to.</p>
+<p>It&#39;s now the moment of truth; all your blood, sweat, and tears have lead to this moment. Hit <code>F5</code> on your keyboard to
+compile and run your bot, then execute your command in any channel that your bot account has access to.</p>
 <p><img src="/images/commands_intro_03.png" alt="Congratulations, You&#39;ve Won!"></p>
 <p><a href="https://www.youtube.com/watch?v=GsQXadrmhws">That was easy</a>.</p>
-<p><br></p>
 <h2 id="taking-user-input">Taking User Input</h2>
 <h3 id="command-arguments">Command Arguments</h3>
 <p>Now that we have a basic command down, let&#39;s spice it up a bit by defining <em>arguments</em> to accept user input.</p>
-<p>Defining an argument is simple; just add additional parameters to your signature of your command method. 
-CommandsNext will automatically parse user input and populate the parameters of your command method with those arguments. 
-To demonstrate, we&#39;ll modify our <em>greet</em> command to greet a user with a given name.</p>
+<p>Defining an argument is simple; just add additional parameters to your signature of your command method. CommandsNext
+will automatically parse user input and populate the parameters of your command method with those arguments. To
+demonstrate, we&#39;ll modify our <em>greet</em> command to greet a user with a given name.</p>
 <p>Head back to <code>MyFirstModule</code> and add a parameter of type <code>string</code> to the <code>GreetCommand</code> method.</p>
 <pre><code class="lang-cs">[Command(&quot;greet&quot;)]
 public async Task GreetCommand(CommandContext ctx, string name)
 </code></pre><p>CommandsNext will now interpret this as a command named <em>greet</em> that takes one argument.</p>
-<p>Next, replace our original response message with an <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated">interpolated string</a>
-which uses our new parameter.</p>
+<p>Next, replace our original response message with an <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated">interpolated string</a> which uses our new parameter.</p>
 <pre><code class="lang-cs">public async Task GreetCommand(CommandContext ctx, string name)
 {
     await ctx.RespondAsync($&quot;Greetings, {name}! You&#39;re pretty neat!&quot;);
 }
 </code></pre><p>That&#39;s all there is to it. Smack <code>F5</code> and test it out in a channel your bot account has access to.</p>
 <p><img src="/images/commands_intro_04.png" alt="Greet Part 2: Electric Boogaloo"></p>
-<p><br>
-Now, you may have noticed that providing more than one word simply does not work.<br>
-For example, <code>!greet Luke Smith</code> will result in no response from your bot.</p>
+<p>Now, you may have noticed that providing more than one word simply does not work. For example, <code>!greet Luke Smith</code> will
+result in no response from your bot.</p>
 <p>This fails because a valid <a href="#command-overloads">overload</a> could not be found for your command.</p>
-<p>CommandsNext will split arguments by whitespace. This means <code>Luke Smith</code> is counted as two separate arguments; <code>Luke</code> and <code>Smith</code>.
-In addition to this, CommandsNext will attempt to find and execute an overload of your command that has the <em>same number</em> of provided arguments.
-Together, this means that any additional arguments will prevent CommandsNext from finding a valid overload to execute.</p>
-<p>The simplest way to get around this would be to wrap your input with double quotes.<br>
-CommandsNext will parse this as one argument, allowing your command to be executed.</p>
+<p>CommandsNext will split arguments by whitespace. This means <code>Luke Smith</code> is counted as two separate arguments; <code>Luke</code>
+and <code>Smith</code>. In addition to this, CommandsNext will attempt to find and execute an overload of your command that has the
+<em>same number</em> of provided arguments. Together, this means that any additional arguments will prevent CommandsNext from
+finding a valid overload to execute.</p>
+<p>The simplest way to get around this would be to wrap your input with double quotes. CommandsNext will parse this as one
+argument, allowing your command to be executed.</p>
 <pre><code>!greet &quot;Luke Smith&quot;
-</code></pre><p>If you would prefer not to use quotes, you can use the <code>RemainingText</code> attribute on your parameter.<br>
-This attribute will instruct CommandsNext to parse all remaining arguments into that parameter. </p>
+</code></pre><p>If you would prefer not to use quotes, you can use the <a class="xref" href="../../api/DSharpPlus.CommandsNext.Attributes.RemainingTextAttribute.html">RemainingTextAttribute</a>
+attribute on your parameter. This attribute will instruct CommandsNext to parse all remaining arguments into that
+parameter.</p>
 <pre><code class="lang-cs">public async Task GreetCommand(CommandContext ctx, [RemainingText] string name)
 </code></pre><p>Alternatively, you can use the <code>params</code> keyword to have all remaining arguments parsed into an array.</p>
 <pre><code class="lang-cs">public async Task GreetCommand(CommandContext ctx, params string[] names)
-</code></pre><p>A more obvious solution is to add additional parameters to the method signature of your command method.<br></p>
+</code></pre><p>A more obvious solution is to add additional parameters to the method signature of your command method.</p>
 <pre><code class="lang-cs">public async Task GreetCommand(CommandContext ctx, string firstName, string lastName)
-</code></pre><p><br>
-Each of these has their own caveats; it&#39;ll be up to you to choose the best solution for your commands.</p>
+</code></pre><p>Each of these has their own caveats; it&#39;ll be up to you to choose the best solution for your commands.</p>
 <h3 id="argument-converters">Argument Converters</h3>
 <p>CommandsNext can convert arguments, which are natively <code>string</code>, to the type specified by a command method parameter.
-This functionality is powered by <em>argument converters</em>, and it&#39;ll help to eliminate the boilerplate code needed to parse and convert <code>string</code> arguments. </p>
+This functionality is powered by <em>argument converters</em>, and it&#39;ll help to eliminate the boilerplate code needed to parse
+and convert <code>string</code> arguments. </p>
 <p>CommandsNext has built-in argument converters for the following types:</p>
 <table>
 <thead>
@@ -258,10 +256,9 @@ This functionality is powered by <em>argument converters</em>, and it&#39;ll hel
 </tbody>
 </table>
 <p>You&#39;re also able to create and provide your own <a class="xref" href="argument_converters.html">custom argument converters</a>, if desired.</p>
-<p><br>
-Let&#39;s do a quick demonstration of the built-in converters. </p>
-<p>Create a new command method above our <code>GreetCommand</code> method named <code>RandomCommand</code> and have it take two integer arguments.
-As the method name suggests, this command will be named <em>random</em>.</p>
+<p>Let&#39;s do a quick demonstration of the built-in converters. </p>
+<p>Create a new command method above our <code>GreetCommand</code> method named <code>RandomCommand</code> and have it take two integer
+arguments. As the method name suggests, this command will be named <em>random</em>.</p>
 <pre><code class="lang-cs">[Command(&quot;random&quot;)]
 public async Task RandomCommand(CommandContext ctx, int min, int max)
 {
@@ -275,11 +272,11 @@ public async Task RandomCommand(CommandContext ctx, int min, int max)
 <p><img src="/images/commands_intro_05.png" alt="Discord Channel"></p>
 <p>CommandsNext converted the two arguments from <code>string</code> into <code>int</code> and passed them to the parameters of our command,
 removing the need to manually parse and convert the arguments yourself.</p>
-<p><br>
-We&#39;ll do one more to drive the point home. Head back to our old <code>GreetCommand</code> method, remove our 
-<code>name</code> parameter, and replace it with a new parameter of type <code>DiscordMember</code> named <code>member</code>.</p>
+<p>We&#39;ll do one more to drive the point home. Head back to our old <code>GreetCommand</code> method, remove our <code>name</code> parameter, and
+replace it with a new parameter of type <a class="xref" href="../../api/DSharpPlus.Entities.DiscordMember.html">DiscordMember</a> named <code>member</code>.</p>
 <pre><code class="lang-cs">public async Task GreetCommand(CommandContext ctx, DiscordMember member)
-</code></pre><p>Then modify the response to mention the provided member with the <code>Mention</code> property on <code>DiscordMember</code>.</p>
+</code></pre><p>Then modify the response to mention the provided member with the <a class="xref" href="../../api/DSharpPlus.Entities.DiscordUser.html#DSharpPlus_Entities_DiscordUser_Mention">Mention</a> property on
+<a class="xref" href="../../api/DSharpPlus.Entities.DiscordMember.html">DiscordMember</a>.</p>
 <pre><code class="lang-cs">public async Task GreetCommand(CommandContext ctx, DiscordMember member)
 {
     await ctx.RespondAsync($&quot;Greetings, {member.Mention}! Enjoy the mention!&quot;);
@@ -288,8 +285,8 @@ We&#39;ll do one more to drive the point home. Head back to our old <code>GreetC
 <p><img src="/images/commands_intro_06.png" alt="According to all known laws of aviation,"></p>
 <p><img src="/images/commands_intro_07.png" alt="there is no way a bee should be able to fly."></p>
 <p><img src="/images/commands_intro_08.png" alt="Its wings are too small to get its fat little body off the ground."></p>
-<p>The argument converter for <code>DiscordMember</code> is able to parse mentions, usernames, nicknames, and user IDs then look for a matching member within the guild the command was executed from.
-Ain&#39;t that neat? </p>
+<p>The argument converter for <a class="xref" href="../../api/DSharpPlus.Entities.DiscordMember.html">DiscordMember</a> is able to parse mentions, usernames, nicknames, and user
+IDs then look for a matching member within the guild the command was executed from. Ain&#39;t that neat? </p>
 <h2 id="command-overloads">Command Overloads</h2>
 <p>Command method overloading allows you to create multiple argument configurations for a single command.</p>
 <pre><code class="lang-cs">[Command(&quot;foo&quot;)]
@@ -298,8 +295,7 @@ public Task FooCommand(CommandContext ctx, string bar, int baz) { }
 [Command(&quot;foo&quot;)]
 public Task FooCommand(CommandContext ctx, DiscordUser bar) { }
 </code></pre><p>Executing <code>!foo green 5</code> will run the first method, and <code>!foo @Emzi0767</code> will run the second method.</p>
-<p><br>
-Additionally, all check attributes are shared between overloads.<br></p>
+<p>Additionally, all check attributes are shared between overloads.</p>
 <pre><code class="lang-cs">[Command(&quot;foo&quot;), Aliases(&quot;bar&quot;, &quot;baz&quot;)]
 [RequireGuild, RequireBotPermissions(Permissions.AttachFiles)]
 public Task FooCommand(CommandContext ctx, int bar, int baz, string qux = &quot;agony&quot;) { }
@@ -314,6 +310,7 @@ public Task FooCommand(CommandContext ctx, DiscordChannel bar, TimeSpan baz) { }
 <li><a class="xref" href="help_formatter.html">Help Formatter</a></li>
 <li><a class="xref" href="dependency_injection.html">Dependency Injection</a></li>
 </ul>
+<!-- LINKS -->
 </article>
           </div>
           
@@ -322,7 +319,7 @@ public Task FooCommand(CommandContext ctx, DiscordChannel bar, TimeSpan baz) { }
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/DSharpPlus/DSharpPlus/blob/release/4.1/docs/articles/commands/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/DSharpPlus/DSharpPlus/blob/release/4.2/docs/articles/commands/intro.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

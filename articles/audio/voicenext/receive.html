@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Receiving </title>
+    <title>Receiving | DSharpPlus documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Receiving ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="title" content="Receiving | DSharpPlus documentation ">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -73,12 +73,13 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="voicenext_receive">
+            <article class="content wrap" id="_content" data-uid="articles.audio.voicenext.receive">
 <h2 id="receiving-with-voicenext">Receiving with VoiceNext</h2>
 
 <h3 id="enable-receiver">Enable Receiver</h3>
-<p>Receiving incoming audio is disabled by default to save on bandwidth, as most users will never make use of incoming data.
-This can be changed by providing a configuration object to <code>DiscordClient#UseVoiceNext()</code>.</p>
+<p>Receiving incoming audio is disabled by default to save on bandwidth, as most users will never make use of incoming
+data. This can be changed by providing a configuration object to 
+<a class="xref" href="../../../api/DSharpPlus.VoiceNext.DiscordClientExtensions.html#DSharpPlus_VoiceNext_DiscordClientExtensions_UseVoiceNext_">UseVoiceNext</a>.</p>
 <pre><code class="lang-cs">var discord = new DiscordClient();
 
 discord.UseVoiceNext(new VoiceNextConfiguration()
@@ -90,13 +91,17 @@ discord.UseVoiceNext(new VoiceNextConfiguration()
 <pre><code class="lang-cs">DiscordChannel channel;
 VoiceNextConnection connection = await channel.ConnectAsync();
 </code></pre><h3 id="write-event-handler">Write Event Handler</h3>
-<p>We&#39;ll be able to receive incoming audio from the <code>VoiceReceived</code> event fired by <code>VoiceNextConnection</code>.</p>
+<p>We&#39;ll be able to receive incoming audio from the <a class="xref" href="../../../api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_VoiceReceived">VoiceReceived</a> event fired by
+<a class="xref" href="../../../api/DSharpPlus.VoiceNext.VoiceNextConnection.html">VoiceNextConnection</a>.</p>
 <pre><code class="lang-cs">connection.VoiceReceived += ReceiveHandler;
 </code></pre><p>Writing the logic for this event handler will depend on your overall goal. </p>
-<p>The event arguments will contain a PCM audio packet for you to make use of.
-You can convert each packet to another format, concatenate them all together, feed them into an external program, or process the packets any way that&#39;ll suit your needs.</p>
-<p>When a user is speaking, <code>VoiceReceived</code> should fire once every twenty milliseconds and its packet will contain around twenty milliseconds worth of audio; this can vary due to differences in client settings.
-To help keep track of the torrent of packets for each user, you can use user IDs in combination the synchronization value (SSRC) sent by Discord to determine the source of each packet.</p>
+<p>The event arguments will contain a PCM audio packet for you to make use of. You can convert each packet to another
+format, concatenate them all together, feed them into an external program, or process the packets any way that&#39;ll suit
+your needs.</p>
+<p>When a user is speaking, <a class="xref" href="../../../api/DSharpPlus.VoiceNext.VoiceNextConnection.html#DSharpPlus_VoiceNext_VoiceNextConnection_VoiceReceived">VoiceReceived</a> should fire once every twenty
+milliseconds and its packet will contain around twenty milliseconds worth of audio; this can vary due to differences in
+client settings. To help keep track of the torrent of packets for each user, you can use user IDs in combination the
+synchronization value (SSRC) sent by Discord to determine the source of each packet.</p>
 <p>This short-and-simple example will use <a href="https://ffmpeg.org/about.html">ffmpeg</a> to convert each packet to a <em>wav</em> file.</p>
 <pre><code class="lang-cs">private async Task ReceiveHandler(VoiceNextConnection _, VoiceReceiveEventArgs args)
 {
@@ -110,8 +115,7 @@ To help keep track of the torrent of packets for each user, you can use user IDs
 
     await ffmpeg.StandardInput.BaseStream.WriteAsync(args.PcmData);
 }
-</code></pre><p><br>
-That&#39;s really all there is to it. Connect to a voice channel, hook an event, process the data as you see fit.</p>
+</code></pre><p>That&#39;s really all there is to it. Connect to a voice channel, hook an event, process the data as you see fit.</p>
 <p><img src="/images/voicenext_receive_01.png" alt="Wav Files"></p>
 <h2 id="example-commands">Example Commands</h2>
 <pre><code class="lang-cs">[Command(&quot;start&quot;)]
@@ -150,7 +154,8 @@ private async Task VoiceReceiveHandler(VoiceNextConnection connection, VoiceRece
     await ffmpeg.StandardInput.BaseStream.WriteAsync(args.PcmData);
     ffmpeg.Dispose();
 }
-</code></pre></article>
+</code></pre><!-- LINKS -->
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -158,7 +163,7 @@ private async Task VoiceReceiveHandler(VoiceNextConnection connection, VoiceRece
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/DSharpPlus/DSharpPlus/blob/release/4.1/docs/articles/audio/voicenext/receive.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/DSharpPlus/DSharpPlus/blob/release/4.2/docs/articles/audio/voicenext/receive.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Sharding </title>
+    <title>Sharding | DSharpPlus documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Sharding ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="title" content="Sharding | DSharpPlus documentation ">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -73,17 +73,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="beyond_basics_sharding">
+            <article class="content wrap" id="_content" data-uid="articles.beyond_basics.sharding">
 <h1 id="sharding">Sharding</h1>
 
-<p>As your bot joins more guilds, your poor <code>DiscordClient</code> will be hit with an increasing number of events. 
-Thankfully, Discord allows you to establish multiple connections to split the event workload; this is called <em>sharding</em> and each individual connection is referred to as a <em>shard</em>.
-Each shard handles a separate set of servers and will <em>only</em> receive events from those servers. However, all direct messages will be handled by your first shard.</p>
+<p>As your bot joins more guilds, your poor <a class="xref" href="../../api/DSharpPlus.DiscordClient.html">DiscordClient</a> will be hit with an increasing number of events.
+Thankfully, Discord allows you to establish multiple connections to split the event workload; this is called <em>sharding</em>
+and each individual connection is referred to as a <em>shard</em>. Each shard handles a separate set of servers and will <em>only</em>
+receive events from those servers. However, all direct messages will be handled by your first shard.</p>
 <p>Sharding is recommended once you reach 1,000 servers, and is a <em>requirement</em> when you hit 2,500 servers.</p>
 <h2 id="automated-sharding">Automated Sharding</h2>
-<p>DSharpPlus provides a built-in sharding solution: <code>DiscordShardedClient</code>. 
-This client will <em>automatically</em> spawn shards for you and manage their events.
-Each DSharpPlus extension (e.g. CommandsNext, Interactivity) also supplies an extension method to register themselves automatically on each shard.</p>
+<p>DSharpPlus provides a built-in sharding solution: <a class="xref" href="../../api/DSharpPlus.DiscordShardedClient.html">DiscordShardedClient</a>. This client will <em>automatically</em>
+spawn shards for you and manage their events. Each DSharpPlus extension (e.g. CommandsNext, Interactivity) also supplies
+an extension method to register themselves automatically on each shard.</p>
 <pre><code class="lang-cs">var discord = new DiscordShardedClient(new DiscordConfiguration
 {
     Token = &quot;My First Token&quot;,
@@ -95,10 +96,11 @@ await discord.UseCommandsNextAsync(new CommandsNextConfiguration()
     StringPrefixes = new[] { &quot;!&quot; }
 });
 </code></pre><h2 id="manual-sharding">Manual Sharding</h2>
-<p>For most looking to shard, the built-in <code>DiscordShardedClient</code> will work well enough. 
-However, those looking for more control over the sharding process may want to handle it manually.</p>
-<p>This would involve creating new <code>DiscordClient</code> instances, assigning each one an appropriate shard ID number, and handling the events from each instance.
-Considering the potential complexity imposed by this process, you should only do this if you have a valid reason to do so and <em>know what you are doing</em>.</p>
+<p>For most looking to shard, the built-in <a class="xref" href="../../api/DSharpPlus.DiscordShardedClient.html">DiscordShardedClient</a> will work well enough. However, those looking
+for more control over the sharding process may want to handle it manually.</p>
+<p>This would involve creating new <a class="xref" href="../../api/DSharpPlus.DiscordClient.html">DiscordClient</a> instances, assigning each one an appropriate shard ID number,
+and handling the events from each instance. Considering the potential complexity imposed by this process, you should
+only do this if you have a valid reason to do so and <em>know what you are doing</em>.</p>
 </article>
           </div>
           
@@ -107,7 +109,7 @@ Considering the potential complexity imposed by this process, you should only do
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/DSharpPlus/DSharpPlus/blob/release/4.1/docs/articles/beyond_basics/sharding.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/DSharpPlus/DSharpPlus/blob/release/4.2/docs/articles/beyond_basics/sharding.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
