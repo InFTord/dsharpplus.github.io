@@ -403,6 +403,30 @@ references:
   commentId: F:DSharpPlus.ApplicationFlags.VerificationPendingGuildLimit
   fullName: DSharpPlus.ApplicationFlags.VerificationPendingGuildLimit
   nameWithType: ApplicationFlags.VerificationPendingGuildLimit
+- uid: DSharpPlus.ApplicationUpdateType
+  name: ApplicationUpdateType
+  href: api/DSharpPlus.ApplicationUpdateType.html
+  commentId: T:DSharpPlus.ApplicationUpdateType
+  fullName: DSharpPlus.ApplicationUpdateType
+  nameWithType: ApplicationUpdateType
+- uid: DSharpPlus.ApplicationUpdateType.Channel
+  name: Channel
+  href: api/DSharpPlus.ApplicationUpdateType.html#DSharpPlus_ApplicationUpdateType_Channel
+  commentId: F:DSharpPlus.ApplicationUpdateType.Channel
+  fullName: DSharpPlus.ApplicationUpdateType.Channel
+  nameWithType: ApplicationUpdateType.Channel
+- uid: DSharpPlus.ApplicationUpdateType.Role
+  name: Role
+  href: api/DSharpPlus.ApplicationUpdateType.html#DSharpPlus_ApplicationUpdateType_Role
+  commentId: F:DSharpPlus.ApplicationUpdateType.Role
+  fullName: DSharpPlus.ApplicationUpdateType.Role
+  nameWithType: ApplicationUpdateType.Role
+- uid: DSharpPlus.ApplicationUpdateType.User
+  name: User
+  href: api/DSharpPlus.ApplicationUpdateType.html#DSharpPlus_ApplicationUpdateType_User
+  commentId: F:DSharpPlus.ApplicationUpdateType.User
+  fullName: DSharpPlus.ApplicationUpdateType.User
+  nameWithType: ApplicationUpdateType.User
 - uid: DSharpPlus.AutoArchiveDuration
   name: AutoArchiveDuration
   href: api/DSharpPlus.AutoArchiveDuration.html
@@ -1680,6 +1704,38 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.CommandsNext.Attributes.RequirePrefixesAttribute.ShowInHelp
   nameWithType: RequirePrefixesAttribute.ShowInHelp
+- uid: DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute
+  name: RequireReferencedMessageAttribute
+  href: api/DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.html
+  commentId: T:DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute
+  fullName: DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute
+  nameWithType: RequireReferencedMessageAttribute
+- uid: DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.#ctor
+  name: RequireReferencedMessageAttribute()
+  href: api/DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.html#DSharpPlus_CommandsNext_Attributes_RequireReferencedMessageAttribute__ctor
+  commentId: M:DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.#ctor
+  fullName: DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.RequireReferencedMessageAttribute()
+  nameWithType: RequireReferencedMessageAttribute.RequireReferencedMessageAttribute()
+- uid: DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.#ctor*
+  name: RequireReferencedMessageAttribute
+  href: api/DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.html#DSharpPlus_CommandsNext_Attributes_RequireReferencedMessageAttribute__ctor_
+  commentId: Overload:DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.#ctor
+  isSpec: "True"
+  fullName: DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.RequireReferencedMessageAttribute
+  nameWithType: RequireReferencedMessageAttribute.RequireReferencedMessageAttribute
+- uid: DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.ExecuteCheckAsync(DSharpPlus.CommandsNext.CommandContext,System.Boolean)
+  name: ExecuteCheckAsync(CommandContext, Boolean)
+  href: api/DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.html#DSharpPlus_CommandsNext_Attributes_RequireReferencedMessageAttribute_ExecuteCheckAsync_DSharpPlus_CommandsNext_CommandContext_System_Boolean_
+  commentId: M:DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.ExecuteCheckAsync(DSharpPlus.CommandsNext.CommandContext,System.Boolean)
+  fullName: DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.ExecuteCheckAsync(DSharpPlus.CommandsNext.CommandContext, System.Boolean)
+  nameWithType: RequireReferencedMessageAttribute.ExecuteCheckAsync(CommandContext, Boolean)
+- uid: DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.ExecuteCheckAsync*
+  name: ExecuteCheckAsync
+  href: api/DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.html#DSharpPlus_CommandsNext_Attributes_RequireReferencedMessageAttribute_ExecuteCheckAsync_
+  commentId: Overload:DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.ExecuteCheckAsync
+  isSpec: "True"
+  fullName: DSharpPlus.CommandsNext.Attributes.RequireReferencedMessageAttribute.ExecuteCheckAsync
+  nameWithType: RequireReferencedMessageAttribute.ExecuteCheckAsync
 - uid: DSharpPlus.CommandsNext.Attributes.RequireRolesAttribute
   name: RequireRolesAttribute
   href: api/DSharpPlus.CommandsNext.Attributes.RequireRolesAttribute.html
@@ -3008,6 +3064,19 @@ references:
   commentId: T:DSharpPlus.CommandsNext.CommandExecutionEventArgs
   fullName: DSharpPlus.CommandsNext.CommandExecutionEventArgs
   nameWithType: CommandExecutionEventArgs
+- uid: DSharpPlus.CommandsNext.CommandExecutionEventArgs.Command
+  name: Command
+  href: api/DSharpPlus.CommandsNext.CommandExecutionEventArgs.html#DSharpPlus_CommandsNext_CommandExecutionEventArgs_Command
+  commentId: P:DSharpPlus.CommandsNext.CommandExecutionEventArgs.Command
+  fullName: DSharpPlus.CommandsNext.CommandExecutionEventArgs.Command
+  nameWithType: CommandExecutionEventArgs.Command
+- uid: DSharpPlus.CommandsNext.CommandExecutionEventArgs.Command*
+  name: Command
+  href: api/DSharpPlus.CommandsNext.CommandExecutionEventArgs.html#DSharpPlus_CommandsNext_CommandExecutionEventArgs_Command_
+  commentId: Overload:DSharpPlus.CommandsNext.CommandExecutionEventArgs.Command
+  isSpec: "True"
+  fullName: DSharpPlus.CommandsNext.CommandExecutionEventArgs.Command
+  nameWithType: CommandExecutionEventArgs.Command
 - uid: DSharpPlus.CommandsNext.CommandGroup
   name: CommandGroup
   href: api/DSharpPlus.CommandsNext.CommandGroup.html
@@ -3285,6 +3354,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.CommandsNext.CommandsNextConfiguration.PrefixResolver
   nameWithType: CommandsNextConfiguration.PrefixResolver
+- uid: DSharpPlus.CommandsNext.CommandsNextConfiguration.QuotationMarks
+  name: QuotationMarks
+  href: api/DSharpPlus.CommandsNext.CommandsNextConfiguration.html#DSharpPlus_CommandsNext_CommandsNextConfiguration_QuotationMarks
+  commentId: P:DSharpPlus.CommandsNext.CommandsNextConfiguration.QuotationMarks
+  fullName: DSharpPlus.CommandsNext.CommandsNextConfiguration.QuotationMarks
+  nameWithType: CommandsNextConfiguration.QuotationMarks
+- uid: DSharpPlus.CommandsNext.CommandsNextConfiguration.QuotationMarks*
+  name: QuotationMarks
+  href: api/DSharpPlus.CommandsNext.CommandsNextConfiguration.html#DSharpPlus_CommandsNext_CommandsNextConfiguration_QuotationMarks_
+  commentId: Overload:DSharpPlus.CommandsNext.CommandsNextConfiguration.QuotationMarks
+  isSpec: "True"
+  fullName: DSharpPlus.CommandsNext.CommandsNextConfiguration.QuotationMarks
+  nameWithType: CommandsNextConfiguration.QuotationMarks
 - uid: DSharpPlus.CommandsNext.CommandsNextConfiguration.Services
   name: Services
   href: api/DSharpPlus.CommandsNext.CommandsNextConfiguration.html#DSharpPlus_CommandsNext_CommandsNextConfiguration_Services
@@ -5464,6 +5546,12 @@ references:
   commentId: E:DSharpPlus.DiscordClient.ApplicationCommandDeleted
   fullName: DSharpPlus.DiscordClient.ApplicationCommandDeleted
   nameWithType: DiscordClient.ApplicationCommandDeleted
+- uid: DSharpPlus.DiscordClient.ApplicationCommandPermissionsUpdated
+  name: ApplicationCommandPermissionsUpdated
+  href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_ApplicationCommandPermissionsUpdated
+  commentId: E:DSharpPlus.DiscordClient.ApplicationCommandPermissionsUpdated
+  fullName: DSharpPlus.DiscordClient.ApplicationCommandPermissionsUpdated
+  nameWithType: DiscordClient.ApplicationCommandPermissionsUpdated
 - uid: DSharpPlus.DiscordClient.ApplicationCommandUpdated
   name: ApplicationCommandUpdated
   href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_ApplicationCommandUpdated
@@ -8198,12 +8286,15 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.DiscordRestClient.GetGuildBanAsync
   nameWithType: DiscordRestClient.GetGuildBanAsync
-- uid: DSharpPlus.DiscordRestClient.GetGuildBansAsync(System.UInt64)
-  name: GetGuildBansAsync(UInt64)
-  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_GetGuildBansAsync_System_UInt64_
-  commentId: M:DSharpPlus.DiscordRestClient.GetGuildBansAsync(System.UInt64)
-  fullName: DSharpPlus.DiscordRestClient.GetGuildBansAsync(System.UInt64)
-  nameWithType: DiscordRestClient.GetGuildBansAsync(UInt64)
+- uid: DSharpPlus.DiscordRestClient.GetGuildBansAsync(System.UInt64,System.Nullable{System.Int32},System.Nullable{System.UInt64},System.Nullable{System.UInt64})
+  name: GetGuildBansAsync(UInt64, Nullable<Int32>, Nullable<UInt64>, Nullable<UInt64>)
+  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_GetGuildBansAsync_System_UInt64_System_Nullable_System_Int32__System_Nullable_System_UInt64__System_Nullable_System_UInt64__
+  commentId: M:DSharpPlus.DiscordRestClient.GetGuildBansAsync(System.UInt64,System.Nullable{System.Int32},System.Nullable{System.UInt64},System.Nullable{System.UInt64})
+  name.vb: GetGuildBansAsync(UInt64, Nullable(Of Int32), Nullable(Of UInt64), Nullable(Of UInt64))
+  fullName: DSharpPlus.DiscordRestClient.GetGuildBansAsync(System.UInt64, System.Nullable<System.Int32>, System.Nullable<System.UInt64>, System.Nullable<System.UInt64>)
+  fullName.vb: DSharpPlus.DiscordRestClient.GetGuildBansAsync(System.UInt64, System.Nullable(Of System.Int32), System.Nullable(Of System.UInt64), System.Nullable(Of System.UInt64))
+  nameWithType: DiscordRestClient.GetGuildBansAsync(UInt64, Nullable<Int32>, Nullable<UInt64>, Nullable<UInt64>)
+  nameWithType.vb: DiscordRestClient.GetGuildBansAsync(UInt64, Nullable(Of Int32), Nullable(Of UInt64), Nullable(Of UInt64))
 - uid: DSharpPlus.DiscordRestClient.GetGuildBansAsync*
   name: GetGuildBansAsync
   href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_GetGuildBansAsync_
@@ -10327,6 +10418,24 @@ references:
   commentId: F:DSharpPlus.Entities.AuditLogActionType.EmojiUpdate
   fullName: DSharpPlus.Entities.AuditLogActionType.EmojiUpdate
   nameWithType: AuditLogActionType.EmojiUpdate
+- uid: DSharpPlus.Entities.AuditLogActionType.GuildScheduledEventCreate
+  name: GuildScheduledEventCreate
+  href: api/DSharpPlus.Entities.AuditLogActionType.html#DSharpPlus_Entities_AuditLogActionType_GuildScheduledEventCreate
+  commentId: F:DSharpPlus.Entities.AuditLogActionType.GuildScheduledEventCreate
+  fullName: DSharpPlus.Entities.AuditLogActionType.GuildScheduledEventCreate
+  nameWithType: AuditLogActionType.GuildScheduledEventCreate
+- uid: DSharpPlus.Entities.AuditLogActionType.GuildScheduledEventDelete
+  name: GuildScheduledEventDelete
+  href: api/DSharpPlus.Entities.AuditLogActionType.html#DSharpPlus_Entities_AuditLogActionType_GuildScheduledEventDelete
+  commentId: F:DSharpPlus.Entities.AuditLogActionType.GuildScheduledEventDelete
+  fullName: DSharpPlus.Entities.AuditLogActionType.GuildScheduledEventDelete
+  nameWithType: AuditLogActionType.GuildScheduledEventDelete
+- uid: DSharpPlus.Entities.AuditLogActionType.GuildScheduledEventUpdate
+  name: GuildScheduledEventUpdate
+  href: api/DSharpPlus.Entities.AuditLogActionType.html#DSharpPlus_Entities_AuditLogActionType_GuildScheduledEventUpdate
+  commentId: F:DSharpPlus.Entities.AuditLogActionType.GuildScheduledEventUpdate
+  fullName: DSharpPlus.Entities.AuditLogActionType.GuildScheduledEventUpdate
+  nameWithType: AuditLogActionType.GuildScheduledEventUpdate
 - uid: DSharpPlus.Entities.AuditLogActionType.GuildUpdate
   name: GuildUpdate
   href: api/DSharpPlus.Entities.AuditLogActionType.html#DSharpPlus_Entities_AuditLogActionType_GuildUpdate
@@ -10483,6 +10592,24 @@ references:
   commentId: F:DSharpPlus.Entities.AuditLogActionType.StickerUpdate
   fullName: DSharpPlus.Entities.AuditLogActionType.StickerUpdate
   nameWithType: AuditLogActionType.StickerUpdate
+- uid: DSharpPlus.Entities.AuditLogActionType.ThreadCreate
+  name: ThreadCreate
+  href: api/DSharpPlus.Entities.AuditLogActionType.html#DSharpPlus_Entities_AuditLogActionType_ThreadCreate
+  commentId: F:DSharpPlus.Entities.AuditLogActionType.ThreadCreate
+  fullName: DSharpPlus.Entities.AuditLogActionType.ThreadCreate
+  nameWithType: AuditLogActionType.ThreadCreate
+- uid: DSharpPlus.Entities.AuditLogActionType.ThreadDelete
+  name: ThreadDelete
+  href: api/DSharpPlus.Entities.AuditLogActionType.html#DSharpPlus_Entities_AuditLogActionType_ThreadDelete
+  commentId: F:DSharpPlus.Entities.AuditLogActionType.ThreadDelete
+  fullName: DSharpPlus.Entities.AuditLogActionType.ThreadDelete
+  nameWithType: AuditLogActionType.ThreadDelete
+- uid: DSharpPlus.Entities.AuditLogActionType.ThreadUpdate
+  name: ThreadUpdate
+  href: api/DSharpPlus.Entities.AuditLogActionType.html#DSharpPlus_Entities_AuditLogActionType_ThreadUpdate
+  commentId: F:DSharpPlus.Entities.AuditLogActionType.ThreadUpdate
+  fullName: DSharpPlus.Entities.AuditLogActionType.ThreadUpdate
+  nameWithType: AuditLogActionType.ThreadUpdate
 - uid: DSharpPlus.Entities.AuditLogActionType.Unban
   name: Unban
   href: api/DSharpPlus.Entities.AuditLogActionType.html#DSharpPlus_Entities_AuditLogActionType_Unban
@@ -10733,12 +10860,28 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordApplication.GenerateBotOAuth
   nameWithType: DiscordApplication.GenerateBotOAuth
-- uid: DSharpPlus.Entities.DiscordApplication.GetAssetsAsync
-  name: GetAssetsAsync()
-  href: api/DSharpPlus.Entities.DiscordApplication.html#DSharpPlus_Entities_DiscordApplication_GetAssetsAsync
-  commentId: M:DSharpPlus.Entities.DiscordApplication.GetAssetsAsync
-  fullName: DSharpPlus.Entities.DiscordApplication.GetAssetsAsync()
-  nameWithType: DiscordApplication.GetAssetsAsync()
+- uid: DSharpPlus.Entities.DiscordApplication.GenerateOAuthUri(System.String,System.Nullable{DSharpPlus.Permissions},DSharpPlus.Entities.OAuthScope[])
+  name: GenerateOAuthUri(String, Nullable<Permissions>, OAuthScope[])
+  href: api/DSharpPlus.Entities.DiscordApplication.html#DSharpPlus_Entities_DiscordApplication_GenerateOAuthUri_System_String_System_Nullable_DSharpPlus_Permissions__DSharpPlus_Entities_OAuthScope___
+  commentId: M:DSharpPlus.Entities.DiscordApplication.GenerateOAuthUri(System.String,System.Nullable{DSharpPlus.Permissions},DSharpPlus.Entities.OAuthScope[])
+  name.vb: GenerateOAuthUri(String, Nullable(Of Permissions), OAuthScope())
+  fullName: DSharpPlus.Entities.DiscordApplication.GenerateOAuthUri(System.String, System.Nullable<DSharpPlus.Permissions>, DSharpPlus.Entities.OAuthScope[])
+  fullName.vb: DSharpPlus.Entities.DiscordApplication.GenerateOAuthUri(System.String, System.Nullable(Of DSharpPlus.Permissions), DSharpPlus.Entities.OAuthScope())
+  nameWithType: DiscordApplication.GenerateOAuthUri(String, Nullable<Permissions>, OAuthScope[])
+  nameWithType.vb: DiscordApplication.GenerateOAuthUri(String, Nullable(Of Permissions), OAuthScope())
+- uid: DSharpPlus.Entities.DiscordApplication.GenerateOAuthUri*
+  name: GenerateOAuthUri
+  href: api/DSharpPlus.Entities.DiscordApplication.html#DSharpPlus_Entities_DiscordApplication_GenerateOAuthUri_
+  commentId: Overload:DSharpPlus.Entities.DiscordApplication.GenerateOAuthUri
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordApplication.GenerateOAuthUri
+  nameWithType: DiscordApplication.GenerateOAuthUri
+- uid: DSharpPlus.Entities.DiscordApplication.GetAssetsAsync(System.Boolean)
+  name: GetAssetsAsync(Boolean)
+  href: api/DSharpPlus.Entities.DiscordApplication.html#DSharpPlus_Entities_DiscordApplication_GetAssetsAsync_System_Boolean_
+  commentId: M:DSharpPlus.Entities.DiscordApplication.GetAssetsAsync(System.Boolean)
+  fullName: DSharpPlus.Entities.DiscordApplication.GetAssetsAsync(System.Boolean)
+  nameWithType: DiscordApplication.GetAssetsAsync(Boolean)
 - uid: DSharpPlus.Entities.DiscordApplication.GetAssetsAsync*
   name: GetAssetsAsync
   href: api/DSharpPlus.Entities.DiscordApplication.html#DSharpPlus_Entities_DiscordApplication_GetAssetsAsync_
@@ -11050,15 +11193,15 @@ references:
   commentId: T:DSharpPlus.Entities.DiscordApplicationCommand
   fullName: DSharpPlus.Entities.DiscordApplicationCommand
   nameWithType: DiscordApplicationCommand
-- uid: DSharpPlus.Entities.DiscordApplicationCommand.#ctor(System.String,System.String,IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOption},System.Nullable{System.Boolean},DSharpPlus.ApplicationCommandType,IReadOnlyDictionary{System.String,System.String},IReadOnlyDictionary{System.String,System.String})
-  name: DiscordApplicationCommand(String, String, IEnumerable<DiscordApplicationCommandOption>, Nullable<Boolean>, ApplicationCommandType, IReadOnlyDictionary<String, String>, IReadOnlyDictionary<String, String>)
-  href: api/DSharpPlus.Entities.DiscordApplicationCommand.html#DSharpPlus_Entities_DiscordApplicationCommand__ctor_System_String_System_String_IEnumerable_DSharpPlus_Entities_DiscordApplicationCommandOption__System_Nullable_System_Boolean__DSharpPlus_ApplicationCommandType_IReadOnlyDictionary_System_String_System_String__IReadOnlyDictionary_System_String_System_String__
-  commentId: M:DSharpPlus.Entities.DiscordApplicationCommand.#ctor(System.String,System.String,IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOption},System.Nullable{System.Boolean},DSharpPlus.ApplicationCommandType,IReadOnlyDictionary{System.String,System.String},IReadOnlyDictionary{System.String,System.String})
-  name.vb: DiscordApplicationCommand(String, String, IEnumerable(Of DiscordApplicationCommandOption), Nullable(Of Boolean), ApplicationCommandType, IReadOnlyDictionary(Of String, String), IReadOnlyDictionary(Of String, String))
-  fullName: DSharpPlus.Entities.DiscordApplicationCommand.DiscordApplicationCommand(System.String, System.String, IEnumerable<DSharpPlus.Entities.DiscordApplicationCommandOption>, System.Nullable<System.Boolean>, DSharpPlus.ApplicationCommandType, IReadOnlyDictionary<System.String, System.String>, IReadOnlyDictionary<System.String, System.String>)
-  fullName.vb: DSharpPlus.Entities.DiscordApplicationCommand.DiscordApplicationCommand(System.String, System.String, IEnumerable(Of DSharpPlus.Entities.DiscordApplicationCommandOption), System.Nullable(Of System.Boolean), DSharpPlus.ApplicationCommandType, IReadOnlyDictionary(Of System.String, System.String), IReadOnlyDictionary(Of System.String, System.String))
-  nameWithType: DiscordApplicationCommand.DiscordApplicationCommand(String, String, IEnumerable<DiscordApplicationCommandOption>, Nullable<Boolean>, ApplicationCommandType, IReadOnlyDictionary<String, String>, IReadOnlyDictionary<String, String>)
-  nameWithType.vb: DiscordApplicationCommand.DiscordApplicationCommand(String, String, IEnumerable(Of DiscordApplicationCommandOption), Nullable(Of Boolean), ApplicationCommandType, IReadOnlyDictionary(Of String, String), IReadOnlyDictionary(Of String, String))
+- uid: DSharpPlus.Entities.DiscordApplicationCommand.#ctor(System.String,System.String,IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOption},System.Nullable{System.Boolean},DSharpPlus.ApplicationCommandType,IReadOnlyDictionary{System.String,System.String},IReadOnlyDictionary{System.String,System.String},System.Nullable{System.Boolean},System.Nullable{DSharpPlus.Permissions})
+  name: DiscordApplicationCommand(String, String, IEnumerable<DiscordApplicationCommandOption>, Nullable<Boolean>, ApplicationCommandType, IReadOnlyDictionary<String, String>, IReadOnlyDictionary<String, String>, Nullable<Boolean>, Nullable<Permissions>)
+  href: api/DSharpPlus.Entities.DiscordApplicationCommand.html#DSharpPlus_Entities_DiscordApplicationCommand__ctor_System_String_System_String_IEnumerable_DSharpPlus_Entities_DiscordApplicationCommandOption__System_Nullable_System_Boolean__DSharpPlus_ApplicationCommandType_IReadOnlyDictionary_System_String_System_String__IReadOnlyDictionary_System_String_System_String__System_Nullable_System_Boolean__System_Nullable_DSharpPlus_Permissions__
+  commentId: M:DSharpPlus.Entities.DiscordApplicationCommand.#ctor(System.String,System.String,IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOption},System.Nullable{System.Boolean},DSharpPlus.ApplicationCommandType,IReadOnlyDictionary{System.String,System.String},IReadOnlyDictionary{System.String,System.String},System.Nullable{System.Boolean},System.Nullable{DSharpPlus.Permissions})
+  name.vb: DiscordApplicationCommand(String, String, IEnumerable(Of DiscordApplicationCommandOption), Nullable(Of Boolean), ApplicationCommandType, IReadOnlyDictionary(Of String, String), IReadOnlyDictionary(Of String, String), Nullable(Of Boolean), Nullable(Of Permissions))
+  fullName: DSharpPlus.Entities.DiscordApplicationCommand.DiscordApplicationCommand(System.String, System.String, IEnumerable<DSharpPlus.Entities.DiscordApplicationCommandOption>, System.Nullable<System.Boolean>, DSharpPlus.ApplicationCommandType, IReadOnlyDictionary<System.String, System.String>, IReadOnlyDictionary<System.String, System.String>, System.Nullable<System.Boolean>, System.Nullable<DSharpPlus.Permissions>)
+  fullName.vb: DSharpPlus.Entities.DiscordApplicationCommand.DiscordApplicationCommand(System.String, System.String, IEnumerable(Of DSharpPlus.Entities.DiscordApplicationCommandOption), System.Nullable(Of System.Boolean), DSharpPlus.ApplicationCommandType, IReadOnlyDictionary(Of System.String, System.String), IReadOnlyDictionary(Of System.String, System.String), System.Nullable(Of System.Boolean), System.Nullable(Of DSharpPlus.Permissions))
+  nameWithType: DiscordApplicationCommand.DiscordApplicationCommand(String, String, IEnumerable<DiscordApplicationCommandOption>, Nullable<Boolean>, ApplicationCommandType, IReadOnlyDictionary<String, String>, IReadOnlyDictionary<String, String>, Nullable<Boolean>, Nullable<Permissions>)
+  nameWithType.vb: DiscordApplicationCommand.DiscordApplicationCommand(String, String, IEnumerable(Of DiscordApplicationCommandOption), Nullable(Of Boolean), ApplicationCommandType, IReadOnlyDictionary(Of String, String), IReadOnlyDictionary(Of String, String), Nullable(Of Boolean), Nullable(Of Permissions))
 - uid: DSharpPlus.Entities.DiscordApplicationCommand.#ctor*
   name: DiscordApplicationCommand
   href: api/DSharpPlus.Entities.DiscordApplicationCommand.html#DSharpPlus_Entities_DiscordApplicationCommand__ctor_
@@ -11066,6 +11209,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordApplicationCommand.DiscordApplicationCommand
   nameWithType: DiscordApplicationCommand.DiscordApplicationCommand
+- uid: DSharpPlus.Entities.DiscordApplicationCommand.AllowDMUsage
+  name: AllowDMUsage
+  href: api/DSharpPlus.Entities.DiscordApplicationCommand.html#DSharpPlus_Entities_DiscordApplicationCommand_AllowDMUsage
+  commentId: P:DSharpPlus.Entities.DiscordApplicationCommand.AllowDMUsage
+  fullName: DSharpPlus.Entities.DiscordApplicationCommand.AllowDMUsage
+  nameWithType: DiscordApplicationCommand.AllowDMUsage
+- uid: DSharpPlus.Entities.DiscordApplicationCommand.AllowDMUsage*
+  name: AllowDMUsage
+  href: api/DSharpPlus.Entities.DiscordApplicationCommand.html#DSharpPlus_Entities_DiscordApplicationCommand_AllowDMUsage_
+  commentId: Overload:DSharpPlus.Entities.DiscordApplicationCommand.AllowDMUsage
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordApplicationCommand.AllowDMUsage
+  nameWithType: DiscordApplicationCommand.AllowDMUsage
 - uid: DSharpPlus.Entities.DiscordApplicationCommand.ApplicationId
   name: ApplicationId
   href: api/DSharpPlus.Entities.DiscordApplicationCommand.html#DSharpPlus_Entities_DiscordApplicationCommand_ApplicationId
@@ -11079,6 +11235,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordApplicationCommand.ApplicationId
   nameWithType: DiscordApplicationCommand.ApplicationId
+- uid: DSharpPlus.Entities.DiscordApplicationCommand.DefaultMemberPermissions
+  name: DefaultMemberPermissions
+  href: api/DSharpPlus.Entities.DiscordApplicationCommand.html#DSharpPlus_Entities_DiscordApplicationCommand_DefaultMemberPermissions
+  commentId: P:DSharpPlus.Entities.DiscordApplicationCommand.DefaultMemberPermissions
+  fullName: DSharpPlus.Entities.DiscordApplicationCommand.DefaultMemberPermissions
+  nameWithType: DiscordApplicationCommand.DefaultMemberPermissions
+- uid: DSharpPlus.Entities.DiscordApplicationCommand.DefaultMemberPermissions*
+  name: DefaultMemberPermissions
+  href: api/DSharpPlus.Entities.DiscordApplicationCommand.html#DSharpPlus_Entities_DiscordApplicationCommand_DefaultMemberPermissions_
+  commentId: Overload:DSharpPlus.Entities.DiscordApplicationCommand.DefaultMemberPermissions
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordApplicationCommand.DefaultMemberPermissions
+  nameWithType: DiscordApplicationCommand.DefaultMemberPermissions
 - uid: DSharpPlus.Entities.DiscordApplicationCommand.DefaultPermission
   name: DefaultPermission
   href: api/DSharpPlus.Entities.DiscordApplicationCommand.html#DSharpPlus_Entities_DiscordApplicationCommand_DefaultPermission
@@ -11247,15 +11416,15 @@ references:
   commentId: T:DSharpPlus.Entities.DiscordApplicationCommandOption
   fullName: DSharpPlus.Entities.DiscordApplicationCommandOption
   nameWithType: DiscordApplicationCommandOption
-- uid: DSharpPlus.Entities.DiscordApplicationCommandOption.#ctor(System.String,System.String,DSharpPlus.ApplicationCommandOptionType,System.Nullable{System.Boolean},IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOptionChoice},IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOption},IEnumerable{DSharpPlus.ChannelType},System.Nullable{System.Boolean},System.Object,System.Object,IReadOnlyDictionary{System.String,System.String},IReadOnlyDictionary{System.String,System.String})
-  name: DiscordApplicationCommandOption(String, String, ApplicationCommandOptionType, Nullable<Boolean>, IEnumerable<DiscordApplicationCommandOptionChoice>, IEnumerable<DiscordApplicationCommandOption>, IEnumerable<ChannelType>, Nullable<Boolean>, Object, Object, IReadOnlyDictionary<String, String>, IReadOnlyDictionary<String, String>)
-  href: api/DSharpPlus.Entities.DiscordApplicationCommandOption.html#DSharpPlus_Entities_DiscordApplicationCommandOption__ctor_System_String_System_String_DSharpPlus_ApplicationCommandOptionType_System_Nullable_System_Boolean__IEnumerable_DSharpPlus_Entities_DiscordApplicationCommandOptionChoice__IEnumerable_DSharpPlus_Entities_DiscordApplicationCommandOption__IEnumerable_DSharpPlus_ChannelType__System_Nullable_System_Boolean__System_Object_System_Object_IReadOnlyDictionary_System_String_System_String__IReadOnlyDictionary_System_String_System_String__
-  commentId: M:DSharpPlus.Entities.DiscordApplicationCommandOption.#ctor(System.String,System.String,DSharpPlus.ApplicationCommandOptionType,System.Nullable{System.Boolean},IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOptionChoice},IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOption},IEnumerable{DSharpPlus.ChannelType},System.Nullable{System.Boolean},System.Object,System.Object,IReadOnlyDictionary{System.String,System.String},IReadOnlyDictionary{System.String,System.String})
-  name.vb: DiscordApplicationCommandOption(String, String, ApplicationCommandOptionType, Nullable(Of Boolean), IEnumerable(Of DiscordApplicationCommandOptionChoice), IEnumerable(Of DiscordApplicationCommandOption), IEnumerable(Of ChannelType), Nullable(Of Boolean), Object, Object, IReadOnlyDictionary(Of String, String), IReadOnlyDictionary(Of String, String))
-  fullName: DSharpPlus.Entities.DiscordApplicationCommandOption.DiscordApplicationCommandOption(System.String, System.String, DSharpPlus.ApplicationCommandOptionType, System.Nullable<System.Boolean>, IEnumerable<DSharpPlus.Entities.DiscordApplicationCommandOptionChoice>, IEnumerable<DSharpPlus.Entities.DiscordApplicationCommandOption>, IEnumerable<DSharpPlus.ChannelType>, System.Nullable<System.Boolean>, System.Object, System.Object, IReadOnlyDictionary<System.String, System.String>, IReadOnlyDictionary<System.String, System.String>)
-  fullName.vb: DSharpPlus.Entities.DiscordApplicationCommandOption.DiscordApplicationCommandOption(System.String, System.String, DSharpPlus.ApplicationCommandOptionType, System.Nullable(Of System.Boolean), IEnumerable(Of DSharpPlus.Entities.DiscordApplicationCommandOptionChoice), IEnumerable(Of DSharpPlus.Entities.DiscordApplicationCommandOption), IEnumerable(Of DSharpPlus.ChannelType), System.Nullable(Of System.Boolean), System.Object, System.Object, IReadOnlyDictionary(Of System.String, System.String), IReadOnlyDictionary(Of System.String, System.String))
-  nameWithType: DiscordApplicationCommandOption.DiscordApplicationCommandOption(String, String, ApplicationCommandOptionType, Nullable<Boolean>, IEnumerable<DiscordApplicationCommandOptionChoice>, IEnumerable<DiscordApplicationCommandOption>, IEnumerable<ChannelType>, Nullable<Boolean>, Object, Object, IReadOnlyDictionary<String, String>, IReadOnlyDictionary<String, String>)
-  nameWithType.vb: DiscordApplicationCommandOption.DiscordApplicationCommandOption(String, String, ApplicationCommandOptionType, Nullable(Of Boolean), IEnumerable(Of DiscordApplicationCommandOptionChoice), IEnumerable(Of DiscordApplicationCommandOption), IEnumerable(Of ChannelType), Nullable(Of Boolean), Object, Object, IReadOnlyDictionary(Of String, String), IReadOnlyDictionary(Of String, String))
+- uid: DSharpPlus.Entities.DiscordApplicationCommandOption.#ctor(System.String,System.String,DSharpPlus.ApplicationCommandOptionType,System.Nullable{System.Boolean},IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOptionChoice},IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOption},IEnumerable{DSharpPlus.ChannelType},System.Nullable{System.Boolean},System.Object,System.Object,IReadOnlyDictionary{System.String,System.String},IReadOnlyDictionary{System.String,System.String},System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name: DiscordApplicationCommandOption(String, String, ApplicationCommandOptionType, Nullable<Boolean>, IEnumerable<DiscordApplicationCommandOptionChoice>, IEnumerable<DiscordApplicationCommandOption>, IEnumerable<ChannelType>, Nullable<Boolean>, Object, Object, IReadOnlyDictionary<String, String>, IReadOnlyDictionary<String, String>, Nullable<Int32>, Nullable<Int32>)
+  href: api/DSharpPlus.Entities.DiscordApplicationCommandOption.html#DSharpPlus_Entities_DiscordApplicationCommandOption__ctor_System_String_System_String_DSharpPlus_ApplicationCommandOptionType_System_Nullable_System_Boolean__IEnumerable_DSharpPlus_Entities_DiscordApplicationCommandOptionChoice__IEnumerable_DSharpPlus_Entities_DiscordApplicationCommandOption__IEnumerable_DSharpPlus_ChannelType__System_Nullable_System_Boolean__System_Object_System_Object_IReadOnlyDictionary_System_String_System_String__IReadOnlyDictionary_System_String_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__
+  commentId: M:DSharpPlus.Entities.DiscordApplicationCommandOption.#ctor(System.String,System.String,DSharpPlus.ApplicationCommandOptionType,System.Nullable{System.Boolean},IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOptionChoice},IEnumerable{DSharpPlus.Entities.DiscordApplicationCommandOption},IEnumerable{DSharpPlus.ChannelType},System.Nullable{System.Boolean},System.Object,System.Object,IReadOnlyDictionary{System.String,System.String},IReadOnlyDictionary{System.String,System.String},System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name.vb: DiscordApplicationCommandOption(String, String, ApplicationCommandOptionType, Nullable(Of Boolean), IEnumerable(Of DiscordApplicationCommandOptionChoice), IEnumerable(Of DiscordApplicationCommandOption), IEnumerable(Of ChannelType), Nullable(Of Boolean), Object, Object, IReadOnlyDictionary(Of String, String), IReadOnlyDictionary(Of String, String), Nullable(Of Int32), Nullable(Of Int32))
+  fullName: DSharpPlus.Entities.DiscordApplicationCommandOption.DiscordApplicationCommandOption(System.String, System.String, DSharpPlus.ApplicationCommandOptionType, System.Nullable<System.Boolean>, IEnumerable<DSharpPlus.Entities.DiscordApplicationCommandOptionChoice>, IEnumerable<DSharpPlus.Entities.DiscordApplicationCommandOption>, IEnumerable<DSharpPlus.ChannelType>, System.Nullable<System.Boolean>, System.Object, System.Object, IReadOnlyDictionary<System.String, System.String>, IReadOnlyDictionary<System.String, System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>)
+  fullName.vb: DSharpPlus.Entities.DiscordApplicationCommandOption.DiscordApplicationCommandOption(System.String, System.String, DSharpPlus.ApplicationCommandOptionType, System.Nullable(Of System.Boolean), IEnumerable(Of DSharpPlus.Entities.DiscordApplicationCommandOptionChoice), IEnumerable(Of DSharpPlus.Entities.DiscordApplicationCommandOption), IEnumerable(Of DSharpPlus.ChannelType), System.Nullable(Of System.Boolean), System.Object, System.Object, IReadOnlyDictionary(Of System.String, System.String), IReadOnlyDictionary(Of System.String, System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32))
+  nameWithType: DiscordApplicationCommandOption.DiscordApplicationCommandOption(String, String, ApplicationCommandOptionType, Nullable<Boolean>, IEnumerable<DiscordApplicationCommandOptionChoice>, IEnumerable<DiscordApplicationCommandOption>, IEnumerable<ChannelType>, Nullable<Boolean>, Object, Object, IReadOnlyDictionary<String, String>, IReadOnlyDictionary<String, String>, Nullable<Int32>, Nullable<Int32>)
+  nameWithType.vb: DiscordApplicationCommandOption.DiscordApplicationCommandOption(String, String, ApplicationCommandOptionType, Nullable(Of Boolean), IEnumerable(Of DiscordApplicationCommandOptionChoice), IEnumerable(Of DiscordApplicationCommandOption), IEnumerable(Of ChannelType), Nullable(Of Boolean), Object, Object, IReadOnlyDictionary(Of String, String), IReadOnlyDictionary(Of String, String), Nullable(Of Int32), Nullable(Of Int32))
 - uid: DSharpPlus.Entities.DiscordApplicationCommandOption.#ctor*
   name: DiscordApplicationCommandOption
   href: api/DSharpPlus.Entities.DiscordApplicationCommandOption.html#DSharpPlus_Entities_DiscordApplicationCommandOption__ctor_
@@ -11328,6 +11497,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordApplicationCommandOption.DescriptionLocalizations
   nameWithType: DiscordApplicationCommandOption.DescriptionLocalizations
+- uid: DSharpPlus.Entities.DiscordApplicationCommandOption.MaxLength
+  name: MaxLength
+  href: api/DSharpPlus.Entities.DiscordApplicationCommandOption.html#DSharpPlus_Entities_DiscordApplicationCommandOption_MaxLength
+  commentId: P:DSharpPlus.Entities.DiscordApplicationCommandOption.MaxLength
+  fullName: DSharpPlus.Entities.DiscordApplicationCommandOption.MaxLength
+  nameWithType: DiscordApplicationCommandOption.MaxLength
+- uid: DSharpPlus.Entities.DiscordApplicationCommandOption.MaxLength*
+  name: MaxLength
+  href: api/DSharpPlus.Entities.DiscordApplicationCommandOption.html#DSharpPlus_Entities_DiscordApplicationCommandOption_MaxLength_
+  commentId: Overload:DSharpPlus.Entities.DiscordApplicationCommandOption.MaxLength
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordApplicationCommandOption.MaxLength
+  nameWithType: DiscordApplicationCommandOption.MaxLength
 - uid: DSharpPlus.Entities.DiscordApplicationCommandOption.MaxValue
   name: MaxValue
   href: api/DSharpPlus.Entities.DiscordApplicationCommandOption.html#DSharpPlus_Entities_DiscordApplicationCommandOption_MaxValue
@@ -11341,6 +11523,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordApplicationCommandOption.MaxValue
   nameWithType: DiscordApplicationCommandOption.MaxValue
+- uid: DSharpPlus.Entities.DiscordApplicationCommandOption.MinLength
+  name: MinLength
+  href: api/DSharpPlus.Entities.DiscordApplicationCommandOption.html#DSharpPlus_Entities_DiscordApplicationCommandOption_MinLength
+  commentId: P:DSharpPlus.Entities.DiscordApplicationCommandOption.MinLength
+  fullName: DSharpPlus.Entities.DiscordApplicationCommandOption.MinLength
+  nameWithType: DiscordApplicationCommandOption.MinLength
+- uid: DSharpPlus.Entities.DiscordApplicationCommandOption.MinLength*
+  name: MinLength
+  href: api/DSharpPlus.Entities.DiscordApplicationCommandOption.html#DSharpPlus_Entities_DiscordApplicationCommandOption_MinLength_
+  commentId: Overload:DSharpPlus.Entities.DiscordApplicationCommandOption.MinLength
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordApplicationCommandOption.MinLength
+  nameWithType: DiscordApplicationCommandOption.MinLength
 - uid: DSharpPlus.Entities.DiscordApplicationCommandOption.MinValue
   name: MinValue
   href: api/DSharpPlus.Entities.DiscordApplicationCommandOption.html#DSharpPlus_Entities_DiscordApplicationCommandOption_MinValue
@@ -12083,6 +12278,142 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordAuditLogGuildEntry.VerificationLevelChange
   nameWithType: DiscordAuditLogGuildEntry.VerificationLevelChange
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry
+  name: DiscordAuditLogGuildScheduledEventEntry
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html
+  commentId: T:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.#ctor
+  name: DiscordAuditLogGuildScheduledEventEntry()
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry__ctor
+  commentId: M:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.#ctor
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.DiscordAuditLogGuildScheduledEventEntry()
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.DiscordAuditLogGuildScheduledEventEntry()
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.#ctor*
+  name: DiscordAuditLogGuildScheduledEventEntry
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry__ctor_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.#ctor
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.DiscordAuditLogGuildScheduledEventEntry
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.DiscordAuditLogGuildScheduledEventEntry
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Channel
+  name: Channel
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_Channel
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Channel
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Channel
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.Channel
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Channel*
+  name: Channel
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_Channel_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Channel
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Channel
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.Channel
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Description
+  name: Description
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_Description
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Description
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Description
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.Description
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Description*
+  name: Description
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_Description_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Description
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Description
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.Description
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.ImageHash
+  name: ImageHash
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_ImageHash
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.ImageHash
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.ImageHash
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.ImageHash
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.ImageHash*
+  name: ImageHash
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_ImageHash_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.ImageHash
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.ImageHash
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.ImageHash
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Location
+  name: Location
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_Location
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Location
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Location
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.Location
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Location*
+  name: Location
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_Location_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Location
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Location
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.Location
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Name
+  name: Name
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_Name
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Name
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Name
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.Name
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Name*
+  name: Name
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_Name_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Name
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Name
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.Name
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.PrivacyLevel
+  name: PrivacyLevel
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_PrivacyLevel
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.PrivacyLevel
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.PrivacyLevel
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.PrivacyLevel
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.PrivacyLevel*
+  name: PrivacyLevel
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_PrivacyLevel_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.PrivacyLevel
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.PrivacyLevel
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.PrivacyLevel
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Status
+  name: Status
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_Status
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Status
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Status
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.Status
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Status*
+  name: Status
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_Status_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Status
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Status
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.Status
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Target
+  name: Target
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_Target
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Target
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Target
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.Target
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Target*
+  name: Target
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_Target_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Target
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Target
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.Target
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Type
+  name: Type
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_Type
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Type
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Type
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.Type
+- uid: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Type*
+  name: Type
+  href: api/DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.html#DSharpPlus_Entities_DiscordAuditLogGuildScheduledEventEntry_Type_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Type
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogGuildScheduledEventEntry.Type
+  nameWithType: DiscordAuditLogGuildScheduledEventEntry.Type
 - uid: DSharpPlus.Entities.DiscordAuditLogIntegrationEntry
   name: DiscordAuditLogIntegrationEntry
   href: api/DSharpPlus.Entities.DiscordAuditLogIntegrationEntry.html
@@ -12392,6 +12723,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordAuditLogMemberUpdateEntry.Target
   nameWithType: DiscordAuditLogMemberUpdateEntry.Target
+- uid: DSharpPlus.Entities.DiscordAuditLogMemberUpdateEntry.TimeoutChange
+  name: TimeoutChange
+  href: api/DSharpPlus.Entities.DiscordAuditLogMemberUpdateEntry.html#DSharpPlus_Entities_DiscordAuditLogMemberUpdateEntry_TimeoutChange
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogMemberUpdateEntry.TimeoutChange
+  fullName: DSharpPlus.Entities.DiscordAuditLogMemberUpdateEntry.TimeoutChange
+  nameWithType: DiscordAuditLogMemberUpdateEntry.TimeoutChange
+- uid: DSharpPlus.Entities.DiscordAuditLogMemberUpdateEntry.TimeoutChange*
+  name: TimeoutChange
+  href: api/DSharpPlus.Entities.DiscordAuditLogMemberUpdateEntry.html#DSharpPlus_Entities_DiscordAuditLogMemberUpdateEntry_TimeoutChange_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogMemberUpdateEntry.TimeoutChange
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogMemberUpdateEntry.TimeoutChange
+  nameWithType: DiscordAuditLogMemberUpdateEntry.TimeoutChange
 - uid: DSharpPlus.Entities.DiscordAuditLogMessageEntry
   name: DiscordAuditLogMessageEntry
   href: api/DSharpPlus.Entities.DiscordAuditLogMessageEntry.html
@@ -12831,12 +13175,135 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordAuditLogStickerEntry.TypeChange
   nameWithType: DiscordAuditLogStickerEntry.TypeChange
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry
+  name: DiscordAuditLogThreadEventEntry
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html
+  commentId: T:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry
+  nameWithType: DiscordAuditLogThreadEventEntry
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Archived
+  name: Archived
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html#DSharpPlus_Entities_DiscordAuditLogThreadEventEntry_Archived
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Archived
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Archived
+  nameWithType: DiscordAuditLogThreadEventEntry.Archived
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Archived*
+  name: Archived
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html#DSharpPlus_Entities_DiscordAuditLogThreadEventEntry_Archived_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Archived
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Archived
+  nameWithType: DiscordAuditLogThreadEventEntry.Archived
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.AutoArchiveDuration
+  name: AutoArchiveDuration
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html#DSharpPlus_Entities_DiscordAuditLogThreadEventEntry_AutoArchiveDuration
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.AutoArchiveDuration
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.AutoArchiveDuration
+  nameWithType: DiscordAuditLogThreadEventEntry.AutoArchiveDuration
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.AutoArchiveDuration*
+  name: AutoArchiveDuration
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html#DSharpPlus_Entities_DiscordAuditLogThreadEventEntry_AutoArchiveDuration_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.AutoArchiveDuration
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.AutoArchiveDuration
+  nameWithType: DiscordAuditLogThreadEventEntry.AutoArchiveDuration
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Invitable
+  name: Invitable
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html#DSharpPlus_Entities_DiscordAuditLogThreadEventEntry_Invitable
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Invitable
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Invitable
+  nameWithType: DiscordAuditLogThreadEventEntry.Invitable
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Invitable*
+  name: Invitable
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html#DSharpPlus_Entities_DiscordAuditLogThreadEventEntry_Invitable_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Invitable
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Invitable
+  nameWithType: DiscordAuditLogThreadEventEntry.Invitable
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Locked
+  name: Locked
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html#DSharpPlus_Entities_DiscordAuditLogThreadEventEntry_Locked
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Locked
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Locked
+  nameWithType: DiscordAuditLogThreadEventEntry.Locked
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Locked*
+  name: Locked
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html#DSharpPlus_Entities_DiscordAuditLogThreadEventEntry_Locked_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Locked
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Locked
+  nameWithType: DiscordAuditLogThreadEventEntry.Locked
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Name
+  name: Name
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html#DSharpPlus_Entities_DiscordAuditLogThreadEventEntry_Name
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Name
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Name
+  nameWithType: DiscordAuditLogThreadEventEntry.Name
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Name*
+  name: Name
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html#DSharpPlus_Entities_DiscordAuditLogThreadEventEntry_Name_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Name
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Name
+  nameWithType: DiscordAuditLogThreadEventEntry.Name
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.PerUserRateLimit
+  name: PerUserRateLimit
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html#DSharpPlus_Entities_DiscordAuditLogThreadEventEntry_PerUserRateLimit
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.PerUserRateLimit
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.PerUserRateLimit
+  nameWithType: DiscordAuditLogThreadEventEntry.PerUserRateLimit
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.PerUserRateLimit*
+  name: PerUserRateLimit
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html#DSharpPlus_Entities_DiscordAuditLogThreadEventEntry_PerUserRateLimit_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.PerUserRateLimit
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.PerUserRateLimit
+  nameWithType: DiscordAuditLogThreadEventEntry.PerUserRateLimit
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Target
+  name: Target
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html#DSharpPlus_Entities_DiscordAuditLogThreadEventEntry_Target
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Target
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Target
+  nameWithType: DiscordAuditLogThreadEventEntry.Target
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Target*
+  name: Target
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html#DSharpPlus_Entities_DiscordAuditLogThreadEventEntry_Target_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Target
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Target
+  nameWithType: DiscordAuditLogThreadEventEntry.Target
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Type
+  name: Type
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html#DSharpPlus_Entities_DiscordAuditLogThreadEventEntry_Type
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Type
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Type
+  nameWithType: DiscordAuditLogThreadEventEntry.Type
+- uid: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Type*
+  name: Type
+  href: api/DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.html#DSharpPlus_Entities_DiscordAuditLogThreadEventEntry_Type_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Type
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogThreadEventEntry.Type
+  nameWithType: DiscordAuditLogThreadEventEntry.Type
 - uid: DSharpPlus.Entities.DiscordAuditLogWebhookEntry
   name: DiscordAuditLogWebhookEntry
   href: api/DSharpPlus.Entities.DiscordAuditLogWebhookEntry.html
   commentId: T:DSharpPlus.Entities.DiscordAuditLogWebhookEntry
   fullName: DSharpPlus.Entities.DiscordAuditLogWebhookEntry
   nameWithType: DiscordAuditLogWebhookEntry
+- uid: DSharpPlus.Entities.DiscordAuditLogWebhookEntry.ApplicationIdChange
+  name: ApplicationIdChange
+  href: api/DSharpPlus.Entities.DiscordAuditLogWebhookEntry.html#DSharpPlus_Entities_DiscordAuditLogWebhookEntry_ApplicationIdChange
+  commentId: P:DSharpPlus.Entities.DiscordAuditLogWebhookEntry.ApplicationIdChange
+  fullName: DSharpPlus.Entities.DiscordAuditLogWebhookEntry.ApplicationIdChange
+  nameWithType: DiscordAuditLogWebhookEntry.ApplicationIdChange
+- uid: DSharpPlus.Entities.DiscordAuditLogWebhookEntry.ApplicationIdChange*
+  name: ApplicationIdChange
+  href: api/DSharpPlus.Entities.DiscordAuditLogWebhookEntry.html#DSharpPlus_Entities_DiscordAuditLogWebhookEntry_ApplicationIdChange_
+  commentId: Overload:DSharpPlus.Entities.DiscordAuditLogWebhookEntry.ApplicationIdChange
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordAuditLogWebhookEntry.ApplicationIdChange
+  nameWithType: DiscordAuditLogWebhookEntry.ApplicationIdChange
 - uid: DSharpPlus.Entities.DiscordAuditLogWebhookEntry.AvatarHashChange
   name: AvatarHashChange
   href: api/DSharpPlus.Entities.DiscordAuditLogWebhookEntry.html#DSharpPlus_Entities_DiscordAuditLogWebhookEntry_AvatarHashChange
@@ -13374,12 +13841,12 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordChannel.GetInvitesAsync
   nameWithType: DiscordChannel.GetInvitesAsync
-- uid: DSharpPlus.Entities.DiscordChannel.GetMessageAsync(System.UInt64)
-  name: GetMessageAsync(UInt64)
-  href: api/DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_GetMessageAsync_System_UInt64_
-  commentId: M:DSharpPlus.Entities.DiscordChannel.GetMessageAsync(System.UInt64)
-  fullName: DSharpPlus.Entities.DiscordChannel.GetMessageAsync(System.UInt64)
-  nameWithType: DiscordChannel.GetMessageAsync(UInt64)
+- uid: DSharpPlus.Entities.DiscordChannel.GetMessageAsync(System.UInt64,System.Boolean)
+  name: GetMessageAsync(UInt64, Boolean)
+  href: api/DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_GetMessageAsync_System_UInt64_System_Boolean_
+  commentId: M:DSharpPlus.Entities.DiscordChannel.GetMessageAsync(System.UInt64,System.Boolean)
+  fullName: DSharpPlus.Entities.DiscordChannel.GetMessageAsync(System.UInt64, System.Boolean)
+  nameWithType: DiscordChannel.GetMessageAsync(UInt64, Boolean)
 - uid: DSharpPlus.Entities.DiscordChannel.GetMessageAsync*
   name: GetMessageAsync
   href: api/DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_GetMessageAsync_
@@ -17460,12 +17927,15 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordGuild.GetBanAsync
   nameWithType: DiscordGuild.GetBanAsync
-- uid: DSharpPlus.Entities.DiscordGuild.GetBansAsync
-  name: GetBansAsync()
-  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_GetBansAsync
-  commentId: M:DSharpPlus.Entities.DiscordGuild.GetBansAsync
-  fullName: DSharpPlus.Entities.DiscordGuild.GetBansAsync()
-  nameWithType: DiscordGuild.GetBansAsync()
+- uid: DSharpPlus.Entities.DiscordGuild.GetBansAsync(System.Nullable{System.Int32},System.Nullable{System.UInt64},System.Nullable{System.UInt64})
+  name: GetBansAsync(Nullable<Int32>, Nullable<UInt64>, Nullable<UInt64>)
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_GetBansAsync_System_Nullable_System_Int32__System_Nullable_System_UInt64__System_Nullable_System_UInt64__
+  commentId: M:DSharpPlus.Entities.DiscordGuild.GetBansAsync(System.Nullable{System.Int32},System.Nullable{System.UInt64},System.Nullable{System.UInt64})
+  name.vb: GetBansAsync(Nullable(Of Int32), Nullable(Of UInt64), Nullable(Of UInt64))
+  fullName: DSharpPlus.Entities.DiscordGuild.GetBansAsync(System.Nullable<System.Int32>, System.Nullable<System.UInt64>, System.Nullable<System.UInt64>)
+  fullName.vb: DSharpPlus.Entities.DiscordGuild.GetBansAsync(System.Nullable(Of System.Int32), System.Nullable(Of System.UInt64), System.Nullable(Of System.UInt64))
+  nameWithType: DiscordGuild.GetBansAsync(Nullable<Int32>, Nullable<UInt64>, Nullable<UInt64>)
+  nameWithType.vb: DiscordGuild.GetBansAsync(Nullable(Of Int32), Nullable(Of UInt64), Nullable(Of UInt64))
 - uid: DSharpPlus.Entities.DiscordGuild.GetBansAsync*
   name: GetBansAsync
   href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_GetBansAsync_
@@ -17632,12 +18102,12 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordGuild.GetInvitesAsync
   nameWithType: DiscordGuild.GetInvitesAsync
-- uid: DSharpPlus.Entities.DiscordGuild.GetMemberAsync(System.UInt64)
-  name: GetMemberAsync(UInt64)
-  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_GetMemberAsync_System_UInt64_
-  commentId: M:DSharpPlus.Entities.DiscordGuild.GetMemberAsync(System.UInt64)
-  fullName: DSharpPlus.Entities.DiscordGuild.GetMemberAsync(System.UInt64)
-  nameWithType: DiscordGuild.GetMemberAsync(UInt64)
+- uid: DSharpPlus.Entities.DiscordGuild.GetMemberAsync(System.UInt64,System.Boolean)
+  name: GetMemberAsync(UInt64, Boolean)
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_GetMemberAsync_System_UInt64_System_Boolean_
+  commentId: M:DSharpPlus.Entities.DiscordGuild.GetMemberAsync(System.UInt64,System.Boolean)
+  fullName: DSharpPlus.Entities.DiscordGuild.GetMemberAsync(System.UInt64, System.Boolean)
+  nameWithType: DiscordGuild.GetMemberAsync(UInt64, Boolean)
 - uid: DSharpPlus.Entities.DiscordGuild.GetMemberAsync*
   name: GetMemberAsync
   href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_GetMemberAsync_
@@ -27228,6 +27698,150 @@ references:
   commentId: F:DSharpPlus.Entities.MfaLevel.Enabled
   fullName: DSharpPlus.Entities.MfaLevel.Enabled
   nameWithType: MfaLevel.Enabled
+- uid: DSharpPlus.Entities.OAuthScope
+  name: OAuthScope
+  href: api/DSharpPlus.Entities.OAuthScope.html
+  commentId: T:DSharpPlus.Entities.OAuthScope
+  fullName: DSharpPlus.Entities.OAuthScope
+  nameWithType: OAuthScope
+- uid: DSharpPlus.Entities.OAuthScope.ActivitiesRead
+  name: ActivitiesRead
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_ActivitiesRead
+  commentId: F:DSharpPlus.Entities.OAuthScope.ActivitiesRead
+  fullName: DSharpPlus.Entities.OAuthScope.ActivitiesRead
+  nameWithType: OAuthScope.ActivitiesRead
+- uid: DSharpPlus.Entities.OAuthScope.ActivitiesWrite
+  name: ActivitiesWrite
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_ActivitiesWrite
+  commentId: F:DSharpPlus.Entities.OAuthScope.ActivitiesWrite
+  fullName: DSharpPlus.Entities.OAuthScope.ActivitiesWrite
+  nameWithType: OAuthScope.ActivitiesWrite
+- uid: DSharpPlus.Entities.OAuthScope.ApplicationsBuildsRead
+  name: ApplicationsBuildsRead
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_ApplicationsBuildsRead
+  commentId: F:DSharpPlus.Entities.OAuthScope.ApplicationsBuildsRead
+  fullName: DSharpPlus.Entities.OAuthScope.ApplicationsBuildsRead
+  nameWithType: OAuthScope.ApplicationsBuildsRead
+- uid: DSharpPlus.Entities.OAuthScope.ApplicationsBuildsUpload
+  name: ApplicationsBuildsUpload
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_ApplicationsBuildsUpload
+  commentId: F:DSharpPlus.Entities.OAuthScope.ApplicationsBuildsUpload
+  fullName: DSharpPlus.Entities.OAuthScope.ApplicationsBuildsUpload
+  nameWithType: OAuthScope.ApplicationsBuildsUpload
+- uid: DSharpPlus.Entities.OAuthScope.ApplicationsCommands
+  name: ApplicationsCommands
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_ApplicationsCommands
+  commentId: F:DSharpPlus.Entities.OAuthScope.ApplicationsCommands
+  fullName: DSharpPlus.Entities.OAuthScope.ApplicationsCommands
+  nameWithType: OAuthScope.ApplicationsCommands
+- uid: DSharpPlus.Entities.OAuthScope.ApplicationsEntitlements
+  name: ApplicationsEntitlements
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_ApplicationsEntitlements
+  commentId: F:DSharpPlus.Entities.OAuthScope.ApplicationsEntitlements
+  fullName: DSharpPlus.Entities.OAuthScope.ApplicationsEntitlements
+  nameWithType: OAuthScope.ApplicationsEntitlements
+- uid: DSharpPlus.Entities.OAuthScope.ApplicationsStoreUpdate
+  name: ApplicationsStoreUpdate
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_ApplicationsStoreUpdate
+  commentId: F:DSharpPlus.Entities.OAuthScope.ApplicationsStoreUpdate
+  fullName: DSharpPlus.Entities.OAuthScope.ApplicationsStoreUpdate
+  nameWithType: OAuthScope.ApplicationsStoreUpdate
+- uid: DSharpPlus.Entities.OAuthScope.Bot
+  name: Bot
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_Bot
+  commentId: F:DSharpPlus.Entities.OAuthScope.Bot
+  fullName: DSharpPlus.Entities.OAuthScope.Bot
+  nameWithType: OAuthScope.Bot
+- uid: DSharpPlus.Entities.OAuthScope.Connections
+  name: Connections
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_Connections
+  commentId: F:DSharpPlus.Entities.OAuthScope.Connections
+  fullName: DSharpPlus.Entities.OAuthScope.Connections
+  nameWithType: OAuthScope.Connections
+- uid: DSharpPlus.Entities.OAuthScope.Email
+  name: Email
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_Email
+  commentId: F:DSharpPlus.Entities.OAuthScope.Email
+  fullName: DSharpPlus.Entities.OAuthScope.Email
+  nameWithType: OAuthScope.Email
+- uid: DSharpPlus.Entities.OAuthScope.GdmJoin
+  name: GdmJoin
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_GdmJoin
+  commentId: F:DSharpPlus.Entities.OAuthScope.GdmJoin
+  fullName: DSharpPlus.Entities.OAuthScope.GdmJoin
+  nameWithType: OAuthScope.GdmJoin
+- uid: DSharpPlus.Entities.OAuthScope.Guilds
+  name: Guilds
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_Guilds
+  commentId: F:DSharpPlus.Entities.OAuthScope.Guilds
+  fullName: DSharpPlus.Entities.OAuthScope.Guilds
+  nameWithType: OAuthScope.Guilds
+- uid: DSharpPlus.Entities.OAuthScope.GuildsJoin
+  name: GuildsJoin
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_GuildsJoin
+  commentId: F:DSharpPlus.Entities.OAuthScope.GuildsJoin
+  fullName: DSharpPlus.Entities.OAuthScope.GuildsJoin
+  nameWithType: OAuthScope.GuildsJoin
+- uid: DSharpPlus.Entities.OAuthScope.GuildsMembersRead
+  name: GuildsMembersRead
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_GuildsMembersRead
+  commentId: F:DSharpPlus.Entities.OAuthScope.GuildsMembersRead
+  fullName: DSharpPlus.Entities.OAuthScope.GuildsMembersRead
+  nameWithType: OAuthScope.GuildsMembersRead
+- uid: DSharpPlus.Entities.OAuthScope.Identify
+  name: Identify
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_Identify
+  commentId: F:DSharpPlus.Entities.OAuthScope.Identify
+  fullName: DSharpPlus.Entities.OAuthScope.Identify
+  nameWithType: OAuthScope.Identify
+- uid: DSharpPlus.Entities.OAuthScope.MessagesRead
+  name: MessagesRead
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_MessagesRead
+  commentId: F:DSharpPlus.Entities.OAuthScope.MessagesRead
+  fullName: DSharpPlus.Entities.OAuthScope.MessagesRead
+  nameWithType: OAuthScope.MessagesRead
+- uid: DSharpPlus.Entities.OAuthScope.RelationshipsRead
+  name: RelationshipsRead
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_RelationshipsRead
+  commentId: F:DSharpPlus.Entities.OAuthScope.RelationshipsRead
+  fullName: DSharpPlus.Entities.OAuthScope.RelationshipsRead
+  nameWithType: OAuthScope.RelationshipsRead
+- uid: DSharpPlus.Entities.OAuthScope.Rpc
+  name: Rpc
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_Rpc
+  commentId: F:DSharpPlus.Entities.OAuthScope.Rpc
+  fullName: DSharpPlus.Entities.OAuthScope.Rpc
+  nameWithType: OAuthScope.Rpc
+- uid: DSharpPlus.Entities.OAuthScope.RpcActivitiesWrite
+  name: RpcActivitiesWrite
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_RpcActivitiesWrite
+  commentId: F:DSharpPlus.Entities.OAuthScope.RpcActivitiesWrite
+  fullName: DSharpPlus.Entities.OAuthScope.RpcActivitiesWrite
+  nameWithType: OAuthScope.RpcActivitiesWrite
+- uid: DSharpPlus.Entities.OAuthScope.RpcNotificationsRead
+  name: RpcNotificationsRead
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_RpcNotificationsRead
+  commentId: F:DSharpPlus.Entities.OAuthScope.RpcNotificationsRead
+  fullName: DSharpPlus.Entities.OAuthScope.RpcNotificationsRead
+  nameWithType: OAuthScope.RpcNotificationsRead
+- uid: DSharpPlus.Entities.OAuthScope.RpcVoiceRead
+  name: RpcVoiceRead
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_RpcVoiceRead
+  commentId: F:DSharpPlus.Entities.OAuthScope.RpcVoiceRead
+  fullName: DSharpPlus.Entities.OAuthScope.RpcVoiceRead
+  nameWithType: OAuthScope.RpcVoiceRead
+- uid: DSharpPlus.Entities.OAuthScope.RpcVoiceWrite
+  name: RpcVoiceWrite
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_RpcVoiceWrite
+  commentId: F:DSharpPlus.Entities.OAuthScope.RpcVoiceWrite
+  fullName: DSharpPlus.Entities.OAuthScope.RpcVoiceWrite
+  nameWithType: OAuthScope.RpcVoiceWrite
+- uid: DSharpPlus.Entities.OAuthScope.WebhookIncoming
+  name: WebhookIncoming
+  href: api/DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_WebhookIncoming
+  commentId: F:DSharpPlus.Entities.OAuthScope.WebhookIncoming
+  fullName: DSharpPlus.Entities.OAuthScope.WebhookIncoming
+  nameWithType: OAuthScope.WebhookIncoming
 - uid: DSharpPlus.Entities.Optional
   name: Optional
   href: api/DSharpPlus.Entities.Optional.html
@@ -28146,6 +28760,109 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.EventArgs.ApplicationCommandEventArgs.Guild
   nameWithType: ApplicationCommandEventArgs.Guild
+- uid: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs
+  name: ApplicationCommandPermissionsUpdatedEventArgs
+  href: api/DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.html
+  commentId: T:DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs
+  fullName: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs
+  nameWithType: ApplicationCommandPermissionsUpdatedEventArgs
+- uid: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.ApplicationId
+  name: ApplicationId
+  href: api/DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.html#DSharpPlus_EventArgs_ApplicationCommandPermissionsUpdatedEventArgs_ApplicationId
+  commentId: P:DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.ApplicationId
+  fullName: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.ApplicationId
+  nameWithType: ApplicationCommandPermissionsUpdatedEventArgs.ApplicationId
+- uid: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.ApplicationId*
+  name: ApplicationId
+  href: api/DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.html#DSharpPlus_EventArgs_ApplicationCommandPermissionsUpdatedEventArgs_ApplicationId_
+  commentId: Overload:DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.ApplicationId
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.ApplicationId
+  nameWithType: ApplicationCommandPermissionsUpdatedEventArgs.ApplicationId
+- uid: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.CommandId
+  name: CommandId
+  href: api/DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.html#DSharpPlus_EventArgs_ApplicationCommandPermissionsUpdatedEventArgs_CommandId
+  commentId: P:DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.CommandId
+  fullName: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.CommandId
+  nameWithType: ApplicationCommandPermissionsUpdatedEventArgs.CommandId
+- uid: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.CommandId*
+  name: CommandId
+  href: api/DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.html#DSharpPlus_EventArgs_ApplicationCommandPermissionsUpdatedEventArgs_CommandId_
+  commentId: Overload:DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.CommandId
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.CommandId
+  nameWithType: ApplicationCommandPermissionsUpdatedEventArgs.CommandId
+- uid: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.GuildId
+  name: GuildId
+  href: api/DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.html#DSharpPlus_EventArgs_ApplicationCommandPermissionsUpdatedEventArgs_GuildId
+  commentId: P:DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.GuildId
+  fullName: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.GuildId
+  nameWithType: ApplicationCommandPermissionsUpdatedEventArgs.GuildId
+- uid: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.GuildId*
+  name: GuildId
+  href: api/DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.html#DSharpPlus_EventArgs_ApplicationCommandPermissionsUpdatedEventArgs_GuildId_
+  commentId: Overload:DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.GuildId
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.GuildId
+  nameWithType: ApplicationCommandPermissionsUpdatedEventArgs.GuildId
+- uid: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.NewPermissions
+  name: NewPermissions
+  href: api/DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.html#DSharpPlus_EventArgs_ApplicationCommandPermissionsUpdatedEventArgs_NewPermissions
+  commentId: P:DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.NewPermissions
+  fullName: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.NewPermissions
+  nameWithType: ApplicationCommandPermissionsUpdatedEventArgs.NewPermissions
+- uid: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.NewPermissions*
+  name: NewPermissions
+  href: api/DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.html#DSharpPlus_EventArgs_ApplicationCommandPermissionsUpdatedEventArgs_NewPermissions_
+  commentId: Overload:DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.NewPermissions
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.ApplicationCommandPermissionsUpdatedEventArgs.NewPermissions
+  nameWithType: ApplicationCommandPermissionsUpdatedEventArgs.NewPermissions
+- uid: DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate
+  name: ApplicationCommandPermissionUpdate
+  href: api/DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.html
+  commentId: T:DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate
+  fullName: DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate
+  nameWithType: ApplicationCommandPermissionUpdate
+- uid: DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Allow
+  name: Allow
+  href: api/DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.html#DSharpPlus_EventArgs_ApplicationCommandPermissionUpdate_Allow
+  commentId: P:DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Allow
+  fullName: DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Allow
+  nameWithType: ApplicationCommandPermissionUpdate.Allow
+- uid: DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Allow*
+  name: Allow
+  href: api/DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.html#DSharpPlus_EventArgs_ApplicationCommandPermissionUpdate_Allow_
+  commentId: Overload:DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Allow
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Allow
+  nameWithType: ApplicationCommandPermissionUpdate.Allow
+- uid: DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Id
+  name: Id
+  href: api/DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.html#DSharpPlus_EventArgs_ApplicationCommandPermissionUpdate_Id
+  commentId: P:DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Id
+  fullName: DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Id
+  nameWithType: ApplicationCommandPermissionUpdate.Id
+- uid: DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Id*
+  name: Id
+  href: api/DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.html#DSharpPlus_EventArgs_ApplicationCommandPermissionUpdate_Id_
+  commentId: Overload:DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Id
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Id
+  nameWithType: ApplicationCommandPermissionUpdate.Id
+- uid: DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Type
+  name: Type
+  href: api/DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.html#DSharpPlus_EventArgs_ApplicationCommandPermissionUpdate_Type
+  commentId: P:DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Type
+  fullName: DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Type
+  nameWithType: ApplicationCommandPermissionUpdate.Type
+- uid: DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Type*
+  name: Type
+  href: api/DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.html#DSharpPlus_EventArgs_ApplicationCommandPermissionUpdate_Type_
+  commentId: Overload:DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Type
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.ApplicationCommandPermissionUpdate.Type
+  nameWithType: ApplicationCommandPermissionUpdate.Type
 - uid: DSharpPlus.EventArgs.ChannelCreateEventArgs
   name: ChannelCreateEventArgs
   href: api/DSharpPlus.EventArgs.ChannelCreateEventArgs.html
@@ -29059,6 +29776,32 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.RolesBefore
   nameWithType: GuildMemberUpdateEventArgs.RolesBefore
+- uid: DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.UsernameAfter
+  name: UsernameAfter
+  href: api/DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.html#DSharpPlus_EventArgs_GuildMemberUpdateEventArgs_UsernameAfter
+  commentId: P:DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.UsernameAfter
+  fullName: DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.UsernameAfter
+  nameWithType: GuildMemberUpdateEventArgs.UsernameAfter
+- uid: DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.UsernameAfter*
+  name: UsernameAfter
+  href: api/DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.html#DSharpPlus_EventArgs_GuildMemberUpdateEventArgs_UsernameAfter_
+  commentId: Overload:DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.UsernameAfter
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.UsernameAfter
+  nameWithType: GuildMemberUpdateEventArgs.UsernameAfter
+- uid: DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.UsernameBefore
+  name: UsernameBefore
+  href: api/DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.html#DSharpPlus_EventArgs_GuildMemberUpdateEventArgs_UsernameBefore
+  commentId: P:DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.UsernameBefore
+  fullName: DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.UsernameBefore
+  nameWithType: GuildMemberUpdateEventArgs.UsernameBefore
+- uid: DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.UsernameBefore*
+  name: UsernameBefore
+  href: api/DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.html#DSharpPlus_EventArgs_GuildMemberUpdateEventArgs_UsernameBefore_
+  commentId: Overload:DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.UsernameBefore
+  isSpec: "True"
+  fullName: DSharpPlus.EventArgs.GuildMemberUpdateEventArgs.UsernameBefore
+  nameWithType: GuildMemberUpdateEventArgs.UsernameBefore
 - uid: DSharpPlus.EventArgs.GuildRoleCreateEventArgs
   name: GuildRoleCreateEventArgs
   href: api/DSharpPlus.EventArgs.GuildRoleCreateEventArgs.html
@@ -36633,6 +37376,12 @@ references:
   commentId: F:DSharpPlus.MessageType.ApplicationCommand
   fullName: DSharpPlus.MessageType.ApplicationCommand
   nameWithType: MessageType.ApplicationCommand
+- uid: DSharpPlus.MessageType.AutoModAlert
+  name: AutoModAlert
+  href: api/DSharpPlus.MessageType.html#DSharpPlus_MessageType_AutoModAlert
+  commentId: F:DSharpPlus.MessageType.AutoModAlert
+  fullName: DSharpPlus.MessageType.AutoModAlert
+  nameWithType: MessageType.AutoModAlert
 - uid: DSharpPlus.MessageType.Call
   name: Call
   href: api/DSharpPlus.MessageType.html#DSharpPlus_MessageType_Call
@@ -37163,6 +37912,32 @@ references:
   commentId: T:DSharpPlus.Net.Models.ApplicationCommandEditModel
   fullName: DSharpPlus.Net.Models.ApplicationCommandEditModel
   nameWithType: ApplicationCommandEditModel
+- uid: DSharpPlus.Net.Models.ApplicationCommandEditModel.AllowDMUsage
+  name: AllowDMUsage
+  href: api/DSharpPlus.Net.Models.ApplicationCommandEditModel.html#DSharpPlus_Net_Models_ApplicationCommandEditModel_AllowDMUsage
+  commentId: P:DSharpPlus.Net.Models.ApplicationCommandEditModel.AllowDMUsage
+  fullName: DSharpPlus.Net.Models.ApplicationCommandEditModel.AllowDMUsage
+  nameWithType: ApplicationCommandEditModel.AllowDMUsage
+- uid: DSharpPlus.Net.Models.ApplicationCommandEditModel.AllowDMUsage*
+  name: AllowDMUsage
+  href: api/DSharpPlus.Net.Models.ApplicationCommandEditModel.html#DSharpPlus_Net_Models_ApplicationCommandEditModel_AllowDMUsage_
+  commentId: Overload:DSharpPlus.Net.Models.ApplicationCommandEditModel.AllowDMUsage
+  isSpec: "True"
+  fullName: DSharpPlus.Net.Models.ApplicationCommandEditModel.AllowDMUsage
+  nameWithType: ApplicationCommandEditModel.AllowDMUsage
+- uid: DSharpPlus.Net.Models.ApplicationCommandEditModel.DefaultMemberPermissions
+  name: DefaultMemberPermissions
+  href: api/DSharpPlus.Net.Models.ApplicationCommandEditModel.html#DSharpPlus_Net_Models_ApplicationCommandEditModel_DefaultMemberPermissions
+  commentId: P:DSharpPlus.Net.Models.ApplicationCommandEditModel.DefaultMemberPermissions
+  fullName: DSharpPlus.Net.Models.ApplicationCommandEditModel.DefaultMemberPermissions
+  nameWithType: ApplicationCommandEditModel.DefaultMemberPermissions
+- uid: DSharpPlus.Net.Models.ApplicationCommandEditModel.DefaultMemberPermissions*
+  name: DefaultMemberPermissions
+  href: api/DSharpPlus.Net.Models.ApplicationCommandEditModel.html#DSharpPlus_Net_Models_ApplicationCommandEditModel_DefaultMemberPermissions_
+  commentId: Overload:DSharpPlus.Net.Models.ApplicationCommandEditModel.DefaultMemberPermissions
+  isSpec: "True"
+  fullName: DSharpPlus.Net.Models.ApplicationCommandEditModel.DefaultMemberPermissions
+  nameWithType: ApplicationCommandEditModel.DefaultMemberPermissions
 - uid: DSharpPlus.Net.Models.ApplicationCommandEditModel.DefaultPermission
   name: DefaultPermission
   href: api/DSharpPlus.Net.Models.ApplicationCommandEditModel.html#DSharpPlus_Net_Models_ApplicationCommandEditModel_DefaultPermission
@@ -40752,6 +41527,12 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.SlashCommands.ExtensionMethods.UseSlashCommandsAsync
   nameWithType: ExtensionMethods.UseSlashCommandsAsync
+- uid: DSharpPlus.SlashCommands.GuildOnlyAttribute
+  name: GuildOnlyAttribute
+  href: api/DSharpPlus.SlashCommands.GuildOnlyAttribute.html
+  commentId: T:DSharpPlus.SlashCommands.GuildOnlyAttribute
+  fullName: DSharpPlus.SlashCommands.GuildOnlyAttribute
+  nameWithType: GuildOnlyAttribute
 - uid: DSharpPlus.SlashCommands.IAutocompleteProvider
   name: IAutocompleteProvider
   href: api/DSharpPlus.SlashCommands.IAutocompleteProvider.html
@@ -41071,6 +41852,38 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.SlashCommands.MaximumAttribute.Value
   nameWithType: MaximumAttribute.Value
+- uid: DSharpPlus.SlashCommands.MaximumLengthAttribute
+  name: MaximumLengthAttribute
+  href: api/DSharpPlus.SlashCommands.MaximumLengthAttribute.html
+  commentId: T:DSharpPlus.SlashCommands.MaximumLengthAttribute
+  fullName: DSharpPlus.SlashCommands.MaximumLengthAttribute
+  nameWithType: MaximumLengthAttribute
+- uid: DSharpPlus.SlashCommands.MaximumLengthAttribute.#ctor(System.Int32)
+  name: MaximumLengthAttribute(Int32)
+  href: api/DSharpPlus.SlashCommands.MaximumLengthAttribute.html#DSharpPlus_SlashCommands_MaximumLengthAttribute__ctor_System_Int32_
+  commentId: M:DSharpPlus.SlashCommands.MaximumLengthAttribute.#ctor(System.Int32)
+  fullName: DSharpPlus.SlashCommands.MaximumLengthAttribute.MaximumLengthAttribute(System.Int32)
+  nameWithType: MaximumLengthAttribute.MaximumLengthAttribute(Int32)
+- uid: DSharpPlus.SlashCommands.MaximumLengthAttribute.#ctor*
+  name: MaximumLengthAttribute
+  href: api/DSharpPlus.SlashCommands.MaximumLengthAttribute.html#DSharpPlus_SlashCommands_MaximumLengthAttribute__ctor_
+  commentId: Overload:DSharpPlus.SlashCommands.MaximumLengthAttribute.#ctor
+  isSpec: "True"
+  fullName: DSharpPlus.SlashCommands.MaximumLengthAttribute.MaximumLengthAttribute
+  nameWithType: MaximumLengthAttribute.MaximumLengthAttribute
+- uid: DSharpPlus.SlashCommands.MaximumLengthAttribute.Value
+  name: Value
+  href: api/DSharpPlus.SlashCommands.MaximumLengthAttribute.html#DSharpPlus_SlashCommands_MaximumLengthAttribute_Value
+  commentId: P:DSharpPlus.SlashCommands.MaximumLengthAttribute.Value
+  fullName: DSharpPlus.SlashCommands.MaximumLengthAttribute.Value
+  nameWithType: MaximumLengthAttribute.Value
+- uid: DSharpPlus.SlashCommands.MaximumLengthAttribute.Value*
+  name: Value
+  href: api/DSharpPlus.SlashCommands.MaximumLengthAttribute.html#DSharpPlus_SlashCommands_MaximumLengthAttribute_Value_
+  commentId: Overload:DSharpPlus.SlashCommands.MaximumLengthAttribute.Value
+  isSpec: "True"
+  fullName: DSharpPlus.SlashCommands.MaximumLengthAttribute.Value
+  nameWithType: MaximumLengthAttribute.Value
 - uid: DSharpPlus.SlashCommands.MinimumAttribute
   name: MinimumAttribute
   href: api/DSharpPlus.SlashCommands.MinimumAttribute.html
@@ -41109,6 +41922,38 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.SlashCommands.MinimumAttribute.Value
   nameWithType: MinimumAttribute.Value
+- uid: DSharpPlus.SlashCommands.MinimumLengthAttribute
+  name: MinimumLengthAttribute
+  href: api/DSharpPlus.SlashCommands.MinimumLengthAttribute.html
+  commentId: T:DSharpPlus.SlashCommands.MinimumLengthAttribute
+  fullName: DSharpPlus.SlashCommands.MinimumLengthAttribute
+  nameWithType: MinimumLengthAttribute
+- uid: DSharpPlus.SlashCommands.MinimumLengthAttribute.#ctor(System.Int32)
+  name: MinimumLengthAttribute(Int32)
+  href: api/DSharpPlus.SlashCommands.MinimumLengthAttribute.html#DSharpPlus_SlashCommands_MinimumLengthAttribute__ctor_System_Int32_
+  commentId: M:DSharpPlus.SlashCommands.MinimumLengthAttribute.#ctor(System.Int32)
+  fullName: DSharpPlus.SlashCommands.MinimumLengthAttribute.MinimumLengthAttribute(System.Int32)
+  nameWithType: MinimumLengthAttribute.MinimumLengthAttribute(Int32)
+- uid: DSharpPlus.SlashCommands.MinimumLengthAttribute.#ctor*
+  name: MinimumLengthAttribute
+  href: api/DSharpPlus.SlashCommands.MinimumLengthAttribute.html#DSharpPlus_SlashCommands_MinimumLengthAttribute__ctor_
+  commentId: Overload:DSharpPlus.SlashCommands.MinimumLengthAttribute.#ctor
+  isSpec: "True"
+  fullName: DSharpPlus.SlashCommands.MinimumLengthAttribute.MinimumLengthAttribute
+  nameWithType: MinimumLengthAttribute.MinimumLengthAttribute
+- uid: DSharpPlus.SlashCommands.MinimumLengthAttribute.Value
+  name: Value
+  href: api/DSharpPlus.SlashCommands.MinimumLengthAttribute.html#DSharpPlus_SlashCommands_MinimumLengthAttribute_Value
+  commentId: P:DSharpPlus.SlashCommands.MinimumLengthAttribute.Value
+  fullName: DSharpPlus.SlashCommands.MinimumLengthAttribute.Value
+  nameWithType: MinimumLengthAttribute.Value
+- uid: DSharpPlus.SlashCommands.MinimumLengthAttribute.Value*
+  name: Value
+  href: api/DSharpPlus.SlashCommands.MinimumLengthAttribute.html#DSharpPlus_SlashCommands_MinimumLengthAttribute_Value_
+  commentId: Overload:DSharpPlus.SlashCommands.MinimumLengthAttribute.Value
+  isSpec: "True"
+  fullName: DSharpPlus.SlashCommands.MinimumLengthAttribute.Value
+  nameWithType: MinimumLengthAttribute.Value
 - uid: DSharpPlus.SlashCommands.NameLocalizationAttribute
   name: NameLocalizationAttribute
   href: api/DSharpPlus.SlashCommands.NameLocalizationAttribute.html
@@ -41347,6 +42192,38 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.SlashCommands.SlashCommandGroupAttribute.Name
   nameWithType: SlashCommandGroupAttribute.Name
+- uid: DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute
+  name: SlashCommandPermissionsAttribute
+  href: api/DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.html
+  commentId: T:DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute
+  fullName: DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute
+  nameWithType: SlashCommandPermissionsAttribute
+- uid: DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.#ctor(DSharpPlus.Permissions)
+  name: SlashCommandPermissionsAttribute(Permissions)
+  href: api/DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.html#DSharpPlus_SlashCommands_SlashCommandPermissionsAttribute__ctor_DSharpPlus_Permissions_
+  commentId: M:DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.#ctor(DSharpPlus.Permissions)
+  fullName: DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.SlashCommandPermissionsAttribute(DSharpPlus.Permissions)
+  nameWithType: SlashCommandPermissionsAttribute.SlashCommandPermissionsAttribute(Permissions)
+- uid: DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.#ctor*
+  name: SlashCommandPermissionsAttribute
+  href: api/DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.html#DSharpPlus_SlashCommands_SlashCommandPermissionsAttribute__ctor_
+  commentId: Overload:DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.#ctor
+  isSpec: "True"
+  fullName: DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.SlashCommandPermissionsAttribute
+  nameWithType: SlashCommandPermissionsAttribute.SlashCommandPermissionsAttribute
+- uid: DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.Permissions
+  name: Permissions
+  href: api/DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.html#DSharpPlus_SlashCommands_SlashCommandPermissionsAttribute_Permissions
+  commentId: P:DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.Permissions
+  fullName: DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.Permissions
+  nameWithType: SlashCommandPermissionsAttribute.Permissions
+- uid: DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.Permissions*
+  name: Permissions
+  href: api/DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.html#DSharpPlus_SlashCommands_SlashCommandPermissionsAttribute_Permissions_
+  commentId: Overload:DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.Permissions
+  isSpec: "True"
+  fullName: DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.Permissions
+  nameWithType: SlashCommandPermissionsAttribute.Permissions
 - uid: DSharpPlus.SlashCommands.SlashCommandsConfiguration
   name: SlashCommandsConfiguration
   href: api/DSharpPlus.SlashCommands.SlashCommandsConfiguration.html

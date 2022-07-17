@@ -1060,13 +1060,13 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a>&gt;</td>
         <td><span class="parametername">targetUserId</span></td>
-        <td><p>The id of the target user.</p>
+        <td><p>The ID of the target user.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a>&gt;</td>
         <td><span class="parametername">targetApplicationId</span></td>
-        <td><p>The id of the target application.</p>
+        <td><p>The ID of the target application.</p>
 </td>
       </tr>
     </tbody>
@@ -1851,13 +1851,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordChannel_GetMessageAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.GetMessageAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordChannel_GetMessageAsync_System_UInt64_" data-uid="DSharpPlus.Entities.DiscordChannel.GetMessageAsync(System.UInt64)">GetMessageAsync(UInt64)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_GetMessageAsync_System_UInt64_System_Boolean_" data-uid="DSharpPlus.Entities.DiscordChannel.GetMessageAsync(System.UInt64,System.Boolean)">GetMessageAsync(UInt64, Boolean)</h4>
   <div class="markdown level1 summary"><p>Returns a specific message</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMessage&gt; GetMessageAsync(ulong id)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMessage&gt; GetMessageAsync(ulong id, bool skipCache = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1872,7 +1872,13 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
         <td><span class="parametername">id</span></td>
-        <td><p>The id of the message</p>
+        <td><p>The ID of the message</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">skipCache</span></td>
+        <td><p>Whether to always make a REST request.</p>
 </td>
       </tr>
     </tbody>
@@ -1892,6 +1898,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="DSharpPlus_Entities_DiscordChannel_GetMessageAsync_System_UInt64_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Cached message objects will not be returned if <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_MessageCacheSize">MessageCacheSize</a> is set to zero, if the client does not have the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessages">GuildMessages</a> or <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_DirectMessages">DirectMessages</a> intents, or if the discord client is a <a class="xref" href="DSharpPlus.DiscordShardedClient.html">DiscordShardedClient</a>.</p></div>
   
   
   <a id="DSharpPlus_Entities_DiscordChannel_GetMessagesAfterAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.GetMessagesAfterAsync*"></a>
@@ -2398,7 +2406,7 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a>&gt;</td>
         <td><span class="parametername">parentId</span></td>
-        <td><p>The new parent id if the channel is to be moved to a new category.</p>
+        <td><p>The new parent ID if the channel is to be moved to a new category.</p>
 </td>
       </tr>
     </tbody>
@@ -3017,7 +3025,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2016-2021 DSharpPlus Contributors
+            © 2016-2022 DSharpPlus Contributors
             
           </div>
         </div>

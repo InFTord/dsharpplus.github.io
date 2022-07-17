@@ -162,7 +162,7 @@
   
   <a id="DSharpPlus_Entities_DiscordGuild_ApplicationId_" data-uid="DSharpPlus.Entities.DiscordGuild.ApplicationId*"></a>
   <h4 id="DSharpPlus_Entities_DiscordGuild_ApplicationId" data-uid="DSharpPlus.Entities.DiscordGuild.ApplicationId">ApplicationId</h4>
-  <div class="markdown level1 summary"><p>Gets the application id of this guild if it is bot created.</p>
+  <div class="markdown level1 summary"><p>Gets the application ID of this guild if it is bot created.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3486,7 +3486,7 @@ the voice state corresponds to.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
         <td><span class="parametername">userId</span></td>
-        <td><p>The Id of the user to get the ban for.</p>
+        <td><p>The ID of the user to get the ban for.</p>
 </td>
       </tr>
     </tbody>
@@ -3510,14 +3510,44 @@ the voice state corresponds to.</p>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_GetBansAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetBansAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_GetBansAsync" data-uid="DSharpPlus.Entities.DiscordGuild.GetBansAsync">GetBansAsync()</h4>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_GetBansAsync_System_Nullable_System_Int32__System_Nullable_System_UInt64__System_Nullable_System_UInt64__" data-uid="DSharpPlus.Entities.DiscordGuild.GetBansAsync(System.Nullable{System.Int32},System.Nullable{System.UInt64},System.Nullable{System.UInt64})">GetBansAsync(Nullable&lt;Int32&gt;, Nullable&lt;UInt64&gt;, Nullable&lt;UInt64&gt;)</h4>
   <div class="markdown level1 summary"><p>Gets the bans for this guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;DiscordBan&gt;&gt; GetBansAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;DiscordBan&gt;&gt; GetBansAsync(int? limit = null, ulong? before = null, ulong? after = null)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>The number of users to return (up to maximum 1000, default 1000).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a>&gt;</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Consider only users before the given user id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a>&gt;</td>
+        <td><span class="parametername">after</span></td>
+        <td><p>Consider only users after the given user id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -3995,13 +4025,13 @@ the voice state corresponds to.</p>
   
   
   <a id="DSharpPlus_Entities_DiscordGuild_GetMemberAsync_" data-uid="DSharpPlus.Entities.DiscordGuild.GetMemberAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordGuild_GetMemberAsync_System_UInt64_" data-uid="DSharpPlus.Entities.DiscordGuild.GetMemberAsync(System.UInt64)">GetMemberAsync(UInt64)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordGuild_GetMemberAsync_System_UInt64_System_Boolean_" data-uid="DSharpPlus.Entities.DiscordGuild.GetMemberAsync(System.UInt64,System.Boolean)">GetMemberAsync(UInt64, Boolean)</h4>
   <div class="markdown level1 summary"><p>Gets a member of this guild by their user ID.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMember&gt; GetMemberAsync(ulong userId)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMember&gt; GetMemberAsync(ulong userId, bool updateCache = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4017,6 +4047,12 @@ the voice state corresponds to.</p>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
         <td><span class="parametername">userId</span></td>
         <td><p>ID of the member to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">updateCache</span></td>
+        <td><p>Whether to always make a REST request and update the member cache.</p>
 </td>
       </tr>
     </tbody>
@@ -5642,7 +5678,7 @@ The <code data-dev-comment-type="paramref" class="paramref">limit</code> must al
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2016-2021 DSharpPlus Contributors
+            © 2016-2022 DSharpPlus Contributors
             
           </div>
         </div>

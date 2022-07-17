@@ -133,6 +133,9 @@ DiscordApplicationCommandOptionChoice from external sources such as a database.<
       <h4><a class="xref" href="DSharpPlus.SlashCommands.ExtensionMethods.html">ExtensionMethods</a></h4>
       <section><p>Defines various extension methods for slash commands.</p>
 </section>
+      <h4><a class="xref" href="DSharpPlus.SlashCommands.GuildOnlyAttribute.html">GuildOnlyAttribute</a></h4>
+      <section><p>Indicates that a global application command cannot be invoked in DMs.</p>
+</section>
       <h4><a class="xref" href="DSharpPlus.SlashCommands.InteractionContext.html">InteractionContext</a></h4>
       <section><p>Represents a context for an interaction.</p>
 </section>
@@ -142,8 +145,14 @@ DiscordApplicationCommandOptionChoice from external sources such as a database.<
       <h4><a class="xref" href="DSharpPlus.SlashCommands.MaximumAttribute.html">MaximumAttribute</a></h4>
       <section><p>Sets a maximum value for this slash command option. Only valid for <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a> or <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a> parameters.</p>
 </section>
+      <h4><a class="xref" href="DSharpPlus.SlashCommands.MaximumLengthAttribute.html">MaximumLengthAttribute</a></h4>
+      <section><p>Sets a maximum allowed length for this slash command option. Only valid for <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> parameters.</p>
+</section>
       <h4><a class="xref" href="DSharpPlus.SlashCommands.MinimumAttribute.html">MinimumAttribute</a></h4>
       <section><p>Sets a minimum value for this slash command option. Only valid for <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a> or <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a> parameters.</p>
+</section>
+      <h4><a class="xref" href="DSharpPlus.SlashCommands.MinimumLengthAttribute.html">MinimumLengthAttribute</a></h4>
+      <section><p>Sets a minimum allowed length for this slash command option. Only valid for <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> parameters.</p>
 </section>
       <h4><a class="xref" href="DSharpPlus.SlashCommands.NameLocalizationAttribute.html">NameLocalizationAttribute</a></h4>
       <section><p>Specifies a locale for a slash command name. The longest name is the name that counts toward character limits.</p>
@@ -160,6 +169,8 @@ DiscordApplicationCommandOptionChoice from external sources such as a database.<
       <h4><a class="xref" href="DSharpPlus.SlashCommands.SlashCommandGroupAttribute.html">SlashCommandGroupAttribute</a></h4>
       <section><p>Marks this class a slash command group.</p>
 </section>
+      <h4><a class="xref" href="DSharpPlus.SlashCommands.SlashCommandPermissionsAttribute.html">SlashCommandPermissionsAttribute</a></h4>
+      <section></section>
       <h4><a class="xref" href="DSharpPlus.SlashCommands.SlashCommandsConfiguration.html">SlashCommandsConfiguration</a></h4>
       <section><p>A configuration for a <a class="xref" href="DSharpPlus.SlashCommands.SlashCommandsExtension.html">SlashCommandsExtension</a>.</p>
 </section>
@@ -213,7 +224,7 @@ DiscordApplicationCommandOptionChoice from external sources such as a database.<
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2016-2021 DSharpPlus Contributors
+            © 2016-2022 DSharpPlus Contributors
             
           </div>
         </div>

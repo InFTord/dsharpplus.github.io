@@ -593,15 +593,92 @@
   </table>
   
   
+  <a id="DSharpPlus_Entities_DiscordApplication_GenerateOAuthUri_" data-uid="DSharpPlus.Entities.DiscordApplication.GenerateOAuthUri*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordApplication_GenerateOAuthUri_System_String_System_Nullable_DSharpPlus_Permissions__DSharpPlus_Entities_OAuthScope___" data-uid="DSharpPlus.Entities.DiscordApplication.GenerateOAuthUri(System.String,System.Nullable{DSharpPlus.Permissions},DSharpPlus.Entities.OAuthScope[])">GenerateOAuthUri(String, Nullable&lt;Permissions&gt;, OAuthScope[])</h4>
+  <div class="markdown level1 summary"><p>Generates a new OAuth2 URI for this application.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GenerateOAuthUri(string redirectUri = null, Permissions? permissions = null, params OAuthScope[] scopes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">redirectUri</span></td>
+        <td><p>Redirect URI - the URI Discord will redirect users to as part of the OAuth flow.
+<remarks>
+This URI <strong>must</strong> be already registered as a valid redirect URI for your application on the developer portal.
+</remarks></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="DSharpPlus.Permissions.html">Permissions</a>&gt;</td>
+        <td><span class="parametername">permissions</span></td>
+        <td><p>Permissions for your bot. Only required if the <a class="xref" href="DSharpPlus.Entities.OAuthScope.html#DSharpPlus_Entities_OAuthScope_Bot">Bot</a> scope is passed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.OAuthScope.html">OAuthScope</a>[]</td>
+        <td><span class="parametername">scopes</span></td>
+        <td><p>OAuth scopes for your application.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordApplication_GetAssetsAsync_" data-uid="DSharpPlus.Entities.DiscordApplication.GetAssetsAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordApplication_GetAssetsAsync" data-uid="DSharpPlus.Entities.DiscordApplication.GetAssetsAsync">GetAssetsAsync()</h4>
+  <h4 id="DSharpPlus_Entities_DiscordApplication_GetAssetsAsync_System_Boolean_" data-uid="DSharpPlus.Entities.DiscordApplication.GetAssetsAsync(System.Boolean)">GetAssetsAsync(Boolean)</h4>
   <div class="markdown level1 summary"><p>Retrieves this application&apos;s assets.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;IReadOnlyList&lt;DiscordApplicationAsset&gt;&gt; GetAssetsAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;IReadOnlyList&lt;DiscordApplicationAsset&gt;&gt; GetAssetsAsync(bool updateCache = false)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">updateCache</span></td>
+        <td><p>Whether to always make a REST request and update the cached assets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -827,7 +904,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2016-2021 DSharpPlus Contributors
+            © 2016-2022 DSharpPlus Contributors
             
           </div>
         </div>
